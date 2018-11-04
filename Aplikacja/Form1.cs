@@ -15,6 +15,7 @@ namespace Aplikacja
         public Form1()
         {
             InitializeComponent();
+            //test gitea
         }
     }
 }
