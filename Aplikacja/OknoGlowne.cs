@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Aplikacja
 {
-    public partial class Form1 : Form
+    public partial class OknoGlowne : Form
     {
-        public Form1()
+        public OknoGlowne()
         {
             InitializeComponent();
             //test gitea
