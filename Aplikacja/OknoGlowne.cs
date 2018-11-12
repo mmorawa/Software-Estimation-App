@@ -118,5 +118,10 @@ namespace Aplikacja
         {
 
         }
+
+        private void ButtonOblicz_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Test");
+        }
     }
 }
