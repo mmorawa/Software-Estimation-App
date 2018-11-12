@@ -84,6 +84,14 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
+            this.GroupBoxModyfUCP = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.GroupBoxWyniki = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.PasekMenu.SuspendLayout();
             this.GroupBoxDaneProjektu.SuspendLayout();
             this.GroupBoxUUCW.SuspendLayout();
@@ -96,6 +104,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
+            this.GroupBoxModyfUCP.SuspendLayout();
+            this.GroupBoxWyniki.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // PasekMenu
@@ -126,35 +137,35 @@
             // ToolStripMenuNowyProj
             // 
             this.ToolStripMenuNowyProj.Name = "ToolStripMenuNowyProj";
-            this.ToolStripMenuNowyProj.Size = new System.Drawing.Size(172, 22);
+            this.ToolStripMenuNowyProj.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuNowyProj.Text = "&Nowy projekt";
             this.ToolStripMenuNowyProj.Click += new System.EventHandler(this.ToolStripMenuNowyProj_Click);
             // 
             // ToolStripMenuOtworzProj
             // 
             this.ToolStripMenuOtworzProj.Name = "ToolStripMenuOtworzProj";
-            this.ToolStripMenuOtworzProj.Size = new System.Drawing.Size(172, 22);
+            this.ToolStripMenuOtworzProj.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuOtworzProj.Text = "&Otwórz projekt";
             this.ToolStripMenuOtworzProj.Click += new System.EventHandler(this.ToolStripMenuOtworzProj_Click);
             // 
             // ToolStripMenuZapiszProj
             // 
             this.ToolStripMenuZapiszProj.Name = "ToolStripMenuZapiszProj";
-            this.ToolStripMenuZapiszProj.Size = new System.Drawing.Size(172, 22);
+            this.ToolStripMenuZapiszProj.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuZapiszProj.Text = "&Zapisz projekt";
             this.ToolStripMenuZapiszProj.Click += new System.EventHandler(this.ToolStripMenuZapiszProj_Click);
             // 
             // ToolStripMenuZapiszJakoProj
             // 
             this.ToolStripMenuZapiszJakoProj.Name = "ToolStripMenuZapiszJakoProj";
-            this.ToolStripMenuZapiszJakoProj.Size = new System.Drawing.Size(172, 22);
+            this.ToolStripMenuZapiszJakoProj.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuZapiszJakoProj.Text = "Z&apisz projekt jako";
             this.ToolStripMenuZapiszJakoProj.Click += new System.EventHandler(this.ToolStripMenuZapiszJakoProj_Click);
             // 
             // ToolStripMenuWyjscie
             // 
             this.ToolStripMenuWyjscie.Name = "ToolStripMenuWyjscie";
-            this.ToolStripMenuWyjscie.Size = new System.Drawing.Size(172, 22);
+            this.ToolStripMenuWyjscie.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuWyjscie.Text = "&Wyjście";
             this.ToolStripMenuWyjscie.Click += new System.EventHandler(this.ToolStripMenuWyjscie_Click);
             // 
@@ -749,11 +760,99 @@
             this.label24.Text = "poprzez GUI";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // GroupBoxModyfUCP
+            // 
+            this.GroupBoxModyfUCP.Controls.Add(this.button3);
+            this.GroupBoxModyfUCP.Controls.Add(this.button1);
+            this.GroupBoxModyfUCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.GroupBoxModyfUCP.Location = new System.Drawing.Point(12, 522);
+            this.GroupBoxModyfUCP.Name = "GroupBoxModyfUCP";
+            this.GroupBoxModyfUCP.Size = new System.Drawing.Size(503, 87);
+            this.GroupBoxModyfUCP.TabIndex = 4;
+            this.GroupBoxModyfUCP.TabStop = false;
+            this.GroupBoxModyfUCP.Text = "Czynniki modyfikujące Use Case Points";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(33, 30);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(173, 44);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Czynniki złożoności technicznej";
+            this.ToolTip.SetToolTip(this.button1, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // GroupBoxWyniki
+            // 
+            this.GroupBoxWyniki.Controls.Add(this.button2);
+            this.GroupBoxWyniki.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.GroupBoxWyniki.Location = new System.Drawing.Point(627, 113);
+            this.GroupBoxWyniki.Name = "GroupBoxWyniki";
+            this.GroupBoxWyniki.Size = new System.Drawing.Size(494, 143);
+            this.GroupBoxWyniki.TabIndex = 5;
+            this.GroupBoxWyniki.TabStop = false;
+            this.GroupBoxWyniki.Text = "Wyniki";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(37, 36);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(173, 27);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Oblicz";
+            this.ToolTip.SetToolTip(this.button2, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(262, 30);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(173, 44);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Czynniki złożoności środowiska";
+            this.ToolTip.SetToolTip(this.button3, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button4);
+            this.groupBox1.Controls.Add(this.button5);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBox1.Location = new System.Drawing.Point(12, 615);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(503, 87);
+            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Czynniki modyfikujące COCOMO II";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(262, 30);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(173, 44);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Mnożniki pracochłonności";
+            this.ToolTip.SetToolTip(this.button4, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(33, 30);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(173, 44);
+            this.button5.TabIndex = 2;
+            this.button5.Text = "Czynniki skali";
+            this.ToolTip.SetToolTip(this.button5, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // OknoGlowne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1321, 784);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.GroupBoxWyniki);
+            this.Controls.Add(this.GroupBoxModyfUCP);
             this.Controls.Add(this.GroupBoxUAW);
             this.Controls.Add(this.GroupBoxUUCW);
             this.Controls.Add(this.GroupBoxDaneProjektu);
@@ -777,6 +876,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
+            this.GroupBoxModyfUCP.ResumeLayout(false);
+            this.GroupBoxWyniki.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -839,6 +941,14 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.GroupBox GroupBoxModyfUCP;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox GroupBoxWyniki;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 
