@@ -123,5 +123,20 @@ namespace Aplikacja
         {
             MessageBox.Show("Test");
         }
+
+        private void ButtonSD_Click(object sender, EventArgs e)
+        {
+            using (OknoCzynnikiSkali form = new OknoCzynnikiSkali())
+            {
+                DialogResult dr = form.ShowDialog();
+
+
+                if (dr == DialogResult.OK)
+                {
+
+                    MessageBox.Show("The Key has been changed.", "Information");
+                }
+            }
+        }
     }
 }

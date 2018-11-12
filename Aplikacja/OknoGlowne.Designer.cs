@@ -570,6 +570,7 @@
             this.ButtonSD.Text = "Czynniki skali";
             this.ToolTip.SetToolTip(this.ButtonSD, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonSD.UseVisualStyleBackColor = true;
+            this.ButtonSD.Click += new System.EventHandler(this.ButtonSD_Click);
             // 
             // GroupBoxUAW
             // 
