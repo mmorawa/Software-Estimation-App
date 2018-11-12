@@ -118,7 +118,7 @@
             this.ToolStripMenuPomoc});
             this.PasekMenu.Location = new System.Drawing.Point(0, 0);
             this.PasekMenu.Name = "PasekMenu";
-            this.PasekMenu.Size = new System.Drawing.Size(1321, 24);
+            this.PasekMenu.Size = new System.Drawing.Size(1321, 25);
             this.PasekMenu.TabIndex = 0;
             this.PasekMenu.Text = "Pasek Menu";
             // 
@@ -130,49 +130,51 @@
             this.ToolStripMenuZapiszProj,
             this.ToolStripMenuZapiszJakoProj,
             this.ToolStripMenuWyjscie});
+            this.ToolStripMenuPlik.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ToolStripMenuPlik.Name = "ToolStripMenuPlik";
-            this.ToolStripMenuPlik.Size = new System.Drawing.Size(38, 20);
+            this.ToolStripMenuPlik.Size = new System.Drawing.Size(43, 21);
             this.ToolStripMenuPlik.Text = "&Plik";
             // 
             // ToolStripMenuNowyProj
             // 
             this.ToolStripMenuNowyProj.Name = "ToolStripMenuNowyProj";
-            this.ToolStripMenuNowyProj.Size = new System.Drawing.Size(172, 22);
+            this.ToolStripMenuNowyProj.Size = new System.Drawing.Size(193, 22);
             this.ToolStripMenuNowyProj.Text = "&Nowy projekt";
             this.ToolStripMenuNowyProj.Click += new System.EventHandler(this.ToolStripMenuNowyProj_Click);
             // 
             // ToolStripMenuOtworzProj
             // 
             this.ToolStripMenuOtworzProj.Name = "ToolStripMenuOtworzProj";
-            this.ToolStripMenuOtworzProj.Size = new System.Drawing.Size(172, 22);
+            this.ToolStripMenuOtworzProj.Size = new System.Drawing.Size(193, 22);
             this.ToolStripMenuOtworzProj.Text = "&Otwórz projekt";
             this.ToolStripMenuOtworzProj.Click += new System.EventHandler(this.ToolStripMenuOtworzProj_Click);
             // 
             // ToolStripMenuZapiszProj
             // 
             this.ToolStripMenuZapiszProj.Name = "ToolStripMenuZapiszProj";
-            this.ToolStripMenuZapiszProj.Size = new System.Drawing.Size(172, 22);
+            this.ToolStripMenuZapiszProj.Size = new System.Drawing.Size(193, 22);
             this.ToolStripMenuZapiszProj.Text = "&Zapisz projekt";
             this.ToolStripMenuZapiszProj.Click += new System.EventHandler(this.ToolStripMenuZapiszProj_Click);
             // 
             // ToolStripMenuZapiszJakoProj
             // 
             this.ToolStripMenuZapiszJakoProj.Name = "ToolStripMenuZapiszJakoProj";
-            this.ToolStripMenuZapiszJakoProj.Size = new System.Drawing.Size(172, 22);
+            this.ToolStripMenuZapiszJakoProj.Size = new System.Drawing.Size(193, 22);
             this.ToolStripMenuZapiszJakoProj.Text = "Z&apisz projekt jako";
             this.ToolStripMenuZapiszJakoProj.Click += new System.EventHandler(this.ToolStripMenuZapiszJakoProj_Click);
             // 
             // ToolStripMenuWyjscie
             // 
             this.ToolStripMenuWyjscie.Name = "ToolStripMenuWyjscie";
-            this.ToolStripMenuWyjscie.Size = new System.Drawing.Size(172, 22);
+            this.ToolStripMenuWyjscie.Size = new System.Drawing.Size(193, 22);
             this.ToolStripMenuWyjscie.Text = "&Wyjście";
             this.ToolStripMenuWyjscie.Click += new System.EventHandler(this.ToolStripMenuWyjscie_Click);
             // 
             // ToolStripMenuRaporty
             // 
+            this.ToolStripMenuRaporty.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ToolStripMenuRaporty.Name = "ToolStripMenuRaporty";
-            this.ToolStripMenuRaporty.Size = new System.Drawing.Size(60, 20);
+            this.ToolStripMenuRaporty.Size = new System.Drawing.Size(68, 21);
             this.ToolStripMenuRaporty.Text = "&Raporty";
             // 
             // ToolStripMenuUstawienia
@@ -180,21 +182,22 @@
             this.ToolStripMenuUstawienia.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuKalibracja,
             this.ToolStripMenuPrzeliczniki});
+            this.ToolStripMenuUstawienia.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ToolStripMenuUstawienia.Name = "ToolStripMenuUstawienia";
-            this.ToolStripMenuUstawienia.Size = new System.Drawing.Size(76, 20);
+            this.ToolStripMenuUstawienia.Size = new System.Drawing.Size(87, 21);
             this.ToolStripMenuUstawienia.Text = "&Ustawienia";
             // 
             // ToolStripMenuKalibracja
             // 
             this.ToolStripMenuKalibracja.Name = "ToolStripMenuKalibracja";
-            this.ToolStripMenuKalibracja.Size = new System.Drawing.Size(132, 22);
+            this.ToolStripMenuKalibracja.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuKalibracja.Text = "&Kalibracja";
             this.ToolStripMenuKalibracja.Click += new System.EventHandler(this.ToolStripMenuKalibracja_Click);
             // 
             // ToolStripMenuPrzeliczniki
             // 
             this.ToolStripMenuPrzeliczniki.Name = "ToolStripMenuPrzeliczniki";
-            this.ToolStripMenuPrzeliczniki.Size = new System.Drawing.Size(132, 22);
+            this.ToolStripMenuPrzeliczniki.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuPrzeliczniki.Text = "&Przeliczniki";
             this.ToolStripMenuPrzeliczniki.Click += new System.EventHandler(this.ToolStripMenuPrzeliczniki_Click);
             // 
@@ -203,21 +206,22 @@
             this.ToolStripMenuPomoc.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuDokumentacja,
             this.ToolStripMenuOProgramie});
+            this.ToolStripMenuPomoc.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ToolStripMenuPomoc.Name = "ToolStripMenuPomoc";
-            this.ToolStripMenuPomoc.Size = new System.Drawing.Size(57, 20);
+            this.ToolStripMenuPomoc.Size = new System.Drawing.Size(62, 21);
             this.ToolStripMenuPomoc.Text = "Pomo&c";
             // 
             // ToolStripMenuDokumentacja
             // 
             this.ToolStripMenuDokumentacja.Name = "ToolStripMenuDokumentacja";
-            this.ToolStripMenuDokumentacja.Size = new System.Drawing.Size(151, 22);
+            this.ToolStripMenuDokumentacja.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuDokumentacja.Text = "&Dokumentacja";
             this.ToolStripMenuDokumentacja.Click += new System.EventHandler(this.ToolStripMenuDokumentacja_Click);
             // 
             // ToolStripMenuOProgramie
             // 
             this.ToolStripMenuOProgramie.Name = "ToolStripMenuOProgramie";
-            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(151, 22);
+            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuOProgramie.Text = "&O programie";
             this.ToolStripMenuOProgramie.Click += new System.EventHandler(this.ToolStripMenuOProgramie_Click);
             // 
@@ -325,7 +329,7 @@
             // Numeric3UUCW
             // 
             this.Numeric3UUCW.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Numeric3UUCW.Location = new System.Drawing.Point(182, 110);
+            this.Numeric3UUCW.Location = new System.Drawing.Point(182, 112);
             this.Numeric3UUCW.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -342,9 +346,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 80);
+            this.label2.Location = new System.Drawing.Point(3, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 27);
+            this.label2.Size = new System.Drawing.Size(103, 28);
             this.label2.TabIndex = 1;
             this.label2.Text = "Średni";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -352,7 +356,7 @@
             // Numeric2UUCW
             // 
             this.Numeric2UUCW.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Numeric2UUCW.Location = new System.Drawing.Point(182, 83);
+            this.Numeric2UUCW.Location = new System.Drawing.Point(182, 84);
             this.Numeric2UUCW.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -371,7 +375,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 27);
+            this.label1.Size = new System.Drawing.Size(103, 28);
             this.label1.TabIndex = 4;
             this.label1.Text = "Prosty";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -396,9 +400,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 107);
+            this.label3.Location = new System.Drawing.Point(3, 109);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 30);
+            this.label3.Size = new System.Drawing.Size(103, 28);
             this.label3.TabIndex = 7;
             this.label3.Text = "Złożony";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -450,7 +454,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(112, 53);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 27);
+            this.label7.Size = new System.Drawing.Size(64, 28);
             this.label7.TabIndex = 11;
             this.label7.Text = "5";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -461,9 +465,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(112, 80);
+            this.label8.Location = new System.Drawing.Point(112, 81);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(64, 27);
+            this.label8.Size = new System.Drawing.Size(64, 28);
             this.label8.TabIndex = 12;
             this.label8.Text = "10";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -474,9 +478,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(112, 107);
+            this.label9.Location = new System.Drawing.Point(112, 109);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 30);
+            this.label9.Size = new System.Drawing.Size(64, 28);
             this.label9.TabIndex = 13;
             this.label9.Text = "15";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -489,7 +493,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(288, 53);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(185, 27);
+            this.label10.Size = new System.Drawing.Size(185, 28);
             this.label10.TabIndex = 14;
             this.label10.Text = "od 1 do 3";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -500,9 +504,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(288, 80);
+            this.label11.Location = new System.Drawing.Point(288, 81);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(185, 27);
+            this.label11.Size = new System.Drawing.Size(185, 28);
             this.label11.TabIndex = 15;
             this.label11.Text = "od 4 do 7";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -513,9 +517,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(288, 107);
+            this.label12.Location = new System.Drawing.Point(288, 109);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(185, 30);
+            this.label12.Size = new System.Drawing.Size(185, 28);
             this.label12.TabIndex = 16;
             this.label12.Text = "8 i więcej ";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
