@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.PasekMenu = new System.Windows.Forms.MenuStrip();
-            this.plikToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuPlik = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuNowyProj = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuOtworzProj = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuZapiszProj = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuZapiszJakoProj = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuWyjscie = new System.Windows.Forms.ToolStripMenuItem();
-            this.raportyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.opcjeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kalibracjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.przelicznikiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.oProgramieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dokumentacjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.oProgramieToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuRaporty = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuUstawienia = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuKalibracja = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuPrzeliczniki = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuPomoc = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuDokumentacja = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuOProgramie = new System.Windows.Forms.ToolStripMenuItem();
             this.DaneProjektu = new System.Windows.Forms.GroupBox();
             this.LabelDataRozp = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -55,110 +55,114 @@
             // PasekMenu
             // 
             this.PasekMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.plikToolStripMenuItem,
-            this.raportyToolStripMenuItem,
-            this.opcjeToolStripMenuItem,
-            this.oProgramieToolStripMenuItem});
+            this.ToolStripMenuPlik,
+            this.ToolStripMenuRaporty,
+            this.ToolStripMenuUstawienia,
+            this.ToolStripMenuPomoc});
             this.PasekMenu.Location = new System.Drawing.Point(0, 0);
             this.PasekMenu.Name = "PasekMenu";
             this.PasekMenu.Size = new System.Drawing.Size(1321, 24);
             this.PasekMenu.TabIndex = 0;
             this.PasekMenu.Text = "Pasek Menu";
             // 
-            // plikToolStripMenuItem
+            // ToolStripMenuPlik
             // 
-            this.plikToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuPlik.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuNowyProj,
             this.ToolStripMenuOtworzProj,
             this.ToolStripMenuZapiszProj,
             this.ToolStripMenuZapiszJakoProj,
             this.ToolStripMenuWyjscie});
-            this.plikToolStripMenuItem.Name = "plikToolStripMenuItem";
-            this.plikToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
-            this.plikToolStripMenuItem.Text = "&Plik";
+            this.ToolStripMenuPlik.Name = "ToolStripMenuPlik";
+            this.ToolStripMenuPlik.Size = new System.Drawing.Size(38, 20);
+            this.ToolStripMenuPlik.Text = "&Plik";
             // 
             // ToolStripMenuNowyProj
             // 
             this.ToolStripMenuNowyProj.Name = "ToolStripMenuNowyProj";
-            this.ToolStripMenuNowyProj.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuNowyProj.Size = new System.Drawing.Size(172, 22);
             this.ToolStripMenuNowyProj.Text = "&Nowy projekt";
             this.ToolStripMenuNowyProj.Click += new System.EventHandler(this.ToolStripMenuNowyProj_Click);
             // 
             // ToolStripMenuOtworzProj
             // 
             this.ToolStripMenuOtworzProj.Name = "ToolStripMenuOtworzProj";
-            this.ToolStripMenuOtworzProj.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuOtworzProj.Size = new System.Drawing.Size(172, 22);
             this.ToolStripMenuOtworzProj.Text = "&Otwórz projekt";
             this.ToolStripMenuOtworzProj.Click += new System.EventHandler(this.ToolStripMenuOtworzProj_Click);
             // 
             // ToolStripMenuZapiszProj
             // 
             this.ToolStripMenuZapiszProj.Name = "ToolStripMenuZapiszProj";
-            this.ToolStripMenuZapiszProj.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuZapiszProj.Size = new System.Drawing.Size(172, 22);
             this.ToolStripMenuZapiszProj.Text = "&Zapisz projekt";
             this.ToolStripMenuZapiszProj.Click += new System.EventHandler(this.ToolStripMenuZapiszProj_Click);
             // 
             // ToolStripMenuZapiszJakoProj
             // 
             this.ToolStripMenuZapiszJakoProj.Name = "ToolStripMenuZapiszJakoProj";
-            this.ToolStripMenuZapiszJakoProj.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuZapiszJakoProj.Size = new System.Drawing.Size(172, 22);
             this.ToolStripMenuZapiszJakoProj.Text = "Z&apisz projekt jako";
             this.ToolStripMenuZapiszJakoProj.Click += new System.EventHandler(this.ToolStripMenuZapiszJakoProj_Click);
             // 
             // ToolStripMenuWyjscie
             // 
             this.ToolStripMenuWyjscie.Name = "ToolStripMenuWyjscie";
-            this.ToolStripMenuWyjscie.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuWyjscie.Size = new System.Drawing.Size(172, 22);
             this.ToolStripMenuWyjscie.Text = "&Wyjście";
             this.ToolStripMenuWyjscie.Click += new System.EventHandler(this.ToolStripMenuWyjscie_Click);
             // 
-            // raportyToolStripMenuItem
+            // ToolStripMenuRaporty
             // 
-            this.raportyToolStripMenuItem.Name = "raportyToolStripMenuItem";
-            this.raportyToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
-            this.raportyToolStripMenuItem.Text = "&Raporty";
+            this.ToolStripMenuRaporty.Name = "ToolStripMenuRaporty";
+            this.ToolStripMenuRaporty.Size = new System.Drawing.Size(60, 20);
+            this.ToolStripMenuRaporty.Text = "&Raporty";
             // 
-            // opcjeToolStripMenuItem
+            // ToolStripMenuUstawienia
             // 
-            this.opcjeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.kalibracjaToolStripMenuItem,
-            this.przelicznikiToolStripMenuItem});
-            this.opcjeToolStripMenuItem.Name = "opcjeToolStripMenuItem";
-            this.opcjeToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
-            this.opcjeToolStripMenuItem.Text = "&Ustawienia";
+            this.ToolStripMenuUstawienia.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuKalibracja,
+            this.ToolStripMenuPrzeliczniki});
+            this.ToolStripMenuUstawienia.Name = "ToolStripMenuUstawienia";
+            this.ToolStripMenuUstawienia.Size = new System.Drawing.Size(76, 20);
+            this.ToolStripMenuUstawienia.Text = "&Ustawienia";
             // 
-            // kalibracjaToolStripMenuItem
+            // ToolStripMenuKalibracja
             // 
-            this.kalibracjaToolStripMenuItem.Name = "kalibracjaToolStripMenuItem";
-            this.kalibracjaToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
-            this.kalibracjaToolStripMenuItem.Text = "&Kalibracja";
+            this.ToolStripMenuKalibracja.Name = "ToolStripMenuKalibracja";
+            this.ToolStripMenuKalibracja.Size = new System.Drawing.Size(132, 22);
+            this.ToolStripMenuKalibracja.Text = "&Kalibracja";
+            this.ToolStripMenuKalibracja.Click += new System.EventHandler(this.ToolStripMenuKalibracja_Click);
             // 
-            // przelicznikiToolStripMenuItem
+            // ToolStripMenuPrzeliczniki
             // 
-            this.przelicznikiToolStripMenuItem.Name = "przelicznikiToolStripMenuItem";
-            this.przelicznikiToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
-            this.przelicznikiToolStripMenuItem.Text = "&Przeliczniki";
+            this.ToolStripMenuPrzeliczniki.Name = "ToolStripMenuPrzeliczniki";
+            this.ToolStripMenuPrzeliczniki.Size = new System.Drawing.Size(132, 22);
+            this.ToolStripMenuPrzeliczniki.Text = "&Przeliczniki";
+            this.ToolStripMenuPrzeliczniki.Click += new System.EventHandler(this.ToolStripMenuPrzeliczniki_Click);
             // 
-            // oProgramieToolStripMenuItem
+            // ToolStripMenuPomoc
             // 
-            this.oProgramieToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dokumentacjaToolStripMenuItem,
-            this.oProgramieToolStripMenuItem1});
-            this.oProgramieToolStripMenuItem.Name = "oProgramieToolStripMenuItem";
-            this.oProgramieToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.oProgramieToolStripMenuItem.Text = "Pomo&c";
+            this.ToolStripMenuPomoc.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuDokumentacja,
+            this.ToolStripMenuOProgramie});
+            this.ToolStripMenuPomoc.Name = "ToolStripMenuPomoc";
+            this.ToolStripMenuPomoc.Size = new System.Drawing.Size(57, 20);
+            this.ToolStripMenuPomoc.Text = "Pomo&c";
             // 
-            // dokumentacjaToolStripMenuItem
+            // ToolStripMenuDokumentacja
             // 
-            this.dokumentacjaToolStripMenuItem.Name = "dokumentacjaToolStripMenuItem";
-            this.dokumentacjaToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
-            this.dokumentacjaToolStripMenuItem.Text = "&Dokumentacja";
+            this.ToolStripMenuDokumentacja.Name = "ToolStripMenuDokumentacja";
+            this.ToolStripMenuDokumentacja.Size = new System.Drawing.Size(151, 22);
+            this.ToolStripMenuDokumentacja.Text = "&Dokumentacja";
+            this.ToolStripMenuDokumentacja.Click += new System.EventHandler(this.ToolStripMenuDokumentacja_Click);
             // 
-            // oProgramieToolStripMenuItem1
+            // ToolStripMenuOProgramie
             // 
-            this.oProgramieToolStripMenuItem1.Name = "oProgramieToolStripMenuItem1";
-            this.oProgramieToolStripMenuItem1.Size = new System.Drawing.Size(151, 22);
-            this.oProgramieToolStripMenuItem1.Text = "&O programie";
+            this.ToolStripMenuOProgramie.Name = "ToolStripMenuOProgramie";
+            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(151, 22);
+            this.ToolStripMenuOProgramie.Text = "&O programie";
+            this.ToolStripMenuOProgramie.Click += new System.EventHandler(this.ToolStripMenuOProgramie_Click);
             // 
             // DaneProjektu
             // 
@@ -168,7 +172,7 @@
             this.DaneProjektu.Controls.Add(this.LabelNazwaProjektu);
             this.DaneProjektu.Controls.Add(this.TextBoxNazwaProjektu);
             this.DaneProjektu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.DaneProjektu.Location = new System.Drawing.Point(22, 42);
+            this.DaneProjektu.Location = new System.Drawing.Point(12, 39);
             this.DaneProjektu.Name = "DaneProjektu";
             this.DaneProjektu.Size = new System.Drawing.Size(503, 150);
             this.DaneProjektu.TabIndex = 1;
@@ -238,19 +242,19 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip PasekMenu;
-        private System.Windows.Forms.ToolStripMenuItem plikToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuPlik;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuNowyProj;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuZapiszProj;
-        private System.Windows.Forms.ToolStripMenuItem opcjeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem oProgramieToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuUstawienia;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuPomoc;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuWyjscie;
-        private System.Windows.Forms.ToolStripMenuItem dokumentacjaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem oProgramieToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuDokumentacja;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuOProgramie;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuOtworzProj;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuZapiszJakoProj;
-        private System.Windows.Forms.ToolStripMenuItem raportyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kalibracjaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem przelicznikiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuRaporty;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuKalibracja;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuPrzeliczniki;
         private System.Windows.Forms.GroupBox DaneProjektu;
         private System.Windows.Forms.Label LabelNazwaProjektu;
         private System.Windows.Forms.TextBox TextBoxNazwaProjektu;
