@@ -124,9 +124,24 @@ namespace Aplikacja
             
         }
 
-        private void ButtonSD_Click(object sender, EventArgs e)
+        private void ButtonCzSk_Click(object sender, EventArgs e)
         {
             using (OknoCzynnikiSkali form = new OknoCzynnikiSkali())
+            {
+                DialogResult dr = form.ShowDialog();
+
+
+                if (dr == DialogResult.OK)
+                {
+
+                    MessageBox.Show("Czynniki skali wprowadzone.", "Sukces");
+                }
+            }
+        }
+
+        private void ButtonMnPr_Click(object sender, EventArgs e)
+        {
+            using (OknoMnoznikiPracochlonnosci form = new OknoMnoznikiPracochlonnosci())
             {
                 DialogResult dr = form.ShowDialog();
 

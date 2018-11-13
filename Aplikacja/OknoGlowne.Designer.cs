@@ -67,11 +67,11 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.ButtonTCF = new System.Windows.Forms.Button();
+            this.ButtonCZT = new System.Windows.Forms.Button();
             this.ButtonOblicz = new System.Windows.Forms.Button();
-            this.ButtonEF = new System.Windows.Forms.Button();
-            this.ButtonCD = new System.Windows.Forms.Button();
-            this.ButtonSD = new System.Windows.Forms.Button();
+            this.ButtonCzSr = new System.Windows.Forms.Button();
+            this.ButtonMnPr = new System.Windows.Forms.Button();
+            this.ButtonCzSk = new System.Windows.Forms.Button();
             this.GroupBoxUAW = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.Numeric3UAW = new System.Windows.Forms.NumericUpDown();
@@ -524,15 +524,15 @@
             this.label12.Text = "8 i więcej ";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ButtonTCF
+            // ButtonCZT
             // 
-            this.ButtonTCF.Location = new System.Drawing.Point(33, 30);
-            this.ButtonTCF.Name = "ButtonTCF";
-            this.ButtonTCF.Size = new System.Drawing.Size(173, 44);
-            this.ButtonTCF.TabIndex = 2;
-            this.ButtonTCF.Text = "Czynniki złożoności technicznej";
-            this.ToolTip.SetToolTip(this.ButtonTCF, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
-            this.ButtonTCF.UseVisualStyleBackColor = true;
+            this.ButtonCZT.Location = new System.Drawing.Point(33, 30);
+            this.ButtonCZT.Name = "ButtonCZT";
+            this.ButtonCZT.Size = new System.Drawing.Size(173, 44);
+            this.ButtonCZT.TabIndex = 2;
+            this.ButtonCZT.Text = "Czynniki złożoności technicznej";
+            this.ToolTip.SetToolTip(this.ButtonCZT, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.ButtonCZT.UseVisualStyleBackColor = true;
             // 
             // ButtonOblicz
             // 
@@ -545,36 +545,37 @@
             this.ButtonOblicz.UseVisualStyleBackColor = true;
             this.ButtonOblicz.Click += new System.EventHandler(this.ButtonOblicz_Click);
             // 
-            // ButtonEF
+            // ButtonCzSr
             // 
-            this.ButtonEF.Location = new System.Drawing.Point(262, 30);
-            this.ButtonEF.Name = "ButtonEF";
-            this.ButtonEF.Size = new System.Drawing.Size(173, 44);
-            this.ButtonEF.TabIndex = 3;
-            this.ButtonEF.Text = "Czynniki środowiskowe";
-            this.ToolTip.SetToolTip(this.ButtonEF, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
-            this.ButtonEF.UseVisualStyleBackColor = true;
+            this.ButtonCzSr.Location = new System.Drawing.Point(262, 30);
+            this.ButtonCzSr.Name = "ButtonCzSr";
+            this.ButtonCzSr.Size = new System.Drawing.Size(173, 44);
+            this.ButtonCzSr.TabIndex = 3;
+            this.ButtonCzSr.Text = "Czynniki środowiskowe";
+            this.ToolTip.SetToolTip(this.ButtonCzSr, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.ButtonCzSr.UseVisualStyleBackColor = true;
             // 
-            // ButtonCD
+            // ButtonMnPr
             // 
-            this.ButtonCD.Location = new System.Drawing.Point(262, 30);
-            this.ButtonCD.Name = "ButtonCD";
-            this.ButtonCD.Size = new System.Drawing.Size(173, 44);
-            this.ButtonCD.TabIndex = 3;
-            this.ButtonCD.Text = "Mnożniki pracochłonności";
-            this.ToolTip.SetToolTip(this.ButtonCD, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
-            this.ButtonCD.UseVisualStyleBackColor = true;
+            this.ButtonMnPr.Location = new System.Drawing.Point(262, 30);
+            this.ButtonMnPr.Name = "ButtonMnPr";
+            this.ButtonMnPr.Size = new System.Drawing.Size(173, 44);
+            this.ButtonMnPr.TabIndex = 3;
+            this.ButtonMnPr.Text = "Mnożniki pracochłonności";
+            this.ToolTip.SetToolTip(this.ButtonMnPr, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.ButtonMnPr.UseVisualStyleBackColor = true;
+            this.ButtonMnPr.Click += new System.EventHandler(this.ButtonMnPr_Click);
             // 
-            // ButtonSD
+            // ButtonCzSk
             // 
-            this.ButtonSD.Location = new System.Drawing.Point(33, 30);
-            this.ButtonSD.Name = "ButtonSD";
-            this.ButtonSD.Size = new System.Drawing.Size(173, 44);
-            this.ButtonSD.TabIndex = 2;
-            this.ButtonSD.Text = "Czynniki skali";
-            this.ToolTip.SetToolTip(this.ButtonSD, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
-            this.ButtonSD.UseVisualStyleBackColor = true;
-            this.ButtonSD.Click += new System.EventHandler(this.ButtonSD_Click);
+            this.ButtonCzSk.Location = new System.Drawing.Point(33, 30);
+            this.ButtonCzSk.Name = "ButtonCzSk";
+            this.ButtonCzSk.Size = new System.Drawing.Size(173, 44);
+            this.ButtonCzSk.TabIndex = 2;
+            this.ButtonCzSk.Text = "Czynniki skali";
+            this.ToolTip.SetToolTip(this.ButtonCzSk, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.ButtonCzSk.UseVisualStyleBackColor = true;
+            this.ButtonCzSk.Click += new System.EventHandler(this.ButtonCzSk_Click);
             // 
             // GroupBoxUAW
             // 
@@ -819,8 +820,8 @@
             // 
             // GroupBoxModyfUCP
             // 
-            this.GroupBoxModyfUCP.Controls.Add(this.ButtonEF);
-            this.GroupBoxModyfUCP.Controls.Add(this.ButtonTCF);
+            this.GroupBoxModyfUCP.Controls.Add(this.ButtonCzSr);
+            this.GroupBoxModyfUCP.Controls.Add(this.ButtonCZT);
             this.GroupBoxModyfUCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxModyfUCP.Location = new System.Drawing.Point(12, 547);
             this.GroupBoxModyfUCP.Name = "GroupBoxModyfUCP";
@@ -842,8 +843,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.ButtonCD);
-            this.groupBox1.Controls.Add(this.ButtonSD);
+            this.groupBox1.Controls.Add(this.ButtonMnPr);
+            this.groupBox1.Controls.Add(this.ButtonCzSk);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox1.Location = new System.Drawing.Point(12, 640);
             this.groupBox1.Name = "groupBox1";
@@ -949,13 +950,13 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.GroupBox GroupBoxModyfUCP;
-        private System.Windows.Forms.Button ButtonEF;
-        private System.Windows.Forms.Button ButtonTCF;
+        private System.Windows.Forms.Button ButtonCzSr;
+        private System.Windows.Forms.Button ButtonCZT;
         private System.Windows.Forms.GroupBox GroupBoxWyniki;
         private System.Windows.Forms.Button ButtonOblicz;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button ButtonCD;
-        private System.Windows.Forms.Button ButtonSD;
+        private System.Windows.Forms.Button ButtonMnPr;
+        private System.Windows.Forms.Button ButtonCzSk;
     }
 }
 

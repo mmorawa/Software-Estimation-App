@@ -72,9 +72,9 @@
             // 
             this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 355F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 136F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 349F));
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
@@ -105,7 +105,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 57);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 57);
+            this.label2.Size = new System.Drawing.Size(130, 57);
             this.label2.TabIndex = 7;
             this.label2.Text = "Elastyczność wytwarzania oprogramowania";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -118,7 +118,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 114);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 57);
+            this.label3.Size = new System.Drawing.Size(130, 57);
             this.label3.TabIndex = 8;
             this.label3.Text = "Zarządzanie ryzykiem";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -131,7 +131,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(3, 171);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 57);
+            this.label4.Size = new System.Drawing.Size(130, 57);
             this.label4.TabIndex = 9;
             this.label4.Text = "Spójność zespołu";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -144,7 +144,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(3, 228);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 61);
+            this.label5.Size = new System.Drawing.Size(130, 61);
             this.label5.TabIndex = 10;
             this.label5.Text = "Dojrzałość procesu";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -157,7 +157,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 57);
+            this.label1.Size = new System.Drawing.Size(130, 57);
             this.label1.TabIndex = 6;
             this.label1.Text = "Typowość projektu";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -174,10 +174,10 @@
             "Wysoki",
             "Bardzo wysoki",
             "Ekstra wysoki"});
-            this.ComboBoxCzynnSk1.Location = new System.Drawing.Point(119, 17);
+            this.ComboBoxCzynnSk1.Location = new System.Drawing.Point(139, 17);
             this.ComboBoxCzynnSk1.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
             this.ComboBoxCzynnSk1.Name = "ComboBoxCzynnSk1";
-            this.ComboBoxCzynnSk1.Size = new System.Drawing.Size(125, 24);
+            this.ComboBoxCzynnSk1.Size = new System.Drawing.Size(111, 24);
             this.ComboBoxCzynnSk1.TabIndex = 0;
             // 
             // ComboBoxCzynnSk2
@@ -192,10 +192,10 @@
             "Wysoki",
             "Bardzo wysoki",
             "Ekstra wysoki"});
-            this.ComboBoxCzynnSk2.Location = new System.Drawing.Point(119, 71);
+            this.ComboBoxCzynnSk2.Location = new System.Drawing.Point(139, 71);
             this.ComboBoxCzynnSk2.Margin = new System.Windows.Forms.Padding(3, 14, 3, 3);
             this.ComboBoxCzynnSk2.Name = "ComboBoxCzynnSk2";
-            this.ComboBoxCzynnSk2.Size = new System.Drawing.Size(125, 24);
+            this.ComboBoxCzynnSk2.Size = new System.Drawing.Size(111, 24);
             this.ComboBoxCzynnSk2.TabIndex = 11;
             // 
             // ComboBoxCzynnSk3
@@ -210,10 +210,10 @@
             "Wysoki",
             "Bardzo wysoki",
             "Ekstra wysoki"});
-            this.ComboBoxCzynnSk3.Location = new System.Drawing.Point(119, 131);
+            this.ComboBoxCzynnSk3.Location = new System.Drawing.Point(139, 131);
             this.ComboBoxCzynnSk3.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
             this.ComboBoxCzynnSk3.Name = "ComboBoxCzynnSk3";
-            this.ComboBoxCzynnSk3.Size = new System.Drawing.Size(125, 24);
+            this.ComboBoxCzynnSk3.Size = new System.Drawing.Size(111, 24);
             this.ComboBoxCzynnSk3.TabIndex = 12;
             // 
             // ComboBoxCzynnSk4
@@ -228,10 +228,10 @@
             "Wysoki",
             "Bardzo wysoki",
             "Ekstra wysoki"});
-            this.ComboBoxCzynnSk4.Location = new System.Drawing.Point(119, 188);
+            this.ComboBoxCzynnSk4.Location = new System.Drawing.Point(139, 188);
             this.ComboBoxCzynnSk4.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
             this.ComboBoxCzynnSk4.Name = "ComboBoxCzynnSk4";
-            this.ComboBoxCzynnSk4.Size = new System.Drawing.Size(125, 24);
+            this.ComboBoxCzynnSk4.Size = new System.Drawing.Size(111, 24);
             this.ComboBoxCzynnSk4.TabIndex = 13;
             // 
             // ComboBoxCzynnSk5
@@ -246,10 +246,10 @@
             "Wysoki",
             "Bardzo wysoki",
             "Ekstra wysoki"});
-            this.ComboBoxCzynnSk5.Location = new System.Drawing.Point(119, 246);
+            this.ComboBoxCzynnSk5.Location = new System.Drawing.Point(139, 246);
             this.ComboBoxCzynnSk5.Margin = new System.Windows.Forms.Padding(3, 18, 3, 3);
             this.ComboBoxCzynnSk5.Name = "ComboBoxCzynnSk5";
-            this.ComboBoxCzynnSk5.Size = new System.Drawing.Size(125, 24);
+            this.ComboBoxCzynnSk5.Size = new System.Drawing.Size(111, 24);
             this.ComboBoxCzynnSk5.TabIndex = 14;
             // 
             // ButtonAnuluj
