@@ -39,11 +39,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.ComboBoxCzynnSk1 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMnPrNiezaw = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMnPrBaza = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMnPrDoku = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMnPrPonow = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMnPrZloz = new System.Windows.Forms.ComboBox();
             this.TabPagePersonel = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
@@ -51,27 +51,27 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMnPrProgr = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMnPrZnajJ = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMnPrAnal = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMnPrZnajA = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMnPrZesp = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMnPrZnajP = new System.Windows.Forms.ComboBox();
             this.TabPagePlatforma = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox17 = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMnPrOgrCz = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox18 = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMnPrOgrP = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.comboBox21 = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMnPrZmP = new System.Windows.Forms.ComboBox();
             this.TabPageProjekt = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox19 = new System.Windows.Forms.ComboBox();
-            this.comboBox20 = new System.Windows.Forms.ComboBox();
-            this.comboBox22 = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMnPrNarzP = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMnPrLokal = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMnPrHarm = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.ButtonOk = new System.Windows.Forms.Button();
@@ -145,11 +145,11 @@
             this.tableLayoutPanel2.Controls.Add(this.label8, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.ComboBoxCzynnSk1, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox1, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox4, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox3, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox2, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.ComboBoxMnPrNiezaw, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.ComboBoxMnPrBaza, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.ComboBoxMnPrDoku, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.ComboBoxMnPrPonow, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.ComboBoxMnPrZloz, 1, 2);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(21, 21);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
@@ -226,95 +226,90 @@
             this.label4.Text = "Zakres wymaganej dokumentacji";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ComboBoxCzynnSk1
+            // ComboBoxMnPrNiezaw
             // 
-            this.ComboBoxCzynnSk1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ComboBoxCzynnSk1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ComboBoxCzynnSk1.FormattingEnabled = true;
-            this.ComboBoxCzynnSk1.Items.AddRange(new object[] {
+            this.ComboBoxMnPrNiezaw.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrNiezaw.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxMnPrNiezaw.FormattingEnabled = true;
+            this.ComboBoxMnPrNiezaw.Items.AddRange(new object[] {
+            "Bardzo niski",
+            "Niski",
+            "Nominalny",
+            "Wysoki",
+            "Bardzo wysoki"});
+            this.ComboBoxMnPrNiezaw.Location = new System.Drawing.Point(130, 12);
+            this.ComboBoxMnPrNiezaw.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            this.ComboBoxMnPrNiezaw.Name = "ComboBoxMnPrNiezaw";
+            this.ComboBoxMnPrNiezaw.Size = new System.Drawing.Size(128, 24);
+            this.ComboBoxMnPrNiezaw.TabIndex = 0;
+            // 
+            // ComboBoxMnPrBaza
+            // 
+            this.ComboBoxMnPrBaza.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrBaza.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxMnPrBaza.FormattingEnabled = true;
+            this.ComboBoxMnPrBaza.Items.AddRange(new object[] {
+            "Niski",
+            "Nominalny",
+            "Wysoki",
+            "Bardzo wysoki"});
+            this.ComboBoxMnPrBaza.Location = new System.Drawing.Point(130, 86);
+            this.ComboBoxMnPrBaza.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            this.ComboBoxMnPrBaza.Name = "ComboBoxMnPrBaza";
+            this.ComboBoxMnPrBaza.Size = new System.Drawing.Size(128, 24);
+            this.ComboBoxMnPrBaza.TabIndex = 27;
+            // 
+            // ComboBoxMnPrDoku
+            // 
+            this.ComboBoxMnPrDoku.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrDoku.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxMnPrDoku.FormattingEnabled = true;
+            this.ComboBoxMnPrDoku.Items.AddRange(new object[] {
+            "Bardzo niski",
+            "Niski",
+            "Nominalny",
+            "Wysoki",
+            "Bardzo wysoki"});
+            this.ComboBoxMnPrDoku.Location = new System.Drawing.Point(130, 308);
+            this.ComboBoxMnPrDoku.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            this.ComboBoxMnPrDoku.Name = "ComboBoxMnPrDoku";
+            this.ComboBoxMnPrDoku.Size = new System.Drawing.Size(128, 24);
+            this.ComboBoxMnPrDoku.TabIndex = 30;
+            // 
+            // ComboBoxMnPrPonow
+            // 
+            this.ComboBoxMnPrPonow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrPonow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxMnPrPonow.FormattingEnabled = true;
+            this.ComboBoxMnPrPonow.Items.AddRange(new object[] {
+            "Niski",
+            "Nominalny",
+            "Wysoki",
+            "Bardzo wysoki",
+            "Ekstra wysoki"});
+            this.ComboBoxMnPrPonow.Location = new System.Drawing.Point(130, 234);
+            this.ComboBoxMnPrPonow.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            this.ComboBoxMnPrPonow.Name = "ComboBoxMnPrPonow";
+            this.ComboBoxMnPrPonow.Size = new System.Drawing.Size(128, 24);
+            this.ComboBoxMnPrPonow.TabIndex = 29;
+            // 
+            // ComboBoxMnPrZloz
+            // 
+            this.ComboBoxMnPrZloz.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrZloz.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxMnPrZloz.FormattingEnabled = true;
+            this.ComboBoxMnPrZloz.Items.AddRange(new object[] {
             "Bardzo niski",
             "Niski",
             "Nominalny",
             "Wysoki",
             "Bardzo wysoki",
             "Ekstra wysoki"});
-            this.ComboBoxCzynnSk1.Location = new System.Drawing.Point(130, 12);
-            this.ComboBoxCzynnSk1.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
-            this.ComboBoxCzynnSk1.Name = "ComboBoxCzynnSk1";
-            this.ComboBoxCzynnSk1.Size = new System.Drawing.Size(128, 24);
-            this.ComboBoxCzynnSk1.TabIndex = 0;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Bardzo niski",
-            "Niski",
-            "Nominalny",
-            "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.comboBox1.Location = new System.Drawing.Point(130, 86);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(128, 24);
-            this.comboBox1.TabIndex = 27;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "Bardzo niski",
-            "Niski",
-            "Nominalny",
-            "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.comboBox4.Location = new System.Drawing.Point(130, 308);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(128, 24);
-            this.comboBox4.TabIndex = 30;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Bardzo niski",
-            "Niski",
-            "Nominalny",
-            "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.comboBox3.Location = new System.Drawing.Point(130, 234);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(128, 24);
-            this.comboBox3.TabIndex = 29;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Bardzo niski",
-            "Niski",
-            "Nominalny",
-            "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.comboBox2.Location = new System.Drawing.Point(130, 160);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(128, 24);
-            this.comboBox2.TabIndex = 28;
+            this.ComboBoxMnPrZloz.Location = new System.Drawing.Point(130, 160);
+            this.ComboBoxMnPrZloz.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            this.ComboBoxMnPrZloz.Name = "ComboBoxMnPrZloz";
+            this.ComboBoxMnPrZloz.Size = new System.Drawing.Size(128, 24);
+            this.ComboBoxMnPrZloz.TabIndex = 28;
             // 
             // TabPagePersonel
             // 
@@ -338,13 +333,13 @@
             this.tableLayoutPanel3.Controls.Add(this.label7, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.label10, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.label11, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.comboBox6, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.comboBox8, 1, 5);
+            this.tableLayoutPanel3.Controls.Add(this.ComboBoxMnPrProgr, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.ComboBoxMnPrZnajJ, 1, 5);
             this.tableLayoutPanel3.Controls.Add(this.label16, 0, 3);
-            this.tableLayoutPanel3.Controls.Add(this.comboBox5, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.comboBox11, 1, 3);
-            this.tableLayoutPanel3.Controls.Add(this.comboBox10, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.comboBox15, 1, 4);
+            this.tableLayoutPanel3.Controls.Add(this.ComboBoxMnPrAnal, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.ComboBoxMnPrZnajA, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.ComboBoxMnPrZesp, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.ComboBoxMnPrZnajP, 1, 4);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(21, 23);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 6;
@@ -422,41 +417,39 @@
             this.label11.Text = "Ciągłość zespołu";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox6
+            // ComboBoxMnPrProgr
             // 
-            this.comboBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.ComboBoxMnPrProgr.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrProgr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxMnPrProgr.FormattingEnabled = true;
+            this.ComboBoxMnPrProgr.Items.AddRange(new object[] {
             "Bardzo niski",
             "Niski",
             "Nominalny",
             "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.comboBox6.Location = new System.Drawing.Point(123, 80);
-            this.comboBox6.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(126, 24);
-            this.comboBox6.TabIndex = 32;
+            "Bardzo wysoki"});
+            this.ComboBoxMnPrProgr.Location = new System.Drawing.Point(123, 80);
+            this.ComboBoxMnPrProgr.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            this.ComboBoxMnPrProgr.Name = "ComboBoxMnPrProgr";
+            this.ComboBoxMnPrProgr.Size = new System.Drawing.Size(126, 24);
+            this.ComboBoxMnPrProgr.TabIndex = 32;
             // 
-            // comboBox8
+            // ComboBoxMnPrZnajJ
             // 
-            this.comboBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
+            this.ComboBoxMnPrZnajJ.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrZnajJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxMnPrZnajJ.FormattingEnabled = true;
+            this.ComboBoxMnPrZnajJ.Items.AddRange(new object[] {
             "Bardzo niski",
             "Niski",
             "Nominalny",
             "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.comboBox8.Location = new System.Drawing.Point(123, 352);
-            this.comboBox8.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(126, 24);
-            this.comboBox8.TabIndex = 34;
+            "Bardzo wysoki"});
+            this.ComboBoxMnPrZnajJ.Location = new System.Drawing.Point(123, 352);
+            this.ComboBoxMnPrZnajJ.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            this.ComboBoxMnPrZnajJ.Name = "ComboBoxMnPrZnajJ";
+            this.ComboBoxMnPrZnajJ.Size = new System.Drawing.Size(126, 24);
+            this.ComboBoxMnPrZnajJ.TabIndex = 34;
             // 
             // label16
             // 
@@ -471,77 +464,73 @@
             this.label16.Text = "Znajomość aplikacji";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox5
+            // ComboBoxMnPrAnal
             // 
-            this.comboBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.ComboBoxMnPrAnal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrAnal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxMnPrAnal.FormattingEnabled = true;
+            this.ComboBoxMnPrAnal.Items.AddRange(new object[] {
             "Bardzo niski",
             "Niski",
             "Nominalny",
             "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.comboBox5.Location = new System.Drawing.Point(123, 12);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(126, 24);
-            this.comboBox5.TabIndex = 31;
+            "Bardzo wysoki"});
+            this.ComboBoxMnPrAnal.Location = new System.Drawing.Point(123, 12);
+            this.ComboBoxMnPrAnal.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            this.ComboBoxMnPrAnal.Name = "ComboBoxMnPrAnal";
+            this.ComboBoxMnPrAnal.Size = new System.Drawing.Size(126, 24);
+            this.ComboBoxMnPrAnal.TabIndex = 31;
             // 
-            // comboBox11
+            // ComboBoxMnPrZnajA
             // 
-            this.comboBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
+            this.ComboBoxMnPrZnajA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrZnajA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxMnPrZnajA.FormattingEnabled = true;
+            this.ComboBoxMnPrZnajA.Items.AddRange(new object[] {
             "Bardzo niski",
             "Niski",
             "Nominalny",
             "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.comboBox11.Location = new System.Drawing.Point(123, 216);
-            this.comboBox11.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(126, 24);
-            this.comboBox11.TabIndex = 37;
+            "Bardzo wysoki"});
+            this.ComboBoxMnPrZnajA.Location = new System.Drawing.Point(123, 216);
+            this.ComboBoxMnPrZnajA.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            this.ComboBoxMnPrZnajA.Name = "ComboBoxMnPrZnajA";
+            this.ComboBoxMnPrZnajA.Size = new System.Drawing.Size(126, 24);
+            this.ComboBoxMnPrZnajA.TabIndex = 37;
             // 
-            // comboBox10
+            // ComboBoxMnPrZesp
             // 
-            this.comboBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
+            this.ComboBoxMnPrZesp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrZesp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxMnPrZesp.FormattingEnabled = true;
+            this.ComboBoxMnPrZesp.Items.AddRange(new object[] {
             "Bardzo niski",
             "Niski",
             "Nominalny",
             "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.comboBox10.Location = new System.Drawing.Point(123, 148);
-            this.comboBox10.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(126, 24);
-            this.comboBox10.TabIndex = 36;
+            "Bardzo wysoki"});
+            this.ComboBoxMnPrZesp.Location = new System.Drawing.Point(123, 148);
+            this.ComboBoxMnPrZesp.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            this.ComboBoxMnPrZesp.Name = "ComboBoxMnPrZesp";
+            this.ComboBoxMnPrZesp.Size = new System.Drawing.Size(126, 24);
+            this.ComboBoxMnPrZesp.TabIndex = 36;
             // 
-            // comboBox15
+            // ComboBoxMnPrZnajP
             // 
-            this.comboBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Items.AddRange(new object[] {
+            this.ComboBoxMnPrZnajP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrZnajP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxMnPrZnajP.FormattingEnabled = true;
+            this.ComboBoxMnPrZnajP.Items.AddRange(new object[] {
             "Bardzo niski",
             "Niski",
             "Nominalny",
             "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.comboBox15.Location = new System.Drawing.Point(123, 284);
-            this.comboBox15.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(126, 24);
-            this.comboBox15.TabIndex = 41;
+            "Bardzo wysoki"});
+            this.ComboBoxMnPrZnajP.Location = new System.Drawing.Point(123, 284);
+            this.ComboBoxMnPrZnajP.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            this.ComboBoxMnPrZnajP.Name = "ComboBoxMnPrZnajP";
+            this.ComboBoxMnPrZnajP.Size = new System.Drawing.Size(126, 24);
+            this.ComboBoxMnPrZnajP.TabIndex = 41;
             // 
             // TabPagePlatforma
             // 
@@ -560,12 +549,12 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.68627F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.30065F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.01307F));
-            this.tableLayoutPanel4.Controls.Add(this.comboBox17, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.ComboBoxMnPrOgrCz, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.label13, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.label9, 0, 2);
-            this.tableLayoutPanel4.Controls.Add(this.comboBox18, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.ComboBoxMnPrOgrP, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.label14, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.comboBox21, 1, 2);
+            this.tableLayoutPanel4.Controls.Add(this.ComboBoxMnPrZmP, 1, 2);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(23, 23);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 3;
@@ -577,23 +566,21 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(765, 216);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
-            // comboBox17
+            // ComboBoxMnPrOgrCz
             // 
-            this.comboBox17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.Items.AddRange(new object[] {
-            "Bardzo niski",
-            "Niski",
+            this.ComboBoxMnPrOgrCz.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrOgrCz.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxMnPrOgrCz.FormattingEnabled = true;
+            this.ComboBoxMnPrOgrCz.Items.AddRange(new object[] {
             "Nominalny",
             "Wysoki",
             "Bardzo wysoki",
             "Ekstra wysoki"});
-            this.comboBox17.Location = new System.Drawing.Point(122, 12);
-            this.comboBox17.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
-            this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(133, 24);
-            this.comboBox17.TabIndex = 0;
+            this.ComboBoxMnPrOgrCz.Location = new System.Drawing.Point(122, 12);
+            this.ComboBoxMnPrOgrCz.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            this.ComboBoxMnPrOgrCz.Name = "ComboBoxMnPrOgrCz";
+            this.ComboBoxMnPrOgrCz.Size = new System.Drawing.Size(133, 24);
+            this.ComboBoxMnPrOgrCz.TabIndex = 0;
             // 
             // label13
             // 
@@ -621,23 +608,21 @@
             this.label9.Text = "Zmienność platformy";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox18
+            // ComboBoxMnPrOgrP
             // 
-            this.comboBox18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.Items.AddRange(new object[] {
-            "Bardzo niski",
-            "Niski",
+            this.ComboBoxMnPrOgrP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrOgrP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxMnPrOgrP.FormattingEnabled = true;
+            this.ComboBoxMnPrOgrP.Items.AddRange(new object[] {
             "Nominalny",
             "Wysoki",
             "Bardzo wysoki",
             "Ekstra wysoki"});
-            this.comboBox18.Location = new System.Drawing.Point(122, 84);
-            this.comboBox18.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
-            this.comboBox18.Name = "comboBox18";
-            this.comboBox18.Size = new System.Drawing.Size(133, 24);
-            this.comboBox18.TabIndex = 27;
+            this.ComboBoxMnPrOgrP.Location = new System.Drawing.Point(122, 84);
+            this.ComboBoxMnPrOgrP.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            this.ComboBoxMnPrOgrP.Name = "ComboBoxMnPrOgrP";
+            this.ComboBoxMnPrOgrP.Size = new System.Drawing.Size(133, 24);
+            this.ComboBoxMnPrOgrP.TabIndex = 27;
             // 
             // label14
             // 
@@ -652,23 +637,21 @@
             this.label14.Text = "Ograniczenia czasu wykonania";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox21
+            // ComboBoxMnPrZmP
             // 
-            this.comboBox21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Items.AddRange(new object[] {
-            "Bardzo niski",
+            this.ComboBoxMnPrZmP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrZmP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxMnPrZmP.FormattingEnabled = true;
+            this.ComboBoxMnPrZmP.Items.AddRange(new object[] {
             "Niski",
             "Nominalny",
             "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.comboBox21.Location = new System.Drawing.Point(122, 156);
-            this.comboBox21.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
-            this.comboBox21.Name = "comboBox21";
-            this.comboBox21.Size = new System.Drawing.Size(133, 24);
-            this.comboBox21.TabIndex = 28;
+            "Bardzo wysoki"});
+            this.ComboBoxMnPrZmP.Location = new System.Drawing.Point(122, 156);
+            this.ComboBoxMnPrZmP.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            this.ComboBoxMnPrZmP.Name = "ComboBoxMnPrZmP";
+            this.ComboBoxMnPrZmP.Size = new System.Drawing.Size(133, 24);
+            this.ComboBoxMnPrZmP.TabIndex = 28;
             // 
             // TabPageProjekt
             // 
@@ -687,9 +670,9 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.21569F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.26144F));
             this.tableLayoutPanel5.Controls.Add(this.label1, 0, 2);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox19, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox20, 1, 1);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox22, 1, 2);
+            this.tableLayoutPanel5.Controls.Add(this.ComboBoxMnPrNarzP, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.ComboBoxMnPrLokal, 1, 1);
+            this.tableLayoutPanel5.Controls.Add(this.ComboBoxMnPrHarm, 1, 2);
             this.tableLayoutPanel5.Controls.Add(this.label15, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel5.Location = new System.Drawing.Point(23, 23);
@@ -714,63 +697,61 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(151, 67);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Wymagany harmonogram programowania";
+            this.label1.Text = "Ograniczenia nałożone na harmonogram";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox19
+            // ComboBoxMnPrNarzP
             // 
-            this.comboBox19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Items.AddRange(new object[] {
+            this.ComboBoxMnPrNarzP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrNarzP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxMnPrNarzP.FormattingEnabled = true;
+            this.ComboBoxMnPrNarzP.Items.AddRange(new object[] {
+            "Bardzo niski",
+            "Niski",
+            "Nominalny",
+            "Wysoki",
+            "Bardzo wysoki"});
+            this.ComboBoxMnPrNarzP.Location = new System.Drawing.Point(160, 12);
+            this.ComboBoxMnPrNarzP.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            this.ComboBoxMnPrNarzP.Name = "ComboBoxMnPrNarzP";
+            this.ComboBoxMnPrNarzP.Size = new System.Drawing.Size(141, 24);
+            this.ComboBoxMnPrNarzP.TabIndex = 0;
+            this.ToolTip.SetToolTip(this.ComboBoxMnPrNarzP, "Niski 15 percentyl\r\nWysoki 50 percentyl");
+            // 
+            // ComboBoxMnPrLokal
+            // 
+            this.ComboBoxMnPrLokal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrLokal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxMnPrLokal.FormattingEnabled = true;
+            this.ComboBoxMnPrLokal.Items.AddRange(new object[] {
             "Bardzo niski",
             "Niski",
             "Nominalny",
             "Wysoki",
             "Bardzo wysoki",
             "Ekstra wysoki"});
-            this.comboBox19.Location = new System.Drawing.Point(160, 12);
-            this.comboBox19.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
-            this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(141, 24);
-            this.comboBox19.TabIndex = 0;
-            this.ToolTip.SetToolTip(this.comboBox19, "Niski 15 percentyl\r\nWysoki 50 percentyl");
+            this.ComboBoxMnPrLokal.Location = new System.Drawing.Point(160, 79);
+            this.ComboBoxMnPrLokal.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            this.ComboBoxMnPrLokal.Name = "ComboBoxMnPrLokal";
+            this.ComboBoxMnPrLokal.Size = new System.Drawing.Size(141, 24);
+            this.ComboBoxMnPrLokal.TabIndex = 27;
             // 
-            // comboBox20
+            // ComboBoxMnPrHarm
             // 
-            this.comboBox20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Items.AddRange(new object[] {
+            this.ComboBoxMnPrHarm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrHarm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxMnPrHarm.FormattingEnabled = true;
+            this.ComboBoxMnPrHarm.Items.AddRange(new object[] {
             "Bardzo niski",
             "Niski",
             "Nominalny",
             "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.comboBox20.Location = new System.Drawing.Point(160, 79);
-            this.comboBox20.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
-            this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(141, 24);
-            this.comboBox20.TabIndex = 27;
-            // 
-            // comboBox22
-            // 
-            this.comboBox22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox22.FormattingEnabled = true;
-            this.comboBox22.Items.AddRange(new object[] {
-            "Bardzo niski",
-            "Niski",
-            "Nominalny",
-            "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.comboBox22.Location = new System.Drawing.Point(160, 146);
-            this.comboBox22.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
-            this.comboBox22.Name = "comboBox22";
-            this.comboBox22.Size = new System.Drawing.Size(141, 24);
-            this.comboBox22.TabIndex = 28;
+            "Bardzo wysoki"});
+            this.ComboBoxMnPrHarm.Location = new System.Drawing.Point(160, 146);
+            this.ComboBoxMnPrHarm.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            this.ComboBoxMnPrHarm.Name = "ComboBoxMnPrHarm";
+            this.ComboBoxMnPrHarm.Size = new System.Drawing.Size(141, 24);
+            this.ComboBoxMnPrHarm.TabIndex = 28;
             // 
             // label15
             // 
@@ -795,7 +776,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(151, 67);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Programowanie w wielu miejscach";
+            this.label2.Text = "Programowanie w wielu lokalizacjach";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ButtonOk
@@ -846,7 +827,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox ComboBoxCzynnSk1;
+        private System.Windows.Forms.ComboBox ComboBoxMnPrNiezaw;
         private System.Windows.Forms.Button ButtonOk;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label6;
@@ -859,16 +840,16 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox15;
+        private System.Windows.Forms.ComboBox ComboBoxMnPrBaza;
+        private System.Windows.Forms.ComboBox ComboBoxMnPrZloz;
+        private System.Windows.Forms.ComboBox ComboBoxMnPrPonow;
+        private System.Windows.Forms.ComboBox ComboBoxMnPrDoku;
+        private System.Windows.Forms.ComboBox ComboBoxMnPrAnal;
+        private System.Windows.Forms.ComboBox ComboBoxMnPrProgr;
+        private System.Windows.Forms.ComboBox ComboBoxMnPrZnajJ;
+        private System.Windows.Forms.ComboBox ComboBoxMnPrZesp;
+        private System.Windows.Forms.ComboBox ComboBoxMnPrZnajA;
+        private System.Windows.Forms.ComboBox ComboBoxMnPrZnajP;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage TabPageProdukt;
         private System.Windows.Forms.TabPage TabPagePersonel;
@@ -877,13 +858,13 @@
         private System.Windows.Forms.TabPage TabPageProjekt;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.ComboBox comboBox17;
-        private System.Windows.Forms.ComboBox comboBox18;
-        private System.Windows.Forms.ComboBox comboBox21;
+        private System.Windows.Forms.ComboBox ComboBoxMnPrOgrCz;
+        private System.Windows.Forms.ComboBox ComboBoxMnPrOgrP;
+        private System.Windows.Forms.ComboBox ComboBoxMnPrZmP;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.ComboBox comboBox19;
-        private System.Windows.Forms.ComboBox comboBox20;
-        private System.Windows.Forms.ComboBox comboBox22;
+        private System.Windows.Forms.ComboBox ComboBoxMnPrNarzP;
+        private System.Windows.Forms.ComboBox ComboBoxMnPrLokal;
+        private System.Windows.Forms.ComboBox ComboBoxMnPrHarm;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ToolTip ToolTip;
     }

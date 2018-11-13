@@ -37,11 +37,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ComboBoxCzynnSk1 = new System.Windows.Forms.ComboBox();
-            this.ComboBoxCzynnSk2 = new System.Windows.Forms.ComboBox();
-            this.ComboBoxCzynnSk3 = new System.Windows.Forms.ComboBox();
-            this.ComboBoxCzynnSk4 = new System.Windows.Forms.ComboBox();
-            this.ComboBoxCzynnSk5 = new System.Windows.Forms.ComboBox();
+            this.ComboBoxCzynnSkTyp = new System.Windows.Forms.ComboBox();
+            this.ComboBoxCzynnSkElast = new System.Windows.Forms.ComboBox();
+            this.ComboBoxCzynnSkRyzyko = new System.Windows.Forms.ComboBox();
+            this.ComboBoxCzynnSkZesp = new System.Windows.Forms.ComboBox();
+            this.ComboBoxCzynnSkDojrz = new System.Windows.Forms.ComboBox();
             this.ButtonAnuluj = new System.Windows.Forms.Button();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.GroupBoxCzynSkali.SuspendLayout();
@@ -76,17 +76,17 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 136F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 349F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 373F));
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSk1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSk2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSk3, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSk4, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSk5, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSkTyp, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSkElast, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSkRyzyko, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSkZesp, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSkDojrz, 1, 4);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(14, 35);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
@@ -164,95 +164,95 @@
             this.label1.Text = "Typowość projektu";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ComboBoxCzynnSk1
+            // ComboBoxCzynnSkTyp
             // 
-            this.ComboBoxCzynnSk1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ComboBoxCzynnSk1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ComboBoxCzynnSk1.FormattingEnabled = true;
-            this.ComboBoxCzynnSk1.Items.AddRange(new object[] {
+            this.ComboBoxCzynnSkTyp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxCzynnSkTyp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzynnSkTyp.FormattingEnabled = true;
+            this.ComboBoxCzynnSkTyp.Items.AddRange(new object[] {
             "Bardzo niski",
             "Niski",
             "Nominalny",
             "Wysoki",
             "Bardzo wysoki",
             "Ekstra wysoki"});
-            this.ComboBoxCzynnSk1.Location = new System.Drawing.Point(139, 17);
-            this.ComboBoxCzynnSk1.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
-            this.ComboBoxCzynnSk1.Name = "ComboBoxCzynnSk1";
-            this.ComboBoxCzynnSk1.Size = new System.Drawing.Size(111, 24);
-            this.ComboBoxCzynnSk1.TabIndex = 0;
+            this.ComboBoxCzynnSkTyp.Location = new System.Drawing.Point(139, 17);
+            this.ComboBoxCzynnSkTyp.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzynnSkTyp.Name = "ComboBoxCzynnSkTyp";
+            this.ComboBoxCzynnSkTyp.Size = new System.Drawing.Size(111, 24);
+            this.ComboBoxCzynnSkTyp.TabIndex = 0;
             // 
-            // ComboBoxCzynnSk2
+            // ComboBoxCzynnSkElast
             // 
-            this.ComboBoxCzynnSk2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ComboBoxCzynnSk2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ComboBoxCzynnSk2.FormattingEnabled = true;
-            this.ComboBoxCzynnSk2.Items.AddRange(new object[] {
+            this.ComboBoxCzynnSkElast.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxCzynnSkElast.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzynnSkElast.FormattingEnabled = true;
+            this.ComboBoxCzynnSkElast.Items.AddRange(new object[] {
             "Bardzo niski",
             "Niski",
             "Nominalny",
             "Wysoki",
             "Bardzo wysoki",
             "Ekstra wysoki"});
-            this.ComboBoxCzynnSk2.Location = new System.Drawing.Point(139, 78);
-            this.ComboBoxCzynnSk2.Margin = new System.Windows.Forms.Padding(3, 14, 3, 3);
-            this.ComboBoxCzynnSk2.Name = "ComboBoxCzynnSk2";
-            this.ComboBoxCzynnSk2.Size = new System.Drawing.Size(111, 24);
-            this.ComboBoxCzynnSk2.TabIndex = 11;
+            this.ComboBoxCzynnSkElast.Location = new System.Drawing.Point(139, 78);
+            this.ComboBoxCzynnSkElast.Margin = new System.Windows.Forms.Padding(3, 14, 3, 3);
+            this.ComboBoxCzynnSkElast.Name = "ComboBoxCzynnSkElast";
+            this.ComboBoxCzynnSkElast.Size = new System.Drawing.Size(111, 24);
+            this.ComboBoxCzynnSkElast.TabIndex = 11;
             // 
-            // ComboBoxCzynnSk3
+            // ComboBoxCzynnSkRyzyko
             // 
-            this.ComboBoxCzynnSk3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ComboBoxCzynnSk3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ComboBoxCzynnSk3.FormattingEnabled = true;
-            this.ComboBoxCzynnSk3.Items.AddRange(new object[] {
+            this.ComboBoxCzynnSkRyzyko.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxCzynnSkRyzyko.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzynnSkRyzyko.FormattingEnabled = true;
+            this.ComboBoxCzynnSkRyzyko.Items.AddRange(new object[] {
             "Bardzo niski",
             "Niski",
             "Nominalny",
             "Wysoki",
             "Bardzo wysoki",
             "Ekstra wysoki"});
-            this.ComboBoxCzynnSk3.Location = new System.Drawing.Point(139, 145);
-            this.ComboBoxCzynnSk3.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
-            this.ComboBoxCzynnSk3.Name = "ComboBoxCzynnSk3";
-            this.ComboBoxCzynnSk3.Size = new System.Drawing.Size(111, 24);
-            this.ComboBoxCzynnSk3.TabIndex = 12;
+            this.ComboBoxCzynnSkRyzyko.Location = new System.Drawing.Point(139, 145);
+            this.ComboBoxCzynnSkRyzyko.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzynnSkRyzyko.Name = "ComboBoxCzynnSkRyzyko";
+            this.ComboBoxCzynnSkRyzyko.Size = new System.Drawing.Size(111, 24);
+            this.ComboBoxCzynnSkRyzyko.TabIndex = 12;
             // 
             // ComboBoxCzynnSk4
             // 
-            this.ComboBoxCzynnSk4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ComboBoxCzynnSk4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ComboBoxCzynnSk4.FormattingEnabled = true;
-            this.ComboBoxCzynnSk4.Items.AddRange(new object[] {
+            this.ComboBoxCzynnSkZesp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxCzynnSkZesp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzynnSkZesp.FormattingEnabled = true;
+            this.ComboBoxCzynnSkZesp.Items.AddRange(new object[] {
             "Bardzo niski",
             "Niski",
             "Nominalny",
             "Wysoki",
             "Bardzo wysoki",
             "Ekstra wysoki"});
-            this.ComboBoxCzynnSk4.Location = new System.Drawing.Point(139, 209);
-            this.ComboBoxCzynnSk4.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
-            this.ComboBoxCzynnSk4.Name = "ComboBoxCzynnSk4";
-            this.ComboBoxCzynnSk4.Size = new System.Drawing.Size(111, 24);
-            this.ComboBoxCzynnSk4.TabIndex = 13;
+            this.ComboBoxCzynnSkZesp.Location = new System.Drawing.Point(139, 209);
+            this.ComboBoxCzynnSkZesp.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzynnSkZesp.Name = "ComboBoxCzynnSk4";
+            this.ComboBoxCzynnSkZesp.Size = new System.Drawing.Size(111, 24);
+            this.ComboBoxCzynnSkZesp.TabIndex = 13;
             // 
             // ComboBoxCzynnSk5
             // 
-            this.ComboBoxCzynnSk5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ComboBoxCzynnSk5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ComboBoxCzynnSk5.FormattingEnabled = true;
-            this.ComboBoxCzynnSk5.Items.AddRange(new object[] {
+            this.ComboBoxCzynnSkDojrz.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxCzynnSkDojrz.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzynnSkDojrz.FormattingEnabled = true;
+            this.ComboBoxCzynnSkDojrz.Items.AddRange(new object[] {
             "Bardzo niski",
             "Niski",
             "Nominalny",
             "Wysoki",
             "Bardzo wysoki",
             "Ekstra wysoki"});
-            this.ComboBoxCzynnSk5.Location = new System.Drawing.Point(139, 274);
-            this.ComboBoxCzynnSk5.Margin = new System.Windows.Forms.Padding(3, 18, 3, 3);
-            this.ComboBoxCzynnSk5.Name = "ComboBoxCzynnSk5";
-            this.ComboBoxCzynnSk5.Size = new System.Drawing.Size(111, 24);
-            this.ComboBoxCzynnSk5.TabIndex = 14;
+            this.ComboBoxCzynnSkDojrz.Location = new System.Drawing.Point(139, 274);
+            this.ComboBoxCzynnSkDojrz.Margin = new System.Windows.Forms.Padding(3, 18, 3, 3);
+            this.ComboBoxCzynnSkDojrz.Name = "ComboBoxCzynnSk5";
+            this.ComboBoxCzynnSkDojrz.Size = new System.Drawing.Size(111, 24);
+            this.ComboBoxCzynnSkDojrz.TabIndex = 14;
             // 
             // ButtonAnuluj
             // 
@@ -288,16 +288,16 @@
         private System.Windows.Forms.GroupBox GroupBoxCzynSkali;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button ButtonAnuluj;
-        private System.Windows.Forms.ComboBox ComboBoxCzynnSk1;
+        private System.Windows.Forms.ComboBox ComboBoxCzynnSkTyp;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox ComboBoxCzynnSk2;
-        private System.Windows.Forms.ComboBox ComboBoxCzynnSk3;
-        private System.Windows.Forms.ComboBox ComboBoxCzynnSk4;
-        private System.Windows.Forms.ComboBox ComboBoxCzynnSk5;
+        private System.Windows.Forms.ComboBox ComboBoxCzynnSkElast;
+        private System.Windows.Forms.ComboBox ComboBoxCzynnSkRyzyko;
+        private System.Windows.Forms.ComboBox ComboBoxCzynnSkZesp;
+        private System.Windows.Forms.ComboBox ComboBoxCzynnSkDojrz;
         private System.Windows.Forms.ToolTip ToolTip;
     }
 }

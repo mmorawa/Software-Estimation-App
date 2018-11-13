@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//TODO: wysoki/a, wyrównanie, tooltipy, opisy.
+
 namespace Aplikacja
 {
     public partial class OknoCzynnikiSkali : Form
@@ -15,11 +17,11 @@ namespace Aplikacja
         public OknoCzynnikiSkali()
         {
             InitializeComponent();
-            ComboBoxCzynnSk1.SelectedIndex = 2;
-            ComboBoxCzynnSk2.SelectedIndex = 2;
-            ComboBoxCzynnSk3.SelectedIndex = 2;
-            ComboBoxCzynnSk4.SelectedIndex = 2;
-            ComboBoxCzynnSk5.SelectedIndex = 2;
+            ComboBoxCzynnSkTyp.SelectedIndex = 2;
+            ComboBoxCzynnSkElast.SelectedIndex = 2;
+            ComboBoxCzynnSkRyzyko.SelectedIndex = 2;
+            ComboBoxCzynnSkZesp.SelectedIndex = 2;
+            ComboBoxCzynnSkDojrz.SelectedIndex = 2;
         }
     }
 }
