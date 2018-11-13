@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.ButtonOk = new System.Windows.Forms.Button();
             this.GroupBoxCzynSkali = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -42,6 +43,7 @@
             this.ComboBoxCzynnSk4 = new System.Windows.Forms.ComboBox();
             this.ComboBoxCzynnSk5 = new System.Windows.Forms.ComboBox();
             this.ButtonAnuluj = new System.Windows.Forms.Button();
+            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.GroupBoxCzynSkali.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -296,5 +298,6 @@
         private System.Windows.Forms.ComboBox ComboBoxCzynnSk3;
         private System.Windows.Forms.ComboBox ComboBoxCzynnSk4;
         private System.Windows.Forms.ComboBox ComboBoxCzynnSk5;
+        private System.Windows.Forms.ToolTip ToolTip;
     }
 }

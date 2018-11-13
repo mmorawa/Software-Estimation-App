@@ -92,6 +92,7 @@
             this.GroupBoxModyfUCP = new System.Windows.Forms.GroupBox();
             this.GroupBoxWyniki = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.PasekMenu.SuspendLayout();
             this.GroupBoxDaneProjektu.SuspendLayout();
             this.GroupBoxUUCW.SuspendLayout();
@@ -853,11 +854,20 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Czynniki modyfikujące COCOMO II";
             // 
+            // StatusStrip
+            // 
+            this.StatusStrip.Location = new System.Drawing.Point(0, 762);
+            this.StatusStrip.Name = "StatusStrip";
+            this.StatusStrip.Size = new System.Drawing.Size(1321, 22);
+            this.StatusStrip.TabIndex = 7;
+            this.StatusStrip.Text = "statusStrip1";
+            // 
             // OknoGlowne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1321, 784);
+            this.Controls.Add(this.StatusStrip);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.GroupBoxWyniki);
             this.Controls.Add(this.GroupBoxModyfUCP);
@@ -957,6 +967,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button ButtonMnPr;
         private System.Windows.Forms.Button ButtonCzSk;
+        private System.Windows.Forms.StatusStrip StatusStrip;
     }
 }
 

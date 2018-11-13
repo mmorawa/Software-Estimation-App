@@ -15,6 +15,9 @@ namespace Aplikacja
         public OknoMnoznikiPracochlonnosci()
         {
             InitializeComponent();
+             
+            //ToolTip.SetToolTip(comboBox1, "Save changes");
+
         }
     }
 }

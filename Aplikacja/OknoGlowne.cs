@@ -149,7 +149,7 @@ namespace Aplikacja
                 if (dr == DialogResult.OK)
                 {
 
-                    MessageBox.Show("Czynniki skali wprowadzone.", "Sukces");
+                    MessageBox.Show("Mnożniki pracochłonności wprowadzone.", "Sukces");
                 }
             }
         }
