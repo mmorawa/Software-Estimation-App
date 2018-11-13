@@ -29,24 +29,36 @@
         private void InitializeComponent()
         {
             this.ButtonAnuluj = new System.Windows.Forms.Button();
-            this.GroupBoxCzynSkali = new System.Windows.Forms.GroupBox();
+            this.GroupBoxCzynZlozTechn = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label13 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ComboBoxCzynnTech = new System.Windows.Forms.ComboBox();
-            this.ButtonOk = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
+            this.ComboBoxCzTRozp = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.GroupBoxCzynSkali.SuspendLayout();
+            this.ButtonOk = new System.Windows.Forms.Button();
+            this.ComboBoxCzTWydaj = new System.Windows.Forms.ComboBox();
+            this.ComboBoxCzTWydajUztk = new System.Windows.Forms.ComboBox();
+            this.ComboBoxCzTPrzetwW = new System.Windows.Forms.ComboBox();
+            this.ComboBoxCzTPonUzycie = new System.Windows.Forms.ComboBox();
+            this.ComboBoxCzTLatwInst = new System.Windows.Forms.ComboBox();
+            this.ComboBoxCzTLatwUzyc = new System.Windows.Forms.ComboBox();
+            this.ComboBoxCzTPrzen = new System.Windows.Forms.ComboBox();
+            this.ComboBoxCzTLatwZmian = new System.Windows.Forms.ComboBox();
+            this.ComboBoxCzTPrzetwWsp = new System.Windows.Forms.ComboBox();
+            this.ComboBoxCzTSpecZabezp = new System.Windows.Forms.ComboBox();
+            this.ComboBoxCzTZewnOpr = new System.Windows.Forms.ComboBox();
+            this.ComboBoxCzTDodSzkol = new System.Windows.Forms.ComboBox();
+            this.GroupBoxCzynZlozTechn.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,31 +73,31 @@
             this.ButtonAnuluj.Text = "Anuluj";
             this.ButtonAnuluj.UseVisualStyleBackColor = true;
             // 
-            // GroupBoxCzynSkali
+            // GroupBoxCzynZlozTechn
             // 
-            this.GroupBoxCzynSkali.Controls.Add(this.tableLayoutPanel1);
-            this.GroupBoxCzynSkali.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.GroupBoxCzynSkali.Location = new System.Drawing.Point(12, 12);
-            this.GroupBoxCzynSkali.Name = "GroupBoxCzynSkali";
-            this.GroupBoxCzynSkali.Size = new System.Drawing.Size(749, 750);
-            this.GroupBoxCzynSkali.TabIndex = 7;
-            this.GroupBoxCzynSkali.TabStop = false;
-            this.GroupBoxCzynSkali.Text = "Czynniki skali";
+            this.GroupBoxCzynZlozTechn.Controls.Add(this.tableLayoutPanel1);
+            this.GroupBoxCzynZlozTechn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.GroupBoxCzynZlozTechn.Location = new System.Drawing.Point(12, 12);
+            this.GroupBoxCzynZlozTechn.Name = "GroupBoxCzynZlozTechn";
+            this.GroupBoxCzynZlozTechn.Size = new System.Drawing.Size(749, 750);
+            this.GroupBoxCzynZlozTechn.TabIndex = 7;
+            this.GroupBoxCzynZlozTechn.TabStop = false;
+            this.GroupBoxCzynZlozTechn.Text = "Czynniki złożoności technicznej";
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 136F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 435F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 142F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 51F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 509F));
             this.tableLayoutPanel1.Controls.Add(this.label13, 0, 12);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnTech, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzTRozp, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.label8, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 7);
@@ -93,6 +105,18 @@
             this.tableLayoutPanel1.Controls.Add(this.label6, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.label10, 0, 10);
             this.tableLayoutPanel1.Controls.Add(this.label12, 0, 11);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzTWydaj, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzTWydajUztk, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzTPrzetwW, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzTPonUzycie, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzTLatwInst, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzTLatwUzyc, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzTPrzen, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzTLatwZmian, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzTPrzetwWsp, 1, 9);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzTSpecZabezp, 1, 10);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzTZewnOpr, 1, 11);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzTDodSzkol, 1, 12);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 21);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 13;
@@ -112,6 +136,19 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(702, 709);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(3, 648);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(136, 61);
+            this.label13.TabIndex = 22;
+            this.label13.Text = "Dodatkowe szkolenia użytkowników";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -120,9 +157,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 54);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 54);
+            this.label2.Size = new System.Drawing.Size(136, 54);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Elastyczność wytwarzania oprogramowania";
+            this.label2.Text = "Wydajność systemu";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -133,9 +170,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 108);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 54);
+            this.label3.Size = new System.Drawing.Size(136, 54);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Zarządzanie ryzykiem";
+            this.label3.Text = "Wydajność dla użytkownika końcowego";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -146,9 +183,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(3, 162);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 54);
+            this.label4.Size = new System.Drawing.Size(136, 54);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Spójność zespołu";
+            this.label4.Text = "Złożone przetwarzanie wewnętrzne";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
@@ -159,9 +196,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(3, 216);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 54);
+            this.label5.Size = new System.Drawing.Size(136, 54);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Dojrzałość procesu";
+            this.label5.Text = "Możliwość ponownego użycia kodu";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -172,28 +209,119 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 54);
+            this.label1.Size = new System.Drawing.Size(136, 54);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Typowość projektu";
+            this.label1.Text = "System rozproszony";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ComboBoxCzynnTech
+            // ComboBoxCzTRozp
             // 
-            this.ComboBoxCzynnTech.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCzynnTech.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ComboBoxCzynnTech.FormattingEnabled = true;
-            this.ComboBoxCzynnTech.Items.AddRange(new object[] {
+            this.ComboBoxCzTRozp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzTRozp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzTRozp.FormattingEnabled = true;
+            this.ComboBoxCzTRozp.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
             "3",
             "4",
             "5"});
-            this.ComboBoxCzynnTech.Location = new System.Drawing.Point(139, 17);
-            this.ComboBoxCzynnTech.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
-            this.ComboBoxCzynnTech.Name = "ComboBoxCzynnTech";
-            this.ComboBoxCzynnTech.Size = new System.Drawing.Size(49, 24);
-            this.ComboBoxCzynnTech.TabIndex = 0;
+            this.ComboBoxCzTRozp.Location = new System.Drawing.Point(145, 17);
+            this.ComboBoxCzTRozp.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzTRozp.Name = "ComboBoxCzTRozp";
+            this.ComboBoxCzTRozp.Size = new System.Drawing.Size(45, 24);
+            this.ComboBoxCzTRozp.TabIndex = 0;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(3, 270);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(136, 54);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Łatwość instalacji";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(3, 324);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(136, 54);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Łatwość użycia";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(3, 378);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(136, 54);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Przenośność";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(3, 432);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(136, 54);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "Łatwość wprowadzania zmian";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 486);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(136, 54);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Przetwarzanie współbieżne";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(3, 540);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(136, 54);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "Specjalne zabezpieczenia";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(3, 594);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(136, 54);
+            this.label12.TabIndex = 21;
+            this.label12.Text = "Zależność od zewnętrznego oprogramowania";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ButtonOk
             // 
@@ -206,109 +334,221 @@
             this.ButtonOk.Text = "OK";
             this.ButtonOk.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // ComboBoxCzTWydaj
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 486);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(130, 54);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Typowość projektu";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ComboBoxCzTWydaj.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzTWydaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzTWydaj.FormattingEnabled = true;
+            this.ComboBoxCzTWydaj.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ComboBoxCzTWydaj.Location = new System.Drawing.Point(145, 71);
+            this.ComboBoxCzTWydaj.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzTWydaj.Name = "ComboBoxCzTWydaj";
+            this.ComboBoxCzTWydaj.Size = new System.Drawing.Size(45, 24);
+            this.ComboBoxCzTWydaj.TabIndex = 23;
             // 
-            // label7
+            // ComboBoxCzTWydajUztk
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 270);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(130, 54);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Typowość projektu";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ComboBoxCzTWydajUztk.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzTWydajUztk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzTWydajUztk.FormattingEnabled = true;
+            this.ComboBoxCzTWydajUztk.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ComboBoxCzTWydajUztk.Location = new System.Drawing.Point(145, 125);
+            this.ComboBoxCzTWydajUztk.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzTWydajUztk.Name = "ComboBoxCzTWydajUztk";
+            this.ComboBoxCzTWydajUztk.Size = new System.Drawing.Size(45, 24);
+            this.ComboBoxCzTWydajUztk.TabIndex = 24;
             // 
-            // label8
+            // ComboBoxCzTPrzetwW
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 324);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(130, 54);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Typowość projektu";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ComboBoxCzTPrzetwW.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzTPrzetwW.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzTPrzetwW.FormattingEnabled = true;
+            this.ComboBoxCzTPrzetwW.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ComboBoxCzTPrzetwW.Location = new System.Drawing.Point(145, 179);
+            this.ComboBoxCzTPrzetwW.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzTPrzetwW.Name = "ComboBoxCzTPrzetwW";
+            this.ComboBoxCzTPrzetwW.Size = new System.Drawing.Size(45, 24);
+            this.ComboBoxCzTPrzetwW.TabIndex = 25;
             // 
-            // label9
+            // ComboBoxCzTPonUzycie
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 378);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(130, 54);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "Typowość projektu";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ComboBoxCzTPonUzycie.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzTPonUzycie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzTPonUzycie.FormattingEnabled = true;
+            this.ComboBoxCzTPonUzycie.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ComboBoxCzTPonUzycie.Location = new System.Drawing.Point(145, 233);
+            this.ComboBoxCzTPonUzycie.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzTPonUzycie.Name = "ComboBoxCzTPonUzycie";
+            this.ComboBoxCzTPonUzycie.Size = new System.Drawing.Size(45, 24);
+            this.ComboBoxCzTPonUzycie.TabIndex = 26;
             // 
-            // label10
+            // ComboBoxCzTLatwInst
             // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(3, 540);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(130, 54);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "Typowość projektu";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ComboBoxCzTLatwInst.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzTLatwInst.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzTLatwInst.FormattingEnabled = true;
+            this.ComboBoxCzTLatwInst.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ComboBoxCzTLatwInst.Location = new System.Drawing.Point(145, 287);
+            this.ComboBoxCzTLatwInst.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzTLatwInst.Name = "ComboBoxCzTLatwInst";
+            this.ComboBoxCzTLatwInst.Size = new System.Drawing.Size(45, 24);
+            this.ComboBoxCzTLatwInst.TabIndex = 27;
             // 
-            // label11
+            // ComboBoxCzTLatwUzyc
             // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 432);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(130, 54);
-            this.label11.TabIndex = 20;
-            this.label11.Text = "Typowość projektu";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ComboBoxCzTLatwUzyc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzTLatwUzyc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzTLatwUzyc.FormattingEnabled = true;
+            this.ComboBoxCzTLatwUzyc.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ComboBoxCzTLatwUzyc.Location = new System.Drawing.Point(145, 341);
+            this.ComboBoxCzTLatwUzyc.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzTLatwUzyc.Name = "ComboBoxCzTLatwUzyc";
+            this.ComboBoxCzTLatwUzyc.Size = new System.Drawing.Size(45, 24);
+            this.ComboBoxCzTLatwUzyc.TabIndex = 28;
             // 
-            // label12
+            // ComboBoxCzTPrzen
             // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(3, 594);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(130, 54);
-            this.label12.TabIndex = 21;
-            this.label12.Text = "Typowość projektu";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ComboBoxCzTPrzen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzTPrzen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzTPrzen.FormattingEnabled = true;
+            this.ComboBoxCzTPrzen.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ComboBoxCzTPrzen.Location = new System.Drawing.Point(145, 395);
+            this.ComboBoxCzTPrzen.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzTPrzen.Name = "ComboBoxCzTPrzen";
+            this.ComboBoxCzTPrzen.Size = new System.Drawing.Size(45, 24);
+            this.ComboBoxCzTPrzen.TabIndex = 29;
             // 
-            // label13
+            // ComboBoxCzTLatwZmian
             // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(3, 648);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(130, 61);
-            this.label13.TabIndex = 22;
-            this.label13.Text = "Typowość projektu";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ComboBoxCzTLatwZmian.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzTLatwZmian.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzTLatwZmian.FormattingEnabled = true;
+            this.ComboBoxCzTLatwZmian.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ComboBoxCzTLatwZmian.Location = new System.Drawing.Point(145, 449);
+            this.ComboBoxCzTLatwZmian.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzTLatwZmian.Name = "ComboBoxCzTLatwZmian";
+            this.ComboBoxCzTLatwZmian.Size = new System.Drawing.Size(45, 24);
+            this.ComboBoxCzTLatwZmian.TabIndex = 30;
+            // 
+            // ComboBoxCzTPrzetwWsp
+            // 
+            this.ComboBoxCzTPrzetwWsp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzTPrzetwWsp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzTPrzetwWsp.FormattingEnabled = true;
+            this.ComboBoxCzTPrzetwWsp.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ComboBoxCzTPrzetwWsp.Location = new System.Drawing.Point(145, 503);
+            this.ComboBoxCzTPrzetwWsp.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzTPrzetwWsp.Name = "ComboBoxCzTPrzetwWsp";
+            this.ComboBoxCzTPrzetwWsp.Size = new System.Drawing.Size(45, 24);
+            this.ComboBoxCzTPrzetwWsp.TabIndex = 31;
+            // 
+            // ComboBoxCzTSpecZabezp
+            // 
+            this.ComboBoxCzTSpecZabezp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzTSpecZabezp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzTSpecZabezp.FormattingEnabled = true;
+            this.ComboBoxCzTSpecZabezp.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ComboBoxCzTSpecZabezp.Location = new System.Drawing.Point(145, 557);
+            this.ComboBoxCzTSpecZabezp.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzTSpecZabezp.Name = "ComboBoxCzTSpecZabezp";
+            this.ComboBoxCzTSpecZabezp.Size = new System.Drawing.Size(45, 24);
+            this.ComboBoxCzTSpecZabezp.TabIndex = 32;
+            // 
+            // ComboBoxCzTZewnOpr
+            // 
+            this.ComboBoxCzTZewnOpr.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzTZewnOpr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzTZewnOpr.FormattingEnabled = true;
+            this.ComboBoxCzTZewnOpr.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ComboBoxCzTZewnOpr.Location = new System.Drawing.Point(145, 611);
+            this.ComboBoxCzTZewnOpr.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzTZewnOpr.Name = "ComboBoxCzTZewnOpr";
+            this.ComboBoxCzTZewnOpr.Size = new System.Drawing.Size(45, 24);
+            this.ComboBoxCzTZewnOpr.TabIndex = 33;
+            // 
+            // ComboBoxCzTDodSzkol
+            // 
+            this.ComboBoxCzTDodSzkol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzTDodSzkol.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzTDodSzkol.FormattingEnabled = true;
+            this.ComboBoxCzTDodSzkol.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ComboBoxCzTDodSzkol.Location = new System.Drawing.Point(145, 665);
+            this.ComboBoxCzTDodSzkol.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzTDodSzkol.Name = "ComboBoxCzTDodSzkol";
+            this.ComboBoxCzTDodSzkol.Size = new System.Drawing.Size(45, 24);
+            this.ComboBoxCzTDodSzkol.TabIndex = 34;
             // 
             // OknoCzynnZlozTechn
             // 
@@ -316,11 +556,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 820);
             this.Controls.Add(this.ButtonAnuluj);
-            this.Controls.Add(this.GroupBoxCzynSkali);
+            this.Controls.Add(this.GroupBoxCzynZlozTechn);
             this.Controls.Add(this.ButtonOk);
             this.Name = "OknoCzynnZlozTechn";
             this.Text = "Czynniki złożoności technicznej";
-            this.GroupBoxCzynSkali.ResumeLayout(false);
+            this.GroupBoxCzynZlozTechn.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -330,14 +570,14 @@
         #endregion
 
         private System.Windows.Forms.Button ButtonAnuluj;
-        private System.Windows.Forms.GroupBox GroupBoxCzynSkali;
+        private System.Windows.Forms.GroupBox GroupBoxCzynZlozTechn;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox ComboBoxCzynnTech;
+        private System.Windows.Forms.ComboBox ComboBoxCzTRozp;
         private System.Windows.Forms.Button ButtonOk;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label7;
@@ -347,5 +587,17 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox ComboBoxCzTWydaj;
+        private System.Windows.Forms.ComboBox ComboBoxCzTWydajUztk;
+        private System.Windows.Forms.ComboBox ComboBoxCzTPrzetwW;
+        private System.Windows.Forms.ComboBox ComboBoxCzTPonUzycie;
+        private System.Windows.Forms.ComboBox ComboBoxCzTLatwInst;
+        private System.Windows.Forms.ComboBox ComboBoxCzTLatwUzyc;
+        private System.Windows.Forms.ComboBox ComboBoxCzTPrzen;
+        private System.Windows.Forms.ComboBox ComboBoxCzTLatwZmian;
+        private System.Windows.Forms.ComboBox ComboBoxCzTPrzetwWsp;
+        private System.Windows.Forms.ComboBox ComboBoxCzTSpecZabezp;
+        private System.Windows.Forms.ComboBox ComboBoxCzTZewnOpr;
+        private System.Windows.Forms.ComboBox ComboBoxCzTDodSzkol;
     }
 }

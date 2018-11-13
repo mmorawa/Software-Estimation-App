@@ -15,9 +15,22 @@ namespace Aplikacja
         
 
         public OknoCzynnZlozTechn()
-        {
-            
+        {            
             InitializeComponent();
+
+            ComboBoxCzTDodSzkol.SelectedIndex = 0;
+            ComboBoxCzTLatwInst.SelectedIndex = 0;
+            ComboBoxCzTLatwUzyc.SelectedIndex = 0;
+            ComboBoxCzTLatwZmian.SelectedIndex = 0;
+            ComboBoxCzTPonUzycie.SelectedIndex = 0;
+            ComboBoxCzTPrzen.SelectedIndex = 0;
+            ComboBoxCzTPrzetwW.SelectedIndex = 0;
+            ComboBoxCzTPrzetwWsp.SelectedIndex = 0;
+            ComboBoxCzTRozp.SelectedIndex = 0;
+            ComboBoxCzTSpecZabezp.SelectedIndex = 0;
+            ComboBoxCzTWydaj.SelectedIndex = 0;
+            ComboBoxCzTWydajUztk.SelectedIndex = 0;
+            ComboBoxCzTZewnOpr.SelectedIndex = 0;
         }
 
         /*
