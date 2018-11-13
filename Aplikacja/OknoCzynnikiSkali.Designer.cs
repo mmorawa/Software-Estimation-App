@@ -218,7 +218,7 @@
             this.ComboBoxCzynnSkRyzyko.Size = new System.Drawing.Size(111, 24);
             this.ComboBoxCzynnSkRyzyko.TabIndex = 12;
             // 
-            // ComboBoxCzynnSk4
+            // ComboBoxCzynnSkZesp
             // 
             this.ComboBoxCzynnSkZesp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ComboBoxCzynnSkZesp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -232,11 +232,11 @@
             "Ekstra wysoki"});
             this.ComboBoxCzynnSkZesp.Location = new System.Drawing.Point(139, 209);
             this.ComboBoxCzynnSkZesp.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
-            this.ComboBoxCzynnSkZesp.Name = "ComboBoxCzynnSk4";
+            this.ComboBoxCzynnSkZesp.Name = "ComboBoxCzynnSkZesp";
             this.ComboBoxCzynnSkZesp.Size = new System.Drawing.Size(111, 24);
             this.ComboBoxCzynnSkZesp.TabIndex = 13;
             // 
-            // ComboBoxCzynnSk5
+            // ComboBoxCzynnSkDojrz
             // 
             this.ComboBoxCzynnSkDojrz.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ComboBoxCzynnSkDojrz.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -250,7 +250,7 @@
             "Ekstra wysoki"});
             this.ComboBoxCzynnSkDojrz.Location = new System.Drawing.Point(139, 274);
             this.ComboBoxCzynnSkDojrz.Margin = new System.Windows.Forms.Padding(3, 18, 3, 3);
-            this.ComboBoxCzynnSkDojrz.Name = "ComboBoxCzynnSk5";
+            this.ComboBoxCzynnSkDojrz.Name = "ComboBoxCzynnSkDojrz";
             this.ComboBoxCzynnSkDojrz.Size = new System.Drawing.Size(111, 24);
             this.ComboBoxCzynnSkDojrz.TabIndex = 14;
             // 
