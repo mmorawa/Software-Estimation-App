@@ -12,9 +12,19 @@ namespace Aplikacja
 {
     public partial class OknoCzynnZlozTechn : Form
     {
+        
+
         public OknoCzynnZlozTechn()
         {
+            
             InitializeComponent();
         }
+
+        /*
+        private void ComboBoxCzynnTech_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show((ComboBoxCzynnTech.Text));
+        }
+        */
     }
 }

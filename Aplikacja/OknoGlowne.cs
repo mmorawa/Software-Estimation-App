@@ -126,9 +126,9 @@ namespace Aplikacja
 
         private void ButtonCzSk_Click(object sender, EventArgs e)
         {
-            using (OknoCzynnikiSkali form = new OknoCzynnikiSkali())
+            using (OknoCzynnikiSkali OknoCzynS = new OknoCzynnikiSkali())
             {
-                DialogResult dr = form.ShowDialog();
+                DialogResult dr = OknoCzynS.ShowDialog();
 
 
                 if (dr == DialogResult.OK)
@@ -141,9 +141,9 @@ namespace Aplikacja
 
         private void ButtonMnPr_Click(object sender, EventArgs e)
         {
-            using (OknoMnoznikiPracochlonnosci form = new OknoMnoznikiPracochlonnosci())
+            using (OknoMnoznikiPracochlonnosci OknoMnozP = new OknoMnoznikiPracochlonnosci())
             {
-                DialogResult dr = form.ShowDialog();
+                DialogResult dr = OknoMnozP.ShowDialog();
 
 
                 if (dr == DialogResult.OK)
@@ -156,15 +156,16 @@ namespace Aplikacja
 
         private void ButtonCZT_Click(object sender, EventArgs e)
         {
-            using (OknoCzynnZlozTechn form = new OknoCzynnZlozTechn())
+            using (OknoCzynnZlozTechn OknoCzynZT = new OknoCzynnZlozTechn())
             {
-                DialogResult dr = form.ShowDialog();
+                DialogResult dr = OknoCzynZT.ShowDialog();
 
 
                 if (dr == DialogResult.OK)
                 {
 
                     MessageBox.Show("Czynniki złożoności technicznej zostały wprowadzone.", "Sukces");
+
                 }
             }
         }

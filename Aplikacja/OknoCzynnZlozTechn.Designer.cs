@@ -36,7 +36,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ComboBoxCzynnSkTyp = new System.Windows.Forms.ComboBox();
+            this.ComboBoxCzynnTech = new System.Windows.Forms.ComboBox();
             this.ButtonOk = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -77,15 +77,15 @@
             this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 136F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 373F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 435F));
             this.tableLayoutPanel1.Controls.Add(this.label13, 0, 12);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSkTyp, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnTech, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.label8, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 7);
@@ -177,23 +177,23 @@
             this.label1.Text = "Typowość projektu";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ComboBoxCzynnSkTyp
+            // ComboBoxCzynnTech
             // 
-            this.ComboBoxCzynnSkTyp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
-            this.ComboBoxCzynnSkTyp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ComboBoxCzynnSkTyp.FormattingEnabled = true;
-            this.ComboBoxCzynnSkTyp.Items.AddRange(new object[] {
-            "Bardzo niski",
-            "Niski",
-            "Nominalny",
-            "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.ComboBoxCzynnSkTyp.Location = new System.Drawing.Point(139, 17);
-            this.ComboBoxCzynnSkTyp.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
-            this.ComboBoxCzynnSkTyp.Name = "ComboBoxCzynnSkTyp";
-            this.ComboBoxCzynnSkTyp.Size = new System.Drawing.Size(111, 24);
-            this.ComboBoxCzynnSkTyp.TabIndex = 0;
+            this.ComboBoxCzynnTech.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzynnTech.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzynnTech.FormattingEnabled = true;
+            this.ComboBoxCzynnTech.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ComboBoxCzynnTech.Location = new System.Drawing.Point(139, 17);
+            this.ComboBoxCzynnTech.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzynnTech.Name = "ComboBoxCzynnTech";
+            this.ComboBoxCzynnTech.Size = new System.Drawing.Size(49, 24);
+            this.ComboBoxCzynnTech.TabIndex = 0;
             // 
             // ButtonOk
             // 
@@ -337,7 +337,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox ComboBoxCzynnSkTyp;
+        private System.Windows.Forms.ComboBox ComboBoxCzynnTech;
         private System.Windows.Forms.Button ButtonOk;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label7;
