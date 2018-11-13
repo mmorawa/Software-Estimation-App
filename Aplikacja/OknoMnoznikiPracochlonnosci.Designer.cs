@@ -229,6 +229,7 @@
             // ComboBoxMnPrNiezaw
             // 
             this.ComboBoxMnPrNiezaw.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrNiezaw.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxMnPrNiezaw.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrNiezaw.FormattingEnabled = true;
             this.ComboBoxMnPrNiezaw.Items.AddRange(new object[] {
@@ -246,6 +247,7 @@
             // ComboBoxMnPrBaza
             // 
             this.ComboBoxMnPrBaza.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrBaza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxMnPrBaza.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrBaza.FormattingEnabled = true;
             this.ComboBoxMnPrBaza.Items.AddRange(new object[] {
@@ -262,6 +264,7 @@
             // ComboBoxMnPrDoku
             // 
             this.ComboBoxMnPrDoku.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrDoku.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxMnPrDoku.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrDoku.FormattingEnabled = true;
             this.ComboBoxMnPrDoku.Items.AddRange(new object[] {
@@ -279,6 +282,7 @@
             // ComboBoxMnPrPonow
             // 
             this.ComboBoxMnPrPonow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrPonow.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxMnPrPonow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrPonow.FormattingEnabled = true;
             this.ComboBoxMnPrPonow.Items.AddRange(new object[] {
@@ -296,6 +300,7 @@
             // ComboBoxMnPrZloz
             // 
             this.ComboBoxMnPrZloz.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrZloz.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxMnPrZloz.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrZloz.FormattingEnabled = true;
             this.ComboBoxMnPrZloz.Items.AddRange(new object[] {
@@ -420,6 +425,7 @@
             // ComboBoxMnPrProgr
             // 
             this.ComboBoxMnPrProgr.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrProgr.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxMnPrProgr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrProgr.FormattingEnabled = true;
             this.ComboBoxMnPrProgr.Items.AddRange(new object[] {
@@ -437,6 +443,7 @@
             // ComboBoxMnPrZnajJ
             // 
             this.ComboBoxMnPrZnajJ.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrZnajJ.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxMnPrZnajJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrZnajJ.FormattingEnabled = true;
             this.ComboBoxMnPrZnajJ.Items.AddRange(new object[] {
@@ -467,6 +474,7 @@
             // ComboBoxMnPrAnal
             // 
             this.ComboBoxMnPrAnal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrAnal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxMnPrAnal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrAnal.FormattingEnabled = true;
             this.ComboBoxMnPrAnal.Items.AddRange(new object[] {
@@ -484,6 +492,7 @@
             // ComboBoxMnPrZnajA
             // 
             this.ComboBoxMnPrZnajA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrZnajA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxMnPrZnajA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrZnajA.FormattingEnabled = true;
             this.ComboBoxMnPrZnajA.Items.AddRange(new object[] {
@@ -501,6 +510,7 @@
             // ComboBoxMnPrZesp
             // 
             this.ComboBoxMnPrZesp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrZesp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxMnPrZesp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrZesp.FormattingEnabled = true;
             this.ComboBoxMnPrZesp.Items.AddRange(new object[] {
@@ -518,6 +528,7 @@
             // ComboBoxMnPrZnajP
             // 
             this.ComboBoxMnPrZnajP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrZnajP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxMnPrZnajP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrZnajP.FormattingEnabled = true;
             this.ComboBoxMnPrZnajP.Items.AddRange(new object[] {
@@ -569,6 +580,7 @@
             // ComboBoxMnPrOgrCz
             // 
             this.ComboBoxMnPrOgrCz.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrOgrCz.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxMnPrOgrCz.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrOgrCz.FormattingEnabled = true;
             this.ComboBoxMnPrOgrCz.Items.AddRange(new object[] {
@@ -611,6 +623,7 @@
             // ComboBoxMnPrOgrP
             // 
             this.ComboBoxMnPrOgrP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrOgrP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxMnPrOgrP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrOgrP.FormattingEnabled = true;
             this.ComboBoxMnPrOgrP.Items.AddRange(new object[] {
@@ -640,6 +653,7 @@
             // ComboBoxMnPrZmP
             // 
             this.ComboBoxMnPrZmP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrZmP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxMnPrZmP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrZmP.FormattingEnabled = true;
             this.ComboBoxMnPrZmP.Items.AddRange(new object[] {
@@ -703,6 +717,7 @@
             // ComboBoxMnPrNarzP
             // 
             this.ComboBoxMnPrNarzP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrNarzP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxMnPrNarzP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrNarzP.FormattingEnabled = true;
             this.ComboBoxMnPrNarzP.Items.AddRange(new object[] {
@@ -721,6 +736,7 @@
             // ComboBoxMnPrLokal
             // 
             this.ComboBoxMnPrLokal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrLokal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxMnPrLokal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrLokal.FormattingEnabled = true;
             this.ComboBoxMnPrLokal.Items.AddRange(new object[] {
@@ -739,6 +755,7 @@
             // ComboBoxMnPrHarm
             // 
             this.ComboBoxMnPrHarm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrHarm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxMnPrHarm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrHarm.FormattingEnabled = true;
             this.ComboBoxMnPrHarm.Items.AddRange(new object[] {
