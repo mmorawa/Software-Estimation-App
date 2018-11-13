@@ -15,7 +15,11 @@ namespace Aplikacja
         public OknoCzynnikiSkali()
         {
             InitializeComponent();
-            comboBox1.SelectedIndex = 3;
+            ComboBoxCzynnSk1.SelectedIndex = 2;
+            ComboBoxCzynnSk2.SelectedIndex = 2;
+            ComboBoxCzynnSk3.SelectedIndex = 2;
+            ComboBoxCzynnSk4.SelectedIndex = 2;
+            ComboBoxCzynnSk5.SelectedIndex = 2;
         }
     }
 }

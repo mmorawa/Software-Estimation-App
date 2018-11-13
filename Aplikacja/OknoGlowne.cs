@@ -121,7 +121,7 @@ namespace Aplikacja
 
         private void ButtonOblicz_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Test");
+            
         }
 
         private void ButtonSD_Click(object sender, EventArgs e)
@@ -134,7 +134,7 @@ namespace Aplikacja
                 if (dr == DialogResult.OK)
                 {
 
-                    MessageBox.Show("The Key has been changed.", "Information");
+                    MessageBox.Show("Czynniki skali wprowadzone.", "Sukces");
                 }
             }
         }
