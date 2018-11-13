@@ -534,6 +534,7 @@
             this.ButtonCZT.Text = "Czynniki złożoności technicznej";
             this.ToolTip.SetToolTip(this.ButtonCZT, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonCZT.UseVisualStyleBackColor = true;
+            this.ButtonCZT.Click += new System.EventHandler(this.ButtonCZT_Click);
             // 
             // ButtonOblicz
             // 

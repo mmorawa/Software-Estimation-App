@@ -153,5 +153,20 @@ namespace Aplikacja
                 }
             }
         }
+
+        private void ButtonCZT_Click(object sender, EventArgs e)
+        {
+            using (OknoCzynnZlozTechn form = new OknoCzynnZlozTechn())
+            {
+                DialogResult dr = form.ShowDialog();
+
+
+                if (dr == DialogResult.OK)
+                {
+
+                    MessageBox.Show("Czynniki złożoności technicznej zostały wprowadzone.", "Sukces");
+                }
+            }
+        }
     }
 }

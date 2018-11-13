@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OknoCzynnZlozTechn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OknoCzynnZlozTechn.Designer.cs">
+      <DependentUpon>OknoCzynnZlozTechn.cs</DependentUpon>
+    </Compile>
     <Compile Include="OknoMnoznikiPracochlonnosci.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="OknoCzynnikiSkali.resx">
       <DependentUpon>OknoCzynnikiSkali.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OknoCzynnZlozTechn.resx">
+      <DependentUpon>OknoCzynnZlozTechn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OknoGlowne.resx">
       <DependentUpon>OknoGlowne.cs</DependentUpon>
