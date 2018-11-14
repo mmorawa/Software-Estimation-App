@@ -33,11 +33,70 @@ namespace Aplikacja
             ComboBoxCzTZewnOpr.SelectedIndex = 0;
         }
 
-        /*
-        private void ComboBoxCzynnTech_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBoxCzTRozp_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MessageBox.Show((ComboBoxCzynnTech.Text));
+            OknoGlowne.TCF[0] = 2 * ComboBoxCzTRozp.SelectedIndex;
         }
-        */
+
+        private void ComboBoxCzTWydaj_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TCF[1] = 1 * ComboBoxCzTWydaj.SelectedIndex;
+        }
+
+        private void ComboBoxCzTWydajUztk_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TCF[2] = 1 * ComboBoxCzTWydajUztk.SelectedIndex;
+        }
+
+        private void ComboBoxCzTPrzetwW_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TCF[3] = 1 * ComboBoxCzTPrzetwW.SelectedIndex;
+        }
+
+        private void ComboBoxCzTPonUzycie_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TCF[4] = 1 * ComboBoxCzTPonUzycie.SelectedIndex;
+        }
+
+        private void ComboBoxCzTLatwInst_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TCF[5] = 0.5 * ComboBoxCzTLatwInst.SelectedIndex;
+        }
+
+        private void ComboBoxCzTLatwUzyc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TCF[6] = 0.5 * ComboBoxCzTLatwUzyc.SelectedIndex;
+        }
+
+        private void ComboBoxCzTPrzen_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TCF[7] = 2 * ComboBoxCzTPrzen.SelectedIndex;
+        }
+
+        private void ComboBoxCzTLatwZmian_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TCF[8] = 1 * ComboBoxCzTLatwZmian.SelectedIndex;
+        }
+
+        private void ComboBoxCzTPrzetwWsp_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TCF[9] = 1 * ComboBoxCzTPrzetwWsp.SelectedIndex;
+        }
+
+        private void ComboBoxCzTSpecZabezp_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TCF[10] = 1 * ComboBoxCzTSpecZabezp.SelectedIndex;
+        }
+
+        private void ComboBoxCzTZewnOpr_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TCF[11] = 1 * ComboBoxCzTZewnOpr.SelectedIndex;
+        }
+
+        private void ComboBoxCzTDodSzkol_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TCF[12] = 1 * ComboBoxCzTDodSzkol.SelectedIndex;
+        }
+
     }
 }

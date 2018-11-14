@@ -45,7 +45,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.ButtonOk = new System.Windows.Forms.Button();
             this.ComboBoxCzTWydaj = new System.Windows.Forms.ComboBox();
             this.ComboBoxCzTWydajUztk = new System.Windows.Forms.ComboBox();
             this.ComboBoxCzTPrzetwW = new System.Windows.Forms.ComboBox();
@@ -58,6 +57,7 @@
             this.ComboBoxCzTSpecZabezp = new System.Windows.Forms.ComboBox();
             this.ComboBoxCzTZewnOpr = new System.Windows.Forms.ComboBox();
             this.ComboBoxCzTDodSzkol = new System.Windows.Forms.ComboBox();
+            this.ButtonOk = new System.Windows.Forms.Button();
             this.GroupBoxCzynZlozTechn.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -231,6 +231,7 @@
             this.ComboBoxCzTRozp.Name = "ComboBoxCzTRozp";
             this.ComboBoxCzTRozp.Size = new System.Drawing.Size(45, 24);
             this.ComboBoxCzTRozp.TabIndex = 0;
+            this.ComboBoxCzTRozp.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzTRozp_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -323,17 +324,6 @@
             this.label12.Text = "Zależność od zewnętrznego oprogramowania";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ButtonOk
-            // 
-            this.ButtonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.ButtonOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOk.Location = new System.Drawing.Point(243, 768);
-            this.ButtonOk.Name = "ButtonOk";
-            this.ButtonOk.Size = new System.Drawing.Size(104, 27);
-            this.ButtonOk.TabIndex = 6;
-            this.ButtonOk.Text = "OK";
-            this.ButtonOk.UseVisualStyleBackColor = true;
-            // 
             // ComboBoxCzTWydaj
             // 
             this.ComboBoxCzTWydaj.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -351,6 +341,7 @@
             this.ComboBoxCzTWydaj.Name = "ComboBoxCzTWydaj";
             this.ComboBoxCzTWydaj.Size = new System.Drawing.Size(45, 24);
             this.ComboBoxCzTWydaj.TabIndex = 23;
+            this.ComboBoxCzTWydaj.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzTWydaj_SelectedIndexChanged);
             // 
             // ComboBoxCzTWydajUztk
             // 
@@ -369,6 +360,7 @@
             this.ComboBoxCzTWydajUztk.Name = "ComboBoxCzTWydajUztk";
             this.ComboBoxCzTWydajUztk.Size = new System.Drawing.Size(45, 24);
             this.ComboBoxCzTWydajUztk.TabIndex = 24;
+            this.ComboBoxCzTWydajUztk.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzTWydajUztk_SelectedIndexChanged);
             // 
             // ComboBoxCzTPrzetwW
             // 
@@ -387,6 +379,7 @@
             this.ComboBoxCzTPrzetwW.Name = "ComboBoxCzTPrzetwW";
             this.ComboBoxCzTPrzetwW.Size = new System.Drawing.Size(45, 24);
             this.ComboBoxCzTPrzetwW.TabIndex = 25;
+            this.ComboBoxCzTPrzetwW.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzTPrzetwW_SelectedIndexChanged);
             // 
             // ComboBoxCzTPonUzycie
             // 
@@ -405,6 +398,7 @@
             this.ComboBoxCzTPonUzycie.Name = "ComboBoxCzTPonUzycie";
             this.ComboBoxCzTPonUzycie.Size = new System.Drawing.Size(45, 24);
             this.ComboBoxCzTPonUzycie.TabIndex = 26;
+            this.ComboBoxCzTPonUzycie.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzTPonUzycie_SelectedIndexChanged);
             // 
             // ComboBoxCzTLatwInst
             // 
@@ -423,6 +417,7 @@
             this.ComboBoxCzTLatwInst.Name = "ComboBoxCzTLatwInst";
             this.ComboBoxCzTLatwInst.Size = new System.Drawing.Size(45, 24);
             this.ComboBoxCzTLatwInst.TabIndex = 27;
+            this.ComboBoxCzTLatwInst.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzTLatwInst_SelectedIndexChanged);
             // 
             // ComboBoxCzTLatwUzyc
             // 
@@ -441,6 +436,7 @@
             this.ComboBoxCzTLatwUzyc.Name = "ComboBoxCzTLatwUzyc";
             this.ComboBoxCzTLatwUzyc.Size = new System.Drawing.Size(45, 24);
             this.ComboBoxCzTLatwUzyc.TabIndex = 28;
+            this.ComboBoxCzTLatwUzyc.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzTLatwUzyc_SelectedIndexChanged);
             // 
             // ComboBoxCzTPrzen
             // 
@@ -459,6 +455,7 @@
             this.ComboBoxCzTPrzen.Name = "ComboBoxCzTPrzen";
             this.ComboBoxCzTPrzen.Size = new System.Drawing.Size(45, 24);
             this.ComboBoxCzTPrzen.TabIndex = 29;
+            this.ComboBoxCzTPrzen.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzTPrzen_SelectedIndexChanged);
             // 
             // ComboBoxCzTLatwZmian
             // 
@@ -477,6 +474,7 @@
             this.ComboBoxCzTLatwZmian.Name = "ComboBoxCzTLatwZmian";
             this.ComboBoxCzTLatwZmian.Size = new System.Drawing.Size(45, 24);
             this.ComboBoxCzTLatwZmian.TabIndex = 30;
+            this.ComboBoxCzTLatwZmian.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzTLatwZmian_SelectedIndexChanged);
             // 
             // ComboBoxCzTPrzetwWsp
             // 
@@ -495,6 +493,7 @@
             this.ComboBoxCzTPrzetwWsp.Name = "ComboBoxCzTPrzetwWsp";
             this.ComboBoxCzTPrzetwWsp.Size = new System.Drawing.Size(45, 24);
             this.ComboBoxCzTPrzetwWsp.TabIndex = 31;
+            this.ComboBoxCzTPrzetwWsp.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzTPrzetwWsp_SelectedIndexChanged);
             // 
             // ComboBoxCzTSpecZabezp
             // 
@@ -513,6 +512,7 @@
             this.ComboBoxCzTSpecZabezp.Name = "ComboBoxCzTSpecZabezp";
             this.ComboBoxCzTSpecZabezp.Size = new System.Drawing.Size(45, 24);
             this.ComboBoxCzTSpecZabezp.TabIndex = 32;
+            this.ComboBoxCzTSpecZabezp.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzTSpecZabezp_SelectedIndexChanged);
             // 
             // ComboBoxCzTZewnOpr
             // 
@@ -531,6 +531,7 @@
             this.ComboBoxCzTZewnOpr.Name = "ComboBoxCzTZewnOpr";
             this.ComboBoxCzTZewnOpr.Size = new System.Drawing.Size(45, 24);
             this.ComboBoxCzTZewnOpr.TabIndex = 33;
+            this.ComboBoxCzTZewnOpr.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzTZewnOpr_SelectedIndexChanged);
             // 
             // ComboBoxCzTDodSzkol
             // 
@@ -549,6 +550,18 @@
             this.ComboBoxCzTDodSzkol.Name = "ComboBoxCzTDodSzkol";
             this.ComboBoxCzTDodSzkol.Size = new System.Drawing.Size(45, 24);
             this.ComboBoxCzTDodSzkol.TabIndex = 34;
+            this.ComboBoxCzTDodSzkol.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzTDodSzkol_SelectedIndexChanged);
+            // 
+            // ButtonOk
+            // 
+            this.ButtonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.ButtonOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOk.Location = new System.Drawing.Point(243, 768);
+            this.ButtonOk.Name = "ButtonOk";
+            this.ButtonOk.Size = new System.Drawing.Size(104, 27);
+            this.ButtonOk.TabIndex = 6;
+            this.ButtonOk.Text = "OK";
+            this.ButtonOk.UseVisualStyleBackColor = true;
             // 
             // OknoCzynnZlozTechn
             // 

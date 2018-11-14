@@ -50,5 +50,10 @@ namespace Aplikacja
             //ToolTip.SetToolTip(comboBox1, "Save changes");
 
         }
+
+        //TODO doświadczenie a nie znajomość??
+
+
+
     }
 }

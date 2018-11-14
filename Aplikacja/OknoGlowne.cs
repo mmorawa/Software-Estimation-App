@@ -35,10 +35,11 @@ namespace Aplikacja
         *  Properties.
         ********************************************************************************/
 
-        //TODO encapsulate??
-        public static int[] UAW = new int[3];
-        public static int[] UUCW = new int[3];
+        //TODO encapsulate?? domyślnie zera?
+        public static double[] UAW = new double[3];
+        public static double[] UUCW = new double[3];
 
+        public static double[] TCF = new double[13];
 
         /*******************************************************************************
         *  Metody klasy Form1.
@@ -126,6 +127,38 @@ namespace Aplikacja
 
         }
 
+        private void ButtonCZT_Click(object sender, EventArgs e)
+        {
+            using (OknoCzynnZlozTechn OknoCzynZT = new OknoCzynnZlozTechn())
+            {
+                DialogResult dr = OknoCzynZT.ShowDialog();
+
+
+                if (dr == DialogResult.OK)
+                {
+
+                    MessageBox.Show("Czynniki złożoności technicznej zostały wprowadzone.", "Sukces");
+
+                }
+            }
+        }
+
+        private void ButtonCzSr_Click(object sender, EventArgs e)
+        {
+            using (OknoCzynnSrodow OknoCzynSrod = new OknoCzynnSrodow())
+            {
+                DialogResult dr = OknoCzynSrod.ShowDialog();
+
+
+                if (dr == DialogResult.OK)
+                {
+
+                    MessageBox.Show("Czynniki środowiskowe zostały wprowadzone.", "Sukces");
+
+                }
+            }
+        }
+
         private void ButtonCzSk_Click(object sender, EventArgs e)
         {
             using (OknoCzynnikiSkali OknoCzynS = new OknoCzynnikiSkali())
@@ -156,73 +189,45 @@ namespace Aplikacja
             }
         }
 
-        private void ButtonCZT_Click(object sender, EventArgs e)
-        {
-            using (OknoCzynnZlozTechn OknoCzynZT = new OknoCzynnZlozTechn())
-            {
-                DialogResult dr = OknoCzynZT.ShowDialog();
 
-
-                if (dr == DialogResult.OK)
-                {
-
-                    MessageBox.Show("Czynniki złożoności technicznej zostały wprowadzone.", "Sukces");
-
-                }
-            }
-        }
-
-        private void ButtonCzSr_Click(object sender, EventArgs e)
-        {
-            using (OknoCzynnSrodow OknoCzynSrod = new OknoCzynnSrodow())
-            {
-                DialogResult dr = OknoCzynSrod.ShowDialog();
-
-
-                if (dr == DialogResult.OK)
-                {
-
-                    MessageBox.Show("Czynniki środowiskowe zostały wprowadzone.", "Sukces");
-                    
-                }
-            }
-        }
 
         private void NumUUCWProsty_ValueChanged(object sender, EventArgs e)
         {
-            UUCW[0] = 5 * (int)NumUUCWProsty.Value;
+            UUCW[0] = 5 * (double)NumUUCWProsty.Value;
         }
 
         private void NumUUCWSredni_ValueChanged(object sender, EventArgs e)
         {
-            UUCW[1] = 10 * (int)NumUUCWSredni.Value;
+            UUCW[1] = 10 * (double)NumUUCWSredni.Value;
         }
 
         private void NumUUCWZlozony_ValueChanged(object sender, EventArgs e)
         {
-            UUCW[2] = 15 * (int)NumUUCWZlozony.Value;
+            UUCW[2] = 15 * (double)NumUUCWZlozony.Value;
         }
 
         private void NumUAWProsty_ValueChanged(object sender, EventArgs e)
         {
-            UAW[0] = 1 * (int)NumUAWProsty.Value;
+            UAW[0] = 1 * (double)NumUAWProsty.Value;
         }
 
         private void NumUAWSredni_ValueChanged(object sender, EventArgs e)
         {
-            UAW[1] = 2 * (int)NumUAWSredni.Value;
+            UAW[1] = 2 * (double)NumUAWSredni.Value;
         }
 
         private void NumUAWZlozony_ValueChanged(object sender, EventArgs e)
         {
-            UAW[2] = 3 * (int)NumUAWZlozony.Value;
+            UAW[2] = 3 * (double)NumUAWZlozony.Value;
         }
 
         private void ButtonOblicz_Click(object sender, EventArgs e)
         {
             //TODO walidacja danych wejściowych
-            LabelPktUCP.Text = (UAW.Sum() + UUCW.Sum()).ToString();
 
+            LabelPktUCP.Text = (UAW.Sum() + UUCW.Sum()).ToString();
+            MessageBox.Show((0.6 + TCF.Sum()/100).ToString());
+            //MessageBox.Show(TCF[0].ToString());
         }
     }
 }
