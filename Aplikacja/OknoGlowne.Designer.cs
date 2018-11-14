@@ -93,6 +93,12 @@
             this.GroupBoxWyniki = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.PasekMenu.SuspendLayout();
             this.GroupBoxDaneProjektu.SuspendLayout();
             this.GroupBoxUUCW.SuspendLayout();
@@ -119,7 +125,7 @@
             this.ToolStripMenuPomoc});
             this.PasekMenu.Location = new System.Drawing.Point(0, 0);
             this.PasekMenu.Name = "PasekMenu";
-            this.PasekMenu.Size = new System.Drawing.Size(1321, 25);
+            this.PasekMenu.Size = new System.Drawing.Size(1099, 25);
             this.PasekMenu.TabIndex = 0;
             this.PasekMenu.Text = "Pasek Menu";
             // 
@@ -234,7 +240,7 @@
             this.GroupBoxDaneProjektu.Controls.Add(this.LabelNazwaProjektu);
             this.GroupBoxDaneProjektu.Controls.Add(this.TextBoxNazwaProjektu);
             this.GroupBoxDaneProjektu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.GroupBoxDaneProjektu.Location = new System.Drawing.Point(12, 39);
+            this.GroupBoxDaneProjektu.Location = new System.Drawing.Point(12, 69);
             this.GroupBoxDaneProjektu.Name = "GroupBoxDaneProjektu";
             this.GroupBoxDaneProjektu.Size = new System.Drawing.Size(503, 150);
             this.GroupBoxDaneProjektu.TabIndex = 1;
@@ -288,7 +294,7 @@
             // 
             this.GroupBoxUUCW.Controls.Add(this.tableLayoutPanel1);
             this.GroupBoxUUCW.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.GroupBoxUUCW.Location = new System.Drawing.Point(12, 195);
+            this.GroupBoxUUCW.Location = new System.Drawing.Point(12, 225);
             this.GroupBoxUUCW.Name = "GroupBoxUUCW";
             this.GroupBoxUUCW.Size = new System.Drawing.Size(503, 173);
             this.GroupBoxUUCW.TabIndex = 2;
@@ -538,11 +544,12 @@
             // 
             // ButtonOblicz
             // 
-            this.ButtonOblicz.Location = new System.Drawing.Point(37, 36);
+            this.ButtonOblicz.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOblicz.Location = new System.Drawing.Point(207, 21);
             this.ButtonOblicz.Name = "ButtonOblicz";
-            this.ButtonOblicz.Size = new System.Drawing.Size(173, 27);
+            this.ButtonOblicz.Size = new System.Drawing.Size(173, 44);
             this.ButtonOblicz.TabIndex = 2;
-            this.ButtonOblicz.Text = "Oblicz";
+            this.ButtonOblicz.Text = "Oszacuj";
             this.ToolTip.SetToolTip(this.ButtonOblicz, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonOblicz.UseVisualStyleBackColor = true;
             this.ButtonOblicz.Click += new System.EventHandler(this.ButtonOblicz_Click);
@@ -583,7 +590,7 @@
             // 
             this.GroupBoxUAW.Controls.Add(this.tableLayoutPanel2);
             this.GroupBoxUAW.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.GroupBoxUAW.Location = new System.Drawing.Point(12, 374);
+            this.GroupBoxUAW.Location = new System.Drawing.Point(12, 404);
             this.GroupBoxUAW.Name = "GroupBoxUAW";
             this.GroupBoxUAW.Size = new System.Drawing.Size(503, 167);
             this.GroupBoxUAW.TabIndex = 3;
@@ -825,7 +832,7 @@
             this.GroupBoxModyfUCP.Controls.Add(this.ButtonCzSr);
             this.GroupBoxModyfUCP.Controls.Add(this.ButtonCZT);
             this.GroupBoxModyfUCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.GroupBoxModyfUCP.Location = new System.Drawing.Point(12, 547);
+            this.GroupBoxModyfUCP.Location = new System.Drawing.Point(12, 577);
             this.GroupBoxModyfUCP.Name = "GroupBoxModyfUCP";
             this.GroupBoxModyfUCP.Size = new System.Drawing.Size(503, 87);
             this.GroupBoxModyfUCP.TabIndex = 4;
@@ -836,9 +843,9 @@
             // 
             this.GroupBoxWyniki.Controls.Add(this.ButtonOblicz);
             this.GroupBoxWyniki.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.GroupBoxWyniki.Location = new System.Drawing.Point(627, 113);
+            this.GroupBoxWyniki.Location = new System.Drawing.Point(521, 69);
             this.GroupBoxWyniki.Name = "GroupBoxWyniki";
-            this.GroupBoxWyniki.Size = new System.Drawing.Size(494, 143);
+            this.GroupBoxWyniki.Size = new System.Drawing.Size(541, 688);
             this.GroupBoxWyniki.TabIndex = 5;
             this.GroupBoxWyniki.TabStop = false;
             this.GroupBoxWyniki.Text = "Wyniki";
@@ -848,7 +855,7 @@
             this.groupBox1.Controls.Add(this.ButtonMnPr);
             this.groupBox1.Controls.Add(this.ButtonCzSk);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 640);
+            this.groupBox1.Location = new System.Drawing.Point(12, 670);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(503, 87);
             this.groupBox1.TabIndex = 6;
@@ -859,15 +866,87 @@
             // 
             this.StatusStrip.Location = new System.Drawing.Point(0, 762);
             this.StatusStrip.Name = "StatusStrip";
-            this.StatusStrip.Size = new System.Drawing.Size(1321, 22);
+            this.StatusStrip.Size = new System.Drawing.Size(1099, 22);
             this.StatusStrip.TabIndex = 7;
             this.StatusStrip.Text = "statusStrip1";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Location = new System.Drawing.Point(12, 36);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(173, 27);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Nowy projekt";
+            this.ToolTip.SetToolTip(this.button1, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.Location = new System.Drawing.Point(191, 36);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(173, 27);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Otwórz projekt";
+            this.ToolTip.SetToolTip(this.button2, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button3.Location = new System.Drawing.Point(370, 36);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(173, 27);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "Zapisz projekt";
+            this.ToolTip.SetToolTip(this.button3, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button4.Location = new System.Drawing.Point(549, 36);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(173, 27);
+            this.button4.TabIndex = 11;
+            this.button4.Text = "Zapisz projekt jako";
+            this.ToolTip.SetToolTip(this.button4, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button5.Location = new System.Drawing.Point(728, 36);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(173, 27);
+            this.button5.TabIndex = 12;
+            this.button5.Text = "Przeliczniki";
+            this.ToolTip.SetToolTip(this.button5, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button6.Location = new System.Drawing.Point(907, 36);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(173, 27);
+            this.button6.TabIndex = 13;
+            this.button6.Text = "Kalibracja";
+            this.ToolTip.SetToolTip(this.button6, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // OknoGlowne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1321, 784);
+            this.ClientSize = new System.Drawing.Size(1099, 784);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.StatusStrip);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.GroupBoxWyniki);
@@ -969,6 +1048,12 @@
         private System.Windows.Forms.Button ButtonMnPr;
         private System.Windows.Forms.Button ButtonCzSk;
         private System.Windows.Forms.StatusStrip StatusStrip;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
 
