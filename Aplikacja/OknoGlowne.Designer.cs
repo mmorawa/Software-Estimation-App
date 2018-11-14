@@ -99,6 +99,11 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.daneProjektuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oszacowanaPracochłonnośćProjektuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oszacowanyHarmonogramProjektuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.podsumowanieProjektuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wizardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PasekMenu.SuspendLayout();
             this.GroupBoxDaneProjektu.SuspendLayout();
             this.GroupBoxUUCW.SuspendLayout();
@@ -133,6 +138,7 @@
             // 
             this.ToolStripMenuPlik.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuNowyProj,
+            this.wizardToolStripMenuItem,
             this.ToolStripMenuOtworzProj,
             this.ToolStripMenuZapiszProj,
             this.ToolStripMenuZapiszJakoProj,
@@ -179,6 +185,11 @@
             // 
             // ToolStripMenuRaporty
             // 
+            this.ToolStripMenuRaporty.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.daneProjektuToolStripMenuItem,
+            this.oszacowanaPracochłonnośćProjektuToolStripMenuItem,
+            this.oszacowanyHarmonogramProjektuToolStripMenuItem,
+            this.podsumowanieProjektuToolStripMenuItem});
             this.ToolStripMenuRaporty.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ToolStripMenuRaporty.Name = "ToolStripMenuRaporty";
             this.ToolStripMenuRaporty.Size = new System.Drawing.Size(68, 21);
@@ -936,6 +947,36 @@
             this.ToolTip.SetToolTip(this.button6, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.button6.UseVisualStyleBackColor = true;
             // 
+            // daneProjektuToolStripMenuItem
+            // 
+            this.daneProjektuToolStripMenuItem.Name = "daneProjektuToolStripMenuItem";
+            this.daneProjektuToolStripMenuItem.Size = new System.Drawing.Size(307, 22);
+            this.daneProjektuToolStripMenuItem.Text = "&Dane projektu";
+            // 
+            // oszacowanaPracochłonnośćProjektuToolStripMenuItem
+            // 
+            this.oszacowanaPracochłonnośćProjektuToolStripMenuItem.Name = "oszacowanaPracochłonnośćProjektuToolStripMenuItem";
+            this.oszacowanaPracochłonnośćProjektuToolStripMenuItem.Size = new System.Drawing.Size(307, 22);
+            this.oszacowanaPracochłonnośćProjektuToolStripMenuItem.Text = "Oszacowana &pracochłonność projektu";
+            // 
+            // oszacowanyHarmonogramProjektuToolStripMenuItem
+            // 
+            this.oszacowanyHarmonogramProjektuToolStripMenuItem.Name = "oszacowanyHarmonogramProjektuToolStripMenuItem";
+            this.oszacowanyHarmonogramProjektuToolStripMenuItem.Size = new System.Drawing.Size(307, 22);
+            this.oszacowanyHarmonogramProjektuToolStripMenuItem.Text = "Oszacowany &harmonogram projektu";
+            // 
+            // podsumowanieProjektuToolStripMenuItem
+            // 
+            this.podsumowanieProjektuToolStripMenuItem.Name = "podsumowanieProjektuToolStripMenuItem";
+            this.podsumowanieProjektuToolStripMenuItem.Size = new System.Drawing.Size(307, 22);
+            this.podsumowanieProjektuToolStripMenuItem.Text = "&Podsumowanie projektu";
+            // 
+            // wizardToolStripMenuItem
+            // 
+            this.wizardToolStripMenuItem.Name = "wizardToolStripMenuItem";
+            this.wizardToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.wizardToolStripMenuItem.Text = "Wizar&d";
+            // 
             // OknoGlowne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1054,6 +1095,11 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.ToolStripMenuItem wizardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem daneProjektuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oszacowanaPracochłonnośćProjektuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oszacowanyHarmonogramProjektuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem podsumowanieProjektuToolStripMenuItem;
     }
 }
 
