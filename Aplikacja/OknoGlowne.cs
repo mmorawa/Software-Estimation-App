@@ -290,5 +290,10 @@ namespace Aplikacja
             
 
         }
+
+        private void ButtonZapiszProjektJako_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

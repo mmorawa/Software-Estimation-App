@@ -77,12 +77,12 @@
             this.ButtonCzSr = new System.Windows.Forms.Button();
             this.ButtonMnPr = new System.Windows.Forms.Button();
             this.ButtonCzSk = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.ButtonNowyProjekt = new System.Windows.Forms.Button();
+            this.ButtonOtworzProjekt = new System.Windows.Forms.Button();
+            this.ButtonZapiszProjekt = new System.Windows.Forms.Button();
+            this.ButtonZapiszProjektJako = new System.Windows.Forms.Button();
+            this.ButtonPrzeliczniki = new System.Windows.Forms.Button();
+            this.ButtonKalibracja = new System.Windows.Forms.Button();
             this.GroupBoxUAW = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.NumUAWZlozony = new System.Windows.Forms.NumericUpDown();
@@ -640,71 +640,72 @@
             this.ButtonCzSk.UseVisualStyleBackColor = true;
             this.ButtonCzSk.Click += new System.EventHandler(this.ButtonCzSk_Click);
             // 
-            // button1
+            // ButtonNowyProjekt
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(12, 36);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 27);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Nowy projekt";
-            this.ToolTip.SetToolTip(this.button1, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
-            this.button1.UseVisualStyleBackColor = true;
+            this.ButtonNowyProjekt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonNowyProjekt.Location = new System.Drawing.Point(12, 36);
+            this.ButtonNowyProjekt.Name = "ButtonNowyProjekt";
+            this.ButtonNowyProjekt.Size = new System.Drawing.Size(173, 27);
+            this.ButtonNowyProjekt.TabIndex = 8;
+            this.ButtonNowyProjekt.Text = "Nowy projekt";
+            this.ToolTip.SetToolTip(this.ButtonNowyProjekt, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.ButtonNowyProjekt.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // ButtonOtworzProjekt
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(191, 36);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(173, 27);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Otwórz projekt";
-            this.ToolTip.SetToolTip(this.button2, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
-            this.button2.UseVisualStyleBackColor = true;
+            this.ButtonOtworzProjekt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOtworzProjekt.Location = new System.Drawing.Point(191, 36);
+            this.ButtonOtworzProjekt.Name = "ButtonOtworzProjekt";
+            this.ButtonOtworzProjekt.Size = new System.Drawing.Size(173, 27);
+            this.ButtonOtworzProjekt.TabIndex = 9;
+            this.ButtonOtworzProjekt.Text = "Otwórz projekt";
+            this.ToolTip.SetToolTip(this.ButtonOtworzProjekt, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.ButtonOtworzProjekt.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // ButtonZapiszProjekt
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.Location = new System.Drawing.Point(370, 36);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(173, 27);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Zapisz projekt";
-            this.ToolTip.SetToolTip(this.button3, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
-            this.button3.UseVisualStyleBackColor = true;
+            this.ButtonZapiszProjekt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonZapiszProjekt.Location = new System.Drawing.Point(370, 36);
+            this.ButtonZapiszProjekt.Name = "ButtonZapiszProjekt";
+            this.ButtonZapiszProjekt.Size = new System.Drawing.Size(173, 27);
+            this.ButtonZapiszProjekt.TabIndex = 10;
+            this.ButtonZapiszProjekt.Text = "Zapisz projekt";
+            this.ToolTip.SetToolTip(this.ButtonZapiszProjekt, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.ButtonZapiszProjekt.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // ButtonZapiszProjektJako
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.Location = new System.Drawing.Point(549, 36);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(173, 27);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Zapisz projekt jako";
-            this.ToolTip.SetToolTip(this.button4, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
-            this.button4.UseVisualStyleBackColor = true;
+            this.ButtonZapiszProjektJako.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonZapiszProjektJako.Location = new System.Drawing.Point(549, 36);
+            this.ButtonZapiszProjektJako.Name = "ButtonZapiszProjektJako";
+            this.ButtonZapiszProjektJako.Size = new System.Drawing.Size(173, 27);
+            this.ButtonZapiszProjektJako.TabIndex = 11;
+            this.ButtonZapiszProjektJako.Text = "Zapisz projekt jako";
+            this.ToolTip.SetToolTip(this.ButtonZapiszProjektJako, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.ButtonZapiszProjektJako.UseVisualStyleBackColor = true;
+            this.ButtonZapiszProjektJako.Click += new System.EventHandler(this.ButtonZapiszProjektJako_Click);
             // 
-            // button5
+            // ButtonPrzeliczniki
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button5.Location = new System.Drawing.Point(728, 36);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(173, 27);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "Przeliczniki";
-            this.ToolTip.SetToolTip(this.button5, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
-            this.button5.UseVisualStyleBackColor = true;
+            this.ButtonPrzeliczniki.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonPrzeliczniki.Location = new System.Drawing.Point(728, 36);
+            this.ButtonPrzeliczniki.Name = "ButtonPrzeliczniki";
+            this.ButtonPrzeliczniki.Size = new System.Drawing.Size(173, 27);
+            this.ButtonPrzeliczniki.TabIndex = 12;
+            this.ButtonPrzeliczniki.Text = "Przeliczniki";
+            this.ToolTip.SetToolTip(this.ButtonPrzeliczniki, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.ButtonPrzeliczniki.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // ButtonKalibracja
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button6.Location = new System.Drawing.Point(907, 36);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(173, 27);
-            this.button6.TabIndex = 13;
-            this.button6.Text = "Kalibracja";
-            this.ToolTip.SetToolTip(this.button6, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
-            this.button6.UseVisualStyleBackColor = true;
+            this.ButtonKalibracja.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonKalibracja.Location = new System.Drawing.Point(907, 36);
+            this.ButtonKalibracja.Name = "ButtonKalibracja";
+            this.ButtonKalibracja.Size = new System.Drawing.Size(173, 27);
+            this.ButtonKalibracja.TabIndex = 13;
+            this.ButtonKalibracja.Text = "Kalibracja";
+            this.ToolTip.SetToolTip(this.ButtonKalibracja, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
+            this.ButtonKalibracja.UseVisualStyleBackColor = true;
             // 
             // GroupBoxUAW
             // 
@@ -1088,12 +1089,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1099, 784);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ButtonKalibracja);
+            this.Controls.Add(this.ButtonPrzeliczniki);
+            this.Controls.Add(this.ButtonZapiszProjektJako);
+            this.Controls.Add(this.ButtonZapiszProjekt);
+            this.Controls.Add(this.ButtonOtworzProjekt);
+            this.Controls.Add(this.ButtonNowyProjekt);
             this.Controls.Add(this.StatusStrip);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.GroupBoxWyniki);
@@ -1198,12 +1199,12 @@
         private System.Windows.Forms.Button ButtonMnPr;
         private System.Windows.Forms.Button ButtonCzSk;
         private System.Windows.Forms.StatusStrip StatusStrip;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button ButtonNowyProjekt;
+        private System.Windows.Forms.Button ButtonOtworzProjekt;
+        private System.Windows.Forms.Button ButtonZapiszProjekt;
+        private System.Windows.Forms.Button ButtonZapiszProjektJako;
+        private System.Windows.Forms.Button ButtonPrzeliczniki;
+        private System.Windows.Forms.Button ButtonKalibracja;
         private System.Windows.Forms.ToolStripMenuItem wizardToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem daneProjektuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oszacowanaPracochłonnośćProjektuToolStripMenuItem;
