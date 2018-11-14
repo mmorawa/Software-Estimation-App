@@ -53,7 +53,7 @@ namespace Aplikacja
             {7.8, 6.24, 4.68, 3.12, 1.56, 0 }
         };
 
-
+        double SumaSF = 0;
         double TCF = 0;
         double EF = 0;
         double UUCW = 0;
@@ -260,9 +260,16 @@ namespace Aplikacja
             UAW = TabUAW[0] * 1 + TabUAW[1] * 2 + TabUAW[2] * 3;
 
             LabelPktUCP.Text = ( TCF * EF * (UAW + UUCW)).ToString();
+            
 
-
-
+            for (int i = 0; i <= 4; i++)
+            {
+                SumaSF += TabWspSF[i,TabSF[i]];
+            }
+            
+            MessageBox.Show(SumaSF.ToString());
+            
+            
 
         }
     }
