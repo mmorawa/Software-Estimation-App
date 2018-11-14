@@ -29,11 +29,37 @@ namespace Aplikacja
         public OknoCzynnikiSkali()
         {
             InitializeComponent();
-            ComboBoxCzynnSkTyp.SelectedIndex = 2;
-            ComboBoxCzynnSkElast.SelectedIndex = 2;
-            ComboBoxCzynnSkRyzyko.SelectedIndex = 2;
-            ComboBoxCzynnSkZesp.SelectedIndex = 2;
-            ComboBoxCzynnSkDojrz.SelectedIndex = 2;
+
+            ComboBoxCzynnSkTyp.SelectedIndex = OknoGlowne.TabSF[0];
+            ComboBoxCzynnSkElast.SelectedIndex = OknoGlowne.TabSF[1];
+            ComboBoxCzynnSkRyzyko.SelectedIndex = OknoGlowne.TabSF[2];
+            ComboBoxCzynnSkZesp.SelectedIndex = OknoGlowne.TabSF[3];
+            ComboBoxCzynnSkDojrz.SelectedIndex = OknoGlowne.TabSF[4];
+        }
+
+        private void ComboBoxCzynnSkTyp_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TabSF[0] = ComboBoxCzynnSkTyp.SelectedIndex;
+        }
+
+        private void ComboBoxCzynnSkElast_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TabSF[1] = ComboBoxCzynnSkElast.SelectedIndex;
+        }
+
+        private void ComboBoxCzynnSkRyzyko_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TabSF[2] = ComboBoxCzynnSkRyzyko.SelectedIndex;
+        }
+
+        private void ComboBoxCzynnSkZesp_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TabSF[3] = ComboBoxCzynnSkZesp.SelectedIndex;
+        }
+
+        private void ComboBoxCzynnSkDojrz_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TabSF[4] = ComboBoxCzynnSkDojrz.SelectedIndex;
         }
     }
 }

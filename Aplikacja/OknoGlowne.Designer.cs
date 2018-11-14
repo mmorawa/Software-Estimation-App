@@ -247,14 +247,14 @@
             // ToolStripMenuKalibracja
             // 
             this.ToolStripMenuKalibracja.Name = "ToolStripMenuKalibracja";
-            this.ToolStripMenuKalibracja.Size = new System.Drawing.Size(145, 22);
+            this.ToolStripMenuKalibracja.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuKalibracja.Text = "&Kalibracja";
             this.ToolStripMenuKalibracja.Click += new System.EventHandler(this.ToolStripMenuKalibracja_Click);
             // 
             // ToolStripMenuPrzeliczniki
             // 
             this.ToolStripMenuPrzeliczniki.Name = "ToolStripMenuPrzeliczniki";
-            this.ToolStripMenuPrzeliczniki.Size = new System.Drawing.Size(145, 22);
+            this.ToolStripMenuPrzeliczniki.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuPrzeliczniki.Text = "&Przeliczniki";
             this.ToolStripMenuPrzeliczniki.Click += new System.EventHandler(this.ToolStripMenuPrzeliczniki_Click);
             // 
@@ -271,14 +271,14 @@
             // ToolStripMenuDokumentacja
             // 
             this.ToolStripMenuDokumentacja.Name = "ToolStripMenuDokumentacja";
-            this.ToolStripMenuDokumentacja.Size = new System.Drawing.Size(165, 22);
+            this.ToolStripMenuDokumentacja.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuDokumentacja.Text = "&Dokumentacja";
             this.ToolStripMenuDokumentacja.Click += new System.EventHandler(this.ToolStripMenuDokumentacja_Click);
             // 
             // ToolStripMenuOProgramie
             // 
             this.ToolStripMenuOProgramie.Name = "ToolStripMenuOProgramie";
-            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(165, 22);
+            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuOProgramie.Text = "&O programie";
             this.ToolStripMenuOProgramie.Click += new System.EventHandler(this.ToolStripMenuOProgramie_Click);
             // 

@@ -75,8 +75,8 @@
             this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 136F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 373F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 361F));
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
@@ -180,8 +180,9 @@
             this.ComboBoxCzynnSkTyp.Location = new System.Drawing.Point(139, 17);
             this.ComboBoxCzynnSkTyp.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
             this.ComboBoxCzynnSkTyp.Name = "ComboBoxCzynnSkTyp";
-            this.ComboBoxCzynnSkTyp.Size = new System.Drawing.Size(111, 24);
+            this.ComboBoxCzynnSkTyp.Size = new System.Drawing.Size(123, 24);
             this.ComboBoxCzynnSkTyp.TabIndex = 0;
+            this.ComboBoxCzynnSkTyp.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzynnSkTyp_SelectedIndexChanged);
             // 
             // ComboBoxCzynnSkElast
             // 
@@ -199,8 +200,9 @@
             this.ComboBoxCzynnSkElast.Location = new System.Drawing.Point(139, 78);
             this.ComboBoxCzynnSkElast.Margin = new System.Windows.Forms.Padding(3, 14, 3, 3);
             this.ComboBoxCzynnSkElast.Name = "ComboBoxCzynnSkElast";
-            this.ComboBoxCzynnSkElast.Size = new System.Drawing.Size(111, 24);
+            this.ComboBoxCzynnSkElast.Size = new System.Drawing.Size(123, 24);
             this.ComboBoxCzynnSkElast.TabIndex = 11;
+            this.ComboBoxCzynnSkElast.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzynnSkElast_SelectedIndexChanged);
             // 
             // ComboBoxCzynnSkRyzyko
             // 
@@ -218,8 +220,9 @@
             this.ComboBoxCzynnSkRyzyko.Location = new System.Drawing.Point(139, 145);
             this.ComboBoxCzynnSkRyzyko.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
             this.ComboBoxCzynnSkRyzyko.Name = "ComboBoxCzynnSkRyzyko";
-            this.ComboBoxCzynnSkRyzyko.Size = new System.Drawing.Size(111, 24);
+            this.ComboBoxCzynnSkRyzyko.Size = new System.Drawing.Size(123, 24);
             this.ComboBoxCzynnSkRyzyko.TabIndex = 12;
+            this.ComboBoxCzynnSkRyzyko.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzynnSkRyzyko_SelectedIndexChanged);
             // 
             // ComboBoxCzynnSkZesp
             // 
@@ -237,8 +240,9 @@
             this.ComboBoxCzynnSkZesp.Location = new System.Drawing.Point(139, 209);
             this.ComboBoxCzynnSkZesp.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
             this.ComboBoxCzynnSkZesp.Name = "ComboBoxCzynnSkZesp";
-            this.ComboBoxCzynnSkZesp.Size = new System.Drawing.Size(111, 24);
+            this.ComboBoxCzynnSkZesp.Size = new System.Drawing.Size(123, 24);
             this.ComboBoxCzynnSkZesp.TabIndex = 13;
+            this.ComboBoxCzynnSkZesp.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzynnSkZesp_SelectedIndexChanged);
             // 
             // ComboBoxCzynnSkDojrz
             // 
@@ -256,8 +260,9 @@
             this.ComboBoxCzynnSkDojrz.Location = new System.Drawing.Point(139, 274);
             this.ComboBoxCzynnSkDojrz.Margin = new System.Windows.Forms.Padding(3, 18, 3, 3);
             this.ComboBoxCzynnSkDojrz.Name = "ComboBoxCzynnSkDojrz";
-            this.ComboBoxCzynnSkDojrz.Size = new System.Drawing.Size(111, 24);
+            this.ComboBoxCzynnSkDojrz.Size = new System.Drawing.Size(123, 24);
             this.ComboBoxCzynnSkDojrz.TabIndex = 14;
+            this.ComboBoxCzynnSkDojrz.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzynnSkDojrz_SelectedIndexChanged);
             // 
             // ButtonAnuluj
             // 

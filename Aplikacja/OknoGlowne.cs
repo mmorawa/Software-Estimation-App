@@ -41,6 +41,24 @@ namespace Aplikacja
 
         public static int[] TabTCF = new int[13];
         public static int[] TabEF = new int[8];
+        //public static int[] wagiTCF = { 2, 1 };
+
+        public static int[] TabSF = { 2, 2, 2, 2, 2 };
+
+        public static double[,] TabWspSF = { 
+            {6.2, 4.96, 3.72, 2.48, 1.24, 0},
+            {5.07, 4.05, 3.04, 2.03, 1.01, 0},
+            {7.07, 5.65, 4.24, 2.83, 1.41, 0},
+            {5.48, 4.38, 3.29, 2.19, 1.1, 0},
+            {7.8, 6.24, 4.68, 3.12, 1.56, 0 }
+        };
+
+
+        double TCF = 0;
+        double EF = 0;
+        double UUCW = 0;
+        double UAW = 0;
+
 
         /*******************************************************************************
         *  Metody klasy Form1.
@@ -236,16 +254,16 @@ namespace Aplikacja
                 ).ToString());
             */
 
-            double TCF = 0.6 + (TabTCF[0] * 2 + TabTCF[1] * 1 + TabTCF[2] * 1 + TabTCF[3] * 1 + TabTCF[4] * 1 + TabTCF[5] * 0.5 + TabTCF[6] * 0.5 + TabTCF[7] * 2 + TabTCF[8] * 1 + TabTCF[9] * 1 + TabTCF[10] * 1 + TabTCF[11] * 1 + TabTCF[12] * 1) / 100;
-            double EF = 1.4 + (-0.03 * (TabEF[0] * 1.5 + TabEF[1] * -1 + TabEF[2] * 0.5 + TabEF[3] * 0.5 + TabEF[4] * 1 + TabEF[5] * 1 + TabEF[6] * -1 + TabEF[7] * 2));
-            double UUCW = TabUUCW[0] * 5 + TabUUCW[1] * 10 + TabUUCW[2] * 15;
-            double UAW = TabUAW[0] * 1 + TabUAW[1] * 2 + TabUAW[2] * 3;
+            TCF = 0.6 + (TabTCF[0] * 2 + TabTCF[1] * 1 + TabTCF[2] * 1 + TabTCF[3] * 1 + TabTCF[4] * 1 + TabTCF[5] * 0.5 + TabTCF[6] * 0.5 + TabTCF[7] * 2 + TabTCF[8] * 1 + TabTCF[9] * 1 + TabTCF[10] * 1 + TabTCF[11] * 1 + TabTCF[12] * 1) / 100;
+            EF = 1.4 + (-0.03 * (TabEF[0] * 1.5 + TabEF[1] * -1 + TabEF[2] * 0.5 + TabEF[3] * 0.5 + TabEF[4] * 1 + TabEF[5] * 1 + TabEF[6] * -1 + TabEF[7] * 2));
+            UUCW = TabUUCW[0] * 5 + TabUUCW[1] * 10 + TabUUCW[2] * 15;
+            UAW = TabUAW[0] * 1 + TabUAW[1] * 2 + TabUAW[2] * 3;
 
             LabelPktUCP.Text = ( TCF * EF * (UAW + UUCW)).ToString();
 
-            //MessageBox.Show((0.6 + TabTCF.Sum()/100).ToString());
 
-            //MessageBox.Show(TabTCF[0].ToString());
+
+
         }
     }
 }
