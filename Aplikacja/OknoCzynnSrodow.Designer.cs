@@ -258,6 +258,7 @@
             // 
             // ComboBoxCzSUmAnalW
             // 
+            this.ComboBoxCzSUmAnalW.DisplayMember = "4";
             this.ComboBoxCzSUmAnalW.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxCzSUmAnalW.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxCzSUmAnalW.FormattingEnabled = true;

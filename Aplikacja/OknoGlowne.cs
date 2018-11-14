@@ -31,6 +31,13 @@ namespace Aplikacja
             
         }
 
+        /*****************************************************************************//**
+        *  Properties.
+        ********************************************************************************/
+
+        //TODO encapsulate??
+        public static int[] UAW = new int[3];
+        public static int[] UUCW = new int[3];
 
 
         /*******************************************************************************
@@ -176,9 +183,46 @@ namespace Aplikacja
                 {
 
                     MessageBox.Show("Czynniki środowiskowe zostały wprowadzone.", "Sukces");
-
+                    
                 }
             }
+        }
+
+        private void NumUUCWProsty_ValueChanged(object sender, EventArgs e)
+        {
+            UUCW[0] = 5 * (int)NumUUCWProsty.Value;
+        }
+
+        private void NumUUCWSredni_ValueChanged(object sender, EventArgs e)
+        {
+            UUCW[1] = 10 * (int)NumUUCWSredni.Value;
+        }
+
+        private void NumUUCWZlozony_ValueChanged(object sender, EventArgs e)
+        {
+            UUCW[2] = 15 * (int)NumUUCWZlozony.Value;
+        }
+
+        private void NumUAWProsty_ValueChanged(object sender, EventArgs e)
+        {
+            UAW[0] = 1 * (int)NumUAWProsty.Value;
+        }
+
+        private void NumUAWSredni_ValueChanged(object sender, EventArgs e)
+        {
+            UAW[1] = 2 * (int)NumUAWSredni.Value;
+        }
+
+        private void NumUAWZlozony_ValueChanged(object sender, EventArgs e)
+        {
+            UAW[2] = 3 * (int)NumUAWZlozony.Value;
+        }
+
+        private void ButtonOblicz_Click(object sender, EventArgs e)
+        {
+            //TODO walidacja danych wejściowych
+            LabelPktUCP.Text = (UAW.Sum() + UUCW.Sum()).ToString();
+
         }
     }
 }
