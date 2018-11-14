@@ -36,11 +36,11 @@ namespace Aplikacja
         ********************************************************************************/
 
         //TODO encapsulate?? domyślnie zera?
-        public static int[] UAW = new int[3];
-        public static int[] UUCW = new int[3];
+        public static int[] TabUAW = new int[3];
+        public static int[] TabUUCW = new int[3];
 
-        public static int[] TCF = new int[13];
-        public static int[] EF = new int[8];
+        public static int[] TabTCF = new int[13];
+        public static int[] TabEF = new int[8];
 
         /*******************************************************************************
         *  Metody klasy Form1.
@@ -194,51 +194,58 @@ namespace Aplikacja
 
         private void NumUUCWProsty_ValueChanged(object sender, EventArgs e)
         {
-            UUCW[0] = (int)NumUUCWProsty.Value;
+            TabUUCW[0] = (int)NumUUCWProsty.Value;
         }
 
         private void NumUUCWSredni_ValueChanged(object sender, EventArgs e)
         {
-            UUCW[1] = (int)NumUUCWSredni.Value;
+            TabUUCW[1] = (int)NumUUCWSredni.Value;
         }
 
         private void NumUUCWZlozony_ValueChanged(object sender, EventArgs e)
         {
-            UUCW[2] = (int)NumUUCWZlozony.Value;
+            TabUUCW[2] = (int)NumUUCWZlozony.Value;
         }
 
         private void NumUAWProsty_ValueChanged(object sender, EventArgs e)
         {
-            UAW[0] = (int)NumUAWProsty.Value;
+            TabUAW[0] = (int)NumUAWProsty.Value;
         }
 
         private void NumUAWSredni_ValueChanged(object sender, EventArgs e)
         {
-            UAW[1] = (int)NumUAWSredni.Value;
+            TabUAW[1] = (int)NumUAWSredni.Value;
         }
 
         private void NumUAWZlozony_ValueChanged(object sender, EventArgs e)
         {
-            UAW[2] = (int)NumUAWZlozony.Value;
+            TabUAW[2] = (int)NumUAWZlozony.Value;
         }
 
         private void ButtonOblicz_Click(object sender, EventArgs e)
         {
-            //TODO walidacja danych wejściowych
-            
+            //TODO walidacja danych wejściowych, zaokrąglanie
+
+            /*
             MessageBox.Show(( 
-                0.6 + (TCF[0] * 2 + TCF[1] * 1 + TCF[2] * 1 + TCF[3] * 1 + TCF[4] * 1 + TCF[5] * 0.5 + TCF[6] * 0.5 + TCF[7] * 2 + TCF[8] * 1 + TCF[9] * 1 + TCF[10] * 1 + TCF[11] * 1 + TCF[12] * 1) / 100
+                0.6 + (TabTCF[0] * 2 + TabTCF[1] * 1 + TabTCF[2] * 1 + TabTCF[3] * 1 + TabTCF[4] * 1 + TabTCF[5] * 0.5 + TabTCF[6] * 0.5 + TabTCF[7] * 2 + TabTCF[8] * 1 + TabTCF[9] * 1 + TabTCF[10] * 1 + TabTCF[11] * 1 + TabTCF[12] * 1) / 100
                 ).ToString());
 
             MessageBox.Show((
-                1.4 + (-0.03 * (EF[0] * 1.5 + EF[1] * -1 + EF[2] * 0.5 + EF[3] * 0.5 + EF[4] * 1 + EF[5] * 1 + EF[6] * -1 + EF[7] * 2 ))
+                1.4 + (-0.03 * (TabEF[0] * 1.5 + TabEF[1] * -1 + TabEF[2] * 0.5 + TabEF[3] * 0.5 + TabEF[4] * 1 + TabEF[5] * 1 + TabEF[6] * -1 + TabEF[7] * 2 ))
                 ).ToString());
+            */
 
-            LabelPktUCP.Text = (UUCW[0] * 5 + UUCW[1] * 10 + UUCW[2] * 15 + UAW[0] * 1 + UAW[1] * 2 + UAW[2] * 3).ToString();
+            double TCF = 0.6 + (TabTCF[0] * 2 + TabTCF[1] * 1 + TabTCF[2] * 1 + TabTCF[3] * 1 + TabTCF[4] * 1 + TabTCF[5] * 0.5 + TabTCF[6] * 0.5 + TabTCF[7] * 2 + TabTCF[8] * 1 + TabTCF[9] * 1 + TabTCF[10] * 1 + TabTCF[11] * 1 + TabTCF[12] * 1) / 100;
+            double EF = 1.4 + (-0.03 * (TabEF[0] * 1.5 + TabEF[1] * -1 + TabEF[2] * 0.5 + TabEF[3] * 0.5 + TabEF[4] * 1 + TabEF[5] * 1 + TabEF[6] * -1 + TabEF[7] * 2));
+            double UUCW = TabUUCW[0] * 5 + TabUUCW[1] * 10 + TabUUCW[2] * 15;
+            double UAW = TabUAW[0] * 1 + TabUAW[1] * 2 + TabUAW[2] * 3;
 
-            //MessageBox.Show((0.6 + TCF.Sum()/100).ToString());
+            LabelPktUCP.Text = ( TCF * EF * (UAW + UUCW)).ToString();
 
-            //MessageBox.Show(TCF[0].ToString());
+            //MessageBox.Show((0.6 + TabTCF.Sum()/100).ToString());
+
+            //MessageBox.Show(TabTCF[0].ToString());
         }
     }
 }
