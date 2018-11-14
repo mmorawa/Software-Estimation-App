@@ -563,7 +563,6 @@
             this.ButtonOblicz.Text = "Oszacuj";
             this.ToolTip.SetToolTip(this.ButtonOblicz, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonOblicz.UseVisualStyleBackColor = true;
-            this.ButtonOblicz.Click += new System.EventHandler(this.ButtonOblicz_Click);
             // 
             // ButtonCzSr
             // 
@@ -574,6 +573,7 @@
             this.ButtonCzSr.Text = "Czynniki środowiskowe";
             this.ToolTip.SetToolTip(this.ButtonCzSr, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonCzSr.UseVisualStyleBackColor = true;
+            this.ButtonCzSr.Click += new System.EventHandler(this.ButtonCzSr_Click);
             // 
             // ButtonMnPr
             // 

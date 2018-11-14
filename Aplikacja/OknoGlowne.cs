@@ -119,11 +119,6 @@ namespace Aplikacja
 
         }
 
-        private void ButtonOblicz_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void ButtonCzSk_Click(object sender, EventArgs e)
         {
             using (OknoCzynnikiSkali OknoCzynS = new OknoCzynnikiSkali())
@@ -165,6 +160,22 @@ namespace Aplikacja
                 {
 
                     MessageBox.Show("Czynniki złożoności technicznej zostały wprowadzone.", "Sukces");
+
+                }
+            }
+        }
+
+        private void ButtonCzSr_Click(object sender, EventArgs e)
+        {
+            using (OknoCzynnSrodow OknoCzynSrod = new OknoCzynnSrodow())
+            {
+                DialogResult dr = OknoCzynSrod.ShowDialog();
+
+
+                if (dr == DialogResult.OK)
+                {
+
+                    MessageBox.Show("Czynniki środowiskowe zostały wprowadzone.", "Sukces");
 
                 }
             }
