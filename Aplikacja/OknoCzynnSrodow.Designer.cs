@@ -38,8 +38,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ComboBoxCzSZaznajProj = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.ComboBoxCzSNieWymG = new System.Windows.Forms.ComboBox();
             this.ComboBoxCzSUmAnalW = new System.Windows.Forms.ComboBox();
             this.ComboBoxCzSDoswAplik = new System.Windows.Forms.ComboBox();
@@ -47,6 +45,8 @@
             this.ComboBoxCzSMotyw = new System.Windows.Forms.ComboBox();
             this.ComboBoxCzSTrudnJProg = new System.Windows.Forms.ComboBox();
             this.ComboBoxCzSStabWymag = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.ButtonOk = new System.Windows.Forms.Button();
             this.GroupBoxCzynZlozTechn.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -198,6 +198,7 @@
             this.ComboBoxCzSZaznajProj.Name = "ComboBoxCzSZaznajProj";
             this.ComboBoxCzSZaznajProj.Size = new System.Drawing.Size(45, 24);
             this.ComboBoxCzSZaznajProj.TabIndex = 0;
+            this.ComboBoxCzSZaznajProj.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzSZaznajProj_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -211,6 +212,140 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "Motywacja";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ComboBoxCzSNieWymG
+            // 
+            this.ComboBoxCzSNieWymG.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzSNieWymG.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzSNieWymG.FormattingEnabled = true;
+            this.ComboBoxCzSNieWymG.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ComboBoxCzSNieWymG.Location = new System.Drawing.Point(145, 75);
+            this.ComboBoxCzSNieWymG.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzSNieWymG.Name = "ComboBoxCzSNieWymG";
+            this.ComboBoxCzSNieWymG.Size = new System.Drawing.Size(45, 24);
+            this.ComboBoxCzSNieWymG.TabIndex = 23;
+            this.ComboBoxCzSNieWymG.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzSNieWymG_SelectedIndexChanged);
+            // 
+            // ComboBoxCzSUmAnalW
+            // 
+            this.ComboBoxCzSUmAnalW.DisplayMember = "4";
+            this.ComboBoxCzSUmAnalW.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzSUmAnalW.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzSUmAnalW.FormattingEnabled = true;
+            this.ComboBoxCzSUmAnalW.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ComboBoxCzSUmAnalW.Location = new System.Drawing.Point(145, 133);
+            this.ComboBoxCzSUmAnalW.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzSUmAnalW.Name = "ComboBoxCzSUmAnalW";
+            this.ComboBoxCzSUmAnalW.Size = new System.Drawing.Size(45, 24);
+            this.ComboBoxCzSUmAnalW.TabIndex = 24;
+            this.ComboBoxCzSUmAnalW.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzSUmAnalW_SelectedIndexChanged);
+            // 
+            // ComboBoxCzSDoswAplik
+            // 
+            this.ComboBoxCzSDoswAplik.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzSDoswAplik.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzSDoswAplik.FormattingEnabled = true;
+            this.ComboBoxCzSDoswAplik.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ComboBoxCzSDoswAplik.Location = new System.Drawing.Point(145, 191);
+            this.ComboBoxCzSDoswAplik.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzSDoswAplik.Name = "ComboBoxCzSDoswAplik";
+            this.ComboBoxCzSDoswAplik.Size = new System.Drawing.Size(45, 24);
+            this.ComboBoxCzSDoswAplik.TabIndex = 25;
+            this.ComboBoxCzSDoswAplik.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzSDoswAplik_SelectedIndexChanged);
+            // 
+            // ComboBoxCzSDoswMetOb
+            // 
+            this.ComboBoxCzSDoswMetOb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzSDoswMetOb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzSDoswMetOb.FormattingEnabled = true;
+            this.ComboBoxCzSDoswMetOb.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ComboBoxCzSDoswMetOb.Location = new System.Drawing.Point(145, 249);
+            this.ComboBoxCzSDoswMetOb.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzSDoswMetOb.Name = "ComboBoxCzSDoswMetOb";
+            this.ComboBoxCzSDoswMetOb.Size = new System.Drawing.Size(45, 24);
+            this.ComboBoxCzSDoswMetOb.TabIndex = 26;
+            this.ComboBoxCzSDoswMetOb.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzSDoswMetOb_SelectedIndexChanged);
+            // 
+            // ComboBoxCzSMotyw
+            // 
+            this.ComboBoxCzSMotyw.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzSMotyw.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzSMotyw.FormattingEnabled = true;
+            this.ComboBoxCzSMotyw.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ComboBoxCzSMotyw.Location = new System.Drawing.Point(145, 307);
+            this.ComboBoxCzSMotyw.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzSMotyw.Name = "ComboBoxCzSMotyw";
+            this.ComboBoxCzSMotyw.Size = new System.Drawing.Size(45, 24);
+            this.ComboBoxCzSMotyw.TabIndex = 27;
+            this.ComboBoxCzSMotyw.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzSMotyw_SelectedIndexChanged);
+            // 
+            // ComboBoxCzSTrudnJProg
+            // 
+            this.ComboBoxCzSTrudnJProg.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzSTrudnJProg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzSTrudnJProg.FormattingEnabled = true;
+            this.ComboBoxCzSTrudnJProg.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ComboBoxCzSTrudnJProg.Location = new System.Drawing.Point(145, 365);
+            this.ComboBoxCzSTrudnJProg.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzSTrudnJProg.Name = "ComboBoxCzSTrudnJProg";
+            this.ComboBoxCzSTrudnJProg.Size = new System.Drawing.Size(45, 24);
+            this.ComboBoxCzSTrudnJProg.TabIndex = 28;
+            this.ComboBoxCzSTrudnJProg.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzSTrudnJProg_SelectedIndexChanged);
+            // 
+            // ComboBoxCzSStabWymag
+            // 
+            this.ComboBoxCzSStabWymag.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCzSStabWymag.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzSStabWymag.FormattingEnabled = true;
+            this.ComboBoxCzSStabWymag.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ComboBoxCzSStabWymag.Location = new System.Drawing.Point(145, 423);
+            this.ComboBoxCzSStabWymag.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            this.ComboBoxCzSStabWymag.Name = "ComboBoxCzSStabWymag";
+            this.ComboBoxCzSStabWymag.Size = new System.Drawing.Size(45, 24);
+            this.ComboBoxCzSStabWymag.TabIndex = 29;
+            this.ComboBoxCzSStabWymag.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzSStabWymag_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -237,133 +372,6 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "Trudność języka programowania";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ComboBoxCzSNieWymG
-            // 
-            this.ComboBoxCzSNieWymG.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCzSNieWymG.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ComboBoxCzSNieWymG.FormattingEnabled = true;
-            this.ComboBoxCzSNieWymG.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.ComboBoxCzSNieWymG.Location = new System.Drawing.Point(145, 75);
-            this.ComboBoxCzSNieWymG.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
-            this.ComboBoxCzSNieWymG.Name = "ComboBoxCzSNieWymG";
-            this.ComboBoxCzSNieWymG.Size = new System.Drawing.Size(45, 24);
-            this.ComboBoxCzSNieWymG.TabIndex = 23;
-            // 
-            // ComboBoxCzSUmAnalW
-            // 
-            this.ComboBoxCzSUmAnalW.DisplayMember = "4";
-            this.ComboBoxCzSUmAnalW.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCzSUmAnalW.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ComboBoxCzSUmAnalW.FormattingEnabled = true;
-            this.ComboBoxCzSUmAnalW.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.ComboBoxCzSUmAnalW.Location = new System.Drawing.Point(145, 133);
-            this.ComboBoxCzSUmAnalW.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
-            this.ComboBoxCzSUmAnalW.Name = "ComboBoxCzSUmAnalW";
-            this.ComboBoxCzSUmAnalW.Size = new System.Drawing.Size(45, 24);
-            this.ComboBoxCzSUmAnalW.TabIndex = 24;
-            // 
-            // ComboBoxCzSDoswAplik
-            // 
-            this.ComboBoxCzSDoswAplik.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCzSDoswAplik.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ComboBoxCzSDoswAplik.FormattingEnabled = true;
-            this.ComboBoxCzSDoswAplik.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.ComboBoxCzSDoswAplik.Location = new System.Drawing.Point(145, 191);
-            this.ComboBoxCzSDoswAplik.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
-            this.ComboBoxCzSDoswAplik.Name = "ComboBoxCzSDoswAplik";
-            this.ComboBoxCzSDoswAplik.Size = new System.Drawing.Size(45, 24);
-            this.ComboBoxCzSDoswAplik.TabIndex = 25;
-            // 
-            // ComboBoxCzSDoswMetOb
-            // 
-            this.ComboBoxCzSDoswMetOb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCzSDoswMetOb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ComboBoxCzSDoswMetOb.FormattingEnabled = true;
-            this.ComboBoxCzSDoswMetOb.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.ComboBoxCzSDoswMetOb.Location = new System.Drawing.Point(145, 249);
-            this.ComboBoxCzSDoswMetOb.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
-            this.ComboBoxCzSDoswMetOb.Name = "ComboBoxCzSDoswMetOb";
-            this.ComboBoxCzSDoswMetOb.Size = new System.Drawing.Size(45, 24);
-            this.ComboBoxCzSDoswMetOb.TabIndex = 26;
-            // 
-            // ComboBoxCzSMotyw
-            // 
-            this.ComboBoxCzSMotyw.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCzSMotyw.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ComboBoxCzSMotyw.FormattingEnabled = true;
-            this.ComboBoxCzSMotyw.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.ComboBoxCzSMotyw.Location = new System.Drawing.Point(145, 307);
-            this.ComboBoxCzSMotyw.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
-            this.ComboBoxCzSMotyw.Name = "ComboBoxCzSMotyw";
-            this.ComboBoxCzSMotyw.Size = new System.Drawing.Size(45, 24);
-            this.ComboBoxCzSMotyw.TabIndex = 27;
-            // 
-            // ComboBoxCzSTrudnJProg
-            // 
-            this.ComboBoxCzSTrudnJProg.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCzSTrudnJProg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ComboBoxCzSTrudnJProg.FormattingEnabled = true;
-            this.ComboBoxCzSTrudnJProg.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.ComboBoxCzSTrudnJProg.Location = new System.Drawing.Point(145, 365);
-            this.ComboBoxCzSTrudnJProg.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
-            this.ComboBoxCzSTrudnJProg.Name = "ComboBoxCzSTrudnJProg";
-            this.ComboBoxCzSTrudnJProg.Size = new System.Drawing.Size(45, 24);
-            this.ComboBoxCzSTrudnJProg.TabIndex = 28;
-            // 
-            // ComboBoxCzSStabWymag
-            // 
-            this.ComboBoxCzSStabWymag.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCzSStabWymag.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ComboBoxCzSStabWymag.FormattingEnabled = true;
-            this.ComboBoxCzSStabWymag.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.ComboBoxCzSStabWymag.Location = new System.Drawing.Point(145, 423);
-            this.ComboBoxCzSStabWymag.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
-            this.ComboBoxCzSStabWymag.Name = "ComboBoxCzSStabWymag";
-            this.ComboBoxCzSStabWymag.Size = new System.Drawing.Size(45, 24);
-            this.ComboBoxCzSStabWymag.TabIndex = 29;
             // 
             // ButtonOk
             // 

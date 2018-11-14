@@ -40,6 +40,7 @@ namespace Aplikacja
         public static int[] UUCW = new int[3];
 
         public static int[] TCF = new int[13];
+        public static int[] EF = new int[8];
 
         /*******************************************************************************
         *  Metody klasy Form1.
@@ -227,6 +228,10 @@ namespace Aplikacja
             
             MessageBox.Show(( 
                 0.6 + (TCF[0] * 2 + TCF[1] * 1 + TCF[2] * 1 + TCF[3] * 1 + TCF[4] * 1 + TCF[5] * 0.5 + TCF[6] * 0.5 + TCF[7] * 2 + TCF[8] * 1 + TCF[9] * 1 + TCF[10] * 1 + TCF[11] * 1 + TCF[12] * 1) / 100
+                ).ToString());
+
+            MessageBox.Show((
+                1.4 + (-0.03 * (EF[0] * 1.5 + EF[1] * -1 + EF[2] * 0.5 + EF[3] * 0.5 + EF[4] * 1 + EF[5] * 1 + EF[6] * -1 + EF[7] * 2 ))
                 ).ToString());
 
             LabelPktUCP.Text = (UUCW[0] * 5 + UUCW[1] * 10 + UUCW[2] * 15 + UAW[0] * 1 + UAW[1] * 2 + UAW[2] * 3).ToString();
