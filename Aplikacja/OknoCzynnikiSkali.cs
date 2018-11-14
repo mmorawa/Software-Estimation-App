@@ -37,6 +37,8 @@ namespace Aplikacja
             ComboBoxCzynnSkDojrz.SelectedIndex = OknoGlowne.TabSF[4];
         }
 
+        //TODO anuluj anuluje
+
         private void ComboBoxCzynnSkTyp_SelectedIndexChanged(object sender, EventArgs e)
         {
             OknoGlowne.TabSF[0] = ComboBoxCzynnSkTyp.SelectedIndex;

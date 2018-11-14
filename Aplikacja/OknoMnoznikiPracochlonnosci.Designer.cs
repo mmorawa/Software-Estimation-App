@@ -243,6 +243,7 @@
             this.ComboBoxMnPrNiezaw.Name = "ComboBoxMnPrNiezaw";
             this.ComboBoxMnPrNiezaw.Size = new System.Drawing.Size(128, 24);
             this.ComboBoxMnPrNiezaw.TabIndex = 0;
+            this.ComboBoxMnPrNiezaw.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrNiezaw_SelectedIndexChanged);
             // 
             // ComboBoxMnPrBaza
             // 
@@ -260,6 +261,7 @@
             this.ComboBoxMnPrBaza.Name = "ComboBoxMnPrBaza";
             this.ComboBoxMnPrBaza.Size = new System.Drawing.Size(128, 24);
             this.ComboBoxMnPrBaza.TabIndex = 27;
+            this.ComboBoxMnPrBaza.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrBaza_SelectedIndexChanged);
             // 
             // ComboBoxMnPrDoku
             // 
@@ -278,6 +280,7 @@
             this.ComboBoxMnPrDoku.Name = "ComboBoxMnPrDoku";
             this.ComboBoxMnPrDoku.Size = new System.Drawing.Size(128, 24);
             this.ComboBoxMnPrDoku.TabIndex = 30;
+            this.ComboBoxMnPrDoku.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrDoku_SelectedIndexChanged);
             // 
             // ComboBoxMnPrPonow
             // 
@@ -296,6 +299,7 @@
             this.ComboBoxMnPrPonow.Name = "ComboBoxMnPrPonow";
             this.ComboBoxMnPrPonow.Size = new System.Drawing.Size(128, 24);
             this.ComboBoxMnPrPonow.TabIndex = 29;
+            this.ComboBoxMnPrPonow.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrPonow_SelectedIndexChanged);
             // 
             // ComboBoxMnPrZloz
             // 
@@ -315,6 +319,7 @@
             this.ComboBoxMnPrZloz.Name = "ComboBoxMnPrZloz";
             this.ComboBoxMnPrZloz.Size = new System.Drawing.Size(128, 24);
             this.ComboBoxMnPrZloz.TabIndex = 28;
+            this.ComboBoxMnPrZloz.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrZloz_SelectedIndexChanged);
             // 
             // TabPagePersonel
             // 
@@ -439,6 +444,7 @@
             this.ComboBoxMnPrProgr.Name = "ComboBoxMnPrProgr";
             this.ComboBoxMnPrProgr.Size = new System.Drawing.Size(126, 24);
             this.ComboBoxMnPrProgr.TabIndex = 32;
+            this.ComboBoxMnPrProgr.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrProgr_SelectedIndexChanged);
             // 
             // ComboBoxMnPrZnajJ
             // 
@@ -457,6 +463,7 @@
             this.ComboBoxMnPrZnajJ.Name = "ComboBoxMnPrZnajJ";
             this.ComboBoxMnPrZnajJ.Size = new System.Drawing.Size(126, 24);
             this.ComboBoxMnPrZnajJ.TabIndex = 34;
+            this.ComboBoxMnPrZnajJ.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrZnajJ_SelectedIndexChanged);
             // 
             // label16
             // 
@@ -488,6 +495,7 @@
             this.ComboBoxMnPrAnal.Name = "ComboBoxMnPrAnal";
             this.ComboBoxMnPrAnal.Size = new System.Drawing.Size(126, 24);
             this.ComboBoxMnPrAnal.TabIndex = 31;
+            this.ComboBoxMnPrAnal.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrAnal_SelectedIndexChanged);
             // 
             // ComboBoxMnPrZnajA
             // 
@@ -506,6 +514,7 @@
             this.ComboBoxMnPrZnajA.Name = "ComboBoxMnPrZnajA";
             this.ComboBoxMnPrZnajA.Size = new System.Drawing.Size(126, 24);
             this.ComboBoxMnPrZnajA.TabIndex = 37;
+            this.ComboBoxMnPrZnajA.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrZnajA_SelectedIndexChanged);
             // 
             // ComboBoxMnPrZesp
             // 
@@ -524,6 +533,7 @@
             this.ComboBoxMnPrZesp.Name = "ComboBoxMnPrZesp";
             this.ComboBoxMnPrZesp.Size = new System.Drawing.Size(126, 24);
             this.ComboBoxMnPrZesp.TabIndex = 36;
+            this.ComboBoxMnPrZesp.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrZesp_SelectedIndexChanged);
             // 
             // ComboBoxMnPrZnajP
             // 
@@ -542,6 +552,7 @@
             this.ComboBoxMnPrZnajP.Name = "ComboBoxMnPrZnajP";
             this.ComboBoxMnPrZnajP.Size = new System.Drawing.Size(126, 24);
             this.ComboBoxMnPrZnajP.TabIndex = 41;
+            this.ComboBoxMnPrZnajP.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrZnajP_SelectedIndexChanged);
             // 
             // TabPagePlatforma
             // 
@@ -593,6 +604,7 @@
             this.ComboBoxMnPrOgrCz.Name = "ComboBoxMnPrOgrCz";
             this.ComboBoxMnPrOgrCz.Size = new System.Drawing.Size(133, 24);
             this.ComboBoxMnPrOgrCz.TabIndex = 0;
+            this.ComboBoxMnPrOgrCz.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrOgrCz_SelectedIndexChanged);
             // 
             // label13
             // 
@@ -636,6 +648,7 @@
             this.ComboBoxMnPrOgrP.Name = "ComboBoxMnPrOgrP";
             this.ComboBoxMnPrOgrP.Size = new System.Drawing.Size(133, 24);
             this.ComboBoxMnPrOgrP.TabIndex = 27;
+            this.ComboBoxMnPrOgrP.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrOgrP_SelectedIndexChanged);
             // 
             // label14
             // 
@@ -666,6 +679,7 @@
             this.ComboBoxMnPrZmP.Name = "ComboBoxMnPrZmP";
             this.ComboBoxMnPrZmP.Size = new System.Drawing.Size(133, 24);
             this.ComboBoxMnPrZmP.TabIndex = 28;
+            this.ComboBoxMnPrZmP.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrZmP_SelectedIndexChanged);
             // 
             // TabPageProjekt
             // 
@@ -732,6 +746,7 @@
             this.ComboBoxMnPrNarzP.Size = new System.Drawing.Size(141, 24);
             this.ComboBoxMnPrNarzP.TabIndex = 0;
             this.ToolTip.SetToolTip(this.ComboBoxMnPrNarzP, "Niski 15 percentyl\r\nWysoki 50 percentyl");
+            this.ComboBoxMnPrNarzP.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrNarzP_SelectedIndexChanged);
             // 
             // ComboBoxMnPrLokal
             // 
@@ -751,6 +766,7 @@
             this.ComboBoxMnPrLokal.Name = "ComboBoxMnPrLokal";
             this.ComboBoxMnPrLokal.Size = new System.Drawing.Size(141, 24);
             this.ComboBoxMnPrLokal.TabIndex = 27;
+            this.ComboBoxMnPrLokal.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrLokal_SelectedIndexChanged);
             // 
             // ComboBoxMnPrHarm
             // 
@@ -769,6 +785,7 @@
             this.ComboBoxMnPrHarm.Name = "ComboBoxMnPrHarm";
             this.ComboBoxMnPrHarm.Size = new System.Drawing.Size(141, 24);
             this.ComboBoxMnPrHarm.TabIndex = 28;
+            this.ComboBoxMnPrHarm.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrHarm_SelectedIndexChanged);
             // 
             // label15
             // 
