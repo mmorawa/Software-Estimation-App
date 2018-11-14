@@ -36,10 +36,10 @@ namespace Aplikacja
         ********************************************************************************/
 
         //TODO encapsulate?? domyślnie zera?
-        public static double[] UAW = new double[3];
-        public static double[] UUCW = new double[3];
+        public static int[] UAW = new int[3];
+        public static int[] UUCW = new int[3];
 
-        public static double[] TCF = new double[13];
+        public static int[] TCF = new int[13];
 
         /*******************************************************************************
         *  Metody klasy Form1.
@@ -193,40 +193,46 @@ namespace Aplikacja
 
         private void NumUUCWProsty_ValueChanged(object sender, EventArgs e)
         {
-            UUCW[0] = 5 * (double)NumUUCWProsty.Value;
+            UUCW[0] = (int)NumUUCWProsty.Value;
         }
 
         private void NumUUCWSredni_ValueChanged(object sender, EventArgs e)
         {
-            UUCW[1] = 10 * (double)NumUUCWSredni.Value;
+            UUCW[1] = (int)NumUUCWSredni.Value;
         }
 
         private void NumUUCWZlozony_ValueChanged(object sender, EventArgs e)
         {
-            UUCW[2] = 15 * (double)NumUUCWZlozony.Value;
+            UUCW[2] = (int)NumUUCWZlozony.Value;
         }
 
         private void NumUAWProsty_ValueChanged(object sender, EventArgs e)
         {
-            UAW[0] = 1 * (double)NumUAWProsty.Value;
+            UAW[0] = (int)NumUAWProsty.Value;
         }
 
         private void NumUAWSredni_ValueChanged(object sender, EventArgs e)
         {
-            UAW[1] = 2 * (double)NumUAWSredni.Value;
+            UAW[1] = (int)NumUAWSredni.Value;
         }
 
         private void NumUAWZlozony_ValueChanged(object sender, EventArgs e)
         {
-            UAW[2] = 3 * (double)NumUAWZlozony.Value;
+            UAW[2] = (int)NumUAWZlozony.Value;
         }
 
         private void ButtonOblicz_Click(object sender, EventArgs e)
         {
             //TODO walidacja danych wejściowych
+            
+            MessageBox.Show(( 
+                0.6 + (TCF[0] * 2 + TCF[1] * 1 + TCF[2] * 1 + TCF[3] * 1 + TCF[4] * 1 + TCF[5] * 0.5 + TCF[6] * 0.5 + TCF[7] * 2 + TCF[8] * 1 + TCF[9] * 1 + TCF[10] * 1 + TCF[11] * 1 + TCF[12] * 1) / 100
+                ).ToString());
 
-            LabelPktUCP.Text = (UAW.Sum() + UUCW.Sum()).ToString();
-            MessageBox.Show((0.6 + TCF.Sum()/100).ToString());
+            LabelPktUCP.Text = (UUCW[0] * 5 + UUCW[1] * 10 + UUCW[2] * 15 + UAW[0] * 1 + UAW[1] * 2 + UAW[2] * 3).ToString();
+
+            //MessageBox.Show((0.6 + TCF.Sum()/100).ToString());
+
             //MessageBox.Show(TCF[0].ToString());
         }
     }
