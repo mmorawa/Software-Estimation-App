@@ -59,12 +59,18 @@ namespace Aplikacja
             {7.8, 6.24, 4.68, 3.12, 1.56, 0 }
         };
 
+        double EFc1 = 1.4;
+        double EFc2 = -0.03;
+
+        double TCFc1 = 0.6;
+        double TCFc2 = 0.01;
+
         double SumaSF = 0;
         double TCF = 0;
         double EF = 0;
         double UUCW = 0;
         double UAW = 0;
-
+        double UCP = 0;
 
         /*******************************************************************************
         *  Metody klasy Form1.
@@ -250,34 +256,26 @@ namespace Aplikacja
         {
             //TODO walidacja danych wejściowych, zaokrąglanie
 
-            /*
-            MessageBox.Show(( 
-                0.6 + (TabTCF[0] * 2 + TabTCF[1] * 1 + TabTCF[2] * 1 + TabTCF[3] * 1 + TabTCF[4] * 1 + TabTCF[5] * 0.5 + TabTCF[6] * 0.5 + TabTCF[7] * 2 + TabTCF[8] * 1 + TabTCF[9] * 1 + TabTCF[10] * 1 + TabTCF[11] * 1 + TabTCF[12] * 1) / 100
-                ).ToString());
-
-            MessageBox.Show((
-                1.4 + (-0.03 * (TabEF[0] * 1.5 + TabEF[1] * -1 + TabEF[2] * 0.5 + TabEF[3] * 0.5 + TabEF[4] * 1 + TabEF[5] * 1 + TabEF[6] * -1 + TabEF[7] * 2 ))
-                ).ToString());
-            */
 
             for (int i = 0; i <= 12; i++)
             {
                 iloczynWagTCF = TabTCF[i] * wagiTCF[i];
             }
 
-            TCF = 0.6 + iloczynWagTCF / 100;
+            TCF = TCFc1 + iloczynWagTCF * TCFc2;
 
             for (int i = 0; i <= 7; i++)
             {
                 iloczynWagEF = TabEF[i] * wagiEF[i];
             }
 
-            EF = 1.4 + (-0.03 * iloczynWagEF);
+            EF = EFc1 + (EFc2 * iloczynWagEF);
 
             UUCW = TabUUCW[0] * 5 + TabUUCW[1] * 10 + TabUUCW[2] * 15;
             UAW = TabUAW[0] * 1 + TabUAW[1] * 2 + TabUAW[2] * 3;
+            UCP = TCF * EF * (UAW + UUCW);
 
-            LabelPktUCP.Text = ( TCF * EF * (UAW + UUCW)).ToString();
+            LabelPktUCP.Text = UCP.ToString();
             
 
             for (int i = 0; i <= 4; i++)
