@@ -252,6 +252,8 @@ namespace Aplikacja
             TabUAW[2] = (int)NumUAWZlozony.Value;
         }
 
+
+
         private void ButtonOblicz_Click(object sender, EventArgs e)
         {
             //TODO walidacja danych wejściowych, zaokrąglanie
