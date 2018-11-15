@@ -89,18 +89,15 @@ namespace Aplikacja
         double TCFc2 = 0.01;
         double A = 2.94;
         double B = 0.91;
-
+        double UCPgodziny = 25;
+        double UCP_KSLOC = 0.06;
 
         //wyniki pośrednie
-
         double TCF = 0;
         double EF = 0;
         double UUCW = 0;
         double UAW = 0;
         double UCP = 0;
-        double UCPgodziny = 25;
-        double UCP_KSLOC = 0.06;
-
         double Rozmiar = 0;
         double E = 1;
         double SumaSF = 0;
@@ -184,7 +181,8 @@ namespace Aplikacja
          */
         private void ToolStripMenuDokumentacja_Click(object sender, EventArgs e)
         {
-
+            //TODO odpowiedni plik w odpowiednim miejscu.
+            System.Diagnostics.Process.Start("Dokumentacja.pdf");
         }
 
         //! Metoda wywoływana po naciśnięciu przycisku Exit na pasku Menu.
@@ -362,7 +360,7 @@ namespace Aplikacja
             UUCW = TabUUCW[0] * 5 + TabUUCW[1] * 10 + TabUUCW[2] * 15;
             UAW = TabUAW[0] * 1 + TabUAW[1] * 2 + TabUAW[2] * 3;
             UCP = TCF * EF * (UAW + UUCW);
-            PracUCP = UCP * UCPgodziny;
+            PracUCP = Math.Round(UCP * UCPgodziny, 2);
 
             //Obliczenia COCOMOII
             Rozmiar = UCP * UCP_KSLOC;
@@ -379,7 +377,7 @@ namespace Aplikacja
             }
 
             E = B + 0.01 * SumaSF;
-            PracCOCOMOII = A * Math.Pow(Rozmiar, E) * IloczynEM; 
+            PracCOCOMOII = Math.Round(A * Math.Pow(Rozmiar, E) * IloczynEM, 2); 
 
             //Wyświetlenie wyników
             LabelPktUCP.Text = UCP.ToString();
@@ -392,9 +390,42 @@ namespace Aplikacja
 
         private void ButtonNowyProjekt_Click(object sender, EventArgs e)
         {
+            //Wyzerowanie
             TextBoxNazwaProjektu.Text = "";
+            DateTimePicker.Value = DateTime.Now;
+
+            NumUUCWProsty.Value = 0;
+            NumUUCWSredni.Value = 0;
+            NumUUCWZlozony.Value = 0;
+
+            NumUAWProsty.Value = 0;
+            NumUAWSredni.Value = 0;
+            NumUAWZlozony.Value = 0;
+
+
             TabSF = new int[] { 2, 2, 2, 2, 2 };
             TabEM = new int[] { 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2 };
-    }
+            TabTCF = new int[13];
+            TabEF = new int[8];
+
+            TCF = 0;
+            EF = 0;
+            UUCW = 0;
+            UAW = 0;
+            UCP = 0;
+            Rozmiar = 0;
+            E = 1;
+            SumaSF = 0;
+            IloczynEM = 1;
+
+            PracUCP = 0;
+            PracCOCOMOII = 0;
+
+            LabelPktUCP.Text = "0";
+            LabelWynikPracUCP.Text = "0";
+            LabelWynikPracCOCOMOII.Text = "0";
+
+            MessageBox.Show("Rozpoczęto nowy projekt.");
+        }
     }
 }
