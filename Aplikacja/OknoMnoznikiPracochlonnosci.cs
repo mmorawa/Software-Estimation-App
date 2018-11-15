@@ -23,27 +23,27 @@ namespace Aplikacja
         {
             InitializeComponent();
 
-            ComboBoxMnPrNiezaw.SelectedIndex = OknoGlowne.TabEM[0];
-            ComboBoxMnPrBaza.SelectedIndex = OknoGlowne.TabEM[1];
-            ComboBoxMnPrZloz.SelectedIndex = OknoGlowne.TabEM[2];
-            ComboBoxMnPrPonow.SelectedIndex = OknoGlowne.TabEM[3];
-            ComboBoxMnPrDoku.SelectedIndex = OknoGlowne.TabEM[4];
+            ComboBoxMnPrNiezaw.SelectedIndex = OknoGlowne.TabIndEM[0];
+            ComboBoxMnPrBaza.SelectedIndex = OknoGlowne.TabIndEM[1];
+            ComboBoxMnPrZloz.SelectedIndex = OknoGlowne.TabIndEM[2];
+            ComboBoxMnPrPonow.SelectedIndex = OknoGlowne.TabIndEM[3];
+            ComboBoxMnPrDoku.SelectedIndex = OknoGlowne.TabIndEM[4];
 
-            ComboBoxMnPrAnal.SelectedIndex = OknoGlowne.TabEM[5];
-            ComboBoxMnPrProgr.SelectedIndex = OknoGlowne.TabEM[6];
-            ComboBoxMnPrZesp.SelectedIndex = OknoGlowne.TabEM[7];
-            ComboBoxMnPrZnajA.SelectedIndex = OknoGlowne.TabEM[8];
-            ComboBoxMnPrZnajP.SelectedIndex = OknoGlowne.TabEM[9];
-            ComboBoxMnPrZnajJ.SelectedIndex = OknoGlowne.TabEM[10];
+            ComboBoxMnPrAnal.SelectedIndex = OknoGlowne.TabIndEM[5];
+            ComboBoxMnPrProgr.SelectedIndex = OknoGlowne.TabIndEM[6];
+            ComboBoxMnPrZesp.SelectedIndex = OknoGlowne.TabIndEM[7];
+            ComboBoxMnPrZnajA.SelectedIndex = OknoGlowne.TabIndEM[8];
+            ComboBoxMnPrZnajP.SelectedIndex = OknoGlowne.TabIndEM[9];
+            ComboBoxMnPrZnajJ.SelectedIndex = OknoGlowne.TabIndEM[10];
             
 
-            ComboBoxMnPrOgrCz.SelectedIndex = OknoGlowne.TabEM[11];
-            ComboBoxMnPrOgrP.SelectedIndex = OknoGlowne.TabEM[12];
-            ComboBoxMnPrZmP.SelectedIndex = OknoGlowne.TabEM[13];
+            ComboBoxMnPrOgrCz.SelectedIndex = OknoGlowne.TabIndEM[11];
+            ComboBoxMnPrOgrP.SelectedIndex = OknoGlowne.TabIndEM[12];
+            ComboBoxMnPrZmP.SelectedIndex = OknoGlowne.TabIndEM[13];
 
-            ComboBoxMnPrNarzP.SelectedIndex = OknoGlowne.TabEM[14];
-            ComboBoxMnPrLokal.SelectedIndex = OknoGlowne.TabEM[15];
-            ComboBoxMnPrHarm.SelectedIndex = OknoGlowne.TabEM[16];
+            ComboBoxMnPrNarzP.SelectedIndex = OknoGlowne.TabIndEM[14];
+            ComboBoxMnPrLokal.SelectedIndex = OknoGlowne.TabIndEM[15];
+            ComboBoxMnPrHarm.SelectedIndex = OknoGlowne.TabIndEM[16];
 
 
             //TODO doświadczenie a nie znajomość?? Anuluj anuluje wprowadzone dane.
@@ -56,91 +56,91 @@ namespace Aplikacja
         //---------------Dot. produktu----------------------------------
         private void ComboBoxMnPrNiezaw_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabEM[0] = ComboBoxMnPrNiezaw.SelectedIndex;
+            OknoGlowne.TabIndEM[0] = ComboBoxMnPrNiezaw.SelectedIndex;
         }
 
         private void ComboBoxMnPrBaza_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabEM[1] = ComboBoxMnPrBaza.SelectedIndex;
+            OknoGlowne.TabIndEM[1] = ComboBoxMnPrBaza.SelectedIndex;
         }
 
         private void ComboBoxMnPrZloz_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabEM[2] = ComboBoxMnPrZloz.SelectedIndex;
+            OknoGlowne.TabIndEM[2] = ComboBoxMnPrZloz.SelectedIndex;
         }
 
         private void ComboBoxMnPrPonow_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabEM[3] = ComboBoxMnPrPonow.SelectedIndex;
+            OknoGlowne.TabIndEM[3] = ComboBoxMnPrPonow.SelectedIndex;
         }
 
         private void ComboBoxMnPrDoku_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabEM[4] = ComboBoxMnPrDoku.SelectedIndex;
+            OknoGlowne.TabIndEM[4] = ComboBoxMnPrDoku.SelectedIndex;
         }
 
         //----------------Dot. personelu--------------------------------------------
         private void ComboBoxMnPrAnal_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabEM[5] = ComboBoxMnPrAnal.SelectedIndex;
+            OknoGlowne.TabIndEM[5] = ComboBoxMnPrAnal.SelectedIndex;
         }
 
         private void ComboBoxMnPrProgr_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabEM[6] = ComboBoxMnPrProgr.SelectedIndex;
+            OknoGlowne.TabIndEM[6] = ComboBoxMnPrProgr.SelectedIndex;
         }
 
         private void ComboBoxMnPrZesp_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabEM[7] = ComboBoxMnPrZesp.SelectedIndex;
+            OknoGlowne.TabIndEM[7] = ComboBoxMnPrZesp.SelectedIndex;
         }
 
         private void ComboBoxMnPrZnajA_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabEM[8] = ComboBoxMnPrZnajA.SelectedIndex;
+            OknoGlowne.TabIndEM[8] = ComboBoxMnPrZnajA.SelectedIndex;
         }
 
         private void ComboBoxMnPrZnajP_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabEM[9] = ComboBoxMnPrZnajP.SelectedIndex;
+            OknoGlowne.TabIndEM[9] = ComboBoxMnPrZnajP.SelectedIndex;
         }
 
         private void ComboBoxMnPrZnajJ_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabEM[10] = ComboBoxMnPrZnajJ.SelectedIndex;
+            OknoGlowne.TabIndEM[10] = ComboBoxMnPrZnajJ.SelectedIndex;
         }
 
         //-----------------Dot. platformy-------------------------------------------
         private void ComboBoxMnPrOgrCz_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabEM[11] = ComboBoxMnPrOgrCz.SelectedIndex;
+            OknoGlowne.TabIndEM[11] = ComboBoxMnPrOgrCz.SelectedIndex;
         }
 
         private void ComboBoxMnPrOgrP_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabEM[12] = ComboBoxMnPrOgrP.SelectedIndex;
+            OknoGlowne.TabIndEM[12] = ComboBoxMnPrOgrP.SelectedIndex;
         }
 
         private void ComboBoxMnPrZmP_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabEM[13] = ComboBoxMnPrZmP.SelectedIndex;
+            OknoGlowne.TabIndEM[13] = ComboBoxMnPrZmP.SelectedIndex;
         }
 
 
         //-----------------Dot. projektu-------------------------------------------
         private void ComboBoxMnPrNarzP_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabEM[14] = ComboBoxMnPrNarzP.SelectedIndex;
+            OknoGlowne.TabIndEM[14] = ComboBoxMnPrNarzP.SelectedIndex;
         }
 
         private void ComboBoxMnPrLokal_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabEM[15] = ComboBoxMnPrLokal.SelectedIndex;
+            OknoGlowne.TabIndEM[15] = ComboBoxMnPrLokal.SelectedIndex;
         }
 
         private void ComboBoxMnPrHarm_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabEM[16] = ComboBoxMnPrHarm.SelectedIndex;
+            OknoGlowne.TabIndEM[16] = ComboBoxMnPrHarm.SelectedIndex;
         }
     }
 }

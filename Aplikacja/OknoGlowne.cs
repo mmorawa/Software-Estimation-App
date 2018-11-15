@@ -38,10 +38,12 @@ namespace Aplikacja
 
         //TODO encapsulate?? domyślnie zera?
         public static int[] TabUAW = new int[3];
+        double[] wagiAktorow = { 1, 2, 3 };
         public static int[] TabUUCW = new int[3];
+        double[] wagiUC = { 5, 10, 15 };
 
-        public static int[] TabTCF = new int[13];
-        public static int[] TabEF = new int[8];
+        public static int[] TabIndTCF = new int[13];
+        public static int[] TabIndEF = new int[8];
 
         double[] wagiTCF = { 2, 1, 1, 1, 1, 0.5, 0.5, 2, 1, 1, 1, 1, 1 };
         double iloczynWagTCF = 0;
@@ -49,11 +51,11 @@ namespace Aplikacja
         double[] wagiEF = { 1.5, -1, 0.5, 0.5, 1, 1, -1, 2 };
         double iloczynWagEF = 0;
 
-        public static int[] TabSF = { 2, 2, 2, 2, 2 };
-        public static int[] TabEM = { 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2 };
+        public static int[] TabIndSF = { 2, 2, 2, 2, 2 };
+        public static int[] TabIndEM = { 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2 };
 
-        double[,] TabWspSF = 
-        { 
+        double[,] TabWspSF =
+        {
             {6.2, 4.96, 3.72, 2.48, 1.24, 0 },
             {5.07, 4.05, 3.04, 2.03, 1.01, 0 },
             {7.07, 5.65, 4.24, 2.83, 1.41, 0 },
@@ -117,7 +119,7 @@ namespace Aplikacja
          */
         private void ToolStripMenuNowyProj_Click(object sender, EventArgs e)
         {
-
+            ButtonNowyProjekt_Click(sender, e);
         }
 
         //! Metoda wywoływana po naciśnięciu przycisku Open na pasku Menu.
@@ -296,51 +298,53 @@ namespace Aplikacja
 
 
 
-        private void ButtonOblicz_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void ButtonZapiszProjektJako_Click(object sender, EventArgs e)
         {
 
-            SaveFileDialog ZapiszProjektDialog = new SaveFileDialog
+            using (SaveFileDialog ZapiszProjektDialog = new SaveFileDialog())
             {
-                Filter = "Plik projetku | *.prj",
-                FileName = "Projekt.prj",
-                Title = "Zapisz plik projektu jako:"
-            };
+                ZapiszProjektDialog.Filter = "Plik projetku | *.prj";
+                ZapiszProjektDialog.FileName = "Projekt.prj";
+                ZapiszProjektDialog.Title = "Zapisz plik projektu jako:";
 
+                DialogResult dr = ZapiszProjektDialog.ShowDialog();
 
-
-            //zapisanie danych do pliku tekstowego
-            if (ZapiszProjektDialog.ShowDialog() == DialogResult.OK)
-            {
-                string path = ZapiszProjektDialog.FileName;
-             
-                StreamWriter sw = new StreamWriter(File.Create(path));
-
-                //sw.WriteLine(string.Format("byte Program_{0}", Form2.Nazwa_Programu) + "_MODUL[]={" + string.Format("{0},{1},{2},{3}", numery[0], numery[1], numery[2], numery[3]) + "};");
-
-                foreach (var item in TabSF)
+           
+                //zapisanie danych do pliku tekstowego
+                if (dr == DialogResult.OK)
                 {
-                    sw.WriteLine(item);
+                    string path = ZapiszProjektDialog.FileName;
+
+                    using (StreamWriter sw = new StreamWriter(File.Create(path)))
+                    {
+                        foreach (var item in TabUUCW)
+                        {
+                            sw.WriteLine(item);
+                        }
+
+                        foreach (var item in TabUAW)
+                        {
+                            sw.WriteLine(item);
+                        }
+
+                        sw.Dispose();
+                        MessageBox.Show("Plik zapisano.");
+                    }
+
+                    //sw.WriteLine(string.Format("byte Program_{0}", Form2.Nazwa_Programu) + "_MODUL[]={" + string.Format("{0},{1},{2},{3}", numery[0], numery[1], numery[2], numery[3]) + "};");
+
+                    //sw.Write(string.Format("unsigned int* Program_{0}", Form2.Nazwa_Programu) + "[] = {");
+
+                    /*
+                    for (int i = 0; i < Programy.Length - 2; i++)
+                    {
+                        sw.Write(Programy[i] + ", ");
+                    }*/
+
+                    //sw.Write(Programy[Programy.Length - 2] + "};");
                 }
-
-                //sw.Write(string.Format("unsigned int* Program_{0}", Form2.Nazwa_Programu) + "[] = {");
-                
-                /*
-                for (int i = 0; i < Programy.Length - 2; i++)
-                {
-                    sw.Write(Programy[i] + ", ");
-                }*/
-
-                //sw.Write(Programy[Programy.Length - 2] + "};");
-
-                sw.Dispose();
-
-                MessageBox.Show("Plik zapisano.");
-            } 
+            }
 
         }
 
@@ -351,44 +355,55 @@ namespace Aplikacja
             //Obliczenia UCP
             for (int i = 0; i <= 12; i++)
             {
-                iloczynWagTCF = TabTCF[i] * wagiTCF[i];
+                iloczynWagTCF = TabIndTCF[i] * wagiTCF[i];
             }
 
             TCF = TCFc1 + iloczynWagTCF * TCFc2;
 
             for (int i = 0; i <= 7; i++)
             {
-                iloczynWagEF = TabEF[i] * wagiEF[i];
+                iloczynWagEF = TabIndEF[i] * wagiEF[i];
             }
 
             EF = EFc1 + (EFc2 * iloczynWagEF);
 
-            UUCW = TabUUCW[0] * 5 + TabUUCW[1] * 10 + TabUUCW[2] * 15;
-            UAW = TabUAW[0] * 1 + TabUAW[1] * 2 + TabUAW[2] * 3;
+            UUCW = 0;
+            for (int i = 0; i < 3; i++)
+            {
+                UUCW += TabUUCW[i] * wagiUC[i];
+            }
+
+            UAW = 0;
+            for (int i = 0; i < 3; i++)
+            {
+                UAW = TabUAW[i] * wagiAktorow[i];
+            }
+
             UCP = TCF * EF * (UAW + UUCW);
             PracUCP = Math.Round(UCP * UCPgodziny, 2);
 
             //Obliczenia COCOMOII
             Rozmiar = UCP * UCP_KSLOC;
 
-            for (int i = 0; i <= 4; i++)
+            SumaSF = 0;
+            for (int i = 0; i < 5; i++)
             {
-                SumaSF += TabWspSF[i, TabSF[i]];
-
+                SumaSF += TabWspSF[i, TabIndSF[i]];
             }
 
-            for (int i = 0; i <= 16; i++)
+            IloczynEM = 1;
+            for (int i = 0; i < 17; i++)
             {
-                IloczynEM *= TabWspEM[i, TabEM[i]];
+                IloczynEM *= TabWspEM[i, TabIndEM[i]];
             }
 
             E = B + 0.01 * SumaSF;
-            PracCOCOMOII = Math.Round(A * Math.Pow(Rozmiar, E) * IloczynEM, 2); 
+            PracCOCOMOII = Math.Round(A * Math.Pow(Rozmiar, E) * IloczynEM, 2);
 
             //Wyświetlenie wyników
             LabelPktUCP.Text = UCP.ToString();
             LabelWynikPracUCP.Text = PracUCP.ToString();
-            LabelWynikPracCOCOMOII.Text = (PracCOCOMOII*152).ToString();
+            LabelWynikPracCOCOMOII.Text = (PracCOCOMOII * 152).ToString();
 
 
             //MessageBox.Show(IloczynEM.ToString());
@@ -409,10 +424,10 @@ namespace Aplikacja
             NumUAWZlozony.Value = 0;
 
 
-            TabSF = new int[] { 2, 2, 2, 2, 2 };
-            TabEM = new int[] { 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2 };
-            TabTCF = new int[13];
-            TabEF = new int[8];
+            TabIndSF = new int[] { 2, 2, 2, 2, 2 };
+            TabIndEM = new int[] { 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2 };
+            TabIndTCF = new int[13];
+            TabIndEF = new int[8];
 
             TCF = 0;
             EF = 0;
@@ -445,6 +460,18 @@ namespace Aplikacja
                     MessageBox.Show("Szczegółowe dane projektu zostały wprowadzone.", "Sukces");
                 }
             }
+        }
+
+        private void ButtonOtworzProjekt_Click(object sender, EventArgs e)
+        {
+            /*
+
+            string path = ZapiszProjektDialog.FileName;
+            using (StreamReader sr = new StreamReader(path))
+            {
+
+            }
+            */
         }
     }
 }

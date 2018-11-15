@@ -32,9 +32,13 @@
             this.ButtonOk = new System.Windows.Forms.Button();
             this.GroupBoxSzczDaneProjektu = new System.Windows.Forms.GroupBox();
             this.LabelDataRozp = new System.Windows.Forms.Label();
-            this.DateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.LabelNazwaProjektu = new System.Windows.Forms.Label();
             this.TextBoxNazwaProjektu = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.GroupBoxSzczDaneProjektu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,8 +66,12 @@
             // 
             // GroupBoxSzczDaneProjektu
             // 
+            this.GroupBoxSzczDaneProjektu.Controls.Add(this.label2);
+            this.GroupBoxSzczDaneProjektu.Controls.Add(this.label1);
+            this.GroupBoxSzczDaneProjektu.Controls.Add(this.textBox3);
+            this.GroupBoxSzczDaneProjektu.Controls.Add(this.textBox2);
+            this.GroupBoxSzczDaneProjektu.Controls.Add(this.textBox1);
             this.GroupBoxSzczDaneProjektu.Controls.Add(this.LabelDataRozp);
-            this.GroupBoxSzczDaneProjektu.Controls.Add(this.DateTimePicker);
             this.GroupBoxSzczDaneProjektu.Controls.Add(this.LabelNazwaProjektu);
             this.GroupBoxSzczDaneProjektu.Controls.Add(this.TextBoxNazwaProjektu);
             this.GroupBoxSzczDaneProjektu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -83,14 +91,6 @@
             this.LabelDataRozp.TabIndex = 4;
             this.LabelDataRozp.Text = "Data rozpoczęcia:";
             // 
-            // DateTimePicker
-            // 
-            this.DateTimePicker.Location = new System.Drawing.Point(6, 93);
-            this.DateTimePicker.Name = "DateTimePicker";
-            this.DateTimePicker.Size = new System.Drawing.Size(200, 22);
-            this.DateTimePicker.TabIndex = 3;
-            this.DateTimePicker.Value = new System.DateTime(2018, 11, 15, 14, 35, 14, 0);
-            // 
             // LabelNazwaProjektu
             // 
             this.LabelNazwaProjektu.AutoSize = true;
@@ -106,6 +106,45 @@
             this.TextBoxNazwaProjektu.Name = "TextBoxNazwaProjektu";
             this.TextBoxNazwaProjektu.Size = new System.Drawing.Size(462, 22);
             this.TextBoxNazwaProjektu.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(9, 143);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(462, 22);
+            this.textBox1.TabIndex = 5;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(9, 214);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(462, 22);
+            this.textBox2.TabIndex = 6;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(6, 279);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(462, 22);
+            this.textBox3.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 181);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(133, 16);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Data rozpoczęcia:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 250);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(133, 16);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Data rozpoczęcia:";
             // 
             // DaneProjektu
             // 
@@ -129,8 +168,12 @@
         private System.Windows.Forms.Button ButtonOk;
         private System.Windows.Forms.GroupBox GroupBoxSzczDaneProjektu;
         private System.Windows.Forms.Label LabelDataRozp;
-        private System.Windows.Forms.DateTimePicker DateTimePicker;
         private System.Windows.Forms.Label LabelNazwaProjektu;
         private System.Windows.Forms.TextBox TextBoxNazwaProjektu;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

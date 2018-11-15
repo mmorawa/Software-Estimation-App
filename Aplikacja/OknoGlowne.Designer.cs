@@ -246,20 +246,20 @@
             // ToolStripMenuKalibracja
             // 
             this.ToolStripMenuKalibracja.Name = "ToolStripMenuKalibracja";
-            this.ToolStripMenuKalibracja.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuKalibracja.Size = new System.Drawing.Size(143, 22);
             this.ToolStripMenuKalibracja.Text = "&Kalibracja";
             this.ToolStripMenuKalibracja.Click += new System.EventHandler(this.ToolStripMenuKalibracja_Click);
             // 
             // ToolStripMenuWizard
             // 
             this.ToolStripMenuWizard.Name = "ToolStripMenuWizard";
-            this.ToolStripMenuWizard.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuWizard.Size = new System.Drawing.Size(143, 22);
             this.ToolStripMenuWizard.Text = "&Wizard";
             // 
             // ToolStripMenuUstawienia
             // 
             this.ToolStripMenuUstawienia.Name = "ToolStripMenuUstawienia";
-            this.ToolStripMenuUstawienia.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuUstawienia.Size = new System.Drawing.Size(143, 22);
             this.ToolStripMenuUstawienia.Text = "&Ustawienia";
             this.ToolStripMenuUstawienia.Click += new System.EventHandler(this.ToolStripMenuUstawienia_Click);
             // 
@@ -276,14 +276,14 @@
             // ToolStripMenuDokumentacja
             // 
             this.ToolStripMenuDokumentacja.Name = "ToolStripMenuDokumentacja";
-            this.ToolStripMenuDokumentacja.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuDokumentacja.Size = new System.Drawing.Size(165, 22);
             this.ToolStripMenuDokumentacja.Text = "&Dokumentacja";
             this.ToolStripMenuDokumentacja.Click += new System.EventHandler(this.ToolStripMenuDokumentacja_Click);
             // 
             // ToolStripMenuOProgramie
             // 
             this.ToolStripMenuOProgramie.Name = "ToolStripMenuOProgramie";
-            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(165, 22);
             this.ToolStripMenuOProgramie.Text = "&O programie";
             this.ToolStripMenuOProgramie.Click += new System.EventHandler(this.ToolStripMenuOProgramie_Click);
             // 
@@ -678,6 +678,7 @@
             this.ButtonOtworzProjekt.Text = "Otwórz projekt";
             this.ToolTip.SetToolTip(this.ButtonOtworzProjekt, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonOtworzProjekt.UseVisualStyleBackColor = true;
+            this.ButtonOtworzProjekt.Click += new System.EventHandler(this.ButtonOtworzProjekt_Click);
             // 
             // ButtonZapiszProjekt
             // 

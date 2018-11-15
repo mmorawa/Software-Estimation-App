@@ -23,38 +23,38 @@ namespace Aplikacja
         {
             InitializeComponent();
 
-            ComboBoxCzynnSkTyp.SelectedIndex = OknoGlowne.TabSF[0];
-            ComboBoxCzynnSkElast.SelectedIndex = OknoGlowne.TabSF[1];
-            ComboBoxCzynnSkRyzyko.SelectedIndex = OknoGlowne.TabSF[2];
-            ComboBoxCzynnSkZesp.SelectedIndex = OknoGlowne.TabSF[3];
-            ComboBoxCzynnSkDojrz.SelectedIndex = OknoGlowne.TabSF[4];
+            ComboBoxCzynnSkTyp.SelectedIndex = OknoGlowne.TabIndSF[0];
+            ComboBoxCzynnSkElast.SelectedIndex = OknoGlowne.TabIndSF[1];
+            ComboBoxCzynnSkRyzyko.SelectedIndex = OknoGlowne.TabIndSF[2];
+            ComboBoxCzynnSkZesp.SelectedIndex = OknoGlowne.TabIndSF[3];
+            ComboBoxCzynnSkDojrz.SelectedIndex = OknoGlowne.TabIndSF[4];
         }
 
         //TODO anuluj anuluje
 
         private void ComboBoxCzynnSkTyp_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabSF[0] = ComboBoxCzynnSkTyp.SelectedIndex;
+            OknoGlowne.TabIndSF[0] = ComboBoxCzynnSkTyp.SelectedIndex;
         }
 
         private void ComboBoxCzynnSkElast_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabSF[1] = ComboBoxCzynnSkElast.SelectedIndex;
+            OknoGlowne.TabIndSF[1] = ComboBoxCzynnSkElast.SelectedIndex;
         }
 
         private void ComboBoxCzynnSkRyzyko_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabSF[2] = ComboBoxCzynnSkRyzyko.SelectedIndex;
+            OknoGlowne.TabIndSF[2] = ComboBoxCzynnSkRyzyko.SelectedIndex;
         }
 
         private void ComboBoxCzynnSkZesp_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabSF[3] = ComboBoxCzynnSkZesp.SelectedIndex;
+            OknoGlowne.TabIndSF[3] = ComboBoxCzynnSkZesp.SelectedIndex;
         }
 
         private void ComboBoxCzynnSkDojrz_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabSF[4] = ComboBoxCzynnSkDojrz.SelectedIndex;
+            OknoGlowne.TabIndSF[4] = ComboBoxCzynnSkDojrz.SelectedIndex;
         }
     }
 }
