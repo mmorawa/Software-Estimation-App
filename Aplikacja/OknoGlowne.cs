@@ -37,6 +37,9 @@ namespace Aplikacja
         ********************************************************************************/
 
         //TODO encapsulate?? domyślnie zera?
+
+        string SciezkaDoPliku;
+
         public static int[] TabUAW = new int[3];
         double[] wagiAktorow = { 1, 2, 3 };
         public static int[] TabUUCW = new int[3];
@@ -310,13 +313,13 @@ namespace Aplikacja
 
                 DialogResult dr = ZapiszProjektDialog.ShowDialog();
 
-           
+
                 //zapisanie danych do pliku tekstowego
                 if (dr == DialogResult.OK)
                 {
-                    string path = ZapiszProjektDialog.FileName;
+                    SciezkaDoPliku = ZapiszProjektDialog.FileName;
 
-                    using (StreamWriter sw = new StreamWriter(File.Create(path)))
+                    using (StreamWriter sw = new StreamWriter(File.Create(SciezkaDoPliku)))
                     {
                         foreach (var item in TabUUCW)
                         {
@@ -464,14 +467,38 @@ namespace Aplikacja
 
         private void ButtonOtworzProjekt_Click(object sender, EventArgs e)
         {
-            /*
-
-            string path = ZapiszProjektDialog.FileName;
-            using (StreamReader sr = new StreamReader(path))
+            using (OpenFileDialog OtworzProjektDialog = new OpenFileDialog())
             {
 
+                DialogResult dr = OtworzProjektDialog.ShowDialog();
+
+                if (dr == DialogResult.OK)
+                {
+                    SciezkaDoPliku = OtworzProjektDialog.FileName;
+
+                    using (StreamReader sr = new StreamReader(SciezkaDoPliku))
+                    {
+                        int LiczbaLinii = File.ReadLines(SciezkaDoPliku).Count();
+
+                        NumUUCWProsty.Value = int.Parse(sr.ReadLine());
+                        NumUUCWSredni.Value = int.Parse(sr.ReadLine());
+                        NumUUCWZlozony.Value = int.Parse(sr.ReadLine());
+                        NumUAWProsty.Value = int.Parse(sr.ReadLine());
+                        NumUAWSredni.Value = int.Parse(sr.ReadLine());
+                        NumUAWZlozony.Value = int.Parse(sr.ReadLine());
+
+                        /*
+                        for (int i = 0; i < 3; i++)
+                        {
+                            TabUUCW[i] = int.Parse(sr.ReadLine());
+                        }
+                        */
+
+
+                    }
+                    
+                }
             }
-            */
         }
     }
 }
