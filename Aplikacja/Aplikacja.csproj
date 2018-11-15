@@ -75,6 +75,12 @@
     <Compile Include="OknoGlowne.Designer.cs">
       <DependentUpon>OknoGlowne.cs</DependentUpon>
     </Compile>
+    <Compile Include="OProgramie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OProgramie.Designer.cs">
+      <DependentUpon>OProgramie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="OknoCzynnikiSkali.resx">
@@ -91,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OknoMnoznikiPracochlonnosci.resx">
       <DependentUpon>OknoMnoznikiPracochlonnosci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OProgramie.resx">
+      <DependentUpon>OProgramie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

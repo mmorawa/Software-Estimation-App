@@ -191,7 +191,10 @@ namespace Aplikacja
          */
         private void ToolStripMenuOProgramie_Click(object sender, EventArgs e)
         {
-
+            using (OProgramie OknoOProgramie = new OProgramie())
+            {
+                DialogResult dr = OknoOProgramie.ShowDialog();
+            }
         }
 
         private void ButtonCZT_Click(object sender, EventArgs e)
