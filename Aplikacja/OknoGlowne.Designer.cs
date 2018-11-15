@@ -43,11 +43,13 @@
             this.podsumowanieProjektuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuOpcje = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuKalibracja = new System.Windows.Forms.ToolStripMenuItem();
+            this.wizardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuUstawienia = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuPomoc = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuDokumentacja = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuOProgramie = new System.Windows.Forms.ToolStripMenuItem();
             this.GroupBoxDaneProjektu = new System.Windows.Forms.GroupBox();
+            this.ButtonZalozenia = new System.Windows.Forms.Button();
             this.LabelDataRozp = new System.Windows.Forms.Label();
             this.DateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.ButtonWiecejSzczeg = new System.Windows.Forms.Button();
@@ -111,8 +113,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.ButtonZalozenia = new System.Windows.Forms.Button();
-            this.wizardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PasekMenu.SuspendLayout();
             this.GroupBoxDaneProjektu.SuspendLayout();
             this.GroupBoxUUCW.SuspendLayout();
@@ -246,14 +246,20 @@
             // ToolStripMenuKalibracja
             // 
             this.ToolStripMenuKalibracja.Name = "ToolStripMenuKalibracja";
-            this.ToolStripMenuKalibracja.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuKalibracja.Size = new System.Drawing.Size(143, 22);
             this.ToolStripMenuKalibracja.Text = "&Kalibracja";
             this.ToolStripMenuKalibracja.Click += new System.EventHandler(this.ToolStripMenuKalibracja_Click);
+            // 
+            // wizardToolStripMenuItem
+            // 
+            this.wizardToolStripMenuItem.Name = "wizardToolStripMenuItem";
+            this.wizardToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.wizardToolStripMenuItem.Text = "&Wizard";
             // 
             // ToolStripMenuUstawienia
             // 
             this.ToolStripMenuUstawienia.Name = "ToolStripMenuUstawienia";
-            this.ToolStripMenuUstawienia.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuUstawienia.Size = new System.Drawing.Size(143, 22);
             this.ToolStripMenuUstawienia.Text = "&Ustawienia";
             this.ToolStripMenuUstawienia.Click += new System.EventHandler(this.ToolStripMenuPrzeliczniki_Click);
             // 
@@ -270,14 +276,14 @@
             // ToolStripMenuDokumentacja
             // 
             this.ToolStripMenuDokumentacja.Name = "ToolStripMenuDokumentacja";
-            this.ToolStripMenuDokumentacja.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuDokumentacja.Size = new System.Drawing.Size(165, 22);
             this.ToolStripMenuDokumentacja.Text = "&Dokumentacja";
             this.ToolStripMenuDokumentacja.Click += new System.EventHandler(this.ToolStripMenuDokumentacja_Click);
             // 
             // ToolStripMenuOProgramie
             // 
             this.ToolStripMenuOProgramie.Name = "ToolStripMenuOProgramie";
-            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(165, 22);
             this.ToolStripMenuOProgramie.Text = "&O programie";
             this.ToolStripMenuOProgramie.Click += new System.EventHandler(this.ToolStripMenuOProgramie_Click);
             // 
@@ -296,6 +302,15 @@
             this.GroupBoxDaneProjektu.TabIndex = 1;
             this.GroupBoxDaneProjektu.TabStop = false;
             this.GroupBoxDaneProjektu.Text = "Dane projektu";
+            // 
+            // ButtonZalozenia
+            // 
+            this.ButtonZalozenia.Location = new System.Drawing.Point(262, 110);
+            this.ButtonZalozenia.Name = "ButtonZalozenia";
+            this.ButtonZalozenia.Size = new System.Drawing.Size(173, 27);
+            this.ButtonZalozenia.TabIndex = 5;
+            this.ButtonZalozenia.Text = "Założenia projektu";
+            this.ButtonZalozenia.UseVisualStyleBackColor = true;
             // 
             // LabelDataRozp
             // 
@@ -650,6 +665,7 @@
             this.ButtonNowyProjekt.Text = "Nowy projekt";
             this.ToolTip.SetToolTip(this.ButtonNowyProjekt, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonNowyProjekt.UseVisualStyleBackColor = true;
+            this.ButtonNowyProjekt.Click += new System.EventHandler(this.ButtonNowyProjekt_Click);
             // 
             // ButtonOtworzProjekt
             // 
@@ -1083,21 +1099,6 @@
             this.ToolStripStatusLabel.Name = "ToolStripStatusLabel";
             this.ToolStripStatusLabel.Size = new System.Drawing.Size(48, 17);
             this.ToolStripStatusLabel.Text = "Gotowy";
-            // 
-            // ButtonZalozenia
-            // 
-            this.ButtonZalozenia.Location = new System.Drawing.Point(262, 110);
-            this.ButtonZalozenia.Name = "ButtonZalozenia";
-            this.ButtonZalozenia.Size = new System.Drawing.Size(173, 27);
-            this.ButtonZalozenia.TabIndex = 5;
-            this.ButtonZalozenia.Text = "Założenia projektu";
-            this.ButtonZalozenia.UseVisualStyleBackColor = true;
-            // 
-            // wizardToolStripMenuItem
-            // 
-            this.wizardToolStripMenuItem.Name = "wizardToolStripMenuItem";
-            this.wizardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.wizardToolStripMenuItem.Text = "&Wizard";
             // 
             // OknoGlowne
             // 

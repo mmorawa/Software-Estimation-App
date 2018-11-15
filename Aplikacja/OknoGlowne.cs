@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,35 +43,72 @@ namespace Aplikacja
         public static int[] TabTCF = new int[13];
         public static int[] TabEF = new int[8];
 
-        public static double[] wagiTCF = { 2, 1, 1, 1, 1, 0.5, 0.5, 2, 1, 1, 1, 1, 1 };
-        public static double iloczynWagTCF = 0;
+        double[] wagiTCF = { 2, 1, 1, 1, 1, 0.5, 0.5, 2, 1, 1, 1, 1, 1 };
+        double iloczynWagTCF = 0;
 
-        public static double[] wagiEF = { 1.5, -1, 0.5, 0.5, 1, 1, -1, 2 };
-        public static double iloczynWagEF = 0;
+        double[] wagiEF = { 1.5, -1, 0.5, 0.5, 1, 1, -1, 2 };
+        double iloczynWagEF = 0;
 
         public static int[] TabSF = { 2, 2, 2, 2, 2 };
         public static int[] TabEM = { 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2 };
 
-        public static double[,] TabWspSF = { 
-            {6.2, 4.96, 3.72, 2.48, 1.24, 0},
-            {5.07, 4.05, 3.04, 2.03, 1.01, 0},
-            {7.07, 5.65, 4.24, 2.83, 1.41, 0},
-            {5.48, 4.38, 3.29, 2.19, 1.1, 0},
+        double[,] TabWspSF = 
+        { 
+            {6.2, 4.96, 3.72, 2.48, 1.24, 0 },
+            {5.07, 4.05, 3.04, 2.03, 1.01, 0 },
+            {7.07, 5.65, 4.24, 2.83, 1.41, 0 },
+            {5.48, 4.38, 3.29, 2.19, 1.1, 0 },
             {7.8, 6.24, 4.68, 3.12, 1.56, 0 }
         };
 
+        double[,] TabWspEM =
+        {
+            {0.82, 0.92, 1, 1.1, 1.26, 0 },
+            {0.9, 1, 1.14, 1.28, 0, 0 },
+            {0.73, 0.87, 1, 1.17, 1.34, 1.74 },
+            {0.95, 1, 1.07, 1.15, 1.24, 0 },
+            {0.81, 0.91, 1, 1.11, 1.23, 0 },
+            {1.42, 1.19, 1, 0.85, 0.71, 0 },
+            {1.34, 1.15, 1, 0.88, 0.76, 0 },
+            {1.29, 1.12, 1, 0.9, 0.81, 0 },
+            {1.22, 1.10, 1, 0.88, 0.81, 0 },
+            {1.19, 1.09, 1, 0.91, 0.85, 0 },
+            {1.2, 1.09, 1, 0.91, 0.84, 0 },
+            {1, 1.11, 1.29, 1.63, 0, 0 },
+            {1, 1.05, 1.17, 1.46, 0, 0 },
+            {0.87, 1, 1.15, 1.3, 0, 0 },
+            {1.17, 1.09, 1, 0.9, 0.78, 0 },
+            {1.22, 1.09, 1, 0.93, 0.86, 0.8 },
+            {1.43, 1.14, 1, 1, 1, 0 }
+        };
+
+        //współczynniki
         double EFc1 = 1.4;
         double EFc2 = -0.03;
-
         double TCFc1 = 0.6;
         double TCFc2 = 0.01;
+        double A = 2.94;
+        double B = 0.91;
 
-        double SumaSF = 0;
+
+        //wyniki pośrednie
+
         double TCF = 0;
         double EF = 0;
         double UUCW = 0;
         double UAW = 0;
         double UCP = 0;
+        double UCPgodziny = 25;
+        double UCP_KSLOC = 0.06;
+
+        double Rozmiar = 0;
+        double E = 1;
+        double SumaSF = 0;
+        double IloczynEM = 1;
+
+        //wyniki końcowe
+        double PracUCP = 0;
+        double PracCOCOMOII = 0;
 
         /*******************************************************************************
         *  Metody klasy Form1.
@@ -275,43 +313,30 @@ namespace Aplikacja
             if (ZapiszProjektDialog.ShowDialog() == DialogResult.OK)
             {
                 string path = ZapiszProjektDialog.FileName;
-            }
-
-            /*
+             
                 StreamWriter sw = new StreamWriter(File.Create(path));
 
-                int[] numery = new int[4];
+                //sw.WriteLine(string.Format("byte Program_{0}", Form2.Nazwa_Programu) + "_MODUL[]={" + string.Format("{0},{1},{2},{3}", numery[0], numery[1], numery[2], numery[3]) + "};");
 
-
-                int j = 0;
-                for (int i = 0; i < Form2.Moduly.Length; i++)
-                {
-                    if (Form2.Moduly[i] != 0)
-                    {
-                        numery[j] = i;
-                        j++;
-                    }
-                }
-
-                sw.WriteLine(string.Format("byte Program_{0}", Form2.Nazwa_Programu) + "_MODUL[]={" + string.Format("{0},{1},{2},{3}", numery[0], numery[1], numery[2], numery[3]) + "};");
-
-                foreach (var item in Dane)
+                foreach (var item in TabSF)
                 {
                     sw.WriteLine(item);
                 }
 
-                sw.Write(string.Format("unsigned int* Program_{0}", Form2.Nazwa_Programu) + "[] = {");
-
+                //sw.Write(string.Format("unsigned int* Program_{0}", Form2.Nazwa_Programu) + "[] = {");
+                
+                /*
                 for (int i = 0; i < Programy.Length - 2; i++)
                 {
                     sw.Write(Programy[i] + ", ");
-                }
-                sw.Write(Programy[Programy.Length - 2] + "};");
+                }*/
+
+                //sw.Write(Programy[Programy.Length - 2] + "};");
 
                 sw.Dispose();
 
                 MessageBox.Show("Plik zapisano.");
-            } */
+            } 
 
         }
 
@@ -319,7 +344,7 @@ namespace Aplikacja
         {
             //TODO walidacja danych wejściowych, zaokrąglanie
 
-
+            //Obliczenia UCP
             for (int i = 0; i <= 12; i++)
             {
                 iloczynWagTCF = TabTCF[i] * wagiTCF[i];
@@ -337,16 +362,39 @@ namespace Aplikacja
             UUCW = TabUUCW[0] * 5 + TabUUCW[1] * 10 + TabUUCW[2] * 15;
             UAW = TabUAW[0] * 1 + TabUAW[1] * 2 + TabUAW[2] * 3;
             UCP = TCF * EF * (UAW + UUCW);
+            PracUCP = UCP * UCPgodziny;
 
-            LabelPktUCP.Text = UCP.ToString();
-
+            //Obliczenia COCOMOII
+            Rozmiar = UCP * UCP_KSLOC;
 
             for (int i = 0; i <= 4; i++)
             {
                 SumaSF += TabWspSF[i, TabSF[i]];
+
             }
 
-            MessageBox.Show(SumaSF.ToString());
+            for (int i = 0; i <= 16; i++)
+            {
+                IloczynEM *= TabWspEM[i, TabEM[i]];
+            }
+
+            E = B + 0.01 * SumaSF;
+            PracCOCOMOII = A * Math.Pow(Rozmiar, E) * IloczynEM; 
+
+            //Wyświetlenie wyników
+            LabelPktUCP.Text = UCP.ToString();
+            LabelWynikPracUCP.Text = PracUCP.ToString();
+            LabelWynikPracCOCOMOII.Text = (PracCOCOMOII*152).ToString();
+
+
+            //MessageBox.Show(IloczynEM.ToString());
         }
+
+        private void ButtonNowyProjekt_Click(object sender, EventArgs e)
+        {
+            TextBoxNazwaProjektu.Text = "";
+            TabSF = new int[] { 2, 2, 2, 2, 2 };
+            TabEM = new int[] { 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2 };
+    }
     }
 }

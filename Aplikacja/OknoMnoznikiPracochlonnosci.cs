@@ -46,11 +46,14 @@ namespace Aplikacja
             ComboBoxMnPrHarm.SelectedIndex = OknoGlowne.TabEM[16];
 
 
-            //TODO doświadczenie a nie znajomość??
+            //TODO doświadczenie a nie znajomość?? Anuluj anuluje wprowadzone dane.
+            //TODO opisy tooltipy
+
             //ToolTip.SetToolTip(comboBox1, "Save changes");
 
         }
 
+        //---------------Dot. produktu----------------------------------
         private void ComboBoxMnPrNiezaw_SelectedIndexChanged(object sender, EventArgs e)
         {
             OknoGlowne.TabEM[0] = ComboBoxMnPrNiezaw.SelectedIndex;
@@ -76,7 +79,7 @@ namespace Aplikacja
             OknoGlowne.TabEM[4] = ComboBoxMnPrDoku.SelectedIndex;
         }
 
-        //------------------------------------------------------------
+        //----------------Dot. personelu--------------------------------------------
         private void ComboBoxMnPrAnal_SelectedIndexChanged(object sender, EventArgs e)
         {
             OknoGlowne.TabEM[5] = ComboBoxMnPrAnal.SelectedIndex;
@@ -107,7 +110,7 @@ namespace Aplikacja
             OknoGlowne.TabEM[10] = ComboBoxMnPrZnajJ.SelectedIndex;
         }
 
-        //------------------------------------------------------------
+        //-----------------Dot. platformy-------------------------------------------
         private void ComboBoxMnPrOgrCz_SelectedIndexChanged(object sender, EventArgs e)
         {
             OknoGlowne.TabEM[11] = ComboBoxMnPrOgrCz.SelectedIndex;
@@ -124,7 +127,7 @@ namespace Aplikacja
         }
 
 
-        //------------------------------------------------------------
+        //-----------------Dot. projektu-------------------------------------------
         private void ComboBoxMnPrNarzP_SelectedIndexChanged(object sender, EventArgs e)
         {
             OknoGlowne.TabEM[14] = ComboBoxMnPrNarzP.SelectedIndex;
