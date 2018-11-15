@@ -28,7 +28,7 @@ namespace Aplikacja
         public OknoGlowne()
         {
             InitializeComponent();
-            
+            DateTimePicker.Value = DateTime.Now;
         }
 
         /*****************************************************************************//**
@@ -256,6 +256,67 @@ namespace Aplikacja
 
         private void ButtonOblicz_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void ButtonZapiszProjektJako_Click(object sender, EventArgs e)
+        {
+
+            SaveFileDialog ZapiszProjektDialog = new SaveFileDialog
+            {
+                Filter = "Plik projetku | *.prj",
+                FileName = "Projekt.prj",
+                Title = "Zapisz plik projektu jako:"
+            };
+
+
+
+            //zapisanie danych do pliku tekstowego
+            if (ZapiszProjektDialog.ShowDialog() == DialogResult.OK)
+            {
+                string path = ZapiszProjektDialog.FileName;
+            }
+
+            /*
+                StreamWriter sw = new StreamWriter(File.Create(path));
+
+                int[] numery = new int[4];
+
+
+                int j = 0;
+                for (int i = 0; i < Form2.Moduly.Length; i++)
+                {
+                    if (Form2.Moduly[i] != 0)
+                    {
+                        numery[j] = i;
+                        j++;
+                    }
+                }
+
+                sw.WriteLine(string.Format("byte Program_{0}", Form2.Nazwa_Programu) + "_MODUL[]={" + string.Format("{0},{1},{2},{3}", numery[0], numery[1], numery[2], numery[3]) + "};");
+
+                foreach (var item in Dane)
+                {
+                    sw.WriteLine(item);
+                }
+
+                sw.Write(string.Format("unsigned int* Program_{0}", Form2.Nazwa_Programu) + "[] = {");
+
+                for (int i = 0; i < Programy.Length - 2; i++)
+                {
+                    sw.Write(Programy[i] + ", ");
+                }
+                sw.Write(Programy[Programy.Length - 2] + "};");
+
+                sw.Dispose();
+
+                MessageBox.Show("Plik zapisano.");
+            } */
+
+        }
+
+        private void ButtonOszacuj_Click(object sender, EventArgs e)
+        {
             //TODO walidacja danych wejściowych, zaokrąglanie
 
 
@@ -278,22 +339,14 @@ namespace Aplikacja
             UCP = TCF * EF * (UAW + UUCW);
 
             LabelPktUCP.Text = UCP.ToString();
-            
+
 
             for (int i = 0; i <= 4; i++)
             {
-                SumaSF += TabWspSF[i,TabSF[i]];
+                SumaSF += TabWspSF[i, TabSF[i]];
             }
-            
+
             MessageBox.Show(SumaSF.ToString());
-            
-            
-
-        }
-
-        private void ButtonZapiszProjektJako_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
