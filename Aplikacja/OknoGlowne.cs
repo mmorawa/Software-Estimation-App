@@ -170,7 +170,7 @@ namespace Aplikacja
         /*! Metoda ExitToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Exit na pasku Menu.
          * Skutkuje ona zamknięciem aktywnej bazy poprzez wywołanie metody CloseDatabase oraz wyjściem z programu.
          */
-        private void ToolStripMenuPrzeliczniki_Click(object sender, EventArgs e)
+        private void ToolStripMenuUstawienia_Click(object sender, EventArgs e)
         {
 
         }
@@ -196,6 +196,9 @@ namespace Aplikacja
                 DialogResult dr = OknoOProgramie.ShowDialog();
             }
         }
+
+
+        //-----------------------------------------------------------------------------------------------
 
         private void ButtonCZT_Click(object sender, EventArgs e)
         {
@@ -429,6 +432,19 @@ namespace Aplikacja
             LabelWynikPracCOCOMOII.Text = "0";
 
             MessageBox.Show("Rozpoczęto nowy projekt.");
+        }
+
+        private void ButtonWiecejSzczeg_Click(object sender, EventArgs e)
+        {
+            using (DaneProjektu OknoDaneProjektu = new DaneProjektu())
+            {
+                DialogResult dr = OknoDaneProjektu.ShowDialog();
+
+                if (dr == DialogResult.OK)
+                {
+                    MessageBox.Show("Szczegółowe dane projektu zostały wprowadzone.", "Sukces");
+                }
+            }
         }
     }
 }

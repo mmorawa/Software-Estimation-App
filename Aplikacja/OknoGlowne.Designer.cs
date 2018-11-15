@@ -43,7 +43,7 @@
             this.podsumowanieProjektuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuOpcje = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuKalibracja = new System.Windows.Forms.ToolStripMenuItem();
-            this.wizardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuWizard = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuUstawienia = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuPomoc = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuDokumentacja = new System.Windows.Forms.ToolStripMenuItem();
@@ -236,7 +236,7 @@
             // 
             this.ToolStripMenuOpcje.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuKalibracja,
-            this.wizardToolStripMenuItem,
+            this.ToolStripMenuWizard,
             this.ToolStripMenuUstawienia});
             this.ToolStripMenuOpcje.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ToolStripMenuOpcje.Name = "ToolStripMenuOpcje";
@@ -246,22 +246,22 @@
             // ToolStripMenuKalibracja
             // 
             this.ToolStripMenuKalibracja.Name = "ToolStripMenuKalibracja";
-            this.ToolStripMenuKalibracja.Size = new System.Drawing.Size(143, 22);
+            this.ToolStripMenuKalibracja.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuKalibracja.Text = "&Kalibracja";
             this.ToolStripMenuKalibracja.Click += new System.EventHandler(this.ToolStripMenuKalibracja_Click);
             // 
-            // wizardToolStripMenuItem
+            // ToolStripMenuWizard
             // 
-            this.wizardToolStripMenuItem.Name = "wizardToolStripMenuItem";
-            this.wizardToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
-            this.wizardToolStripMenuItem.Text = "&Wizard";
+            this.ToolStripMenuWizard.Name = "ToolStripMenuWizard";
+            this.ToolStripMenuWizard.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuWizard.Text = "&Wizard";
             // 
             // ToolStripMenuUstawienia
             // 
             this.ToolStripMenuUstawienia.Name = "ToolStripMenuUstawienia";
-            this.ToolStripMenuUstawienia.Size = new System.Drawing.Size(143, 22);
+            this.ToolStripMenuUstawienia.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuUstawienia.Text = "&Ustawienia";
-            this.ToolStripMenuUstawienia.Click += new System.EventHandler(this.ToolStripMenuPrzeliczniki_Click);
+            this.ToolStripMenuUstawienia.Click += new System.EventHandler(this.ToolStripMenuUstawienia_Click);
             // 
             // ToolStripMenuPomoc
             // 
@@ -276,14 +276,14 @@
             // ToolStripMenuDokumentacja
             // 
             this.ToolStripMenuDokumentacja.Name = "ToolStripMenuDokumentacja";
-            this.ToolStripMenuDokumentacja.Size = new System.Drawing.Size(165, 22);
+            this.ToolStripMenuDokumentacja.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuDokumentacja.Text = "&Dokumentacja";
             this.ToolStripMenuDokumentacja.Click += new System.EventHandler(this.ToolStripMenuDokumentacja_Click);
             // 
             // ToolStripMenuOProgramie
             // 
             this.ToolStripMenuOProgramie.Name = "ToolStripMenuOProgramie";
-            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(165, 22);
+            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuOProgramie.Text = "&O programie";
             this.ToolStripMenuOProgramie.Click += new System.EventHandler(this.ToolStripMenuOProgramie_Click);
             // 
@@ -338,6 +338,7 @@
             this.ButtonWiecejSzczeg.Text = "Więcej szczegółów";
             this.ToolTip.SetToolTip(this.ButtonWiecejSzczeg, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonWiecejSzczeg.UseVisualStyleBackColor = true;
+            this.ButtonWiecejSzczeg.Click += new System.EventHandler(this.ButtonWiecejSzczeg_Click);
             // 
             // LabelNazwaProjektu
             // 
@@ -1234,7 +1235,7 @@
         private System.Windows.Forms.Label LabelWynikPracUCP;
         private System.Windows.Forms.Label LabelPktUCP;
         private System.Windows.Forms.Button ButtonZalozenia;
-        private System.Windows.Forms.ToolStripMenuItem wizardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuWizard;
     }
 }
 

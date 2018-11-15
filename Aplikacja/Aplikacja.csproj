@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DaneProjektu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DaneProjektu.Designer.cs">
+      <DependentUpon>DaneProjektu.cs</DependentUpon>
+    </Compile>
     <Compile Include="OknoCzynnSrodow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DaneProjektu.resx">
+      <DependentUpon>DaneProjektu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OknoCzynnikiSkali.resx">
       <DependentUpon>OknoCzynnikiSkali.cs</DependentUpon>
     </EmbeddedResource>
