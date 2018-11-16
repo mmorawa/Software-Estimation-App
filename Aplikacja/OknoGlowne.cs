@@ -94,6 +94,8 @@ namespace Aplikacja
         double TCFc2 = 0.01;
         double A = 2.94;
         double B = 0.91;
+
+        //przeliczniki
         double UCPgodziny = 25;
         double UCP_KSLOC = 0.06;
 
@@ -132,7 +134,7 @@ namespace Aplikacja
          */
         private void ToolStripMenuOtworzProj_Click(object sender, EventArgs e)
         {
-
+            ButtonOtworzProjekt_Click(sender, e);
         }
 
         //! Metoda wywoływana po naciśnięciu przycisku Save na pasku Menu.
@@ -469,7 +471,7 @@ namespace Aplikacja
         {
             using (OpenFileDialog OtworzProjektDialog = new OpenFileDialog())
             {
-
+                //TODO try 
                 DialogResult dr = OtworzProjektDialog.ShowDialog();
 
                 if (dr == DialogResult.OK)
