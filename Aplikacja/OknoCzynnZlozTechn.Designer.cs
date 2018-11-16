@@ -58,6 +58,19 @@
             this.ComboBoxCzTZewnOpr = new System.Windows.Forms.ComboBox();
             this.ComboBoxCzTDodSzkol = new System.Windows.Forms.ComboBox();
             this.ButtonOk = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.GroupBoxCzynZlozTechn.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -117,6 +130,19 @@
             this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzTSpecZabezp, 1, 10);
             this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzTZewnOpr, 1, 11);
             this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzTDodSzkol, 1, 12);
+            this.tableLayoutPanel1.Controls.Add(this.label14, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label15, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label16, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label17, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label18, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label19, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label20, 2, 6);
+            this.tableLayoutPanel1.Controls.Add(this.label21, 2, 7);
+            this.tableLayoutPanel1.Controls.Add(this.label22, 2, 8);
+            this.tableLayoutPanel1.Controls.Add(this.label23, 2, 9);
+            this.tableLayoutPanel1.Controls.Add(this.label24, 2, 10);
+            this.tableLayoutPanel1.Controls.Add(this.label25, 2, 11);
+            this.tableLayoutPanel1.Controls.Add(this.label26, 2, 12);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 21);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 13;
@@ -563,6 +589,149 @@
             this.ButtonOk.Text = "OK";
             this.ButtonOk.UseVisualStyleBackColor = true;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label14.Location = new System.Drawing.Point(196, 8);
+            this.label14.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(28, 13);
+            this.label14.TabIndex = 35;
+            this.label14.Text = "Opis";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label15.Location = new System.Drawing.Point(196, 62);
+            this.label15.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(28, 13);
+            this.label15.TabIndex = 36;
+            this.label15.Text = "Opis";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label16.Location = new System.Drawing.Point(196, 116);
+            this.label16.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(28, 13);
+            this.label16.TabIndex = 37;
+            this.label16.Text = "Opis";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label17.Location = new System.Drawing.Point(196, 170);
+            this.label17.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(28, 13);
+            this.label17.TabIndex = 38;
+            this.label17.Text = "Opis";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label18.Location = new System.Drawing.Point(196, 224);
+            this.label18.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(28, 13);
+            this.label18.TabIndex = 39;
+            this.label18.Text = "Opis";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label19.Location = new System.Drawing.Point(196, 278);
+            this.label19.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(28, 13);
+            this.label19.TabIndex = 40;
+            this.label19.Text = "Opis";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label20.Location = new System.Drawing.Point(196, 332);
+            this.label20.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(28, 13);
+            this.label20.TabIndex = 41;
+            this.label20.Text = "Opis";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label21.Location = new System.Drawing.Point(196, 386);
+            this.label21.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(28, 13);
+            this.label21.TabIndex = 42;
+            this.label21.Text = "Opis";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label22.Location = new System.Drawing.Point(196, 440);
+            this.label22.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(28, 13);
+            this.label22.TabIndex = 43;
+            this.label22.Text = "Opis";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label23.Location = new System.Drawing.Point(196, 494);
+            this.label23.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(28, 13);
+            this.label23.TabIndex = 44;
+            this.label23.Text = "Opis";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label24.Location = new System.Drawing.Point(196, 548);
+            this.label24.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(28, 13);
+            this.label24.TabIndex = 45;
+            this.label24.Text = "Opis";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label25.Location = new System.Drawing.Point(196, 602);
+            this.label25.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(28, 13);
+            this.label25.TabIndex = 46;
+            this.label25.Text = "Opis";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label26.Location = new System.Drawing.Point(196, 656);
+            this.label26.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(28, 13);
+            this.label26.TabIndex = 47;
+            this.label26.Text = "Opis";
+            // 
             // OknoCzynnZlozTechn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -612,5 +781,18 @@
         private System.Windows.Forms.ComboBox ComboBoxCzTSpecZabezp;
         private System.Windows.Forms.ComboBox ComboBoxCzTZewnOpr;
         private System.Windows.Forms.ComboBox ComboBoxCzTDodSzkol;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
     }
 }

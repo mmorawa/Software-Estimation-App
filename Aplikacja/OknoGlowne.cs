@@ -98,6 +98,8 @@ namespace Aplikacja
         //przeliczniki
         double UCPgodziny = 25;
         double UCP_KSLOC = 0.06;
+        double TydzGodziny = 152;
+
 
         //wyniki pośrednie
         double TCF = 0;
@@ -323,6 +325,8 @@ namespace Aplikacja
 
                     using (StreamWriter sw = new StreamWriter(File.Create(SciezkaDoPliku)))
                     {
+                        sw.WriteLine(TextBoxNazwaProjektu.Text);
+
                         foreach (var item in TabUUCW)
                         {
                             sw.WriteLine(item);
@@ -481,6 +485,8 @@ namespace Aplikacja
                     using (StreamReader sr = new StreamReader(SciezkaDoPliku))
                     {
                         int LiczbaLinii = File.ReadLines(SciezkaDoPliku).Count();
+
+                        TextBoxNazwaProjektu.Text = sr.ReadLine();
 
                         NumUUCWProsty.Value = int.Parse(sr.ReadLine());
                         NumUUCWSredni.Value = int.Parse(sr.ReadLine());
