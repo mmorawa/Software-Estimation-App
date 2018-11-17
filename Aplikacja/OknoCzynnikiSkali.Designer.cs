@@ -42,13 +42,13 @@
             this.ComboBoxCzynnSkRyzyko = new System.Windows.Forms.ComboBox();
             this.ComboBoxCzynnSkZesp = new System.Windows.Forms.ComboBox();
             this.ComboBoxCzynnSkDojrz = new System.Windows.Forms.ComboBox();
-            this.ButtonAnuluj = new System.Windows.Forms.Button();
-            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.ButtonAnuluj = new System.Windows.Forms.Button();
+            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.GroupBoxCzynSkali.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -274,17 +274,6 @@
             this.ComboBoxCzynnSkDojrz.TabIndex = 14;
             this.ComboBoxCzynnSkDojrz.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzynnSkDojrz_SelectedIndexChanged);
             // 
-            // ButtonAnuluj
-            // 
-            this.ButtonAnuluj.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.ButtonAnuluj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonAnuluj.Location = new System.Drawing.Point(366, 400);
-            this.ButtonAnuluj.Name = "ButtonAnuluj";
-            this.ButtonAnuluj.Size = new System.Drawing.Size(104, 27);
-            this.ButtonAnuluj.TabIndex = 5;
-            this.ButtonAnuluj.Text = "Anuluj";
-            this.ButtonAnuluj.UseVisualStyleBackColor = true;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -339,6 +328,17 @@
             this.label10.Size = new System.Drawing.Size(28, 13);
             this.label10.TabIndex = 19;
             this.label10.Text = "Opis";
+            // 
+            // ButtonAnuluj
+            // 
+            this.ButtonAnuluj.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.ButtonAnuluj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonAnuluj.Location = new System.Drawing.Point(366, 400);
+            this.ButtonAnuluj.Name = "ButtonAnuluj";
+            this.ButtonAnuluj.Size = new System.Drawing.Size(104, 27);
+            this.ButtonAnuluj.TabIndex = 5;
+            this.ButtonAnuluj.Text = "Anuluj";
+            this.ButtonAnuluj.UseVisualStyleBackColor = true;
             // 
             // OknoCzynnikiSkali
             // 

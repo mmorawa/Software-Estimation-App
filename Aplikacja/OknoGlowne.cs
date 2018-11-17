@@ -42,7 +42,7 @@ namespace Aplikacja
 
         string SciezkaDoPliku = "";
         public static string[] TabDaneProjektu = new string[15];
-
+        public static string[] TempTabDaneProjektu = new string[15];
 
         public static int[] TabUAW = new int[3];
         double[] wagiAktorow = { 1, 2, 3 };
@@ -59,7 +59,10 @@ namespace Aplikacja
         double iloczynWagEF = 0;
 
         public static int[] TabIndSF = { 2, 2, 2, 2, 2 };
+        public static int[] TempTabIndSF = { 2, 2, 2, 2, 2 };
+
         public static int[] TabIndEM = { 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2 };
+        public static int[] TempTabIndEM = { 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2 };
 
         double[,] TabWspSF =
         {
@@ -271,7 +274,11 @@ namespace Aplikacja
 
                 if (dr == DialogResult.OK)
                 {
-
+                    for (int i = 0; i < 5; i++)
+                    {
+                        TabIndSF[i] = TempTabIndSF[i];
+                    }
+                    
                     MessageBox.Show("Czynniki skali wprowadzone.", "Sukces");
                 }
             }
@@ -283,16 +290,19 @@ namespace Aplikacja
             {
                 DialogResult dr = OknoMnozP.ShowDialog();
 
-
                 if (dr == DialogResult.OK)
                 {
+                    for (int i = 0; i < 17; i++)
+                    {
+                        TabIndEM[i] = TempTabIndEM[i];
+                    }
 
                     MessageBox.Show("Mnożniki pracochłonności wprowadzone.", "Sukces");
                 }
             }
         }
 
-
+        //-----------------------------------------------------------------------------------------------
 
         private void NumUUCWProsty_ValueChanged(object sender, EventArgs e)
         {
@@ -324,7 +334,7 @@ namespace Aplikacja
             TabUAW[2] = (int)NumUAWZlozony.Value;
         }
 
-
+        //-----------------------------------------------------------------------------------------------
 
 
         private void ButtonOszacuj_Click(object sender, EventArgs e)
@@ -388,6 +398,9 @@ namespace Aplikacja
             //MessageBox.Show(IloczynEM.ToString());
         }
 
+
+        //--------------------------------Do zrobienia---------------------------------------------------------
+
         private void ButtonNowyProjekt_Click(object sender, EventArgs e)
         {
             //TODO: czy chcesz rozpocząć nowy projekt bez zapisania starego?
@@ -442,6 +455,11 @@ namespace Aplikacja
 
                 if (dr == DialogResult.OK)
                 {
+                    for (int i = 0; i < 15; i++)
+                    {
+                        TabDaneProjektu[i] = TempTabDaneProjektu[i];
+                    }
+
                     MessageBox.Show("Szczegółowe dane projektu zostały wprowadzone.", "Sukces");
                 }
             }

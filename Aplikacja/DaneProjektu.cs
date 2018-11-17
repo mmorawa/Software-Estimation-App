@@ -26,37 +26,37 @@ namespace Aplikacja
 
         private void TextBoxKierownikProjektu_TextChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabDaneProjektu[2] = TextBoxKierownikProjektu.Text;
+            OknoGlowne.TempTabDaneProjektu[2] = TextBoxKierownikProjektu.Text;
         }
 
         private void TextBoxSzacujacy_TextChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabDaneProjektu[3] = TextBoxSzacujacy.Text;
+            OknoGlowne.TempTabDaneProjektu[3] = TextBoxSzacujacy.Text;
         }
 
         private void TextBoxNazwaFirmy_TextChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabDaneProjektu[4] = TextBoxNazwaFirmy.Text;
+            OknoGlowne.TempTabDaneProjektu[4] = TextBoxNazwaFirmy.Text;
         }
 
         private void TextBoxAdres_TextChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabDaneProjektu[5] = TextBoxAdres.Text;
+            OknoGlowne.TempTabDaneProjektu[5] = TextBoxAdres.Text;
         }
 
         private void TextBoxTelefon_TextChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabDaneProjektu[6] = TextBoxTelefon.Text;
+            OknoGlowne.TempTabDaneProjektu[6] = TextBoxTelefon.Text;
         }
 
         private void TextBoxEmail_TextChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabDaneProjektu[7] = TextBoxEmail.Text;
+            OknoGlowne.TempTabDaneProjektu[7] = TextBoxEmail.Text;
         }
         //TODO: problem z wieloma liniami tekstu i zapisz/odczyt
         private void RichTextBoxOpisProjektu_TextChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabDaneProjektu[8] = RichTextBoxOpisProjektu.Text;
+            OknoGlowne.TempTabDaneProjektu[8] = RichTextBoxOpisProjektu.Text;
         }
     }
 }

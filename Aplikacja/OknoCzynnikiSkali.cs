@@ -30,31 +30,31 @@ namespace Aplikacja
             ComboBoxCzynnSkDojrz.SelectedIndex = OknoGlowne.TabIndSF[4];
         }
 
-        //TODO anuluj anuluje
+        
 
         private void ComboBoxCzynnSkTyp_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabIndSF[0] = ComboBoxCzynnSkTyp.SelectedIndex;
+            OknoGlowne.TempTabIndSF[0] = ComboBoxCzynnSkTyp.SelectedIndex;
         }
 
         private void ComboBoxCzynnSkElast_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabIndSF[1] = ComboBoxCzynnSkElast.SelectedIndex;
+            OknoGlowne.TempTabIndSF[1] = ComboBoxCzynnSkElast.SelectedIndex;
         }
 
         private void ComboBoxCzynnSkRyzyko_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabIndSF[2] = ComboBoxCzynnSkRyzyko.SelectedIndex;
+            OknoGlowne.TempTabIndSF[2] = ComboBoxCzynnSkRyzyko.SelectedIndex;
         }
 
         private void ComboBoxCzynnSkZesp_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabIndSF[3] = ComboBoxCzynnSkZesp.SelectedIndex;
+            OknoGlowne.TempTabIndSF[3] = ComboBoxCzynnSkZesp.SelectedIndex;
         }
 
         private void ComboBoxCzynnSkDojrz_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabIndSF[4] = ComboBoxCzynnSkDojrz.SelectedIndex;
+            OknoGlowne.TempTabIndSF[4] = ComboBoxCzynnSkDojrz.SelectedIndex;
         }
     }
 }
