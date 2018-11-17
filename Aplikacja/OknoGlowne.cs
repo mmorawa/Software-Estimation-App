@@ -50,7 +50,10 @@ namespace Aplikacja
         double[] wagiUC = { 5, 10, 15 };
 
         public static int[] TabIndTCF = new int[13];
+        public static int[] TempTabIndTCF = new int[13];
+
         public static int[] TabIndEF = new int[8];
+        public static int[] TempTabIndEF = new int[8];
 
         double[] wagiTCF = { 2, 1, 1, 1, 1, 0.5, 0.5, 2, 1, 1, 1, 1, 1 };
         double iloczynWagTCF = 0;
@@ -59,10 +62,10 @@ namespace Aplikacja
         double iloczynWagEF = 0;
 
         public static int[] TabIndSF = { 2, 2, 2, 2, 2 };
-        public static int[] TempTabIndSF = { 2, 2, 2, 2, 2 };
+        public static int[] TempTabIndSF = new int [5];
 
         public static int[] TabIndEM = { 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2 };
-        public static int[] TempTabIndEM = { 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2 };
+        public static int[] TempTabIndEM = new int[17];
 
         double[,] TabWspSF =
         {
@@ -242,6 +245,10 @@ namespace Aplikacja
 
                 if (dr == DialogResult.OK)
                 {
+                    for (int i = 0; i < 13; i++)
+                    {
+                        TabIndTCF[i]  = TempTabIndTCF[i];
+                    }
 
                     MessageBox.Show("Czynniki złożoności technicznej zostały wprowadzone.", "Sukces");
 
@@ -258,6 +265,10 @@ namespace Aplikacja
 
                 if (dr == DialogResult.OK)
                 {
+                    for (int i = 0; i < 8; i++)
+                    {
+                        TabIndEF[i] = TempTabIndEF[i];
+                    }
 
                     MessageBox.Show("Czynniki środowiskowe zostały wprowadzone.", "Sukces");
 

@@ -22,42 +22,42 @@ namespace Aplikacja
 
         private void ComboBoxCzSZaznajProj_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabIndEF[0] = ComboBoxCzSZaznajProj.SelectedIndex;
+            OknoGlowne.TempTabIndEF[0] = ComboBoxCzSZaznajProj.SelectedIndex;
         }
 
         private void ComboBoxCzSNieWymG_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabIndEF[1] = ComboBoxCzSNieWymG.SelectedIndex;
+            OknoGlowne.TempTabIndEF[1] = ComboBoxCzSNieWymG.SelectedIndex;
         }
 
         private void ComboBoxCzSUmAnalW_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabIndEF[2] = ComboBoxCzSUmAnalW.SelectedIndex;
+            OknoGlowne.TempTabIndEF[2] = ComboBoxCzSUmAnalW.SelectedIndex;
         }
 
         private void ComboBoxCzSDoswAplik_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabIndEF[3] = ComboBoxCzSDoswAplik.SelectedIndex;
+            OknoGlowne.TempTabIndEF[3] = ComboBoxCzSDoswAplik.SelectedIndex;
         }
 
         private void ComboBoxCzSDoswMetOb_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabIndEF[4] = ComboBoxCzSDoswMetOb.SelectedIndex;
+            OknoGlowne.TempTabIndEF[4] = ComboBoxCzSDoswMetOb.SelectedIndex;
         }
 
         private void ComboBoxCzSMotyw_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabIndEF[5] = ComboBoxCzSMotyw.SelectedIndex;
+            OknoGlowne.TempTabIndEF[5] = ComboBoxCzSMotyw.SelectedIndex;
         }
 
         private void ComboBoxCzSTrudnJProg_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabIndEF[6] = ComboBoxCzSTrudnJProg.SelectedIndex;
+            OknoGlowne.TempTabIndEF[6] = ComboBoxCzSTrudnJProg.SelectedIndex;
         }
 
         private void ComboBoxCzSStabWymag_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TabIndEF[7] = ComboBoxCzSStabWymag.SelectedIndex;
+            OknoGlowne.TempTabIndEF[7] = ComboBoxCzSStabWymag.SelectedIndex;
         }
     }
 }
