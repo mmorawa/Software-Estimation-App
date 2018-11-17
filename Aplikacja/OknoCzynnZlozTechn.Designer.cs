@@ -57,7 +57,6 @@
             this.ComboBoxCzTSpecZabezp = new System.Windows.Forms.ComboBox();
             this.ComboBoxCzTZewnOpr = new System.Windows.Forms.ComboBox();
             this.ComboBoxCzTDodSzkol = new System.Windows.Forms.ComboBox();
-            this.ButtonOk = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -71,6 +70,7 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
+            this.ButtonOk = new System.Windows.Forms.Button();
             this.GroupBoxCzynZlozTechn.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -578,17 +578,6 @@
             this.ComboBoxCzTDodSzkol.TabIndex = 34;
             this.ComboBoxCzTDodSzkol.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzTDodSzkol_SelectedIndexChanged);
             // 
-            // ButtonOk
-            // 
-            this.ButtonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.ButtonOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOk.Location = new System.Drawing.Point(243, 768);
-            this.ButtonOk.Name = "ButtonOk";
-            this.ButtonOk.Size = new System.Drawing.Size(104, 27);
-            this.ButtonOk.TabIndex = 6;
-            this.ButtonOk.Text = "OK";
-            this.ButtonOk.UseVisualStyleBackColor = true;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -732,6 +721,17 @@
             this.label26.TabIndex = 47;
             this.label26.Text = "Opis";
             // 
+            // ButtonOk
+            // 
+            this.ButtonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.ButtonOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOk.Location = new System.Drawing.Point(243, 768);
+            this.ButtonOk.Name = "ButtonOk";
+            this.ButtonOk.Size = new System.Drawing.Size(104, 27);
+            this.ButtonOk.TabIndex = 6;
+            this.ButtonOk.Text = "OK";
+            this.ButtonOk.UseVisualStyleBackColor = true;
+            // 
             // OknoCzynnZlozTechn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -741,6 +741,7 @@
             this.Controls.Add(this.GroupBoxCzynZlozTechn);
             this.Controls.Add(this.ButtonOk);
             this.Name = "OknoCzynnZlozTechn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Czynniki złożoności technicznej";
             this.GroupBoxCzynZlozTechn.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

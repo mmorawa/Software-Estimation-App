@@ -1136,6 +1136,7 @@
             this.Controls.Add(this.PasekMenu);
             this.MainMenuStrip = this.PasekMenu;
             this.Name = "OknoGlowne";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aplikacja wspomagająca szacowanie pracochłonności wytwarzania oprogramowania";
             this.PasekMenu.ResumeLayout(false);
             this.PasekMenu.PerformLayout();

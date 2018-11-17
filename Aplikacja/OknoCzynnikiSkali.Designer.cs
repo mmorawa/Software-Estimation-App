@@ -349,6 +349,7 @@
             this.Controls.Add(this.GroupBoxCzynSkali);
             this.Controls.Add(this.ButtonOk);
             this.Name = "OknoCzynnikiSkali";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Czynniki skali";
             this.GroupBoxCzynSkali.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

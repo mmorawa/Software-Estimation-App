@@ -214,7 +214,7 @@
             this.TextBoxKierownikProjektu.TabIndex = 0;
             this.TextBoxKierownikProjektu.TextChanged += new System.EventHandler(this.TextBoxKierownikProjektu_TextChanged);
             // 
-            // DaneProjektu
+            // OknoDaneProjektu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -222,7 +222,8 @@
             this.Controls.Add(this.GroupBoxSzczDaneProjektu);
             this.Controls.Add(this.ButtonAnuluj);
             this.Controls.Add(this.ButtonOk);
-            this.Name = "DaneProjektu";
+            this.Name = "OknoDaneProjektu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Dane projektu";
             this.GroupBoxSzczDaneProjektu.ResumeLayout(false);
             this.GroupBoxSzczDaneProjektu.PerformLayout();

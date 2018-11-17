@@ -1054,6 +1054,7 @@
             this.Controls.Add(this.GroupBoxMnoPrac);
             this.Controls.Add(this.ButtonOk);
             this.Name = "OknoMnoznikiPracochlonnosci";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Mnożniki pracochłonności";
             this.GroupBoxMnoPrac.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
