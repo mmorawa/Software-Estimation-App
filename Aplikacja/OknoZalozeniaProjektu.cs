@@ -52,42 +52,42 @@ namespace Aplikacja
 
         private void NumericUCPgodziny_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.UCPgodziny = (double)NumericUCPgodziny.Value;
+            OknoGlowne.TempUCPgodziny = (double)NumericUCPgodziny.Value;
         }
 
         private void NumericUCPlinieKodu_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.UCPlinieKodu = (double)NumericUCPlinieKodu.Value;
+            OknoGlowne.TempUCPlinieKodu = (double)NumericUCPlinieKodu.Value;
         }
 
         private void NumericStawkaGodz_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.StawkaGodz = (double)NumericStawkaGodz.Value;
+            OknoGlowne.TempStawkaGodz = (double)NumericStawkaGodz.Value;
         }
 
         private void NumericOsoboMGodz_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.OsoboMGodz = (int)NumericOsoboMGodz.Value;
+            OknoGlowne.TempOsoboMGodz = (int)NumericOsoboMGodz.Value;
         }
 
         private void NumericDzRobGodz_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.DzRobGodz = (int)NumericDzRobGodz.Value;
+            OknoGlowne.TempDzRobGodz = (int)NumericDzRobGodz.Value;
         }
 
         private void NumericMaxKoszt_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.MaxKoszt = (double)NumericMaxKoszt.Value;
+            OknoGlowne.TempMaxKoszt = (double)NumericMaxKoszt.Value;
         }
 
         private void NumericMaxPrac_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.MaxPrac = (int)NumericMaxPrac.Value;
+            OknoGlowne.TempMaxPrac = (int)NumericMaxPrac.Value;
         }
 
         private void NumericMaxHarm_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.MaxHarm = (int)NumericMaxHarm.Value;
+            OknoGlowne.TempMaxHarm = (int)NumericMaxHarm.Value;
         }
 
 

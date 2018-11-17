@@ -117,6 +117,16 @@ namespace Aplikacja
         public static int MaxPrac = 0;
         public static int MaxHarm = 0;
 
+        //wartości tymczasowe
+        public static double TempUCPgodziny;
+        public static double TempUCPlinieKodu;
+        public static double TempStawkaGodz;
+        public static int TempOsoboMGodz;
+        public static int TempDzRobGodz;
+        public static double TempMaxKoszt;
+        public static int TempMaxPrac;
+        public static int TempMaxHarm;
+
         //wyniki pośrednie
         double TCF = 0;
         double EF = 0;
@@ -620,6 +630,16 @@ namespace Aplikacja
                 if (dr == DialogResult.OK)
                 {
                     MessageBox.Show("Założenia projektu zostały wprowadzone.", "Sukces");
+
+                    UCPgodziny = TempUCPgodziny;
+                    UCPlinieKodu = TempUCPlinieKodu;
+                    StawkaGodz = TempStawkaGodz;
+                    OsoboMGodz = TempOsoboMGodz;
+                    DzRobGodz = TempDzRobGodz;
+                    MaxKoszt = TempMaxKoszt;
+                    MaxPrac = TempMaxPrac;
+                    MaxHarm = TempMaxHarm;
+
                 }
             }
         }
