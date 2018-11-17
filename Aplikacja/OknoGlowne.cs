@@ -39,6 +39,7 @@ namespace Aplikacja
         //TODO encapsulate?? domyślnie zera?
 
         string SciezkaDoPliku;
+        public static string[] TabDaneProjektu = new string[15];
 
         public static int[] TabUAW = new int[3];
         double[] wagiAktorow = { 1, 2, 3 };
