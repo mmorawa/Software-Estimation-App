@@ -113,6 +113,8 @@
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.ButtonKreator = new System.Windows.Forms.Button();
+            this.ToolStripMenuSzczegolyProjektu = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuZalozeniaProjektu = new System.Windows.Forms.ToolStripMenuItem();
             this.PasekMenu.SuspendLayout();
             this.GroupBoxDaneProjektu.SuspendLayout();
             this.GroupBoxUUCW.SuspendLayout();
@@ -152,6 +154,8 @@
             this.ToolStripMenuPlik.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuNowyProj,
             this.ToolStripMenuOtworzProj,
+            this.ToolStripMenuSzczegolyProjektu,
+            this.ToolStripMenuZalozeniaProjektu,
             this.ToolStripMenuZapiszProj,
             this.ToolStripMenuZapiszJakoProj,
             this.ToolStripMenuWyjscie});
@@ -1096,6 +1100,20 @@
             this.ButtonKreator.Text = "Kreator";
             this.ButtonKreator.UseVisualStyleBackColor = true;
             // 
+            // ToolStripMenuSzczegolyProjektu
+            // 
+            this.ToolStripMenuSzczegolyProjektu.Name = "ToolStripMenuSzczegolyProjektu";
+            this.ToolStripMenuSzczegolyProjektu.Size = new System.Drawing.Size(193, 22);
+            this.ToolStripMenuSzczegolyProjektu.Text = "&Szczegóły projektu";
+            this.ToolStripMenuSzczegolyProjektu.Click += new System.EventHandler(this.ToolStripMenuSzczegolyProjektu_Click);
+            // 
+            // ToolStripMenuZalozeniaProjektu
+            // 
+            this.ToolStripMenuZalozeniaProjektu.Name = "ToolStripMenuZalozeniaProjektu";
+            this.ToolStripMenuZalozeniaProjektu.Size = new System.Drawing.Size(193, 22);
+            this.ToolStripMenuZalozeniaProjektu.Text = "Założenia &projektu";
+            this.ToolStripMenuZalozeniaProjektu.Click += new System.EventHandler(this.ToolStripMenuZalozeniaProjektu_Click);
+            // 
             // OknoGlowne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1231,6 +1249,8 @@
         private System.Windows.Forms.Button ButtonZalozenia;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuKreator;
         private System.Windows.Forms.Button ButtonKreator;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuSzczegolyProjektu;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuZalozeniaProjektu;
     }
 }
 

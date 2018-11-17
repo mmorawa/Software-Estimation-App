@@ -149,6 +149,26 @@ namespace Aplikacja
             ButtonOtworzProjekt_Click(sender, e);
         }
 
+        //! Metoda wywoływana po naciśnięciu przycisku Open na pasku Menu.
+        /*! Metoda OpenToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Open na pasku Menu.
+         * Odpowiada za wczytanie pliku z bazą haseł a następnie jego odszyfrowanie przy użyciu podanego przez użytkownika klucza.
+         * Następnie generuje ona Panele z Textboxami, do których podstawiane są odszyfrowane dane tekstowe. 
+         */
+        private void ToolStripMenuSzczegolyProjektu_Click(object sender, EventArgs e)
+        {
+            ButtonWiecejSzczeg_Click(sender, e);
+        }
+
+        //! Metoda wywoływana po naciśnięciu przycisku Open na pasku Menu.
+        /*! Metoda OpenToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Open na pasku Menu.
+         * Odpowiada za wczytanie pliku z bazą haseł a następnie jego odszyfrowanie przy użyciu podanego przez użytkownika klucza.
+         * Następnie generuje ona Panele z Textboxami, do których podstawiane są odszyfrowane dane tekstowe. 
+         */
+        private void ToolStripMenuZalozeniaProjektu_Click(object sender, EventArgs e)
+        {
+
+        }
+
         //! Metoda wywoływana po naciśnięciu przycisku Save na pasku Menu.
         /*! Metoda SaveToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Save na pasku Menu.
          * Powoduje ona automatyczne zaszyfrowanie wpisów z hasłami, znajdujących w głównym oknie programu bez konieczności podania ścieżki do pliku bazy.
@@ -314,6 +334,16 @@ namespace Aplikacja
         }
 
         //-----------------------------------------------------------------------------------------------
+
+        private void TextBoxNazwaProjektu_TextChanged(object sender, EventArgs e)
+        {
+            TabDaneProjektu[0] = TextBoxNazwaProjektu.Text;
+        }
+
+        private void DateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+            TabDaneProjektu[1] = DateTimePicker.Text;
+        }
 
         private void NumUUCWProsty_ValueChanged(object sender, EventArgs e)
         {
@@ -520,15 +550,7 @@ namespace Aplikacja
 
         }
 
-        private void TextBoxNazwaProjektu_TextChanged(object sender, EventArgs e)
-        {
-            TabDaneProjektu[0] = TextBoxNazwaProjektu.Text;
-        }
 
-        private void DateTimePicker_ValueChanged(object sender, EventArgs e)
-        {
-            TabDaneProjektu[1] = DateTimePicker.Text;
-        }
 
         private void ButtonZapiszProjekt_Click(object sender, EventArgs e)
         {
@@ -581,7 +603,6 @@ namespace Aplikacja
             //sw.Write(Programy[Programy.Length - 2] + "};");
 
         }
-
 
 
     }
