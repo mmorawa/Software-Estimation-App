@@ -35,34 +35,42 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.LabelDataRozp = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.NumericStawkaGodz = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.GroupBoxOgraniczenia = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
+            this.NumericOsoboMGodz = new System.Windows.Forms.NumericUpDown();
             this.label13 = new System.Windows.Forms.Label();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
+            this.NumericDzRobGodz = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.TableLayoutOgraniczenia = new System.Windows.Forms.TableLayoutPanel();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
+            this.NumericMaxKoszt = new System.Windows.Forms.NumericUpDown();
+            this.NumericMaxPrac = new System.Windows.Forms.NumericUpDown();
+            this.NumericMaxHarm = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.CheckBoxAktywacja = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.NumericUCPlinieKodu = new System.Windows.Forms.NumericUpDown();
+            this.NumericUCPgodziny = new System.Windows.Forms.NumericUpDown();
             this.GroupBoxSzczDaneProjektu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericStawkaGodz)).BeginInit();
             this.GroupBoxOgraniczenia.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericOsoboMGodz)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericDzRobGodz)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.TableLayoutOgraniczenia.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericMaxKoszt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericMaxPrac)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericMaxHarm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericUCPlinieKodu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericUCPgodziny)).BeginInit();
             this.SuspendLayout();
             // 
             // ButtonAnuluj
@@ -114,9 +122,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(3, 89);
+            this.label2.Location = new System.Drawing.Point(3, 208);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(179, 42);
+            this.label2.Size = new System.Drawing.Size(179, 53);
             this.label2.TabIndex = 9;
             this.label2.Text = "Dzień roboczy wynosi:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -125,9 +133,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(3, 48);
+            this.label1.Location = new System.Drawing.Point(3, 156);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 41);
+            this.label1.Size = new System.Drawing.Size(179, 52);
             this.label1.TabIndex = 8;
             this.label1.Text = "1 osobomiesiąc stanowi:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -136,29 +144,30 @@
             // 
             this.LabelDataRozp.AutoSize = true;
             this.LabelDataRozp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelDataRozp.Location = new System.Drawing.Point(3, 0);
+            this.LabelDataRozp.Location = new System.Drawing.Point(3, 104);
             this.LabelDataRozp.Name = "LabelDataRozp";
-            this.LabelDataRozp.Size = new System.Drawing.Size(179, 48);
+            this.LabelDataRozp.Size = new System.Drawing.Size(179, 52);
             this.LabelDataRozp.TabIndex = 4;
             this.LabelDataRozp.Text = "Stawka godzinowa:";
             this.LabelDataRozp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // numericUpDown1
+            // NumericStawkaGodz
             // 
-            this.numericUpDown1.DecimalPlaces = 2;
-            this.numericUpDown1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numericUpDown1.Location = new System.Drawing.Point(188, 13);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.NumericStawkaGodz.DecimalPlaces = 2;
+            this.NumericStawkaGodz.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NumericStawkaGodz.Location = new System.Drawing.Point(188, 117);
+            this.NumericStawkaGodz.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
+            this.NumericStawkaGodz.Maximum = new decimal(new int[] {
             -1530494976,
             232830,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(170, 22);
-            this.numericUpDown1.TabIndex = 16;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numericUpDown1.ThousandsSeparator = true;
+            this.NumericStawkaGodz.Name = "NumericStawkaGodz";
+            this.NumericStawkaGodz.Size = new System.Drawing.Size(170, 22);
+            this.NumericStawkaGodz.TabIndex = 16;
+            this.NumericStawkaGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.NumericStawkaGodz.ThousandsSeparator = true;
+            this.NumericStawkaGodz.ValueChanged += new System.EventHandler(this.NumericStawkaGodz_ValueChanged);
             // 
             // label6
             // 
@@ -175,9 +184,9 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Location = new System.Drawing.Point(364, 0);
+            this.label7.Location = new System.Drawing.Point(364, 104);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(109, 48);
+            this.label7.Size = new System.Drawing.Size(109, 52);
             this.label7.TabIndex = 19;
             this.label7.Text = "zł";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -199,7 +208,7 @@
             this.GroupBoxOgraniczenia.Controls.Add(this.CheckBoxAktywacja);
             this.GroupBoxOgraniczenia.Controls.Add(this.TableLayoutOgraniczenia);
             this.GroupBoxOgraniczenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.GroupBoxOgraniczenia.Location = new System.Drawing.Point(6, 238);
+            this.GroupBoxOgraniczenia.Location = new System.Drawing.Point(6, 304);
             this.GroupBoxOgraniczenia.Name = "GroupBoxOgraniczenia";
             this.GroupBoxOgraniczenia.Size = new System.Drawing.Size(540, 221);
             this.GroupBoxOgraniczenia.TabIndex = 16;
@@ -210,57 +219,58 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Location = new System.Drawing.Point(364, 51);
+            this.label12.Location = new System.Drawing.Point(364, 159);
             this.label12.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(109, 38);
+            this.label12.Size = new System.Drawing.Size(109, 49);
             this.label12.TabIndex = 25;
             this.label12.Text = "godzin";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // numericUpDown5
+            // NumericOsoboMGodz
             // 
-            this.numericUpDown5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numericUpDown5.Location = new System.Drawing.Point(188, 61);
-            this.numericUpDown5.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
-            this.numericUpDown5.Maximum = new decimal(new int[] {
+            this.NumericOsoboMGodz.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NumericOsoboMGodz.Location = new System.Drawing.Point(188, 169);
+            this.NumericOsoboMGodz.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
+            this.NumericOsoboMGodz.Maximum = new decimal(new int[] {
             -1530494976,
             232830,
             0,
             0});
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(170, 22);
-            this.numericUpDown5.TabIndex = 24;
-            this.numericUpDown5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numericUpDown5.ThousandsSeparator = true;
+            this.NumericOsoboMGodz.Name = "NumericOsoboMGodz";
+            this.NumericOsoboMGodz.Size = new System.Drawing.Size(170, 22);
+            this.NumericOsoboMGodz.TabIndex = 24;
+            this.NumericOsoboMGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.NumericOsoboMGodz.ThousandsSeparator = true;
+            this.NumericOsoboMGodz.ValueChanged += new System.EventHandler(this.NumericOsoboMGodz_ValueChanged);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Location = new System.Drawing.Point(364, 92);
+            this.label13.Location = new System.Drawing.Point(364, 211);
             this.label13.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(109, 39);
+            this.label13.Size = new System.Drawing.Size(109, 50);
             this.label13.TabIndex = 27;
             this.label13.Text = "godzin";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // numericUpDown6
+            // NumericDzRobGodz
             // 
-            this.numericUpDown6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numericUpDown6.Location = new System.Drawing.Point(188, 102);
-            this.numericUpDown6.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
-            this.numericUpDown6.Maximum = new decimal(new int[] {
+            this.NumericDzRobGodz.Location = new System.Drawing.Point(188, 221);
+            this.NumericDzRobGodz.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
+            this.NumericDzRobGodz.Maximum = new decimal(new int[] {
             -1530494976,
             232830,
             0,
             0});
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(170, 22);
-            this.numericUpDown6.TabIndex = 26;
-            this.numericUpDown6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numericUpDown6.ThousandsSeparator = true;
+            this.NumericDzRobGodz.Name = "NumericDzRobGodz";
+            this.NumericDzRobGodz.Size = new System.Drawing.Size(170, 22);
+            this.NumericDzRobGodz.TabIndex = 26;
+            this.NumericDzRobGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.NumericDzRobGodz.ThousandsSeparator = true;
+            this.NumericDzRobGodz.ValueChanged += new System.EventHandler(this.NumericDzRobGodz_ValueChanged);
             // 
             // tableLayoutPanel2
             // 
@@ -268,24 +278,31 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 185F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 176F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Controls.Add(this.LabelDataRozp, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.numericUpDown1, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.numericUpDown5, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.numericUpDown6, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.label13, 2, 2);
-            this.tableLayoutPanel2.Controls.Add(this.label2, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.label7, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label12, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.NumericUCPgodziny, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.NumericUCPlinieKodu, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label3, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label8, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label4, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.LabelDataRozp, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.NumericStawkaGodz, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.NumericOsoboMGodz, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.NumericDzRobGodz, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label13, 2, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label2, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label7, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.label12, 2, 3);
+            this.tableLayoutPanel2.Controls.Add(this.label9, 2, 1);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(6, 21);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowCount = 5;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(476, 131);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(476, 261);
             this.tableLayoutPanel2.TabIndex = 28;
             // 
             // TableLayoutOgraniczenia
@@ -295,9 +312,9 @@
             this.TableLayoutOgraniczenia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
             this.TableLayoutOgraniczenia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.TableLayoutOgraniczenia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.TableLayoutOgraniczenia.Controls.Add(this.numericUpDown7, 1, 0);
-            this.TableLayoutOgraniczenia.Controls.Add(this.numericUpDown8, 1, 1);
-            this.TableLayoutOgraniczenia.Controls.Add(this.numericUpDown9, 1, 2);
+            this.TableLayoutOgraniczenia.Controls.Add(this.NumericMaxKoszt, 1, 0);
+            this.TableLayoutOgraniczenia.Controls.Add(this.NumericMaxPrac, 1, 1);
+            this.TableLayoutOgraniczenia.Controls.Add(this.NumericMaxHarm, 1, 2);
             this.TableLayoutOgraniczenia.Controls.Add(this.label14, 2, 2);
             this.TableLayoutOgraniczenia.Controls.Add(this.label6, 0, 1);
             this.TableLayoutOgraniczenia.Controls.Add(this.label5, 0, 0);
@@ -315,54 +332,57 @@
             this.TableLayoutOgraniczenia.Size = new System.Drawing.Size(540, 131);
             this.TableLayoutOgraniczenia.TabIndex = 29;
             // 
-            // numericUpDown7
+            // NumericMaxKoszt
             // 
-            this.numericUpDown7.DecimalPlaces = 2;
-            this.numericUpDown7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numericUpDown7.Location = new System.Drawing.Point(226, 13);
-            this.numericUpDown7.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
-            this.numericUpDown7.Maximum = new decimal(new int[] {
+            this.NumericMaxKoszt.DecimalPlaces = 2;
+            this.NumericMaxKoszt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NumericMaxKoszt.Location = new System.Drawing.Point(226, 13);
+            this.NumericMaxKoszt.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
+            this.NumericMaxKoszt.Maximum = new decimal(new int[] {
             -1530494976,
             232830,
             0,
             0});
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(154, 22);
-            this.numericUpDown7.TabIndex = 16;
-            this.numericUpDown7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numericUpDown7.ThousandsSeparator = true;
+            this.NumericMaxKoszt.Name = "NumericMaxKoszt";
+            this.NumericMaxKoszt.Size = new System.Drawing.Size(154, 22);
+            this.NumericMaxKoszt.TabIndex = 16;
+            this.NumericMaxKoszt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.NumericMaxKoszt.ThousandsSeparator = true;
+            this.NumericMaxKoszt.ValueChanged += new System.EventHandler(this.NumericMaxKoszt_ValueChanged);
             // 
-            // numericUpDown8
+            // NumericMaxPrac
             // 
-            this.numericUpDown8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numericUpDown8.Location = new System.Drawing.Point(226, 61);
-            this.numericUpDown8.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
-            this.numericUpDown8.Maximum = new decimal(new int[] {
+            this.NumericMaxPrac.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NumericMaxPrac.Location = new System.Drawing.Point(226, 61);
+            this.NumericMaxPrac.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
+            this.NumericMaxPrac.Maximum = new decimal(new int[] {
             -1530494976,
             232830,
             0,
             0});
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(154, 22);
-            this.numericUpDown8.TabIndex = 24;
-            this.numericUpDown8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numericUpDown8.ThousandsSeparator = true;
+            this.NumericMaxPrac.Name = "NumericMaxPrac";
+            this.NumericMaxPrac.Size = new System.Drawing.Size(154, 22);
+            this.NumericMaxPrac.TabIndex = 24;
+            this.NumericMaxPrac.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.NumericMaxPrac.ThousandsSeparator = true;
+            this.NumericMaxPrac.ValueChanged += new System.EventHandler(this.NumericMaxPrac_ValueChanged);
             // 
-            // numericUpDown9
+            // NumericMaxHarm
             // 
-            this.numericUpDown9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numericUpDown9.Location = new System.Drawing.Point(226, 102);
-            this.numericUpDown9.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
-            this.numericUpDown9.Maximum = new decimal(new int[] {
+            this.NumericMaxHarm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NumericMaxHarm.Location = new System.Drawing.Point(226, 102);
+            this.NumericMaxHarm.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
+            this.NumericMaxHarm.Maximum = new decimal(new int[] {
             -1530494976,
             232830,
             0,
             0});
-            this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(154, 22);
-            this.numericUpDown9.TabIndex = 26;
-            this.numericUpDown9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numericUpDown9.ThousandsSeparator = true;
+            this.NumericMaxHarm.Name = "NumericMaxHarm";
+            this.NumericMaxHarm.Size = new System.Drawing.Size(154, 22);
+            this.NumericMaxHarm.TabIndex = 26;
+            this.NumericMaxHarm.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.NumericMaxHarm.ThousandsSeparator = true;
+            this.NumericMaxHarm.ValueChanged += new System.EventHandler(this.NumericMaxHarm_ValueChanged);
             // 
             // label14
             // 
@@ -410,6 +430,84 @@
             this.CheckBoxAktywacja.UseVisualStyleBackColor = true;
             this.CheckBoxAktywacja.CheckedChanged += new System.EventHandler(this.CheckBoxAktywacja_CheckedChanged);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Location = new System.Drawing.Point(364, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(109, 52);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "godzin";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Location = new System.Drawing.Point(3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(179, 52);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "Liczba godzin przypadająca na 1 punkt przypadków użycia:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label8.Location = new System.Drawing.Point(3, 52);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(179, 52);
+            this.label8.TabIndex = 30;
+            this.label8.Text = "Liczba linii kodu przypadająca na 1 punkt przypadków użycia:";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label9.Location = new System.Drawing.Point(364, 52);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(109, 52);
+            this.label9.TabIndex = 31;
+            this.label9.Text = "linii kodu";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // NumericUCPlinieKodu
+            // 
+            this.NumericUCPlinieKodu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NumericUCPlinieKodu.Location = new System.Drawing.Point(188, 65);
+            this.NumericUCPlinieKodu.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
+            this.NumericUCPlinieKodu.Maximum = new decimal(new int[] {
+            -1530494976,
+            232830,
+            0,
+            0});
+            this.NumericUCPlinieKodu.Name = "NumericUCPlinieKodu";
+            this.NumericUCPlinieKodu.Size = new System.Drawing.Size(170, 22);
+            this.NumericUCPlinieKodu.TabIndex = 29;
+            this.NumericUCPlinieKodu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.NumericUCPlinieKodu.ThousandsSeparator = true;
+            this.NumericUCPlinieKodu.ValueChanged += new System.EventHandler(this.NumericUCPlinieKodu_ValueChanged);
+            // 
+            // NumericUCPgodziny
+            // 
+            this.NumericUCPgodziny.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NumericUCPgodziny.Location = new System.Drawing.Point(188, 13);
+            this.NumericUCPgodziny.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
+            this.NumericUCPgodziny.Maximum = new decimal(new int[] {
+            -1530494976,
+            232830,
+            0,
+            0});
+            this.NumericUCPgodziny.Name = "NumericUCPgodziny";
+            this.NumericUCPgodziny.Size = new System.Drawing.Size(170, 22);
+            this.NumericUCPgodziny.TabIndex = 32;
+            this.NumericUCPgodziny.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.NumericUCPgodziny.ThousandsSeparator = true;
+            this.NumericUCPgodziny.ValueChanged += new System.EventHandler(this.NumericUCPgodziny_ValueChanged);
+            // 
             // OknoZalozeniaProjektu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -422,18 +520,20 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Założenia projektu";
             this.GroupBoxSzczDaneProjektu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericStawkaGodz)).EndInit();
             this.GroupBoxOgraniczenia.ResumeLayout(false);
             this.GroupBoxOgraniczenia.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericOsoboMGodz)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericDzRobGodz)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.TableLayoutOgraniczenia.ResumeLayout(false);
             this.TableLayoutOgraniczenia.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericMaxKoszt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericMaxPrac)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericMaxHarm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericUCPlinieKodu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericUCPgodziny)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -450,20 +550,26 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown NumericStawkaGodz;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.NumericUpDown numericUpDown6;
+        private System.Windows.Forms.NumericUpDown NumericDzRobGodz;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
+        private System.Windows.Forms.NumericUpDown NumericOsoboMGodz;
         private System.Windows.Forms.GroupBox GroupBoxOgraniczenia;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel TableLayoutOgraniczenia;
-        private System.Windows.Forms.NumericUpDown numericUpDown7;
-        private System.Windows.Forms.NumericUpDown numericUpDown8;
-        private System.Windows.Forms.NumericUpDown numericUpDown9;
+        private System.Windows.Forms.NumericUpDown NumericMaxKoszt;
+        private System.Windows.Forms.NumericUpDown NumericMaxPrac;
+        private System.Windows.Forms.NumericUpDown NumericMaxHarm;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.CheckBox CheckBoxAktywacja;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.NumericUpDown NumericUCPgodziny;
+        private System.Windows.Forms.NumericUpDown NumericUCPlinieKodu;
+        private System.Windows.Forms.Label label9;
     }
 }

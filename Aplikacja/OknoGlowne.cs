@@ -106,10 +106,14 @@ namespace Aplikacja
         double B = 0.91;
 
         //przeliczniki
-        double UCPgodziny = 25;
-        double UCP_KSLOC = 0.06;
-        double TydzGodziny = 152;
-
+        public static double UCPgodziny = 25;
+        public static double UCPlinieKodu = 60;
+        public static double StawkaGodz = 0;
+        public static int OsoboMGodz = 152;
+        public static int DzRobGodz = 8;
+        public static double MaxKoszt = 0;
+        public static int MaxPrac = 0;
+        public static int MaxHarm = 0;
 
         //wyniki pośrednie
         double TCF = 0;
@@ -413,7 +417,7 @@ namespace Aplikacja
             PracUCP = Math.Round(UCP * UCPgodziny, 2);
 
             //Obliczenia COCOMOII
-            Rozmiar = UCP * UCP_KSLOC;
+            Rozmiar = UCP * UCPlinieKodu;
 
             SumaSF = 0;
             for (int i = 0; i < 5; i++)
