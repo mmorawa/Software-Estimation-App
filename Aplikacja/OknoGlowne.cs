@@ -172,7 +172,7 @@ namespace Aplikacja
          */
         private void ToolStripMenuZalozeniaProjektu_Click(object sender, EventArgs e)
         {
-
+            ButtonZalozenia_Click(sender, e);
         }
 
         //! Metoda wywoływana po naciśnięciu przycisku Save na pasku Menu.
