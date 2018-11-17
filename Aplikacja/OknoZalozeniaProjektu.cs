@@ -24,21 +24,30 @@ namespace Aplikacja
             NumericMaxKoszt.Value = (decimal)OknoGlowne.MaxKoszt;
             NumericMaxPrac.Value = OknoGlowne.MaxPrac;
             NumericMaxHarm.Value = OknoGlowne.MaxHarm;
-
+            
+            CheckBoxAktywacja.Checked = OknoGlowne.Ograniczenia;
+            TableLayoutOgraniczenia.Enabled = OknoGlowne.Ograniczenia;
 
         }
 
+
+
         private void CheckBoxAktywacja_CheckedChanged(object sender, EventArgs e)
         {
+
             if (TableLayoutOgraniczenia.Enabled == false)
             {
+                OknoGlowne.Ograniczenia = true;
                 TableLayoutOgraniczenia.Enabled = true;
             }
             else
             {
+                OknoGlowne.Ograniczenia = false;
                 TableLayoutOgraniczenia.Enabled = false;
             }
         }
+
+
         //TODO domyślnie decimal????
 
 

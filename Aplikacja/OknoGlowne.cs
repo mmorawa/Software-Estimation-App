@@ -41,6 +41,8 @@ namespace Aplikacja
         //TODO encapsulate?? domyślnie zera?
 
         string SciezkaDoPliku = "";
+        public static bool Ograniczenia = false;
+
         public static string[] TabDaneProjektu = new string[15];
         public static string[] TempTabDaneProjektu = new string[15];
 
