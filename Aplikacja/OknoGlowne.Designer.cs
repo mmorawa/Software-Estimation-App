@@ -713,6 +713,7 @@
             this.ButtonUstawienia.Text = "Ustawienia";
             this.ToolTip.SetToolTip(this.ButtonUstawienia, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonUstawienia.UseVisualStyleBackColor = true;
+            this.ButtonUstawienia.Click += new System.EventHandler(this.ButtonUstawienia_Click);
             // 
             // ButtonKalibracja
             // 
