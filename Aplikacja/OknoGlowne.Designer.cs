@@ -328,6 +328,7 @@
             this.DateTimePicker.Size = new System.Drawing.Size(200, 22);
             this.DateTimePicker.TabIndex = 3;
             this.DateTimePicker.Value = new System.DateTime(2018, 11, 15, 14, 35, 14, 0);
+            this.DateTimePicker.ValueChanged += new System.EventHandler(this.DateTimePicker_ValueChanged);
             // 
             // ButtonWiecejSzczeg
             // 
@@ -336,7 +337,6 @@
             this.ButtonWiecejSzczeg.Size = new System.Drawing.Size(173, 27);
             this.ButtonWiecejSzczeg.TabIndex = 2;
             this.ButtonWiecejSzczeg.Text = "Więcej szczegółów";
-            this.ToolTip.SetToolTip(this.ButtonWiecejSzczeg, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonWiecejSzczeg.UseVisualStyleBackColor = true;
             this.ButtonWiecejSzczeg.Click += new System.EventHandler(this.ButtonWiecejSzczeg_Click);
             // 
@@ -355,6 +355,7 @@
             this.TextBoxNazwaProjektu.Name = "TextBoxNazwaProjektu";
             this.TextBoxNazwaProjektu.Size = new System.Drawing.Size(462, 22);
             this.TextBoxNazwaProjektu.TabIndex = 0;
+            this.TextBoxNazwaProjektu.TextChanged += new System.EventHandler(this.TextBoxNazwaProjektu_TextChanged);
             // 
             // GroupBoxUUCW
             // 
@@ -607,7 +608,6 @@
             this.ButtonCZT.Size = new System.Drawing.Size(173, 44);
             this.ButtonCZT.TabIndex = 2;
             this.ButtonCZT.Text = "Czynniki złożoności technicznej";
-            this.ToolTip.SetToolTip(this.ButtonCZT, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonCZT.UseVisualStyleBackColor = true;
             this.ButtonCZT.Click += new System.EventHandler(this.ButtonCZT_Click);
             // 
@@ -619,7 +619,6 @@
             this.ButtonOszacuj.Size = new System.Drawing.Size(173, 44);
             this.ButtonOszacuj.TabIndex = 2;
             this.ButtonOszacuj.Text = "Oszacuj";
-            this.ToolTip.SetToolTip(this.ButtonOszacuj, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonOszacuj.UseVisualStyleBackColor = true;
             this.ButtonOszacuj.Click += new System.EventHandler(this.ButtonOszacuj_Click);
             // 
@@ -630,7 +629,6 @@
             this.ButtonCzSr.Size = new System.Drawing.Size(173, 44);
             this.ButtonCzSr.TabIndex = 3;
             this.ButtonCzSr.Text = "Czynniki środowiskowe";
-            this.ToolTip.SetToolTip(this.ButtonCzSr, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonCzSr.UseVisualStyleBackColor = true;
             this.ButtonCzSr.Click += new System.EventHandler(this.ButtonCzSr_Click);
             // 
@@ -641,7 +639,6 @@
             this.ButtonMnPr.Size = new System.Drawing.Size(173, 44);
             this.ButtonMnPr.TabIndex = 3;
             this.ButtonMnPr.Text = "Mnożniki pracochłonności";
-            this.ToolTip.SetToolTip(this.ButtonMnPr, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonMnPr.UseVisualStyleBackColor = true;
             this.ButtonMnPr.Click += new System.EventHandler(this.ButtonMnPr_Click);
             // 
@@ -652,7 +649,6 @@
             this.ButtonCzSk.Size = new System.Drawing.Size(173, 44);
             this.ButtonCzSk.TabIndex = 2;
             this.ButtonCzSk.Text = "Czynniki skali";
-            this.ToolTip.SetToolTip(this.ButtonCzSk, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonCzSk.UseVisualStyleBackColor = true;
             this.ButtonCzSk.Click += new System.EventHandler(this.ButtonCzSk_Click);
             // 
@@ -664,7 +660,6 @@
             this.ButtonNowyProjekt.Size = new System.Drawing.Size(173, 27);
             this.ButtonNowyProjekt.TabIndex = 8;
             this.ButtonNowyProjekt.Text = "Nowy projekt";
-            this.ToolTip.SetToolTip(this.ButtonNowyProjekt, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonNowyProjekt.UseVisualStyleBackColor = true;
             this.ButtonNowyProjekt.Click += new System.EventHandler(this.ButtonNowyProjekt_Click);
             // 
@@ -676,7 +671,6 @@
             this.ButtonOtworzProjekt.Size = new System.Drawing.Size(173, 27);
             this.ButtonOtworzProjekt.TabIndex = 9;
             this.ButtonOtworzProjekt.Text = "Otwórz projekt";
-            this.ToolTip.SetToolTip(this.ButtonOtworzProjekt, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonOtworzProjekt.UseVisualStyleBackColor = true;
             this.ButtonOtworzProjekt.Click += new System.EventHandler(this.ButtonOtworzProjekt_Click);
             // 
@@ -688,7 +682,6 @@
             this.ButtonZapiszProjekt.Size = new System.Drawing.Size(173, 27);
             this.ButtonZapiszProjekt.TabIndex = 10;
             this.ButtonZapiszProjekt.Text = "Zapisz projekt";
-            this.ToolTip.SetToolTip(this.ButtonZapiszProjekt, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonZapiszProjekt.UseVisualStyleBackColor = true;
             // 
             // ButtonZapiszProjektJako
@@ -699,7 +692,6 @@
             this.ButtonZapiszProjektJako.Size = new System.Drawing.Size(173, 27);
             this.ButtonZapiszProjektJako.TabIndex = 11;
             this.ButtonZapiszProjektJako.Text = "Zapisz projekt jako";
-            this.ToolTip.SetToolTip(this.ButtonZapiszProjektJako, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonZapiszProjektJako.UseVisualStyleBackColor = true;
             this.ButtonZapiszProjektJako.Click += new System.EventHandler(this.ButtonZapiszProjektJako_Click);
             // 
@@ -711,7 +703,6 @@
             this.ButtonUstawienia.Size = new System.Drawing.Size(173, 27);
             this.ButtonUstawienia.TabIndex = 12;
             this.ButtonUstawienia.Text = "Ustawienia";
-            this.ToolTip.SetToolTip(this.ButtonUstawienia, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonUstawienia.UseVisualStyleBackColor = true;
             this.ButtonUstawienia.Click += new System.EventHandler(this.ButtonUstawienia_Click);
             // 
@@ -723,7 +714,6 @@
             this.ButtonKalibracja.Size = new System.Drawing.Size(173, 27);
             this.ButtonKalibracja.TabIndex = 13;
             this.ButtonKalibracja.Text = "Kalibracja";
-            this.ToolTip.SetToolTip(this.ButtonKalibracja, "Pozwala na dodanie większej ilości informacji odnośnie projektu.");
             this.ButtonKalibracja.UseVisualStyleBackColor = true;
             // 
             // GroupBoxUAW

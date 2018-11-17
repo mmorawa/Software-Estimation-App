@@ -29,7 +29,9 @@ namespace Aplikacja
         public OknoGlowne()
         {
             InitializeComponent();
+            TextBoxNazwaProjektu.Text = "Projekt";
             DateTimePicker.Value = DateTime.Now;
+            
         }
 
         /*****************************************************************************//**
@@ -40,6 +42,7 @@ namespace Aplikacja
 
         string SciezkaDoPliku;
         public static string[] TabDaneProjektu = new string[15];
+        
 
         public static int[] TabUAW = new int[3];
         double[] wagiAktorow = { 1, 2, 3 };
@@ -326,7 +329,13 @@ namespace Aplikacja
 
                     using (StreamWriter sw = new StreamWriter(File.Create(SciezkaDoPliku)))
                     {
-                        sw.WriteLine(TextBoxNazwaProjektu.Text);
+                        //na wypadek gdyby użytkownik nie zmienił domyślnej daty
+                        TabDaneProjektu[1] = DateTimePicker.Text;
+
+                        foreach (var item in TabDaneProjektu)
+                        {
+                            sw.WriteLine(item);
+                        }
 
                         foreach (var item in TabUUCW)
                         {
@@ -421,9 +430,13 @@ namespace Aplikacja
 
         private void ButtonNowyProjekt_Click(object sender, EventArgs e)
         {
+            //TODO: czy chcesz rozpocząć nowy projekt bez zapisania starego?
+
             //Wyzerowanie
             TextBoxNazwaProjektu.Text = "";
             DateTimePicker.Value = DateTime.Now;
+
+            TabDaneProjektu = new string[15];
 
             NumUUCWProsty.Value = 0;
             NumUUCWSredni.Value = 0;
@@ -448,6 +461,8 @@ namespace Aplikacja
             E = 1;
             SumaSF = 0;
             IloczynEM = 1;
+            iloczynWagEF = 0;
+            iloczynWagTCF = 0;
 
             PracUCP = 0;
             PracCOCOMOII = 0;
@@ -488,6 +503,12 @@ namespace Aplikacja
                         int LiczbaLinii = File.ReadLines(SciezkaDoPliku).Count();
 
                         TextBoxNazwaProjektu.Text = sr.ReadLine();
+                        DateTimePicker.Text = sr.ReadLine();
+
+                        for (int i = 2; i < 15; i++)
+                        {
+                            TabDaneProjektu[i] = sr.ReadLine();
+                        }
 
                         NumUUCWProsty.Value = int.Parse(sr.ReadLine());
                         NumUUCWSredni.Value = int.Parse(sr.ReadLine());
@@ -514,6 +535,16 @@ namespace Aplikacja
         {
             //MessageBox.Show(Properties.Settings.Default.GodzinyUCP.ToString());
 
+        }
+
+        private void TextBoxNazwaProjektu_TextChanged(object sender, EventArgs e)
+        {
+            TabDaneProjektu[0] = TextBoxNazwaProjektu.Text;
+        }
+
+        private void DateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+            TabDaneProjektu[1] = DateTimePicker.Text;
         }
     }
 }

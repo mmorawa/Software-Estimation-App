@@ -53,7 +53,7 @@ namespace Aplikacja
         {
             OknoGlowne.TabDaneProjektu[7] = TextBoxEmail.Text;
         }
-
+        //TODO: problem z wieloma liniami tekstu i zapisz/odczyt
         private void RichTextBoxOpisProjektu_TextChanged(object sender, EventArgs e)
         {
             OknoGlowne.TabDaneProjektu[8] = RichTextBoxOpisProjektu.Text;
