@@ -43,7 +43,7 @@
             this.podsumowanieProjektuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuOpcje = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuKalibracja = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuWizard = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuKreator = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuUstawienia = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuPomoc = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuDokumentacja = new System.Windows.Forms.ToolStripMenuItem();
@@ -112,6 +112,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.ButtonKreator = new System.Windows.Forms.Button();
             this.PasekMenu.SuspendLayout();
             this.GroupBoxDaneProjektu.SuspendLayout();
             this.GroupBoxUUCW.SuspendLayout();
@@ -132,6 +133,9 @@
             // 
             // PasekMenu
             // 
+            this.PasekMenu.AllowMerge = false;
+            this.PasekMenu.BackColor = System.Drawing.SystemColors.Control;
+            this.PasekMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.PasekMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuPlik,
             this.ToolStripMenuRaporty,
@@ -234,8 +238,8 @@
             // ToolStripMenuOpcje
             // 
             this.ToolStripMenuOpcje.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuKreator,
             this.ToolStripMenuKalibracja,
-            this.ToolStripMenuWizard,
             this.ToolStripMenuUstawienia});
             this.ToolStripMenuOpcje.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ToolStripMenuOpcje.Name = "ToolStripMenuOpcje";
@@ -245,20 +249,20 @@
             // ToolStripMenuKalibracja
             // 
             this.ToolStripMenuKalibracja.Name = "ToolStripMenuKalibracja";
-            this.ToolStripMenuKalibracja.Size = new System.Drawing.Size(143, 22);
+            this.ToolStripMenuKalibracja.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuKalibracja.Text = "&Kalibracja";
             this.ToolStripMenuKalibracja.Click += new System.EventHandler(this.ToolStripMenuKalibracja_Click);
             // 
-            // ToolStripMenuWizard
+            // ToolStripMenuKreator
             // 
-            this.ToolStripMenuWizard.Name = "ToolStripMenuWizard";
-            this.ToolStripMenuWizard.Size = new System.Drawing.Size(143, 22);
-            this.ToolStripMenuWizard.Text = "&Wizard";
+            this.ToolStripMenuKreator.Name = "ToolStripMenuKreator";
+            this.ToolStripMenuKreator.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuKreator.Text = "K&reator";
             // 
             // ToolStripMenuUstawienia
             // 
             this.ToolStripMenuUstawienia.Name = "ToolStripMenuUstawienia";
-            this.ToolStripMenuUstawienia.Size = new System.Drawing.Size(143, 22);
+            this.ToolStripMenuUstawienia.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuUstawienia.Text = "&Ustawienia";
             this.ToolStripMenuUstawienia.Click += new System.EventHandler(this.ToolStripMenuUstawienia_Click);
             // 
@@ -1082,11 +1086,22 @@
             this.ToolStripStatusLabel.Size = new System.Drawing.Size(48, 17);
             this.ToolStripStatusLabel.Text = "Gotowy";
             // 
+            // ButtonKreator
+            // 
+            this.ButtonKreator.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonKreator.Location = new System.Drawing.Point(549, 36);
+            this.ButtonKreator.Name = "ButtonKreator";
+            this.ButtonKreator.Size = new System.Drawing.Size(173, 27);
+            this.ButtonKreator.TabIndex = 14;
+            this.ButtonKreator.Text = "Kreator";
+            this.ButtonKreator.UseVisualStyleBackColor = true;
+            // 
             // OknoGlowne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1099, 784);
+            this.Controls.Add(this.ButtonKreator);
             this.Controls.Add(this.ButtonKalibracja);
             this.Controls.Add(this.ButtonUstawienia);
             this.Controls.Add(this.ButtonZapiszProjekt);
@@ -1214,7 +1229,8 @@
         private System.Windows.Forms.Label LabelWynikPracUCP;
         private System.Windows.Forms.Label LabelPktUCP;
         private System.Windows.Forms.Button ButtonZalozenia;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuWizard;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuKreator;
+        private System.Windows.Forms.Button ButtonKreator;
     }
 }
 
