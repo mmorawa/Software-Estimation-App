@@ -81,7 +81,6 @@
             this.ButtonNowyProjekt = new System.Windows.Forms.Button();
             this.ButtonOtworzProjekt = new System.Windows.Forms.Button();
             this.ButtonZapiszProjekt = new System.Windows.Forms.Button();
-            this.ButtonZapiszProjektJako = new System.Windows.Forms.Button();
             this.ButtonUstawienia = new System.Windows.Forms.Button();
             this.ButtonKalibracja = new System.Windows.Forms.Button();
             this.GroupBoxUAW = new System.Windows.Forms.GroupBox();
@@ -683,17 +682,7 @@
             this.ButtonZapiszProjekt.TabIndex = 10;
             this.ButtonZapiszProjekt.Text = "Zapisz projekt";
             this.ButtonZapiszProjekt.UseVisualStyleBackColor = true;
-            // 
-            // ButtonZapiszProjektJako
-            // 
-            this.ButtonZapiszProjektJako.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonZapiszProjektJako.Location = new System.Drawing.Point(549, 36);
-            this.ButtonZapiszProjektJako.Name = "ButtonZapiszProjektJako";
-            this.ButtonZapiszProjektJako.Size = new System.Drawing.Size(173, 27);
-            this.ButtonZapiszProjektJako.TabIndex = 11;
-            this.ButtonZapiszProjektJako.Text = "Zapisz projekt jako";
-            this.ButtonZapiszProjektJako.UseVisualStyleBackColor = true;
-            this.ButtonZapiszProjektJako.Click += new System.EventHandler(this.ButtonZapiszProjektJako_Click);
+            this.ButtonZapiszProjekt.Click += new System.EventHandler(this.ButtonZapiszProjekt_Click);
             // 
             // ButtonUstawienia
             // 
@@ -1100,7 +1089,6 @@
             this.ClientSize = new System.Drawing.Size(1099, 784);
             this.Controls.Add(this.ButtonKalibracja);
             this.Controls.Add(this.ButtonUstawienia);
-            this.Controls.Add(this.ButtonZapiszProjektJako);
             this.Controls.Add(this.ButtonZapiszProjekt);
             this.Controls.Add(this.ButtonOtworzProjekt);
             this.Controls.Add(this.ButtonNowyProjekt);
@@ -1211,7 +1199,6 @@
         private System.Windows.Forms.Button ButtonNowyProjekt;
         private System.Windows.Forms.Button ButtonOtworzProjekt;
         private System.Windows.Forms.Button ButtonZapiszProjekt;
-        private System.Windows.Forms.Button ButtonZapiszProjektJako;
         private System.Windows.Forms.Button ButtonUstawienia;
         private System.Windows.Forms.Button ButtonKalibracja;
         private System.Windows.Forms.ToolStripMenuItem daneProjektuToolStripMenuItem;

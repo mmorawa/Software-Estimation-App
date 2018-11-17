@@ -31,7 +31,7 @@ namespace Aplikacja
             InitializeComponent();
             TextBoxNazwaProjektu.Text = "Projekt";
             DateTimePicker.Value = DateTime.Now;
-            
+
         }
 
         /*****************************************************************************//**
@@ -42,7 +42,7 @@ namespace Aplikacja
 
         string SciezkaDoPliku = "";
         public static string[] TabDaneProjektu = new string[15];
-        
+
 
         public static int[] TabUAW = new int[3];
         double[] wagiAktorow = { 1, 2, 3 };
@@ -149,7 +149,7 @@ namespace Aplikacja
          */
         private void ToolStripMenuZapiszProj_Click(object sender, EventArgs e)
         {
-
+            ButtonZapiszProjekt_Click(sender, e);
         }
 
         //! Metoda wywoływana po naciśnięciu przycisku Save As na pasku Menu.
@@ -158,7 +158,24 @@ namespace Aplikacja
          */
         private void ToolStripMenuZapiszJakoProj_Click(object sender, EventArgs e)
         {
+            using (SaveFileDialog ZapiszProjektDialog = new SaveFileDialog())
+            {
+                ZapiszProjektDialog.Filter = "Plik projetku | *.prj";
+                ZapiszProjektDialog.FileName = "Projekt.prj";
+                ZapiszProjektDialog.Title = "Zapisz plik projektu jako:";
 
+                DialogResult dr = ZapiszProjektDialog.ShowDialog();
+
+
+                //zapisanie danych do pliku tekstowego
+                if (dr == DialogResult.OK)
+                {
+                    SciezkaDoPliku = ZapiszProjektDialog.FileName;
+
+                    Zapis();
+
+                }
+            }
         }
 
         //! Metoda wywoływana po naciśnięciu przycisku Exit na pasku Menu.
@@ -309,63 +326,6 @@ namespace Aplikacja
 
 
 
-
-        private void ButtonZapiszProjektJako_Click(object sender, EventArgs e)
-        {
-
-            using (SaveFileDialog ZapiszProjektDialog = new SaveFileDialog())
-            {
-                ZapiszProjektDialog.Filter = "Plik projetku | *.prj";
-                ZapiszProjektDialog.FileName = "Projekt.prj";
-                ZapiszProjektDialog.Title = "Zapisz plik projektu jako:";
-
-                DialogResult dr = ZapiszProjektDialog.ShowDialog();
-
-
-                //zapisanie danych do pliku tekstowego
-                if (dr == DialogResult.OK)
-                {
-                    SciezkaDoPliku = ZapiszProjektDialog.FileName;
-
-                    using (StreamWriter sw = new StreamWriter(File.Create(SciezkaDoPliku)))
-                    {
-                        //na wypadek gdyby użytkownik nie zmienił domyślnej daty
-                        TabDaneProjektu[1] = DateTimePicker.Text;
-
-                        foreach (var item in TabDaneProjektu)
-                        {
-                            sw.WriteLine(item);
-                        }
-
-                        foreach (var item in TabUUCW)
-                        {
-                            sw.WriteLine(item);
-                        }
-
-                        foreach (var item in TabUAW)
-                        {
-                            sw.WriteLine(item);
-                        }
-
-                        sw.Dispose();
-                        MessageBox.Show("Plik zapisano.");
-                    }
-
-                    //sw.WriteLine(string.Format("byte Program_{0}", Form2.Nazwa_Programu) + "_MODUL[]={" + string.Format("{0},{1},{2},{3}", numery[0], numery[1], numery[2], numery[3]) + "};");
-
-                    //sw.Write(string.Format("unsigned int* Program_{0}", Form2.Nazwa_Programu) + "[] = {");
-
-                    /*
-                    for (int i = 0; i < Programy.Length - 2; i++)
-                    {
-                        sw.Write(Programy[i] + ", ");
-                    }*/
-
-                    //sw.Write(Programy[Programy.Length - 2] + "};");
-                }
-            }
-
-        }
 
         private void ButtonOszacuj_Click(object sender, EventArgs e)
         {
@@ -520,7 +480,7 @@ namespace Aplikacja
 
 
                     }
-                    
+
                 }
             }
         }
@@ -540,5 +500,60 @@ namespace Aplikacja
         {
             TabDaneProjektu[1] = DateTimePicker.Text;
         }
+
+        private void ButtonZapiszProjekt_Click(object sender, EventArgs e)
+        {
+            if (SciezkaDoPliku.Length == 0)
+            {
+                ToolStripMenuZapiszJakoProj_Click(sender, e);              
+            }
+            else
+            {
+                Zapis();
+            }
+        }
+
+        private void Zapis()
+        {
+            using (StreamWriter sw = new StreamWriter(File.Create(SciezkaDoPliku)))
+            {
+                //na wypadek gdyby użytkownik nie zmienił domyślnej daty
+                TabDaneProjektu[1] = DateTimePicker.Text;
+
+                foreach (var item in TabDaneProjektu)
+                {
+                    sw.WriteLine(item);
+                }
+
+                foreach (var item in TabUUCW)
+                {
+                    sw.WriteLine(item);
+                }
+
+                foreach (var item in TabUAW)
+                {
+                    sw.WriteLine(item);
+                }
+
+                sw.Dispose();
+                MessageBox.Show("Plik zapisano.");
+            }
+
+            //sw.WriteLine(string.Format("byte Program_{0}", Form2.Nazwa_Programu) + "_MODUL[]={" + string.Format("{0},{1},{2},{3}", numery[0], numery[1], numery[2], numery[3]) + "};");
+
+            //sw.Write(string.Format("unsigned int* Program_{0}", Form2.Nazwa_Programu) + "[] = {");
+
+            /*
+            for (int i = 0; i < Programy.Length - 2; i++)
+            {
+                sw.Write(Programy[i] + ", ");
+            }*/
+
+            //sw.Write(Programy[Programy.Length - 2] + "};");
+
+        }
+
+
+
     }
 }
