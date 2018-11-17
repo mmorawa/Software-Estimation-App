@@ -40,7 +40,7 @@ namespace Aplikacja
 
         //TODO encapsulate?? domyślnie zera?
 
-        string SciezkaDoPliku;
+        string SciezkaDoPliku = "";
         public static string[] TabDaneProjektu = new string[15];
         
 
@@ -517,12 +517,6 @@ namespace Aplikacja
                         NumUAWSredni.Value = int.Parse(sr.ReadLine());
                         NumUAWZlozony.Value = int.Parse(sr.ReadLine());
 
-                        /*
-                        for (int i = 0; i < 3; i++)
-                        {
-                            TabUUCW[i] = int.Parse(sr.ReadLine());
-                        }
-                        */
 
 
                     }
