@@ -16,5 +16,17 @@ namespace Aplikacja
         {
             InitializeComponent();
         }
+
+        private void CheckBoxAktywacja_CheckedChanged(object sender, EventArgs e)
+        {
+            if (TableLayoutOgraniczenia.Enabled == false)
+            {
+                TableLayoutOgraniczenia.Enabled = true;
+            }
+            else
+            {
+                TableLayoutOgraniczenia.Enabled = false;
+            }
+        }
     }
 }
