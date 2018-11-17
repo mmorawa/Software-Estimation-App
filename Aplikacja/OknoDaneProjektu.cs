@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Aplikacja
 {
-    public partial class DaneProjektu : Form
+    public partial class OknoDaneProjektu : Form
     {
-        public DaneProjektu()
+        public OknoDaneProjektu()
         {
             InitializeComponent();
             TextBoxKierownikProjektu.Text = OknoGlowne.TabDaneProjektu[2];

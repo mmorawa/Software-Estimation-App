@@ -45,11 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DaneProjektu.cs">
+    <Compile Include="OknoDaneProjektu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DaneProjektu.Designer.cs">
-      <DependentUpon>DaneProjektu.cs</DependentUpon>
+    <Compile Include="OknoDaneProjektu.Designer.cs">
+      <DependentUpon>OknoDaneProjektu.cs</DependentUpon>
     </Compile>
     <Compile Include="OknoCzynnSrodow.cs">
       <SubType>Form</SubType>
@@ -81,17 +81,23 @@
     <Compile Include="OknoGlowne.Designer.cs">
       <DependentUpon>OknoGlowne.cs</DependentUpon>
     </Compile>
-    <Compile Include="OProgramie.cs">
+    <Compile Include="OknoOProgramie.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OProgramie.Designer.cs">
-      <DependentUpon>OProgramie.cs</DependentUpon>
+    <Compile Include="OknoOProgramie.Designer.cs">
+      <DependentUpon>OknoOProgramie.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
-    <EmbeddedResource Include="DaneProjektu.resx">
-      <DependentUpon>DaneProjektu.cs</DependentUpon>
+    <Compile Include="OknoZalozeniaProjektu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OknoZalozeniaProjektu.Designer.cs">
+      <DependentUpon>OknoZalozeniaProjektu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="OknoDaneProjektu.resx">
+      <DependentUpon>OknoDaneProjektu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OknoCzynnikiSkali.resx">
       <DependentUpon>OknoCzynnikiSkali.cs</DependentUpon>
@@ -108,8 +114,8 @@
     <EmbeddedResource Include="OknoMnoznikiPracochlonnosci.resx">
       <DependentUpon>OknoMnoznikiPracochlonnosci.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OProgramie.resx">
-      <DependentUpon>OProgramie.cs</DependentUpon>
+    <EmbeddedResource Include="OknoOProgramie.resx">
+      <DependentUpon>OknoOProgramie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,6 +1,6 @@
 ﻿namespace Aplikacja
 {
-    partial class DaneProjektu
+    partial class OknoDaneProjektu
     {
         /// <summary>
         /// Required designer variable.

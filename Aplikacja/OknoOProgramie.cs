@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Aplikacja
 {
-    partial class OProgramie : Form
+    partial class OknoOProgramie : Form
     {
-        public OProgramie()
+        public OknoOProgramie()
         {
             InitializeComponent();
             this.Text = String.Format("About {0}", AssemblyTitle);

@@ -318,6 +318,7 @@
             this.ButtonZalozenia.TabIndex = 5;
             this.ButtonZalozenia.Text = "Założenia projektu";
             this.ButtonZalozenia.UseVisualStyleBackColor = true;
+            this.ButtonZalozenia.Click += new System.EventHandler(this.ButtonZalozenia_Click);
             // 
             // LabelDataRozp
             // 
@@ -982,7 +983,7 @@
             this.GroupBoxWyniki.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxWyniki.Location = new System.Drawing.Point(521, 69);
             this.GroupBoxWyniki.Name = "GroupBoxWyniki";
-            this.GroupBoxWyniki.Size = new System.Drawing.Size(541, 688);
+            this.GroupBoxWyniki.Size = new System.Drawing.Size(559, 688);
             this.GroupBoxWyniki.TabIndex = 5;
             this.GroupBoxWyniki.TabStop = false;
             this.GroupBoxWyniki.Text = "Wyniki";

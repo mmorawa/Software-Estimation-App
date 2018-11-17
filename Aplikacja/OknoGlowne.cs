@@ -62,7 +62,7 @@ namespace Aplikacja
         double iloczynWagEF = 0;
 
         public static int[] TabIndSF = { 2, 2, 2, 2, 2 };
-        public static int[] TempTabIndSF = new int [5];
+        public static int[] TempTabIndSF = new int[5];
 
         public static int[] TabIndEM = { 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2 };
         public static int[] TempTabIndEM = new int[17];
@@ -247,7 +247,7 @@ namespace Aplikacja
          */
         private void ToolStripMenuOProgramie_Click(object sender, EventArgs e)
         {
-            using (OProgramie OknoOProgramie = new OProgramie())
+            using (OknoOProgramie OknoOProgramie = new OknoOProgramie())
             {
                 DialogResult dr = OknoOProgramie.ShowDialog();
             }
@@ -267,7 +267,7 @@ namespace Aplikacja
                 {
                     for (int i = 0; i < 13; i++)
                     {
-                        TabIndTCF[i]  = TempTabIndTCF[i];
+                        TabIndTCF[i] = TempTabIndTCF[i];
                     }
 
                     MessageBox.Show("Czynniki złożoności technicznej zostały wprowadzone.", "Sukces");
@@ -309,7 +309,7 @@ namespace Aplikacja
                     {
                         TabIndSF[i] = TempTabIndSF[i];
                     }
-                    
+
                     MessageBox.Show("Czynniki skali wprowadzone.", "Sukces");
                 }
             }
@@ -490,7 +490,7 @@ namespace Aplikacja
 
         private void ButtonWiecejSzczeg_Click(object sender, EventArgs e)
         {
-            using (DaneProjektu OknoDaneProjektu = new DaneProjektu())
+            using (OknoDaneProjektu OknoDaneProjektu = new OknoDaneProjektu())
             {
                 DialogResult dr = OknoDaneProjektu.ShowDialog();
 
@@ -556,7 +556,7 @@ namespace Aplikacja
         {
             if (SciezkaDoPliku.Length == 0)
             {
-                ToolStripMenuZapiszJakoProj_Click(sender, e);              
+                ToolStripMenuZapiszJakoProj_Click(sender, e);
             }
             else
             {
@@ -604,6 +604,18 @@ namespace Aplikacja
 
         }
 
+        private void ButtonZalozenia_Click(object sender, EventArgs e)
+        {
+            using (OknoCzynnSrodow OknoCzynSrod = new OknoCzynnSrodow())
+            {
+                DialogResult dr = OknoCzynSrod.ShowDialog();
 
+
+                if (dr == DialogResult.OK)
+                {
+
+                }
+            }
+        }
     }
 }
