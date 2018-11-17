@@ -606,14 +606,14 @@ namespace Aplikacja
 
         private void ButtonZalozenia_Click(object sender, EventArgs e)
         {
-            using (OknoCzynnSrodow OknoCzynSrod = new OknoCzynnSrodow())
+            using (OknoZalozeniaProjektu OknoZalProj = new OknoZalozeniaProjektu())
             {
-                DialogResult dr = OknoCzynSrod.ShowDialog();
+                DialogResult dr = OknoZalProj.ShowDialog();
 
 
                 if (dr == DialogResult.OK)
                 {
-
+                    MessageBox.Show("Założenia projektu zostały wprowadzone.", "Sukces");
                 }
             }
         }
