@@ -608,6 +608,13 @@ namespace Aplikacja
 
                 if (dr == DialogResult.OK)
                 {
+                    Properties.Settings.Default.KierownikProjektu = TempKierownikProjektu;
+                    Properties.Settings.Default.Szacujacy = TempSzacujacy;
+                    Properties.Settings.Default.NazwaFirmy = TempNazwaFirmy;
+                    Properties.Settings.Default.Adres = TempAdres;
+                    Properties.Settings.Default.Telefon = TempTelefon;
+                    Properties.Settings.Default.Email = TempEmail;
+                    
 
                     MessageBox.Show("Domyślne ustawienia projektu zostały zmienione.", "Sukces");
                 }
