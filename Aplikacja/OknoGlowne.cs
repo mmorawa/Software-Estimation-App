@@ -428,7 +428,7 @@ namespace Aplikacja
                 UAW = TabUAW[i] * wagiAktorow[i];
             }
 
-            UCP = TCF * EF * (UAW + UUCW);
+            UCP = Math.Round(TCF * EF * (UAW + UUCW), 2);
             PracUCP = Math.Round(UCP * UCPgodziny, 2);
 
             //Obliczenia COCOMOII
@@ -463,9 +463,23 @@ namespace Aplikacja
 
         private void ButtonNowyProjekt_Click(object sender, EventArgs e)
         {
-            //TODO: czy chcesz rozpocząć nowy projekt bez zapisania starego?
+
+            DialogResult rezultat = MessageBox.Show("Czy chcesz zapisać obecny projekt?",
+                "Uwaga!",
+                MessageBoxButtons.YesNoCancel,
+                MessageBoxIcon.Exclamation);
+
+            if (rezultat == DialogResult.Yes)
+            {
+                ButtonZapiszProjekt_Click(sender, e);
+            }
+            else if (rezultat == DialogResult.Cancel)
+            {
+                return;
+            }
 
             //Wyzerowanie
+            SciezkaDoPliku = "";
             TextBoxNazwaProjektu.Text = "Projekt";
             DateTimePicker.Value = DateTime.Now;
 
@@ -485,20 +499,6 @@ namespace Aplikacja
             TabIndTCF = new int[13];
             TabIndEF = new int[8];
 
-            TCF = 0;
-            EF = 0;
-            UUCW = 0;
-            UAW = 0;
-            UCP = 0;
-            Rozmiar = 0;
-            E = 1;
-            SumaSF = 0;
-            IloczynEM = 1;
-            iloczynWagEF = 0;
-            iloczynWagTCF = 0;
-
-            PracUCP = 0;
-            PracCOCOMOII = 0;
 
             LabelPktUCP.Text = "0";
             LabelWynikPracUCP.Text = "0";

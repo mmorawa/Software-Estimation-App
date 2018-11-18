@@ -48,7 +48,7 @@ namespace Aplikacja
 
 
         //TODO domyślnie decimal????
-        //TODO anuluj aktywację
+        
 
 
         private void NumericUCPgodziny_ValueChanged(object sender, EventArgs e)

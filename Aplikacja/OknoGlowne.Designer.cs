@@ -115,6 +115,8 @@
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.ButtonKreator = new System.Windows.Forms.Button();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.PasekMenu.SuspendLayout();
             this.GroupBoxDaneProjektu.SuspendLayout();
             this.GroupBoxUUCW.SuspendLayout();
@@ -992,6 +994,8 @@
             // 
             // GroupBoxWyniki
             // 
+            this.GroupBoxWyniki.Controls.Add(this.label30);
+            this.GroupBoxWyniki.Controls.Add(this.label29);
             this.GroupBoxWyniki.Controls.Add(this.LabelPktUCP);
             this.GroupBoxWyniki.Controls.Add(this.LabelWynikPracCOCOMOII);
             this.GroupBoxWyniki.Controls.Add(this.LabelWynikPracUCP);
@@ -1121,6 +1125,24 @@
             this.ButtonKreator.TabIndex = 14;
             this.ButtonKreator.Text = "Kreator";
             this.ButtonKreator.UseVisualStyleBackColor = true;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(179, 267);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(114, 16);
+            this.label29.TabIndex = 10;
+            this.label29.Text = "osobomiesięcy";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(179, 342);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(114, 16);
+            this.label30.TabIndex = 11;
+            this.label30.Text = "osobomiesięcy";
             // 
             // OknoGlowne
             // 
@@ -1260,6 +1282,8 @@
         private System.Windows.Forms.Button ButtonKreator;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuSzczegolyProjektu;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuZalozeniaProjektu;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
     }
 }
 
