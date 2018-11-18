@@ -42,6 +42,7 @@ namespace Aplikacja
 
         string SciezkaDoPliku = "";
         public static bool Ograniczenia = false;
+        public static bool TempOgraniczenia = false;
 
         public static string[] TabDaneProjektu = new string[15];
         public static string[] TempTabDaneProjektu = new string[15];
@@ -463,7 +464,7 @@ namespace Aplikacja
             //TODO: czy chcesz rozpocząć nowy projekt bez zapisania starego?
 
             //Wyzerowanie
-            TextBoxNazwaProjektu.Text = "";
+            TextBoxNazwaProjektu.Text = "Projekt";
             DateTimePicker.Value = DateTime.Now;
 
             TabDaneProjektu = new string[15];
@@ -630,6 +631,9 @@ namespace Aplikacja
                 if (dr == DialogResult.OK)
                 {
                     MessageBox.Show("Założenia projektu zostały wprowadzone.", "Sukces");
+
+                    Ograniczenia = TempOgraniczenia;
+
 
                     UCPgodziny = TempUCPgodziny;
                     UCPlinieKodu = TempUCPlinieKodu;

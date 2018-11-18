@@ -36,18 +36,19 @@ namespace Aplikacja
 
             if (TableLayoutOgraniczenia.Enabled == false)
             {
-                OknoGlowne.Ograniczenia = true;
+                OknoGlowne.TempOgraniczenia = true;
                 TableLayoutOgraniczenia.Enabled = true;
             }
             else
             {
-                OknoGlowne.Ograniczenia = false;
+                OknoGlowne.TempOgraniczenia = false;
                 TableLayoutOgraniczenia.Enabled = false;
             }
         }
 
 
         //TODO domyślnie decimal????
+        //TODO anuluj aktywację
 
 
         private void NumericUCPgodziny_ValueChanged(object sender, EventArgs e)
