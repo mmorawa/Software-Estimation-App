@@ -106,6 +106,7 @@
             this.TextBoxSzacujacy.Name = "TextBoxSzacujacy";
             this.TextBoxSzacujacy.Size = new System.Drawing.Size(462, 22);
             this.TextBoxSzacujacy.TabIndex = 39;
+            this.TextBoxSzacujacy.TextChanged += new System.EventHandler(this.TextBoxSzacujacy_TextChanged);
             // 
             // label6
             // 
@@ -122,6 +123,7 @@
             this.TextBoxEmail.Name = "TextBoxEmail";
             this.TextBoxEmail.Size = new System.Drawing.Size(462, 22);
             this.TextBoxEmail.TabIndex = 37;
+            this.TextBoxEmail.TextChanged += new System.EventHandler(this.TextBoxEmail_TextChanged);
             // 
             // label10
             // 
@@ -148,6 +150,7 @@
             this.TextBoxTelefon.Name = "TextBoxTelefon";
             this.TextBoxTelefon.Size = new System.Drawing.Size(462, 22);
             this.TextBoxTelefon.TabIndex = 34;
+            this.TextBoxTelefon.TextChanged += new System.EventHandler(this.TextBoxTelefon_TextChanged);
             // 
             // TextBoxAdres
             // 
@@ -155,6 +158,7 @@
             this.TextBoxAdres.Name = "TextBoxAdres";
             this.TextBoxAdres.Size = new System.Drawing.Size(462, 22);
             this.TextBoxAdres.TabIndex = 33;
+            this.TextBoxAdres.TextChanged += new System.EventHandler(this.TextBoxAdres_TextChanged);
             // 
             // TextBoxNazwaFirmy
             // 
@@ -162,6 +166,7 @@
             this.TextBoxNazwaFirmy.Name = "TextBoxNazwaFirmy";
             this.TextBoxNazwaFirmy.Size = new System.Drawing.Size(462, 22);
             this.TextBoxNazwaFirmy.TabIndex = 32;
+            this.TextBoxNazwaFirmy.TextChanged += new System.EventHandler(this.TextBoxNazwaFirmy_TextChanged);
             // 
             // label14
             // 
@@ -187,6 +192,7 @@
             this.TextBoxKierownikProjektu.Name = "TextBoxKierownikProjektu";
             this.TextBoxKierownikProjektu.Size = new System.Drawing.Size(462, 22);
             this.TextBoxKierownikProjektu.TabIndex = 29;
+            this.TextBoxKierownikProjektu.TextChanged += new System.EventHandler(this.TextBoxKierownikProjektu_TextChanged);
             // 
             // tableLayoutPanel2
             // 
@@ -236,6 +242,7 @@
             this.NumericUCPgodziny.TabIndex = 32;
             this.NumericUCPgodziny.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericUCPgodziny.ThousandsSeparator = true;
+            this.NumericUCPgodziny.ValueChanged += new System.EventHandler(this.NumericUCPgodziny_ValueChanged);
             // 
             // NumericUCPlinieKodu
             // 
@@ -252,6 +259,7 @@
             this.NumericUCPlinieKodu.TabIndex = 29;
             this.NumericUCPlinieKodu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericUCPlinieKodu.ThousandsSeparator = true;
+            this.NumericUCPlinieKodu.ValueChanged += new System.EventHandler(this.NumericUCPlinieKodu_ValueChanged);
             // 
             // label3
             // 
@@ -324,6 +332,7 @@
             this.NumericStawkaGodz.TabIndex = 16;
             this.NumericStawkaGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericStawkaGodz.ThousandsSeparator = true;
+            this.NumericStawkaGodz.ValueChanged += new System.EventHandler(this.NumericStawkaGodz_ValueChanged);
             // 
             // NumericOsoboMGodz
             // 
@@ -340,6 +349,7 @@
             this.NumericOsoboMGodz.TabIndex = 24;
             this.NumericOsoboMGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericOsoboMGodz.ThousandsSeparator = true;
+            this.NumericOsoboMGodz.ValueChanged += new System.EventHandler(this.NumericOsoboMGodz_ValueChanged);
             // 
             // NumericDzRobGodz
             // 
@@ -355,6 +365,7 @@
             this.NumericDzRobGodz.TabIndex = 26;
             this.NumericDzRobGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericDzRobGodz.ThousandsSeparator = true;
+            this.NumericDzRobGodz.ValueChanged += new System.EventHandler(this.NumericDzRobGodz_ValueChanged);
             // 
             // label13
             // 
