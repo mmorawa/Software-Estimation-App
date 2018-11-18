@@ -1144,6 +1144,7 @@
             this.ButtonKreator.TabIndex = 14;
             this.ButtonKreator.Text = "Kreator";
             this.ButtonKreator.UseVisualStyleBackColor = true;
+            this.ButtonKreator.Click += new System.EventHandler(this.ButtonKreator_Click);
             // 
             // OknoGlowne
             // 

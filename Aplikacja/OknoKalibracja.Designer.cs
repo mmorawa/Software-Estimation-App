@@ -102,6 +102,7 @@
             this.TextBoxA.Name = "TextBoxA";
             this.TextBoxA.Size = new System.Drawing.Size(100, 22);
             this.TextBoxA.TabIndex = 34;
+            this.TextBoxA.TextChanged += new System.EventHandler(this.TextBoxA_TextChanged);
             // 
             // TextBoxB
             // 
@@ -109,6 +110,7 @@
             this.TextBoxB.Name = "TextBoxB";
             this.TextBoxB.Size = new System.Drawing.Size(100, 22);
             this.TextBoxB.TabIndex = 35;
+            this.TextBoxB.TextChanged += new System.EventHandler(this.TextBoxB_TextChanged);
             // 
             // label10
             // 

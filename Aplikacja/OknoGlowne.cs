@@ -105,8 +105,8 @@ namespace Aplikacja
         public static double EFc2 = -0.03;
         public static double TCFc1 = 0.6;
         public static double TCFc2 = 0.01;
-        public static double A = 2.94;
-        public static double B = 0.91;
+        public static double TempA;
+        public static double TempB;
 
         //przeliczniki
         public static double UCPgodziny = 25;
@@ -114,6 +114,7 @@ namespace Aplikacja
         public static double StawkaGodz = 0;
         public static int OsoboMGodz = 152;
         public static int DzRobGodz = 8;
+
         public static double MaxKoszt = 0;
         public static int MaxPrac = 0;
         public static int MaxHarm = 0;
@@ -446,8 +447,8 @@ namespace Aplikacja
                 IloczynEM *= TabWspEM[i, TabIndEM[i]];
             }
 
-            E = B + 0.01 * SumaSF;
-            PracCOCOMOII = Math.Round(A * Math.Pow(Rozmiar, E) * IloczynEM, 2);
+            E = Properties.Settings.Default.B + 0.01 * SumaSF;
+            PracCOCOMOII = Math.Round(Properties.Settings.Default.A * Math.Pow(Rozmiar, E) * IloczynEM, 2);
 
             //Wyświetlenie wyników
             LabelPktUCP.Text = UCP.ToString();
@@ -686,10 +687,18 @@ namespace Aplikacja
 
                 if (dr == DialogResult.OK)
                 {
-
+                    Properties.Settings.Default.A = TempA;
+                    Properties.Settings.Default.B = TempB;
+                    //Properties.Settings.Default.Save();
                     MessageBox.Show("Kalibracja modelu została wykonana.", "Sukces");
                 }
             }
+        }
+
+        private void ButtonKreator_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show(A.ToString());
+            MessageBox.Show(Properties.Settings.Default.A.ToString());
         }
     }
 }

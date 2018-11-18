@@ -37,10 +37,10 @@ namespace Aplikacja.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0,91")]
-        public string B {
+        [global::System.Configuration.DefaultSettingValueAttribute("0.91")]
+        public double B {
             get {
-                return ((string)(this["B"]));
+                return ((double)(this["B"]));
             }
             set {
                 this["B"] = value;

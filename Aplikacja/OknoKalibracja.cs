@@ -19,6 +19,17 @@ namespace Aplikacja
             TextBoxB.Text = Properties.Settings.Default.B.ToString();
         }
 
+        //TODO konwersja kulturowa Parse
+        private void TextBoxA_TextChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TempA = double.Parse(TextBoxA.Text);
+        }
+
+        private void TextBoxB_TextChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TempB = double.Parse(TextBoxB.Text);
+        }
+
         //TODO różne kalibracje dla różnych zespołów/projektów
 
     }
