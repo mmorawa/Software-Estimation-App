@@ -698,6 +698,7 @@ namespace Aplikacja
         private void ButtonKreator_Click(object sender, EventArgs e)
         {
             //MessageBox.Show(A.ToString());
+
             MessageBox.Show(Properties.Settings.Default.A.ToString());
         }
     }

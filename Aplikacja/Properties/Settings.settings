@@ -8,8 +8,5 @@
     <Setting Name="B" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0.91</Value>
     </Setting>
-    <Setting Name="Setting" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
   </Settings>
 </SettingsFile>
