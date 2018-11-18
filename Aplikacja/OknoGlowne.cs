@@ -40,7 +40,7 @@ namespace Aplikacja
 
         //TODO encapsulate?? domyślnie zera?
 
-        string SciezkaDoPliku = "";
+        string SciezkaDoPliku;
         public static bool Ograniczenia = false;
         public static bool TempOgraniczenia = false;
         public static bool Domyslne = false;
@@ -127,9 +127,9 @@ namespace Aplikacja
         public static double TempA;
         public static double TempB;
 
-        //przeliczniki
+        //przeliczniki - tu domyślne
         public static double UCPgodziny = 25;
-        public static double UCPlinieKodu = 60;
+        public static double UCPlinieKodu = 45;
         public static double StawkaGodz = 0;
         public static int OsoboMGodz = 152;
         public static int DzRobGodz = 8;
@@ -144,6 +144,7 @@ namespace Aplikacja
         public static double TempStawkaGodz;
         public static int TempOsoboMGodz;
         public static int TempDzRobGodz;
+
         public static double TempMaxKoszt;
         public static int TempMaxPrac;
         public static int TempMaxHarm;
@@ -618,7 +619,11 @@ namespace Aplikacja
                     Properties.Settings.Default.Adres = TempAdres;
                     Properties.Settings.Default.Telefon = TempTelefon;
                     Properties.Settings.Default.Email = TempEmail;
-                    
+                    Properties.Settings.Default.UCPgodziny = TempUCPgodziny;
+                    Properties.Settings.Default.UCPlinieKodu = TempUCPlinieKodu;
+                    Properties.Settings.Default.StawkaGodz = TempStawkaGodz;
+                    Properties.Settings.Default.OsoboMGodz = TempOsoboMGodz;
+                    Properties.Settings.Default.DzRobGodz = TempDzRobGodz;
 
                     MessageBox.Show("Domyślne ustawienia projektu zostały zmienione.", "Sukces");
                 }

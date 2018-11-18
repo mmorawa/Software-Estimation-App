@@ -118,5 +118,65 @@ namespace Aplikacja.Properties {
                 this["Email"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("25")]
+        public double UCPgodziny {
+            get {
+                return ((double)(this["UCPgodziny"]));
+            }
+            set {
+                this["UCPgodziny"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("45")]
+        public double UCPlinieKodu {
+            get {
+                return ((double)(this["UCPlinieKodu"]));
+            }
+            set {
+                this["UCPlinieKodu"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double StawkaGodz {
+            get {
+                return ((double)(this["StawkaGodz"]));
+            }
+            set {
+                this["StawkaGodz"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("152")]
+        public int OsoboMGodz {
+            get {
+                return ((int)(this["OsoboMGodz"]));
+            }
+            set {
+                this["OsoboMGodz"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("8")]
+        public int DzRobGodz {
+            get {
+                return ((int)(this["DzRobGodz"]));
+            }
+            set {
+                this["DzRobGodz"] = value;
+            }
+        }
     }
 }

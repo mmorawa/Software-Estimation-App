@@ -21,6 +21,11 @@ namespace Aplikacja
             TextBoxAdres.Text = Properties.Settings.Default.Adres;
             TextBoxTelefon.Text = Properties.Settings.Default.Telefon;
             TextBoxEmail.Text = Properties.Settings.Default.Email;
+            NumericUCPgodziny.Value = (decimal)Properties.Settings.Default.UCPgodziny;
+            NumericUCPlinieKodu.Value = (decimal)Properties.Settings.Default.UCPlinieKodu;
+            NumericStawkaGodz.Value = (decimal)Properties.Settings.Default.StawkaGodz;
+            NumericOsoboMGodz.Value = Properties.Settings.Default.OsoboMGodz;
+            NumericDzRobGodz.Value = Properties.Settings.Default.DzRobGodz;
 
         }
 
@@ -56,27 +61,27 @@ namespace Aplikacja
 
         private void NumericUCPgodziny_ValueChanged(object sender, EventArgs e)
         {
-
+            OknoGlowne.TempUCPgodziny = (double)NumericUCPgodziny.Value;
         }
 
         private void NumericUCPlinieKodu_ValueChanged(object sender, EventArgs e)
         {
-
+            OknoGlowne.TempUCPlinieKodu = (double)NumericUCPlinieKodu.Value;
         }
 
         private void NumericStawkaGodz_ValueChanged(object sender, EventArgs e)
         {
-
+            OknoGlowne.TempStawkaGodz = (double)NumericStawkaGodz.Value;
         }
 
         private void NumericOsoboMGodz_ValueChanged(object sender, EventArgs e)
         {
-
+            OknoGlowne.TempOsoboMGodz = (int)NumericOsoboMGodz.Value;
         }
 
         private void NumericDzRobGodz_ValueChanged(object sender, EventArgs e)
         {
-                
+            OknoGlowne.TempDzRobGodz = (int)NumericDzRobGodz.Value;
         }
     }
 }
