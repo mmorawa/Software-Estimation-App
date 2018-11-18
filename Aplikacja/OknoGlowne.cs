@@ -580,6 +580,9 @@ namespace Aplikacja
 
         private void ButtonUstawienia_Click(object sender, EventArgs e)
         {
+
+
+
             //MessageBox.Show(Properties.Settings.Default.GodzinyUCP.ToString());
 
         }
