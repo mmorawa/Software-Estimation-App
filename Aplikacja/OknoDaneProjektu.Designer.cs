@@ -115,7 +115,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(4, 74);
+            this.label4.Location = new System.Drawing.Point(7, 74);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(285, 16);
             this.label4.TabIndex = 13;
@@ -123,7 +123,7 @@
             // 
             // TextBoxSzacujacy
             // 
-            this.TextBoxSzacujacy.Location = new System.Drawing.Point(6, 93);
+            this.TextBoxSzacujacy.Location = new System.Drawing.Point(9, 93);
             this.TextBoxSzacujacy.Name = "TextBoxSzacujacy";
             this.TextBoxSzacujacy.Size = new System.Drawing.Size(462, 22);
             this.TextBoxSzacujacy.TabIndex = 12;
@@ -132,7 +132,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 296);
+            this.label3.Location = new System.Drawing.Point(9, 296);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 16);
             this.label3.TabIndex = 11;
@@ -140,7 +140,7 @@
             // 
             // TextBoxEmail
             // 
-            this.TextBoxEmail.Location = new System.Drawing.Point(6, 315);
+            this.TextBoxEmail.Location = new System.Drawing.Point(9, 315);
             this.TextBoxEmail.Name = "TextBoxEmail";
             this.TextBoxEmail.Size = new System.Drawing.Size(462, 22);
             this.TextBoxEmail.TabIndex = 10;
@@ -149,7 +149,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 252);
+            this.label2.Location = new System.Drawing.Point(6, 252);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 16);
             this.label2.TabIndex = 9;
@@ -159,7 +159,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(6, 208);
+            this.label1.Location = new System.Drawing.Point(9, 208);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 16);
             this.label1.TabIndex = 8;
@@ -167,7 +167,7 @@
             // 
             // TextBoxTelefon
             // 
-            this.TextBoxTelefon.Location = new System.Drawing.Point(6, 271);
+            this.TextBoxTelefon.Location = new System.Drawing.Point(9, 271);
             this.TextBoxTelefon.Name = "TextBoxTelefon";
             this.TextBoxTelefon.Size = new System.Drawing.Size(462, 22);
             this.TextBoxTelefon.TabIndex = 7;
@@ -175,7 +175,7 @@
             // 
             // TextBoxAdres
             // 
-            this.TextBoxAdres.Location = new System.Drawing.Point(9, 227);
+            this.TextBoxAdres.Location = new System.Drawing.Point(12, 227);
             this.TextBoxAdres.Name = "TextBoxAdres";
             this.TextBoxAdres.Size = new System.Drawing.Size(462, 22);
             this.TextBoxAdres.TabIndex = 6;
@@ -183,7 +183,7 @@
             // 
             // TextBoxNazwaFirmy
             // 
-            this.TextBoxNazwaFirmy.Location = new System.Drawing.Point(6, 183);
+            this.TextBoxNazwaFirmy.Location = new System.Drawing.Point(9, 183);
             this.TextBoxNazwaFirmy.Name = "TextBoxNazwaFirmy";
             this.TextBoxNazwaFirmy.Size = new System.Drawing.Size(462, 22);
             this.TextBoxNazwaFirmy.TabIndex = 5;
@@ -192,7 +192,7 @@
             // LabelDataRozp
             // 
             this.LabelDataRozp.AutoSize = true;
-            this.LabelDataRozp.Location = new System.Drawing.Point(6, 164);
+            this.LabelDataRozp.Location = new System.Drawing.Point(9, 164);
             this.LabelDataRozp.Name = "LabelDataRozp";
             this.LabelDataRozp.Size = new System.Drawing.Size(95, 16);
             this.LabelDataRozp.TabIndex = 4;
@@ -201,7 +201,7 @@
             // LabelNazwaProjektu
             // 
             this.LabelNazwaProjektu.AutoSize = true;
-            this.LabelNazwaProjektu.Location = new System.Drawing.Point(6, 30);
+            this.LabelNazwaProjektu.Location = new System.Drawing.Point(9, 30);
             this.LabelNazwaProjektu.Name = "LabelNazwaProjektu";
             this.LabelNazwaProjektu.Size = new System.Drawing.Size(138, 16);
             this.LabelNazwaProjektu.TabIndex = 1;
@@ -209,7 +209,7 @@
             // 
             // TextBoxKierownikProjektu
             // 
-            this.TextBoxKierownikProjektu.Location = new System.Drawing.Point(6, 49);
+            this.TextBoxKierownikProjektu.Location = new System.Drawing.Point(9, 49);
             this.TextBoxKierownikProjektu.Name = "TextBoxKierownikProjektu";
             this.TextBoxKierownikProjektu.Size = new System.Drawing.Size(462, 22);
             this.TextBoxKierownikProjektu.TabIndex = 0;

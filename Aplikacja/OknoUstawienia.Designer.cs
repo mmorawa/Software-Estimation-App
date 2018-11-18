@@ -86,7 +86,7 @@
             this.GroupBoxSzczDomyslneUstawienia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxSzczDomyslneUstawienia.Location = new System.Drawing.Point(12, 12);
             this.GroupBoxSzczDomyslneUstawienia.Name = "GroupBoxSzczDomyslneUstawienia";
-            this.GroupBoxSzczDomyslneUstawienia.Size = new System.Drawing.Size(517, 716);
+            this.GroupBoxSzczDomyslneUstawienia.Size = new System.Drawing.Size(510, 716);
             this.GroupBoxSzczDomyslneUstawienia.TabIndex = 16;
             this.GroupBoxSzczDomyslneUstawienia.TabStop = false;
             this.GroupBoxSzczDomyslneUstawienia.Text = "Domyślne ustawienia";
@@ -341,7 +341,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 74);
+            this.label5.Location = new System.Drawing.Point(13, 75);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(285, 16);
             this.label5.TabIndex = 40;
@@ -349,7 +349,7 @@
             // 
             // TextBoxSzacujacy
             // 
-            this.TextBoxSzacujacy.Location = new System.Drawing.Point(23, 93);
+            this.TextBoxSzacujacy.Location = new System.Drawing.Point(15, 94);
             this.TextBoxSzacujacy.Name = "TextBoxSzacujacy";
             this.TextBoxSzacujacy.Size = new System.Drawing.Size(462, 22);
             this.TextBoxSzacujacy.TabIndex = 39;
@@ -357,7 +357,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(23, 296);
+            this.label6.Location = new System.Drawing.Point(15, 297);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(56, 16);
             this.label6.TabIndex = 38;
@@ -365,7 +365,7 @@
             // 
             // TextBoxEmail
             // 
-            this.TextBoxEmail.Location = new System.Drawing.Point(23, 315);
+            this.TextBoxEmail.Location = new System.Drawing.Point(15, 316);
             this.TextBoxEmail.Name = "TextBoxEmail";
             this.TextBoxEmail.Size = new System.Drawing.Size(462, 22);
             this.TextBoxEmail.TabIndex = 37;
@@ -373,7 +373,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(20, 252);
+            this.label10.Location = new System.Drawing.Point(12, 253);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(95, 16);
             this.label10.TabIndex = 36;
@@ -383,7 +383,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label11.Location = new System.Drawing.Point(23, 208);
+            this.label11.Location = new System.Drawing.Point(15, 209);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(53, 16);
             this.label11.TabIndex = 35;
@@ -391,21 +391,21 @@
             // 
             // TextBoxTelefon
             // 
-            this.TextBoxTelefon.Location = new System.Drawing.Point(23, 271);
+            this.TextBoxTelefon.Location = new System.Drawing.Point(15, 272);
             this.TextBoxTelefon.Name = "TextBoxTelefon";
             this.TextBoxTelefon.Size = new System.Drawing.Size(462, 22);
             this.TextBoxTelefon.TabIndex = 34;
             // 
             // TextBoxAdres
             // 
-            this.TextBoxAdres.Location = new System.Drawing.Point(26, 227);
+            this.TextBoxAdres.Location = new System.Drawing.Point(18, 228);
             this.TextBoxAdres.Name = "TextBoxAdres";
             this.TextBoxAdres.Size = new System.Drawing.Size(462, 22);
             this.TextBoxAdres.TabIndex = 33;
             // 
             // TextBoxNazwaFirmy
             // 
-            this.TextBoxNazwaFirmy.Location = new System.Drawing.Point(23, 183);
+            this.TextBoxNazwaFirmy.Location = new System.Drawing.Point(15, 184);
             this.TextBoxNazwaFirmy.Name = "TextBoxNazwaFirmy";
             this.TextBoxNazwaFirmy.Size = new System.Drawing.Size(462, 22);
             this.TextBoxNazwaFirmy.TabIndex = 32;
@@ -413,7 +413,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(23, 164);
+            this.label14.Location = new System.Drawing.Point(15, 165);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(95, 16);
             this.label14.TabIndex = 31;
@@ -422,7 +422,7 @@
             // LabelNazwaProjektu
             // 
             this.LabelNazwaProjektu.AutoSize = true;
-            this.LabelNazwaProjektu.Location = new System.Drawing.Point(23, 30);
+            this.LabelNazwaProjektu.Location = new System.Drawing.Point(15, 31);
             this.LabelNazwaProjektu.Name = "LabelNazwaProjektu";
             this.LabelNazwaProjektu.Size = new System.Drawing.Size(138, 16);
             this.LabelNazwaProjektu.TabIndex = 30;
@@ -430,7 +430,7 @@
             // 
             // TextBoxKierownikProjektu
             // 
-            this.TextBoxKierownikProjektu.Location = new System.Drawing.Point(23, 49);
+            this.TextBoxKierownikProjektu.Location = new System.Drawing.Point(15, 50);
             this.TextBoxKierownikProjektu.Name = "TextBoxKierownikProjektu";
             this.TextBoxKierownikProjektu.Size = new System.Drawing.Size(462, 22);
             this.TextBoxKierownikProjektu.TabIndex = 29;
@@ -439,11 +439,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(547, 797);
+            this.ClientSize = new System.Drawing.Size(537, 797);
             this.Controls.Add(this.ButtonAnuluj);
             this.Controls.Add(this.ButtonOk);
             this.Controls.Add(this.GroupBoxSzczDomyslneUstawienia);
             this.Name = "OknoUstawienia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Ustawienia";
             this.GroupBoxSzczDomyslneUstawienia.ResumeLayout(false);
             this.GroupBoxSzczDomyslneUstawienia.PerformLayout();
