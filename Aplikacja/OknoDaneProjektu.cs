@@ -54,8 +54,22 @@ namespace Aplikacja
             OknoGlowne.TempOpisProjektu = RichTextBoxOpisProjektu.Text;
         }
 
+        //TODO Problem gdy click zmienia checkbox szybciej niż odczyt jego stanu??
         private void CheckBoxDomyslne_Click(object sender, EventArgs e)
         {
+            if (Properties.Settings.Default.KierownikProjektu.Length == 0 &&
+                Properties.Settings.Default.Szacujacy.Length == 0 &&
+                Properties.Settings.Default.NazwaFirmy.Length == 0 &&
+                Properties.Settings.Default.Adres.Length == 0 &&
+                Properties.Settings.Default.Telefon.Length == 0 &&
+                Properties.Settings.Default.Email.Length ==0)
+            {
+                CheckBoxDomyslne.Checked = false;
+                OknoGlowne.TempDomyslne = false;
+                MessageBox.Show("Nie ma żadnych domyślnych danych.");
+                return;
+            }
+
             if (CheckBoxDomyslne.Checked == true)
             {
                 TextBoxKierownikProjektu.Text = Properties.Settings.Default.KierownikProjektu;
