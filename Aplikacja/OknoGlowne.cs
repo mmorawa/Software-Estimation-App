@@ -400,16 +400,18 @@ namespace Aplikacja
             //TODO walidacja danych wejściowych, zaokrąglanie
 
             //Obliczenia UCP
+            iloczynWagTCF = 0;
             for (int i = 0; i <= 12; i++)
             {
-                iloczynWagTCF = TabIndTCF[i] * wagiTCF[i];
+                iloczynWagTCF += TabIndTCF[i] * wagiTCF[i];
             }
 
             TCF = TCFc1 + iloczynWagTCF * TCFc2;
 
+            iloczynWagEF = 0;
             for (int i = 0; i <= 7; i++)
             {
-                iloczynWagEF = TabIndEF[i] * wagiEF[i];
+                iloczynWagEF += TabIndEF[i] * wagiEF[i];
             }
 
             EF = EFc1 + (EFc2 * iloczynWagEF);
