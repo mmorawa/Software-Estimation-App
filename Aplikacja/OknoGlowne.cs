@@ -47,6 +47,23 @@ namespace Aplikacja
         public static string[] TabDaneProjektu = new string[15];
         public static string[] TempTabDaneProjektu = new string[15];
 
+        public static string KierownikProjektu;
+        public static string TempKierownikProjektu;
+        public static string Szacujacy;
+        public static string TempSzacujacy;
+        public static string NazwaFirmy;
+        public static string TempNazwaFirmy;
+        public static string Adres;
+        public static string TempAdres;
+        public static string Telefon;
+        public static string TempTelefon;
+        public static string Email;
+        public static string TempEmail;
+        public static string OpisProjektu;
+        public static string TempOpisProjektu;
+
+
+
         public static int[] TabUAW = new int[3];
         double[] wagiAktorow = { 1, 2, 3 };
         public static int[] TabUUCW = new int[3];
@@ -516,10 +533,13 @@ namespace Aplikacja
 
                 if (dr == DialogResult.OK)
                 {
-                    for (int i = 0; i < 15; i++)
-                    {
-                        TabDaneProjektu[i] = TempTabDaneProjektu[i];
-                    }
+                    KierownikProjektu = TempKierownikProjektu;
+                    Szacujacy = TempSzacujacy;
+                    NazwaFirmy = TempNazwaFirmy;
+                    Adres = TempAdres;
+                    Telefon = TempTelefon;
+                    Email = TempEmail;
+                    OpisProjektu = TempOpisProjektu;
 
                     MessageBox.Show("Szczegółowe dane projektu zostały zmienione.", "Sukces");
                 }

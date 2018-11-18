@@ -15,48 +15,48 @@ namespace Aplikacja
         public OknoDaneProjektu()
         {
             InitializeComponent();
-            TextBoxKierownikProjektu.Text = OknoGlowne.TabDaneProjektu[2];
-            TextBoxSzacujacy.Text = OknoGlowne.TabDaneProjektu[3];
-            TextBoxNazwaFirmy.Text = OknoGlowne.TabDaneProjektu[4];
-            TextBoxAdres.Text = OknoGlowne.TabDaneProjektu[5];
-            TextBoxTelefon.Text = OknoGlowne.TabDaneProjektu[6];
-            TextBoxEmail.Text = OknoGlowne.TabDaneProjektu[7];
-            RichTextBoxOpisProjektu.Text = OknoGlowne.TabDaneProjektu[8];
+            TextBoxKierownikProjektu.Text = OknoGlowne.KierownikProjektu;
+            TextBoxSzacujacy.Text = OknoGlowne.Szacujacy;
+            TextBoxNazwaFirmy.Text = OknoGlowne.NazwaFirmy;
+            TextBoxAdres.Text = OknoGlowne.Adres;
+            TextBoxTelefon.Text = OknoGlowne.Telefon;
+            TextBoxEmail.Text = OknoGlowne.Email;
+            RichTextBoxOpisProjektu.Text = OknoGlowne.OpisProjektu;
         }
 
         private void TextBoxKierownikProjektu_TextChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabDaneProjektu[2] = TextBoxKierownikProjektu.Text;
+            OknoGlowne.TempKierownikProjektu = TextBoxKierownikProjektu.Text;
         }
 
         private void TextBoxSzacujacy_TextChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabDaneProjektu[3] = TextBoxSzacujacy.Text;
+            OknoGlowne.TempSzacujacy = TextBoxSzacujacy.Text;
         }
 
         private void TextBoxNazwaFirmy_TextChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabDaneProjektu[4] = TextBoxNazwaFirmy.Text;
+            OknoGlowne.TempNazwaFirmy = TextBoxNazwaFirmy.Text;
         }
 
         private void TextBoxAdres_TextChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabDaneProjektu[5] = TextBoxAdres.Text;
+            OknoGlowne.TempAdres = TextBoxAdres.Text;
         }
 
         private void TextBoxTelefon_TextChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabDaneProjektu[6] = TextBoxTelefon.Text;
+            OknoGlowne.TempTelefon = TextBoxTelefon.Text;
         }
 
         private void TextBoxEmail_TextChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabDaneProjektu[7] = TextBoxEmail.Text;
+            OknoGlowne.TempEmail = TextBoxEmail.Text;
         }
         //TODO: problem z wieloma liniami tekstu i zapisz/odczyt
         private void RichTextBoxOpisProjektu_TextChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabDaneProjektu[8] = RichTextBoxOpisProjektu.Text;
+            OknoGlowne.TempOpisProjektu = RichTextBoxOpisProjektu.Text;
         }
     }
 }
