@@ -45,6 +45,7 @@
             this.LabelDataRozp = new System.Windows.Forms.Label();
             this.LabelNazwaProjektu = new System.Windows.Forms.Label();
             this.TextBoxKierownikProjektu = new System.Windows.Forms.TextBox();
+            this.CheckBoxDomyslne = new System.Windows.Forms.CheckBox();
             this.GroupBoxSzczDaneProjektu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,6 +73,7 @@
             // 
             // GroupBoxSzczDaneProjektu
             // 
+            this.GroupBoxSzczDaneProjektu.Controls.Add(this.CheckBoxDomyslne);
             this.GroupBoxSzczDaneProjektu.Controls.Add(this.RichTextBoxOpisProjektu);
             this.GroupBoxSzczDaneProjektu.Controls.Add(this.label5);
             this.GroupBoxSzczDaneProjektu.Controls.Add(this.label4);
@@ -115,7 +117,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 74);
+            this.label4.Location = new System.Drawing.Point(7, 79);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(285, 16);
             this.label4.TabIndex = 13;
@@ -123,7 +125,7 @@
             // 
             // TextBoxSzacujacy
             // 
-            this.TextBoxSzacujacy.Location = new System.Drawing.Point(9, 93);
+            this.TextBoxSzacujacy.Location = new System.Drawing.Point(9, 98);
             this.TextBoxSzacujacy.Name = "TextBoxSzacujacy";
             this.TextBoxSzacujacy.Size = new System.Drawing.Size(462, 22);
             this.TextBoxSzacujacy.TabIndex = 12;
@@ -132,7 +134,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 296);
+            this.label3.Location = new System.Drawing.Point(9, 301);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 16);
             this.label3.TabIndex = 11;
@@ -140,7 +142,7 @@
             // 
             // TextBoxEmail
             // 
-            this.TextBoxEmail.Location = new System.Drawing.Point(9, 315);
+            this.TextBoxEmail.Location = new System.Drawing.Point(9, 320);
             this.TextBoxEmail.Name = "TextBoxEmail";
             this.TextBoxEmail.Size = new System.Drawing.Size(462, 22);
             this.TextBoxEmail.TabIndex = 10;
@@ -149,7 +151,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 252);
+            this.label2.Location = new System.Drawing.Point(6, 257);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 16);
             this.label2.TabIndex = 9;
@@ -159,7 +161,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(9, 208);
+            this.label1.Location = new System.Drawing.Point(9, 213);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 16);
             this.label1.TabIndex = 8;
@@ -167,7 +169,7 @@
             // 
             // TextBoxTelefon
             // 
-            this.TextBoxTelefon.Location = new System.Drawing.Point(9, 271);
+            this.TextBoxTelefon.Location = new System.Drawing.Point(9, 276);
             this.TextBoxTelefon.Name = "TextBoxTelefon";
             this.TextBoxTelefon.Size = new System.Drawing.Size(462, 22);
             this.TextBoxTelefon.TabIndex = 7;
@@ -175,7 +177,7 @@
             // 
             // TextBoxAdres
             // 
-            this.TextBoxAdres.Location = new System.Drawing.Point(12, 227);
+            this.TextBoxAdres.Location = new System.Drawing.Point(12, 232);
             this.TextBoxAdres.Name = "TextBoxAdres";
             this.TextBoxAdres.Size = new System.Drawing.Size(462, 22);
             this.TextBoxAdres.TabIndex = 6;
@@ -183,7 +185,7 @@
             // 
             // TextBoxNazwaFirmy
             // 
-            this.TextBoxNazwaFirmy.Location = new System.Drawing.Point(9, 183);
+            this.TextBoxNazwaFirmy.Location = new System.Drawing.Point(9, 188);
             this.TextBoxNazwaFirmy.Name = "TextBoxNazwaFirmy";
             this.TextBoxNazwaFirmy.Size = new System.Drawing.Size(462, 22);
             this.TextBoxNazwaFirmy.TabIndex = 5;
@@ -192,7 +194,7 @@
             // LabelDataRozp
             // 
             this.LabelDataRozp.AutoSize = true;
-            this.LabelDataRozp.Location = new System.Drawing.Point(9, 164);
+            this.LabelDataRozp.Location = new System.Drawing.Point(9, 169);
             this.LabelDataRozp.Name = "LabelDataRozp";
             this.LabelDataRozp.Size = new System.Drawing.Size(95, 16);
             this.LabelDataRozp.TabIndex = 4;
@@ -201,7 +203,7 @@
             // LabelNazwaProjektu
             // 
             this.LabelNazwaProjektu.AutoSize = true;
-            this.LabelNazwaProjektu.Location = new System.Drawing.Point(9, 30);
+            this.LabelNazwaProjektu.Location = new System.Drawing.Point(9, 35);
             this.LabelNazwaProjektu.Name = "LabelNazwaProjektu";
             this.LabelNazwaProjektu.Size = new System.Drawing.Size(138, 16);
             this.LabelNazwaProjektu.TabIndex = 1;
@@ -209,11 +211,22 @@
             // 
             // TextBoxKierownikProjektu
             // 
-            this.TextBoxKierownikProjektu.Location = new System.Drawing.Point(9, 49);
+            this.TextBoxKierownikProjektu.Location = new System.Drawing.Point(9, 54);
             this.TextBoxKierownikProjektu.Name = "TextBoxKierownikProjektu";
             this.TextBoxKierownikProjektu.Size = new System.Drawing.Size(462, 22);
             this.TextBoxKierownikProjektu.TabIndex = 0;
             this.TextBoxKierownikProjektu.TextChanged += new System.EventHandler(this.TextBoxKierownikProjektu_TextChanged);
+            // 
+            // CheckBoxDomyslne
+            // 
+            this.CheckBoxDomyslne.AutoSize = true;
+            this.CheckBoxDomyslne.Location = new System.Drawing.Point(274, 21);
+            this.CheckBoxDomyslne.Name = "CheckBoxDomyslne";
+            this.CheckBoxDomyslne.Size = new System.Drawing.Size(197, 20);
+            this.CheckBoxDomyslne.TabIndex = 17;
+            this.CheckBoxDomyslne.Text = "Użyj danych domyślnych";
+            this.CheckBoxDomyslne.UseVisualStyleBackColor = true;
+            this.CheckBoxDomyslne.Click += new System.EventHandler(this.CheckBoxDomyslne_Click);
             // 
             // OknoDaneProjektu
             // 
@@ -251,5 +264,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox TextBoxEmail;
         private System.Windows.Forms.RichTextBox RichTextBoxOpisProjektu;
+        private System.Windows.Forms.CheckBox CheckBoxDomyslne;
     }
 }

@@ -43,6 +43,8 @@ namespace Aplikacja
         string SciezkaDoPliku = "";
         public static bool Ograniczenia = false;
         public static bool TempOgraniczenia = false;
+        public static bool Domyslne = false;
+        public static bool TempDomyslne = false;
 
         public static string[] TabDaneProjektu = new string[15];
         public static string[] TempTabDaneProjektu = new string[15];
@@ -540,6 +542,8 @@ namespace Aplikacja
                     Telefon = TempTelefon;
                     Email = TempEmail;
                     OpisProjektu = TempOpisProjektu;
+
+                    Domyslne = TempDomyslne;
 
                     MessageBox.Show("Szczegółowe dane projektu zostały zmienione.", "Sukces");
                 }

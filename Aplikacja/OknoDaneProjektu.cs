@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Aplikacja
@@ -22,6 +15,8 @@ namespace Aplikacja
             TextBoxTelefon.Text = OknoGlowne.Telefon;
             TextBoxEmail.Text = OknoGlowne.Email;
             RichTextBoxOpisProjektu.Text = OknoGlowne.OpisProjektu;
+
+            CheckBoxDomyslne.Checked = OknoGlowne.Domyslne;
         }
 
         private void TextBoxKierownikProjektu_TextChanged(object sender, EventArgs e)
@@ -57,6 +52,32 @@ namespace Aplikacja
         private void RichTextBoxOpisProjektu_TextChanged(object sender, EventArgs e)
         {
             OknoGlowne.TempOpisProjektu = RichTextBoxOpisProjektu.Text;
+        }
+
+        private void CheckBoxDomyslne_Click(object sender, EventArgs e)
+        {
+            if (CheckBoxDomyslne.Checked == true)
+            {
+                TextBoxKierownikProjektu.Text = Properties.Settings.Default.KierownikProjektu;
+                TextBoxSzacujacy.Text = Properties.Settings.Default.Szacujacy;
+                TextBoxNazwaFirmy.Text = Properties.Settings.Default.NazwaFirmy;
+                TextBoxAdres.Text = Properties.Settings.Default.Adres;
+                TextBoxTelefon.Text = Properties.Settings.Default.Telefon;
+                TextBoxEmail.Text = Properties.Settings.Default.Email;
+
+                OknoGlowne.TempDomyslne = true;
+            }
+            else
+            {
+                TextBoxKierownikProjektu.Text = "";
+                TextBoxSzacujacy.Text = "";
+                TextBoxNazwaFirmy.Text = "";
+                TextBoxAdres.Text = "";
+                TextBoxTelefon.Text = "";
+                TextBoxEmail.Text = "";
+
+                OknoGlowne.TempDomyslne = false;
+            }
         }
     }
 }
