@@ -732,6 +732,7 @@
             this.ButtonKalibracja.TabIndex = 13;
             this.ButtonKalibracja.Text = "Kalibracja";
             this.ButtonKalibracja.UseVisualStyleBackColor = true;
+            this.ButtonKalibracja.Click += new System.EventHandler(this.ButtonKalibracja_Click);
             // 
             // GroupBoxUAW
             // 

@@ -287,7 +287,7 @@ namespace Aplikacja
                         TabIndTCF[i] = TempTabIndTCF[i];
                     }
 
-                    MessageBox.Show("Czynniki złożoności technicznej zostały wprowadzone.", "Sukces");
+                    MessageBox.Show("Czynniki złożoności technicznej zostały zmienione.", "Sukces");
 
                 }
             }
@@ -307,7 +307,7 @@ namespace Aplikacja
                         TabIndEF[i] = TempTabIndEF[i];
                     }
 
-                    MessageBox.Show("Czynniki środowiskowe zostały wprowadzone.", "Sukces");
+                    MessageBox.Show("Czynniki środowiskowe zostały zmienione.", "Sukces");
 
                 }
             }
@@ -327,7 +327,7 @@ namespace Aplikacja
                         TabIndSF[i] = TempTabIndSF[i];
                     }
 
-                    MessageBox.Show("Czynniki skali wprowadzone.", "Sukces");
+                    MessageBox.Show("Czynniki skali zostały zmienione.", "Sukces");
                 }
             }
         }
@@ -345,7 +345,7 @@ namespace Aplikacja
                         TabIndEM[i] = TempTabIndEM[i];
                     }
 
-                    MessageBox.Show("Mnożniki pracochłonności wprowadzone.", "Sukces");
+                    MessageBox.Show("Mnożniki pracochłonności zostały zmienione.", "Sukces");
                 }
             }
         }
@@ -520,7 +520,7 @@ namespace Aplikacja
                         TabDaneProjektu[i] = TempTabDaneProjektu[i];
                     }
 
-                    MessageBox.Show("Szczegółowe dane projektu zostały wprowadzone.", "Sukces");
+                    MessageBox.Show("Szczegółowe dane projektu zostały zmienione.", "Sukces");
                 }
             }
         }
@@ -578,9 +578,19 @@ namespace Aplikacja
             }
         }
 
+        //TODO zmiana dr na coś fajniejszego :)
         private void ButtonUstawienia_Click(object sender, EventArgs e)
         {
+            using (OknoUstawienia OknoUstawDomyslne = new OknoUstawienia())
+            {
+                DialogResult dr = OknoUstawDomyslne.ShowDialog();
 
+                if (dr == DialogResult.OK)
+                {
+
+                    MessageBox.Show("Domyślne ustawienia projektu zostały zmienione.", "Sukces");
+                }
+            }
 
 
             //MessageBox.Show(Properties.Settings.Default.GodzinyUCP.ToString());
@@ -650,7 +660,7 @@ namespace Aplikacja
 
                 if (dr == DialogResult.OK)
                 {
-                    MessageBox.Show("Założenia projektu zostały wprowadzone.", "Sukces");
+                    MessageBox.Show("Założenia projektu zostały zmienione.", "Sukces");
 
                     Ograniczenia = TempOgraniczenia;
 
@@ -664,6 +674,20 @@ namespace Aplikacja
                     MaxPrac = TempMaxPrac;
                     MaxHarm = TempMaxHarm;
 
+                }
+            }
+        }
+
+        private void ButtonKalibracja_Click(object sender, EventArgs e)
+        {
+            using (OknoKalibracja OknoKalib = new OknoKalibracja())
+            {
+                DialogResult dr = OknoKalib.ShowDialog();
+
+                if (dr == DialogResult.OK)
+                {
+
+                    MessageBox.Show("Kalibracja modelu została wykonana.", "Sukces");
                 }
             }
         }
