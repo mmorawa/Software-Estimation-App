@@ -101,12 +101,12 @@ namespace Aplikacja
         };
 
         //współczynniki
-        double EFc1 = 1.4;
-        double EFc2 = -0.03;
-        double TCFc1 = 0.6;
-        double TCFc2 = 0.01;
-        double A = 2.94;
-        double B = 0.91;
+        public static double EFc1 = 1.4;
+        public static double EFc2 = -0.03;
+        public static double TCFc1 = 0.6;
+        public static double TCFc2 = 0.01;
+        public static double A = 2.94;
+        public static double B = 0.91;
 
         //przeliczniki
         public static double UCPgodziny = 25;

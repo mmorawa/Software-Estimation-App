@@ -15,6 +15,11 @@ namespace Aplikacja
         public OknoKalibracja()
         {
             InitializeComponent();
+            TextBoxA.Text = Properties.Settings.Default.A.ToString();
+            TextBoxB.Text = Properties.Settings.Default.B.ToString();
         }
+
+        //TODO różne kalibracje dla różnych zespołów/projektów
+
     }
 }

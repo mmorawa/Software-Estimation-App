@@ -25,13 +25,25 @@ namespace Aplikacja.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int Tab {
+        [global::System.Configuration.DefaultSettingValueAttribute("2.94")]
+        public double A {
             get {
-                return ((int)(this["Tab"]));
+                return ((double)(this["A"]));
             }
             set {
-                this["Tab"] = value;
+                this["A"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,91")]
+        public string B {
+            get {
+                return ((string)(this["B"]));
+            }
+            set {
+                this["B"] = value;
             }
         }
     }

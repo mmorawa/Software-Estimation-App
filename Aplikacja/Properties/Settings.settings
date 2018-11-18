@@ -2,8 +2,11 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Aplikacja.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="Tab" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">0</Value>
+    <Setting Name="A" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">2.94</Value>
+    </Setting>
+    <Setting Name="B" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,91</Value>
     </Setting>
   </Settings>
 </SettingsFile>

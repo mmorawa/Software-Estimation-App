@@ -104,6 +104,8 @@
             this.label24 = new System.Windows.Forms.Label();
             this.GroupBoxModyfUCP = new System.Windows.Forms.GroupBox();
             this.GroupBoxWyniki = new System.Windows.Forms.GroupBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.LabelPktUCP = new System.Windows.Forms.Label();
             this.LabelWynikPracCOCOMOII = new System.Windows.Forms.Label();
             this.LabelWynikPracUCP = new System.Windows.Forms.Label();
@@ -115,8 +117,6 @@
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.ButtonKreator = new System.Windows.Forms.Button();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
             this.PasekMenu.SuspendLayout();
             this.GroupBoxDaneProjektu.SuspendLayout();
             this.GroupBoxUUCW.SuspendLayout();
@@ -1013,6 +1013,24 @@
             this.GroupBoxWyniki.TabStop = false;
             this.GroupBoxWyniki.Text = "Wyniki";
             // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(179, 342);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(114, 16);
+            this.label30.TabIndex = 11;
+            this.label30.Text = "osobomiesięcy";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(179, 267);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(114, 16);
+            this.label29.TabIndex = 10;
+            this.label29.Text = "osobomiesięcy";
+            // 
             // LabelPktUCP
             // 
             this.LabelPktUCP.AutoSize = true;
@@ -1126,24 +1144,6 @@
             this.ButtonKreator.TabIndex = 14;
             this.ButtonKreator.Text = "Kreator";
             this.ButtonKreator.UseVisualStyleBackColor = true;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(179, 267);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(114, 16);
-            this.label29.TabIndex = 10;
-            this.label29.Text = "osobomiesięcy";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(179, 342);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(114, 16);
-            this.label30.TabIndex = 11;
-            this.label30.Text = "osobomiesięcy";
             // 
             // OknoGlowne
             // 
