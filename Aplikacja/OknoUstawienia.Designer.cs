@@ -59,6 +59,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.ButtonAnuluj = new System.Windows.Forms.Button();
             this.ButtonOk = new System.Windows.Forms.Button();
+            this.GroupBoxDomDaneProjektu = new System.Windows.Forms.GroupBox();
+            this.GroupBoxDomZalozeniaProjektu = new System.Windows.Forms.GroupBox();
             this.GroupBoxSzczDomyslneUstawienia.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumericUCPgodziny)).BeginInit();
@@ -66,23 +68,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumericStawkaGodz)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericOsoboMGodz)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericDzRobGodz)).BeginInit();
+            this.GroupBoxDomDaneProjektu.SuspendLayout();
+            this.GroupBoxDomZalozeniaProjektu.SuspendLayout();
             this.SuspendLayout();
             // 
             // GroupBoxSzczDomyslneUstawienia
             // 
-            this.GroupBoxSzczDomyslneUstawienia.Controls.Add(this.label5);
-            this.GroupBoxSzczDomyslneUstawienia.Controls.Add(this.TextBoxSzacujacy);
-            this.GroupBoxSzczDomyslneUstawienia.Controls.Add(this.label6);
-            this.GroupBoxSzczDomyslneUstawienia.Controls.Add(this.TextBoxEmail);
-            this.GroupBoxSzczDomyslneUstawienia.Controls.Add(this.label10);
-            this.GroupBoxSzczDomyslneUstawienia.Controls.Add(this.label11);
-            this.GroupBoxSzczDomyslneUstawienia.Controls.Add(this.TextBoxTelefon);
-            this.GroupBoxSzczDomyslneUstawienia.Controls.Add(this.TextBoxAdres);
-            this.GroupBoxSzczDomyslneUstawienia.Controls.Add(this.TextBoxNazwaFirmy);
-            this.GroupBoxSzczDomyslneUstawienia.Controls.Add(this.label14);
-            this.GroupBoxSzczDomyslneUstawienia.Controls.Add(this.LabelNazwaProjektu);
-            this.GroupBoxSzczDomyslneUstawienia.Controls.Add(this.TextBoxKierownikProjektu);
-            this.GroupBoxSzczDomyslneUstawienia.Controls.Add(this.tableLayoutPanel2);
+            this.GroupBoxSzczDomyslneUstawienia.Controls.Add(this.GroupBoxDomZalozeniaProjektu);
+            this.GroupBoxSzczDomyslneUstawienia.Controls.Add(this.GroupBoxDomDaneProjektu);
             this.GroupBoxSzczDomyslneUstawienia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxSzczDomyslneUstawienia.Location = new System.Drawing.Point(12, 12);
             this.GroupBoxSzczDomyslneUstawienia.Name = "GroupBoxSzczDomyslneUstawienia";
@@ -94,7 +87,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 75);
+            this.label5.Location = new System.Drawing.Point(4, 73);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(285, 16);
             this.label5.TabIndex = 40;
@@ -102,7 +95,7 @@
             // 
             // TextBoxSzacujacy
             // 
-            this.TextBoxSzacujacy.Location = new System.Drawing.Point(15, 94);
+            this.TextBoxSzacujacy.Location = new System.Drawing.Point(6, 92);
             this.TextBoxSzacujacy.Name = "TextBoxSzacujacy";
             this.TextBoxSzacujacy.Size = new System.Drawing.Size(462, 22);
             this.TextBoxSzacujacy.TabIndex = 39;
@@ -111,7 +104,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 297);
+            this.label6.Location = new System.Drawing.Point(6, 284);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(56, 16);
             this.label6.TabIndex = 38;
@@ -119,7 +112,7 @@
             // 
             // TextBoxEmail
             // 
-            this.TextBoxEmail.Location = new System.Drawing.Point(15, 316);
+            this.TextBoxEmail.Location = new System.Drawing.Point(6, 303);
             this.TextBoxEmail.Name = "TextBoxEmail";
             this.TextBoxEmail.Size = new System.Drawing.Size(462, 22);
             this.TextBoxEmail.TabIndex = 37;
@@ -128,7 +121,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(12, 253);
+            this.label10.Location = new System.Drawing.Point(3, 240);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(95, 16);
             this.label10.TabIndex = 36;
@@ -138,7 +131,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label11.Location = new System.Drawing.Point(15, 209);
+            this.label11.Location = new System.Drawing.Point(6, 196);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(53, 16);
             this.label11.TabIndex = 35;
@@ -146,7 +139,7 @@
             // 
             // TextBoxTelefon
             // 
-            this.TextBoxTelefon.Location = new System.Drawing.Point(15, 272);
+            this.TextBoxTelefon.Location = new System.Drawing.Point(6, 259);
             this.TextBoxTelefon.Name = "TextBoxTelefon";
             this.TextBoxTelefon.Size = new System.Drawing.Size(462, 22);
             this.TextBoxTelefon.TabIndex = 34;
@@ -154,7 +147,7 @@
             // 
             // TextBoxAdres
             // 
-            this.TextBoxAdres.Location = new System.Drawing.Point(18, 228);
+            this.TextBoxAdres.Location = new System.Drawing.Point(9, 215);
             this.TextBoxAdres.Name = "TextBoxAdres";
             this.TextBoxAdres.Size = new System.Drawing.Size(462, 22);
             this.TextBoxAdres.TabIndex = 33;
@@ -162,7 +155,7 @@
             // 
             // TextBoxNazwaFirmy
             // 
-            this.TextBoxNazwaFirmy.Location = new System.Drawing.Point(15, 184);
+            this.TextBoxNazwaFirmy.Location = new System.Drawing.Point(6, 171);
             this.TextBoxNazwaFirmy.Name = "TextBoxNazwaFirmy";
             this.TextBoxNazwaFirmy.Size = new System.Drawing.Size(462, 22);
             this.TextBoxNazwaFirmy.TabIndex = 32;
@@ -171,7 +164,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(15, 165);
+            this.label14.Location = new System.Drawing.Point(6, 152);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(95, 16);
             this.label14.TabIndex = 31;
@@ -180,7 +173,7 @@
             // LabelNazwaProjektu
             // 
             this.LabelNazwaProjektu.AutoSize = true;
-            this.LabelNazwaProjektu.Location = new System.Drawing.Point(15, 31);
+            this.LabelNazwaProjektu.Location = new System.Drawing.Point(6, 29);
             this.LabelNazwaProjektu.Name = "LabelNazwaProjektu";
             this.LabelNazwaProjektu.Size = new System.Drawing.Size(138, 16);
             this.LabelNazwaProjektu.TabIndex = 30;
@@ -188,7 +181,7 @@
             // 
             // TextBoxKierownikProjektu
             // 
-            this.TextBoxKierownikProjektu.Location = new System.Drawing.Point(15, 50);
+            this.TextBoxKierownikProjektu.Location = new System.Drawing.Point(6, 48);
             this.TextBoxKierownikProjektu.Name = "TextBoxKierownikProjektu";
             this.TextBoxKierownikProjektu.Size = new System.Drawing.Size(462, 22);
             this.TextBoxKierownikProjektu.TabIndex = 29;
@@ -215,7 +208,7 @@
             this.tableLayoutPanel2.Controls.Add(this.label7, 2, 2);
             this.tableLayoutPanel2.Controls.Add(this.label12, 2, 3);
             this.tableLayoutPanel2.Controls.Add(this.label9, 2, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 372);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(9, 31);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -224,7 +217,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(476, 261);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(467, 261);
             this.tableLayoutPanel2.TabIndex = 28;
             // 
             // NumericUCPgodziny
@@ -446,11 +439,42 @@
             this.ButtonOk.Text = "OK";
             this.ButtonOk.UseVisualStyleBackColor = true;
             // 
+            // GroupBoxDomDaneProjektu
+            // 
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.LabelNazwaProjektu);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.label5);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.TextBoxKierownikProjektu);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.TextBoxSzacujacy);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.label14);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.label6);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.TextBoxNazwaFirmy);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.TextBoxEmail);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.TextBoxAdres);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.label10);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.TextBoxTelefon);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.label11);
+            this.GroupBoxDomDaneProjektu.Location = new System.Drawing.Point(12, 34);
+            this.GroupBoxDomDaneProjektu.Name = "GroupBoxDomDaneProjektu";
+            this.GroupBoxDomDaneProjektu.Size = new System.Drawing.Size(482, 345);
+            this.GroupBoxDomDaneProjektu.TabIndex = 41;
+            this.GroupBoxDomDaneProjektu.TabStop = false;
+            this.GroupBoxDomDaneProjektu.Text = "Odnośnie danych projektu";
+            // 
+            // GroupBoxDomZalozeniaProjektu
+            // 
+            this.GroupBoxDomZalozeniaProjektu.Controls.Add(this.tableLayoutPanel2);
+            this.GroupBoxDomZalozeniaProjektu.Location = new System.Drawing.Point(12, 385);
+            this.GroupBoxDomZalozeniaProjektu.Name = "GroupBoxDomZalozeniaProjektu";
+            this.GroupBoxDomZalozeniaProjektu.Size = new System.Drawing.Size(482, 310);
+            this.GroupBoxDomZalozeniaProjektu.TabIndex = 42;
+            this.GroupBoxDomZalozeniaProjektu.TabStop = false;
+            this.GroupBoxDomZalozeniaProjektu.Text = "Odnośnie założeń projektu";
+            // 
             // OknoUstawienia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 797);
+            this.ClientSize = new System.Drawing.Size(536, 797);
             this.Controls.Add(this.ButtonAnuluj);
             this.Controls.Add(this.ButtonOk);
             this.Controls.Add(this.GroupBoxSzczDomyslneUstawienia);
@@ -458,7 +482,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Ustawienia";
             this.GroupBoxSzczDomyslneUstawienia.ResumeLayout(false);
-            this.GroupBoxSzczDomyslneUstawienia.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumericUCPgodziny)).EndInit();
@@ -466,6 +489,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumericStawkaGodz)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericOsoboMGodz)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericDzRobGodz)).EndInit();
+            this.GroupBoxDomDaneProjektu.ResumeLayout(false);
+            this.GroupBoxDomDaneProjektu.PerformLayout();
+            this.GroupBoxDomZalozeniaProjektu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -503,5 +529,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label LabelNazwaProjektu;
         private System.Windows.Forms.TextBox TextBoxKierownikProjektu;
+        private System.Windows.Forms.GroupBox GroupBoxDomZalozeniaProjektu;
+        private System.Windows.Forms.GroupBox GroupBoxDomDaneProjektu;
     }
 }
