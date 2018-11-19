@@ -128,11 +128,11 @@ namespace Aplikacja
         public static double TempB;
 
         //przeliczniki - tu domyślne
-        public static double UCPgodziny = 25;
-        public static double UCPlinieKodu = 45;
-        public static double StawkaGodz = 0;
-        public static int OsoboMGodz = 152;
-        public static int DzRobGodz = 8;
+        public static double UCPgodziny = Properties.Settings.Default.UCPgodziny;
+        public static double UCPlinieKodu = Properties.Settings.Default.UCPlinieKodu;
+        public static double StawkaGodz = Properties.Settings.Default.StawkaGodz;
+        public static int OsoboMGodz = Properties.Settings.Default.OsoboMGodz;
+        public static int DzRobGodz = Properties.Settings.Default.DzRobGodz;
 
         public static double MaxKoszt = 0;
         public static int MaxPrac = 0;
@@ -625,6 +625,7 @@ namespace Aplikacja
                     Properties.Settings.Default.OsoboMGodz = TempOsoboMGodz;
                     Properties.Settings.Default.DzRobGodz = TempDzRobGodz;
 
+                    //Properties.Settings.Default.Save();
                     MessageBox.Show("Domyślne ustawienia projektu zostały zmienione.", "Sukces");
                 }
             }
