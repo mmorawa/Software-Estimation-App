@@ -136,19 +136,17 @@ namespace Aplikacja
         public static long TempMaxHarm;
 
         //wyniki pośrednie
-        double TCF = 0;
-        double EF = 0;
         double UUCW = 0;
         double UAW = 0;
-        double UCP = 0;
+        double UUCP = 0;
         double Rozmiar = 0;
         double E = 1;
         double SumaSF = 0;
         double IloczynEM = 1;
 
         //wyniki końcowe
-        double PracUCP = 0;
-        double PracCOCOMOII = 0;
+
+        double Pracochlonnosc = 0;
 
         /*******************************************************************************
         *  Metody klasy Form1.
@@ -362,15 +360,14 @@ namespace Aplikacja
             TabUAW[2] = (long)NumUAWZlozony.Value;
         }
 
-        //-----------------------------------------------------------------------------------------------
+        //------------------------Algorytm------------------------------------------------------
 
 
         private void ButtonOszacuj_Click(object sender, EventArgs e)
         {
             //TODO walidacja danych wejściowych, zaokrąglanie
 
-            //Obliczenia UCP
-
+            //Obliczenia UUCP
 
             UUCW = 0;
             for (int i = 0; i < 3; i++)
@@ -381,14 +378,14 @@ namespace Aplikacja
             UAW = 0;
             for (int i = 0; i < 3; i++)
             {
-                UAW = TabUAW[i] * wagiAktorow[i];
+                UAW += TabUAW[i] * wagiAktorow[i];
             }
 
-            UCP = Math.Round(TCF * EF * (UAW + UUCW), 2);
-            //PracUCP = Math.Round(UCP * UCPgodziny, 2);
+            UUCP = UAW + UUCW;
 
+            Rozmiar = UUCP * Properties.Settings.Default.UCPnaFP * TabPktFunkSLOC[JezykProgramowania];
+            
             //Obliczenia COCOMOII
-            //Rozmiar = UCP * UCPlinieKodu;
 
             SumaSF = 0;
             for (int i = 0; i < 5; i++)
@@ -403,15 +400,17 @@ namespace Aplikacja
             }
 
             E = Properties.Settings.Default.B + 0.01 * SumaSF;
-            PracCOCOMOII = Math.Round(Properties.Settings.Default.A * Math.Pow(Rozmiar, E) * IloczynEM, 2);
+
+            Pracochlonnosc = Math.Round(Properties.Settings.Default.A * Math.Pow(Rozmiar, E) * IloczynEM, 2);
 
             //Wyświetlenie wyników
-            LabelPktUCP.Text = UCP.ToString();
-            LabelWynikPracUCP.Text = PracUCP.ToString();
-            LabelWynikPracCOCOMOII.Text = (PracCOCOMOII * 152).ToString();
+            LabelPktUUCP.Text = UUCP.ToString();
+            LabelRozmiar.Text = Rozmiar.ToString();
+            LabelWynikPrac.Text = Pracochlonnosc.ToString();
+            //LabelWynikHarm.Text = (Pracochlonnosc * 152).ToString();
 
 
-            //MessageBox.Show(IloczynEM.ToString());
+            
         }
 
 
@@ -455,9 +454,9 @@ namespace Aplikacja
 
 
 
-            LabelPktUCP.Text = "0";
-            LabelWynikPracUCP.Text = "0";
-            LabelWynikPracCOCOMOII.Text = "0";
+            LabelPktUUCP.Text = "0";
+            LabelWynikPrac.Text = "0";
+            LabelWynikHarm.Text = "0";
 
             MessageBox.Show("Rozpoczęto nowy projekt.");
         }
@@ -650,6 +649,7 @@ namespace Aplikacja
             }
         }
 
+
         private void ButtonKalibracja_Click(object sender, EventArgs e)
         {
             using (OknoKalibracja OknoKalib = new OknoKalibracja())
@@ -670,14 +670,20 @@ namespace Aplikacja
             }
         }
 
+
         private void ButtonKreator_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show(A.ToString());
+            MessageBox.Show(TabPktFunkSLOC[JezykProgramowania].ToString());
+            MessageBox.Show(UAW.ToString());
+            MessageBox.Show(UUCW.ToString());
+            //MessageBox.Show(Rozmiar.ToString());
 
+            /*
             MessageBox.Show(Properties.Settings.Default.A.ToString());
             MessageBox.Show(Properties.Settings.Default.B.ToString());
             MessageBox.Show(Properties.Settings.Default.C.ToString());
             MessageBox.Show(Properties.Settings.Default.D.ToString());
+            */
         }
     }
 }
