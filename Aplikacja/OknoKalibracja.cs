@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Aplikacja
@@ -15,8 +8,18 @@ namespace Aplikacja
         public OknoKalibracja()
         {
             InitializeComponent();
+
+            NumericUCPnaFP.Value = (decimal)Properties.Settings.Default.UCPnaFP;
             TextBoxA.Text = Properties.Settings.Default.A.ToString();
             TextBoxB.Text = Properties.Settings.Default.B.ToString();
+            TextBoxC.Text = Properties.Settings.Default.C.ToString();
+            TextBoxD.Text = Properties.Settings.Default.D.ToString();
+
+        }
+
+        private void NumericUCPnaFP_ValueChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TempUCPnaFP = (double)NumericUCPnaFP.Value;
         }
 
         //TODO konwersja kulturowa Parse
@@ -29,6 +32,18 @@ namespace Aplikacja
         {
             OknoGlowne.TempB = double.Parse(TextBoxB.Text);
         }
+
+        private void TextBoxC_TextChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TempC = double.Parse(TextBoxC.Text);
+        }
+
+        private void TextBoxD_TextChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TempD = double.Parse(TextBoxD.Text);
+        }
+
+
 
         //TODO różne kalibracje dla różnych zespołów/projektów
 

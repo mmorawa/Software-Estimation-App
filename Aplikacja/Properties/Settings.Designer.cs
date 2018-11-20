@@ -166,5 +166,41 @@ namespace Aplikacja.Properties {
                 this["JezykProgramowania"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2.27")]
+        public double UCPnaFP {
+            get {
+                return ((double)(this["UCPnaFP"]));
+            }
+            set {
+                this["UCPnaFP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("3.67")]
+        public double C {
+            get {
+                return ((double)(this["C"]));
+            }
+            set {
+                this["C"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.28")]
+        public double D {
+            get {
+                return ((double)(this["D"]));
+            }
+            set {
+                this["D"] = value;
+            }
+        }
     }
 }

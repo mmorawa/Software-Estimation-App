@@ -64,11 +64,11 @@ namespace Aplikacja
         public static string OpisProjektu;
         public static string TempOpisProjektu;
 
+        int[] TabPktFunkSLOC = { 18, 54, 98, 14, 99, 53, 59, 55, 42, 18, 24, 65, 191, 45, 35, 40, 49, 53, 53, 48, 30, 21, 34, 60, 40, 32, 15, 80, 35, 28, 80, 66, 37, 60, 75, 21, 60, 44 };
 
-
-        public static Int64[] TabUAW = new Int64[3];
+        public static long[] TabUAW = new long[3];
         double[] wagiAktorow = { 1, 2, 3 };
-        public static Int64[] TabUUCW = new Int64[3];
+        public static long[] TabUUCW = new long[3];
         double[] wagiUC = { 5, 10, 15 };
 
 
@@ -109,8 +109,11 @@ namespace Aplikacja
         };
 
         //współczynniki
+        public static double TempUCPnaFP;
         public static double TempA;
         public static double TempB;
+        public static double TempC;
+        public static double TempD;
 
         //przeliczniki - tu domyślne
         public static int JezykProgramowania = Properties.Settings.Default.JezykProgramowania;
@@ -240,7 +243,7 @@ namespace Aplikacja
          */
         private void ToolStripMenuKalibracja_Click(object sender, EventArgs e)
         {
-
+            ButtonKalibracja_Click(sender, e);
         }
 
         //! Metoda wywoływana po naciśnięciu przycisku Exit na pasku Menu.
@@ -249,7 +252,7 @@ namespace Aplikacja
          */
         private void ToolStripMenuUstawienia_Click(object sender, EventArgs e)
         {
-
+            ButtonUstawienia_Click(sender, e);
         }
 
         //! Metoda wywoływana po naciśnięciu przycisku Exit na pasku Menu.
@@ -297,6 +300,7 @@ namespace Aplikacja
             }
         }
 
+
         private void ButtonMnPr_Click(object sender, EventArgs e)
         {
             using (OknoMnoznikiPracochlonnosci OknoMnozP = new OknoMnoznikiPracochlonnosci())
@@ -315,8 +319,9 @@ namespace Aplikacja
             }
         }
 
-        //-----------------------------------------------------------------------------------------------
 
+        //-----------------------------------------------------------------------------------------------
+        //TODO usuń TabDaneProjektu
         private void TextBoxNazwaProjektu_TextChanged(object sender, EventArgs e)
         {
             TabDaneProjektu[0] = TextBoxNazwaProjektu.Text;
@@ -457,6 +462,7 @@ namespace Aplikacja
             MessageBox.Show("Rozpoczęto nowy projekt.");
         }
 
+
         private void ButtonWiecejSzczeg_Click(object sender, EventArgs e)
         {
             using (OknoDaneProjektu OknoDaneProjektu = new OknoDaneProjektu())
@@ -472,13 +478,14 @@ namespace Aplikacja
                     Telefon = TempTelefon;
                     Email = TempEmail;
                     OpisProjektu = TempOpisProjektu;
-
+                    //czy są użyte dane domyślne
                     Domyslne = TempDomyslne;
 
                     MessageBox.Show("Szczegółowe dane projektu zostały zmienione.", "Sukces");
                 }
             }
         }
+
 
         private void ButtonOtworzProjekt_Click(object sender, EventArgs e)
         {
@@ -508,7 +515,7 @@ namespace Aplikacja
 
                     using (StreamReader sr = new StreamReader(SciezkaDoPliku))
                     {
-                        int LiczbaLinii = File.ReadLines(SciezkaDoPliku).Count();
+                        //int LiczbaLinii = File.ReadLines(SciezkaDoPliku).Count();
 
                         TextBoxNazwaProjektu.Text = sr.ReadLine();
                         DateTimePicker.Text = sr.ReadLine();
@@ -526,12 +533,12 @@ namespace Aplikacja
                         NumUAWZlozony.Value = int.Parse(sr.ReadLine());
 
 
-
                     }
 
                 }
             }
         }
+
 
         //TODO zmiana dr na coś fajniejszego :)
         private void ButtonUstawienia_Click(object sender, EventArgs e)
@@ -564,7 +571,6 @@ namespace Aplikacja
         }
 
 
-
         private void ButtonZapiszProjekt_Click(object sender, EventArgs e)
         {
             if (SciezkaDoPliku.Length == 0)
@@ -576,6 +582,7 @@ namespace Aplikacja
                 Zapis();
             }
         }
+
 
         private void Zapis()
         {
@@ -617,6 +624,7 @@ namespace Aplikacja
 
         }
 
+
         private void ButtonZalozenia_Click(object sender, EventArgs e)
         {
             using (OknoZalozeniaProjektu OknoZalProj = new OknoZalozeniaProjektu())
@@ -650,8 +658,12 @@ namespace Aplikacja
 
                 if (dr == DialogResult.OK)
                 {
+                    Properties.Settings.Default.UCPnaFP = TempUCPnaFP;
                     Properties.Settings.Default.A = TempA;
                     Properties.Settings.Default.B = TempB;
+                    Properties.Settings.Default.C = TempC;
+                    Properties.Settings.Default.D = TempD;
+
                     //Properties.Settings.Default.Save();
                     MessageBox.Show("Kalibracja modelu została wykonana.", "Sukces");
                 }
@@ -663,6 +675,9 @@ namespace Aplikacja
             //MessageBox.Show(A.ToString());
 
             MessageBox.Show(Properties.Settings.Default.A.ToString());
+            MessageBox.Show(Properties.Settings.Default.B.ToString());
+            MessageBox.Show(Properties.Settings.Default.C.ToString());
+            MessageBox.Show(Properties.Settings.Default.D.ToString());
         }
     }
 }

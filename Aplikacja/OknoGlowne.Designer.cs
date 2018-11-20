@@ -108,7 +108,6 @@
             this.LabelWynikPracUCP = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
@@ -972,7 +971,6 @@
             this.GroupBoxWyniki.Controls.Add(this.LabelWynikPracUCP);
             this.GroupBoxWyniki.Controls.Add(this.label28);
             this.GroupBoxWyniki.Controls.Add(this.label27);
-            this.GroupBoxWyniki.Controls.Add(this.label26);
             this.GroupBoxWyniki.Controls.Add(this.label25);
             this.GroupBoxWyniki.Controls.Add(this.ButtonOszacuj);
             this.GroupBoxWyniki.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -988,9 +986,9 @@
             this.label30.AutoSize = true;
             this.label30.Location = new System.Drawing.Point(179, 342);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(114, 16);
+            this.label30.Size = new System.Drawing.Size(70, 16);
             this.label30.TabIndex = 11;
-            this.label30.Text = "osobomiesięcy";
+            this.label30.Text = "miesięcy";
             // 
             // label29
             // 
@@ -1045,36 +1043,27 @@
             this.label28.AutoSize = true;
             this.label28.Location = new System.Drawing.Point(16, 239);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(372, 16);
+            this.label28.Size = new System.Drawing.Size(126, 16);
             this.label28.TabIndex = 6;
-            this.label28.Text = "Pracochłonność obliczona metodą Use Case Points:";
+            this.label28.Text = "Pracochłonność:";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
             this.label27.Location = new System.Drawing.Point(16, 313);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(413, 16);
+            this.label27.Size = new System.Drawing.Size(110, 16);
             this.label27.TabIndex = 5;
-            this.label27.Text = "Pracochłonność obliczona przy użyciu modelu COCOMO II:";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(16, 388);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(152, 16);
-            this.label26.TabIndex = 4;
-            this.label26.Text = "Róźnica procentowa:";
+            this.label27.Text = "Harmonogram:";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Location = new System.Drawing.Point(16, 177);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(152, 16);
+            this.label25.Size = new System.Drawing.Size(434, 16);
             this.label25.TabIndex = 3;
-            this.label25.Text = "Liczba punktów UCP:";
+            this.label25.Text = "Liczba nieskorygowanych punktów  przypadków użycia UUCP:";
             // 
             // groupBox1
             // 
@@ -1239,7 +1228,6 @@
         private System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabel;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label LabelWynikPracCOCOMOII;
         private System.Windows.Forms.Label LabelWynikPracUCP;
