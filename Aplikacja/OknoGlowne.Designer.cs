@@ -116,6 +116,10 @@
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.ButtonKreator = new System.Windows.Forms.Button();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label31 = new System.Windows.Forms.Label();
+            this.LabelWynikKoszt = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
             this.PasekMenu.SuspendLayout();
             this.GroupBoxDaneProjektu.SuspendLayout();
             this.GroupBoxUUCW.SuspendLayout();
@@ -131,6 +135,7 @@
             this.GroupBoxWyniki.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.StatusStrip.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // PasekMenu
@@ -967,17 +972,7 @@
             // 
             // GroupBoxWyniki
             // 
-            this.GroupBoxWyniki.Controls.Add(this.label26);
-            this.GroupBoxWyniki.Controls.Add(this.LabelRozmiar);
-            this.GroupBoxWyniki.Controls.Add(this.label32);
-            this.GroupBoxWyniki.Controls.Add(this.label30);
-            this.GroupBoxWyniki.Controls.Add(this.label29);
-            this.GroupBoxWyniki.Controls.Add(this.LabelPktUUCP);
-            this.GroupBoxWyniki.Controls.Add(this.LabelWynikHarm);
-            this.GroupBoxWyniki.Controls.Add(this.LabelWynikPrac);
-            this.GroupBoxWyniki.Controls.Add(this.label28);
-            this.GroupBoxWyniki.Controls.Add(this.label27);
-            this.GroupBoxWyniki.Controls.Add(this.label25);
+            this.GroupBoxWyniki.Controls.Add(this.tableLayoutPanel3);
             this.GroupBoxWyniki.Controls.Add(this.ButtonOszacuj);
             this.GroupBoxWyniki.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxWyniki.Location = new System.Drawing.Point(549, 69);
@@ -990,7 +985,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(179, 283);
+            this.label26.Location = new System.Drawing.Point(333, 92);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(47, 16);
             this.label26.TabIndex = 14;
@@ -999,9 +994,9 @@
             // LabelRozmiar
             // 
             this.LabelRozmiar.AutoSize = true;
-            this.LabelRozmiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.LabelRozmiar.BackColor = System.Drawing.SystemColors.Control;
             this.LabelRozmiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelRozmiar.Location = new System.Drawing.Point(23, 276);
+            this.LabelRozmiar.Location = new System.Drawing.Point(168, 92);
             this.LabelRozmiar.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelRozmiar.Name = "LabelRozmiar";
             this.LabelRozmiar.Size = new System.Drawing.Size(150, 25);
@@ -1012,7 +1007,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(16, 254);
+            this.label32.Location = new System.Drawing.Point(3, 92);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(69, 16);
             this.label32.TabIndex = 12;
@@ -1021,7 +1016,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(179, 437);
+            this.label30.Location = new System.Drawing.Point(333, 184);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(70, 16);
             this.label30.TabIndex = 11;
@@ -1030,7 +1025,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(179, 362);
+            this.label29.Location = new System.Drawing.Point(333, 138);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(114, 16);
             this.label29.TabIndex = 10;
@@ -1039,9 +1034,9 @@
             // LabelPktUUCP
             // 
             this.LabelPktUUCP.AutoSize = true;
-            this.LabelPktUUCP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.LabelPktUUCP.BackColor = System.Drawing.SystemColors.Control;
             this.LabelPktUUCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelPktUUCP.Location = new System.Drawing.Point(23, 205);
+            this.LabelPktUUCP.Location = new System.Drawing.Point(333, 0);
             this.LabelPktUUCP.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelPktUUCP.Name = "LabelPktUUCP";
             this.LabelPktUUCP.Size = new System.Drawing.Size(150, 25);
@@ -1054,7 +1049,7 @@
             this.LabelWynikHarm.AutoSize = true;
             this.LabelWynikHarm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.LabelWynikHarm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikHarm.Location = new System.Drawing.Point(23, 430);
+            this.LabelWynikHarm.Location = new System.Drawing.Point(168, 184);
             this.LabelWynikHarm.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelWynikHarm.Name = "LabelWynikHarm";
             this.LabelWynikHarm.Size = new System.Drawing.Size(150, 25);
@@ -1067,7 +1062,7 @@
             this.LabelWynikPrac.AutoSize = true;
             this.LabelWynikPrac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.LabelWynikPrac.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikPrac.Location = new System.Drawing.Point(23, 356);
+            this.LabelWynikPrac.Location = new System.Drawing.Point(168, 138);
             this.LabelWynikPrac.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelWynikPrac.Name = "LabelWynikPrac";
             this.LabelWynikPrac.Size = new System.Drawing.Size(150, 25);
@@ -1078,7 +1073,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(16, 334);
+            this.label28.Location = new System.Drawing.Point(3, 138);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(126, 16);
             this.label28.TabIndex = 6;
@@ -1087,7 +1082,7 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(16, 408);
+            this.label27.Location = new System.Drawing.Point(3, 184);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(110, 16);
             this.label27.TabIndex = 5;
@@ -1096,9 +1091,10 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(16, 177);
+            this.tableLayoutPanel3.SetColumnSpan(this.label25, 2);
+            this.label25.Location = new System.Drawing.Point(3, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(434, 16);
+            this.label25.Size = new System.Drawing.Size(253, 32);
             this.label25.TabIndex = 3;
             this.label25.Text = "Liczba nieskorygowanych punktów  przypadków użycia UUCP:";
             // 
@@ -1142,6 +1138,70 @@
             this.ButtonKreator.UseVisualStyleBackColor = true;
             this.ButtonKreator.Click += new System.EventHandler(this.ButtonKreator_Click);
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 3;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.Controls.Add(this.label34, 2, 5);
+            this.tableLayoutPanel3.Controls.Add(this.LabelWynikKoszt, 1, 5);
+            this.tableLayoutPanel3.Controls.Add(this.label31, 0, 5);
+            this.tableLayoutPanel3.Controls.Add(this.label25, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label30, 2, 4);
+            this.tableLayoutPanel3.Controls.Add(this.label26, 2, 2);
+            this.tableLayoutPanel3.Controls.Add(this.LabelWynikHarm, 1, 4);
+            this.tableLayoutPanel3.Controls.Add(this.label29, 2, 3);
+            this.tableLayoutPanel3.Controls.Add(this.label27, 0, 4);
+            this.tableLayoutPanel3.Controls.Add(this.LabelPktUUCP, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.LabelRozmiar, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.LabelWynikPrac, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.label28, 0, 3);
+            this.tableLayoutPanel3.Controls.Add(this.label32, 0, 2);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(16, 85);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 7;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(498, 325);
+            this.tableLayoutPanel3.TabIndex = 15;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(3, 230);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(109, 16);
+            this.label31.TabIndex = 16;
+            this.label31.Text = "Koszt projektu:";
+            // 
+            // LabelWynikKoszt
+            // 
+            this.LabelWynikKoszt.AutoSize = true;
+            this.LabelWynikKoszt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.LabelWynikKoszt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikKoszt.Location = new System.Drawing.Point(168, 230);
+            this.LabelWynikKoszt.MinimumSize = new System.Drawing.Size(150, 0);
+            this.LabelWynikKoszt.Name = "LabelWynikKoszt";
+            this.LabelWynikKoszt.Size = new System.Drawing.Size(150, 25);
+            this.LabelWynikKoszt.TabIndex = 16;
+            this.LabelWynikKoszt.Text = "0";
+            this.LabelWynikKoszt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(333, 230);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(22, 16);
+            this.label34.TabIndex = 16;
+            this.label34.Text = "zł";
+            // 
             // OknoGlowne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1181,10 +1241,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWSredni)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWProsty)).EndInit();
             this.GroupBoxWyniki.ResumeLayout(false);
-            this.GroupBoxWyniki.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.StatusStrip.ResumeLayout(false);
             this.StatusStrip.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1279,6 +1340,10 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label LabelRozmiar;
         private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label LabelWynikKoszt;
+        private System.Windows.Forms.Label label31;
     }
 }
 
