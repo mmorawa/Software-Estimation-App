@@ -985,108 +985,123 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(333, 92);
+            this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label26.Location = new System.Drawing.Point(345, 92);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(47, 16);
+            this.label26.Size = new System.Drawing.Size(150, 46);
             this.label26.TabIndex = 14;
             this.label26.Text = "SLOC";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // LabelRozmiar
             // 
             this.LabelRozmiar.AutoSize = true;
             this.LabelRozmiar.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelRozmiar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LabelRozmiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.LabelRozmiar.Location = new System.Drawing.Point(168, 92);
             this.LabelRozmiar.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelRozmiar.Name = "LabelRozmiar";
-            this.LabelRozmiar.Size = new System.Drawing.Size(150, 25);
+            this.LabelRozmiar.Size = new System.Drawing.Size(171, 46);
             this.LabelRozmiar.TabIndex = 13;
             this.LabelRozmiar.Text = "0";
-            this.LabelRozmiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LabelRozmiar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label32
             // 
             this.label32.AutoSize = true;
+            this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label32.Location = new System.Drawing.Point(3, 92);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(69, 16);
+            this.label32.Size = new System.Drawing.Size(159, 46);
             this.label32.TabIndex = 12;
             this.label32.Text = "Rozmiar:";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(333, 184);
+            this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label30.Location = new System.Drawing.Point(345, 184);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(70, 16);
+            this.label30.Size = new System.Drawing.Size(150, 46);
             this.label30.TabIndex = 11;
             this.label30.Text = "miesięcy";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(333, 138);
+            this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label29.Location = new System.Drawing.Point(345, 138);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(114, 16);
+            this.label29.Size = new System.Drawing.Size(150, 46);
             this.label29.TabIndex = 10;
             this.label29.Text = "osobomiesięcy";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // LabelPktUUCP
             // 
             this.LabelPktUUCP.AutoSize = true;
             this.LabelPktUUCP.BackColor = System.Drawing.SystemColors.Control;
             this.LabelPktUUCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelPktUUCP.Location = new System.Drawing.Point(333, 0);
+            this.LabelPktUUCP.Location = new System.Drawing.Point(345, 0);
             this.LabelPktUUCP.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelPktUUCP.Name = "LabelPktUUCP";
             this.LabelPktUUCP.Size = new System.Drawing.Size(150, 25);
             this.LabelPktUUCP.TabIndex = 9;
             this.LabelPktUUCP.Text = "0";
-            this.LabelPktUUCP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LabelPktUUCP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelWynikHarm
             // 
             this.LabelWynikHarm.AutoSize = true;
-            this.LabelWynikHarm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.LabelWynikHarm.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikHarm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LabelWynikHarm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.LabelWynikHarm.Location = new System.Drawing.Point(168, 184);
             this.LabelWynikHarm.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelWynikHarm.Name = "LabelWynikHarm";
-            this.LabelWynikHarm.Size = new System.Drawing.Size(150, 25);
+            this.LabelWynikHarm.Size = new System.Drawing.Size(171, 46);
             this.LabelWynikHarm.TabIndex = 8;
             this.LabelWynikHarm.Text = "0";
-            this.LabelWynikHarm.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LabelWynikHarm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelWynikPrac
             // 
             this.LabelWynikPrac.AutoSize = true;
-            this.LabelWynikPrac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.LabelWynikPrac.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikPrac.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LabelWynikPrac.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.LabelWynikPrac.Location = new System.Drawing.Point(168, 138);
             this.LabelWynikPrac.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelWynikPrac.Name = "LabelWynikPrac";
-            this.LabelWynikPrac.Size = new System.Drawing.Size(150, 25);
+            this.LabelWynikPrac.Size = new System.Drawing.Size(171, 46);
             this.LabelWynikPrac.TabIndex = 7;
             this.LabelWynikPrac.Text = "0";
-            this.LabelWynikPrac.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LabelWynikPrac.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label28
             // 
             this.label28.AutoSize = true;
+            this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label28.Location = new System.Drawing.Point(3, 138);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(126, 16);
+            this.label28.Size = new System.Drawing.Size(159, 46);
             this.label28.TabIndex = 6;
             this.label28.Text = "Pracochłonność:";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label27
             // 
             this.label27.AutoSize = true;
+            this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label27.Location = new System.Drawing.Point(3, 184);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(110, 16);
+            this.label27.Size = new System.Drawing.Size(159, 46);
             this.label27.TabIndex = 5;
             this.label27.Text = "Harmonogram:";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label25
             // 
@@ -1094,7 +1109,7 @@
             this.tableLayoutPanel3.SetColumnSpan(this.label25, 2);
             this.label25.Location = new System.Drawing.Point(3, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(253, 32);
+            this.label25.Size = new System.Drawing.Size(336, 32);
             this.label25.TabIndex = 3;
             this.label25.Text = "Liczba nieskorygowanych punktów  przypadków użycia UUCP:";
             // 
@@ -1142,8 +1157,8 @@
             // 
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.74297F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.1245F));
             this.tableLayoutPanel3.Controls.Add(this.label34, 2, 5);
             this.tableLayoutPanel3.Controls.Add(this.LabelWynikKoszt, 1, 5);
             this.tableLayoutPanel3.Controls.Add(this.label31, 0, 5);
@@ -1174,33 +1189,38 @@
             // label31
             // 
             this.label31.AutoSize = true;
+            this.label31.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label31.Location = new System.Drawing.Point(3, 230);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(109, 16);
+            this.label31.Size = new System.Drawing.Size(159, 46);
             this.label31.TabIndex = 16;
             this.label31.Text = "Koszt projektu:";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelWynikKoszt
             // 
             this.LabelWynikKoszt.AutoSize = true;
-            this.LabelWynikKoszt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.LabelWynikKoszt.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikKoszt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LabelWynikKoszt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.LabelWynikKoszt.Location = new System.Drawing.Point(168, 230);
             this.LabelWynikKoszt.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelWynikKoszt.Name = "LabelWynikKoszt";
-            this.LabelWynikKoszt.Size = new System.Drawing.Size(150, 25);
+            this.LabelWynikKoszt.Size = new System.Drawing.Size(171, 46);
             this.LabelWynikKoszt.TabIndex = 16;
             this.LabelWynikKoszt.Text = "0";
-            this.LabelWynikKoszt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LabelWynikKoszt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(333, 230);
+            this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label34.Location = new System.Drawing.Point(345, 230);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(22, 16);
+            this.label34.Size = new System.Drawing.Size(150, 46);
             this.label34.TabIndex = 16;
             this.label34.Text = "zł";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // OknoGlowne
             // 

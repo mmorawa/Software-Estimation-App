@@ -431,6 +431,9 @@ namespace Aplikacja
             LabelWynikHarm.Text = Math.Round(Harmonogram, 1).ToString();
             LabelWynikKoszt.Text = Math.Round(Koszt, 2).ToString();
 
+
+            //Ograniczenia projektu
+            //TODO pod koniec zbiorczy komunikat
             if (Ograniczenia == true)
             {
 
@@ -440,11 +443,19 @@ namespace Aplikacja
 
                     MessageBox.Show("Przekroczono założoną pracochłonność projektu.");
                 }
+                else
+                {
+                    LabelWynikPrac.BackColor = Color.FromName("GreenYellow");
+                }
 
                 if (MaxHarm != 0 && MaxHarm < Harmonogram)
                 {
                     LabelWynikHarm.BackColor = Color.FromName("red");
                     MessageBox.Show("Przekroczono założony harmonogram projektu");
+                }
+                else
+                {
+                    LabelWynikHarm.BackColor = Color.FromName("GreenYellow");
                 }
 
                 if (MaxKoszt != 0 && MaxKoszt < Koszt)
@@ -452,7 +463,16 @@ namespace Aplikacja
                     LabelWynikKoszt.BackColor = Color.FromName("red");
                     MessageBox.Show("Przekroczono założony koszt projektu");
                 }
-
+                else
+                {
+                    LabelWynikKoszt.BackColor = Color.FromName("GreenYellow");
+                }
+            }
+            else
+            {
+                LabelWynikPrac.BackColor = Color.FromName("GreenYellow");
+                LabelWynikHarm.BackColor = Color.FromName("GreenYellow");
+                LabelWynikKoszt.BackColor = Color.FromName("GreenYellow");
             }
             
         }

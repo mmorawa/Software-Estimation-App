@@ -340,15 +340,15 @@
             this.TableLayoutOgraniczenia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
             this.TableLayoutOgraniczenia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 157F));
             this.TableLayoutOgraniczenia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.TableLayoutOgraniczenia.Controls.Add(this.NumericMaxKoszt, 1, 0);
-            this.TableLayoutOgraniczenia.Controls.Add(this.NumericMaxPrac, 1, 1);
-            this.TableLayoutOgraniczenia.Controls.Add(this.NumericMaxHarm, 1, 2);
-            this.TableLayoutOgraniczenia.Controls.Add(this.label14, 2, 2);
-            this.TableLayoutOgraniczenia.Controls.Add(this.label6, 0, 1);
-            this.TableLayoutOgraniczenia.Controls.Add(this.label5, 0, 0);
-            this.TableLayoutOgraniczenia.Controls.Add(this.label16, 2, 0);
-            this.TableLayoutOgraniczenia.Controls.Add(this.label10, 0, 2);
-            this.TableLayoutOgraniczenia.Controls.Add(this.label17, 2, 1);
+            this.TableLayoutOgraniczenia.Controls.Add(this.NumericMaxKoszt, 1, 2);
+            this.TableLayoutOgraniczenia.Controls.Add(this.label6, 0, 0);
+            this.TableLayoutOgraniczenia.Controls.Add(this.label16, 2, 2);
+            this.TableLayoutOgraniczenia.Controls.Add(this.NumericMaxPrac, 1, 0);
+            this.TableLayoutOgraniczenia.Controls.Add(this.label17, 2, 0);
+            this.TableLayoutOgraniczenia.Controls.Add(this.label5, 0, 2);
+            this.TableLayoutOgraniczenia.Controls.Add(this.label10, 0, 1);
+            this.TableLayoutOgraniczenia.Controls.Add(this.NumericMaxHarm, 1, 1);
+            this.TableLayoutOgraniczenia.Controls.Add(this.label14, 2, 1);
             this.TableLayoutOgraniczenia.Enabled = false;
             this.TableLayoutOgraniczenia.Location = new System.Drawing.Point(6, 69);
             this.TableLayoutOgraniczenia.Name = "TableLayoutOgraniczenia";
@@ -364,7 +364,7 @@
             // 
             this.NumericMaxKoszt.DecimalPlaces = 2;
             this.NumericMaxKoszt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericMaxKoszt.Location = new System.Drawing.Point(226, 13);
+            this.NumericMaxKoszt.Location = new System.Drawing.Point(226, 102);
             this.NumericMaxKoszt.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
             this.NumericMaxKoszt.Maximum = new decimal(new int[] {
             -1530494976,
@@ -381,7 +381,7 @@
             // NumericMaxPrac
             // 
             this.NumericMaxPrac.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericMaxPrac.Location = new System.Drawing.Point(226, 61);
+            this.NumericMaxPrac.Location = new System.Drawing.Point(226, 13);
             this.NumericMaxPrac.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
             this.NumericMaxPrac.Maximum = new decimal(new int[] {
             -1530494976,
@@ -398,7 +398,7 @@
             // NumericMaxHarm
             // 
             this.NumericMaxHarm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericMaxHarm.Location = new System.Drawing.Point(226, 102);
+            this.NumericMaxHarm.Location = new System.Drawing.Point(226, 61);
             this.NumericMaxHarm.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
             this.NumericMaxHarm.Maximum = new decimal(new int[] {
             -1530494976,
@@ -416,10 +416,10 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label14.Location = new System.Drawing.Point(386, 92);
+            this.label14.Location = new System.Drawing.Point(386, 51);
             this.label14.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(151, 39);
+            this.label14.Size = new System.Drawing.Size(151, 38);
             this.label14.TabIndex = 27;
             this.label14.Text = "miesięcy";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -428,9 +428,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(3, 48);
+            this.label6.Location = new System.Drawing.Point(3, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(217, 41);
+            this.label6.Size = new System.Drawing.Size(217, 48);
             this.label6.TabIndex = 17;
             this.label6.Text = "Maksymalna pracochłonność:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -439,9 +439,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(3, 0);
+            this.label5.Location = new System.Drawing.Point(3, 89);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(217, 48);
+            this.label5.Size = new System.Drawing.Size(217, 42);
             this.label5.TabIndex = 15;
             this.label5.Text = "Maksymalny koszt:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -450,9 +450,9 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.Location = new System.Drawing.Point(386, 0);
+            this.label16.Location = new System.Drawing.Point(386, 89);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(151, 48);
+            this.label16.Size = new System.Drawing.Size(151, 42);
             this.label16.TabIndex = 19;
             this.label16.Text = "zł";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -462,9 +462,9 @@
             this.label10.AutoSize = true;
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label10.Location = new System.Drawing.Point(3, 89);
+            this.label10.Location = new System.Drawing.Point(3, 48);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(217, 42);
+            this.label10.Size = new System.Drawing.Size(217, 41);
             this.label10.TabIndex = 21;
             this.label10.Text = "Maksymalny harmonogram:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -473,10 +473,10 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.Location = new System.Drawing.Point(386, 51);
+            this.label17.Location = new System.Drawing.Point(386, 3);
             this.label17.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(151, 38);
+            this.label17.Size = new System.Drawing.Size(151, 45);
             this.label17.TabIndex = 25;
             this.label17.Text = "osobomiesięcy";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
