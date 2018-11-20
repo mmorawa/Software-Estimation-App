@@ -71,17 +71,6 @@ namespace Aplikacja
         public static int[] TabUUCW = new int[3];
         double[] wagiUC = { 5, 10, 15 };
 
-        public static int[] TabIndTCF = new int[13];
-        public static int[] TempTabIndTCF = new int[13];
-
-        public static int[] TabIndEF = new int[8];
-        public static int[] TempTabIndEF = new int[8];
-
-        double[] wagiTCF = { 2, 1, 1, 1, 1, 0.5, 0.5, 2, 1, 1, 1, 1, 1 };
-        double iloczynWagTCF = 0;
-
-        double[] wagiEF = { 1.5, -1, 0.5, 0.5, 1, 1, -1, 2 };
-        double iloczynWagEF = 0;
 
         public static int[] TabIndSF = { 2, 2, 2, 2, 2 };
         public static int[] TempTabIndSF = new int[5];
@@ -294,45 +283,6 @@ namespace Aplikacja
 
         //-----------------------------------------------------------------------------------------------
 
-        private void ButtonCZT_Click(object sender, EventArgs e)
-        {
-            using (OknoCzynnZlozTechn OknoCzynZT = new OknoCzynnZlozTechn())
-            {
-                DialogResult dr = OknoCzynZT.ShowDialog();
-
-
-                if (dr == DialogResult.OK)
-                {
-                    for (int i = 0; i < 13; i++)
-                    {
-                        TabIndTCF[i] = TempTabIndTCF[i];
-                    }
-
-                    MessageBox.Show("Czynniki złożoności technicznej zostały zmienione.", "Sukces");
-
-                }
-            }
-        }
-
-        private void ButtonCzSr_Click(object sender, EventArgs e)
-        {
-            using (OknoCzynnSrodow OknoCzynSrod = new OknoCzynnSrodow())
-            {
-                DialogResult dr = OknoCzynSrod.ShowDialog();
-
-
-                if (dr == DialogResult.OK)
-                {
-                    for (int i = 0; i < 8; i++)
-                    {
-                        TabIndEF[i] = TempTabIndEF[i];
-                    }
-
-                    MessageBox.Show("Czynniki środowiskowe zostały zmienione.", "Sukces");
-
-                }
-            }
-        }
 
         private void ButtonCzSk_Click(object sender, EventArgs e)
         {
@@ -421,21 +371,7 @@ namespace Aplikacja
             //TODO walidacja danych wejściowych, zaokrąglanie
 
             //Obliczenia UCP
-            iloczynWagTCF = 0;
-            for (int i = 0; i <= 12; i++)
-            {
-                iloczynWagTCF += TabIndTCF[i] * wagiTCF[i];
-            }
 
-            TCF = TCFc1 + iloczynWagTCF * TCFc2;
-
-            iloczynWagEF = 0;
-            for (int i = 0; i <= 7; i++)
-            {
-                iloczynWagEF += TabIndEF[i] * wagiEF[i];
-            }
-
-            EF = EFc1 + (EFc2 * iloczynWagEF);
 
             UUCW = 0;
             for (int i = 0; i < 3; i++)
@@ -517,8 +453,7 @@ namespace Aplikacja
 
             TabIndSF = new int[] { 2, 2, 2, 2, 2 };
             TabIndEM = new int[] { 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2 };
-            TabIndTCF = new int[13];
-            TabIndEF = new int[8];
+
 
 
             LabelPktUCP.Text = "0";

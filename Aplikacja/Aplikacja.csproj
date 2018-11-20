@@ -51,18 +51,6 @@
     <Compile Include="OknoDaneProjektu.Designer.cs">
       <DependentUpon>OknoDaneProjektu.cs</DependentUpon>
     </Compile>
-    <Compile Include="OknoCzynnSrodow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="OknoCzynnSrodow.Designer.cs">
-      <DependentUpon>OknoCzynnSrodow.cs</DependentUpon>
-    </Compile>
-    <Compile Include="OknoCzynnZlozTechn.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="OknoCzynnZlozTechn.Designer.cs">
-      <DependentUpon>OknoCzynnZlozTechn.cs</DependentUpon>
-    </Compile>
     <Compile Include="OknoKalibracja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,12 +101,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OknoCzynnikiSkali.resx">
       <DependentUpon>OknoCzynnikiSkali.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OknoCzynnSrodow.resx">
-      <DependentUpon>OknoCzynnSrodow.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OknoCzynnZlozTechn.resx">
-      <DependentUpon>OknoCzynnZlozTechn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OknoGlowne.resx">
       <DependentUpon>OknoGlowne.cs</DependentUpon>

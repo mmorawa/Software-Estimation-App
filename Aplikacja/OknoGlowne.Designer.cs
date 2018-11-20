@@ -75,9 +75,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.ButtonCZT = new System.Windows.Forms.Button();
             this.ButtonOszacuj = new System.Windows.Forms.Button();
-            this.ButtonCzSr = new System.Windows.Forms.Button();
             this.ButtonMnPr = new System.Windows.Forms.Button();
             this.ButtonCzSk = new System.Windows.Forms.Button();
             this.ButtonNowyProjekt = new System.Windows.Forms.Button();
@@ -102,7 +100,6 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.GroupBoxModyfUCP = new System.Windows.Forms.GroupBox();
             this.GroupBoxWyniki = new System.Windows.Forms.GroupBox();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -129,7 +126,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWZlozony)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWSredni)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWProsty)).BeginInit();
-            this.GroupBoxModyfUCP.SuspendLayout();
             this.GroupBoxWyniki.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.StatusStrip.SuspendLayout();
@@ -628,16 +624,6 @@
             this.label12.Text = "8 i więcej ";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ButtonCZT
-            // 
-            this.ButtonCZT.Location = new System.Drawing.Point(33, 30);
-            this.ButtonCZT.Name = "ButtonCZT";
-            this.ButtonCZT.Size = new System.Drawing.Size(173, 44);
-            this.ButtonCZT.TabIndex = 2;
-            this.ButtonCZT.Text = "Czynniki złożoności technicznej";
-            this.ButtonCZT.UseVisualStyleBackColor = true;
-            this.ButtonCZT.Click += new System.EventHandler(this.ButtonCZT_Click);
-            // 
             // ButtonOszacuj
             // 
             this.ButtonOszacuj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -648,16 +634,6 @@
             this.ButtonOszacuj.Text = "Oszacuj";
             this.ButtonOszacuj.UseVisualStyleBackColor = true;
             this.ButtonOszacuj.Click += new System.EventHandler(this.ButtonOszacuj_Click);
-            // 
-            // ButtonCzSr
-            // 
-            this.ButtonCzSr.Location = new System.Drawing.Point(262, 30);
-            this.ButtonCzSr.Name = "ButtonCzSr";
-            this.ButtonCzSr.Size = new System.Drawing.Size(173, 44);
-            this.ButtonCzSr.TabIndex = 3;
-            this.ButtonCzSr.Text = "Czynniki środowiskowe";
-            this.ButtonCzSr.UseVisualStyleBackColor = true;
-            this.ButtonCzSr.Click += new System.EventHandler(this.ButtonCzSr_Click);
             // 
             // ButtonMnPr
             // 
@@ -981,18 +957,6 @@
             this.label24.Text = "poprzez GUI";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // GroupBoxModyfUCP
-            // 
-            this.GroupBoxModyfUCP.Controls.Add(this.ButtonCzSr);
-            this.GroupBoxModyfUCP.Controls.Add(this.ButtonCZT);
-            this.GroupBoxModyfUCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.GroupBoxModyfUCP.Location = new System.Drawing.Point(12, 577);
-            this.GroupBoxModyfUCP.Name = "GroupBoxModyfUCP";
-            this.GroupBoxModyfUCP.Size = new System.Drawing.Size(503, 87);
-            this.GroupBoxModyfUCP.TabIndex = 4;
-            this.GroupBoxModyfUCP.TabStop = false;
-            this.GroupBoxModyfUCP.Text = "Czynniki modyfikujące Use Case Points";
-            // 
             // GroupBoxWyniki
             // 
             this.GroupBoxWyniki.Controls.Add(this.label30);
@@ -1160,7 +1124,6 @@
             this.Controls.Add(this.StatusStrip);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.GroupBoxWyniki);
-            this.Controls.Add(this.GroupBoxModyfUCP);
             this.Controls.Add(this.GroupBoxUAW);
             this.Controls.Add(this.GroupBoxUUCW);
             this.Controls.Add(this.GroupBoxDaneProjektu);
@@ -1185,7 +1148,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWZlozony)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWSredni)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWProsty)).EndInit();
-            this.GroupBoxModyfUCP.ResumeLayout(false);
             this.GroupBoxWyniki.ResumeLayout(false);
             this.GroupBoxWyniki.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -1253,9 +1215,6 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.GroupBox GroupBoxModyfUCP;
-        private System.Windows.Forms.Button ButtonCzSr;
-        private System.Windows.Forms.Button ButtonCZT;
         private System.Windows.Forms.GroupBox GroupBoxWyniki;
         private System.Windows.Forms.Button ButtonOszacuj;
         private System.Windows.Forms.GroupBox groupBox1;
