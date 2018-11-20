@@ -140,13 +140,16 @@ namespace Aplikacja
         double UAW = 0;
         double UUCP = 0;
         double Rozmiar = 0;
+        double RozmiarKSLOC = 0;
         double E = 1;
+        double F = 0;
         double SumaSF = 0;
         double IloczynEM = 1;
 
         //wyniki końcowe
-
+        
         double Pracochlonnosc = 0;
+        double Harmonogram = 0;
 
         /*******************************************************************************
         *  Metody klasy Form1.
@@ -383,9 +386,11 @@ namespace Aplikacja
 
             UUCP = UAW + UUCW;
 
-            Rozmiar = UUCP * Properties.Settings.Default.UCPnaFP * TabPktFunkSLOC[JezykProgramowania];
-            
-            //Obliczenia COCOMOII
+            Rozmiar = (UUCP * Properties.Settings.Default.UCPnaFP * TabPktFunkSLOC[JezykProgramowania]);
+
+            RozmiarKSLOC = Rozmiar / 1000;
+
+            //Obliczenia COCOMO II
 
             SumaSF = 0;
             for (int i = 0; i < 5; i++)
@@ -401,13 +406,17 @@ namespace Aplikacja
 
             E = Properties.Settings.Default.B + 0.01 * SumaSF;
 
-            Pracochlonnosc = Math.Round(Properties.Settings.Default.A * Math.Pow(Rozmiar, E) * IloczynEM, 2);
+            Pracochlonnosc = Properties.Settings.Default.A * Math.Pow(RozmiarKSLOC, E) * IloczynEM;
+
+            F = Properties.Settings.Default.D + 0.2 * (E - Properties.Settings.Default.B);
+
+            Harmonogram = Properties.Settings.Default.C * Math.Pow(Pracochlonnosc, F);
 
             //Wyświetlenie wyników
             LabelPktUUCP.Text = UUCP.ToString();
-            LabelRozmiar.Text = Rozmiar.ToString();
-            LabelWynikPrac.Text = Pracochlonnosc.ToString();
-            //LabelWynikHarm.Text = (Pracochlonnosc * 152).ToString();
+            LabelRozmiar.Text = Math.Round(Rozmiar).ToString();
+            LabelWynikPrac.Text = Math.Round(Pracochlonnosc, 1).ToString();
+            LabelWynikHarm.Text = Math.Round(Harmonogram, 1).ToString();
 
 
             
@@ -673,9 +682,9 @@ namespace Aplikacja
 
         private void ButtonKreator_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(TabPktFunkSLOC[JezykProgramowania].ToString());
-            MessageBox.Show(UAW.ToString());
-            MessageBox.Show(UUCW.ToString());
+            //MessageBox.Show(TabPktFunkSLOC[JezykProgramowania].ToString());
+            MessageBox.Show(F.ToString());
+            MessageBox.Show(E.ToString());
             //MessageBox.Show(Rozmiar.ToString());
 
             /*
