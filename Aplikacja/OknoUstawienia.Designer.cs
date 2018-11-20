@@ -31,11 +31,7 @@
             this.GroupBoxSzczDomyslneUstawienia = new System.Windows.Forms.GroupBox();
             this.GroupBoxDomZalozeniaProjektu = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.NumericUCPgodziny = new System.Windows.Forms.NumericUpDown();
-            this.NumericUCPlinieKodu = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.LabelDataRozp = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.NumericStawkaGodz = new System.Windows.Forms.NumericUpDown();
@@ -45,7 +41,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.GroupBoxDomDaneProjektu = new System.Windows.Forms.GroupBox();
             this.LabelNazwaProjektu = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -61,11 +56,10 @@
             this.label11 = new System.Windows.Forms.Label();
             this.ButtonAnuluj = new System.Windows.Forms.Button();
             this.ButtonOk = new System.Windows.Forms.Button();
+            this.ComboBoxJezykProgram = new System.Windows.Forms.ComboBox();
             this.GroupBoxSzczDomyslneUstawienia.SuspendLayout();
             this.GroupBoxDomZalozeniaProjektu.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericUCPgodziny)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericUCPlinieKodu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericStawkaGodz)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericOsoboMGodz)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericDzRobGodz)).BeginInit();
@@ -98,109 +92,48 @@
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 185F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 176F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
-            this.tableLayoutPanel2.Controls.Add(this.NumericUCPgodziny, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.NumericUCPlinieKodu, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label3, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label8, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label4, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.LabelDataRozp, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.NumericStawkaGodz, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.NumericOsoboMGodz, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.NumericDzRobGodz, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.label13, 2, 4);
-            this.tableLayoutPanel2.Controls.Add(this.label2, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.label7, 2, 2);
-            this.tableLayoutPanel2.Controls.Add(this.label12, 2, 3);
-            this.tableLayoutPanel2.Controls.Add(this.label9, 2, 1);
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 173F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118F));
+            this.tableLayoutPanel2.Controls.Add(this.label8, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.LabelDataRozp, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.NumericStawkaGodz, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.NumericOsoboMGodz, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.NumericDzRobGodz, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.label13, 2, 3);
+            this.tableLayoutPanel2.Controls.Add(this.label2, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.label7, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label12, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.ComboBoxJezykProgram, 1, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(9, 31);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 5;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowCount = 4;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(467, 261);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(462, 193);
             this.tableLayoutPanel2.TabIndex = 28;
-            // 
-            // NumericUCPgodziny
-            // 
-            this.NumericUCPgodziny.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericUCPgodziny.Location = new System.Drawing.Point(188, 13);
-            this.NumericUCPgodziny.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
-            this.NumericUCPgodziny.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
-            0,
-            0});
-            this.NumericUCPgodziny.Name = "NumericUCPgodziny";
-            this.NumericUCPgodziny.Size = new System.Drawing.Size(170, 22);
-            this.NumericUCPgodziny.TabIndex = 32;
-            this.NumericUCPgodziny.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.NumericUCPgodziny.ThousandsSeparator = true;
-            this.NumericUCPgodziny.ValueChanged += new System.EventHandler(this.NumericUCPgodziny_ValueChanged);
-            // 
-            // NumericUCPlinieKodu
-            // 
-            this.NumericUCPlinieKodu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericUCPlinieKodu.Location = new System.Drawing.Point(188, 65);
-            this.NumericUCPlinieKodu.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
-            this.NumericUCPlinieKodu.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
-            0,
-            0});
-            this.NumericUCPlinieKodu.Name = "NumericUCPlinieKodu";
-            this.NumericUCPlinieKodu.Size = new System.Drawing.Size(170, 22);
-            this.NumericUCPlinieKodu.TabIndex = 29;
-            this.NumericUCPlinieKodu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.NumericUCPlinieKodu.ThousandsSeparator = true;
-            this.NumericUCPlinieKodu.ValueChanged += new System.EventHandler(this.NumericUCPlinieKodu_ValueChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(364, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 52);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "godzin";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Location = new System.Drawing.Point(3, 52);
+            this.label8.Location = new System.Drawing.Point(3, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(179, 52);
+            this.label8.Size = new System.Drawing.Size(179, 48);
             this.label8.TabIndex = 30;
-            this.label8.Text = "Liczba linii kodu przypadająca na 1 punkt przypadków użycia:";
+            this.label8.Text = "Główny język programowania użyty w projekcie";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(179, 52);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "Liczba godzin przypadająca na 1 punkt przypadków użycia:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // LabelDataRozp
             // 
             this.LabelDataRozp.AutoSize = true;
             this.LabelDataRozp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelDataRozp.Location = new System.Drawing.Point(3, 104);
+            this.LabelDataRozp.Location = new System.Drawing.Point(3, 48);
             this.LabelDataRozp.Name = "LabelDataRozp";
-            this.LabelDataRozp.Size = new System.Drawing.Size(179, 52);
+            this.LabelDataRozp.Size = new System.Drawing.Size(179, 48);
             this.LabelDataRozp.TabIndex = 4;
             this.LabelDataRozp.Text = "Stawka godzinowa:";
             this.LabelDataRozp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -209,9 +142,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(3, 156);
+            this.label1.Location = new System.Drawing.Point(3, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 52);
+            this.label1.Size = new System.Drawing.Size(179, 48);
             this.label1.TabIndex = 8;
             this.label1.Text = "1 osobomiesiąc stanowi:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -220,7 +153,7 @@
             // 
             this.NumericStawkaGodz.DecimalPlaces = 2;
             this.NumericStawkaGodz.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericStawkaGodz.Location = new System.Drawing.Point(188, 117);
+            this.NumericStawkaGodz.Location = new System.Drawing.Point(188, 61);
             this.NumericStawkaGodz.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
             this.NumericStawkaGodz.Maximum = new decimal(new int[] {
             -1530494976,
@@ -228,7 +161,7 @@
             0,
             0});
             this.NumericStawkaGodz.Name = "NumericStawkaGodz";
-            this.NumericStawkaGodz.Size = new System.Drawing.Size(170, 22);
+            this.NumericStawkaGodz.Size = new System.Drawing.Size(167, 22);
             this.NumericStawkaGodz.TabIndex = 16;
             this.NumericStawkaGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericStawkaGodz.ThousandsSeparator = true;
@@ -237,7 +170,7 @@
             // NumericOsoboMGodz
             // 
             this.NumericOsoboMGodz.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericOsoboMGodz.Location = new System.Drawing.Point(188, 169);
+            this.NumericOsoboMGodz.Location = new System.Drawing.Point(188, 109);
             this.NumericOsoboMGodz.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
             this.NumericOsoboMGodz.Maximum = new decimal(new int[] {
             -1530494976,
@@ -245,7 +178,7 @@
             0,
             0});
             this.NumericOsoboMGodz.Name = "NumericOsoboMGodz";
-            this.NumericOsoboMGodz.Size = new System.Drawing.Size(170, 22);
+            this.NumericOsoboMGodz.Size = new System.Drawing.Size(167, 22);
             this.NumericOsoboMGodz.TabIndex = 24;
             this.NumericOsoboMGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericOsoboMGodz.ThousandsSeparator = true;
@@ -253,7 +186,7 @@
             // 
             // NumericDzRobGodz
             // 
-            this.NumericDzRobGodz.Location = new System.Drawing.Point(188, 221);
+            this.NumericDzRobGodz.Location = new System.Drawing.Point(188, 157);
             this.NumericDzRobGodz.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
             this.NumericDzRobGodz.Maximum = new decimal(new int[] {
             -1530494976,
@@ -261,7 +194,7 @@
             0,
             0});
             this.NumericDzRobGodz.Name = "NumericDzRobGodz";
-            this.NumericDzRobGodz.Size = new System.Drawing.Size(170, 22);
+            this.NumericDzRobGodz.Size = new System.Drawing.Size(167, 22);
             this.NumericDzRobGodz.TabIndex = 26;
             this.NumericDzRobGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericDzRobGodz.ThousandsSeparator = true;
@@ -271,10 +204,10 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Location = new System.Drawing.Point(364, 211);
+            this.label13.Location = new System.Drawing.Point(361, 147);
             this.label13.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(109, 50);
+            this.label13.Size = new System.Drawing.Size(112, 46);
             this.label13.TabIndex = 27;
             this.label13.Text = "godzin";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -283,9 +216,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(3, 208);
+            this.label2.Location = new System.Drawing.Point(3, 144);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(179, 53);
+            this.label2.Size = new System.Drawing.Size(179, 49);
             this.label2.TabIndex = 9;
             this.label2.Text = "Dzień roboczy wynosi:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -294,9 +227,9 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Location = new System.Drawing.Point(364, 104);
+            this.label7.Location = new System.Drawing.Point(361, 48);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(109, 52);
+            this.label7.Size = new System.Drawing.Size(112, 48);
             this.label7.TabIndex = 19;
             this.label7.Text = "zł";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -305,24 +238,13 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Location = new System.Drawing.Point(364, 159);
+            this.label12.Location = new System.Drawing.Point(361, 99);
             this.label12.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(109, 49);
+            this.label12.Size = new System.Drawing.Size(112, 45);
             this.label12.TabIndex = 25;
             this.label12.Text = "osobogodzin";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Location = new System.Drawing.Point(364, 52);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(109, 52);
-            this.label9.TabIndex = 31;
-            this.label9.Text = "linii kodu";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // GroupBoxDomDaneProjektu
             // 
@@ -470,6 +392,57 @@
             this.ButtonOk.Text = "OK";
             this.ButtonOk.UseVisualStyleBackColor = true;
             // 
+            // ComboBoxJezykProgram
+            // 
+            this.tableLayoutPanel2.SetColumnSpan(this.ComboBoxJezykProgram, 2);
+            this.ComboBoxJezykProgram.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxJezykProgram.FormattingEnabled = true;
+            this.ComboBoxJezykProgram.Items.AddRange(new object[] {
+            "ABAP (SAP) ",
+            "ASP",
+            "Assembler",
+            "Brio",
+            "C",
+            "C++",
+            "C#",
+            "COBOL",
+            "Cognos Impromptu Scripts",
+            "Cross System Products (CSP)",
+            "Cool:Gen/IEF",
+            "Datastage",
+            "Excel",
+            "Focus",
+            "FoxPro",
+            "HTML",
+            "J2EE",
+            "Java",
+            "JavaScript",
+            "JCL",
+            "LINC II",
+            "Lotus Notes",
+            "Natural",
+            ".NET",
+            "Oracle",
+            "PACBASE",
+            "Perl",
+            "PL/I",
+            "PL/SQL",
+            "Powerbuilder",
+            "REXX",
+            "Sabretalk",
+            "SAS",
+            "Siebel",
+            "SLOGAN",
+            "SQL",
+            "VB.NET",
+            "Visual Basic"});
+            this.ComboBoxJezykProgram.Location = new System.Drawing.Point(188, 13);
+            this.ComboBoxJezykProgram.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
+            this.ComboBoxJezykProgram.Name = "ComboBoxJezykProgram";
+            this.ComboBoxJezykProgram.Size = new System.Drawing.Size(271, 24);
+            this.ComboBoxJezykProgram.TabIndex = 31;
+            this.ComboBoxJezykProgram.SelectedIndexChanged += new System.EventHandler(this.ComboBoxJezykProgram_SelectedIndexChanged);
+            // 
             // OknoUstawienia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -485,8 +458,6 @@
             this.GroupBoxDomZalozeniaProjektu.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericUCPgodziny)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericUCPlinieKodu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericStawkaGodz)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericOsoboMGodz)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericDzRobGodz)).EndInit();
@@ -500,11 +471,7 @@
 
         private System.Windows.Forms.GroupBox GroupBoxSzczDomyslneUstawienia;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.NumericUpDown NumericUCPgodziny;
-        private System.Windows.Forms.NumericUpDown NumericUCPlinieKodu;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label LabelDataRozp;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown NumericStawkaGodz;
@@ -514,7 +481,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button ButtonAnuluj;
         private System.Windows.Forms.Button ButtonOk;
         private System.Windows.Forms.Label label5;
@@ -531,5 +497,6 @@
         private System.Windows.Forms.TextBox TextBoxKierownikProjektu;
         private System.Windows.Forms.GroupBox GroupBoxDomZalozeniaProjektu;
         private System.Windows.Forms.GroupBox GroupBoxDomDaneProjektu;
+        private System.Windows.Forms.ComboBox ComboBoxJezykProgram;
     }
 }

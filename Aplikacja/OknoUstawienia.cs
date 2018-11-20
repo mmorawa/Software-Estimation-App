@@ -14,8 +14,7 @@ namespace Aplikacja
             TextBoxAdres.Text = Properties.Settings.Default.Adres;
             TextBoxTelefon.Text = Properties.Settings.Default.Telefon;
             TextBoxEmail.Text = Properties.Settings.Default.Email;
-            NumericUCPgodziny.Value = (decimal)Properties.Settings.Default.UCPgodziny;
-            NumericUCPlinieKodu.Value = (decimal)Properties.Settings.Default.UCPlinieKodu;
+            ComboBoxJezykProgram.SelectedIndex = Properties.Settings.Default.JezykProgramowania;
             NumericStawkaGodz.Value = (decimal)Properties.Settings.Default.StawkaGodz;
             NumericOsoboMGodz.Value = Properties.Settings.Default.OsoboMGodz;
             NumericDzRobGodz.Value = Properties.Settings.Default.DzRobGodz;
@@ -52,14 +51,9 @@ namespace Aplikacja
             OknoGlowne.TempEmail = TextBoxEmail.Text;
         }
 
-        private void NumericUCPgodziny_ValueChanged(object sender, EventArgs e)
+        private void ComboBoxJezykProgram_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempUCPgodziny = (double)NumericUCPgodziny.Value;
-        }
-
-        private void NumericUCPlinieKodu_ValueChanged(object sender, EventArgs e)
-        {
-            OknoGlowne.TempUCPlinieKodu = (double)NumericUCPlinieKodu.Value;
+            OknoGlowne.TempJezykProgramowania = ComboBoxJezykProgram.SelectedIndex;
         }
 
         private void NumericStawkaGodz_ValueChanged(object sender, EventArgs e)
@@ -76,5 +70,6 @@ namespace Aplikacja
         {
             OknoGlowne.TempDzRobGodz = (long)NumericDzRobGodz.Value;
         }
+
     }
 }

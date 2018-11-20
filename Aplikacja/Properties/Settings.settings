@@ -26,20 +26,17 @@
     <Setting Name="Email" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="UCPgodziny" Type="System.Double" Scope="User">
-      <Value Profile="(Default)">25</Value>
-    </Setting>
-    <Setting Name="UCPlinieKodu" Type="System.Double" Scope="User">
-      <Value Profile="(Default)">45</Value>
-    </Setting>
     <Setting Name="StawkaGodz" Type="System.Double" Scope="User">
-      <Value Profile="(Default)">0</Value>
+      <Value Profile="(Default)">100</Value>
     </Setting>
     <Setting Name="OsoboMGodz" Type="System.Int64" Scope="User">
       <Value Profile="(Default)">152</Value>
     </Setting>
     <Setting Name="DzRobGodz" Type="System.Int64" Scope="User">
       <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="JezykProgramowania" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
     </Setting>
   </Settings>
 </SettingsFile>

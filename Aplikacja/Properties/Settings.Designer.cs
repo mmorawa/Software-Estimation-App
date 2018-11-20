@@ -121,31 +121,7 @@ namespace Aplikacja.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("25")]
-        public double UCPgodziny {
-            get {
-                return ((double)(this["UCPgodziny"]));
-            }
-            set {
-                this["UCPgodziny"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("45")]
-        public double UCPlinieKodu {
-            get {
-                return ((double)(this["UCPlinieKodu"]));
-            }
-            set {
-                this["UCPlinieKodu"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
         public double StawkaGodz {
             get {
                 return ((double)(this["StawkaGodz"]));
@@ -176,6 +152,18 @@ namespace Aplikacja.Properties {
             }
             set {
                 this["DzRobGodz"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public int JezykProgramowania {
+            get {
+                return ((int)(this["JezykProgramowania"]));
+            }
+            set {
+                this["JezykProgramowania"] = value;
             }
         }
     }

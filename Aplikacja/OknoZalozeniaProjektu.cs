@@ -15,8 +15,7 @@ namespace Aplikacja
         {
             InitializeComponent();
 
-            NumericUCPgodziny.Value = (decimal)OknoGlowne.UCPgodziny;
-            NumericUCPlinieKodu.Value = (decimal)OknoGlowne.UCPlinieKodu;
+            ComboBoxJezykProgram.SelectedIndex = OknoGlowne.JezykProgramowania;
             NumericStawkaGodz.Value = (decimal)OknoGlowne.StawkaGodz;
             NumericOsoboMGodz.Value = OknoGlowne.OsoboMGodz;
             NumericDzRobGodz.Value = OknoGlowne.DzRobGodz;
@@ -48,17 +47,10 @@ namespace Aplikacja
 
 
         //TODO domyślnie decimal????
-        
 
-
-        private void NumericUCPgodziny_ValueChanged(object sender, EventArgs e)
+        private void ComboBoxJezykProgram_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempUCPgodziny = (double)NumericUCPgodziny.Value;
-        }
-
-        private void NumericUCPlinieKodu_ValueChanged(object sender, EventArgs e)
-        {
-            OknoGlowne.TempUCPlinieKodu = (double)NumericUCPlinieKodu.Value;
+            OknoGlowne.TempJezykProgramowania = ComboBoxJezykProgram.SelectedIndex;
         }
 
         private void NumericStawkaGodz_ValueChanged(object sender, EventArgs e)

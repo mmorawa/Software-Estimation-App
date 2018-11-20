@@ -109,16 +109,11 @@ namespace Aplikacja
         };
 
         //współczynniki
-        public static double EFc1 = 1.4;
-        public static double EFc2 = -0.03;
-        public static double TCFc1 = 0.6;
-        public static double TCFc2 = 0.01;
         public static double TempA;
         public static double TempB;
 
         //przeliczniki - tu domyślne
-        public static double UCPgodziny = Properties.Settings.Default.UCPgodziny;
-        public static double UCPlinieKodu = Properties.Settings.Default.UCPlinieKodu;
+        public static int JezykProgramowania = Properties.Settings.Default.JezykProgramowania;
         public static double StawkaGodz = Properties.Settings.Default.StawkaGodz;
         public static long OsoboMGodz = Properties.Settings.Default.OsoboMGodz;
         public static long DzRobGodz = Properties.Settings.Default.DzRobGodz;
@@ -128,8 +123,7 @@ namespace Aplikacja
         public static long MaxHarm = 0;
 
         //wartości tymczasowe
-        public static double TempUCPgodziny;
-        public static double TempUCPlinieKodu;
+        public static int TempJezykProgramowania;
         public static double TempStawkaGodz;
         public static long TempOsoboMGodz;
         public static long TempDzRobGodz;
@@ -386,10 +380,10 @@ namespace Aplikacja
             }
 
             UCP = Math.Round(TCF * EF * (UAW + UUCW), 2);
-            PracUCP = Math.Round(UCP * UCPgodziny, 2);
+            //PracUCP = Math.Round(UCP * UCPgodziny, 2);
 
             //Obliczenia COCOMOII
-            Rozmiar = UCP * UCPlinieKodu;
+            //Rozmiar = UCP * UCPlinieKodu;
 
             SumaSF = 0;
             for (int i = 0; i < 5; i++)
@@ -554,8 +548,7 @@ namespace Aplikacja
                     Properties.Settings.Default.Adres = TempAdres;
                     Properties.Settings.Default.Telefon = TempTelefon;
                     Properties.Settings.Default.Email = TempEmail;
-                    Properties.Settings.Default.UCPgodziny = TempUCPgodziny;
-                    Properties.Settings.Default.UCPlinieKodu = TempUCPlinieKodu;
+                    Properties.Settings.Default.JezykProgramowania = TempJezykProgramowania;
                     Properties.Settings.Default.StawkaGodz = TempStawkaGodz;
                     Properties.Settings.Default.OsoboMGodz = TempOsoboMGodz;
                     Properties.Settings.Default.DzRobGodz = TempDzRobGodz;
@@ -637,9 +630,7 @@ namespace Aplikacja
 
                     Ograniczenia = TempOgraniczenia;
 
-
-                    UCPgodziny = TempUCPgodziny;
-                    UCPlinieKodu = TempUCPlinieKodu;
+                    JezykProgramowania = TempJezykProgramowania;
                     StawkaGodz = TempStawkaGodz;
                     OsoboMGodz = TempOsoboMGodz;
                     DzRobGodz = TempDzRobGodz;

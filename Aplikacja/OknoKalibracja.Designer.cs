@@ -31,11 +31,12 @@
             this.ButtonAnuluj = new System.Windows.Forms.Button();
             this.ButtonOk = new System.Windows.Forms.Button();
             this.GroupBoxKalibracja = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.TextBoxA = new System.Windows.Forms.TextBox();
-            this.TextBoxB = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.TextBoxB = new System.Windows.Forms.TextBox();
+            this.TextBoxA = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.GroupBoxKalibracja.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,6 +64,7 @@
             // 
             // GroupBoxKalibracja
             // 
+            this.GroupBoxKalibracja.Controls.Add(this.label1);
             this.GroupBoxKalibracja.Controls.Add(this.label10);
             this.GroupBoxKalibracja.Controls.Add(this.TextBoxB);
             this.GroupBoxKalibracja.Controls.Add(this.TextBoxA);
@@ -76,51 +78,61 @@
             this.GroupBoxKalibracja.TabStop = false;
             this.GroupBoxKalibracja.Text = "Kalibracja";
             // 
-            // label5
+            // label10
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 84);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(142, 32);
-            this.label5.TabIndex = 31;
-            this.label5.Text = "Pracochłonność = \r\n(model COCOMO II)";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(449, 241);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(121, 32);
+            this.label10.TabIndex = 36;
+            this.label10.Text = "Suma czynników\r\n skali x 0,01";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TextBoxB
+            // 
+            this.TextBoxB.Location = new System.Drawing.Point(323, 246);
+            this.TextBoxB.Name = "TextBoxB";
+            this.TextBoxB.Size = new System.Drawing.Size(100, 22);
+            this.TextBoxB.TabIndex = 35;
+            this.TextBoxB.TextChanged += new System.EventHandler(this.TextBoxB_TextChanged);
+            // 
+            // TextBoxA
+            // 
+            this.TextBoxA.Location = new System.Drawing.Point(145, 265);
+            this.TextBoxA.Name = "TextBoxA";
+            this.TextBoxA.Size = new System.Drawing.Size(100, 22);
+            this.TextBoxA.TabIndex = 34;
+            this.TextBoxA.TextChanged += new System.EventHandler(this.TextBoxA_TextChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(251, 87);
+            this.label6.Location = new System.Drawing.Point(251, 268);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 16);
             this.label6.TabIndex = 32;
             this.label6.Text = "x Rozmiar";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // TextBoxA
+            // label5
             // 
-            this.TextBoxA.Location = new System.Drawing.Point(145, 81);
-            this.TextBoxA.Name = "TextBoxA";
-            this.TextBoxA.Size = new System.Drawing.Size(100, 22);
-            this.TextBoxA.TabIndex = 34;
-            this.TextBoxA.TextChanged += new System.EventHandler(this.TextBoxA_TextChanged);
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(5, 268);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(134, 16);
+            this.label5.TabIndex = 31;
+            this.label5.Text = "Pracochłonność =";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // TextBoxB
+            // label1
             // 
-            this.TextBoxB.Location = new System.Drawing.Point(323, 62);
-            this.TextBoxB.Name = "TextBoxB";
-            this.TextBoxB.Size = new System.Drawing.Size(100, 22);
-            this.TextBoxB.TabIndex = 35;
-            this.TextBoxB.TextChanged += new System.EventHandler(this.TextBoxB_TextChanged);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(429, 57);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(133, 32);
-            this.label10.TabIndex = 36;
-            this.label10.Text = "+ Suma czynników\r\n skali x 0,01";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(427, 249);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(16, 16);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "+";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // OknoKalibracja
             // 
@@ -149,5 +161,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox TextBoxB;
         private System.Windows.Forms.TextBox TextBoxA;
+        private System.Windows.Forms.Label label1;
     }
 }
