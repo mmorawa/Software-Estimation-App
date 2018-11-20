@@ -41,6 +41,7 @@ namespace Aplikacja
         //TODO encapsulate?? domyślnie zera?
 
         string SciezkaDoPliku;
+
         public static bool Ograniczenia = false;
         public static bool TempOgraniczenia = false;
         public static bool Domyslne = false;
@@ -51,20 +52,28 @@ namespace Aplikacja
 
         public static string KierownikProjektu;
         public static string TempKierownikProjektu;
+
         public static string Szacujacy;
         public static string TempSzacujacy;
+
         public static string NazwaFirmy;
         public static string TempNazwaFirmy;
+
         public static string Adres;
         public static string TempAdres;
+
         public static string Telefon;
         public static string TempTelefon;
+
         public static string Email;
         public static string TempEmail;
+
         public static string OpisProjektu;
         public static string TempOpisProjektu;
 
-        int[] TabPktFunkSLOC = { 18, 54, 98, 14, 99, 53, 59, 55, 42, 18, 24, 65, 191, 45, 35, 40, 49, 53, 53, 48, 30, 21, 34, 60, 40, 32, 15, 80, 35, 28, 80, 66, 37, 60, 75, 21, 60, 44 };
+        int[] TabPktFunkSLOC = { 18, 54, 98, 14, 99, 53, 59, 55, 42, 18, 24, 65,
+            191, 45, 35, 40, 49, 53, 53, 48, 30, 21, 34, 60, 40, 32, 15, 80, 35,
+            28, 80, 66, 37, 60, 75, 21, 60, 44 };
 
         public static long[] TabUAW = new long[3];
         double[] wagiAktorow = { 1, 2, 3 };
@@ -150,6 +159,7 @@ namespace Aplikacja
         
         double Pracochlonnosc = 0;
         double Harmonogram = 0;
+        double Koszt = 0;
 
         /*******************************************************************************
         *  Metody klasy Form1.
@@ -412,13 +422,38 @@ namespace Aplikacja
 
             Harmonogram = Properties.Settings.Default.C * Math.Pow(Pracochlonnosc, F);
 
+            Koszt = Pracochlonnosc * OsoboMGodz * StawkaGodz;
+
             //Wyświetlenie wyników
             LabelPktUUCP.Text = UUCP.ToString();
             LabelRozmiar.Text = Math.Round(Rozmiar).ToString();
             LabelWynikPrac.Text = Math.Round(Pracochlonnosc, 1).ToString();
             LabelWynikHarm.Text = Math.Round(Harmonogram, 1).ToString();
+            LabelWynikKoszt.Text = Math.Round(Koszt, 2).ToString();
 
+            if (Ograniczenia == true)
+            {
 
+                if (MaxPrac != 0 && MaxPrac < Pracochlonnosc)
+                {
+                    LabelWynikPrac.BackColor = Color.FromName("red");
+
+                    MessageBox.Show("Przekroczono założoną pracochłonność projektu.");
+                }
+
+                if (MaxHarm != 0 && MaxHarm < Harmonogram)
+                {
+                    LabelWynikHarm.BackColor = Color.FromName("red");
+                    MessageBox.Show("Przekroczono założony harmonogram projektu");
+                }
+
+                if (MaxKoszt != 0 && MaxKoszt < Koszt)
+                {
+                    LabelWynikKoszt.BackColor = Color.FromName("red");
+                    MessageBox.Show("Przekroczono założony koszt projektu");
+                }
+
+            }
             
         }
 
