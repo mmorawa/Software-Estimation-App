@@ -66,9 +66,9 @@ namespace Aplikacja
 
 
 
-        public static int[] TabUAW = new int[3];
+        public static Int64[] TabUAW = new Int64[3];
         double[] wagiAktorow = { 1, 2, 3 };
-        public static int[] TabUUCW = new int[3];
+        public static Int64[] TabUUCW = new Int64[3];
         double[] wagiUC = { 5, 10, 15 };
 
 
@@ -120,23 +120,23 @@ namespace Aplikacja
         public static double UCPgodziny = Properties.Settings.Default.UCPgodziny;
         public static double UCPlinieKodu = Properties.Settings.Default.UCPlinieKodu;
         public static double StawkaGodz = Properties.Settings.Default.StawkaGodz;
-        public static int OsoboMGodz = Properties.Settings.Default.OsoboMGodz;
-        public static int DzRobGodz = Properties.Settings.Default.DzRobGodz;
+        public static long OsoboMGodz = Properties.Settings.Default.OsoboMGodz;
+        public static long DzRobGodz = Properties.Settings.Default.DzRobGodz;
 
         public static double MaxKoszt = 0;
-        public static int MaxPrac = 0;
-        public static int MaxHarm = 0;
+        public static long MaxPrac = 0;
+        public static long MaxHarm = 0;
 
         //wartości tymczasowe
         public static double TempUCPgodziny;
         public static double TempUCPlinieKodu;
         public static double TempStawkaGodz;
-        public static int TempOsoboMGodz;
-        public static int TempDzRobGodz;
+        public static long TempOsoboMGodz;
+        public static long TempDzRobGodz;
 
         public static double TempMaxKoszt;
-        public static int TempMaxPrac;
-        public static int TempMaxHarm;
+        public static long TempMaxPrac;
+        public static long TempMaxHarm;
 
         //wyniki pośrednie
         double TCF = 0;
@@ -335,32 +335,32 @@ namespace Aplikacja
 
         private void NumUUCWProsty_ValueChanged(object sender, EventArgs e)
         {
-            TabUUCW[0] = (int)NumUUCWProsty.Value;
+            TabUUCW[0] = (long)NumUUCWProsty.Value;
         }
 
         private void NumUUCWSredni_ValueChanged(object sender, EventArgs e)
         {
-            TabUUCW[1] = (int)NumUUCWSredni.Value;
+            TabUUCW[1] = (long)NumUUCWSredni.Value;
         }
 
         private void NumUUCWZlozony_ValueChanged(object sender, EventArgs e)
         {
-            TabUUCW[2] = (int)NumUUCWZlozony.Value;
+            TabUUCW[2] = (long)NumUUCWZlozony.Value;
         }
 
         private void NumUAWProsty_ValueChanged(object sender, EventArgs e)
         {
-            TabUAW[0] = (int)NumUAWProsty.Value;
+            TabUAW[0] = (long)NumUAWProsty.Value;
         }
 
         private void NumUAWSredni_ValueChanged(object sender, EventArgs e)
         {
-            TabUAW[1] = (int)NumUAWSredni.Value;
+            TabUAW[1] = (long)NumUAWSredni.Value;
         }
 
         private void NumUAWZlozony_ValueChanged(object sender, EventArgs e)
         {
-            TabUAW[2] = (int)NumUAWZlozony.Value;
+            TabUAW[2] = (long)NumUAWZlozony.Value;
         }
 
         //-----------------------------------------------------------------------------------------------

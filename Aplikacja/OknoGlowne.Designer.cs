@@ -317,14 +317,14 @@
             this.GroupBoxDaneProjektu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxDaneProjektu.Location = new System.Drawing.Point(12, 69);
             this.GroupBoxDaneProjektu.Name = "GroupBoxDaneProjektu";
-            this.GroupBoxDaneProjektu.Size = new System.Drawing.Size(503, 150);
+            this.GroupBoxDaneProjektu.Size = new System.Drawing.Size(531, 150);
             this.GroupBoxDaneProjektu.TabIndex = 1;
             this.GroupBoxDaneProjektu.TabStop = false;
             this.GroupBoxDaneProjektu.Text = "Dane projektu";
             // 
             // ButtonZalozenia
             // 
-            this.ButtonZalozenia.Location = new System.Drawing.Point(262, 110);
+            this.ButtonZalozenia.Location = new System.Drawing.Point(291, 107);
             this.ButtonZalozenia.Name = "ButtonZalozenia";
             this.ButtonZalozenia.Size = new System.Drawing.Size(173, 27);
             this.ButtonZalozenia.TabIndex = 5;
@@ -345,14 +345,14 @@
             // 
             this.DateTimePicker.Location = new System.Drawing.Point(6, 93);
             this.DateTimePicker.Name = "DateTimePicker";
-            this.DateTimePicker.Size = new System.Drawing.Size(200, 22);
+            this.DateTimePicker.Size = new System.Drawing.Size(191, 22);
             this.DateTimePicker.TabIndex = 3;
             this.DateTimePicker.Value = new System.DateTime(2018, 11, 15, 14, 35, 14, 0);
             this.DateTimePicker.ValueChanged += new System.EventHandler(this.DateTimePicker_ValueChanged);
             // 
             // ButtonWiecejSzczeg
             // 
-            this.ButtonWiecejSzczeg.Location = new System.Drawing.Point(262, 77);
+            this.ButtonWiecejSzczeg.Location = new System.Drawing.Point(291, 74);
             this.ButtonWiecejSzczeg.Name = "ButtonWiecejSzczeg";
             this.ButtonWiecejSzczeg.Size = new System.Drawing.Size(173, 27);
             this.ButtonWiecejSzczeg.TabIndex = 2;
@@ -383,7 +383,7 @@
             this.GroupBoxUUCW.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxUUCW.Location = new System.Drawing.Point(12, 225);
             this.GroupBoxUUCW.Name = "GroupBoxUUCW";
-            this.GroupBoxUUCW.Size = new System.Drawing.Size(503, 173);
+            this.GroupBoxUUCW.Size = new System.Drawing.Size(531, 173);
             this.GroupBoxUUCW.TabIndex = 2;
             this.GroupBoxUUCW.TabStop = false;
             this.GroupBoxUUCW.Text = "Metoda Use Case Points - przypadki użycia";
@@ -391,10 +391,10 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 63F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 162F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 169F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 148F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 238F));
             this.tableLayoutPanel1.Controls.Add(this.NumUUCWZlozony, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.NumUUCWSredni, 2, 2);
@@ -417,20 +417,20 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(476, 137);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(516, 137);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // NumUUCWZlozony
             // 
             this.NumUUCWZlozony.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumUUCWZlozony.Location = new System.Drawing.Point(148, 112);
+            this.NumUUCWZlozony.Location = new System.Drawing.Point(133, 112);
             this.NumUUCWZlozony.Maximum = new decimal(new int[] {
             -727379968,
             232,
             0,
             0});
             this.NumUUCWZlozony.Name = "NumUUCWZlozony";
-            this.NumUUCWZlozony.Size = new System.Drawing.Size(156, 22);
+            this.NumUUCWZlozony.Size = new System.Drawing.Size(142, 22);
             this.NumUUCWZlozony.TabIndex = 6;
             this.NumUUCWZlozony.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUUCWZlozony.ThousandsSeparator = true;
@@ -444,7 +444,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 28);
+            this.label2.Size = new System.Drawing.Size(69, 28);
             this.label2.TabIndex = 1;
             this.label2.Text = "Średni";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -452,14 +452,14 @@
             // NumUUCWSredni
             // 
             this.NumUUCWSredni.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumUUCWSredni.Location = new System.Drawing.Point(148, 84);
+            this.NumUUCWSredni.Location = new System.Drawing.Point(133, 84);
             this.NumUUCWSredni.Maximum = new decimal(new int[] {
             -727379968,
             232,
             0,
             0});
             this.NumUUCWSredni.Name = "NumUUCWSredni";
-            this.NumUUCWSredni.Size = new System.Drawing.Size(156, 22);
+            this.NumUUCWSredni.Size = new System.Drawing.Size(142, 22);
             this.NumUUCWSredni.TabIndex = 5;
             this.NumUUCWSredni.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUUCWSredni.ThousandsSeparator = true;
@@ -473,7 +473,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 28);
+            this.label1.Size = new System.Drawing.Size(69, 28);
             this.label1.TabIndex = 4;
             this.label1.Text = "Prosty";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -481,14 +481,14 @@
             // NumUUCWProsty
             // 
             this.NumUUCWProsty.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumUUCWProsty.Location = new System.Drawing.Point(148, 56);
+            this.NumUUCWProsty.Location = new System.Drawing.Point(133, 56);
             this.NumUUCWProsty.Maximum = new decimal(new int[] {
             -727379968,
             232,
             0,
             0});
             this.NumUUCWProsty.Name = "NumUUCWProsty";
-            this.NumUUCWProsty.Size = new System.Drawing.Size(156, 22);
+            this.NumUUCWProsty.Size = new System.Drawing.Size(142, 22);
             this.NumUUCWProsty.TabIndex = 6;
             this.NumUUCWProsty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUUCWProsty.ThousandsSeparator = true;
@@ -502,7 +502,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 109);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 28);
+            this.label3.Size = new System.Drawing.Size(69, 28);
             this.label3.TabIndex = 7;
             this.label3.Text = "Złożony";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -513,9 +513,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(85, 0);
+            this.label4.Location = new System.Drawing.Point(78, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 53);
+            this.label4.Size = new System.Drawing.Size(49, 53);
             this.label4.TabIndex = 8;
             this.label4.Text = "Waga";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -526,9 +526,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(148, 0);
+            this.label5.Location = new System.Drawing.Point(133, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(156, 53);
+            this.label5.Size = new System.Drawing.Size(142, 53);
             this.label5.TabIndex = 9;
             this.label5.Text = "Liczba przypadków użycia";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -539,9 +539,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(310, 0);
+            this.label6.Location = new System.Drawing.Point(281, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(163, 53);
+            this.label6.Size = new System.Drawing.Size(232, 53);
             this.label6.TabIndex = 10;
             this.label6.Text = "Liczba transakcji";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -552,9 +552,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(85, 53);
+            this.label7.Location = new System.Drawing.Point(78, 53);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 28);
+            this.label7.Size = new System.Drawing.Size(49, 28);
             this.label7.TabIndex = 11;
             this.label7.Text = "5";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -565,9 +565,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(85, 81);
+            this.label8.Location = new System.Drawing.Point(78, 81);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(57, 28);
+            this.label8.Size = new System.Drawing.Size(49, 28);
             this.label8.TabIndex = 12;
             this.label8.Text = "10";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -578,9 +578,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(85, 109);
+            this.label9.Location = new System.Drawing.Point(78, 109);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 28);
+            this.label9.Size = new System.Drawing.Size(49, 28);
             this.label9.TabIndex = 13;
             this.label9.Text = "15";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -591,9 +591,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(310, 53);
+            this.label10.Location = new System.Drawing.Point(281, 53);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(163, 28);
+            this.label10.Size = new System.Drawing.Size(232, 28);
             this.label10.TabIndex = 14;
             this.label10.Text = "od 1 do 3";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -604,9 +604,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(310, 81);
+            this.label11.Location = new System.Drawing.Point(281, 81);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(163, 28);
+            this.label11.Size = new System.Drawing.Size(232, 28);
             this.label11.TabIndex = 15;
             this.label11.Text = "od 4 do 7";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -617,11 +617,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(310, 109);
+            this.label12.Location = new System.Drawing.Point(281, 109);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(163, 28);
+            this.label12.Size = new System.Drawing.Size(232, 28);
             this.label12.TabIndex = 16;
-            this.label12.Text = "8 i więcej ";
+            this.label12.Text = "więcej niż 7";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ButtonOszacuj
@@ -637,7 +637,7 @@
             // 
             // ButtonMnPr
             // 
-            this.ButtonMnPr.Location = new System.Drawing.Point(262, 30);
+            this.ButtonMnPr.Location = new System.Drawing.Point(278, 30);
             this.ButtonMnPr.Name = "ButtonMnPr";
             this.ButtonMnPr.Size = new System.Drawing.Size(173, 44);
             this.ButtonMnPr.TabIndex = 3;
@@ -647,7 +647,7 @@
             // 
             // ButtonCzSk
             // 
-            this.ButtonCzSk.Location = new System.Drawing.Point(33, 30);
+            this.ButtonCzSk.Location = new System.Drawing.Point(51, 30);
             this.ButtonCzSk.Name = "ButtonCzSk";
             this.ButtonCzSk.Size = new System.Drawing.Size(173, 44);
             this.ButtonCzSk.TabIndex = 2;
@@ -716,7 +716,7 @@
             this.GroupBoxUAW.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxUAW.Location = new System.Drawing.Point(12, 404);
             this.GroupBoxUAW.Name = "GroupBoxUAW";
-            this.GroupBoxUAW.Size = new System.Drawing.Size(503, 167);
+            this.GroupBoxUAW.Size = new System.Drawing.Size(531, 206);
             this.GroupBoxUAW.TabIndex = 3;
             this.GroupBoxUAW.TabStop = false;
             this.GroupBoxUAW.Text = "Metoda Use Case Points - aktorzy";
@@ -724,10 +724,10 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 4;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 62F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 171F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 148F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 243F));
             this.tableLayoutPanel2.Controls.Add(this.NumUAWZlozony, 2, 3);
             this.tableLayoutPanel2.Controls.Add(this.label13, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.NumUAWSredni, 2, 2);
@@ -750,20 +750,20 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(476, 131);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(513, 167);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
             // NumUAWZlozony
             // 
             this.NumUAWZlozony.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumUAWZlozony.Location = new System.Drawing.Point(148, 105);
+            this.NumUAWZlozony.Location = new System.Drawing.Point(134, 129);
             this.NumUAWZlozony.Maximum = new decimal(new int[] {
             -727379968,
             232,
             0,
             0});
             this.NumUAWZlozony.Name = "NumUAWZlozony";
-            this.NumUAWZlozony.Size = new System.Drawing.Size(154, 22);
+            this.NumUAWZlozony.Size = new System.Drawing.Size(142, 22);
             this.NumUAWZlozony.TabIndex = 6;
             this.NumUAWZlozony.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUAWZlozony.ThousandsSeparator = true;
@@ -775,9 +775,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(3, 75);
+            this.label13.Location = new System.Drawing.Point(3, 87);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(77, 27);
+            this.label13.Size = new System.Drawing.Size(69, 39);
             this.label13.TabIndex = 1;
             this.label13.Text = "Średni";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -785,14 +785,14 @@
             // NumUAWSredni
             // 
             this.NumUAWSredni.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumUAWSredni.Location = new System.Drawing.Point(148, 78);
+            this.NumUAWSredni.Location = new System.Drawing.Point(134, 90);
             this.NumUAWSredni.Maximum = new decimal(new int[] {
             -727379968,
             232,
             0,
             0});
             this.NumUAWSredni.Name = "NumUAWSredni";
-            this.NumUAWSredni.Size = new System.Drawing.Size(154, 22);
+            this.NumUAWSredni.Size = new System.Drawing.Size(142, 22);
             this.NumUAWSredni.TabIndex = 5;
             this.NumUAWSredni.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUAWSredni.ThousandsSeparator = true;
@@ -806,7 +806,7 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(3, 48);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(77, 27);
+            this.label14.Size = new System.Drawing.Size(69, 39);
             this.label14.TabIndex = 4;
             this.label14.Text = "Prosty";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -814,14 +814,14 @@
             // NumUAWProsty
             // 
             this.NumUAWProsty.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumUAWProsty.Location = new System.Drawing.Point(148, 51);
+            this.NumUAWProsty.Location = new System.Drawing.Point(134, 51);
             this.NumUAWProsty.Maximum = new decimal(new int[] {
             -727379968,
             232,
             0,
             0});
             this.NumUAWProsty.Name = "NumUAWProsty";
-            this.NumUAWProsty.Size = new System.Drawing.Size(154, 22);
+            this.NumUAWProsty.Size = new System.Drawing.Size(142, 22);
             this.NumUAWProsty.TabIndex = 6;
             this.NumUAWProsty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUAWProsty.ThousandsSeparator = true;
@@ -833,9 +833,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(3, 102);
+            this.label15.Location = new System.Drawing.Point(3, 126);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(77, 29);
+            this.label15.Size = new System.Drawing.Size(69, 41);
             this.label15.TabIndex = 7;
             this.label15.Text = "Złożony";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -846,9 +846,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(86, 0);
+            this.label16.Location = new System.Drawing.Point(78, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(56, 48);
+            this.label16.Size = new System.Drawing.Size(50, 48);
             this.label16.TabIndex = 8;
             this.label16.Text = "Waga";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -859,9 +859,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(148, 0);
+            this.label17.Location = new System.Drawing.Point(134, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(154, 48);
+            this.label17.Size = new System.Drawing.Size(142, 48);
             this.label17.TabIndex = 9;
             this.label17.Text = "Liczba aktorów";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -872,9 +872,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(308, 0);
+            this.label18.Location = new System.Drawing.Point(282, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(165, 48);
+            this.label18.Size = new System.Drawing.Size(237, 48);
             this.label18.TabIndex = 10;
             this.label18.Text = "Sposób komunikacji z systemem";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -885,9 +885,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(86, 48);
+            this.label19.Location = new System.Drawing.Point(78, 48);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(56, 27);
+            this.label19.Size = new System.Drawing.Size(50, 39);
             this.label19.TabIndex = 11;
             this.label19.Text = "1";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -898,9 +898,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(86, 75);
+            this.label20.Location = new System.Drawing.Point(78, 87);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(56, 27);
+            this.label20.Size = new System.Drawing.Size(50, 39);
             this.label20.TabIndex = 12;
             this.label20.Text = "2";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -911,9 +911,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(86, 102);
+            this.label21.Location = new System.Drawing.Point(78, 126);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(56, 29);
+            this.label21.Size = new System.Drawing.Size(50, 41);
             this.label21.TabIndex = 13;
             this.label21.Text = "3";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -924,11 +924,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(308, 48);
+            this.label22.Location = new System.Drawing.Point(282, 48);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(165, 27);
+            this.label22.Size = new System.Drawing.Size(237, 39);
             this.label22.TabIndex = 14;
-            this.label22.Text = "poprzez API";
+            this.label22.Text = "system poprzez API";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label23
@@ -937,11 +937,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(308, 75);
+            this.label23.Location = new System.Drawing.Point(282, 87);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(165, 27);
+            this.label23.Size = new System.Drawing.Size(237, 39);
             this.label23.TabIndex = 15;
-            this.label23.Text = "poprzez protokół";
+            this.label23.Text = "system poprzez protokół /\r\nczłowiek poprzez linię poleceń";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label24
@@ -950,11 +950,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(308, 102);
+            this.label24.Location = new System.Drawing.Point(282, 126);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(165, 29);
+            this.label24.Size = new System.Drawing.Size(237, 41);
             this.label24.TabIndex = 16;
-            this.label24.Text = "poprzez GUI";
+            this.label24.Text = "człowiek poprzez GUI";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // GroupBoxWyniki
@@ -970,9 +970,9 @@
             this.GroupBoxWyniki.Controls.Add(this.label25);
             this.GroupBoxWyniki.Controls.Add(this.ButtonOszacuj);
             this.GroupBoxWyniki.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.GroupBoxWyniki.Location = new System.Drawing.Point(521, 69);
+            this.GroupBoxWyniki.Location = new System.Drawing.Point(549, 69);
             this.GroupBoxWyniki.Name = "GroupBoxWyniki";
-            this.GroupBoxWyniki.Size = new System.Drawing.Size(559, 688);
+            this.GroupBoxWyniki.Size = new System.Drawing.Size(531, 688);
             this.GroupBoxWyniki.TabIndex = 5;
             this.GroupBoxWyniki.TabStop = false;
             this.GroupBoxWyniki.Text = "Wyniki";
@@ -1075,9 +1075,9 @@
             this.groupBox1.Controls.Add(this.ButtonMnPr);
             this.groupBox1.Controls.Add(this.ButtonCzSk);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 670);
+            this.groupBox1.Location = new System.Drawing.Point(12, 616);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(503, 87);
+            this.groupBox1.Size = new System.Drawing.Size(528, 87);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Czynniki modyfikujące COCOMO II";

@@ -69,12 +69,12 @@ namespace Aplikacja
 
         private void NumericOsoboMGodz_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempOsoboMGodz = (int)NumericOsoboMGodz.Value;
+            OknoGlowne.TempOsoboMGodz = (long)NumericOsoboMGodz.Value;
         }
 
         private void NumericDzRobGodz_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempDzRobGodz = (int)NumericDzRobGodz.Value;
+            OknoGlowne.TempDzRobGodz = (long)NumericDzRobGodz.Value;
         }
     }
 }

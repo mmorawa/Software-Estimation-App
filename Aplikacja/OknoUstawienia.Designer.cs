@@ -29,18 +29,7 @@
         private void InitializeComponent()
         {
             this.GroupBoxSzczDomyslneUstawienia = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.TextBoxSzacujacy = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.TextBoxEmail = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.TextBoxTelefon = new System.Windows.Forms.TextBox();
-            this.TextBoxAdres = new System.Windows.Forms.TextBox();
-            this.TextBoxNazwaFirmy = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.LabelNazwaProjektu = new System.Windows.Forms.Label();
-            this.TextBoxKierownikProjektu = new System.Windows.Forms.TextBox();
+            this.GroupBoxDomZalozeniaProjektu = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.NumericUCPgodziny = new System.Windows.Forms.NumericUpDown();
             this.NumericUCPlinieKodu = new System.Windows.Forms.NumericUpDown();
@@ -57,11 +46,23 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.GroupBoxDomDaneProjektu = new System.Windows.Forms.GroupBox();
+            this.LabelNazwaProjektu = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.TextBoxKierownikProjektu = new System.Windows.Forms.TextBox();
+            this.TextBoxSzacujacy = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.TextBoxNazwaFirmy = new System.Windows.Forms.TextBox();
+            this.TextBoxEmail = new System.Windows.Forms.TextBox();
+            this.TextBoxAdres = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.TextBoxTelefon = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.ButtonAnuluj = new System.Windows.Forms.Button();
             this.ButtonOk = new System.Windows.Forms.Button();
-            this.GroupBoxDomDaneProjektu = new System.Windows.Forms.GroupBox();
-            this.GroupBoxDomZalozeniaProjektu = new System.Windows.Forms.GroupBox();
             this.GroupBoxSzczDomyslneUstawienia.SuspendLayout();
+            this.GroupBoxDomZalozeniaProjektu.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumericUCPgodziny)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericUCPlinieKodu)).BeginInit();
@@ -69,7 +70,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumericOsoboMGodz)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericDzRobGodz)).BeginInit();
             this.GroupBoxDomDaneProjektu.SuspendLayout();
-            this.GroupBoxDomZalozeniaProjektu.SuspendLayout();
             this.SuspendLayout();
             // 
             // GroupBoxSzczDomyslneUstawienia
@@ -84,108 +84,15 @@
             this.GroupBoxSzczDomyslneUstawienia.TabStop = false;
             this.GroupBoxSzczDomyslneUstawienia.Text = "Domyślne ustawienia";
             // 
-            // label5
+            // GroupBoxDomZalozeniaProjektu
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(4, 73);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(285, 16);
-            this.label5.TabIndex = 40;
-            this.label5.Text = "Osoba odpowiedzialna za oszacowanie:";
-            // 
-            // TextBoxSzacujacy
-            // 
-            this.TextBoxSzacujacy.Location = new System.Drawing.Point(6, 92);
-            this.TextBoxSzacujacy.Name = "TextBoxSzacujacy";
-            this.TextBoxSzacujacy.Size = new System.Drawing.Size(462, 22);
-            this.TextBoxSzacujacy.TabIndex = 39;
-            this.TextBoxSzacujacy.TextChanged += new System.EventHandler(this.TextBoxSzacujacy_TextChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 284);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 16);
-            this.label6.TabIndex = 38;
-            this.label6.Text = "E-Mail:";
-            // 
-            // TextBoxEmail
-            // 
-            this.TextBoxEmail.Location = new System.Drawing.Point(6, 303);
-            this.TextBoxEmail.Name = "TextBoxEmail";
-            this.TextBoxEmail.Size = new System.Drawing.Size(462, 22);
-            this.TextBoxEmail.TabIndex = 37;
-            this.TextBoxEmail.TextChanged += new System.EventHandler(this.TextBoxEmail_TextChanged);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(3, 240);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(95, 16);
-            this.label10.TabIndex = 36;
-            this.label10.Text = "Telefon/Fax:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label11.Location = new System.Drawing.Point(6, 196);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(53, 16);
-            this.label11.TabIndex = 35;
-            this.label11.Text = "Adres:";
-            // 
-            // TextBoxTelefon
-            // 
-            this.TextBoxTelefon.Location = new System.Drawing.Point(6, 259);
-            this.TextBoxTelefon.Name = "TextBoxTelefon";
-            this.TextBoxTelefon.Size = new System.Drawing.Size(462, 22);
-            this.TextBoxTelefon.TabIndex = 34;
-            this.TextBoxTelefon.TextChanged += new System.EventHandler(this.TextBoxTelefon_TextChanged);
-            // 
-            // TextBoxAdres
-            // 
-            this.TextBoxAdres.Location = new System.Drawing.Point(9, 215);
-            this.TextBoxAdres.Name = "TextBoxAdres";
-            this.TextBoxAdres.Size = new System.Drawing.Size(462, 22);
-            this.TextBoxAdres.TabIndex = 33;
-            this.TextBoxAdres.TextChanged += new System.EventHandler(this.TextBoxAdres_TextChanged);
-            // 
-            // TextBoxNazwaFirmy
-            // 
-            this.TextBoxNazwaFirmy.Location = new System.Drawing.Point(6, 171);
-            this.TextBoxNazwaFirmy.Name = "TextBoxNazwaFirmy";
-            this.TextBoxNazwaFirmy.Size = new System.Drawing.Size(462, 22);
-            this.TextBoxNazwaFirmy.TabIndex = 32;
-            this.TextBoxNazwaFirmy.TextChanged += new System.EventHandler(this.TextBoxNazwaFirmy_TextChanged);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(6, 152);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(95, 16);
-            this.label14.TabIndex = 31;
-            this.label14.Text = "Nazwa firmy:";
-            // 
-            // LabelNazwaProjektu
-            // 
-            this.LabelNazwaProjektu.AutoSize = true;
-            this.LabelNazwaProjektu.Location = new System.Drawing.Point(6, 29);
-            this.LabelNazwaProjektu.Name = "LabelNazwaProjektu";
-            this.LabelNazwaProjektu.Size = new System.Drawing.Size(138, 16);
-            this.LabelNazwaProjektu.TabIndex = 30;
-            this.LabelNazwaProjektu.Text = "Kierownik projektu:";
-            // 
-            // TextBoxKierownikProjektu
-            // 
-            this.TextBoxKierownikProjektu.Location = new System.Drawing.Point(6, 48);
-            this.TextBoxKierownikProjektu.Name = "TextBoxKierownikProjektu";
-            this.TextBoxKierownikProjektu.Size = new System.Drawing.Size(462, 22);
-            this.TextBoxKierownikProjektu.TabIndex = 29;
-            this.TextBoxKierownikProjektu.TextChanged += new System.EventHandler(this.TextBoxKierownikProjektu_TextChanged);
+            this.GroupBoxDomZalozeniaProjektu.Controls.Add(this.tableLayoutPanel2);
+            this.GroupBoxDomZalozeniaProjektu.Location = new System.Drawing.Point(12, 385);
+            this.GroupBoxDomZalozeniaProjektu.Name = "GroupBoxDomZalozeniaProjektu";
+            this.GroupBoxDomZalozeniaProjektu.Size = new System.Drawing.Size(482, 310);
+            this.GroupBoxDomZalozeniaProjektu.TabIndex = 42;
+            this.GroupBoxDomZalozeniaProjektu.TabStop = false;
+            this.GroupBoxDomZalozeniaProjektu.Text = "Odnośnie założeń projektu";
             // 
             // tableLayoutPanel2
             // 
@@ -417,6 +324,130 @@
             this.label9.Text = "linii kodu";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // GroupBoxDomDaneProjektu
+            // 
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.LabelNazwaProjektu);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.label5);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.TextBoxKierownikProjektu);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.TextBoxSzacujacy);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.label14);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.label6);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.TextBoxNazwaFirmy);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.TextBoxEmail);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.TextBoxAdres);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.label10);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.TextBoxTelefon);
+            this.GroupBoxDomDaneProjektu.Controls.Add(this.label11);
+            this.GroupBoxDomDaneProjektu.Location = new System.Drawing.Point(12, 34);
+            this.GroupBoxDomDaneProjektu.Name = "GroupBoxDomDaneProjektu";
+            this.GroupBoxDomDaneProjektu.Size = new System.Drawing.Size(482, 345);
+            this.GroupBoxDomDaneProjektu.TabIndex = 41;
+            this.GroupBoxDomDaneProjektu.TabStop = false;
+            this.GroupBoxDomDaneProjektu.Text = "Odnośnie danych projektu";
+            // 
+            // LabelNazwaProjektu
+            // 
+            this.LabelNazwaProjektu.AutoSize = true;
+            this.LabelNazwaProjektu.Location = new System.Drawing.Point(6, 29);
+            this.LabelNazwaProjektu.Name = "LabelNazwaProjektu";
+            this.LabelNazwaProjektu.Size = new System.Drawing.Size(138, 16);
+            this.LabelNazwaProjektu.TabIndex = 30;
+            this.LabelNazwaProjektu.Text = "Kierownik projektu:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(4, 73);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(285, 16);
+            this.label5.TabIndex = 40;
+            this.label5.Text = "Osoba odpowiedzialna za oszacowanie:";
+            // 
+            // TextBoxKierownikProjektu
+            // 
+            this.TextBoxKierownikProjektu.Location = new System.Drawing.Point(6, 48);
+            this.TextBoxKierownikProjektu.Name = "TextBoxKierownikProjektu";
+            this.TextBoxKierownikProjektu.Size = new System.Drawing.Size(462, 22);
+            this.TextBoxKierownikProjektu.TabIndex = 29;
+            this.TextBoxKierownikProjektu.TextChanged += new System.EventHandler(this.TextBoxKierownikProjektu_TextChanged);
+            // 
+            // TextBoxSzacujacy
+            // 
+            this.TextBoxSzacujacy.Location = new System.Drawing.Point(6, 92);
+            this.TextBoxSzacujacy.Name = "TextBoxSzacujacy";
+            this.TextBoxSzacujacy.Size = new System.Drawing.Size(462, 22);
+            this.TextBoxSzacujacy.TabIndex = 39;
+            this.TextBoxSzacujacy.TextChanged += new System.EventHandler(this.TextBoxSzacujacy_TextChanged);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(6, 152);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(95, 16);
+            this.label14.TabIndex = 31;
+            this.label14.Text = "Nazwa firmy:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 284);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(56, 16);
+            this.label6.TabIndex = 38;
+            this.label6.Text = "E-Mail:";
+            // 
+            // TextBoxNazwaFirmy
+            // 
+            this.TextBoxNazwaFirmy.Location = new System.Drawing.Point(6, 171);
+            this.TextBoxNazwaFirmy.Name = "TextBoxNazwaFirmy";
+            this.TextBoxNazwaFirmy.Size = new System.Drawing.Size(462, 22);
+            this.TextBoxNazwaFirmy.TabIndex = 32;
+            this.TextBoxNazwaFirmy.TextChanged += new System.EventHandler(this.TextBoxNazwaFirmy_TextChanged);
+            // 
+            // TextBoxEmail
+            // 
+            this.TextBoxEmail.Location = new System.Drawing.Point(6, 303);
+            this.TextBoxEmail.Name = "TextBoxEmail";
+            this.TextBoxEmail.Size = new System.Drawing.Size(462, 22);
+            this.TextBoxEmail.TabIndex = 37;
+            this.TextBoxEmail.TextChanged += new System.EventHandler(this.TextBoxEmail_TextChanged);
+            // 
+            // TextBoxAdres
+            // 
+            this.TextBoxAdres.Location = new System.Drawing.Point(9, 215);
+            this.TextBoxAdres.Name = "TextBoxAdres";
+            this.TextBoxAdres.Size = new System.Drawing.Size(462, 22);
+            this.TextBoxAdres.TabIndex = 33;
+            this.TextBoxAdres.TextChanged += new System.EventHandler(this.TextBoxAdres_TextChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(3, 240);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(95, 16);
+            this.label10.TabIndex = 36;
+            this.label10.Text = "Telefon/Fax:";
+            // 
+            // TextBoxTelefon
+            // 
+            this.TextBoxTelefon.Location = new System.Drawing.Point(6, 259);
+            this.TextBoxTelefon.Name = "TextBoxTelefon";
+            this.TextBoxTelefon.Size = new System.Drawing.Size(462, 22);
+            this.TextBoxTelefon.TabIndex = 34;
+            this.TextBoxTelefon.TextChanged += new System.EventHandler(this.TextBoxTelefon_TextChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label11.Location = new System.Drawing.Point(6, 196);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(53, 16);
+            this.label11.TabIndex = 35;
+            this.label11.Text = "Adres:";
+            // 
             // ButtonAnuluj
             // 
             this.ButtonAnuluj.DialogResult = System.Windows.Forms.DialogResult.Cancel;
@@ -439,37 +470,6 @@
             this.ButtonOk.Text = "OK";
             this.ButtonOk.UseVisualStyleBackColor = true;
             // 
-            // GroupBoxDomDaneProjektu
-            // 
-            this.GroupBoxDomDaneProjektu.Controls.Add(this.LabelNazwaProjektu);
-            this.GroupBoxDomDaneProjektu.Controls.Add(this.label5);
-            this.GroupBoxDomDaneProjektu.Controls.Add(this.TextBoxKierownikProjektu);
-            this.GroupBoxDomDaneProjektu.Controls.Add(this.TextBoxSzacujacy);
-            this.GroupBoxDomDaneProjektu.Controls.Add(this.label14);
-            this.GroupBoxDomDaneProjektu.Controls.Add(this.label6);
-            this.GroupBoxDomDaneProjektu.Controls.Add(this.TextBoxNazwaFirmy);
-            this.GroupBoxDomDaneProjektu.Controls.Add(this.TextBoxEmail);
-            this.GroupBoxDomDaneProjektu.Controls.Add(this.TextBoxAdres);
-            this.GroupBoxDomDaneProjektu.Controls.Add(this.label10);
-            this.GroupBoxDomDaneProjektu.Controls.Add(this.TextBoxTelefon);
-            this.GroupBoxDomDaneProjektu.Controls.Add(this.label11);
-            this.GroupBoxDomDaneProjektu.Location = new System.Drawing.Point(12, 34);
-            this.GroupBoxDomDaneProjektu.Name = "GroupBoxDomDaneProjektu";
-            this.GroupBoxDomDaneProjektu.Size = new System.Drawing.Size(482, 345);
-            this.GroupBoxDomDaneProjektu.TabIndex = 41;
-            this.GroupBoxDomDaneProjektu.TabStop = false;
-            this.GroupBoxDomDaneProjektu.Text = "Odnośnie danych projektu";
-            // 
-            // GroupBoxDomZalozeniaProjektu
-            // 
-            this.GroupBoxDomZalozeniaProjektu.Controls.Add(this.tableLayoutPanel2);
-            this.GroupBoxDomZalozeniaProjektu.Location = new System.Drawing.Point(12, 385);
-            this.GroupBoxDomZalozeniaProjektu.Name = "GroupBoxDomZalozeniaProjektu";
-            this.GroupBoxDomZalozeniaProjektu.Size = new System.Drawing.Size(482, 310);
-            this.GroupBoxDomZalozeniaProjektu.TabIndex = 42;
-            this.GroupBoxDomZalozeniaProjektu.TabStop = false;
-            this.GroupBoxDomZalozeniaProjektu.Text = "Odnośnie założeń projektu";
-            // 
             // OknoUstawienia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -482,6 +482,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Ustawienia";
             this.GroupBoxSzczDomyslneUstawienia.ResumeLayout(false);
+            this.GroupBoxDomZalozeniaProjektu.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumericUCPgodziny)).EndInit();
@@ -491,7 +492,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumericDzRobGodz)).EndInit();
             this.GroupBoxDomDaneProjektu.ResumeLayout(false);
             this.GroupBoxDomDaneProjektu.PerformLayout();
-            this.GroupBoxDomZalozeniaProjektu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

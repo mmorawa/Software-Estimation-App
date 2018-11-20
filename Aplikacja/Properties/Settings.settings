@@ -35,10 +35,10 @@
     <Setting Name="StawkaGodz" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="OsoboMGodz" Type="System.Int32" Scope="User">
+    <Setting Name="OsoboMGodz" Type="System.Int64" Scope="User">
       <Value Profile="(Default)">152</Value>
     </Setting>
-    <Setting Name="DzRobGodz" Type="System.Int32" Scope="User">
+    <Setting Name="DzRobGodz" Type="System.Int64" Scope="User">
       <Value Profile="(Default)">8</Value>
     </Setting>
   </Settings>

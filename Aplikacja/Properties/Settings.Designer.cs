@@ -158,9 +158,9 @@ namespace Aplikacja.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("152")]
-        public int OsoboMGodz {
+        public long OsoboMGodz {
             get {
-                return ((int)(this["OsoboMGodz"]));
+                return ((long)(this["OsoboMGodz"]));
             }
             set {
                 this["OsoboMGodz"] = value;
@@ -170,9 +170,9 @@ namespace Aplikacja.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("8")]
-        public int DzRobGodz {
+        public long DzRobGodz {
             get {
-                return ((int)(this["DzRobGodz"]));
+                return ((long)(this["DzRobGodz"]));
             }
             set {
                 this["DzRobGodz"] = value;

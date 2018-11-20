@@ -68,12 +68,12 @@ namespace Aplikacja
 
         private void NumericOsoboMGodz_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempOsoboMGodz = (int)NumericOsoboMGodz.Value;
+            OknoGlowne.TempOsoboMGodz = (long)NumericOsoboMGodz.Value;
         }
 
         private void NumericDzRobGodz_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempDzRobGodz = (int)NumericDzRobGodz.Value;
+            OknoGlowne.TempDzRobGodz = (long)NumericDzRobGodz.Value;
         }
 
         private void NumericMaxKoszt_ValueChanged(object sender, EventArgs e)
@@ -83,12 +83,12 @@ namespace Aplikacja
 
         private void NumericMaxPrac_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempMaxPrac = (int)NumericMaxPrac.Value;
+            OknoGlowne.TempMaxPrac = (long)NumericMaxPrac.Value;
         }
 
         private void NumericMaxHarm_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempMaxHarm = (int)NumericMaxHarm.Value;
+            OknoGlowne.TempMaxHarm = (long)NumericMaxHarm.Value;
         }
 
 
