@@ -350,7 +350,7 @@ namespace Aplikacja
 
 
         //-----------------------------------------------------------------------------------------------
-        //TODO usuń TabDaneProjektu
+        
         private void TextBoxNazwaProjektu_TextChanged(object sender, EventArgs e)
         {
             NazwaProjektu = TextBoxNazwaProjektu.Text;
@@ -742,6 +742,7 @@ namespace Aplikacja
                 sw.WriteLine(MaxPrac);
                 sw.WriteLine(MaxHarm);
 
+                //TODO zapamiętaj kolory
                 sw.WriteLine(UUCP);
                 sw.WriteLine(Rozmiar);
                 sw.WriteLine(Pracochlonnosc);
