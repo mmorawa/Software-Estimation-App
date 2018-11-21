@@ -425,11 +425,11 @@ namespace Aplikacja
             Koszt = Pracochlonnosc * OsoboMGodz * StawkaGodz;
 
             //Wyświetlenie wyników
-            LabelPktUUCP.Text = UUCP.ToString();
-            LabelRozmiar.Text = Math.Round(Rozmiar).ToString();
-            LabelWynikPrac.Text = Math.Round(Pracochlonnosc, 1).ToString();
-            LabelWynikHarm.Text = Math.Round(Harmonogram, 1).ToString();
-            LabelWynikKoszt.Text = Math.Round(Koszt, 2).ToString();
+            LabelPktUUCP.Text = string.Format("{0:N0}", UUCP);
+            LabelRozmiar.Text = string.Format("{0:N0}", Rozmiar);
+            LabelWynikPrac.Text = string.Format("{0:N1}", Pracochlonnosc);
+            LabelWynikHarm.Text = string.Format("{0:N1}", Harmonogram);
+            LabelWynikKoszt.Text = string.Format("{0:N}", Koszt);
 
 
             //Ograniczenia projektu
@@ -738,9 +738,12 @@ namespace Aplikacja
         private void ButtonKreator_Click(object sender, EventArgs e)
         {
             //MessageBox.Show(TabPktFunkSLOC[JezykProgramowania].ToString());
-            MessageBox.Show(F.ToString());
-            MessageBox.Show(E.ToString());
+            //MessageBox.Show(F.ToString());
+            //MessageBox.Show(E.ToString());
             //MessageBox.Show(Rozmiar.ToString());
+            double testNumber = 134566548.78;
+            MessageBox.Show(string.Format("{0:N}", testNumber));
+
 
             /*
             MessageBox.Show(Properties.Settings.Default.A.ToString());
