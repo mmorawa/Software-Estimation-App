@@ -52,192 +52,192 @@ namespace Aplikacja
 
         private void NumericABAP_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[0] = (int)NumericABAP.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[0] = (int)NumericABAP.Value;
         }
 
         private void NumericASP_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[1] = (int)NumericASP.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[1] = (int)NumericASP.Value;
         }
 
         private void NumericAssembler_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[2] = (int)NumericAssembler.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[2] = (int)NumericAssembler.Value;
         }
 
         private void NumericBrio_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[3] = (int)NumericBrio.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[3] = (int)NumericBrio.Value;
         }
 
         private void NumericC_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[4] = (int)NumericC.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[4] = (int)NumericC.Value;
         }
 
         private void NumericCpp_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[5] = (int)NumericCpp.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[5] = (int)NumericCpp.Value;
         }
 
         private void NumericCsharp_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[6] = (int)NumericCsharp.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[6] = (int)NumericCsharp.Value;
         }
 
         private void NumericCOBOL_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[7] = (int)NumericCOBOL.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[7] = (int)NumericCOBOL.Value;
         }
 
         private void NumericCognos_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[8] = (int)NumericCognos.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[8] = (int)NumericCognos.Value;
         }
 
         private void NumericCross_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[9] = (int)NumericCross.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[9] = (int)NumericCross.Value;
         }
 
         private void NumericCool_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[10] = (int)NumericCool.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[10] = (int)NumericCool.Value;
         }
 
         private void NumericDatastage_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[11] = (int)NumericDatastage.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[11] = (int)NumericDatastage.Value;
         }
 
         private void NumericExcel_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[12] = (int)NumericExcel.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[12] = (int)NumericExcel.Value;
         }
 
         private void NumericFocus_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[13] = (int)NumericFocus.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[13] = (int)NumericFocus.Value;
         }
 
         private void NumericFoxPro_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[14] = (int)NumericFoxPro.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[14] = (int)NumericFoxPro.Value;
         }
 
         private void NumericHTML_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[15] = (int)NumericHTML.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[15] = (int)NumericHTML.Value;
         }
 
         private void NumericJ2EE_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[16] = (int)NumericJ2EE.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[16] = (int)NumericJ2EE.Value;
         }
 
         private void NumericJava_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[17] = (int)NumericJava.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[17] = (int)NumericJava.Value;
         }
 
         private void NumericJavaScript_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[18] = (int)NumericJavaScript.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[18] = (int)NumericJavaScript.Value;
         }
 
         private void NumericJCL_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[19] = (int)NumericJCL.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[19] = (int)NumericJCL.Value;
         }
 
         private void NumericLINC_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[20] = (int)NumericLINC.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[20] = (int)NumericLINC.Value;
         }
 
         private void NumericLotus_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[21] = (int)NumericLotus.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[21] = (int)NumericLotus.Value;
         }
 
         private void NumericNatural_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[22] = (int)NumericNatural.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[22] = (int)NumericNatural.Value;
         }
 
         private void NumericDotNet_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[23] = (int)NumericDotNet.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[23] = (int)NumericDotNet.Value;
         }
 
         private void NumericOracle_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[24] = (int)NumericOracle.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[24] = (int)NumericOracle.Value;
         }
 
         private void NumericPACBASE_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[25] = (int)NumericPACBASE.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[25] = (int)NumericPACBASE.Value;
         }
 
         private void NumericPerl_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[26] = (int)NumericPerl.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[26] = (int)NumericPerl.Value;
         }
 
         private void NumericPLI_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[27] = (int)NumericPLI.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[27] = (int)NumericPLI.Value;
         }
 
         private void NumericPLSQL_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[28] = (int)NumericPLSQL.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[28] = (int)NumericPLSQL.Value;
         }
 
         private void NumericPowerbuilder_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[29] = (int)NumericPowerbuilder.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[29] = (int)NumericPowerbuilder.Value;
         }
 
         private void NumericREXX_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[30] = (int)NumericREXX.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[30] = (int)NumericREXX.Value;
         }
 
         private void NumericSabretalk_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[31] = (int)NumericSabretalk.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[31] = (int)NumericSabretalk.Value;
         }
 
         private void NumericSAS_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[32] = (int)NumericSAS.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[32] = (int)NumericSAS.Value;
         }
 
         private void NumericSiebel_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[33] = (int)NumericSiebel.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[33] = (int)NumericSiebel.Value;
         }
 
         private void NumericSLOGAN_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[34] = (int)NumericSLOGAN.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[34] = (int)NumericSLOGAN.Value;
         }
 
         private void NumericSQL_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[35] = (int)NumericSQL.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[35] = (int)NumericSQL.Value;
         }
 
         private void NumericVBNet_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[36] = (int)NumericVBNet.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[36] = (int)NumericVBNet.Value;
         }
 
         private void NumericVisualBasic_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabPktFunkSLOC[37] = (int)NumericVisualBasic.Value;
+            OknoGlowne.TempTabPrzeliczeniowa[37] = (int)NumericVisualBasic.Value;
         }
 
 
@@ -284,7 +284,7 @@ namespace Aplikacja
 
             OknoGlowne.TempUCPnaFP = 2.27;
 
-            OknoGlowne.TempTabPktFunkSLOC = new int[] {18, 54, 98, 14, 99, 53, 59, 55,
+            OknoGlowne.TempTabPrzeliczeniowa = new int[] {18, 54, 98, 14, 99, 53, 59, 55,
                 42, 18, 24, 65, 191, 45, 35, 40, 49, 53, 53, 48, 30, 21, 34, 60, 40, 32,
                 15, 80, 35, 28, 80, 66, 37, 60, 75, 21, 60, 44 };
 

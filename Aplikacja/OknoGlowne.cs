@@ -71,10 +71,7 @@ namespace Aplikacja
         public static string OpisProjektu;
         public static string TempOpisProjektu;
 
-        //int[] TabPktFunkSLOC = { 18, 54, 98, 14, 99, 53, 59, 55, 42, 18, 24, 65,
-           // 191, 45, 35, 40, 49, 53, 53, 48, 30, 21, 34, 60, 40, 32, 15, 80, 35,
-           // 28, 80, 66, 37, 60, 75, 21, 60, 44 };
-        public static int[] TempTabPktFunkSLOC = new int[38];
+        public static int[] TempTabPrzeliczeniowa = new int[38];
 
         public static long[] TabUAW = new long[3];
         double[] wagiAktorow = { 1, 2, 3 };
@@ -118,6 +115,8 @@ namespace Aplikacja
             {1.43, 1.14, 1, 1, 1, 0 }
         };
 
+        double[] TabOgranHarm = {0.75, 0.85, 1, 1.3, 1.6 };
+
         //współczynniki
         public static double TempUCPnaFP;
         public static double TempA;
@@ -145,7 +144,7 @@ namespace Aplikacja
         public static long TempMaxPrac;
         public static long TempMaxHarm;
 
-        //wyniki pośrednie
+        //wyniki pośrednie usun inicjalizacje
         double UUCW = 0;
         double UAW = 0;
         double UUCP = 0;
@@ -155,9 +154,11 @@ namespace Aplikacja
         double F = 0;
         double SumaSF = 0;
         double IloczynEM = 1;
+        double IloczynEMOgranHarm = 0;
+        double PracochlonnoscBezOgran = 0;
 
         //wyniki końcowe
-        
+
         double Pracochlonnosc = 0;
         double Harmonogram = 0;
         double Koszt = 0;
@@ -212,6 +213,15 @@ namespace Aplikacja
         private void ToolStripMenuZapiszProj_Click(object sender, EventArgs e)
         {
             ButtonZapiszProjekt_Click(sender, e);
+        }
+
+        //! Metoda wywoływana po naciśnięciu przycisku Save na pasku Menu.
+        /*! Metoda SaveToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Save na pasku Menu.
+         * Powoduje ona automatyczne zaszyfrowanie wpisów z hasłami, znajdujących w głównym oknie programu bez konieczności podania ścieżki do pliku bazy.
+         */
+        private void ToolStripOszacuj_Click(object sender, EventArgs e)
+        {
+            ButtonOszacuj_Click(sender, e);
         }
 
         //! Metoda wywoływana po naciśnięciu przycisku Save As na pasku Menu.
@@ -410,7 +420,7 @@ namespace Aplikacja
             Rozmiar = (UUCP * Properties.Settings.Default.UCPnaFP * Properties.Settings.Default.TabPrzeliczeniowa[JezykProgramowania]);
 
             RozmiarKSLOC = Rozmiar / 1000;
-
+            
             //Obliczenia COCOMO II
 
             SumaSF = 0;
@@ -429,9 +439,18 @@ namespace Aplikacja
 
             Pracochlonnosc = Properties.Settings.Default.A * Math.Pow(RozmiarKSLOC, E) * IloczynEM;
 
+
+            IloczynEMOgranHarm = 1;
+            for (int i = 0; i < 16; i++)
+            {
+                IloczynEMOgranHarm *= TabWspEM[i, TabIndEM[i]];
+            }
+
+            PracochlonnoscBezOgran = Properties.Settings.Default.A * Math.Pow(RozmiarKSLOC, E) * IloczynEMOgranHarm;
+
             F = Properties.Settings.Default.D + 0.2 * (E - Properties.Settings.Default.B);
 
-            Harmonogram = Properties.Settings.Default.C * Math.Pow(Pracochlonnosc, F);
+            Harmonogram = Properties.Settings.Default.C * Math.Pow(PracochlonnoscBezOgran, F) * TabOgranHarm[TabIndEM[16]];
 
             Koszt = Pracochlonnosc * OsoboMGodz * StawkaGodz;
 
@@ -638,10 +657,6 @@ namespace Aplikacja
                     MessageBox.Show("Domyślne ustawienia projektu zostały zmienione.", "Sukces");
                 }
             }
-
-
-            //MessageBox.Show(Properties.Settings.Default.GodzinyUCP.ToString());
-
         }
 
 
@@ -752,8 +767,8 @@ namespace Aplikacja
             //MessageBox.Show(F.ToString());
             //MessageBox.Show(E.ToString());
             //MessageBox.Show(Rozmiar.ToString());
-            MessageBox.Show(Properties.Settings.Default.TabPrzeliczeniowa[0].ToString());
-            MessageBox.Show(Properties.Settings.Default.TabPrzeliczeniowa[37].ToString());
+            MessageBox.Show(TabOgranHarm[TabIndEM[16]].ToString());
+            //MessageBox.Show(Properties.Settings.Default.TabPrzeliczeniowa[37].ToString());
 
             /*
             MessageBox.Show(Properties.Settings.Default.A.ToString());
@@ -762,6 +777,7 @@ namespace Aplikacja
             MessageBox.Show(Properties.Settings.Default.D.ToString());
             */
         }
+
 
         private void ButtonTablicaPrzeliczeniowa_Click(object sender, EventArgs e)
         {
@@ -773,10 +789,8 @@ namespace Aplikacja
                 {
                     for (int i = 0; i < 38; i++)
                     {
-                        Properties.Settings.Default.TabPrzeliczeniowa[i] = TempTabPktFunkSLOC[i];
+                        Properties.Settings.Default.TabPrzeliczeniowa[i] = TempTabPrzeliczeniowa[i];
                     }
-
-                    //Properties.Settings.Default.UCPnaFP = TempUCPnaFP;
 
                     //Properties.Settings.Default.Save();
                     MessageBox.Show("Wprowadzono nowe dane do tablicy przeliczeniowej punktów funkcyjnych na źródłowe linie kodu.", "Sukces");

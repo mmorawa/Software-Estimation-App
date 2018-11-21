@@ -35,6 +35,7 @@
             this.ToolStripMenuOtworzProj = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuSzczegolyProjektu = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuZalozeniaProjektu = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripOszacuj = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuZapiszProj = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuZapiszJakoProj = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuWyjscie = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,6 +48,7 @@
             this.ToolStripMenuKreator = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuKalibracja = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuUstawienia = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripTablicaPrzeliczeniowa = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuPomoc = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuDokumentacja = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuOProgramie = new System.Windows.Forms.ToolStripMenuItem();
@@ -125,7 +127,6 @@
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.ButtonKreator = new System.Windows.Forms.Button();
-            this.ToolStripTablicaPrzeliczeniowa = new System.Windows.Forms.ToolStripMenuItem();
             this.PasekMenu.SuspendLayout();
             this.GroupBoxDaneProjektu.SuspendLayout();
             this.GroupBoxUUCW.SuspendLayout();
@@ -168,6 +169,7 @@
             this.ToolStripMenuOtworzProj,
             this.ToolStripMenuSzczegolyProjektu,
             this.ToolStripMenuZalozeniaProjektu,
+            this.ToolStripOszacuj,
             this.ToolStripMenuZapiszProj,
             this.ToolStripMenuZapiszJakoProj,
             this.ToolStripMenuWyjscie});
@@ -203,6 +205,13 @@
             this.ToolStripMenuZalozeniaProjektu.Size = new System.Drawing.Size(193, 22);
             this.ToolStripMenuZalozeniaProjektu.Text = "Założenia &projektu";
             this.ToolStripMenuZalozeniaProjektu.Click += new System.EventHandler(this.ToolStripMenuZalozeniaProjektu_Click);
+            // 
+            // ToolStripOszacuj
+            // 
+            this.ToolStripOszacuj.Name = "ToolStripOszacuj";
+            this.ToolStripOszacuj.Size = new System.Drawing.Size(193, 22);
+            this.ToolStripOszacuj.Text = "Osza&cuj";
+            this.ToolStripOszacuj.Click += new System.EventHandler(this.ToolStripOszacuj_Click);
             // 
             // ToolStripMenuZapiszProj
             // 
@@ -296,6 +305,13 @@
             this.ToolStripMenuUstawienia.Size = new System.Drawing.Size(214, 22);
             this.ToolStripMenuUstawienia.Text = "&Ustawienia";
             this.ToolStripMenuUstawienia.Click += new System.EventHandler(this.ToolStripMenuUstawienia_Click);
+            // 
+            // ToolStripTablicaPrzeliczeniowa
+            // 
+            this.ToolStripTablicaPrzeliczeniowa.Name = "ToolStripTablicaPrzeliczeniowa";
+            this.ToolStripTablicaPrzeliczeniowa.Size = new System.Drawing.Size(214, 22);
+            this.ToolStripTablicaPrzeliczeniowa.Text = "&Tablica przeliczeniowa";
+            this.ToolStripTablicaPrzeliczeniowa.Click += new System.EventHandler(this.ToolStripTablicaPrzeliczeniowa_Click);
             // 
             // ToolStripMenuPomoc
             // 
@@ -1285,13 +1301,6 @@
             this.ButtonKreator.UseVisualStyleBackColor = true;
             this.ButtonKreator.Click += new System.EventHandler(this.ButtonKreator_Click);
             // 
-            // ToolStripTablicaPrzeliczeniowa
-            // 
-            this.ToolStripTablicaPrzeliczeniowa.Name = "ToolStripTablicaPrzeliczeniowa";
-            this.ToolStripTablicaPrzeliczeniowa.Size = new System.Drawing.Size(214, 22);
-            this.ToolStripTablicaPrzeliczeniowa.Text = "&Tablica przeliczeniowa";
-            this.ToolStripTablicaPrzeliczeniowa.Click += new System.EventHandler(this.ToolStripTablicaPrzeliczeniowa_Click);
-            // 
             // OknoGlowne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1441,6 +1450,7 @@
         private System.Windows.Forms.Button ButtonOszacowanie;
         private System.Windows.Forms.Button ButtonTablicaPrzeliczeniowa;
         private System.Windows.Forms.ToolStripMenuItem ToolStripTablicaPrzeliczeniowa;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripOszacuj;
     }
 }
 
