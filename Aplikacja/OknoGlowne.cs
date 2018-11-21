@@ -148,24 +148,24 @@ namespace Aplikacja
         public static long TempMaxPrac;
         public static long TempMaxHarm;
 
-        //wyniki pośrednie usun inicjalizacje
-        double UUCW = 0;
-        double UAW = 0;
-        double UUCP = 0;
-        double Rozmiar = 0;
-        double RozmiarKSLOC = 0;
-        double E = 1;
-        double F = 0;
-        double SumaSF = 0;
-        double IloczynEM = 1;
-        double IloczynEMOgranHarm = 0;
-        double PracochlonnoscBezOgran = 0;
+        //wyniki pośrednie 
+        double UUCW;
+        double UAW;
+        double UUCP;
+        double Rozmiar;
+        double RozmiarKSLOC;
+        double E;
+        double F;
+        double SumaSF;
+        double IloczynEM;
+        double IloczynEMOgranHarm;
+        double PracochlonnoscBezOgran;
 
         //wyniki końcowe
 
-        double Pracochlonnosc = 0;
-        double Harmonogram = 0;
-        double Koszt = 0;
+        double Pracochlonnosc;
+        double Harmonogram;
+        double Koszt;
 
         /*******************************************************************************
         *  Metody klasy Form1.
