@@ -697,6 +697,9 @@ namespace Aplikacja
         {
             using (StreamWriter sw = new StreamWriter(File.Create(SciezkaDoPliku)))
             {
+                //Na wypadek gdyby użytkownik nie wybrał żadnej daty
+                DataProjektu = DateTimePicker.Text;
+                
                 sw.WriteLine(NazwaProjektu);
                 sw.WriteLine(DataProjektu);
                 sw.WriteLine(KierownikProjektu);

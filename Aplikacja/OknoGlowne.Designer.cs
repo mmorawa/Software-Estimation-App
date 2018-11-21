@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.PasekMenu = new System.Windows.Forms.MenuStrip();
             this.ToolStripMenuPlik = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuNowyProj = new System.Windows.Forms.ToolStripMenuItem();
@@ -76,7 +75,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.ToolTip = new System.Windows.Forms.ToolTip();
             this.ButtonOszacuj = new System.Windows.Forms.Button();
             this.ButtonMnPr = new System.Windows.Forms.Button();
             this.ButtonCzSk = new System.Windows.Forms.Button();
