@@ -30,46 +30,44 @@
         {
             this.GroupBoxKalibracja = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.NumericJavaScript = new System.Windows.Forms.NumericUpDown();
+            this.label12 = new System.Windows.Forms.Label();
             this.LabelDataRozp = new System.Windows.Forms.Label();
             this.NumericABAP = new System.Windows.Forms.NumericUpDown();
-            this.ButtonPrzywrocDomyslne = new System.Windows.Forms.Button();
-            this.ButtonAnuluj = new System.Windows.Forms.Button();
-            this.ButtonOk = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.NumericASP = new System.Windows.Forms.NumericUpDown();
@@ -108,9 +106,12 @@
             this.NumericSQL = new System.Windows.Forms.NumericUpDown();
             this.NumericVBNet = new System.Windows.Forms.NumericUpDown();
             this.NumericVisualBasic = new System.Windows.Forms.NumericUpDown();
-            this.NumericJavaScript = new System.Windows.Forms.NumericUpDown();
+            this.ButtonPrzywrocDomyslne = new System.Windows.Forms.Button();
+            this.ButtonAnuluj = new System.Windows.Forms.Button();
+            this.ButtonOk = new System.Windows.Forms.Button();
             this.GroupBoxKalibracja.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericJavaScript)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericABAP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericASP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericBrio)).BeginInit();
@@ -148,7 +149,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumericSQL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericVBNet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericVisualBasic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericJavaScript)).BeginInit();
             this.SuspendLayout();
             // 
             // GroupBoxKalibracja
@@ -276,6 +276,33 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(561, 516);
             this.tableLayoutPanel2.TabIndex = 38;
             // 
+            // NumericJavaScript
+            // 
+            this.NumericJavaScript.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NumericJavaScript.Location = new System.Drawing.Point(205, 489);
+            this.NumericJavaScript.Maximum = new decimal(new int[] {
+            2000000000,
+            0,
+            0,
+            0});
+            this.NumericJavaScript.Name = "NumericJavaScript";
+            this.NumericJavaScript.Size = new System.Drawing.Size(118, 22);
+            this.NumericJavaScript.TabIndex = 109;
+            this.NumericJavaScript.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.NumericJavaScript.ThousandsSeparator = true;
+            this.NumericJavaScript.ValueChanged += new System.EventHandler(this.NumericJavaScript_ValueChanged);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label12.Location = new System.Drawing.Point(3, 486);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(196, 30);
+            this.label12.TabIndex = 50;
+            this.label12.Text = "JavaScript";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // LabelDataRozp
             // 
             this.LabelDataRozp.AutoSize = true;
@@ -303,38 +330,6 @@
             this.NumericABAP.ThousandsSeparator = true;
             this.NumericABAP.ValueChanged += new System.EventHandler(this.NumericABAP_ValueChanged);
             // 
-            // ButtonPrzywrocDomyslne
-            // 
-            this.ButtonPrzywrocDomyslne.Location = new System.Drawing.Point(378, 563);
-            this.ButtonPrzywrocDomyslne.Name = "ButtonPrzywrocDomyslne";
-            this.ButtonPrzywrocDomyslne.Size = new System.Drawing.Size(192, 42);
-            this.ButtonPrzywrocDomyslne.TabIndex = 44;
-            this.ButtonPrzywrocDomyslne.Text = "Przywróć wartości  domyślne";
-            this.ButtonPrzywrocDomyslne.UseVisualStyleBackColor = true;
-            this.ButtonPrzywrocDomyslne.Click += new System.EventHandler(this.ButtonPrzywrocDomyslne_Click);
-            // 
-            // ButtonAnuluj
-            // 
-            this.ButtonAnuluj.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.ButtonAnuluj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonAnuluj.Location = new System.Drawing.Point(341, 659);
-            this.ButtonAnuluj.Name = "ButtonAnuluj";
-            this.ButtonAnuluj.Size = new System.Drawing.Size(104, 27);
-            this.ButtonAnuluj.TabIndex = 24;
-            this.ButtonAnuluj.Text = "Anuluj";
-            this.ButtonAnuluj.UseVisualStyleBackColor = true;
-            // 
-            // ButtonOk
-            // 
-            this.ButtonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.ButtonOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOk.Location = new System.Drawing.Point(181, 659);
-            this.ButtonOk.Name = "ButtonOk";
-            this.ButtonOk.Size = new System.Drawing.Size(104, 27);
-            this.ButtonOk.TabIndex = 23;
-            this.ButtonOk.Text = "OK";
-            this.ButtonOk.UseVisualStyleBackColor = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -345,17 +340,6 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "ASP";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(3, 81);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(196, 27);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Brio";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
@@ -368,49 +352,16 @@
             this.label3.Text = "Assembler";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label4
+            // label2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(329, 54);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 27);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Lotus Notes";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(329, 378);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 27);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "Siebel";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(329, 324);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(106, 27);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Sabretalk";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Location = new System.Drawing.Point(329, 27);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 27);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "LINC II";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Location = new System.Drawing.Point(3, 81);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(196, 27);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Brio";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label8
             // 
@@ -423,16 +374,27 @@
             this.label8.Text = "JCL";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label9
+            // label7
             // 
-            this.label9.AutoSize = true;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Location = new System.Drawing.Point(329, 108);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(106, 27);
-            this.label9.TabIndex = 25;
-            this.label9.Text = ".NET";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label7.AutoSize = true;
+            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label7.Location = new System.Drawing.Point(329, 27);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(106, 27);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "LINC II";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Location = new System.Drawing.Point(329, 54);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(106, 27);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "Lotus Notes";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label10
             // 
@@ -445,27 +407,16 @@
             this.label10.Text = "Natural";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label11
+            // label9
             // 
-            this.label11.AutoSize = true;
-            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Location = new System.Drawing.Point(329, 351);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(106, 27);
-            this.label11.TabIndex = 27;
-            this.label11.Text = "SAS";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Location = new System.Drawing.Point(329, 270);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(106, 27);
-            this.label13.TabIndex = 29;
-            this.label13.Text = "Powerbuilder";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label9.AutoSize = true;
+            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label9.Location = new System.Drawing.Point(329, 108);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(106, 27);
+            this.label9.TabIndex = 25;
+            this.label9.Text = ".NET";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label14
             // 
@@ -478,17 +429,6 @@
             this.label14.Text = "Oracle";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.Location = new System.Drawing.Point(3, 108);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(196, 27);
-            this.label17.TabIndex = 33;
-            this.label17.Text = "C";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -500,17 +440,6 @@
             this.label18.Text = "PACBASE";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label21.Location = new System.Drawing.Point(329, 297);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(106, 27);
-            this.label21.TabIndex = 37;
-            this.label21.Text = "REXX";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -521,17 +450,6 @@
             this.label22.TabIndex = 38;
             this.label22.Text = "Perl";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label25.Location = new System.Drawing.Point(3, 135);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(196, 27);
-            this.label25.TabIndex = 41;
-            this.label25.Text = "C++";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label26
             // 
@@ -555,6 +473,50 @@
             this.label30.Text = "PL/SQL";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label13.Location = new System.Drawing.Point(329, 270);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(106, 27);
+            this.label13.TabIndex = 29;
+            this.label13.Text = "Powerbuilder";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label17.Location = new System.Drawing.Point(3, 108);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(196, 27);
+            this.label17.TabIndex = 33;
+            this.label17.Text = "C";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label21.Location = new System.Drawing.Point(329, 297);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(106, 27);
+            this.label21.TabIndex = 37;
+            this.label21.Text = "REXX";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label25.Location = new System.Drawing.Point(3, 135);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(196, 27);
+            this.label25.TabIndex = 41;
+            this.label25.Text = "C++";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // label31
             // 
             this.label31.AutoSize = true;
@@ -577,16 +539,38 @@
             this.label33.Text = "COBOL";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label12
+            // label6
             // 
-            this.label12.AutoSize = true;
-            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Location = new System.Drawing.Point(3, 486);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(196, 30);
-            this.label12.TabIndex = 50;
-            this.label12.Text = "JavaScript";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label6.AutoSize = true;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Location = new System.Drawing.Point(329, 324);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(106, 27);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Sabretalk";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label11.Location = new System.Drawing.Point(329, 351);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(106, 27);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "SAS";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Location = new System.Drawing.Point(329, 378);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(106, 27);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "Siebel";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label15
             // 
@@ -598,6 +582,39 @@
             this.label15.TabIndex = 51;
             this.label15.Text = "SLOGAN";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label23.Location = new System.Drawing.Point(329, 432);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(106, 27);
+            this.label23.TabIndex = 55;
+            this.label23.Text = "SQL";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label29.Location = new System.Drawing.Point(329, 459);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(106, 27);
+            this.label29.TabIndex = 59;
+            this.label29.Text = "VB.NET";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label36.Location = new System.Drawing.Point(3, 216);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(196, 27);
+            this.label36.TabIndex = 63;
+            this.label36.Text = "Cognos Impromptu Scripts";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label16
             // 
@@ -632,17 +649,6 @@
             this.label20.Text = "Datastage";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label23.Location = new System.Drawing.Point(329, 432);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(106, 27);
-            this.label23.TabIndex = 55;
-            this.label23.Text = "SQL";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // label27
             // 
             this.label27.AutoSize = true;
@@ -653,28 +659,6 @@
             this.label27.TabIndex = 57;
             this.label27.Text = "Excel";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label28.Location = new System.Drawing.Point(3, 378);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(196, 27);
-            this.label28.TabIndex = 58;
-            this.label28.Text = "FoxPro";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label29.Location = new System.Drawing.Point(329, 459);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(106, 27);
-            this.label29.TabIndex = 59;
-            this.label29.Text = "VB.NET";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label32
             // 
@@ -687,27 +671,16 @@
             this.label32.Text = "Focus";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label35
+            // label28
             // 
-            this.label35.AutoSize = true;
-            this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label35.Location = new System.Drawing.Point(3, 432);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(196, 27);
-            this.label35.TabIndex = 62;
-            this.label35.Text = "J2EE";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label36.Location = new System.Drawing.Point(3, 216);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(196, 27);
-            this.label36.TabIndex = 63;
-            this.label36.Text = "Cognos Impromptu Scripts";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label28.AutoSize = true;
+            this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label28.Location = new System.Drawing.Point(3, 378);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(196, 27);
+            this.label28.TabIndex = 58;
+            this.label28.Text = "FoxPro";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label37
             // 
@@ -719,6 +692,17 @@
             this.label37.TabIndex = 64;
             this.label37.Text = "HTML";
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label35.Location = new System.Drawing.Point(3, 432);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(196, 27);
+            this.label35.TabIndex = 62;
+            this.label35.Text = "J2EE";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label40
             // 
@@ -1318,21 +1302,37 @@
             this.NumericVisualBasic.ThousandsSeparator = true;
             this.NumericVisualBasic.ValueChanged += new System.EventHandler(this.NumericVisualBasic_ValueChanged);
             // 
-            // NumericJavaScript
+            // ButtonPrzywrocDomyslne
             // 
-            this.NumericJavaScript.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericJavaScript.Location = new System.Drawing.Point(205, 489);
-            this.NumericJavaScript.Maximum = new decimal(new int[] {
-            2000000000,
-            0,
-            0,
-            0});
-            this.NumericJavaScript.Name = "NumericJavaScript";
-            this.NumericJavaScript.Size = new System.Drawing.Size(118, 22);
-            this.NumericJavaScript.TabIndex = 109;
-            this.NumericJavaScript.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.NumericJavaScript.ThousandsSeparator = true;
-            this.NumericJavaScript.ValueChanged += new System.EventHandler(this.NumericJavaScript_ValueChanged);
+            this.ButtonPrzywrocDomyslne.Location = new System.Drawing.Point(378, 563);
+            this.ButtonPrzywrocDomyslne.Name = "ButtonPrzywrocDomyslne";
+            this.ButtonPrzywrocDomyslne.Size = new System.Drawing.Size(192, 42);
+            this.ButtonPrzywrocDomyslne.TabIndex = 44;
+            this.ButtonPrzywrocDomyslne.Text = "Przywróć wartości  domyślne";
+            this.ButtonPrzywrocDomyslne.UseVisualStyleBackColor = true;
+            this.ButtonPrzywrocDomyslne.Click += new System.EventHandler(this.ButtonPrzywrocDomyslne_Click);
+            // 
+            // ButtonAnuluj
+            // 
+            this.ButtonAnuluj.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.ButtonAnuluj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonAnuluj.Location = new System.Drawing.Point(341, 659);
+            this.ButtonAnuluj.Name = "ButtonAnuluj";
+            this.ButtonAnuluj.Size = new System.Drawing.Size(104, 27);
+            this.ButtonAnuluj.TabIndex = 24;
+            this.ButtonAnuluj.Text = "Anuluj";
+            this.ButtonAnuluj.UseVisualStyleBackColor = true;
+            // 
+            // ButtonOk
+            // 
+            this.ButtonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.ButtonOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOk.Location = new System.Drawing.Point(181, 659);
+            this.ButtonOk.Name = "ButtonOk";
+            this.ButtonOk.Size = new System.Drawing.Size(104, 27);
+            this.ButtonOk.TabIndex = 23;
+            this.ButtonOk.Text = "OK";
+            this.ButtonOk.UseVisualStyleBackColor = true;
             // 
             // OknoSLOCnaFP
             // 
@@ -1343,10 +1343,12 @@
             this.Controls.Add(this.ButtonOk);
             this.Controls.Add(this.GroupBoxKalibracja);
             this.Name = "OknoSLOCnaFP";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Tablica przeliczeniowa punktów funkcyjnych na źródłowe linie kodu";
             this.GroupBoxKalibracja.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericJavaScript)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericABAP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericASP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericBrio)).EndInit();
@@ -1384,7 +1386,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumericSQL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericVBNet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericVisualBasic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericJavaScript)).EndInit();
             this.ResumeLayout(false);
 
         }

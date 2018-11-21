@@ -267,6 +267,16 @@ namespace Aplikacja
             ButtonUstawienia_Click(sender, e);
         }
 
+
+        //! Metoda wywoływana po naciśnięciu przycisku Exit na pasku Menu.
+        /*! Metoda ExitToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Exit na pasku Menu.
+         * Skutkuje ona zamknięciem aktywnej bazy poprzez wywołanie metody CloseDatabase oraz wyjściem z programu.
+         */
+        private void ToolStripTablicaPrzeliczeniowa_Click(object sender, EventArgs e)
+        {
+            ButtonTablicaPrzeliczeniowa_Click(sender, e);
+        }
+
         //! Metoda wywoływana po naciśnięciu przycisku Exit na pasku Menu.
         /*! Metoda ExitToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Exit na pasku Menu.
          * Skutkuje ona zamknięciem aktywnej bazy poprzez wywołanie metody CloseDatabase oraz wyjściem z programu.
@@ -773,5 +783,7 @@ namespace Aplikacja
                 }
             }
         }
+
+
     }
 }

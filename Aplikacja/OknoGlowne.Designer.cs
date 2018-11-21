@@ -101,6 +101,11 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.GroupBoxWyniki = new System.Windows.Forms.GroupBox();
+            this.ButtonTablicaPrzeliczeniowa = new System.Windows.Forms.Button();
+            this.GroupBoxRaporty = new System.Windows.Forms.GroupBox();
+            this.ButtonOpisProjektu = new System.Windows.Forms.Button();
+            this.ButtonPodsumowanie = new System.Windows.Forms.Button();
+            this.ButtonOszacowanie = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label34 = new System.Windows.Forms.Label();
             this.LabelWynikKoszt = new System.Windows.Forms.Label();
@@ -120,11 +125,7 @@
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.ButtonKreator = new System.Windows.Forms.Button();
-            this.ButtonOpisProjektu = new System.Windows.Forms.Button();
-            this.ButtonOszacowanie = new System.Windows.Forms.Button();
-            this.ButtonPodsumowanie = new System.Windows.Forms.Button();
-            this.GroupBoxRaporty = new System.Windows.Forms.GroupBox();
-            this.ButtonTablicaPrzeliczeniowa = new System.Windows.Forms.Button();
+            this.ToolStripTablicaPrzeliczeniowa = new System.Windows.Forms.ToolStripMenuItem();
             this.PasekMenu.SuspendLayout();
             this.GroupBoxDaneProjektu.SuspendLayout();
             this.GroupBoxUUCW.SuspendLayout();
@@ -138,10 +139,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWSredni)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWProsty)).BeginInit();
             this.GroupBoxWyniki.SuspendLayout();
+            this.GroupBoxRaporty.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.StatusStrip.SuspendLayout();
-            this.GroupBoxRaporty.SuspendLayout();
             this.SuspendLayout();
             // 
             // PasekMenu
@@ -269,7 +270,8 @@
             this.ToolStripMenuOpcje.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuKreator,
             this.ToolStripMenuKalibracja,
-            this.ToolStripMenuUstawienia});
+            this.ToolStripMenuUstawienia,
+            this.ToolStripTablicaPrzeliczeniowa});
             this.ToolStripMenuOpcje.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ToolStripMenuOpcje.Name = "ToolStripMenuOpcje";
             this.ToolStripMenuOpcje.Size = new System.Drawing.Size(55, 21);
@@ -278,20 +280,20 @@
             // ToolStripMenuKreator
             // 
             this.ToolStripMenuKreator.Name = "ToolStripMenuKreator";
-            this.ToolStripMenuKreator.Size = new System.Drawing.Size(143, 22);
+            this.ToolStripMenuKreator.Size = new System.Drawing.Size(214, 22);
             this.ToolStripMenuKreator.Text = "K&reator";
             // 
             // ToolStripMenuKalibracja
             // 
             this.ToolStripMenuKalibracja.Name = "ToolStripMenuKalibracja";
-            this.ToolStripMenuKalibracja.Size = new System.Drawing.Size(143, 22);
+            this.ToolStripMenuKalibracja.Size = new System.Drawing.Size(214, 22);
             this.ToolStripMenuKalibracja.Text = "&Kalibracja";
             this.ToolStripMenuKalibracja.Click += new System.EventHandler(this.ToolStripMenuKalibracja_Click);
             // 
             // ToolStripMenuUstawienia
             // 
             this.ToolStripMenuUstawienia.Name = "ToolStripMenuUstawienia";
-            this.ToolStripMenuUstawienia.Size = new System.Drawing.Size(143, 22);
+            this.ToolStripMenuUstawienia.Size = new System.Drawing.Size(214, 22);
             this.ToolStripMenuUstawienia.Text = "&Ustawienia";
             this.ToolStripMenuUstawienia.Click += new System.EventHandler(this.ToolStripMenuUstawienia_Click);
             // 
@@ -990,6 +992,59 @@
             this.GroupBoxWyniki.TabStop = false;
             this.GroupBoxWyniki.Text = "Wyniki";
             // 
+            // ButtonTablicaPrzeliczeniowa
+            // 
+            this.ButtonTablicaPrzeliczeniowa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonTablicaPrzeliczeniowa.Location = new System.Drawing.Point(302, 496);
+            this.ButtonTablicaPrzeliczeniowa.Name = "ButtonTablicaPrzeliczeniowa";
+            this.ButtonTablicaPrzeliczeniowa.Size = new System.Drawing.Size(173, 27);
+            this.ButtonTablicaPrzeliczeniowa.TabIndex = 21;
+            this.ButtonTablicaPrzeliczeniowa.Text = "Tablica";
+            this.ButtonTablicaPrzeliczeniowa.UseVisualStyleBackColor = true;
+            this.ButtonTablicaPrzeliczeniowa.Click += new System.EventHandler(this.ButtonTablicaPrzeliczeniowa_Click);
+            // 
+            // GroupBoxRaporty
+            // 
+            this.GroupBoxRaporty.Controls.Add(this.ButtonOpisProjektu);
+            this.GroupBoxRaporty.Controls.Add(this.ButtonPodsumowanie);
+            this.GroupBoxRaporty.Controls.Add(this.ButtonOszacowanie);
+            this.GroupBoxRaporty.Location = new System.Drawing.Point(56, 439);
+            this.GroupBoxRaporty.Name = "GroupBoxRaporty";
+            this.GroupBoxRaporty.Size = new System.Drawing.Size(219, 178);
+            this.GroupBoxRaporty.TabIndex = 20;
+            this.GroupBoxRaporty.TabStop = false;
+            this.GroupBoxRaporty.Text = "Raporty";
+            // 
+            // ButtonOpisProjektu
+            // 
+            this.ButtonOpisProjektu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOpisProjektu.Location = new System.Drawing.Point(29, 44);
+            this.ButtonOpisProjektu.Name = "ButtonOpisProjektu";
+            this.ButtonOpisProjektu.Size = new System.Drawing.Size(173, 27);
+            this.ButtonOpisProjektu.TabIndex = 16;
+            this.ButtonOpisProjektu.Text = "Opis projektu";
+            this.ButtonOpisProjektu.UseVisualStyleBackColor = true;
+            // 
+            // ButtonPodsumowanie
+            // 
+            this.ButtonPodsumowanie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonPodsumowanie.Location = new System.Drawing.Point(29, 110);
+            this.ButtonPodsumowanie.Name = "ButtonPodsumowanie";
+            this.ButtonPodsumowanie.Size = new System.Drawing.Size(173, 27);
+            this.ButtonPodsumowanie.TabIndex = 19;
+            this.ButtonPodsumowanie.Text = "Podsumowanie";
+            this.ButtonPodsumowanie.UseVisualStyleBackColor = true;
+            // 
+            // ButtonOszacowanie
+            // 
+            this.ButtonOszacowanie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOszacowanie.Location = new System.Drawing.Point(29, 77);
+            this.ButtonOszacowanie.Name = "ButtonOszacowanie";
+            this.ButtonOszacowanie.Size = new System.Drawing.Size(173, 27);
+            this.ButtonOszacowanie.TabIndex = 18;
+            this.ButtonOszacowanie.Text = "Oszacowanie";
+            this.ButtonOszacowanie.UseVisualStyleBackColor = true;
+            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 3;
@@ -1230,58 +1285,12 @@
             this.ButtonKreator.UseVisualStyleBackColor = true;
             this.ButtonKreator.Click += new System.EventHandler(this.ButtonKreator_Click);
             // 
-            // ButtonOpisProjektu
+            // ToolStripTablicaPrzeliczeniowa
             // 
-            this.ButtonOpisProjektu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOpisProjektu.Location = new System.Drawing.Point(29, 44);
-            this.ButtonOpisProjektu.Name = "ButtonOpisProjektu";
-            this.ButtonOpisProjektu.Size = new System.Drawing.Size(173, 27);
-            this.ButtonOpisProjektu.TabIndex = 16;
-            this.ButtonOpisProjektu.Text = "Opis projektu";
-            this.ButtonOpisProjektu.UseVisualStyleBackColor = true;
-            // 
-            // ButtonOszacowanie
-            // 
-            this.ButtonOszacowanie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOszacowanie.Location = new System.Drawing.Point(29, 77);
-            this.ButtonOszacowanie.Name = "ButtonOszacowanie";
-            this.ButtonOszacowanie.Size = new System.Drawing.Size(173, 27);
-            this.ButtonOszacowanie.TabIndex = 18;
-            this.ButtonOszacowanie.Text = "Oszacowanie";
-            this.ButtonOszacowanie.UseVisualStyleBackColor = true;
-            // 
-            // ButtonPodsumowanie
-            // 
-            this.ButtonPodsumowanie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPodsumowanie.Location = new System.Drawing.Point(29, 110);
-            this.ButtonPodsumowanie.Name = "ButtonPodsumowanie";
-            this.ButtonPodsumowanie.Size = new System.Drawing.Size(173, 27);
-            this.ButtonPodsumowanie.TabIndex = 19;
-            this.ButtonPodsumowanie.Text = "Podsumowanie";
-            this.ButtonPodsumowanie.UseVisualStyleBackColor = true;
-            // 
-            // GroupBoxRaporty
-            // 
-            this.GroupBoxRaporty.Controls.Add(this.ButtonOpisProjektu);
-            this.GroupBoxRaporty.Controls.Add(this.ButtonPodsumowanie);
-            this.GroupBoxRaporty.Controls.Add(this.ButtonOszacowanie);
-            this.GroupBoxRaporty.Location = new System.Drawing.Point(56, 439);
-            this.GroupBoxRaporty.Name = "GroupBoxRaporty";
-            this.GroupBoxRaporty.Size = new System.Drawing.Size(219, 178);
-            this.GroupBoxRaporty.TabIndex = 20;
-            this.GroupBoxRaporty.TabStop = false;
-            this.GroupBoxRaporty.Text = "Raporty";
-            // 
-            // ButtonTablicaPrzeliczeniowa
-            // 
-            this.ButtonTablicaPrzeliczeniowa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonTablicaPrzeliczeniowa.Location = new System.Drawing.Point(302, 496);
-            this.ButtonTablicaPrzeliczeniowa.Name = "ButtonTablicaPrzeliczeniowa";
-            this.ButtonTablicaPrzeliczeniowa.Size = new System.Drawing.Size(173, 27);
-            this.ButtonTablicaPrzeliczeniowa.TabIndex = 21;
-            this.ButtonTablicaPrzeliczeniowa.Text = "Tablica";
-            this.ButtonTablicaPrzeliczeniowa.UseVisualStyleBackColor = true;
-            this.ButtonTablicaPrzeliczeniowa.Click += new System.EventHandler(this.ButtonTablicaPrzeliczeniowa_Click);
+            this.ToolStripTablicaPrzeliczeniowa.Name = "ToolStripTablicaPrzeliczeniowa";
+            this.ToolStripTablicaPrzeliczeniowa.Size = new System.Drawing.Size(214, 22);
+            this.ToolStripTablicaPrzeliczeniowa.Text = "&Tablica przeliczeniowa";
+            this.ToolStripTablicaPrzeliczeniowa.Click += new System.EventHandler(this.ToolStripTablicaPrzeliczeniowa_Click);
             // 
             // OknoGlowne
             // 
@@ -1322,12 +1331,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWSredni)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWProsty)).EndInit();
             this.GroupBoxWyniki.ResumeLayout(false);
+            this.GroupBoxRaporty.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.StatusStrip.ResumeLayout(false);
             this.StatusStrip.PerformLayout();
-            this.GroupBoxRaporty.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1431,6 +1440,7 @@
         private System.Windows.Forms.Button ButtonPodsumowanie;
         private System.Windows.Forms.Button ButtonOszacowanie;
         private System.Windows.Forms.Button ButtonTablicaPrzeliczeniowa;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripTablicaPrzeliczeniowa;
     }
 }
 
