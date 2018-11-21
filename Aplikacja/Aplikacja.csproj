@@ -81,6 +81,12 @@
     <Compile Include="OknoOProgramie.Designer.cs">
       <DependentUpon>OknoOProgramie.cs</DependentUpon>
     </Compile>
+    <Compile Include="OknoSLOCnaFP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OknoSLOCnaFP.Designer.cs">
+      <DependentUpon>OknoSLOCnaFP.cs</DependentUpon>
+    </Compile>
     <Compile Include="OknoUstawienia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OknoOProgramie.resx">
       <DependentUpon>OknoOProgramie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OknoSLOCnaFP.resx">
+      <DependentUpon>OknoSLOCnaFP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OknoUstawienia.resx">
       <DependentUpon>OknoUstawienia.cs</DependentUpon>
