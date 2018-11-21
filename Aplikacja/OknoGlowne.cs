@@ -40,39 +40,32 @@ namespace Aplikacja
 
         //TODO encapsulate?? domyślnie zera?
 
-        string SciezkaDoPliku;
+        string SciezkaDoPliku ="";
 
+        //Dane projektu
+        public static string NazwaProjektu = "Projekt";
+        public static string DataProjektu;
+        public static string KierownikProjektu;
+        public static string Szacujacy;
+        public static string NazwaFirmy;
+        public static string Adres;
+        public static string Telefon;
+        public static string Email;
+        public static string OpisProjektu;
+
+        public static string TempKierownikProjektu;
+        public static string TempSzacujacy;
+        public static string TempNazwaFirmy;
+        public static string TempAdres;
+        public static string TempTelefon;
+        public static string TempEmail;
+        public static string TempOpisProjektu;
+
+        //Zmienne zapisujące stan ustawień
         public static bool Ograniczenia = false;
         public static bool TempOgraniczenia = false;
         public static bool Domyslne = false;
         public static bool TempDomyslne = false;
-
-        //public static string[] TabDaneProjektu = new string[15];
-        //public static string[] TempTabDaneProjektu = new string[15];
-        public static string NazwaProjektu = "Projekt";
-        public static string DataProjektu = DateTime.Now.ToString();
-
-        public static string KierownikProjektu;
-        public static string TempKierownikProjektu;
-
-        public static string Szacujacy;
-        public static string TempSzacujacy;
-
-        public static string NazwaFirmy;
-        public static string TempNazwaFirmy;
-
-        public static string Adres;
-        public static string TempAdres;
-
-        public static string Telefon;
-        public static string TempTelefon;
-
-        public static string Email;
-        public static string TempEmail;
-
-        public static string OpisProjektu;
-        public static string TempOpisProjektu;
-
 
         //Dane modelu
         public static int[] TempTabPrzeliczeniowa = new int[38];
@@ -128,7 +121,7 @@ namespace Aplikacja
         public static double TempC;
         public static double TempD;
 
-        //przeliczniki - tu domyślne
+        //Ustawienia
         public static int JezykProgramowania = Properties.Settings.Default.JezykProgramowania;
         public static double StawkaGodz = Properties.Settings.Default.StawkaGodz;
         public static long OsoboMGodz = Properties.Settings.Default.OsoboMGodz;
@@ -149,10 +142,9 @@ namespace Aplikacja
         public static long TempMaxHarm;
 
         //wyniki pośrednie 
+
         double UUCW;
         double UAW;
-        double UUCP;
-        double Rozmiar;
         double RozmiarKSLOC;
         double E;
         double F;
@@ -162,7 +154,8 @@ namespace Aplikacja
         double PracochlonnoscBezOgran;
 
         //wyniki końcowe
-
+        double UUCP;
+        double Rozmiar;
         double Pracochlonnosc;
         double Harmonogram;
         double Koszt;
@@ -704,8 +697,18 @@ namespace Aplikacja
         {
             using (StreamWriter sw = new StreamWriter(File.Create(SciezkaDoPliku)))
             {
-                //na wypadek gdyby użytkownik nie zmienił domyślnej daty
+                sw.WriteLine(NazwaProjektu);
+                sw.WriteLine(DataProjektu);
+                sw.WriteLine(KierownikProjektu);
+                sw.WriteLine(Szacujacy);
+                sw.WriteLine(NazwaFirmy);
+                sw.WriteLine(Adres);
+                sw.WriteLine(Telefon);
+                sw.WriteLine(Email);
+                sw.WriteLine(OpisProjektu);
 
+                sw.WriteLine(Ograniczenia);
+                sw.WriteLine(Domyslne);
 
                 foreach (var item in TabUUCW)
                 {
@@ -716,6 +719,31 @@ namespace Aplikacja
                 {
                     sw.WriteLine(item);
                 }
+
+                foreach (var item in TabIndSF)
+                {
+                    sw.WriteLine(item);
+                }
+
+                foreach (var item in TabIndEM)
+                {
+                    sw.WriteLine(item);
+                }
+
+                sw.WriteLine(JezykProgramowania);
+                sw.WriteLine(StawkaGodz);
+                sw.WriteLine(OsoboMGodz);
+                sw.WriteLine(DzRobGodz);
+
+                sw.WriteLine(MaxKoszt);
+                sw.WriteLine(MaxPrac);
+                sw.WriteLine(MaxHarm);
+
+                sw.WriteLine(UUCP);
+                sw.WriteLine(Rozmiar);
+                sw.WriteLine(Pracochlonnosc);
+                sw.WriteLine(Harmonogram);
+                sw.WriteLine(Koszt);
 
                 sw.Dispose();
                 MessageBox.Show("Plik zapisano.");
@@ -788,8 +816,8 @@ namespace Aplikacja
             //MessageBox.Show(TabPktFunkSLOC[JezykProgramowania].ToString());
             //MessageBox.Show(F.ToString());
             //MessageBox.Show(E.ToString());
-            //MessageBox.Show(Rozmiar.ToString());
-            MessageBox.Show(TabOgranHarm[TabIndEM[16]].ToString());
+            MessageBox.Show(DateTime.Now.ToString());
+            MessageBox.Show(DataProjektu.ToString());
             //MessageBox.Show(Properties.Settings.Default.TabPrzeliczeniowa[37].ToString());
 
             /*
