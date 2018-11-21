@@ -80,6 +80,7 @@
             // 
             this.GroupBoxKalibracja.Controls.Add(this.GroupBoxCOCOMOII);
             this.GroupBoxKalibracja.Controls.Add(this.tableLayoutPanel2);
+            this.GroupBoxKalibracja.Controls.Add(this.ButtonPrzywroc);
             this.GroupBoxKalibracja.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxKalibracja.Location = new System.Drawing.Point(12, 12);
             this.GroupBoxKalibracja.Name = "GroupBoxKalibracja";
@@ -92,7 +93,6 @@
             // 
             this.GroupBoxCOCOMOII.Controls.Add(this.label4);
             this.GroupBoxCOCOMOII.Controls.Add(this.label1);
-            this.GroupBoxCOCOMOII.Controls.Add(this.ButtonPrzywroc);
             this.GroupBoxCOCOMOII.Controls.Add(this.label9);
             this.GroupBoxCOCOMOII.Controls.Add(this.label2);
             this.GroupBoxCOCOMOII.Controls.Add(this.label5);
@@ -105,14 +105,14 @@
             this.GroupBoxCOCOMOII.Controls.Add(this.label7);
             this.GroupBoxCOCOMOII.Location = new System.Drawing.Point(18, 276);
             this.GroupBoxCOCOMOII.Name = "GroupBoxCOCOMOII";
-            this.GroupBoxCOCOMOII.Size = new System.Drawing.Size(578, 396);
+            this.GroupBoxCOCOMOII.Size = new System.Drawing.Size(578, 293);
             this.GroupBoxCOCOMOII.TabIndex = 44;
             this.GroupBoxCOCOMOII.TabStop = false;
             this.GroupBoxCOCOMOII.Text = "Model COCOMO II";
             // 
             // ButtonPrzywroc
             // 
-            this.ButtonPrzywroc.Location = new System.Drawing.Point(357, 326);
+            this.ButtonPrzywroc.Location = new System.Drawing.Point(404, 591);
             this.ButtonPrzywroc.Name = "ButtonPrzywroc";
             this.ButtonPrzywroc.Size = new System.Drawing.Size(192, 42);
             this.ButtonPrzywroc.TabIndex = 44;

@@ -120,6 +120,10 @@
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.ButtonKreator = new System.Windows.Forms.Button();
+            this.ButtonOpisProjektu = new System.Windows.Forms.Button();
+            this.ButtonOszacowanie = new System.Windows.Forms.Button();
+            this.ButtonPodsumowanie = new System.Windows.Forms.Button();
+            this.GroupBoxRaporty = new System.Windows.Forms.GroupBox();
             this.PasekMenu.SuspendLayout();
             this.GroupBoxDaneProjektu.SuspendLayout();
             this.GroupBoxUUCW.SuspendLayout();
@@ -136,6 +140,7 @@
             this.tableLayoutPanel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.StatusStrip.SuspendLayout();
+            this.GroupBoxRaporty.SuspendLayout();
             this.SuspendLayout();
             // 
             // PasekMenu
@@ -972,6 +977,7 @@
             // 
             // GroupBoxWyniki
             // 
+            this.GroupBoxWyniki.Controls.Add(this.GroupBoxRaporty);
             this.GroupBoxWyniki.Controls.Add(this.tableLayoutPanel3);
             this.GroupBoxWyniki.Controls.Add(this.ButtonOszacuj);
             this.GroupBoxWyniki.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -1222,6 +1228,48 @@
             this.ButtonKreator.UseVisualStyleBackColor = true;
             this.ButtonKreator.Click += new System.EventHandler(this.ButtonKreator_Click);
             // 
+            // ButtonOpisProjektu
+            // 
+            this.ButtonOpisProjektu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOpisProjektu.Location = new System.Drawing.Point(29, 44);
+            this.ButtonOpisProjektu.Name = "ButtonOpisProjektu";
+            this.ButtonOpisProjektu.Size = new System.Drawing.Size(173, 27);
+            this.ButtonOpisProjektu.TabIndex = 16;
+            this.ButtonOpisProjektu.Text = "Opis projektu";
+            this.ButtonOpisProjektu.UseVisualStyleBackColor = true;
+            // 
+            // ButtonOszacowanie
+            // 
+            this.ButtonOszacowanie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOszacowanie.Location = new System.Drawing.Point(29, 77);
+            this.ButtonOszacowanie.Name = "ButtonOszacowanie";
+            this.ButtonOszacowanie.Size = new System.Drawing.Size(173, 27);
+            this.ButtonOszacowanie.TabIndex = 18;
+            this.ButtonOszacowanie.Text = "Oszacowanie";
+            this.ButtonOszacowanie.UseVisualStyleBackColor = true;
+            // 
+            // ButtonPodsumowanie
+            // 
+            this.ButtonPodsumowanie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonPodsumowanie.Location = new System.Drawing.Point(29, 110);
+            this.ButtonPodsumowanie.Name = "ButtonPodsumowanie";
+            this.ButtonPodsumowanie.Size = new System.Drawing.Size(173, 27);
+            this.ButtonPodsumowanie.TabIndex = 19;
+            this.ButtonPodsumowanie.Text = "Podsumowanie";
+            this.ButtonPodsumowanie.UseVisualStyleBackColor = true;
+            // 
+            // GroupBoxRaporty
+            // 
+            this.GroupBoxRaporty.Controls.Add(this.ButtonOpisProjektu);
+            this.GroupBoxRaporty.Controls.Add(this.ButtonPodsumowanie);
+            this.GroupBoxRaporty.Controls.Add(this.ButtonOszacowanie);
+            this.GroupBoxRaporty.Location = new System.Drawing.Point(56, 439);
+            this.GroupBoxRaporty.Name = "GroupBoxRaporty";
+            this.GroupBoxRaporty.Size = new System.Drawing.Size(273, 178);
+            this.GroupBoxRaporty.TabIndex = 20;
+            this.GroupBoxRaporty.TabStop = false;
+            this.GroupBoxRaporty.Text = "Raporty";
+            // 
             // OknoGlowne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1266,6 +1314,7 @@
             this.groupBox1.ResumeLayout(false);
             this.StatusStrip.ResumeLayout(false);
             this.StatusStrip.PerformLayout();
+            this.GroupBoxRaporty.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1364,6 +1413,10 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label LabelWynikKoszt;
         private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.GroupBox GroupBoxRaporty;
+        private System.Windows.Forms.Button ButtonOpisProjektu;
+        private System.Windows.Forms.Button ButtonPodsumowanie;
+        private System.Windows.Forms.Button ButtonOszacowanie;
     }
 }
 
