@@ -457,8 +457,8 @@
             this.NumUUCWZlozony.Location = new System.Drawing.Point(133, 141);
             this.NumUUCWZlozony.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
             this.NumUUCWZlozony.Maximum = new decimal(new int[] {
-            -727379968,
-            232,
+            1000000,
+            0,
             0,
             0});
             this.NumUUCWZlozony.Name = "NumUUCWZlozony";
@@ -487,8 +487,8 @@
             this.NumUUCWSredni.Location = new System.Drawing.Point(133, 101);
             this.NumUUCWSredni.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
             this.NumUUCWSredni.Maximum = new decimal(new int[] {
-            -727379968,
-            232,
+            1000000,
+            0,
             0,
             0});
             this.NumUUCWSredni.Name = "NumUUCWSredni";
@@ -504,8 +504,8 @@
             this.NumUUCWProsty.Location = new System.Drawing.Point(133, 61);
             this.NumUUCWProsty.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
             this.NumUUCWProsty.Maximum = new decimal(new int[] {
-            -727379968,
-            232,
+            1000000,
+            0,
             0,
             0});
             this.NumUUCWProsty.Name = "NumUUCWProsty";
@@ -793,8 +793,8 @@
             this.NumUAWZlozony.Location = new System.Drawing.Point(134, 134);
             this.NumUAWZlozony.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
             this.NumUAWZlozony.Maximum = new decimal(new int[] {
-            -727379968,
-            232,
+            1000000,
+            0,
             0,
             0});
             this.NumUAWZlozony.Name = "NumUAWZlozony";
@@ -823,8 +823,8 @@
             this.NumUAWSredni.Location = new System.Drawing.Point(134, 95);
             this.NumUAWSredni.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
             this.NumUAWSredni.Maximum = new decimal(new int[] {
-            -727379968,
-            232,
+            1000000,
+            0,
             0,
             0});
             this.NumUAWSredni.Name = "NumUAWSredni";
@@ -853,8 +853,8 @@
             this.NumUAWProsty.Location = new System.Drawing.Point(134, 56);
             this.NumUAWProsty.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
             this.NumUAWProsty.Maximum = new decimal(new int[] {
-            -727379968,
-            232,
+            1000000,
+            0,
             0,
             0});
             this.NumUAWProsty.Name = "NumUAWProsty";

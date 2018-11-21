@@ -29,7 +29,7 @@ namespace Aplikacja
         public OknoGlowne()
         {
             InitializeComponent();
-            TextBoxNazwaProjektu.Text = "Projekt";
+            TextBoxNazwaProjektu.Text = NazwaProjektu;
             DateTimePicker.Value = DateTime.Now;
 
         }
@@ -47,8 +47,10 @@ namespace Aplikacja
         public static bool Domyslne = false;
         public static bool TempDomyslne = false;
 
-        public static string[] TabDaneProjektu = new string[15];
-        public static string[] TempTabDaneProjektu = new string[15];
+        //public static string[] TabDaneProjektu = new string[15];
+        //public static string[] TempTabDaneProjektu = new string[15];
+        public static string NazwaProjektu = "Projekt";
+        public static string DataProjektu = DateTime.Now.ToString();
 
         public static string KierownikProjektu;
         public static string TempKierownikProjektu;
@@ -71,6 +73,8 @@ namespace Aplikacja
         public static string OpisProjektu;
         public static string TempOpisProjektu;
 
+
+        //Dane modelu
         public static int[] TempTabPrzeliczeniowa = new int[38];
 
         public static long[] TabUAW = new long[3];
@@ -356,12 +360,12 @@ namespace Aplikacja
         //TODO usuń TabDaneProjektu
         private void TextBoxNazwaProjektu_TextChanged(object sender, EventArgs e)
         {
-            TabDaneProjektu[0] = TextBoxNazwaProjektu.Text;
+            NazwaProjektu = TextBoxNazwaProjektu.Text;
         }
 
         private void DateTimePicker_ValueChanged(object sender, EventArgs e)
         {
-            TabDaneProjektu[1] = DateTimePicker.Text;
+            DataProjektu = DateTimePicker.Text;
         }
 
         private void NumUUCWProsty_ValueChanged(object sender, EventArgs e)
@@ -529,10 +533,20 @@ namespace Aplikacja
 
             //Wyzerowanie
             SciezkaDoPliku = "";
-            TextBoxNazwaProjektu.Text = "Projekt";
-            DateTimePicker.Value = DateTime.Now;
 
-            TabDaneProjektu = new string[15];
+            TextBoxNazwaProjektu.Text = "Projekt";
+            NazwaProjektu = "Projekt";
+            DateTimePicker.Value = DateTime.Now;
+            DataProjektu = DateTime.Now.ToString();
+
+            KierownikProjektu = "";
+            Szacujacy = "";
+            NazwaFirmy = "";
+            Adres = "";
+            Telefon = "";
+            Email = "";
+            OpisProjektu = "";
+
 
             NumUUCWProsty.Value = 0;
             NumUUCWSredni.Value = 0;
@@ -546,11 +560,28 @@ namespace Aplikacja
             TabIndSF = new int[] { 2, 2, 2, 2, 2 };
             TabIndEM = new int[] { 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2 };
 
+            Ograniczenia = false;
+            Domyslne = false;
+
+            JezykProgramowania = Properties.Settings.Default.JezykProgramowania;
+            StawkaGodz = Properties.Settings.Default.StawkaGodz;
+            OsoboMGodz = Properties.Settings.Default.OsoboMGodz;
+            DzRobGodz = Properties.Settings.Default.DzRobGodz;
+
+            MaxKoszt = 0;
+            MaxPrac = 0;
+            MaxHarm = 0;
 
 
+            LabelRozmiar.Text = "0";
             LabelPktUUCP.Text = "0";
             LabelWynikPrac.Text = "0";
+            LabelWynikPrac.BackColor = Color.FromName("Control");
             LabelWynikHarm.Text = "0";
+            LabelWynikHarm.BackColor = Color.FromName("Control");
+            LabelWynikKoszt.Text = "0";
+            LabelWynikKoszt.BackColor = Color.FromName("Control");
+
 
             MessageBox.Show("Rozpoczęto nowy projekt.");
         }
@@ -613,10 +644,6 @@ namespace Aplikacja
                         TextBoxNazwaProjektu.Text = sr.ReadLine();
                         DateTimePicker.Text = sr.ReadLine();
 
-                        for (int i = 2; i < 15; i++)
-                        {
-                            TabDaneProjektu[i] = sr.ReadLine();
-                        }
 
                         NumUUCWProsty.Value = int.Parse(sr.ReadLine());
                         NumUUCWSredni.Value = int.Parse(sr.ReadLine());
@@ -678,12 +705,7 @@ namespace Aplikacja
             using (StreamWriter sw = new StreamWriter(File.Create(SciezkaDoPliku)))
             {
                 //na wypadek gdyby użytkownik nie zmienił domyślnej daty
-                TabDaneProjektu[1] = DateTimePicker.Text;
 
-                foreach (var item in TabDaneProjektu)
-                {
-                    sw.WriteLine(item);
-                }
 
                 foreach (var item in TabUUCW)
                 {
