@@ -31,32 +31,34 @@
             this.ButtonAnuluj = new System.Windows.Forms.Button();
             this.ButtonOk = new System.Windows.Forms.Button();
             this.GroupBoxKalibracja = new System.Windows.Forms.GroupBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.TextBoxB = new System.Windows.Forms.TextBox();
-            this.TextBoxA = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.GroupBoxCOCOMOII = new System.Windows.Forms.GroupBox();
+            this.ButtonPrzywroc = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.TextBoxD = new System.Windows.Forms.TextBox();
+            this.TextBoxA = new System.Windows.Forms.TextBox();
+            this.TextBoxC = new System.Windows.Forms.TextBox();
+            this.TextBoxB = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.LabelDataRozp = new System.Windows.Forms.Label();
             this.NumericUCPnaFP = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.TextBoxD = new System.Windows.Forms.TextBox();
-            this.TextBoxC = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.GroupBoxCOCOMOII = new System.Windows.Forms.GroupBox();
             this.GroupBoxKalibracja.SuspendLayout();
+            this.GroupBoxCOCOMOII.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumericUCPnaFP)).BeginInit();
-            this.GroupBoxCOCOMOII.SuspendLayout();
             this.SuspendLayout();
             // 
             // ButtonAnuluj
             // 
             this.ButtonAnuluj.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.ButtonAnuluj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonAnuluj.Location = new System.Drawing.Point(335, 756);
+            this.ButtonAnuluj.Location = new System.Drawing.Point(338, 717);
             this.ButtonAnuluj.Name = "ButtonAnuluj";
             this.ButtonAnuluj.Size = new System.Drawing.Size(104, 27);
             this.ButtonAnuluj.TabIndex = 20;
@@ -67,7 +69,7 @@
             // 
             this.ButtonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.ButtonOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOk.Location = new System.Drawing.Point(175, 756);
+            this.ButtonOk.Location = new System.Drawing.Point(178, 717);
             this.ButtonOk.Name = "ButtonOk";
             this.ButtonOk.Size = new System.Drawing.Size(104, 27);
             this.ButtonOk.TabIndex = 19;
@@ -81,73 +83,121 @@
             this.GroupBoxKalibracja.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxKalibracja.Location = new System.Drawing.Point(12, 12);
             this.GroupBoxKalibracja.Name = "GroupBoxKalibracja";
-            this.GroupBoxKalibracja.Size = new System.Drawing.Size(615, 723);
+            this.GroupBoxKalibracja.Size = new System.Drawing.Size(615, 687);
             this.GroupBoxKalibracja.TabIndex = 21;
             this.GroupBoxKalibracja.TabStop = false;
             this.GroupBoxKalibracja.Text = "Kalibracja";
             // 
-            // label10
+            // GroupBoxCOCOMOII
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(450, 27);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(121, 32);
-            this.label10.TabIndex = 36;
-            this.label10.Text = "Suma czynników\r\n skali x 0,01";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.GroupBoxCOCOMOII.Controls.Add(this.label4);
+            this.GroupBoxCOCOMOII.Controls.Add(this.label1);
+            this.GroupBoxCOCOMOII.Controls.Add(this.ButtonPrzywroc);
+            this.GroupBoxCOCOMOII.Controls.Add(this.label9);
+            this.GroupBoxCOCOMOII.Controls.Add(this.label2);
+            this.GroupBoxCOCOMOII.Controls.Add(this.label5);
+            this.GroupBoxCOCOMOII.Controls.Add(this.label3);
+            this.GroupBoxCOCOMOII.Controls.Add(this.TextBoxD);
+            this.GroupBoxCOCOMOII.Controls.Add(this.TextBoxA);
+            this.GroupBoxCOCOMOII.Controls.Add(this.TextBoxC);
+            this.GroupBoxCOCOMOII.Controls.Add(this.TextBoxB);
+            this.GroupBoxCOCOMOII.Controls.Add(this.label10);
+            this.GroupBoxCOCOMOII.Controls.Add(this.label7);
+            this.GroupBoxCOCOMOII.Location = new System.Drawing.Point(18, 276);
+            this.GroupBoxCOCOMOII.Name = "GroupBoxCOCOMOII";
+            this.GroupBoxCOCOMOII.Size = new System.Drawing.Size(578, 396);
+            this.GroupBoxCOCOMOII.TabIndex = 44;
+            this.GroupBoxCOCOMOII.TabStop = false;
+            this.GroupBoxCOCOMOII.Text = "Model COCOMO II";
             // 
-            // TextBoxB
+            // ButtonPrzywroc
             // 
-            this.TextBoxB.Location = new System.Drawing.Point(324, 32);
-            this.TextBoxB.Name = "TextBoxB";
-            this.TextBoxB.Size = new System.Drawing.Size(100, 22);
-            this.TextBoxB.TabIndex = 35;
-            this.TextBoxB.TextChanged += new System.EventHandler(this.TextBoxB_TextChanged);
-            // 
-            // TextBoxA
-            // 
-            this.TextBoxA.Location = new System.Drawing.Point(146, 51);
-            this.TextBoxA.Name = "TextBoxA";
-            this.TextBoxA.Size = new System.Drawing.Size(100, 22);
-            this.TextBoxA.TabIndex = 34;
-            this.TextBoxA.TextChanged += new System.EventHandler(this.TextBoxA_TextChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(252, 54);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 16);
-            this.label6.TabIndex = 32;
-            this.label6.Text = "x Rozmiar";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonPrzywroc.Location = new System.Drawing.Point(357, 326);
+            this.ButtonPrzywroc.Name = "ButtonPrzywroc";
+            this.ButtonPrzywroc.Size = new System.Drawing.Size(192, 42);
+            this.ButtonPrzywroc.TabIndex = 44;
+            this.ButtonPrzywroc.Text = "Przywróć wartości  domyślne modelu";
+            this.ButtonPrzywroc.UseVisualStyleBackColor = true;
+            this.ButtonPrzywroc.Click += new System.EventHandler(this.ButtonPrzywroc_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 54);
+            this.label5.Location = new System.Drawing.Point(6, 55);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(134, 16);
+            this.label5.Size = new System.Drawing.Size(220, 16);
             this.label5.TabIndex = 31;
-            this.label5.Text = "Pracochłonność =";
+            this.label5.Text = "Pracochłonność = A x Rozmiar";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(428, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(16, 16);
-            this.label1.TabIndex = 37;
-            this.label1.Text = "+";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(264, 179);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(113, 16);
+            this.label3.TabIndex = 43;
+            this.label3.Text = "D + 0,2 x (E - B)";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TextBoxD
+            // 
+            this.TextBoxD.Location = new System.Drawing.Point(269, 234);
+            this.TextBoxD.Name = "TextBoxD";
+            this.TextBoxD.Size = new System.Drawing.Size(140, 22);
+            this.TextBoxD.TabIndex = 42;
+            this.TextBoxD.TextChanged += new System.EventHandler(this.TextBoxD_TextChanged);
+            // 
+            // TextBoxA
+            // 
+            this.TextBoxA.Location = new System.Drawing.Point(42, 110);
+            this.TextBoxA.Name = "TextBoxA";
+            this.TextBoxA.Size = new System.Drawing.Size(122, 22);
+            this.TextBoxA.TabIndex = 34;
+            this.TextBoxA.TextChanged += new System.EventHandler(this.TextBoxA_TextChanged);
+            // 
+            // TextBoxC
+            // 
+            this.TextBoxC.Location = new System.Drawing.Point(42, 234);
+            this.TextBoxC.Name = "TextBoxC";
+            this.TextBoxC.Size = new System.Drawing.Size(122, 22);
+            this.TextBoxC.TabIndex = 41;
+            this.TextBoxC.TextChanged += new System.EventHandler(this.TextBoxC_TextChanged);
+            // 
+            // TextBoxB
+            // 
+            this.TextBoxB.Location = new System.Drawing.Point(269, 110);
+            this.TextBoxB.Name = "TextBoxB";
+            this.TextBoxB.Size = new System.Drawing.Size(140, 22);
+            this.TextBoxB.TabIndex = 35;
+            this.TextBoxB.TextChanged += new System.EventHandler(this.TextBoxB_TextChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(222, 44);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(229, 16);
+            this.label10.TabIndex = 36;
+            this.label10.Text = "B + 0,01 x suma czynników skali ";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 190);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(261, 16);
+            this.label7.TabIndex = 39;
+            this.label7.Text = "Harmonogram = C x Pracochłonność";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 185F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 173F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 194F));
             this.tableLayoutPanel2.Controls.Add(this.LabelDataRozp, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.NumericUCPnaFP, 2, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(18, 44);
@@ -189,77 +239,51 @@
             this.NumericUCPnaFP.ThousandsSeparator = true;
             this.NumericUCPnaFP.ValueChanged += new System.EventHandler(this.NumericUCPnaFP_ValueChanged);
             // 
-            // label3
+            // label2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(467, 113);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 16);
-            this.label3.TabIndex = 43;
-            this.label3.Text = "+ (E - B) x 0,2";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 113);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(30, 16);
+            this.label2.TabIndex = 45;
+            this.label2.Text = "A =";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // TextBoxD
+            // label9
             // 
-            this.TextBoxD.Location = new System.Drawing.Point(361, 110);
-            this.TextBoxD.Name = "TextBoxD";
-            this.TextBoxD.Size = new System.Drawing.Size(100, 22);
-            this.TextBoxD.TabIndex = 42;
-            this.TextBoxD.TextChanged += new System.EventHandler(this.TextBoxD_TextChanged);
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(233, 113);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(30, 16);
+            this.label9.TabIndex = 47;
+            this.label9.Text = "B =";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // TextBoxC
+            // label1
             // 
-            this.TextBoxC.Location = new System.Drawing.Point(130, 132);
-            this.TextBoxC.Name = "TextBoxC";
-            this.TextBoxC.Size = new System.Drawing.Size(100, 22);
-            this.TextBoxC.TabIndex = 41;
-            this.TextBoxC.TextChanged += new System.EventHandler(this.TextBoxC_TextChanged);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 237);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(30, 16);
+            this.label1.TabIndex = 48;
+            this.label1.Text = "C =";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(236, 135);
+            this.label4.Location = new System.Drawing.Point(237, 237);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 16);
-            this.label4.TabIndex = 40;
-            this.label4.Text = "x Pracochłonność";
+            this.label4.Size = new System.Drawing.Size(31, 16);
+            this.label4.TabIndex = 49;
+            this.label4.Text = "D =";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 135);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(118, 16);
-            this.label7.TabIndex = 39;
-            this.label7.Text = "Harmonogram =";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // GroupBoxCOCOMOII
-            // 
-            this.GroupBoxCOCOMOII.Controls.Add(this.label5);
-            this.GroupBoxCOCOMOII.Controls.Add(this.label3);
-            this.GroupBoxCOCOMOII.Controls.Add(this.label6);
-            this.GroupBoxCOCOMOII.Controls.Add(this.TextBoxD);
-            this.GroupBoxCOCOMOII.Controls.Add(this.TextBoxA);
-            this.GroupBoxCOCOMOII.Controls.Add(this.TextBoxC);
-            this.GroupBoxCOCOMOII.Controls.Add(this.TextBoxB);
-            this.GroupBoxCOCOMOII.Controls.Add(this.label4);
-            this.GroupBoxCOCOMOII.Controls.Add(this.label10);
-            this.GroupBoxCOCOMOII.Controls.Add(this.label7);
-            this.GroupBoxCOCOMOII.Controls.Add(this.label1);
-            this.GroupBoxCOCOMOII.Location = new System.Drawing.Point(18, 276);
-            this.GroupBoxCOCOMOII.Name = "GroupBoxCOCOMOII";
-            this.GroupBoxCOCOMOII.Size = new System.Drawing.Size(578, 255);
-            this.GroupBoxCOCOMOII.TabIndex = 44;
-            this.GroupBoxCOCOMOII.TabStop = false;
-            this.GroupBoxCOCOMOII.Text = "Model COCOMO II";
             // 
             // OknoKalibracja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(647, 809);
+            this.ClientSize = new System.Drawing.Size(647, 775);
             this.Controls.Add(this.GroupBoxKalibracja);
             this.Controls.Add(this.ButtonAnuluj);
             this.Controls.Add(this.ButtonOk);
@@ -267,11 +291,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Kalibracja";
             this.GroupBoxKalibracja.ResumeLayout(false);
+            this.GroupBoxCOCOMOII.ResumeLayout(false);
+            this.GroupBoxCOCOMOII.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumericUCPnaFP)).EndInit();
-            this.GroupBoxCOCOMOII.ResumeLayout(false);
-            this.GroupBoxCOCOMOII.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -281,12 +305,10 @@
         private System.Windows.Forms.Button ButtonAnuluj;
         private System.Windows.Forms.Button ButtonOk;
         private System.Windows.Forms.GroupBox GroupBoxKalibracja;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox TextBoxB;
         private System.Windows.Forms.TextBox TextBoxA;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label LabelDataRozp;
         private System.Windows.Forms.NumericUpDown NumericUCPnaFP;
@@ -294,7 +316,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox TextBoxD;
         private System.Windows.Forms.TextBox TextBoxC;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button ButtonPrzywroc;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label2;
     }
 }

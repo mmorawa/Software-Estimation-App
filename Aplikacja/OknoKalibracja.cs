@@ -43,6 +43,27 @@ namespace Aplikacja
             OknoGlowne.TempD = double.Parse(TextBoxD.Text);
         }
 
+        private void ButtonPrzywroc_Click(object sender, EventArgs e)
+        {
+            NumericUCPnaFP.Value = (decimal)2.27;
+            TextBoxA.Text = 2.94.ToString();
+            TextBoxB.Text = 0.91.ToString();
+            TextBoxC.Text = 3.67.ToString(); 
+            TextBoxD.Text = 0.28.ToString();
+
+            OknoGlowne.TempUCPnaFP = 2.27;
+            OknoGlowne.TempA = 2.94;
+            OknoGlowne.TempB = 0.91;
+            OknoGlowne.TempC = 3.67;
+            OknoGlowne.TempD = 0.28;
+
+            MessageBox.Show("Domyślne wartości modelu zostały przywrócone.", "Sukces");
+
+        }
+
+
+
+
 
 
         //TODO różne kalibracje dla różnych zespołów/projektów
