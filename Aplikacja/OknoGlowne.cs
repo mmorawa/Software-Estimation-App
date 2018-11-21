@@ -71,9 +71,9 @@ namespace Aplikacja
         public static string OpisProjektu;
         public static string TempOpisProjektu;
 
-        int[] TabPktFunkSLOC = { 18, 54, 98, 14, 99, 53, 59, 55, 42, 18, 24, 65,
-            191, 45, 35, 40, 49, 53, 53, 48, 30, 21, 34, 60, 40, 32, 15, 80, 35,
-            28, 80, 66, 37, 60, 75, 21, 60, 44 };
+        //int[] TabPktFunkSLOC = { 18, 54, 98, 14, 99, 53, 59, 55, 42, 18, 24, 65,
+           // 191, 45, 35, 40, 49, 53, 53, 48, 30, 21, 34, 60, 40, 32, 15, 80, 35,
+           // 28, 80, 66, 37, 60, 75, 21, 60, 44 };
         public static int[] TempTabPktFunkSLOC = new int[38];
 
         public static long[] TabUAW = new long[3];
@@ -397,7 +397,7 @@ namespace Aplikacja
 
             UUCP = UAW + UUCW;
 
-            Rozmiar = (UUCP * Properties.Settings.Default.UCPnaFP * TabPktFunkSLOC[JezykProgramowania]);
+            Rozmiar = (UUCP * Properties.Settings.Default.UCPnaFP * Properties.Settings.Default.TabPrzeliczeniowa[JezykProgramowania]);
 
             RozmiarKSLOC = Rozmiar / 1000;
 

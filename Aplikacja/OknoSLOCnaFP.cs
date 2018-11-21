@@ -241,10 +241,54 @@ namespace Aplikacja
         }
 
 
-
         private void ButtonPrzywrocDomyslne_Click(object sender, EventArgs e)
         {
+            NumericABAP.Value = 18;
+            NumericASP.Value = 54;
+            NumericAssembler.Value = 98;
+            NumericBrio.Value = 14;
+            NumericC.Value = 99;
+            NumericCpp.Value = 53;
+            NumericCsharp.Value = 59;
+            NumericCOBOL.Value = 55;
+            NumericCognos.Value = 42;
+            NumericCross.Value = 18;
+            NumericCool.Value = 24;
+            NumericDatastage.Value = 65;
+            NumericExcel.Value = 191;
+            NumericFocus.Value = 45;
+            NumericFoxPro.Value = 35;
+            NumericHTML.Value = 40;
+            NumericJ2EE.Value = 49;
+            NumericJava.Value = 53;
+            NumericJavaScript.Value = 53;
+            NumericJCL.Value = 48;
+            NumericLINC.Value = 30;
+            NumericLotus.Value = 21;
+            NumericNatural.Value = 34;
+            NumericDotNet.Value = 60;
+            NumericOracle.Value = 40;
+            NumericPACBASE.Value = 32;
+            NumericPerl.Value = 15;
+            NumericPLI.Value = 80;
+            NumericPLSQL.Value = 35;
+            NumericPowerbuilder.Value = 28;
+            NumericREXX.Value = 80;
+            NumericSabretalk.Value = 66;
+            NumericSAS.Value = 37;
+            NumericSiebel.Value = 60;
+            NumericSLOGAN.Value = 75;
+            NumericSQL.Value = 21;
+            NumericVBNet.Value = 60;
+            NumericVisualBasic.Value = 44;
 
+            OknoGlowne.TempUCPnaFP = 2.27;
+
+            OknoGlowne.TempTabPktFunkSLOC = new int[] {18, 54, 98, 14, 99, 53, 59, 55,
+                42, 18, 24, 65, 191, 45, 35, 40, 49, 53, 53, 48, 30, 21, 34, 60, 40, 32,
+                15, 80, 35, 28, 80, 66, 37, 60, 75, 21, 60, 44 };
+
+            MessageBox.Show("Domyślne wartości modelu zostały przywrócone.", "Sukces");
         }
     }
 }
