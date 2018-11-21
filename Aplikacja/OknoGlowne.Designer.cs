@@ -124,6 +124,7 @@
             this.ButtonOszacowanie = new System.Windows.Forms.Button();
             this.ButtonPodsumowanie = new System.Windows.Forms.Button();
             this.GroupBoxRaporty = new System.Windows.Forms.GroupBox();
+            this.ButtonTablicaPrzeliczeniowa = new System.Windows.Forms.Button();
             this.PasekMenu.SuspendLayout();
             this.GroupBoxDaneProjektu.SuspendLayout();
             this.GroupBoxUUCW.SuspendLayout();
@@ -977,6 +978,7 @@
             // 
             // GroupBoxWyniki
             // 
+            this.GroupBoxWyniki.Controls.Add(this.ButtonTablicaPrzeliczeniowa);
             this.GroupBoxWyniki.Controls.Add(this.GroupBoxRaporty);
             this.GroupBoxWyniki.Controls.Add(this.tableLayoutPanel3);
             this.GroupBoxWyniki.Controls.Add(this.ButtonOszacuj);
@@ -1265,10 +1267,21 @@
             this.GroupBoxRaporty.Controls.Add(this.ButtonOszacowanie);
             this.GroupBoxRaporty.Location = new System.Drawing.Point(56, 439);
             this.GroupBoxRaporty.Name = "GroupBoxRaporty";
-            this.GroupBoxRaporty.Size = new System.Drawing.Size(273, 178);
+            this.GroupBoxRaporty.Size = new System.Drawing.Size(219, 178);
             this.GroupBoxRaporty.TabIndex = 20;
             this.GroupBoxRaporty.TabStop = false;
             this.GroupBoxRaporty.Text = "Raporty";
+            // 
+            // ButtonTablicaPrzeliczeniowa
+            // 
+            this.ButtonTablicaPrzeliczeniowa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonTablicaPrzeliczeniowa.Location = new System.Drawing.Point(302, 496);
+            this.ButtonTablicaPrzeliczeniowa.Name = "ButtonTablicaPrzeliczeniowa";
+            this.ButtonTablicaPrzeliczeniowa.Size = new System.Drawing.Size(173, 27);
+            this.ButtonTablicaPrzeliczeniowa.TabIndex = 21;
+            this.ButtonTablicaPrzeliczeniowa.Text = "Tablica";
+            this.ButtonTablicaPrzeliczeniowa.UseVisualStyleBackColor = true;
+            this.ButtonTablicaPrzeliczeniowa.Click += new System.EventHandler(this.ButtonTablicaPrzeliczeniowa_Click);
             // 
             // OknoGlowne
             // 
@@ -1417,6 +1430,7 @@
         private System.Windows.Forms.Button ButtonOpisProjektu;
         private System.Windows.Forms.Button ButtonPodsumowanie;
         private System.Windows.Forms.Button ButtonOszacowanie;
+        private System.Windows.Forms.Button ButtonTablicaPrzeliczeniowa;
     }
 }
 

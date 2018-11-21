@@ -47,5 +47,48 @@
     <Setting Name="D" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0.28</Value>
     </Setting>
+    <Setting Name="TabPrzeliczeniowa" Type="System.Int32[]" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfInt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;int&gt;18&lt;/int&gt;
+  &lt;int&gt;54&lt;/int&gt;
+  &lt;int&gt;98&lt;/int&gt;
+  &lt;int&gt;14&lt;/int&gt;
+  &lt;int&gt;99&lt;/int&gt;
+  &lt;int&gt;53&lt;/int&gt;
+  &lt;int&gt;59&lt;/int&gt;
+  &lt;int&gt;55&lt;/int&gt;
+  &lt;int&gt;42&lt;/int&gt;
+  &lt;int&gt;18&lt;/int&gt;
+  &lt;int&gt;24&lt;/int&gt;
+  &lt;int&gt;65&lt;/int&gt;
+  &lt;int&gt;191&lt;/int&gt;
+  &lt;int&gt;45&lt;/int&gt;
+  &lt;int&gt;35&lt;/int&gt;
+  &lt;int&gt;40&lt;/int&gt;
+  &lt;int&gt;49&lt;/int&gt;
+  &lt;int&gt;53&lt;/int&gt;
+  &lt;int&gt;53&lt;/int&gt;
+  &lt;int&gt;48&lt;/int&gt;
+  &lt;int&gt;30&lt;/int&gt;
+  &lt;int&gt;21&lt;/int&gt;
+  &lt;int&gt;34&lt;/int&gt;
+  &lt;int&gt;60&lt;/int&gt;
+  &lt;int&gt;40&lt;/int&gt;
+  &lt;int&gt;32&lt;/int&gt;
+  &lt;int&gt;15&lt;/int&gt;
+  &lt;int&gt;80&lt;/int&gt;
+  &lt;int&gt;35&lt;/int&gt;
+  &lt;int&gt;28&lt;/int&gt;
+  &lt;int&gt;80&lt;/int&gt;
+  &lt;int&gt;66&lt;/int&gt;
+  &lt;int&gt;37&lt;/int&gt;
+  &lt;int&gt;60&lt;/int&gt;
+  &lt;int&gt;75&lt;/int&gt;
+  &lt;int&gt;21&lt;/int&gt;
+  &lt;int&gt;60&lt;/int&gt;
+  &lt;int&gt;44&lt;/int&gt;
+&lt;/ArrayOfInt&gt;</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

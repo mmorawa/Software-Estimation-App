@@ -202,5 +202,57 @@ namespace Aplikacja.Properties {
                 this["D"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
+<ArrayOfInt xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
+  <int>18</int>
+  <int>54</int>
+  <int>98</int>
+  <int>14</int>
+  <int>99</int>
+  <int>53</int>
+  <int>59</int>
+  <int>55</int>
+  <int>42</int>
+  <int>18</int>
+  <int>24</int>
+  <int>65</int>
+  <int>191</int>
+  <int>45</int>
+  <int>35</int>
+  <int>40</int>
+  <int>49</int>
+  <int>53</int>
+  <int>53</int>
+  <int>48</int>
+  <int>30</int>
+  <int>21</int>
+  <int>34</int>
+  <int>60</int>
+  <int>40</int>
+  <int>32</int>
+  <int>15</int>
+  <int>80</int>
+  <int>35</int>
+  <int>28</int>
+  <int>80</int>
+  <int>66</int>
+  <int>37</int>
+  <int>60</int>
+  <int>75</int>
+  <int>21</int>
+  <int>60</int>
+  <int>44</int>
+</ArrayOfInt>")]
+        public int[] TabPrzeliczeniowa {
+            get {
+                return ((int[])(this["TabPrzeliczeniowa"]));
+            }
+            set {
+                this["TabPrzeliczeniowa"] = value;
+            }
+        }
     }
 }

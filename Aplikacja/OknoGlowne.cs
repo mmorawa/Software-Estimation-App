@@ -74,6 +74,7 @@ namespace Aplikacja
         int[] TabPktFunkSLOC = { 18, 54, 98, 14, 99, 53, 59, 55, 42, 18, 24, 65,
             191, 45, 35, 40, 49, 53, 53, 48, 30, 21, 34, 60, 40, 32, 15, 80, 35,
             28, 80, 66, 37, 60, 75, 21, 60, 44 };
+        public static int[] TempTabPktFunkSLOC = new int[38];
 
         public static long[] TabUAW = new long[3];
         double[] wagiAktorow = { 1, 2, 3 };
@@ -741,9 +742,8 @@ namespace Aplikacja
             //MessageBox.Show(F.ToString());
             //MessageBox.Show(E.ToString());
             //MessageBox.Show(Rozmiar.ToString());
-            double testNumber = 134566548.78;
-            MessageBox.Show(string.Format("{0:N}", testNumber));
-
+            MessageBox.Show(Properties.Settings.Default.TabPrzeliczeniowa[0].ToString());
+            MessageBox.Show(Properties.Settings.Default.TabPrzeliczeniowa[37].ToString());
 
             /*
             MessageBox.Show(Properties.Settings.Default.A.ToString());
@@ -751,6 +751,27 @@ namespace Aplikacja
             MessageBox.Show(Properties.Settings.Default.C.ToString());
             MessageBox.Show(Properties.Settings.Default.D.ToString());
             */
+        }
+
+        private void ButtonTablicaPrzeliczeniowa_Click(object sender, EventArgs e)
+        {
+            using (OknoSLOCnaFP OknoSLOC_FP = new OknoSLOCnaFP())
+            {
+                DialogResult dr = OknoSLOC_FP.ShowDialog();
+
+                if (dr == DialogResult.OK)
+                {
+                    for (int i = 0; i < 38; i++)
+                    {
+                        Properties.Settings.Default.TabPrzeliczeniowa[i] = TempTabPktFunkSLOC[i];
+                    }
+
+                    //Properties.Settings.Default.UCPnaFP = TempUCPnaFP;
+
+                    //Properties.Settings.Default.Save();
+                    MessageBox.Show("Wprowadzono nowe dane do tablicy przeliczeniowej punktów funkcyjnych na źródłowe linie kodu.", "Sukces");
+                }
+            }
         }
     }
 }

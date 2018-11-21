@@ -32,7 +32,7 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.LabelDataRozp = new System.Windows.Forms.Label();
             this.NumericABAP = new System.Windows.Forms.NumericUpDown();
-            this.ButtonPrzywroc = new System.Windows.Forms.Button();
+            this.ButtonPrzywrocDomyslne = new System.Windows.Forms.Button();
             this.ButtonAnuluj = new System.Windows.Forms.Button();
             this.ButtonOk = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -154,7 +154,7 @@
             // GroupBoxKalibracja
             // 
             this.GroupBoxKalibracja.Controls.Add(this.tableLayoutPanel2);
-            this.GroupBoxKalibracja.Controls.Add(this.ButtonPrzywroc);
+            this.GroupBoxKalibracja.Controls.Add(this.ButtonPrzywrocDomyslne);
             this.GroupBoxKalibracja.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxKalibracja.Location = new System.Drawing.Point(12, 12);
             this.GroupBoxKalibracja.Name = "GroupBoxKalibracja";
@@ -292,8 +292,8 @@
             this.NumericABAP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericABAP.Location = new System.Drawing.Point(205, 3);
             this.NumericABAP.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericABAP.Name = "NumericABAP";
@@ -301,15 +301,17 @@
             this.NumericABAP.TabIndex = 16;
             this.NumericABAP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericABAP.ThousandsSeparator = true;
+            this.NumericABAP.ValueChanged += new System.EventHandler(this.NumericABAP_ValueChanged);
             // 
-            // ButtonPrzywroc
+            // ButtonPrzywrocDomyslne
             // 
-            this.ButtonPrzywroc.Location = new System.Drawing.Point(378, 563);
-            this.ButtonPrzywroc.Name = "ButtonPrzywroc";
-            this.ButtonPrzywroc.Size = new System.Drawing.Size(192, 42);
-            this.ButtonPrzywroc.TabIndex = 44;
-            this.ButtonPrzywroc.Text = "Przywróć wartości  domyślne";
-            this.ButtonPrzywroc.UseVisualStyleBackColor = true;
+            this.ButtonPrzywrocDomyslne.Location = new System.Drawing.Point(378, 563);
+            this.ButtonPrzywrocDomyslne.Name = "ButtonPrzywrocDomyslne";
+            this.ButtonPrzywrocDomyslne.Size = new System.Drawing.Size(192, 42);
+            this.ButtonPrzywrocDomyslne.TabIndex = 44;
+            this.ButtonPrzywrocDomyslne.Text = "Przywróć wartości  domyślne";
+            this.ButtonPrzywrocDomyslne.UseVisualStyleBackColor = true;
+            this.ButtonPrzywrocDomyslne.Click += new System.EventHandler(this.ButtonPrzywrocDomyslne_Click);
             // 
             // ButtonAnuluj
             // 
@@ -745,8 +747,8 @@
             this.NumericASP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericASP.Location = new System.Drawing.Point(205, 30);
             this.NumericASP.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericASP.Name = "NumericASP";
@@ -754,14 +756,15 @@
             this.NumericASP.TabIndex = 73;
             this.NumericASP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericASP.ThousandsSeparator = true;
+            this.NumericASP.ValueChanged += new System.EventHandler(this.NumericASP_ValueChanged);
             // 
             // NumericBrio
             // 
             this.NumericBrio.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericBrio.Location = new System.Drawing.Point(205, 84);
             this.NumericBrio.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericBrio.Name = "NumericBrio";
@@ -769,14 +772,15 @@
             this.NumericBrio.TabIndex = 74;
             this.NumericBrio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericBrio.ThousandsSeparator = true;
+            this.NumericBrio.ValueChanged += new System.EventHandler(this.NumericBrio_ValueChanged);
             // 
             // NumericAssembler
             // 
             this.NumericAssembler.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericAssembler.Location = new System.Drawing.Point(205, 57);
             this.NumericAssembler.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericAssembler.Name = "NumericAssembler";
@@ -784,14 +788,15 @@
             this.NumericAssembler.TabIndex = 75;
             this.NumericAssembler.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericAssembler.ThousandsSeparator = true;
+            this.NumericAssembler.ValueChanged += new System.EventHandler(this.NumericAssembler_ValueChanged);
             // 
             // NumericC
             // 
             this.NumericC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericC.Location = new System.Drawing.Point(205, 111);
             this.NumericC.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericC.Name = "NumericC";
@@ -799,14 +804,15 @@
             this.NumericC.TabIndex = 76;
             this.NumericC.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericC.ThousandsSeparator = true;
+            this.NumericC.ValueChanged += new System.EventHandler(this.NumericC_ValueChanged);
             // 
             // NumericCpp
             // 
             this.NumericCpp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericCpp.Location = new System.Drawing.Point(205, 138);
             this.NumericCpp.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericCpp.Name = "NumericCpp";
@@ -814,14 +820,15 @@
             this.NumericCpp.TabIndex = 77;
             this.NumericCpp.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCpp.ThousandsSeparator = true;
+            this.NumericCpp.ValueChanged += new System.EventHandler(this.NumericCpp_ValueChanged);
             // 
             // NumericCsharp
             // 
             this.NumericCsharp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericCsharp.Location = new System.Drawing.Point(205, 165);
             this.NumericCsharp.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericCsharp.Name = "NumericCsharp";
@@ -829,14 +836,15 @@
             this.NumericCsharp.TabIndex = 78;
             this.NumericCsharp.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCsharp.ThousandsSeparator = true;
+            this.NumericCsharp.ValueChanged += new System.EventHandler(this.NumericCsharp_ValueChanged);
             // 
             // NumericCOBOL
             // 
             this.NumericCOBOL.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericCOBOL.Location = new System.Drawing.Point(205, 192);
             this.NumericCOBOL.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericCOBOL.Name = "NumericCOBOL";
@@ -844,14 +852,15 @@
             this.NumericCOBOL.TabIndex = 79;
             this.NumericCOBOL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCOBOL.ThousandsSeparator = true;
+            this.NumericCOBOL.ValueChanged += new System.EventHandler(this.NumericCOBOL_ValueChanged);
             // 
             // NumericCognos
             // 
             this.NumericCognos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericCognos.Location = new System.Drawing.Point(205, 219);
             this.NumericCognos.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericCognos.Name = "NumericCognos";
@@ -859,14 +868,15 @@
             this.NumericCognos.TabIndex = 80;
             this.NumericCognos.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCognos.ThousandsSeparator = true;
+            this.NumericCognos.ValueChanged += new System.EventHandler(this.NumericCognos_ValueChanged);
             // 
             // NumericCross
             // 
             this.NumericCross.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericCross.Location = new System.Drawing.Point(205, 246);
             this.NumericCross.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericCross.Name = "NumericCross";
@@ -874,14 +884,15 @@
             this.NumericCross.TabIndex = 81;
             this.NumericCross.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCross.ThousandsSeparator = true;
+            this.NumericCross.ValueChanged += new System.EventHandler(this.NumericCross_ValueChanged);
             // 
             // NumericCool
             // 
             this.NumericCool.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericCool.Location = new System.Drawing.Point(205, 273);
             this.NumericCool.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericCool.Name = "NumericCool";
@@ -889,14 +900,15 @@
             this.NumericCool.TabIndex = 82;
             this.NumericCool.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCool.ThousandsSeparator = true;
+            this.NumericCool.ValueChanged += new System.EventHandler(this.NumericCool_ValueChanged);
             // 
             // NumericDatastage
             // 
             this.NumericDatastage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericDatastage.Location = new System.Drawing.Point(205, 300);
             this.NumericDatastage.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericDatastage.Name = "NumericDatastage";
@@ -904,14 +916,15 @@
             this.NumericDatastage.TabIndex = 83;
             this.NumericDatastage.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericDatastage.ThousandsSeparator = true;
+            this.NumericDatastage.ValueChanged += new System.EventHandler(this.NumericDatastage_ValueChanged);
             // 
             // NumericExcel
             // 
             this.NumericExcel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericExcel.Location = new System.Drawing.Point(205, 327);
             this.NumericExcel.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericExcel.Name = "NumericExcel";
@@ -919,14 +932,15 @@
             this.NumericExcel.TabIndex = 84;
             this.NumericExcel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericExcel.ThousandsSeparator = true;
+            this.NumericExcel.ValueChanged += new System.EventHandler(this.NumericExcel_ValueChanged);
             // 
             // NumericFocus
             // 
             this.NumericFocus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericFocus.Location = new System.Drawing.Point(205, 354);
             this.NumericFocus.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericFocus.Name = "NumericFocus";
@@ -934,14 +948,15 @@
             this.NumericFocus.TabIndex = 85;
             this.NumericFocus.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericFocus.ThousandsSeparator = true;
+            this.NumericFocus.ValueChanged += new System.EventHandler(this.NumericFocus_ValueChanged);
             // 
             // NumericFoxPro
             // 
             this.NumericFoxPro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericFoxPro.Location = new System.Drawing.Point(205, 381);
             this.NumericFoxPro.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericFoxPro.Name = "NumericFoxPro";
@@ -949,14 +964,15 @@
             this.NumericFoxPro.TabIndex = 86;
             this.NumericFoxPro.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericFoxPro.ThousandsSeparator = true;
+            this.NumericFoxPro.ValueChanged += new System.EventHandler(this.NumericFoxPro_ValueChanged);
             // 
             // NumericHTML
             // 
             this.NumericHTML.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericHTML.Location = new System.Drawing.Point(205, 408);
             this.NumericHTML.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericHTML.Name = "NumericHTML";
@@ -964,14 +980,15 @@
             this.NumericHTML.TabIndex = 87;
             this.NumericHTML.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericHTML.ThousandsSeparator = true;
+            this.NumericHTML.ValueChanged += new System.EventHandler(this.NumericHTML_ValueChanged);
             // 
             // NumericJ2EE
             // 
             this.NumericJ2EE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericJ2EE.Location = new System.Drawing.Point(205, 435);
             this.NumericJ2EE.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericJ2EE.Name = "NumericJ2EE";
@@ -979,14 +996,15 @@
             this.NumericJ2EE.TabIndex = 88;
             this.NumericJ2EE.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericJ2EE.ThousandsSeparator = true;
+            this.NumericJ2EE.ValueChanged += new System.EventHandler(this.NumericJ2EE_ValueChanged);
             // 
             // NumericJava
             // 
             this.NumericJava.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericJava.Location = new System.Drawing.Point(205, 462);
             this.NumericJava.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericJava.Name = "NumericJava";
@@ -994,14 +1012,15 @@
             this.NumericJava.TabIndex = 89;
             this.NumericJava.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericJava.ThousandsSeparator = true;
+            this.NumericJava.ValueChanged += new System.EventHandler(this.NumericJava_ValueChanged);
             // 
             // NumericJCL
             // 
             this.NumericJCL.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericJCL.Location = new System.Drawing.Point(441, 3);
             this.NumericJCL.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericJCL.Name = "NumericJCL";
@@ -1009,14 +1028,15 @@
             this.NumericJCL.TabIndex = 90;
             this.NumericJCL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericJCL.ThousandsSeparator = true;
+            this.NumericJCL.ValueChanged += new System.EventHandler(this.NumericJCL_ValueChanged);
             // 
             // NumericLINC
             // 
             this.NumericLINC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericLINC.Location = new System.Drawing.Point(441, 30);
             this.NumericLINC.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericLINC.Name = "NumericLINC";
@@ -1024,14 +1044,15 @@
             this.NumericLINC.TabIndex = 91;
             this.NumericLINC.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericLINC.ThousandsSeparator = true;
+            this.NumericLINC.ValueChanged += new System.EventHandler(this.NumericLINC_ValueChanged);
             // 
             // NumericLotus
             // 
             this.NumericLotus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericLotus.Location = new System.Drawing.Point(441, 57);
             this.NumericLotus.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericLotus.Name = "NumericLotus";
@@ -1039,14 +1060,15 @@
             this.NumericLotus.TabIndex = 92;
             this.NumericLotus.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericLotus.ThousandsSeparator = true;
+            this.NumericLotus.ValueChanged += new System.EventHandler(this.NumericLotus_ValueChanged);
             // 
             // NumericNatural
             // 
             this.NumericNatural.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericNatural.Location = new System.Drawing.Point(441, 84);
             this.NumericNatural.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericNatural.Name = "NumericNatural";
@@ -1054,14 +1076,15 @@
             this.NumericNatural.TabIndex = 93;
             this.NumericNatural.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericNatural.ThousandsSeparator = true;
+            this.NumericNatural.ValueChanged += new System.EventHandler(this.NumericNatural_ValueChanged);
             // 
             // NumericDotNet
             // 
             this.NumericDotNet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericDotNet.Location = new System.Drawing.Point(441, 111);
             this.NumericDotNet.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericDotNet.Name = "NumericDotNet";
@@ -1069,14 +1092,15 @@
             this.NumericDotNet.TabIndex = 94;
             this.NumericDotNet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericDotNet.ThousandsSeparator = true;
+            this.NumericDotNet.ValueChanged += new System.EventHandler(this.NumericDotNet_ValueChanged);
             // 
             // NumericOracle
             // 
             this.NumericOracle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericOracle.Location = new System.Drawing.Point(441, 138);
             this.NumericOracle.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericOracle.Name = "NumericOracle";
@@ -1084,14 +1108,15 @@
             this.NumericOracle.TabIndex = 95;
             this.NumericOracle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericOracle.ThousandsSeparator = true;
+            this.NumericOracle.ValueChanged += new System.EventHandler(this.NumericOracle_ValueChanged);
             // 
             // NumericPACBASE
             // 
             this.NumericPACBASE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericPACBASE.Location = new System.Drawing.Point(441, 165);
             this.NumericPACBASE.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericPACBASE.Name = "NumericPACBASE";
@@ -1099,14 +1124,15 @@
             this.NumericPACBASE.TabIndex = 96;
             this.NumericPACBASE.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericPACBASE.ThousandsSeparator = true;
+            this.NumericPACBASE.ValueChanged += new System.EventHandler(this.NumericPACBASE_ValueChanged);
             // 
             // NumericPerl
             // 
             this.NumericPerl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericPerl.Location = new System.Drawing.Point(441, 192);
             this.NumericPerl.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericPerl.Name = "NumericPerl";
@@ -1114,14 +1140,15 @@
             this.NumericPerl.TabIndex = 97;
             this.NumericPerl.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericPerl.ThousandsSeparator = true;
+            this.NumericPerl.ValueChanged += new System.EventHandler(this.NumericPerl_ValueChanged);
             // 
             // NumericPLI
             // 
             this.NumericPLI.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericPLI.Location = new System.Drawing.Point(441, 219);
             this.NumericPLI.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericPLI.Name = "NumericPLI";
@@ -1129,14 +1156,15 @@
             this.NumericPLI.TabIndex = 98;
             this.NumericPLI.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericPLI.ThousandsSeparator = true;
+            this.NumericPLI.ValueChanged += new System.EventHandler(this.NumericPLI_ValueChanged);
             // 
             // NumericPLSQL
             // 
             this.NumericPLSQL.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericPLSQL.Location = new System.Drawing.Point(441, 246);
             this.NumericPLSQL.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericPLSQL.Name = "NumericPLSQL";
@@ -1144,14 +1172,15 @@
             this.NumericPLSQL.TabIndex = 99;
             this.NumericPLSQL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericPLSQL.ThousandsSeparator = true;
+            this.NumericPLSQL.ValueChanged += new System.EventHandler(this.NumericPLSQL_ValueChanged);
             // 
             // NumericPowerbuilder
             // 
             this.NumericPowerbuilder.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericPowerbuilder.Location = new System.Drawing.Point(441, 273);
             this.NumericPowerbuilder.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericPowerbuilder.Name = "NumericPowerbuilder";
@@ -1159,14 +1188,15 @@
             this.NumericPowerbuilder.TabIndex = 100;
             this.NumericPowerbuilder.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericPowerbuilder.ThousandsSeparator = true;
+            this.NumericPowerbuilder.ValueChanged += new System.EventHandler(this.NumericPowerbuilder_ValueChanged);
             // 
             // NumericREXX
             // 
             this.NumericREXX.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericREXX.Location = new System.Drawing.Point(441, 300);
             this.NumericREXX.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericREXX.Name = "NumericREXX";
@@ -1174,14 +1204,15 @@
             this.NumericREXX.TabIndex = 101;
             this.NumericREXX.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericREXX.ThousandsSeparator = true;
+            this.NumericREXX.ValueChanged += new System.EventHandler(this.NumericREXX_ValueChanged);
             // 
             // NumericSabretalk
             // 
             this.NumericSabretalk.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericSabretalk.Location = new System.Drawing.Point(441, 327);
             this.NumericSabretalk.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericSabretalk.Name = "NumericSabretalk";
@@ -1189,14 +1220,15 @@
             this.NumericSabretalk.TabIndex = 102;
             this.NumericSabretalk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericSabretalk.ThousandsSeparator = true;
+            this.NumericSabretalk.ValueChanged += new System.EventHandler(this.NumericSabretalk_ValueChanged);
             // 
             // NumericSAS
             // 
             this.NumericSAS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericSAS.Location = new System.Drawing.Point(441, 354);
             this.NumericSAS.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericSAS.Name = "NumericSAS";
@@ -1204,14 +1236,15 @@
             this.NumericSAS.TabIndex = 103;
             this.NumericSAS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericSAS.ThousandsSeparator = true;
+            this.NumericSAS.ValueChanged += new System.EventHandler(this.NumericSAS_ValueChanged);
             // 
             // NumericSiebel
             // 
             this.NumericSiebel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericSiebel.Location = new System.Drawing.Point(441, 381);
             this.NumericSiebel.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericSiebel.Name = "NumericSiebel";
@@ -1219,14 +1252,15 @@
             this.NumericSiebel.TabIndex = 104;
             this.NumericSiebel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericSiebel.ThousandsSeparator = true;
+            this.NumericSiebel.ValueChanged += new System.EventHandler(this.NumericSiebel_ValueChanged);
             // 
             // NumericSLOGAN
             // 
             this.NumericSLOGAN.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericSLOGAN.Location = new System.Drawing.Point(441, 408);
             this.NumericSLOGAN.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericSLOGAN.Name = "NumericSLOGAN";
@@ -1234,14 +1268,15 @@
             this.NumericSLOGAN.TabIndex = 105;
             this.NumericSLOGAN.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericSLOGAN.ThousandsSeparator = true;
+            this.NumericSLOGAN.ValueChanged += new System.EventHandler(this.NumericSLOGAN_ValueChanged);
             // 
             // NumericSQL
             // 
             this.NumericSQL.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericSQL.Location = new System.Drawing.Point(441, 435);
             this.NumericSQL.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericSQL.Name = "NumericSQL";
@@ -1249,14 +1284,15 @@
             this.NumericSQL.TabIndex = 106;
             this.NumericSQL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericSQL.ThousandsSeparator = true;
+            this.NumericSQL.ValueChanged += new System.EventHandler(this.NumericSQL_ValueChanged);
             // 
             // NumericVBNet
             // 
             this.NumericVBNet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericVBNet.Location = new System.Drawing.Point(441, 462);
             this.NumericVBNet.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericVBNet.Name = "NumericVBNet";
@@ -1264,14 +1300,15 @@
             this.NumericVBNet.TabIndex = 107;
             this.NumericVBNet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericVBNet.ThousandsSeparator = true;
+            this.NumericVBNet.ValueChanged += new System.EventHandler(this.NumericVBNet_ValueChanged);
             // 
             // NumericVisualBasic
             // 
             this.NumericVisualBasic.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericVisualBasic.Location = new System.Drawing.Point(441, 489);
             this.NumericVisualBasic.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericVisualBasic.Name = "NumericVisualBasic";
@@ -1279,14 +1316,15 @@
             this.NumericVisualBasic.TabIndex = 108;
             this.NumericVisualBasic.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericVisualBasic.ThousandsSeparator = true;
+            this.NumericVisualBasic.ValueChanged += new System.EventHandler(this.NumericVisualBasic_ValueChanged);
             // 
             // NumericJavaScript
             // 
             this.NumericJavaScript.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericJavaScript.Location = new System.Drawing.Point(205, 489);
             this.NumericJavaScript.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            2000000000,
+            0,
             0,
             0});
             this.NumericJavaScript.Name = "NumericJavaScript";
@@ -1294,6 +1332,7 @@
             this.NumericJavaScript.TabIndex = 109;
             this.NumericJavaScript.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericJavaScript.ThousandsSeparator = true;
+            this.NumericJavaScript.ValueChanged += new System.EventHandler(this.NumericJavaScript_ValueChanged);
             // 
             // OknoSLOCnaFP
             // 
@@ -1356,7 +1395,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label LabelDataRozp;
         private System.Windows.Forms.NumericUpDown NumericABAP;
-        private System.Windows.Forms.Button ButtonPrzywroc;
+        private System.Windows.Forms.Button ButtonPrzywrocDomyslne;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
