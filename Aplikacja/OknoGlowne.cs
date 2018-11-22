@@ -38,7 +38,7 @@ namespace Aplikacja
         *  Properties.
         ********************************************************************************/
 
-        //TODO encapsulate?? domyślnie zera?
+        //EXT encapsulate?? 
 
         string SciezkaDoPliku = "";
 
@@ -233,11 +233,11 @@ namespace Aplikacja
                 ZapiszProjektDialog.FileName = "Projekt.prj";
                 ZapiszProjektDialog.Title = "Zapisz plik projektu jako:";
 
-                DialogResult dr = ZapiszProjektDialog.ShowDialog();
+                DialogResult rezultat = ZapiszProjektDialog.ShowDialog();
 
 
                 //zapisanie danych do pliku tekstowego
-                if (dr == DialogResult.OK)
+                if (rezultat == DialogResult.OK)
                 {
                     SciezkaDoPliku = ZapiszProjektDialog.FileName;
 
@@ -302,7 +302,7 @@ namespace Aplikacja
         {
             using (OknoOAplikacji OknoOProgramie = new OknoOAplikacji())
             {
-                DialogResult dr = OknoOProgramie.ShowDialog();
+                DialogResult rezultat = OknoOProgramie.ShowDialog();
             }
         }
 
@@ -314,10 +314,10 @@ namespace Aplikacja
         {
             using (OknoCzynnikiSkali OknoCzynS = new OknoCzynnikiSkali())
             {
-                DialogResult dr = OknoCzynS.ShowDialog();
+                DialogResult rezultat = OknoCzynS.ShowDialog();
 
 
-                if (dr == DialogResult.OK)
+                if (rezultat == DialogResult.OK)
                 {
                     for (int i = 0; i < 5; i++)
                     {
@@ -334,9 +334,9 @@ namespace Aplikacja
         {
             using (OknoMnoznikiPracochlonnosci OknoMnozP = new OknoMnoznikiPracochlonnosci())
             {
-                DialogResult dr = OknoMnozP.ShowDialog();
+                DialogResult rezultat = OknoMnozP.ShowDialog();
 
-                if (dr == DialogResult.OK)
+                if (rezultat == DialogResult.OK)
                 {
                     for (int i = 0; i < 17; i++)
                     {
@@ -534,9 +534,9 @@ namespace Aplikacja
         {
             using (OknoDaneProjektu OknoDaneProjektu = new OknoDaneProjektu())
             {
-                DialogResult dr = OknoDaneProjektu.ShowDialog();
+                DialogResult rezultat = OknoDaneProjektu.ShowDialog();
 
-                if (dr == DialogResult.OK)
+                if (rezultat == DialogResult.OK)
                 {
                     KierownikProjektu = TempKierownikProjektu;
                     Szacujacy = TempSzacujacy;
@@ -556,7 +556,7 @@ namespace Aplikacja
 
         private void ButtonOtworzProjekt_Click(object sender, EventArgs e)
         {
-            //TODO wydzielić do osobnej funkcji??
+            
             DialogResult rezultat = MessageBox.Show("Czy chcesz zapisać obecny projekt?",
                 "Uwaga!",
                 MessageBoxButtons.YesNoCancel,
@@ -576,9 +576,9 @@ namespace Aplikacja
             using (OpenFileDialog OtworzProjektDialog = new OpenFileDialog())
             {
 
-                DialogResult dr = OtworzProjektDialog.ShowDialog();
+                DialogResult rezultat2 = OtworzProjektDialog.ShowDialog();
 
-                if (dr == DialogResult.OK)
+                if (rezultat2 == DialogResult.OK)
                 {
                     try
                     {
@@ -655,14 +655,14 @@ namespace Aplikacja
             }
         }
 
-        //TODO zmiana dr na coś fajniejszego :)
+        
         private void ButtonUstawienia_Click(object sender, EventArgs e)
         {
             using (OknoUstawienia OknoUstawDomyslne = new OknoUstawienia())
             {
-                DialogResult dr = OknoUstawDomyslne.ShowDialog();
+                DialogResult rezultat = OknoUstawDomyslne.ShowDialog();
 
-                if (dr == DialogResult.OK)
+                if (rezultat == DialogResult.OK)
                 {
                     Properties.Settings.Default.KierownikProjektu = TempKierownikProjektu;
                     Properties.Settings.Default.Szacujacy = TempSzacujacy;
@@ -816,10 +816,10 @@ namespace Aplikacja
         {
             using (OknoZalozeniaProjektu OknoZalProj = new OknoZalozeniaProjektu())
             {
-                DialogResult dr = OknoZalProj.ShowDialog();
+                DialogResult rezultat = OknoZalProj.ShowDialog();
 
 
-                if (dr == DialogResult.OK)
+                if (rezultat == DialogResult.OK)
                 {
                     MessageBox.Show("Założenia projektu zostały zmienione.", "Sukces");
 
@@ -842,9 +842,9 @@ namespace Aplikacja
         {
             using (OknoKalibracja OknoKalib = new OknoKalibracja())
             {
-                DialogResult dr = OknoKalib.ShowDialog();
+                DialogResult rezultat = OknoKalib.ShowDialog();
 
-                if (dr == DialogResult.OK)
+                if (rezultat == DialogResult.OK)
                 {
                     Properties.Settings.Default.UCPnaFP = TempUCPnaFP;
                     Properties.Settings.Default.A = TempA;
@@ -882,9 +882,9 @@ namespace Aplikacja
         {
             using (OknoSLOCnaFP OknoSLOC_FP = new OknoSLOCnaFP())
             {
-                DialogResult dr = OknoSLOC_FP.ShowDialog();
+                DialogResult rezultat = OknoSLOC_FP.ShowDialog();
 
-                if (dr == DialogResult.OK)
+                if (rezultat == DialogResult.OK)
                 {
                     for (int i = 0; i < 38; i++)
                     {

@@ -48,13 +48,13 @@ namespace Aplikacja
         {
             OknoGlowne.TempEmail = TextBoxEmail.Text;
         }
-        //TODO: problem z wieloma liniami tekstu i zapisz/odczyt
+        //BUG: problem z wieloma liniami tekstu i zapisz/odczyt
         private void RichTextBoxOpisProjektu_TextChanged(object sender, EventArgs e)
         {
             OknoGlowne.TempOpisProjektu = RichTextBoxOpisProjektu.Text;
         }
 
-        //TODO Problem gdy click zmienia checkbox szybciej niż odczyt jego stanu??
+        //BUG Problem gdy click zmienia checkbox szybciej niż odczyt jego stanu??
         private void CheckBoxDomyslne_Click(object sender, EventArgs e)
         {
             if (Properties.Settings.Default.KierownikProjektu.Length == 0 &&

@@ -66,7 +66,7 @@ namespace Aplikacja
 
 
 
-        //TODO różne kalibracje dla różnych zespołów/projektów
+        //EXT różne kalibracje dla różnych zespołów/projektów
 
     }
 }
