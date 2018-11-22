@@ -300,7 +300,7 @@ namespace Aplikacja
          */
         private void ToolStripMenuOProgramie_Click(object sender, EventArgs e)
         {
-            using (OknoOProgramie OknoOProgramie = new OknoOProgramie())
+            using (OknoOAplikacji OknoOProgramie = new OknoOAplikacji())
             {
                 DialogResult dr = OknoOProgramie.ShowDialog();
             }

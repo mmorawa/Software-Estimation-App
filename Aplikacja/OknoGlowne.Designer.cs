@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.PasekMenu = new System.Windows.Forms.MenuStrip();
             this.ToolStripMenuPlik = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuNowyProj = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,7 +76,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ToolTip = new System.Windows.Forms.ToolTip();
+            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.ButtonOszacuj = new System.Windows.Forms.Button();
             this.ButtonMnPr = new System.Windows.Forms.Button();
             this.ButtonCzSk = new System.Windows.Forms.Button();
@@ -332,8 +333,8 @@
             // ToolStripMenuOProgramie
             // 
             this.ToolStripMenuOProgramie.Name = "ToolStripMenuOProgramie";
-            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(165, 22);
-            this.ToolStripMenuOProgramie.Text = "&O programie";
+            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuOProgramie.Text = "&O aplikacji";
             this.ToolStripMenuOProgramie.Click += new System.EventHandler(this.ToolStripMenuOProgramie_Click);
             // 
             // GroupBoxDaneProjektu

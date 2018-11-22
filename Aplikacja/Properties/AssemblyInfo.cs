@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Aplikacja")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Aplikacja wspomagająca szacowanie pracochłonności wytwarzania oprogramowania")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Państwowa Wyższa Szkoła Zawodowa w Nowym Sączu")]
 [assembly: AssemblyProduct("Aplikacja")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
