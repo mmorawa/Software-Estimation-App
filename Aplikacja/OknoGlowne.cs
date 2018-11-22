@@ -40,7 +40,7 @@ namespace Aplikacja
 
         //TODO encapsulate?? domyślnie zera?
 
-        string SciezkaDoPliku ="";
+        string SciezkaDoPliku = "";
 
         //Dane projektu
         public static string NazwaProjektu = "Projekt";
@@ -112,7 +112,7 @@ namespace Aplikacja
             {1.43, 1.14, 1, 1, 1, 0 }
         };
 
-        double[] TabOgranHarm = {0.75, 0.85, 1, 1.3, 1.6 };
+        double[] TabOgranHarm = { 0.75, 0.85, 1, 1.3, 1.6 };
 
         //współczynniki
         public static double TempUCPnaFP;
@@ -350,7 +350,7 @@ namespace Aplikacja
 
 
         //-----------------------------------------------------------------------------------------------
-        
+
         private void TextBoxNazwaProjektu_TextChanged(object sender, EventArgs e)
         {
             NazwaProjektu = TextBoxNazwaProjektu.Text;
@@ -417,7 +417,7 @@ namespace Aplikacja
             Rozmiar = (UUCP * Properties.Settings.Default.UCPnaFP * Properties.Settings.Default.TabPrzeliczeniowa[JezykProgramowania]);
 
             RozmiarKSLOC = Rozmiar / 1000;
-            
+
             //Obliczenia COCOMO II
 
             SumaSF = 0;
@@ -501,7 +501,7 @@ namespace Aplikacja
                 LabelWynikHarm.BackColor = Color.FromName("GreenYellow");
                 LabelWynikKoszt.BackColor = Color.FromName("GreenYellow");
             }
-            
+
         }
 
 
@@ -524,6 +524,242 @@ namespace Aplikacja
                 return;
             }
 
+            UsuniecieDanych();
+
+            MessageBox.Show("Rozpoczęto nowy projekt.");
+        }
+
+
+        private void ButtonWiecejSzczeg_Click(object sender, EventArgs e)
+        {
+            using (OknoDaneProjektu OknoDaneProjektu = new OknoDaneProjektu())
+            {
+                DialogResult dr = OknoDaneProjektu.ShowDialog();
+
+                if (dr == DialogResult.OK)
+                {
+                    KierownikProjektu = TempKierownikProjektu;
+                    Szacujacy = TempSzacujacy;
+                    NazwaFirmy = TempNazwaFirmy;
+                    Adres = TempAdres;
+                    Telefon = TempTelefon;
+                    Email = TempEmail;
+                    OpisProjektu = TempOpisProjektu;
+                    //czy są użyte dane domyślne
+                    Domyslne = TempDomyslne;
+
+                    MessageBox.Show("Szczegółowe dane projektu zostały zmienione.", "Sukces");
+                }
+            }
+        }
+
+
+        private void ButtonOtworzProjekt_Click(object sender, EventArgs e)
+        {
+            //TODO wydzielić do osobnej funkcji??
+            DialogResult rezultat = MessageBox.Show("Czy chcesz zapisać obecny projekt?",
+                "Uwaga!",
+                MessageBoxButtons.YesNoCancel,
+                MessageBoxIcon.Exclamation);
+
+            if (rezultat == DialogResult.Yes)
+            {
+                ButtonZapiszProjekt_Click(sender, e);
+            }
+            else if (rezultat == DialogResult.Cancel)
+            {
+                return;
+            }
+
+            UsuniecieDanych();
+
+            using (OpenFileDialog OtworzProjektDialog = new OpenFileDialog())
+            {
+
+                DialogResult dr = OtworzProjektDialog.ShowDialog();
+
+                if (dr == DialogResult.OK)
+                {
+                    try
+                    {
+                        SciezkaDoPliku = OtworzProjektDialog.FileName;
+
+                        using (StreamReader sr = new StreamReader(SciezkaDoPliku))
+                        {
+                            //int LiczbaLinii = File.ReadLines(SciezkaDoPliku).Count();
+
+                            TextBoxNazwaProjektu.Text = sr.ReadLine();
+                            DateTimePicker.Text = sr.ReadLine();
+
+                            KierownikProjektu = sr.ReadLine();
+                            Szacujacy = sr.ReadLine();
+                            NazwaFirmy = sr.ReadLine();
+                            Adres = sr.ReadLine();
+                            Telefon = sr.ReadLine();
+                            Email = sr.ReadLine();
+                            OpisProjektu = sr.ReadLine();
+
+                            Ograniczenia = Convert.ToBoolean(sr.ReadLine());
+                            Domyslne = Convert.ToBoolean(sr.ReadLine());
+
+                            NumUUCWProsty.Value = int.Parse(sr.ReadLine());
+                            NumUUCWSredni.Value = int.Parse(sr.ReadLine());
+                            NumUUCWZlozony.Value = int.Parse(sr.ReadLine());
+                            NumUAWProsty.Value = int.Parse(sr.ReadLine());
+                            NumUAWSredni.Value = int.Parse(sr.ReadLine());
+                            NumUAWZlozony.Value = int.Parse(sr.ReadLine());
+
+
+                            for (int i = 0; i < 5; i++)
+                            {
+                                TabIndSF[i] = int.Parse(sr.ReadLine());
+                            }
+
+                            for (int i = 0; i < 17; i++)
+                            {
+                                TabIndEM[i] = int.Parse(sr.ReadLine());
+                            }
+
+                            JezykProgramowania = int.Parse(sr.ReadLine());
+                            StawkaGodz = double.Parse(sr.ReadLine());
+                            OsoboMGodz = long.Parse(sr.ReadLine());
+                            DzRobGodz = long.Parse(sr.ReadLine());
+
+                            MaxKoszt = double.Parse(sr.ReadLine());
+                            MaxPrac = long.Parse(sr.ReadLine());
+                            MaxHarm = long.Parse(sr.ReadLine());
+
+                            UUCP = double.Parse(sr.ReadLine());
+                            Rozmiar = double.Parse(sr.ReadLine());
+                            Pracochlonnosc = double.Parse(sr.ReadLine());
+                            Harmonogram = double.Parse(sr.ReadLine());
+                            Koszt = double.Parse(sr.ReadLine());
+
+                            LabelPktUUCP.Text = string.Format("{0:N0}", UUCP);
+                            LabelRozmiar.Text = string.Format("{0:N0}", Rozmiar);
+                            LabelWynikPrac.Text = string.Format("{0:N1}", Pracochlonnosc);
+                            LabelWynikHarm.Text = string.Format("{0:N1}", Harmonogram);
+                            LabelWynikKoszt.Text = string.Format("{0:N}", Koszt);
+
+                            LabelWynikPrac.BackColor = Color.FromName(sr.ReadLine());
+                            LabelWynikHarm.BackColor = Color.FromName(sr.ReadLine());
+                            LabelWynikKoszt.BackColor = Color.FromName(sr.ReadLine());
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        UsuniecieDanych();
+                        MessageBox.Show("Nieprawidłowy format pliku.", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
+
+        //TODO zmiana dr na coś fajniejszego :)
+        private void ButtonUstawienia_Click(object sender, EventArgs e)
+        {
+            using (OknoUstawienia OknoUstawDomyslne = new OknoUstawienia())
+            {
+                DialogResult dr = OknoUstawDomyslne.ShowDialog();
+
+                if (dr == DialogResult.OK)
+                {
+                    Properties.Settings.Default.KierownikProjektu = TempKierownikProjektu;
+                    Properties.Settings.Default.Szacujacy = TempSzacujacy;
+                    Properties.Settings.Default.NazwaFirmy = TempNazwaFirmy;
+                    Properties.Settings.Default.Adres = TempAdres;
+                    Properties.Settings.Default.Telefon = TempTelefon;
+                    Properties.Settings.Default.Email = TempEmail;
+                    Properties.Settings.Default.JezykProgramowania = TempJezykProgramowania;
+                    Properties.Settings.Default.StawkaGodz = TempStawkaGodz;
+                    Properties.Settings.Default.OsoboMGodz = TempOsoboMGodz;
+                    Properties.Settings.Default.DzRobGodz = TempDzRobGodz;
+
+                    //Properties.Settings.Default.Save();
+                    MessageBox.Show("Domyślne ustawienia projektu zostały zmienione.", "Sukces");
+                }
+            }
+        }
+
+
+        private void ButtonZapiszProjekt_Click(object sender, EventArgs e)
+        {
+            if (SciezkaDoPliku.Length == 0)
+            {
+                ToolStripMenuZapiszJakoProj_Click(sender, e);
+            }
+            else
+            {
+                Zapis();
+            }
+        }
+
+
+        private void Zapis()
+        {
+            using (StreamWriter sw = new StreamWriter(File.Create(SciezkaDoPliku)))
+            {
+                //Na wypadek gdyby użytkownik nie wybrał żadnej daty
+                DataProjektu = DateTimePicker.Text;
+
+                sw.WriteLine(NazwaProjektu);
+                sw.WriteLine(DataProjektu);
+                sw.WriteLine(KierownikProjektu);
+                sw.WriteLine(Szacujacy);
+                sw.WriteLine(NazwaFirmy);
+                sw.WriteLine(Adres);
+                sw.WriteLine(Telefon);
+                sw.WriteLine(Email);
+                sw.WriteLine(OpisProjektu);
+
+                sw.WriteLine(Ograniczenia);
+                sw.WriteLine(Domyslne);
+
+                foreach (var item in TabUUCW)
+                {
+                    sw.WriteLine(item);
+                }
+
+                foreach (var item in TabUAW)
+                {
+                    sw.WriteLine(item);
+                }
+
+                foreach (var item in TabIndSF)
+                {
+                    sw.WriteLine(item);
+                }
+
+                foreach (var item in TabIndEM)
+                {
+                    sw.WriteLine(item);
+                }
+
+                sw.WriteLine(JezykProgramowania);
+                sw.WriteLine(StawkaGodz);
+                sw.WriteLine(OsoboMGodz);
+                sw.WriteLine(DzRobGodz);
+
+                sw.WriteLine(MaxKoszt);
+                sw.WriteLine(MaxPrac);
+                sw.WriteLine(MaxHarm);
+
+                sw.WriteLine(UUCP);
+                sw.WriteLine(Rozmiar);
+                sw.WriteLine(Pracochlonnosc);
+                sw.WriteLine(Harmonogram);
+                sw.WriteLine(Koszt);
+                sw.WriteLine(LabelWynikPrac.BackColor.Name);
+                sw.WriteLine(LabelWynikHarm.BackColor.Name);
+                sw.WriteLine(LabelWynikKoszt.BackColor.Name);
+
+                //sw.Dispose();
+                MessageBox.Show("Plik zapisano.");
+            }
+        }
+
+        private void UsuniecieDanych()
+        {
             //Wyzerowanie
             SciezkaDoPliku = "";
 
@@ -574,248 +810,7 @@ namespace Aplikacja
             LabelWynikHarm.BackColor = Color.FromName("Control");
             LabelWynikKoszt.Text = "0";
             LabelWynikKoszt.BackColor = Color.FromName("Control");
-
-
-            MessageBox.Show("Rozpoczęto nowy projekt.");
         }
-
-
-        private void ButtonWiecejSzczeg_Click(object sender, EventArgs e)
-        {
-            using (OknoDaneProjektu OknoDaneProjektu = new OknoDaneProjektu())
-            {
-                DialogResult dr = OknoDaneProjektu.ShowDialog();
-
-                if (dr == DialogResult.OK)
-                {
-                    KierownikProjektu = TempKierownikProjektu;
-                    Szacujacy = TempSzacujacy;
-                    NazwaFirmy = TempNazwaFirmy;
-                    Adres = TempAdres;
-                    Telefon = TempTelefon;
-                    Email = TempEmail;
-                    OpisProjektu = TempOpisProjektu;
-                    //czy są użyte dane domyślne
-                    Domyslne = TempDomyslne;
-
-                    MessageBox.Show("Szczegółowe dane projektu zostały zmienione.", "Sukces");
-                }
-            }
-        }
-
-
-        private void ButtonOtworzProjekt_Click(object sender, EventArgs e)
-        {
-            //TODO wydzielić do osobnej funkcji??
-            DialogResult rezultat = MessageBox.Show("Czy chcesz zapisać obecny projekt?",
-                "Uwaga!",
-                MessageBoxButtons.YesNoCancel,
-                MessageBoxIcon.Exclamation);
-
-            if (rezultat == DialogResult.Yes)
-            {
-                ButtonZapiszProjekt_Click(sender, e);
-            }
-            else if (rezultat == DialogResult.Cancel)
-            {
-                return;
-            }
-
-            using (OpenFileDialog OtworzProjektDialog = new OpenFileDialog())
-            {
-                //TODO try 
-                DialogResult dr = OtworzProjektDialog.ShowDialog();
-
-                if (dr == DialogResult.OK)
-                {
-                    SciezkaDoPliku = OtworzProjektDialog.FileName;
-
-                    using (StreamReader sr = new StreamReader(SciezkaDoPliku))
-                    {
-                        //int LiczbaLinii = File.ReadLines(SciezkaDoPliku).Count();
-
-                        TextBoxNazwaProjektu.Text = sr.ReadLine();
-                        DateTimePicker.Text = sr.ReadLine();
-
-                        KierownikProjektu = sr.ReadLine();
-                        Szacujacy = sr.ReadLine();
-                        NazwaFirmy = sr.ReadLine();
-                        Adres = sr.ReadLine();
-                        Telefon = sr.ReadLine();
-                        Email = sr.ReadLine();
-                        OpisProjektu = sr.ReadLine();
-
-                        Ograniczenia = Convert.ToBoolean(sr.ReadLine());
-                        Domyslne = Convert.ToBoolean(sr.ReadLine());
-
-                        NumUUCWProsty.Value = int.Parse(sr.ReadLine());
-                        NumUUCWSredni.Value = int.Parse(sr.ReadLine());
-                        NumUUCWZlozony.Value = int.Parse(sr.ReadLine());
-                        NumUAWProsty.Value = int.Parse(sr.ReadLine());
-                        NumUAWSredni.Value = int.Parse(sr.ReadLine());
-                        NumUAWZlozony.Value = int.Parse(sr.ReadLine());
-                        
-                        
-                        for(int i = 0; i < 5; i++)
-                        {
-                            TabIndSF[i] = int.Parse(sr.ReadLine());
-                        }
-
-                        for (int i = 0; i < 17; i++)
-                        {
-                            TabIndEM[i] = int.Parse(sr.ReadLine());
-                        }
-                        
-                        JezykProgramowania = int.Parse(sr.ReadLine());
-                        StawkaGodz = double.Parse(sr.ReadLine());
-                        OsoboMGodz = long.Parse(sr.ReadLine());
-                        DzRobGodz = long.Parse(sr.ReadLine());
-                        
-                        MaxKoszt = double.Parse(sr.ReadLine());
-                        MaxPrac = long.Parse(sr.ReadLine());
-                        MaxHarm = long.Parse(sr.ReadLine());
-
-                        UUCP = double.Parse(sr.ReadLine());
-                        Rozmiar = double.Parse(sr.ReadLine());
-                        Pracochlonnosc = double.Parse(sr.ReadLine());
-                        Harmonogram = double.Parse(sr.ReadLine());
-                        Koszt = double.Parse(sr.ReadLine());
-
-                        LabelPktUUCP.Text = string.Format("{0:N0}", UUCP);
-                        LabelRozmiar.Text = string.Format("{0:N0}", Rozmiar);
-                        LabelWynikPrac.Text = string.Format("{0:N1}", Pracochlonnosc);
-                        LabelWynikHarm.Text = string.Format("{0:N1}", Harmonogram);
-                        LabelWynikKoszt.Text = string.Format("{0:N}", Koszt);
-
-                        LabelWynikPrac.BackColor = Color.FromName(sr.ReadLine());
-                        LabelWynikHarm.BackColor = Color.FromName(sr.ReadLine());
-                        LabelWynikKoszt.BackColor = Color.FromName(sr.ReadLine());
-                        
-
-
-                    }
-
-                }
-            }
-        }
-
-
-        //TODO zmiana dr na coś fajniejszego :)
-        private void ButtonUstawienia_Click(object sender, EventArgs e)
-        {
-            using (OknoUstawienia OknoUstawDomyslne = new OknoUstawienia())
-            {
-                DialogResult dr = OknoUstawDomyslne.ShowDialog();
-
-                if (dr == DialogResult.OK)
-                {
-                    Properties.Settings.Default.KierownikProjektu = TempKierownikProjektu;
-                    Properties.Settings.Default.Szacujacy = TempSzacujacy;
-                    Properties.Settings.Default.NazwaFirmy = TempNazwaFirmy;
-                    Properties.Settings.Default.Adres = TempAdres;
-                    Properties.Settings.Default.Telefon = TempTelefon;
-                    Properties.Settings.Default.Email = TempEmail;
-                    Properties.Settings.Default.JezykProgramowania = TempJezykProgramowania;
-                    Properties.Settings.Default.StawkaGodz = TempStawkaGodz;
-                    Properties.Settings.Default.OsoboMGodz = TempOsoboMGodz;
-                    Properties.Settings.Default.DzRobGodz = TempDzRobGodz;
-
-                    //Properties.Settings.Default.Save();
-                    MessageBox.Show("Domyślne ustawienia projektu zostały zmienione.", "Sukces");
-                }
-            }
-        }
-
-
-        private void ButtonZapiszProjekt_Click(object sender, EventArgs e)
-        {
-            if (SciezkaDoPliku.Length == 0)
-            {
-                ToolStripMenuZapiszJakoProj_Click(sender, e);
-            }
-            else
-            {
-                Zapis();
-            }
-        }
-
-
-        private void Zapis()
-        {
-            using (StreamWriter sw = new StreamWriter(File.Create(SciezkaDoPliku)))
-            {
-                //Na wypadek gdyby użytkownik nie wybrał żadnej daty
-                DataProjektu = DateTimePicker.Text;
-                
-                sw.WriteLine(NazwaProjektu);
-                sw.WriteLine(DataProjektu);
-                sw.WriteLine(KierownikProjektu);
-                sw.WriteLine(Szacujacy);
-                sw.WriteLine(NazwaFirmy);
-                sw.WriteLine(Adres);
-                sw.WriteLine(Telefon);
-                sw.WriteLine(Email);
-                sw.WriteLine(OpisProjektu);
-
-                sw.WriteLine(Ograniczenia);
-                sw.WriteLine(Domyslne);
-
-                foreach (var item in TabUUCW)
-                {
-                    sw.WriteLine(item);
-                }
-
-                foreach (var item in TabUAW)
-                {
-                    sw.WriteLine(item);
-                }
-
-                foreach (var item in TabIndSF)
-                {
-                    sw.WriteLine(item);
-                }
-
-                foreach (var item in TabIndEM)
-                {
-                    sw.WriteLine(item);
-                }
-
-                sw.WriteLine(JezykProgramowania);
-                sw.WriteLine(StawkaGodz);
-                sw.WriteLine(OsoboMGodz);
-                sw.WriteLine(DzRobGodz);
-
-                sw.WriteLine(MaxKoszt);
-                sw.WriteLine(MaxPrac);
-                sw.WriteLine(MaxHarm);
-              
-                sw.WriteLine(UUCP);
-                sw.WriteLine(Rozmiar);
-                sw.WriteLine(Pracochlonnosc);
-                sw.WriteLine(Harmonogram);
-                sw.WriteLine(Koszt);
-                sw.WriteLine(LabelWynikPrac.BackColor.Name);
-                sw.WriteLine(LabelWynikHarm.BackColor.Name);
-                sw.WriteLine(LabelWynikKoszt.BackColor.Name);
-
-                sw.Dispose();
-                MessageBox.Show("Plik zapisano.");
-            }
-
-            //sw.WriteLine(string.Format("byte Program_{0}", Form2.Nazwa_Programu) + "_MODUL[]={" + string.Format("{0},{1},{2},{3}", numery[0], numery[1], numery[2], numery[3]) + "};");
-
-            //sw.Write(string.Format("unsigned int* Program_{0}", Form2.Nazwa_Programu) + "[] = {");
-
-            /*
-            for (int i = 0; i < Programy.Length - 2; i++)
-            {
-                sw.Write(Programy[i] + ", ");
-            }*/
-
-            //sw.Write(Programy[Programy.Length - 2] + "};");
-
-        }
-
 
         private void ButtonZalozenia_Click(object sender, EventArgs e)
         {

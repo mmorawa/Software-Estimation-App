@@ -333,7 +333,7 @@
             // ToolStripMenuOProgramie
             // 
             this.ToolStripMenuOProgramie.Name = "ToolStripMenuOProgramie";
-            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(165, 22);
             this.ToolStripMenuOProgramie.Text = "&O aplikacji";
             this.ToolStripMenuOProgramie.Click += new System.EventHandler(this.ToolStripMenuOProgramie_Click);
             // 
