@@ -637,6 +637,16 @@ namespace Aplikacja
                         TextBoxNazwaProjektu.Text = sr.ReadLine();
                         DateTimePicker.Text = sr.ReadLine();
 
+                        KierownikProjektu = sr.ReadLine();
+                        Szacujacy = sr.ReadLine();
+                        NazwaFirmy = sr.ReadLine();
+                        Adres = sr.ReadLine();
+                        Telefon = sr.ReadLine();
+                        Email = sr.ReadLine();
+                        OpisProjektu = sr.ReadLine();
+
+                        Ograniczenia = Convert.ToBoolean(sr.ReadLine());
+                        Domyslne = Convert.ToBoolean(sr.ReadLine());
 
                         NumUUCWProsty.Value = int.Parse(sr.ReadLine());
                         NumUUCWSredni.Value = int.Parse(sr.ReadLine());
@@ -644,6 +654,43 @@ namespace Aplikacja
                         NumUAWProsty.Value = int.Parse(sr.ReadLine());
                         NumUAWSredni.Value = int.Parse(sr.ReadLine());
                         NumUAWZlozony.Value = int.Parse(sr.ReadLine());
+                        
+                        
+                        for(int i = 0; i < 5; i++)
+                        {
+                            TabIndSF[i] = int.Parse(sr.ReadLine());
+                        }
+
+                        for (int i = 0; i < 17; i++)
+                        {
+                            TabIndEM[i] = int.Parse(sr.ReadLine());
+                        }
+                        
+                        JezykProgramowania = int.Parse(sr.ReadLine());
+                        StawkaGodz = double.Parse(sr.ReadLine());
+                        OsoboMGodz = long.Parse(sr.ReadLine());
+                        DzRobGodz = long.Parse(sr.ReadLine());
+                        
+                        MaxKoszt = double.Parse(sr.ReadLine());
+                        MaxPrac = long.Parse(sr.ReadLine());
+                        MaxHarm = long.Parse(sr.ReadLine());
+
+                        UUCP = double.Parse(sr.ReadLine());
+                        Rozmiar = double.Parse(sr.ReadLine());
+                        Pracochlonnosc = double.Parse(sr.ReadLine());
+                        Harmonogram = double.Parse(sr.ReadLine());
+                        Koszt = double.Parse(sr.ReadLine());
+
+                        LabelPktUUCP.Text = string.Format("{0:N0}", UUCP);
+                        LabelRozmiar.Text = string.Format("{0:N0}", Rozmiar);
+                        LabelWynikPrac.Text = string.Format("{0:N1}", Pracochlonnosc);
+                        LabelWynikHarm.Text = string.Format("{0:N1}", Harmonogram);
+                        LabelWynikKoszt.Text = string.Format("{0:N}", Koszt);
+
+                        LabelWynikPrac.BackColor = Color.FromName(sr.ReadLine());
+                        LabelWynikHarm.BackColor = Color.FromName(sr.ReadLine());
+                        LabelWynikKoszt.BackColor = Color.FromName(sr.ReadLine());
+                        
 
 
                     }
@@ -741,13 +788,15 @@ namespace Aplikacja
                 sw.WriteLine(MaxKoszt);
                 sw.WriteLine(MaxPrac);
                 sw.WriteLine(MaxHarm);
-
-                //TODO zapamiętaj kolory
+              
                 sw.WriteLine(UUCP);
                 sw.WriteLine(Rozmiar);
                 sw.WriteLine(Pracochlonnosc);
                 sw.WriteLine(Harmonogram);
                 sw.WriteLine(Koszt);
+                sw.WriteLine(LabelWynikPrac.BackColor.Name);
+                sw.WriteLine(LabelWynikHarm.BackColor.Name);
+                sw.WriteLine(LabelWynikKoszt.BackColor.Name);
 
                 sw.Dispose();
                 MessageBox.Show("Plik zapisano.");
@@ -820,9 +869,10 @@ namespace Aplikacja
             //MessageBox.Show(TabPktFunkSLOC[JezykProgramowania].ToString());
             //MessageBox.Show(F.ToString());
             //MessageBox.Show(E.ToString());
-            MessageBox.Show(DateTime.Now.ToString());
-            MessageBox.Show(DataProjektu.ToString());
-            //MessageBox.Show(Properties.Settings.Default.TabPrzeliczeniowa[37].ToString());
+            Color myColor = LabelWynikPrac.BackColor;
+            String myColorName = myColor.Name;
+
+            MessageBox.Show(myColorName);
 
             /*
             MessageBox.Show(Properties.Settings.Default.A.ToString());
