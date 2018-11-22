@@ -1040,6 +1040,7 @@
             this.ButtonOpisProjektu.TabIndex = 16;
             this.ButtonOpisProjektu.Text = "Opis projektu";
             this.ButtonOpisProjektu.UseVisualStyleBackColor = true;
+            this.ButtonOpisProjektu.Click += new System.EventHandler(this.ButtonOpisProjektu_Click);
             // 
             // ButtonPodsumowanie
             // 

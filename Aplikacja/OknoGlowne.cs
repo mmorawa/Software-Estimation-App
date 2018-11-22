@@ -14,6 +14,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+using MigraDoc.DocumentObjectModel;
+using MigraDoc.DocumentObjectModel.Fields;
+using MigraDoc.Rendering;
+using MigraDoc.DocumentObjectModel.Tables;
 
 
 //! Przestrzeń nazw Password_Manager obejmuje całą aplikację Menedżera Haseł.
@@ -466,40 +471,40 @@ namespace Aplikacja
 
                 if (MaxPrac != 0 && MaxPrac < Pracochlonnosc)
                 {
-                    LabelWynikPrac.BackColor = Color.FromName("red");
+                    LabelWynikPrac.BackColor = System.Drawing.Color.FromName("red");
 
                     MessageBox.Show("Przekroczono założoną pracochłonność projektu.");
                 }
                 else
                 {
-                    LabelWynikPrac.BackColor = Color.FromName("GreenYellow");
+                    LabelWynikPrac.BackColor = System.Drawing.Color.FromName("GreenYellow");
                 }
 
                 if (MaxHarm != 0 && MaxHarm < Harmonogram)
                 {
-                    LabelWynikHarm.BackColor = Color.FromName("red");
+                    LabelWynikHarm.BackColor = System.Drawing.Color.FromName("red");
                     MessageBox.Show("Przekroczono założony harmonogram projektu");
                 }
                 else
                 {
-                    LabelWynikHarm.BackColor = Color.FromName("GreenYellow");
+                    LabelWynikHarm.BackColor = System.Drawing.Color.FromName("GreenYellow");
                 }
 
                 if (MaxKoszt != 0 && MaxKoszt < Koszt)
                 {
-                    LabelWynikKoszt.BackColor = Color.FromName("red");
+                    LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("red");
                     MessageBox.Show("Przekroczono założony koszt projektu");
                 }
                 else
                 {
-                    LabelWynikKoszt.BackColor = Color.FromName("GreenYellow");
+                    LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("GreenYellow");
                 }
             }
             else
             {
-                LabelWynikPrac.BackColor = Color.FromName("GreenYellow");
-                LabelWynikHarm.BackColor = Color.FromName("GreenYellow");
-                LabelWynikKoszt.BackColor = Color.FromName("GreenYellow");
+                LabelWynikPrac.BackColor = System.Drawing.Color.FromName("GreenYellow");
+                LabelWynikHarm.BackColor = System.Drawing.Color.FromName("GreenYellow");
+                LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("GreenYellow");
             }
 
         }
@@ -641,9 +646,9 @@ namespace Aplikacja
                             LabelWynikHarm.Text = string.Format("{0:N1}", Harmonogram);
                             LabelWynikKoszt.Text = string.Format("{0:N}", Koszt);
 
-                            LabelWynikPrac.BackColor = Color.FromName(sr.ReadLine());
-                            LabelWynikHarm.BackColor = Color.FromName(sr.ReadLine());
-                            LabelWynikKoszt.BackColor = Color.FromName(sr.ReadLine());
+                            LabelWynikPrac.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+                            LabelWynikHarm.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+                            LabelWynikKoszt.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
                         }
                     }
                     catch (Exception)
@@ -805,11 +810,11 @@ namespace Aplikacja
             LabelRozmiar.Text = "0";
             LabelPktUUCP.Text = "0";
             LabelWynikPrac.Text = "0";
-            LabelWynikPrac.BackColor = Color.FromName("Control");
+            LabelWynikPrac.BackColor = System.Drawing.Color.FromName("Control");
             LabelWynikHarm.Text = "0";
-            LabelWynikHarm.BackColor = Color.FromName("Control");
+            LabelWynikHarm.BackColor = System.Drawing.Color.FromName("Control");
             LabelWynikKoszt.Text = "0";
-            LabelWynikKoszt.BackColor = Color.FromName("Control");
+            LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("Control");
         }
 
         private void ButtonZalozenia_Click(object sender, EventArgs e)
@@ -864,10 +869,7 @@ namespace Aplikacja
             //MessageBox.Show(TabPktFunkSLOC[JezykProgramowania].ToString());
             //MessageBox.Show(F.ToString());
             //MessageBox.Show(E.ToString());
-            Color myColor = LabelWynikPrac.BackColor;
-            String myColorName = myColor.Name;
 
-            MessageBox.Show(myColorName);
 
             /*
             MessageBox.Show(Properties.Settings.Default.A.ToString());
@@ -896,6 +898,135 @@ namespace Aplikacja
                 }
             }
         }
+
+        private void ButtonOpisProjektu_Click(object sender, EventArgs e)
+        {
+            // Create a MigraDoc document.
+            var document = CreateDocument();
+
+            // ----- Unicode encoding and font program embedding in MigraDoc is demonstrated here. -----
+
+            // A flag indicating whether to create a Unicode PDF or a WinAnsi PDF file.
+            // This setting applies to all fonts used in the PDF document.
+            // This setting has no effect on the RTF renderer.
+            const bool unicode = true;
+
+            // Create a renderer for the MigraDoc document.
+            var pdfRenderer = new PdfDocumentRenderer(unicode);
+
+            // Associate the MigraDoc document with a renderer.
+            pdfRenderer.Document = document;
+
+            // Layout and render document to PDF.
+            pdfRenderer.RenderDocument();
+
+            // Save the document...
+            const string filename = "HelloWorld.pdf";
+            pdfRenderer.PdfDocument.Save(filename);
+            // ...and start a viewer.
+            Process.Start(filename);
+        }
+
+        static Document CreateDocument()
+        {
+            // Create a new MigraDoc document.
+            var document = new Document();
+
+            document.Styles[StyleNames.Normal].Font.Name = "Arial";
+
+            // Add a section to the document.
+            var section = document.AddSection();
+
+            // Add a paragraph to the section.
+            var paragraph = section.AddParagraph();
+
+            // Set font color.
+            //paragraph.Format.Font.Color = Color.FromCmyk(100, 30, 20, 50);
+            paragraph.Format.Font.Color = Colors.Black;
+
+            // Add some text to the paragraph.
+            paragraph.AddFormattedText("Hello, World ąćęł!", TextFormat.NotBold);
+
+            paragraph.AddFormattedText("When you program reaches the end of a page, you just have to create a new page by calling the  method of the PdfDocument class. Then you create a new XGraphics object for the new page and use it to draw on the second page, beginning at the top.", TextFormat.NotBold);
+            paragraph = document.LastSection.AddParagraph();
+            paragraph.Format.Alignment = ParagraphAlignment.Right;
+
+            paragraph.AddText("Experience shows that users sometimes have difficulties to modify there code with support for a second page.They call, but do not store the return value.They do not create a new XGraphics object and continue to draw on the first page.Or they try to create a new XGraphics object, but pass the first page as a parameter and receive an error message.");
+
+            document.LastSection.AddParagraph("Indent", "Heading2");
+
+            document.LastSection.AddParagraph("Left Indent", "Heading3");
+
+            var paragraph2 = document.LastSection.AddParagraph();
+            paragraph2.Format.LeftIndent = "2cm";
+
+
+            document.LastSection.AddParagraph("Right Indent", "Heading3");
+
+            paragraph2 = document.LastSection.AddParagraph();
+            paragraph2.Format.RightIndent = "1in";
+
+            paragraph2.AddFormattedText("If you know right from the start that you will or may need more than one page, then take this into account right from the start and your program will be readable and easy to maintain.", TextFormat.NotBold);
+
+
+            var paragraph3 = section.AddParagraph();
+            paragraph3.Format.Font.Color = Colors.Red;
+            paragraph3.Format.Font.Size = 23;
+
+            paragraph3.AddFormattedText("Pracochłonność!", TextFormat.Bold);
+
+
+
+            DemonstrateSimpleTable(document);
+
+
+            // Create the primary footer.
+            var footer = section.Footers.Primary;
+
+            // Add content to footer.
+            paragraph = footer.AddParagraph();
+            paragraph.Add(new DateField() { Format = "yyyy/MM/dd HH:mm:ss" });
+            paragraph.Format.Alignment = ParagraphAlignment.Center;
+
+            return document;
+        }
+
+        public static void DemonstrateSimpleTable(Document document)
+        {
+            document.LastSection.AddParagraph("Simple Tables", "Heading2");
+
+            var table = new Table();
+            table.Borders.Width = 0.75;
+
+            var column = table.AddColumn(Unit.FromCentimeter(2));
+            column.Format.Alignment = ParagraphAlignment.Center;
+
+            table.AddColumn(Unit.FromCentimeter(5));
+
+            var row = table.AddRow();
+            row.Shading.Color = Colors.PaleGoldenrod;
+            var cell = row.Cells[0];
+            cell.AddParagraph("Itemus");
+            cell = row.Cells[1];
+            cell.AddParagraph("Descriptum");
+
+            row = table.AddRow();
+            cell = row.Cells[0];
+            cell.AddParagraph("1");
+            cell = row.Cells[1];
+            cell.AddParagraph("kupa siana");
+
+            row = table.AddRow();
+            cell = row.Cells[0];
+            cell.AddParagraph("2");
+            cell = row.Cells[1];
+            cell.AddParagraph("Borikson Alibaba");
+
+            table.SetEdge(0, 0, 2, 3, Edge.Box, MigraDoc.DocumentObjectModel.BorderStyle.Single, 1.5, Colors.Black);
+
+            document.LastSection.Add(table);
+        }
+
 
 
     }
