@@ -47,14 +47,14 @@
             this.CheckBoxAktywacja = new System.Windows.Forms.CheckBox();
             this.TableLayoutOgraniczenia = new System.Windows.Forms.TableLayoutPanel();
             this.NumericMaxKoszt = new System.Windows.Forms.NumericUpDown();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.NumericMaxPrac = new System.Windows.Forms.NumericUpDown();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.NumericMaxHarm = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.GroupBoxSzczDaneProjektu.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumericStawkaGodz)).BeginInit();
@@ -378,28 +378,6 @@
             this.NumericMaxKoszt.ThousandsSeparator = true;
             this.NumericMaxKoszt.ValueChanged += new System.EventHandler(this.NumericMaxKoszt_ValueChanged);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(3, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(217, 48);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Maksymalna pracochłonność:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.Location = new System.Drawing.Point(386, 89);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(151, 42);
-            this.label16.TabIndex = 19;
-            this.label16.Text = "zł";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // NumericMaxPrac
             // 
             this.NumericMaxPrac.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -416,41 +394,6 @@
             this.NumericMaxPrac.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericMaxPrac.ThousandsSeparator = true;
             this.NumericMaxPrac.ValueChanged += new System.EventHandler(this.NumericMaxPrac_ValueChanged);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.Location = new System.Drawing.Point(386, 3);
-            this.label17.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(151, 45);
-            this.label17.TabIndex = 25;
-            this.label17.Text = "osobomiesięcy";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(3, 89);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(217, 42);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Maksymalny koszt:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label10.Location = new System.Drawing.Point(3, 48);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(217, 41);
-            this.label10.TabIndex = 21;
-            this.label10.Text = "Maksymalny harmonogram:";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // NumericMaxHarm
             // 
@@ -480,6 +423,63 @@
             this.label14.TabIndex = 27;
             this.label14.Text = "miesięcy";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Location = new System.Drawing.Point(3, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(217, 48);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Maksymalna pracochłonność:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Location = new System.Drawing.Point(3, 89);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(217, 42);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Maksymalny koszt:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label16.Location = new System.Drawing.Point(386, 89);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(151, 42);
+            this.label16.TabIndex = 19;
+            this.label16.Text = "zł";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label10.Location = new System.Drawing.Point(3, 48);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(217, 41);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "Maksymalny harmonogram:";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label17.Location = new System.Drawing.Point(386, 3);
+            this.label17.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(151, 45);
+            this.label17.TabIndex = 25;
+            this.label17.Text = "osobomiesięcy";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // OknoZalozeniaProjektu
             // 
