@@ -42,7 +42,6 @@
             this.ToolStripMenuRaporty = new System.Windows.Forms.ToolStripMenuItem();
             this.daneProjektuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oszacowanaPracochłonnośćProjektuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.oszacowanyHarmonogramProjektuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.podsumowanieProjektuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuOpcje = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuKreator = new System.Windows.Forms.ToolStripMenuItem();
@@ -151,11 +150,6 @@
             this.PasekMenu.AllowMerge = false;
             this.PasekMenu.BackColor = System.Drawing.SystemColors.Control;
             this.PasekMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.PasekMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuPlik,
-            this.ToolStripMenuRaporty,
-            this.ToolStripMenuOpcje,
-            this.ToolStripMenuPomoc});
             this.PasekMenu.Location = new System.Drawing.Point(0, 0);
             this.PasekMenu.Name = "PasekMenu";
             this.PasekMenu.Size = new System.Drawing.Size(1125, 25);
@@ -239,7 +233,6 @@
             this.ToolStripMenuRaporty.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.daneProjektuToolStripMenuItem,
             this.oszacowanaPracochłonnośćProjektuToolStripMenuItem,
-            this.oszacowanyHarmonogramProjektuToolStripMenuItem,
             this.podsumowanieProjektuToolStripMenuItem});
             this.ToolStripMenuRaporty.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ToolStripMenuRaporty.Name = "ToolStripMenuRaporty";
@@ -259,13 +252,6 @@
             this.oszacowanaPracochłonnośćProjektuToolStripMenuItem.Name = "oszacowanaPracochłonnośćProjektuToolStripMenuItem";
             this.oszacowanaPracochłonnośćProjektuToolStripMenuItem.Size = new System.Drawing.Size(307, 22);
             this.oszacowanaPracochłonnośćProjektuToolStripMenuItem.Text = "Oszacowana &pracochłonność projektu";
-            // 
-            // oszacowanyHarmonogramProjektuToolStripMenuItem
-            // 
-            this.oszacowanyHarmonogramProjektuToolStripMenuItem.Enabled = false;
-            this.oszacowanyHarmonogramProjektuToolStripMenuItem.Name = "oszacowanyHarmonogramProjektuToolStripMenuItem";
-            this.oszacowanyHarmonogramProjektuToolStripMenuItem.Size = new System.Drawing.Size(307, 22);
-            this.oszacowanyHarmonogramProjektuToolStripMenuItem.Text = "Oszacowany &harmonogram projektu";
             // 
             // podsumowanieProjektuToolStripMenuItem
             // 
@@ -1038,7 +1024,7 @@
             this.ButtonOpisProjektu.Name = "ButtonOpisProjektu";
             this.ButtonOpisProjektu.Size = new System.Drawing.Size(173, 27);
             this.ButtonOpisProjektu.TabIndex = 16;
-            this.ButtonOpisProjektu.Text = "Opis projektu";
+            this.ButtonOpisProjektu.Text = "Dane projektu";
             this.ButtonOpisProjektu.UseVisualStyleBackColor = true;
             this.ButtonOpisProjektu.Click += new System.EventHandler(this.ButtonOpisProjektu_Click);
             // 
@@ -1422,7 +1408,6 @@
         private System.Windows.Forms.Button ButtonKalibracja;
         private System.Windows.Forms.ToolStripMenuItem daneProjektuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oszacowanaPracochłonnośćProjektuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem oszacowanyHarmonogramProjektuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem podsumowanieProjektuToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabel;
         private System.Windows.Forms.Label label28;

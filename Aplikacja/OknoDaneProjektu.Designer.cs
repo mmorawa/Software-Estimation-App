@@ -31,6 +31,7 @@
             this.ButtonAnuluj = new System.Windows.Forms.Button();
             this.ButtonOk = new System.Windows.Forms.Button();
             this.GroupBoxSzczDaneProjektu = new System.Windows.Forms.GroupBox();
+            this.CheckBoxDomyslne = new System.Windows.Forms.CheckBox();
             this.RichTextBoxOpisProjektu = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,7 +46,6 @@
             this.LabelDataRozp = new System.Windows.Forms.Label();
             this.LabelNazwaProjektu = new System.Windows.Forms.Label();
             this.TextBoxKierownikProjektu = new System.Windows.Forms.TextBox();
-            this.CheckBoxDomyslne = new System.Windows.Forms.CheckBox();
             this.GroupBoxSzczDaneProjektu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,11 +96,22 @@
             this.GroupBoxSzczDaneProjektu.TabStop = false;
             this.GroupBoxSzczDaneProjektu.Text = "Szczegółowe dane projektu";
             // 
+            // CheckBoxDomyslne
+            // 
+            this.CheckBoxDomyslne.AutoSize = true;
+            this.CheckBoxDomyslne.Location = new System.Drawing.Point(274, 21);
+            this.CheckBoxDomyslne.Name = "CheckBoxDomyslne";
+            this.CheckBoxDomyslne.Size = new System.Drawing.Size(197, 20);
+            this.CheckBoxDomyslne.TabIndex = 17;
+            this.CheckBoxDomyslne.Text = "Użyj danych domyślnych";
+            this.CheckBoxDomyslne.UseVisualStyleBackColor = true;
+            this.CheckBoxDomyslne.Click += new System.EventHandler(this.CheckBoxDomyslne_Click);
+            // 
             // RichTextBoxOpisProjektu
             // 
-            this.RichTextBoxOpisProjektu.Location = new System.Drawing.Point(12, 396);
+            this.RichTextBoxOpisProjektu.Location = new System.Drawing.Point(12, 318);
             this.RichTextBoxOpisProjektu.Name = "RichTextBoxOpisProjektu";
-            this.RichTextBoxOpisProjektu.Size = new System.Drawing.Size(459, 242);
+            this.RichTextBoxOpisProjektu.Size = new System.Drawing.Size(459, 324);
             this.RichTextBoxOpisProjektu.TabIndex = 16;
             this.RichTextBoxOpisProjektu.Text = "";
             this.RichTextBoxOpisProjektu.TextChanged += new System.EventHandler(this.RichTextBoxOpisProjektu_TextChanged);
@@ -108,7 +119,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 377);
+            this.label5.Location = new System.Drawing.Point(6, 299);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(104, 16);
             this.label5.TabIndex = 15;
@@ -134,7 +145,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 301);
+            this.label3.Location = new System.Drawing.Point(9, 255);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 16);
             this.label3.TabIndex = 11;
@@ -142,7 +153,7 @@
             // 
             // TextBoxEmail
             // 
-            this.TextBoxEmail.Location = new System.Drawing.Point(9, 320);
+            this.TextBoxEmail.Location = new System.Drawing.Point(9, 274);
             this.TextBoxEmail.Name = "TextBoxEmail";
             this.TextBoxEmail.Size = new System.Drawing.Size(462, 22);
             this.TextBoxEmail.TabIndex = 10;
@@ -151,7 +162,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 257);
+            this.label2.Location = new System.Drawing.Point(6, 211);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 16);
             this.label2.TabIndex = 9;
@@ -161,7 +172,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(9, 213);
+            this.label1.Location = new System.Drawing.Point(9, 167);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 16);
             this.label1.TabIndex = 8;
@@ -169,7 +180,7 @@
             // 
             // TextBoxTelefon
             // 
-            this.TextBoxTelefon.Location = new System.Drawing.Point(9, 276);
+            this.TextBoxTelefon.Location = new System.Drawing.Point(9, 230);
             this.TextBoxTelefon.Name = "TextBoxTelefon";
             this.TextBoxTelefon.Size = new System.Drawing.Size(462, 22);
             this.TextBoxTelefon.TabIndex = 7;
@@ -177,7 +188,7 @@
             // 
             // TextBoxAdres
             // 
-            this.TextBoxAdres.Location = new System.Drawing.Point(12, 232);
+            this.TextBoxAdres.Location = new System.Drawing.Point(12, 186);
             this.TextBoxAdres.Name = "TextBoxAdres";
             this.TextBoxAdres.Size = new System.Drawing.Size(462, 22);
             this.TextBoxAdres.TabIndex = 6;
@@ -185,7 +196,7 @@
             // 
             // TextBoxNazwaFirmy
             // 
-            this.TextBoxNazwaFirmy.Location = new System.Drawing.Point(9, 188);
+            this.TextBoxNazwaFirmy.Location = new System.Drawing.Point(9, 142);
             this.TextBoxNazwaFirmy.Name = "TextBoxNazwaFirmy";
             this.TextBoxNazwaFirmy.Size = new System.Drawing.Size(462, 22);
             this.TextBoxNazwaFirmy.TabIndex = 5;
@@ -194,7 +205,7 @@
             // LabelDataRozp
             // 
             this.LabelDataRozp.AutoSize = true;
-            this.LabelDataRozp.Location = new System.Drawing.Point(9, 169);
+            this.LabelDataRozp.Location = new System.Drawing.Point(9, 123);
             this.LabelDataRozp.Name = "LabelDataRozp";
             this.LabelDataRozp.Size = new System.Drawing.Size(95, 16);
             this.LabelDataRozp.TabIndex = 4;
@@ -216,17 +227,6 @@
             this.TextBoxKierownikProjektu.Size = new System.Drawing.Size(462, 22);
             this.TextBoxKierownikProjektu.TabIndex = 0;
             this.TextBoxKierownikProjektu.TextChanged += new System.EventHandler(this.TextBoxKierownikProjektu_TextChanged);
-            // 
-            // CheckBoxDomyslne
-            // 
-            this.CheckBoxDomyslne.AutoSize = true;
-            this.CheckBoxDomyslne.Location = new System.Drawing.Point(274, 21);
-            this.CheckBoxDomyslne.Name = "CheckBoxDomyslne";
-            this.CheckBoxDomyslne.Size = new System.Drawing.Size(197, 20);
-            this.CheckBoxDomyslne.TabIndex = 17;
-            this.CheckBoxDomyslne.Text = "Użyj danych domyślnych";
-            this.CheckBoxDomyslne.UseVisualStyleBackColor = true;
-            this.CheckBoxDomyslne.Click += new System.EventHandler(this.CheckBoxDomyslne_Click);
             // 
             // OknoDaneProjektu
             // 
