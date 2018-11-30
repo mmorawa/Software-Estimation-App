@@ -923,7 +923,7 @@ namespace Aplikacja
             pdfRenderer.RenderDocument();
 
             // Save the document...
-            const string filename = "HelloWorld.pdf";
+            const string filename = "Raport_Opis_Projektu.pdf";
             pdfRenderer.PdfDocument.Save(filename);
             // ...and start a viewer.
             Process.Start(filename);
@@ -934,8 +934,12 @@ namespace Aplikacja
             // Create a new MigraDoc document.
             var document = new Document();
 
-            document.Styles[StyleNames.Normal].Font.Name = "Arial";
+            document.Info.Title = "Raport opis projektu";
+            document.Info.Subject = "Raport dot. opisu projektu";
+            document.Info.Author = Szacujacy;
 
+            document.Styles[StyleNames.Normal].Font.Name = "Arial";
+            DefineCover(document);
             // Add a section to the document.
             var section = document.AddSection();
 
@@ -947,8 +951,10 @@ namespace Aplikacja
             paragraph.Format.Font.Color = Colors.Black;
 
             // Add some text to the paragraph.
-            paragraph.AddFormattedText("Hello, World ąćęł!", TextFormat.NotBold);
+            paragraph.AddFormattedText("Kierownik Projektu: " + KierownikProjektu , TextFormat.NotBold);
+            
 
+            /*
             paragraph.AddFormattedText("When you program reaches the end of a page, you just have to create a new page by calling the  method of the PdfDocument class. Then you create a new XGraphics object for the new page and use it to draw on the second page, beginning at the top.", TextFormat.NotBold);
             paragraph = document.LastSection.AddParagraph();
             paragraph.Format.Alignment = ParagraphAlignment.Right;
@@ -970,17 +976,17 @@ namespace Aplikacja
 
             paragraph2.AddFormattedText("If you know right from the start that you will or may need more than one page, then take this into account right from the start and your program will be readable and easy to maintain.", TextFormat.NotBold);
 
-
+            
             var paragraph3 = section.AddParagraph();
             paragraph3.Format.Font.Color = Colors.Red;
             paragraph3.Format.Font.Size = 23;
-
+            
             paragraph3.AddFormattedText("Pracochłonność!", TextFormat.Bold);
 
 
 
             DemonstrateSimpleTable(document);
-
+            */
 
             // Create the primary footer.
             var footer = section.Footers.Primary;
@@ -991,6 +997,26 @@ namespace Aplikacja
             paragraph.Format.Alignment = ParagraphAlignment.Center;
 
             return document;
+        }
+
+        public static void DefineCover(Document document)
+        {
+            var section = document.AddSection();
+
+            var paragraph = section.AddParagraph();
+            paragraph.Format.SpaceAfter = "3cm";
+
+            //var image = section.AddImage("../../../../assets/images/Logo landscape.png");
+            //image.Width = "10cm";
+
+            paragraph = section.AddParagraph("A sample document that demonstrates the\ncapabilities of MigraDoc");
+            paragraph.Format.Font.Size = 16;
+            paragraph.Format.Font.Color = Colors.DarkRed;
+            paragraph.Format.SpaceBefore = "8cm";
+            paragraph.Format.SpaceAfter = "3cm";
+
+            paragraph = section.AddParagraph("Rendering date: ");
+            paragraph.AddDateField();
         }
 
         public static void DemonstrateSimpleTable(Document document)
@@ -1016,13 +1042,13 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("1");
             cell = row.Cells[1];
-            cell.AddParagraph("kupa siana");
+            cell.AddParagraph("");
 
             row = table.AddRow();
             cell = row.Cells[0];
             cell.AddParagraph("2");
             cell = row.Cells[1];
-            cell.AddParagraph("Borikson Alibaba");
+            cell.AddParagraph("");
 
             table.SetEdge(0, 0, 2, 3, Edge.Box, MigraDoc.DocumentObjectModel.BorderStyle.Single, 1.5, Colors.Black);
 

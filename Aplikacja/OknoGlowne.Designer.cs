@@ -1017,7 +1017,6 @@
             this.ButtonTablicaPrzeliczeniowa.TabIndex = 21;
             this.ButtonTablicaPrzeliczeniowa.Text = "Tablica";
             this.ButtonTablicaPrzeliczeniowa.UseVisualStyleBackColor = true;
-            this.ButtonTablicaPrzeliczeniowa.Visible = false;
             this.ButtonTablicaPrzeliczeniowa.Click += new System.EventHandler(this.ButtonTablicaPrzeliczeniowa_Click);
             // 
             // GroupBoxRaporty
@@ -1031,7 +1030,6 @@
             this.GroupBoxRaporty.TabIndex = 20;
             this.GroupBoxRaporty.TabStop = false;
             this.GroupBoxRaporty.Text = "Raporty";
-            this.GroupBoxRaporty.Visible = false;
             // 
             // ButtonOpisProjektu
             // 
