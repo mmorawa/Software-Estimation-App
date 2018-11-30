@@ -937,24 +937,32 @@ namespace Aplikacja
             document.Info.Title = "Raport opis projektu";
             document.Info.Subject = "Raport dot. opisu projektu";
             document.Info.Author = Szacujacy;
+            
+            string Raport = "asdfl;sdjf";
 
+            //Czcionka
             document.Styles[StyleNames.Normal].Font.Name = "Arial";
-            DefineCover(document);
-            // Add a section to the document.
+
+            // Dodajemy stronę tytułową
+            DefineCover(document, Raport);
+            
+            // Dodanie strony.
             var section = document.AddSection();
 
             // Add a paragraph to the section.
             var paragraph = section.AddParagraph();
 
-            // Set font color.
+            
             //paragraph.Format.Font.Color = Color.FromCmyk(100, 30, 20, 50);
-            paragraph.Format.Font.Color = Colors.Black;
+            
+            //kolor całego paragrafu
+            paragraph.Format.Font.Color = Colors.DarkRed;
 
             // Add some text to the paragraph.
             paragraph.AddFormattedText("Kierownik Projektu: " + KierownikProjektu , TextFormat.NotBold);
             
 
-            /*
+            
             paragraph.AddFormattedText("When you program reaches the end of a page, you just have to create a new page by calling the  method of the PdfDocument class. Then you create a new XGraphics object for the new page and use it to draw on the second page, beginning at the top.", TextFormat.NotBold);
             paragraph = document.LastSection.AddParagraph();
             paragraph.Format.Alignment = ParagraphAlignment.Right;
@@ -964,6 +972,7 @@ namespace Aplikacja
             document.LastSection.AddParagraph("Indent", "Heading2");
 
             document.LastSection.AddParagraph("Left Indent", "Heading3");
+
 
             var paragraph2 = document.LastSection.AddParagraph();
             paragraph2.Format.LeftIndent = "2cm";
@@ -983,33 +992,37 @@ namespace Aplikacja
             
             paragraph3.AddFormattedText("Pracochłonność!", TextFormat.Bold);
 
+            //dodanie nowej strony
+            section.AddPageBreak();
 
-
+            //dodanie tabeli
             DemonstrateSimpleTable(document);
-            */
+            
 
             // Create the primary footer.
             var footer = section.Footers.Primary;
 
             // Add content to footer.
             paragraph = footer.AddParagraph();
-            paragraph.Add(new DateField() { Format = "yyyy/MM/dd HH:mm:ss" });
+            paragraph.Add(new DateField() { Format = "dd/MM/yyyy HH:mm:ss" });
             paragraph.Format.Alignment = ParagraphAlignment.Center;
 
             return document;
         }
 
-        public static void DefineCover(Document document)
+        //Domyślny wzór strony głównej
+        public static void DefineCover(Document document, string Raport)
         {
             var section = document.AddSection();
 
             var paragraph = section.AddParagraph();
-            paragraph.Format.SpaceAfter = "3cm";
+            paragraph.Format.SpaceAfter = "10cm";
 
             //var image = section.AddImage("../../../../assets/images/Logo landscape.png");
             //image.Width = "10cm";
 
-            paragraph = section.AddParagraph("A sample document that demonstrates the\ncapabilities of MigraDoc");
+            paragraph = section.AddParagraph(Raport);
+            
             paragraph.Format.Font.Size = 16;
             paragraph.Format.Font.Color = Colors.DarkRed;
             paragraph.Format.SpaceBefore = "8cm";
@@ -1019,38 +1032,50 @@ namespace Aplikacja
             paragraph.AddDateField();
         }
 
+        //Tabela z wynikami wprowadzonymi do szacowania
         public static void DemonstrateSimpleTable(Document document)
         {
+            //nagłówek tabelii
             document.LastSection.AddParagraph("Simple Tables", "Heading2");
 
             var table = new Table();
+            
+            //granice tabelii
             table.Borders.Width = 0.75;
 
-            var column = table.AddColumn(Unit.FromCentimeter(2));
+            //szerokość kolumny w cm
+            var column = table.AddColumn(Unit.FromCentimeter(8));
+            //tylko dot. pierwszej
             column.Format.Alignment = ParagraphAlignment.Center;
-
+            //od lewej 5 cm?????
             table.AddColumn(Unit.FromCentimeter(5));
 
             var row = table.AddRow();
             row.Shading.Color = Colors.PaleGoldenrod;
+            
+            //dodajemy dane
             var cell = row.Cells[0];
             cell.AddParagraph("Itemus");
             cell = row.Cells[1];
             cell.AddParagraph("Descriptum");
 
-            row = table.AddRow();
-            cell = row.Cells[0];
+            var row2 = table.AddRow();
+            //tylko dodaje do pierwszego kolor
+            row2.Shading.Color = Colors.Aqua;
+            row2 = table.AddRow();
+            cell = row2.Cells[0];
             cell.AddParagraph("1");
-            cell = row.Cells[1];
-            cell.AddParagraph("");
+            cell = row2.Cells[1];
+            cell.AddParagraph("aaaaaaaaa");
 
-            row = table.AddRow();
-            cell = row.Cells[0];
+            row2 = table.AddRow();
+            cell = row2.Cells[0];
             cell.AddParagraph("2");
-            cell = row.Cells[1];
-            cell.AddParagraph("");
-
-            table.SetEdge(0, 0, 2, 3, Edge.Box, MigraDoc.DocumentObjectModel.BorderStyle.Single, 1.5, Colors.Black);
+            cell = row2.Cells[1];
+            cell.AddParagraph("bbbbbbbbb");
+            
+            //ramka od 0,0 do 2,4
+            table.SetEdge(0, 0, 2, 4, Edge.Box, MigraDoc.DocumentObjectModel.BorderStyle.Single, 1.5, Colors.Red);
 
             document.LastSection.Add(table);
         }
