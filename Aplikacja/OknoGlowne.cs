@@ -49,22 +49,22 @@ namespace Aplikacja
 
         //Dane projektu
         public static string NazwaProjektu = "Projekt";
-        public static string DataProjektu;
-        public static string KierownikProjektu;
-        public static string Szacujacy;
-        public static string NazwaFirmy;
-        public static string Adres;
-        public static string Telefon;
-        public static string Email;
-        public static string OpisProjektu;
+        public static string DataProjektu = "";
+        public static string KierownikProjektu = "";
+        public static string Szacujacy = "";
+        public static string NazwaFirmy = "";
+        public static string Adres = "";
+        public static string Telefon = "";
+        public static string Email = "";
+        public static string OpisProjektu = "";
 
-        public static string TempKierownikProjektu;
-        public static string TempSzacujacy;
-        public static string TempNazwaFirmy;
-        public static string TempAdres;
-        public static string TempTelefon;
-        public static string TempEmail;
-        public static string TempOpisProjektu;
+        public static string TempKierownikProjektu = "";
+        public static string TempSzacujacy = "";
+        public static string TempNazwaFirmy = "";
+        public static string TempAdres = "";
+        public static string TempTelefon = "";
+        public static string TempEmail = "";
+        public static string TempOpisProjektu = "";
 
         //Zmienne zapisujące stan ustawień
         public static bool Ograniczenia = false;
@@ -1011,21 +1011,50 @@ namespace Aplikacja
             var sekcja = document.AddSection();
 
             var paragraf = sekcja.AddParagraph(NazwaRaportu);
-            paragraf.Format.SpaceBefore = "8cm";
+            paragraf.Format.SpaceBefore = "6cm";
             paragraf.Format.SpaceAfter = "1cm";
-            paragraf.Format.Font.Size = 30;
+            paragraf.Format.Font.Size = 28;
             paragraf.Format.Font.Bold = true;
-            paragraf.Format.Font.Color = Colors.DarkRed;          
+            paragraf.Format.Font.Color = Colors.DarkRed;
+            
+            double odstep = 0;
 
+            if (Szacujacy.Length != 0)
+            {
+                paragraf = sekcja.AddParagraph("Przygotował " + Szacujacy);
+                paragraf.Format.Font.Size = 15;
+                paragraf.Format.Font.Color = Colors.DarkRed;
+                odstep += 6;
+            }
+            else
+            {
+                odstep += 6.6;
+            }
 
-            paragraf = sekcja.AddParagraph("Przygotował " + Szacujacy + "\n dla firmy " + NazwaFirmy);
+            if (NazwaFirmy.Length != 0)
+            {
+                paragraf = sekcja.AddParagraph("dla firmy " + NazwaFirmy);
+                paragraf.Format.Font.Size = 15;
+                paragraf.Format.Font.Color = Colors.DarkRed;
+                odstep += 6;
+            }
+            else
+            {
+                odstep += 6.6;
+            }
+
+            if (Szacujacy.Length == 0 && NazwaFirmy.Length == 0)
+            {
+                odstep = 14.2;
+            }
+
+            paragraf.Format.SpaceAfter = string.Format("{0}cm", odstep);
+            
+
+            paragraf = sekcja.AddParagraph("Data utworzenia: ");
+            paragraf.Add(new DateField() { Format = "dd/MM/yyyy" });
             paragraf.Format.Font.Size = 15;
             paragraf.Format.Font.Color = Colors.DarkRed;
-
-            var paragraf2 = sekcja.AddParagraph("Data utworzenia: ");
-            paragraf2.Add(new DateField() { Format = "dd/MM/yyyy" });
-            paragraf2.Format.Font.Size = 15;
-            paragraf2.Format.Font.Color = Colors.DarkRed;
 
         }
 

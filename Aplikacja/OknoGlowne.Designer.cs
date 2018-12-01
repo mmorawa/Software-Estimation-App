@@ -403,6 +403,7 @@
             // TextBoxNazwaProjektu
             // 
             this.TextBoxNazwaProjektu.Location = new System.Drawing.Point(6, 49);
+            this.TextBoxNazwaProjektu.MaxLength = 60;
             this.TextBoxNazwaProjektu.Name = "TextBoxNazwaProjektu";
             this.TextBoxNazwaProjektu.Size = new System.Drawing.Size(549, 22);
             this.TextBoxNazwaProjektu.TabIndex = 0;
