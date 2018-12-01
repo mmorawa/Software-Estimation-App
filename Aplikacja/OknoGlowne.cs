@@ -1047,15 +1047,42 @@ namespace Aplikacja
         public static void StronaZOpisem(Document document, string NazwaRaportu)
         {
             var sekcja = document.LastSection;
+            
+            //EXT Jak brak to wpisz brak
+
+            var paragraf = sekcja.AddParagraph("Podstawowe informacje", "Heading1");
+
+            paragraf = sekcja.AddParagraph("Dane projektu", "Heading2");
+            paragraf = sekcja.AddParagraph("Nazwa projektu: " + NazwaProjektu);
+            paragraf = sekcja.AddParagraph("Kierownik Projektu: " + KierownikProjektu );
+            paragraf = sekcja.AddParagraph("Osoba odpowiedzialna za oszacowanie: " + Szacujacy);
+            paragraf = sekcja.AddParagraph("Data rozpoczęcia projektu: " + DataProjektu);
+
+            paragraf = sekcja.AddParagraph("Dane firmy", "Heading2");
+            paragraf = sekcja.AddParagraph("Nazwa firmy: " + NazwaFirmy);
+            paragraf = sekcja.AddParagraph("Adres: " + Adres);
+            paragraf = sekcja.AddParagraph("Telefon/Fax: " + Telefon);
+            paragraf = sekcja.AddParagraph("E-Mail: " + Email);
 
 
-            var paragraf = sekcja.AddParagraph("Dane dotyczące projektu", "Heading1");
-            paragraf = sekcja.AddParagraph("Data utworzenia:", "Heading2");
-            paragraf = sekcja.AddParagraph("dsfak;jldsajfsd fjkl;sdj fklsdjfl; jsdl;kf jsdlk;f jsdkl;jf ;sldjf lsdfdksl; fsldk");
+            paragraf = sekcja.AddParagraph("Opis projektu", "Heading2");
+            paragraf = sekcja.AddParagraph(OpisProjektu);
+
+            paragraf = sekcja.AddParagraph("Założenia projektu", "Heading2");
+            paragraf = sekcja.AddParagraph("Główny język programowania użyty w projekcie");
 
 
 
-            sekcja.AddPageBreak();
+            if (Ograniczenia == true)
+            {
+                paragraf = sekcja.AddParagraph("Ograniczenia nałożone na oszacowanie", "Heading2");
+                paragraf = sekcja.AddParagraph("Maksymalna pracochłonność: " + MaxPrac);
+                paragraf = sekcja.AddParagraph("Maksymalny harmonogram: " + MaxHarm);
+                paragraf = sekcja.AddParagraph("Maksymalny koszt: " + MaxKoszt);
+
+            }
+
+            
         }
 
 
@@ -1072,6 +1099,7 @@ namespace Aplikacja
 
             //Czcionka
             styl.Font.Name = "Arial";
+            styl.Font.Size = 12;
 
             // Heading1 to Heading9 are predefined styles with an outline level. An outline level
             // other than OutlineLevel.BodyText automatically creates the outline (or bookmarks) 
