@@ -904,65 +904,37 @@ namespace Aplikacja
         private void ButtonOpisProjektu_Click(object sender, EventArgs e)
         {
             // Create a MigraDoc document.
-            var document = CreateDocument();
-
-            // ----- Unicode encoding and font program embedding in MigraDoc is demonstrated here. -----
-
-            // A flag indicating whether to create a Unicode PDF or a WinAnsi PDF file.
-            // This setting applies to all fonts used in the PDF document.
-            // This setting has no effect on the RTF renderer.
-            const bool unicode = true;
-
-            // Create a renderer for the MigraDoc document.
-            var pdfRenderer = new PdfDocumentRenderer(unicode);
-
-            // Associate the MigraDoc document with a renderer.
-            pdfRenderer.Document = document;
-
-            // Layout and render document to PDF.
-            pdfRenderer.RenderDocument();
-
-            // Save the document...
-            const string filename = "Raport_Opis_Projektu.pdf";
-            pdfRenderer.PdfDocument.Save(filename);
-            // ...and start a viewer.
-            Process.Start(filename);
-        }
-
-        static Document CreateDocument()
-        {
-            // Create a new MigraDoc document.
             var document = new Document();
 
             document.Info.Title = "Raport opis projektu";
             document.Info.Subject = "Raport dot. opisu projektu";
             document.Info.Author = Szacujacy;
-            
-            string Raport = "asdfl;sdjf";
+
+            string Raport = NazwaProjektu + " - opis projektu";
 
             //Czcionka
             document.Styles[StyleNames.Normal].Font.Name = "Arial";
 
             // Dodajemy stronę tytułową
             DefineCover(document, Raport);
-            
+
             // Dodanie strony.
             var section = document.AddSection();
 
             // Add a paragraph to the section.
             var paragraph = section.AddParagraph();
 
-            
+
             //paragraph.Format.Font.Color = Color.FromCmyk(100, 30, 20, 50);
-            
+
             //kolor całego paragrafu
             paragraph.Format.Font.Color = Colors.DarkRed;
 
             // Add some text to the paragraph.
-            paragraph.AddFormattedText("Kierownik Projektu: " + KierownikProjektu , TextFormat.NotBold);
-            
+            paragraph.AddFormattedText("Kierownik Projektu: " + KierownikProjektu, TextFormat.NotBold);
 
-            
+
+
             paragraph.AddFormattedText("When you program reaches the end of a page, you just have to create a new page by calling the  method of the PdfDocument class. Then you create a new XGraphics object for the new page and use it to draw on the second page, beginning at the top.", TextFormat.NotBold);
             paragraph = document.LastSection.AddParagraph();
             paragraph.Format.Alignment = ParagraphAlignment.Right;
@@ -985,11 +957,11 @@ namespace Aplikacja
 
             paragraph2.AddFormattedText("If you know right from the start that you will or may need more than one page, then take this into account right from the start and your program will be readable and easy to maintain.", TextFormat.NotBold);
 
-            
+
             var paragraph3 = section.AddParagraph();
             paragraph3.Format.Font.Color = Colors.Red;
             paragraph3.Format.Font.Size = 23;
-            
+
             paragraph3.AddFormattedText("Pracochłonność!", TextFormat.Bold);
 
             //dodanie nowej strony
@@ -997,7 +969,7 @@ namespace Aplikacja
 
             //dodanie tabeli
             DemonstrateSimpleTable(document);
-            
+
 
             // Create the primary footer.
             var footer = section.Footers.Primary;
@@ -1007,29 +979,54 @@ namespace Aplikacja
             paragraph.Add(new DateField() { Format = "dd/MM/yyyy HH:mm:ss" });
             paragraph.Format.Alignment = ParagraphAlignment.Center;
 
-            return document;
+
+            // ----- Unicode encoding and font program embedding in MigraDoc is demonstrated here. -----
+            // A flag indicating whether to create a Unicode PDF or a WinAnsi PDF file.
+            // This setting applies to all fonts used in the PDF document.
+            // This setting has no effect on the RTF renderer.
+            const bool unicode = true;
+
+            // Create a renderer for the MigraDoc document.
+            var pdfRenderer = new PdfDocumentRenderer(unicode);
+
+            // Associate the MigraDoc document with a renderer.
+            pdfRenderer.Document = document;
+
+            // Layout and render document to PDF.
+            pdfRenderer.RenderDocument();
+
+
+
+            // Save the document...
+            const string filename = "Raport_Opis_Projektu.pdf";
+            pdfRenderer.PdfDocument.Save(filename);
+            // ...and start a viewer.
+            Process.Start(filename);
         }
+       
 
         //Domyślny wzór strony głównej
-        public static void DefineCover(Document document, string Raport)
+        public static void DefineCover(Document document, string NazwaRaportu)
         {
-            var section = document.AddSection();
+            var sekcja = document.AddSection();
 
-            var paragraph = section.AddParagraph();
-            paragraph.Format.SpaceAfter = "10cm";
+            var paragraf = sekcja.AddParagraph(NazwaRaportu);
+            paragraf.Format.SpaceBefore = "8cm";
+            paragraf.Format.SpaceAfter = "1cm";
+            paragraf.Format.Font.Size = 30;
+            paragraf.Format.Font.Bold = true;
+            paragraf.Format.Font.Color = Colors.DarkRed;          
 
-            //var image = section.AddImage("../../../../assets/images/Logo landscape.png");
-            //image.Width = "10cm";
 
-            paragraph = section.AddParagraph(Raport);
-            
-            paragraph.Format.Font.Size = 16;
-            paragraph.Format.Font.Color = Colors.DarkRed;
-            paragraph.Format.SpaceBefore = "8cm";
-            paragraph.Format.SpaceAfter = "3cm";
+            paragraf = sekcja.AddParagraph("Przygotował " + Szacujacy + "\n dla firmy " + NazwaFirmy);
+            paragraf.Format.Font.Size = 15;
+            paragraf.Format.Font.Color = Colors.DarkRed;
 
-            paragraph = section.AddParagraph("Rendering date: ");
-            paragraph.AddDateField();
+            var paragraf2 = sekcja.AddParagraph("Data utworzenia: ");
+            paragraf2.Add(new DateField() { Format = "dd/MM/yyyy" });
+            paragraf2.Format.Font.Size = 15;
+            paragraf2.Format.Font.Color = Colors.DarkRed;
+
         }
 
         //Tabela z wynikami wprowadzonymi do szacowania
