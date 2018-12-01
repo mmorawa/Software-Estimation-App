@@ -19,6 +19,7 @@ using MigraDoc.DocumentObjectModel;
 using MigraDoc.DocumentObjectModel.Fields;
 using MigraDoc.Rendering;
 using MigraDoc.DocumentObjectModel.Tables;
+using TabAlignment = MigraDoc.DocumentObjectModel.TabAlignment;
 
 
 //! Przestrzeń nazw Password_Manager obejmuje całą aplikację Menedżera Haseł.
@@ -465,7 +466,7 @@ namespace Aplikacja
 
             string Ostrzezenie = "";
             //Ograniczenia projektu
-            
+
             if (Ograniczenia == true)
             {
 
@@ -563,7 +564,7 @@ namespace Aplikacja
 
         private void ButtonOtworzProjekt_Click(object sender, EventArgs e)
         {
-            
+
             DialogResult rezultat = MessageBox.Show("Czy chcesz zapisać obecny projekt?",
                 "Uwaga!",
                 MessageBoxButtons.YesNoCancel,
@@ -662,7 +663,7 @@ namespace Aplikacja
             }
         }
 
-        
+
         private void ButtonUstawienia_Click(object sender, EventArgs e)
         {
             using (OknoUstawienia OknoUstawDomyslne = new OknoUstawienia())
@@ -906,21 +907,26 @@ namespace Aplikacja
             // Create a MigraDoc document.
             var document = new Document();
 
-            document.Info.Title = "Raport opis projektu";
-            document.Info.Subject = "Raport dot. opisu projektu";
+            document.Info.Title = "Opis projektu";
+            document.Info.Subject = "Raport zawierający opis projektu";
             document.Info.Author = Szacujacy;
 
             string Raport = NazwaProjektu + " - opis projektu";
 
-            //Czcionka
-            document.Styles[StyleNames.Normal].Font.Name = "Arial";
+
+
+            DefineStyles(document);
 
             // Dodajemy stronę tytułową
-            DefineCover(document, Raport);
+            StronaTytulowa(document, Raport);
 
-            // Dodanie strony.
-            var section = document.AddSection();
+            DefineContentSection(document, Raport);
+            // Dodanie strony z opisem projektu
+            StronaZOpisem(document, Raport);
 
+
+
+            /*
             // Add a paragraph to the section.
             var paragraph = section.AddParagraph();
 
@@ -978,7 +984,7 @@ namespace Aplikacja
             paragraph = footer.AddParagraph();
             paragraph.Add(new DateField() { Format = "dd/MM/yyyy HH:mm:ss" });
             paragraph.Format.Alignment = ParagraphAlignment.Center;
-
+            */
 
             // ----- Unicode encoding and font program embedding in MigraDoc is demonstrated here. -----
             // A flag indicating whether to create a Unicode PDF or a WinAnsi PDF file.
@@ -1003,10 +1009,10 @@ namespace Aplikacja
             // ...and start a viewer.
             Process.Start(filename);
         }
-       
+
 
         //Domyślny wzór strony głównej
-        public static void DefineCover(Document document, string NazwaRaportu)
+        public static void StronaTytulowa(Document document, string NazwaRaportu)
         {
             var sekcja = document.AddSection();
 
@@ -1016,7 +1022,7 @@ namespace Aplikacja
             paragraf.Format.Font.Size = 28;
             paragraf.Format.Font.Bold = true;
             paragraf.Format.Font.Color = Colors.DarkRed;
-            
+
             double odstep = 0;
 
             if (Szacujacy.Length != 0)
@@ -1049,14 +1055,107 @@ namespace Aplikacja
             }
 
             paragraf.Format.SpaceAfter = string.Format("{0}cm", odstep);
-            
+
 
             paragraf = sekcja.AddParagraph("Data utworzenia: ");
             paragraf.Add(new DateField() { Format = "dd/MM/yyyy" });
             paragraf.Format.Font.Size = 15;
             paragraf.Format.Font.Color = Colors.DarkRed;
 
+            sekcja.AddPageBreak();
+
         }
+
+        public static void StronaZOpisem(Document document, string NazwaRaportu)
+        {
+            var sekcja = document.LastSection;
+            
+
+            var paragraf = sekcja.AddParagraph("Dane dotyczące projektu", "Heading1");
+            paragraf = sekcja.AddParagraph("Data utworzenia:",  "Heading2");
+            paragraf = sekcja.AddParagraph("dsfak;jldsajfsd fjkl;sdj fklsdjfl; jsdl;kf jsdlk;f jsdkl;jf ;sldjf lsdfdksl; fsldk");
+
+
+
+            sekcja.AddPageBreak();
+        }
+
+        public static void DefineStyles(Document document)
+        {
+            // Get the predefined style Normal.
+            var style = document.Styles["Normal"];
+            // Because all styles are derived from Normal, the next line changes the 
+            // font of the whole document. Or, more exactly, it changes the font of
+            // all styles and paragraphs that do not redefine the font.
+
+            //Czcionka
+            style.Font.Name = "Arial";
+
+            // Heading1 to Heading9 are predefined styles with an outline level. An outline level
+            // other than OutlineLevel.BodyText automatically creates the outline (or bookmarks) 
+            // in PDF.
+
+            style = document.Styles["Heading1"];
+            style.Font.Name = "Arial";
+            style.Font.Size = 20;
+            //style.Font.Bold = true;
+            style.Font.Color = Colors.DarkRed;
+            style.ParagraphFormat.PageBreakBefore = true;
+            style.ParagraphFormat.SpaceBefore = "4cm";
+            style.ParagraphFormat.SpaceAfter = "1cm";
+            // Set KeepWithNext for all headings to prevent headings from appearing all alone
+            // at the bottom of a page. The other headings inherit this from Heading1.
+            style.ParagraphFormat.KeepWithNext = true;
+
+            style = document.Styles["Heading2"];
+            style.Font.Size = 16;
+            //style.Font.Bold = true;
+            style.ParagraphFormat.PageBreakBefore = false;
+            style.ParagraphFormat.SpaceBefore = "1cm";
+            style.ParagraphFormat.SpaceAfter = 6;
+
+            style = document.Styles[StyleNames.Header];
+            style.ParagraphFormat.AddTabStop("16cm", TabAlignment.Right);
+            style.ParagraphFormat.Font.Color = Colors.DarkRed;
+
+            style = document.Styles[StyleNames.Footer];
+            style.ParagraphFormat.AddTabStop("8cm", TabAlignment.Center);
+
+
+        }
+
+
+
+
+        static void DefineContentSection(Document document, string NazwaRaportu)
+        {
+            var section = document.AddSection();
+            section.PageSetup.OddAndEvenPagesHeaderFooter = true;
+            section.PageSetup.StartingNumber = 3;
+
+            var header = section.Headers.Primary;
+            header.AddParagraph(NazwaRaportu);
+            header.Format.Alignment = ParagraphAlignment.Right;
+            
+
+            header = section.Headers.EvenPage;
+            header.AddParagraph(NazwaRaportu);
+            
+
+            // Create a paragraph with centered page number. See definition of style "Footer".
+            var paragraph = new Paragraph();
+            paragraph.AddTab();
+            paragraph.AddPageField();
+
+
+            // Add paragraph to footer for odd pages.
+            section.Footers.Primary.Add(paragraph);
+            // Add clone of paragraph to footer for odd pages. Cloning is necessary because an object must
+            // not belong to more than one other object. If you forget cloning an exception is thrown.
+            section.Footers.EvenPage.Add(paragraph.Clone());
+        }
+
+
 
         //Tabela z wynikami wprowadzonymi do szacowania
         public static void DemonstrateSimpleTable(Document document)
@@ -1065,7 +1164,7 @@ namespace Aplikacja
             document.LastSection.AddParagraph("Simple Tables", "Heading2");
 
             var table = new Table();
-            
+
             //granice tabelii
             table.Borders.Width = 0.75;
 
@@ -1078,7 +1177,7 @@ namespace Aplikacja
 
             var row = table.AddRow();
             row.Shading.Color = Colors.PaleGoldenrod;
-            
+
             //dodajemy dane
             var cell = row.Cells[0];
             cell.AddParagraph("Itemus");
@@ -1099,7 +1198,7 @@ namespace Aplikacja
             cell.AddParagraph("2");
             cell = row2.Cells[1];
             cell.AddParagraph("bbbbbbbbb");
-            
+
             //ramka od 0,0 do 2,4
             table.SetEdge(0, 0, 2, 4, Edge.Box, MigraDoc.DocumentObjectModel.BorderStyle.Single, 1.5, Colors.Red);
 
