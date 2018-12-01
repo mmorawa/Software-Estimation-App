@@ -904,6 +904,22 @@ namespace Aplikacja
 
         private void ButtonOpisProjektu_Click(object sender, EventArgs e)
         {
+            /*
+            using (SaveFileDialog ZapiszPDFDialog = new SaveFileDialog())
+            {
+                ZapiszPDFDialog.Filter = "Plik Raportu | *.pdf";
+                ZapiszPDFDialog.FileName = "Raport_Opis_Projektu.pdf";
+                ZapiszPDFDialog.Title = "Zapisz plik Raportu jako:";
+
+                DialogResult rezultat = ZapiszPDFDialog.ShowDialog();
+
+
+                //zapisanie danych do pliku tekstowego
+                if (rezultat == DialogResult.OK)
+                {
+                    //ZapiszPDFDialog.FileName;
+                    */
+
             // Create a MigraDoc document.
             var document = new Document();
 
@@ -914,77 +930,27 @@ namespace Aplikacja
             string Raport = NazwaProjektu + " - opis projektu";
 
 
-
-            DefineStyles(document);
+            //Zdefiniowanie stylu
+            DefinicjaStylu(document);
 
             // Dodajemy stronę tytułową
             StronaTytulowa(document, Raport);
 
-            DefineContentSection(document, Raport);
+            //Schemat treści
+            DefinicjaZawartosci(document, Raport);
+
             // Dodanie strony z opisem projektu
             StronaZOpisem(document, Raport);
 
 
 
-            /*
-            // Add a paragraph to the section.
-            var paragraph = section.AddParagraph();
 
 
-            //paragraph.Format.Font.Color = Color.FromCmyk(100, 30, 20, 50);
-
-            //kolor całego paragrafu
-            paragraph.Format.Font.Color = Colors.DarkRed;
-
-            // Add some text to the paragraph.
-            paragraph.AddFormattedText("Kierownik Projektu: " + KierownikProjektu, TextFormat.NotBold);
-
-
-
-            paragraph.AddFormattedText("When you program reaches the end of a page, you just have to create a new page by calling the  method of the PdfDocument class. Then you create a new XGraphics object for the new page and use it to draw on the second page, beginning at the top.", TextFormat.NotBold);
-            paragraph = document.LastSection.AddParagraph();
-            paragraph.Format.Alignment = ParagraphAlignment.Right;
-
-            paragraph.AddText("Experience shows that users sometimes have difficulties to modify there code with support for a second page.They call, but do not store the return value.They do not create a new XGraphics object and continue to draw on the first page.Or they try to create a new XGraphics object, but pass the first page as a parameter and receive an error message.");
-
-            document.LastSection.AddParagraph("Indent", "Heading2");
-
-            document.LastSection.AddParagraph("Left Indent", "Heading3");
-
-
-            var paragraph2 = document.LastSection.AddParagraph();
-            paragraph2.Format.LeftIndent = "2cm";
-
-
-            document.LastSection.AddParagraph("Right Indent", "Heading3");
-
-            paragraph2 = document.LastSection.AddParagraph();
-            paragraph2.Format.RightIndent = "1in";
-
-            paragraph2.AddFormattedText("If you know right from the start that you will or may need more than one page, then take this into account right from the start and your program will be readable and easy to maintain.", TextFormat.NotBold);
-
-
-            var paragraph3 = section.AddParagraph();
-            paragraph3.Format.Font.Color = Colors.Red;
-            paragraph3.Format.Font.Size = 23;
-
-            paragraph3.AddFormattedText("Pracochłonność!", TextFormat.Bold);
-
-            //dodanie nowej strony
-            section.AddPageBreak();
 
             //dodanie tabeli
-            DemonstrateSimpleTable(document);
+            //DemonstrateSimpleTable(document);
 
 
-            // Create the primary footer.
-            var footer = section.Footers.Primary;
-
-            // Add content to footer.
-            paragraph = footer.AddParagraph();
-            paragraph.Add(new DateField() { Format = "dd/MM/yyyy HH:mm:ss" });
-            paragraph.Format.Alignment = ParagraphAlignment.Center;
-            */
 
             // ----- Unicode encoding and font program embedding in MigraDoc is demonstrated here. -----
             // A flag indicating whether to create a Unicode PDF or a WinAnsi PDF file.
@@ -1001,6 +967,11 @@ namespace Aplikacja
             // Layout and render document to PDF.
             pdfRenderer.RenderDocument();
 
+            // Save the document...
+            //pdfRenderer.PdfDocument.Save(ZapiszPDFDialog.FileName);
+            // ...and start a viewer.
+            //Process.Start(ZapiszPDFDialog.FileName);
+
 
 
             // Save the document...
@@ -1008,10 +979,16 @@ namespace Aplikacja
             pdfRenderer.PdfDocument.Save(filename);
             // ...and start a viewer.
             Process.Start(filename);
+
         }
 
 
-        //Domyślny wzór strony głównej
+
+
+
+
+
+        //Domyślny wzór strony tytułowej
         public static void StronaTytulowa(Document document, string NazwaRaportu)
         {
             var sekcja = document.AddSection();
@@ -1066,13 +1043,14 @@ namespace Aplikacja
 
         }
 
+
         public static void StronaZOpisem(Document document, string NazwaRaportu)
         {
             var sekcja = document.LastSection;
-            
+
 
             var paragraf = sekcja.AddParagraph("Dane dotyczące projektu", "Heading1");
-            paragraf = sekcja.AddParagraph("Data utworzenia:",  "Heading2");
+            paragraf = sekcja.AddParagraph("Data utworzenia:", "Heading2");
             paragraf = sekcja.AddParagraph("dsfak;jldsajfsd fjkl;sdj fklsdjfl; jsdl;kf jsdlk;f jsdkl;jf ;sldjf lsdfdksl; fsldk");
 
 
@@ -1080,46 +1058,50 @@ namespace Aplikacja
             sekcja.AddPageBreak();
         }
 
-        public static void DefineStyles(Document document)
+
+
+
+
+        public static void DefinicjaStylu(Document document)
         {
             // Get the predefined style Normal.
-            var style = document.Styles["Normal"];
+            var styl = document.Styles["Normal"];
             // Because all styles are derived from Normal, the next line changes the 
             // font of the whole document. Or, more exactly, it changes the font of
             // all styles and paragraphs that do not redefine the font.
 
             //Czcionka
-            style.Font.Name = "Arial";
+            styl.Font.Name = "Arial";
 
             // Heading1 to Heading9 are predefined styles with an outline level. An outline level
             // other than OutlineLevel.BodyText automatically creates the outline (or bookmarks) 
             // in PDF.
 
-            style = document.Styles["Heading1"];
-            style.Font.Name = "Arial";
-            style.Font.Size = 20;
-            //style.Font.Bold = true;
-            style.Font.Color = Colors.DarkRed;
-            style.ParagraphFormat.PageBreakBefore = true;
-            style.ParagraphFormat.SpaceBefore = "4cm";
-            style.ParagraphFormat.SpaceAfter = "1cm";
+            styl = document.Styles["Heading1"];
+            styl.Font.Name = "Arial";
+            styl.Font.Size = 20;
+            styl.Font.Bold = true;
+            styl.Font.Color = Colors.DarkRed;
+            styl.ParagraphFormat.PageBreakBefore = true;
+            styl.ParagraphFormat.SpaceBefore = "4cm";
+            styl.ParagraphFormat.SpaceAfter = "1cm";
             // Set KeepWithNext for all headings to prevent headings from appearing all alone
             // at the bottom of a page. The other headings inherit this from Heading1.
-            style.ParagraphFormat.KeepWithNext = true;
+            styl.ParagraphFormat.KeepWithNext = true;
 
-            style = document.Styles["Heading2"];
-            style.Font.Size = 16;
-            //style.Font.Bold = true;
-            style.ParagraphFormat.PageBreakBefore = false;
-            style.ParagraphFormat.SpaceBefore = "1cm";
-            style.ParagraphFormat.SpaceAfter = 6;
+            styl = document.Styles["Heading2"];
+            styl.Font.Size = 16;
 
-            style = document.Styles[StyleNames.Header];
-            style.ParagraphFormat.AddTabStop("16cm", TabAlignment.Right);
-            style.ParagraphFormat.Font.Color = Colors.DarkRed;
+            styl.ParagraphFormat.PageBreakBefore = false;
+            styl.ParagraphFormat.SpaceBefore = "1cm";
+            styl.ParagraphFormat.SpaceAfter = 6;
 
-            style = document.Styles[StyleNames.Footer];
-            style.ParagraphFormat.AddTabStop("8cm", TabAlignment.Center);
+            styl = document.Styles[StyleNames.Header];
+            styl.ParagraphFormat.AddTabStop("16cm", TabAlignment.Right);
+            styl.ParagraphFormat.Font.Color = Colors.DarkRed;
+
+            styl = document.Styles[StyleNames.Footer];
+            styl.ParagraphFormat.AddTabStop("8cm", TabAlignment.Center);
 
 
         }
@@ -1127,32 +1109,32 @@ namespace Aplikacja
 
 
 
-        static void DefineContentSection(Document document, string NazwaRaportu)
+        static void DefinicjaZawartosci(Document document, string NazwaRaportu)
         {
-            var section = document.AddSection();
-            section.PageSetup.OddAndEvenPagesHeaderFooter = true;
-            section.PageSetup.StartingNumber = 3;
+            var sekcja = document.AddSection();
+            sekcja.PageSetup.OddAndEvenPagesHeaderFooter = true;
+            sekcja.PageSetup.StartingNumber = 3;
 
-            var header = section.Headers.Primary;
-            header.AddParagraph(NazwaRaportu);
-            header.Format.Alignment = ParagraphAlignment.Right;
-            
+            var naglowek = sekcja.Headers.Primary;
+            naglowek.AddParagraph(NazwaRaportu);
+            naglowek.Format.Alignment = ParagraphAlignment.Right;
 
-            header = section.Headers.EvenPage;
-            header.AddParagraph(NazwaRaportu);
-            
+
+            naglowek = sekcja.Headers.EvenPage;
+            naglowek.AddParagraph(NazwaRaportu);
+
 
             // Create a paragraph with centered page number. See definition of style "Footer".
-            var paragraph = new Paragraph();
-            paragraph.AddTab();
-            paragraph.AddPageField();
+            var paragraf = new Paragraph();
+            paragraf.AddTab();
+            paragraf.AddPageField();
 
 
             // Add paragraph to footer for odd pages.
-            section.Footers.Primary.Add(paragraph);
+            sekcja.Footers.Primary.Add(paragraf);
             // Add clone of paragraph to footer for odd pages. Cloning is necessary because an object must
             // not belong to more than one other object. If you forget cloning an exception is thrown.
-            section.Footers.EvenPage.Add(paragraph.Clone());
+            sekcja.Footers.EvenPage.Add(paragraf.Clone());
         }
 
 
