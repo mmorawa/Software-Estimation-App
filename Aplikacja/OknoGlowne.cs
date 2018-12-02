@@ -1026,7 +1026,7 @@ namespace Aplikacja
             StronaZOpisem(dokument);
 
             // Dodanie tabeli
-            DemonstrateSimpleTable(dokument);
+            WprowadzoneDane(dokument);
 
 
             // Flaga wskazuje na to czy dokument ma być utworzony jako plik Unicode PDF czy jako WinAnsi PDF.
@@ -1284,56 +1284,169 @@ namespace Aplikacja
 
 
         //Tabela z danymi wprowadzonymi do szacowania
-        public static void DemonstrateSimpleTable(Document dokument)
+        public static void WprowadzoneDane(Document dokument)
         {
             //var sekcja = dokument.LastSection;
             var sekcja = dokument.LastSection;
 
             var paragraf = sekcja.AddParagraph("Dane wykorzystane do oszacowania pracochłonności", "Heading1");
-
+     
+            paragraf = sekcja.AddParagraph("Metoda Use Case Points", "Heading2");
+            
             //nagłówek tabelii
-            paragraf = sekcja.AddParagraph("Tabela", "Heading2");
+            paragraf = sekcja.AddParagraph("Tabela 1 - przypadki użycia");
+            paragraf.Format.SpaceAfter = "0.2cm";
 
-            var table = new Table();
+            var TabUseCases = new Table();
 
             //granice tabelii
-            table.Borders.Width = 0.75;
+            //TabUseCases.Borders.Width = 0.5;
 
-            //szerokość kolumny w cm
-            var column = table.AddColumn(Unit.FromCentimeter(8));
-            //tylko dot. pierwszej
-            column.Format.Alignment = ParagraphAlignment.Center;
-            //od lewej 5 cm?????
-            table.AddColumn(Unit.FromCentimeter(5));
+            //dodajemy kolumny
+            var column = TabUseCases.AddColumn(Unit.FromCentimeter(2.5));
+            TabUseCases.AddColumn(Unit.FromCentimeter(2));
+            TabUseCases.AddColumn(Unit.FromCentimeter(4));
+            TabUseCases.AddColumn(Unit.FromCentimeter(7));
 
-            var row = table.AddRow();
-            row.Shading.Color = Colors.PaleGoldenrod;
 
-            //dodajemy dane
-            var cell = row.Cells[0];
-            cell.AddParagraph("Itemus");
+            var row = TabUseCases.AddRow();
+            row.Height = Unit.FromCentimeter(1);
+            row.Shading.Color = Colors.LightSalmon;
+            row.Format.Alignment = ParagraphAlignment.Center;
+
+            //dodajemy tekst do nagłówków kolumn
+            var cell = row.Cells[0];          
+            cell.AddParagraph("");
             cell = row.Cells[1];
-            cell.AddParagraph("Descriptum");
+            cell.AddParagraph("Waga");
+            cell = row.Cells[2];
+            cell.AddParagraph("Liczba przypadków użycia");
+            cell = row.Cells[3];
+            cell.AddParagraph("Liczba transakcji");
 
-            var row2 = table.AddRow();
+
             //tylko dodaje do pierwszego kolor
-            row2.Shading.Color = Colors.Aqua;
-            row2 = table.AddRow();
-            cell = row2.Cells[0];
-            cell.AddParagraph("1");
-            cell = row2.Cells[1];
-            cell.AddParagraph("aaaaaaaaa");
+            row = TabUseCases.AddRow();
+            row.Height = Unit.FromCentimeter(1);
+            row.Format.Alignment = ParagraphAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Prosty");
+            cell = row.Cells[1];
+            cell.AddParagraph("5");
+            cell = row.Cells[2];
+            cell.AddParagraph(TabUUCW[0].ToString());
+            cell = row.Cells[3];
+            cell.AddParagraph("od 1 do 3");
 
-            row2 = table.AddRow();
-            cell = row2.Cells[0];
-            cell.AddParagraph("2");
-            cell = row2.Cells[1];
-            cell.AddParagraph("bbbbbbbbb");
+            row = TabUseCases.AddRow();
+            row.Height = Unit.FromCentimeter(1);
+            row.Format.Alignment = ParagraphAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Średni");
+            cell = row.Cells[1];
+            cell.AddParagraph("10");
+            cell = row.Cells[2];
+            cell.AddParagraph(TabUUCW[1].ToString());
+            cell = row.Cells[3];
+            cell.AddParagraph("od 4 do 7");
 
-            //ramka od 0,0 do 2,4
-            table.SetEdge(0, 0, 2, 4, Edge.Box, MigraDoc.DocumentObjectModel.BorderStyle.Single, 1.5, Colors.Red);
+            row = TabUseCases.AddRow();
+            //row.Height = Unit.FromCentimeter(1);
+            row.Format.Alignment = ParagraphAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Złożony");
+            cell = row.Cells[1];
+            cell.AddParagraph("15");
+            cell = row.Cells[2];
+            cell.AddParagraph(TabUUCW[2].ToString());
+            cell = row.Cells[3];
+            cell.AddParagraph("więcej niż 7");
 
-            dokument.LastSection.Add(table);
+
+            //ramka od 0,0 do 2 kolumny, 3 rzędy
+            //TabUseCases.SetEdge(0, 0, 2, 1, Edge.Box, MigraDoc.DocumentObjectModel.BorderStyle.Single, 1, Colors.Black);
+            TabUseCases.SetEdge(0, 0, 4, 4, Edge.Bottom, MigraDoc.DocumentObjectModel.BorderStyle.Single, 1, Colors.LightSalmon);
+
+            dokument.LastSection.Add(TabUseCases);
+
+            //--------------------------------------------------------------------------
+
+
+            //nagłówek tabelii
+            paragraf = sekcja.AddParagraph("Tabela 2 - aktorzy");
+            paragraf.Format.SpaceAfter = "0.2cm";
+            paragraf.Format.SpaceBefore = "1cm";
+
+            var TabAktorzy = new Table();
+
+            //dodajemy kolumny
+            var column2 = TabAktorzy.AddColumn(Unit.FromCentimeter(2.5));
+            TabAktorzy.AddColumn(Unit.FromCentimeter(2));
+            TabAktorzy.AddColumn(Unit.FromCentimeter(4));
+            TabAktorzy.AddColumn(Unit.FromCentimeter(7));
+
+
+            var row2 = TabAktorzy.AddRow();
+            row2.Height = Unit.FromCentimeter(1);
+            row2.Shading.Color = Colors.LightSalmon;
+            row2.Format.Alignment = ParagraphAlignment.Center;
+
+            //dodajemy tekst do nagłówków kolumn
+            var cell2 = row2.Cells[0];
+            cell2.AddParagraph("");
+            cell2 = row2.Cells[1];
+            cell2.AddParagraph("Waga");
+            cell2 = row2.Cells[2];
+            cell2.AddParagraph("Liczba aktorów");
+            cell2 = row2.Cells[3];
+            cell2.AddParagraph("Sposób komunikacji z systemem");
+
+
+            //tylko dodaje do pierwszego kolor
+            row2 = TabAktorzy.AddRow();
+            row2.Height = Unit.FromCentimeter(1);
+            row2.Format.Alignment = ParagraphAlignment.Center;
+            cell2 = row2.Cells[0];
+            cell2.AddParagraph("Prosty");
+            cell2 = row2.Cells[1];
+            cell2.AddParagraph("5");
+            cell2 = row2.Cells[2];
+            cell2.AddParagraph(TabUAW[0].ToString());
+            cell2 = row2.Cells[3];
+            cell2.AddParagraph("aktor systemowy poprzez API");
+
+            row2 = TabAktorzy.AddRow();
+            row2.Height = Unit.FromCentimeter(1);
+            row2.Format.Alignment = ParagraphAlignment.Center;
+            cell2 = row2.Cells[0];
+            cell2.AddParagraph("Średni");
+            cell2 = row2.Cells[1];
+            cell2.AddParagraph("10");
+            cell2 = row2.Cells[2];
+            cell2.AddParagraph(TabUAW[1].ToString());
+            cell2 = row2.Cells[3];
+            cell2.AddParagraph("aktor systemowy poprzez protokół / człowiek poprzez wiersz poleceń");
+
+            row2 = TabAktorzy.AddRow();
+            //row2.Height = Unit.FromCentimeter(1);
+            row2.Format.Alignment = ParagraphAlignment.Center;
+            cell2 = row2.Cells[0];
+            cell2.AddParagraph("Złożony");
+            cell2 = row2.Cells[1];
+            cell2.AddParagraph("15");
+            cell2 = row2.Cells[2];
+            cell2.AddParagraph(TabUAW[2].ToString());
+            cell2 = row2.Cells[3];
+            cell2.AddParagraph("człowiek poprzez GUI");
+
+
+            //ramka od 0,0 do 2 kolumny, 3 rzędy
+            //TabUseCases.SetEdge(0, 0, 2, 1, Edge.Box, MigraDoc.DocumentObjectModel.BorderStyle.Single, 1, Colors.Black);
+            TabAktorzy.SetEdge(0, 0, 4, 4, Edge.Bottom, MigraDoc.DocumentObjectModel.BorderStyle.Single, 1, Colors.LightSalmon);
+
+            dokument.LastSection.Add(TabAktorzy);
+
+
         }
 
 
