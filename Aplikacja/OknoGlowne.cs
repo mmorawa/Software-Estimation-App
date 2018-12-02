@@ -59,6 +59,7 @@ namespace Aplikacja
         public static string Email = "";
         public static string OpisProjektu = "";
 
+        //Zmienne tymczasowe
         public static string TempKierownikProjektu = "";
         public static string TempSzacujacy = "";
         public static string TempNazwaFirmy = "";
@@ -129,6 +130,12 @@ namespace Aplikacja
 
         //Ustawienia
         public static int JezykProgramowania = Properties.Settings.Default.JezykProgramowania;
+
+        static string[] JezykProg = {"ABAP (SAP) ", "ASP", "Assembler", "Brio", "C", "C++", "C#", "COBOL","Cognos Impromptu Scripts", "Cross System Products (CSP)",
+            "Cool:Gen/IEF", "Datastage", "Excel", "Focus","FoxPro", "HTML", "J2EE", "Java", "JavaScript", "JCL", "LINC II", "Lotus Notes", "Natural",
+            ".NET", "Oracle", "PACBASE", "Perl", "PL/I", "PL/SQL", "Powerbuilder", "REXX", "Sabretalk", "SAS", "Siebel", "SLOGAN", "SQL", "VB.NET", "Visual Basic"
+        };
+
         public static double StawkaGodz = Properties.Settings.Default.StawkaGodz;
         public static long OsoboMGodz = Properties.Settings.Default.OsoboMGodz;
         public static long DzRobGodz = Properties.Settings.Default.DzRobGodz;
@@ -766,6 +773,7 @@ namespace Aplikacja
             }
         }
 
+
         private void UsuniecieDanych()
         {
             //Wyzerowanie
@@ -819,6 +827,7 @@ namespace Aplikacja
             LabelWynikKoszt.Text = "0";
             LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("Control");
         }
+
 
         private void ButtonZalozenia_Click(object sender, EventArgs e)
         {
@@ -902,6 +911,10 @@ namespace Aplikacja
             }
         }
 
+
+        /*****************************************************************************//**
+        *  Raporty.
+        ********************************************************************************/
         private void ButtonOpisProjektu_Click(object sender, EventArgs e)
         {
             /*
@@ -920,7 +933,7 @@ namespace Aplikacja
                     //ZapiszPDFDialog.FileName;
                     */
 
-            // Create a MigraDoc document.
+            // Utworzenie dokumentu przy pomocy MigraDoc
             var document = new Document();
 
             document.Info.Title = "Opis projektu";
@@ -930,54 +943,46 @@ namespace Aplikacja
             string Raport = NazwaProjektu + " - opis projektu";
 
 
-            //Zdefiniowanie stylu
+            // Zdefiniowanie stylu
             DefinicjaStylu(document);
 
             // Dodajemy stronę tytułową
             StronaTytulowa(document, Raport);
 
-            //Schemat treści
+            // Schemat treści
             DefinicjaZawartosci(document, Raport);
 
             // Dodanie strony z opisem projektu
             StronaZOpisem(document, Raport);
 
-
-
-
-
-
-            //dodanie tabeli
+            // Dodanie tabeli
             //DemonstrateSimpleTable(document);
 
 
-
-            // ----- Unicode encoding and font program embedding in MigraDoc is demonstrated here. -----
-            // A flag indicating whether to create a Unicode PDF or a WinAnsi PDF file.
-            // This setting applies to all fonts used in the PDF document.
-            // This setting has no effect on the RTF renderer.
+            // Flaga wskazuje na to czy dokument ma być utworzony jako plik Unicode PDF czy jako WinAnsi PDF.
+            // To ustawienie dotyczy wszystkich czcionek użytych w dokumencie.
             const bool unicode = true;
 
-            // Create a renderer for the MigraDoc document.
+            // Utworzenie renderera dla dokumentu
             var pdfRenderer = new PdfDocumentRenderer(unicode);
 
-            // Associate the MigraDoc document with a renderer.
+            // Powiązanie dokumentu z rendererem
             pdfRenderer.Document = document;
 
-            // Layout and render document to PDF.
+            // Wyrenderowanie dokumentu do formatu PDF
             pdfRenderer.RenderDocument();
 
-            // Save the document...
+
+            // Wariant z oknem dialogowym
             //pdfRenderer.PdfDocument.Save(ZapiszPDFDialog.FileName);
-            // ...and start a viewer.
             //Process.Start(ZapiszPDFDialog.FileName);
 
 
-
-            // Save the document...
+            // Zapisanie dokumentu do pliku PDF
             const string filename = "Raport_Opis_Projektu.pdf";
             pdfRenderer.PdfDocument.Save(filename);
-            // ...and start a viewer.
+
+            // Uruchomienie pliku z raportem
             Process.Start(filename);
 
         }
@@ -1043,7 +1048,7 @@ namespace Aplikacja
 
         }
 
-
+        //Strona z danymi projektu
         public static void StronaZOpisem(Document document, string NazwaRaportu)
         {
             var sekcja = document.LastSection;
@@ -1053,32 +1058,83 @@ namespace Aplikacja
             var paragraf = sekcja.AddParagraph("Podstawowe informacje", "Heading1");
 
             paragraf = sekcja.AddParagraph("Dane projektu", "Heading2");
-            paragraf = sekcja.AddParagraph("Nazwa projektu: " + NazwaProjektu);
-            paragraf = sekcja.AddParagraph("Kierownik Projektu: " + KierownikProjektu );
-            paragraf = sekcja.AddParagraph("Osoba odpowiedzialna za oszacowanie: " + Szacujacy);
-            paragraf = sekcja.AddParagraph("Data rozpoczęcia projektu: " + DataProjektu);
+
+            paragraf = sekcja.AddParagraph("Nazwa projektu: ");
+            paragraf.Format.Font.Bold = true;
+            paragraf.AddFormattedText(NazwaProjektu, TextFormat.NotBold);
+
+            paragraf = sekcja.AddParagraph("Kierownik Projektu: ");
+            paragraf.Format.Font.Bold = true;
+            paragraf.AddFormattedText(KierownikProjektu, TextFormat.NotBold);
+
+            paragraf = sekcja.AddParagraph("Osoba odpowiedzialna za oszacowanie: ");
+            paragraf.Format.Font.Bold = true;
+            paragraf.AddFormattedText(Szacujacy, TextFormat.NotBold);
+
+            //Na wypadek gdyby użytkownik nie wybrał żadnej daty
+            if (DataProjektu.Length == 0)
+            {
+                DataProjektu = DateTime.Now.ToLongDateString();
+            }            
+            paragraf = sekcja.AddParagraph("Data rozpoczęcia projektu: ");
+            paragraf.Format.Font.Bold = true;
+            paragraf.AddFormattedText(DataProjektu, TextFormat.NotBold);
 
             paragraf = sekcja.AddParagraph("Dane firmy", "Heading2");
-            paragraf = sekcja.AddParagraph("Nazwa firmy: " + NazwaFirmy);
-            paragraf = sekcja.AddParagraph("Adres: " + Adres);
-            paragraf = sekcja.AddParagraph("Telefon/Fax: " + Telefon);
-            paragraf = sekcja.AddParagraph("E-Mail: " + Email);
 
+            paragraf = sekcja.AddParagraph("Nazwa firmy: ");
+            paragraf.Format.Font.Bold = true;
+            paragraf.AddFormattedText(NazwaFirmy, TextFormat.NotBold);
+
+            paragraf = sekcja.AddParagraph("Adres: ");
+            paragraf.Format.Font.Bold = true;
+            paragraf.AddFormattedText(Adres, TextFormat.NotBold);
+
+            paragraf = sekcja.AddParagraph("Telefon/Fax: ");
+            paragraf.Format.Font.Bold = true;
+            paragraf.AddFormattedText(Telefon, TextFormat.NotBold);
+
+            paragraf = sekcja.AddParagraph("E-Mail: ");
+            paragraf.Format.Font.Bold = true;
+            paragraf.AddFormattedText(Email, TextFormat.NotBold);
 
             paragraf = sekcja.AddParagraph("Opis projektu", "Heading2");
             paragraf = sekcja.AddParagraph(OpisProjektu);
 
             paragraf = sekcja.AddParagraph("Założenia projektu", "Heading2");
-            paragraf = sekcja.AddParagraph("Główny język programowania użyty w projekcie");
+            paragraf = sekcja.AddParagraph("Główny język programowania użyty w projekcie: ");
+            paragraf.Format.Font.Bold = true;
+            paragraf.AddFormattedText(JezykProg[JezykProgramowania], TextFormat.NotBold);
 
+            //TODO ładnie opisane
+            paragraf = sekcja.AddParagraph("Stawka godzinowa: ");
+            paragraf.Format.Font.Bold = true;
+            paragraf.AddFormattedText(StawkaGodz + " zł", TextFormat.NotBold);
+
+            paragraf = sekcja.AddParagraph("1 osobomiesiąc stanowi: ");
+            paragraf.Format.Font.Bold = true;
+            paragraf.AddFormattedText(OsoboMGodz + " osobogodzin", TextFormat.NotBold);
+
+            paragraf = sekcja.AddParagraph("Dzień roboczy wynosi: ");
+            paragraf.Format.Font.Bold = true;
+            paragraf.AddFormattedText(DzRobGodz + " godzin", TextFormat.NotBold);
 
 
             if (Ograniczenia == true)
             {
                 paragraf = sekcja.AddParagraph("Ograniczenia nałożone na oszacowanie", "Heading2");
-                paragraf = sekcja.AddParagraph("Maksymalna pracochłonność: " + MaxPrac);
-                paragraf = sekcja.AddParagraph("Maksymalny harmonogram: " + MaxHarm);
-                paragraf = sekcja.AddParagraph("Maksymalny koszt: " + MaxKoszt);
+
+                paragraf = sekcja.AddParagraph("Maksymalna pracochłonność: ");
+                paragraf.Format.Font.Bold = true;
+                paragraf.AddFormattedText(MaxPrac + " osobomiesięcy", TextFormat.NotBold);
+
+                paragraf = sekcja.AddParagraph("Maksymalny harmonogram: ");
+                paragraf.Format.Font.Bold = true;
+                paragraf.AddFormattedText(MaxHarm + " miesięcy", TextFormat.NotBold);
+
+                paragraf = sekcja.AddParagraph("Maksymalny koszt: ");
+                paragraf.Format.Font.Bold = true;
+                paragraf.AddFormattedText(MaxKoszt + " zł", TextFormat.NotBold);
 
             }
 
@@ -1086,9 +1142,7 @@ namespace Aplikacja
         }
 
 
-
-
-
+        //Funkcja definiująca styl generowanego dokumentu
         public static void DefinicjaStylu(Document document)
         {
             // Get the predefined style Normal.
@@ -1135,8 +1189,7 @@ namespace Aplikacja
         }
 
 
-
-
+        //Funkcja definiująca schemat zawartości generowanego dokumentu
         static void DefinicjaZawartosci(Document document, string NazwaRaportu)
         {
             var sekcja = document.AddSection();
@@ -1152,22 +1205,22 @@ namespace Aplikacja
             naglowek.AddParagraph(NazwaRaportu);
 
 
-            // Create a paragraph with centered page number. See definition of style "Footer".
+            // Tworzy paragraf z numerem strony
             var paragraf = new Paragraph();
             paragraf.AddTab();
             paragraf.AddPageField();
 
 
-            // Add paragraph to footer for odd pages.
+            // Dodaje paragraf do stopki dla nieparzystych stron 
             sekcja.Footers.Primary.Add(paragraf);
-            // Add clone of paragraph to footer for odd pages. Cloning is necessary because an object must
-            // not belong to more than one other object. If you forget cloning an exception is thrown.
+
+            //Klonuje powyższy paragraf dla parzystych stron. Klonowanie jest konieczne gdyż obiekt nie może należeć do więcej niż jednego obiektu?
             sekcja.Footers.EvenPage.Add(paragraf.Clone());
         }
 
 
 
-        //Tabela z wynikami wprowadzonymi do szacowania
+        //Tabela z danymi wprowadzonymi do szacowania
         public static void DemonstrateSimpleTable(Document document)
         {
             //nagłówek tabelii
