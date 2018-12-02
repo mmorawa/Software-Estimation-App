@@ -934,30 +934,26 @@ namespace Aplikacja
                     */
 
             // Utworzenie dokumentu przy pomocy MigraDoc
-            var document = new Document();
+            var dokument = new Document();
 
-            document.Info.Title = "Opis projektu";
-            document.Info.Subject = "Raport zawierający opis projektu";
-            document.Info.Author = Szacujacy;
+            dokument.Info.Title = "Opis projektu";
+            dokument.Info.Subject = "Raport zawierający opis projektu";
+            dokument.Info.Author = Szacujacy;
 
-            string Raport = NazwaProjektu + " - opis projektu";
+            string raport = NazwaProjektu + " - opis projektu";
 
 
             // Zdefiniowanie stylu
-            DefinicjaStylu(document);
+            DefinicjaStylu(dokument);
 
             // Dodajemy stronę tytułową
-            StronaTytulowa(document, Raport);
+            StronaTytulowa(dokument, raport);
 
             // Schemat treści
-            DefinicjaZawartosci(document, Raport);
+            DefinicjaZawartosci(dokument, raport);
 
             // Dodanie strony z opisem projektu
-            StronaZOpisem(document, Raport);
-
-            // Dodanie tabeli
-            //DemonstrateSimpleTable(document);
-
+            StronaZOpisem(dokument);
 
             // Flaga wskazuje na to czy dokument ma być utworzony jako plik Unicode PDF czy jako WinAnsi PDF.
             // To ustawienie dotyczy wszystkich czcionek użytych w dokumencie.
@@ -967,7 +963,7 @@ namespace Aplikacja
             var pdfRenderer = new PdfDocumentRenderer(unicode);
 
             // Powiązanie dokumentu z rendererem
-            pdfRenderer.Document = document;
+            pdfRenderer.Document = dokument;
 
             // Wyrenderowanie dokumentu do formatu PDF
             pdfRenderer.RenderDocument();
@@ -987,18 +983,160 @@ namespace Aplikacja
 
         }
 
+        private void ButtonOszacowanie_Click(object sender, EventArgs e)
+        {
+            /*
+            using (SaveFileDialog ZapiszPDFDialog = new SaveFileDialog())
+            {
+                ZapiszPDFDialog.Filter = "Plik Raportu | *.pdf";
+                ZapiszPDFDialog.FileName = "Raport_Oszacowanie_Pracochlonnosci.pdf";
+                ZapiszPDFDialog.Title = "Zapisz plik Raportu jako:";
+
+                DialogResult rezultat = ZapiszPDFDialog.ShowDialog();
 
 
+                //zapisanie danych do pliku tekstowego
+                if (rezultat == DialogResult.OK)
+                {
+                    //ZapiszPDFDialog.FileName;
+                    
+             */
 
+            // Utworzenie dokumentu przy pomocy MigraDoc
+            var dokument = new Document();
+
+            dokument.Info.Title = "Oszacowanie pracochłonności projektu";
+            dokument.Info.Subject = "Raport zawierający oszacowanie pracochłonności projektu z wykorzystaniem połączenia dwóch metod estymacji:" +
+                "Use Case Points i COCOMO II";
+            dokument.Info.Author = Szacujacy;
+
+            string raport = NazwaProjektu + " - oszacowanie pracochłonności";
+
+
+            // Zdefiniowanie stylu
+            DefinicjaStylu(dokument);
+
+            // Dodajemy stronę tytułową
+            StronaTytulowa(dokument, raport);
+
+            // Schemat treści
+            DefinicjaZawartosci(dokument, raport);
+
+            // Dodanie strony z opisem projektu
+            StronaZOpisem(dokument);
+
+            // Dodanie tabeli
+            DemonstrateSimpleTable(dokument);
+
+
+            // Flaga wskazuje na to czy dokument ma być utworzony jako plik Unicode PDF czy jako WinAnsi PDF.
+            // To ustawienie dotyczy wszystkich czcionek użytych w dokumencie.
+            const bool unicode = true;
+
+            // Utworzenie renderera dla dokumentu
+            var pdfRenderer = new PdfDocumentRenderer(unicode);
+
+            // Powiązanie dokumentu z rendererem
+            pdfRenderer.Document = dokument;
+
+            // Wyrenderowanie dokumentu do formatu PDF
+            pdfRenderer.RenderDocument();
+
+
+            // Wariant z oknem dialogowym
+            //pdfRenderer.PdfDocument.Save(ZapiszPDFDialog.FileName);
+            //Process.Start(ZapiszPDFDialog.FileName);
+
+
+            // Zapisanie dokumentu do pliku PDF
+            const string filename = "Raport_Oszacowanie_Pracochlonnosci.pdf";
+            pdfRenderer.PdfDocument.Save(filename);
+
+            // Uruchomienie pliku z raportem
+            Process.Start(filename);
+        }
+
+
+        //Funkcja definiująca styl generowanego dokumentu
+        public static void DefinicjaStylu(Document dokument)
+        {
+            // Ustawienie predefiniowanego stylu Normal. Ponieważ wszystkie style od niego pochodzą
+            // ma on wpływ na wszystkie sekcje i paragrafy.
+            var styl = dokument.Styles["Normal"];
+
+            // Czcionka tekstu
+            styl.Font.Name = "Arial";
+            styl.Font.Size = 12;
+
+            // Nagłówki Heading1 do Heading2 to predefiniowane style, które automatycznie tworzą odpowiednie poziomy konspektu
+            styl = dokument.Styles["Heading1"];
+            styl.Font.Name = "Arial";
+            styl.Font.Size = 20;
+            styl.Font.Bold = true;
+            styl.Font.Color = Colors.DarkRed;
+            styl.ParagraphFormat.PageBreakBefore = true;
+            styl.ParagraphFormat.SpaceBefore = "4cm";
+            styl.ParagraphFormat.SpaceAfter = "1cm";
+
+            // Ustawienie KeepWithNext dla wszystkich nagłówków w celu uniknięcia sytuacji, 
+            // w której pojawiałyby się one na dole każdej strony. Inne nagłówki dziedziczą tę wartość z Heading1.
+            styl.ParagraphFormat.KeepWithNext = true;
+
+            styl = dokument.Styles["Heading2"];
+            styl.Font.Size = 16;
+
+            styl.ParagraphFormat.PageBreakBefore = false;
+            styl.ParagraphFormat.SpaceBefore = "1cm";
+            styl.ParagraphFormat.SpaceAfter = 6;
+
+            styl = dokument.Styles[StyleNames.Header];
+            styl.ParagraphFormat.AddTabStop("16cm", TabAlignment.Right);
+            styl.ParagraphFormat.Font.Color = Colors.DarkRed;
+
+            styl = dokument.Styles[StyleNames.Footer];
+            styl.ParagraphFormat.AddTabStop("8cm", TabAlignment.Center);
+
+
+        }
+
+
+        //Funkcja definiująca schemat zawartości generowanego dokumentu
+        static void DefinicjaZawartosci(Document dokument, string nazwaRaportu)
+        {
+            var sekcja = dokument.AddSection();
+            sekcja.PageSetup.OddAndEvenPagesHeaderFooter = true;
+            sekcja.PageSetup.StartingNumber = 3;
+
+            var naglowek = sekcja.Headers.Primary;
+            naglowek.AddParagraph(nazwaRaportu);
+            naglowek.Format.Alignment = ParagraphAlignment.Right;
+
+
+            naglowek = sekcja.Headers.EvenPage;
+            naglowek.AddParagraph(nazwaRaportu);
+
+
+            // Tworzy paragraf z numerem strony
+            var paragraf = new Paragraph();
+            paragraf.AddTab();
+            paragraf.AddPageField();
+
+
+            // Dodaje paragraf do stopki dla nieparzystych stron 
+            sekcja.Footers.Primary.Add(paragraf);
+
+            // Klonuje powyższy paragraf dla parzystych stron. Klonowanie jest konieczne gdyż obiekt nie może należeć do więcej niż jednego obiektu?
+            sekcja.Footers.EvenPage.Add(paragraf.Clone());
+        }
 
 
 
         //Domyślny wzór strony tytułowej
-        public static void StronaTytulowa(Document document, string NazwaRaportu)
+        public static void StronaTytulowa(Document dokument, string nazwaRaportu)
         {
-            var sekcja = document.AddSection();
+            var sekcja = dokument.AddSection();
 
-            var paragraf = sekcja.AddParagraph(NazwaRaportu);
+            var paragraf = sekcja.AddParagraph(nazwaRaportu);
             paragraf.Format.SpaceBefore = "6cm";
             paragraf.Format.SpaceAfter = "1cm";
             paragraf.Format.Font.Size = 28;
@@ -1049,10 +1187,10 @@ namespace Aplikacja
         }
 
         //Strona z danymi projektu
-        public static void StronaZOpisem(Document document, string NazwaRaportu)
+        public static void StronaZOpisem(Document dokument)
         {
-            var sekcja = document.LastSection;
-            
+            var sekcja = dokument.LastSection;
+
             //EXT Jak brak to wpisz brak
 
             var paragraf = sekcja.AddParagraph("Podstawowe informacje", "Heading1");
@@ -1071,11 +1209,11 @@ namespace Aplikacja
             paragraf.Format.Font.Bold = true;
             paragraf.AddFormattedText(Szacujacy, TextFormat.NotBold);
 
-            //Na wypadek gdyby użytkownik nie wybrał żadnej daty
+            // Na wypadek gdyby użytkownik nie wybrał żadnej daty
             if (DataProjektu.Length == 0)
             {
                 DataProjektu = DateTime.Now.ToLongDateString();
-            }            
+            }
             paragraf = sekcja.AddParagraph("Data rozpoczęcia projektu: ");
             paragraf.Format.Font.Bold = true;
             paragraf.AddFormattedText(DataProjektu, TextFormat.NotBold);
@@ -1138,93 +1276,23 @@ namespace Aplikacja
 
             }
 
-            
-        }
-
-
-        //Funkcja definiująca styl generowanego dokumentu
-        public static void DefinicjaStylu(Document document)
-        {
-            // Get the predefined style Normal.
-            var styl = document.Styles["Normal"];
-            // Because all styles are derived from Normal, the next line changes the 
-            // font of the whole document. Or, more exactly, it changes the font of
-            // all styles and paragraphs that do not redefine the font.
-
-            //Czcionka
-            styl.Font.Name = "Arial";
-            styl.Font.Size = 12;
-
-            // Heading1 to Heading9 are predefined styles with an outline level. An outline level
-            // other than OutlineLevel.BodyText automatically creates the outline (or bookmarks) 
-            // in PDF.
-
-            styl = document.Styles["Heading1"];
-            styl.Font.Name = "Arial";
-            styl.Font.Size = 20;
-            styl.Font.Bold = true;
-            styl.Font.Color = Colors.DarkRed;
-            styl.ParagraphFormat.PageBreakBefore = true;
-            styl.ParagraphFormat.SpaceBefore = "4cm";
-            styl.ParagraphFormat.SpaceAfter = "1cm";
-            // Set KeepWithNext for all headings to prevent headings from appearing all alone
-            // at the bottom of a page. The other headings inherit this from Heading1.
-            styl.ParagraphFormat.KeepWithNext = true;
-
-            styl = document.Styles["Heading2"];
-            styl.Font.Size = 16;
-
-            styl.ParagraphFormat.PageBreakBefore = false;
-            styl.ParagraphFormat.SpaceBefore = "1cm";
-            styl.ParagraphFormat.SpaceAfter = 6;
-
-            styl = document.Styles[StyleNames.Header];
-            styl.ParagraphFormat.AddTabStop("16cm", TabAlignment.Right);
-            styl.ParagraphFormat.Font.Color = Colors.DarkRed;
-
-            styl = document.Styles[StyleNames.Footer];
-            styl.ParagraphFormat.AddTabStop("8cm", TabAlignment.Center);
-
 
         }
 
 
-        //Funkcja definiująca schemat zawartości generowanego dokumentu
-        static void DefinicjaZawartosci(Document document, string NazwaRaportu)
-        {
-            var sekcja = document.AddSection();
-            sekcja.PageSetup.OddAndEvenPagesHeaderFooter = true;
-            sekcja.PageSetup.StartingNumber = 3;
-
-            var naglowek = sekcja.Headers.Primary;
-            naglowek.AddParagraph(NazwaRaportu);
-            naglowek.Format.Alignment = ParagraphAlignment.Right;
-
-
-            naglowek = sekcja.Headers.EvenPage;
-            naglowek.AddParagraph(NazwaRaportu);
-
-
-            // Tworzy paragraf z numerem strony
-            var paragraf = new Paragraph();
-            paragraf.AddTab();
-            paragraf.AddPageField();
-
-
-            // Dodaje paragraf do stopki dla nieparzystych stron 
-            sekcja.Footers.Primary.Add(paragraf);
-
-            //Klonuje powyższy paragraf dla parzystych stron. Klonowanie jest konieczne gdyż obiekt nie może należeć do więcej niż jednego obiektu?
-            sekcja.Footers.EvenPage.Add(paragraf.Clone());
-        }
 
 
 
         //Tabela z danymi wprowadzonymi do szacowania
-        public static void DemonstrateSimpleTable(Document document)
+        public static void DemonstrateSimpleTable(Document dokument)
         {
+            //var sekcja = dokument.LastSection;
+            var sekcja = dokument.LastSection;
+
+            var paragraf = sekcja.AddParagraph("Dane wykorzystane do oszacowania pracochłonności", "Heading1");
+
             //nagłówek tabelii
-            document.LastSection.AddParagraph("Simple Tables", "Heading2");
+            paragraf = sekcja.AddParagraph("Tabela", "Heading2");
 
             var table = new Table();
 
@@ -1265,8 +1333,10 @@ namespace Aplikacja
             //ramka od 0,0 do 2,4
             table.SetEdge(0, 0, 2, 4, Edge.Box, MigraDoc.DocumentObjectModel.BorderStyle.Single, 1.5, Colors.Red);
 
-            document.LastSection.Add(table);
+            dokument.LastSection.Add(table);
         }
+
+
 
 
 
