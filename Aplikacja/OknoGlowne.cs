@@ -1304,15 +1304,23 @@ namespace Aplikacja
 
             //dodajemy kolumny
             var column = TabUseCases.AddColumn(Unit.FromCentimeter(2.5));
-            TabUseCases.AddColumn(Unit.FromCentimeter(2));
-            TabUseCases.AddColumn(Unit.FromCentimeter(4));
-            TabUseCases.AddColumn(Unit.FromCentimeter(7));
+            column.Format.Alignment = ParagraphAlignment.Center;
 
+            column = TabUseCases.AddColumn(Unit.FromCentimeter(2));
+            column.Format.Alignment = ParagraphAlignment.Center;
+
+            column = TabUseCases.AddColumn(Unit.FromCentimeter(4));
+            column.Format.Alignment = ParagraphAlignment.Center;
+
+            column = TabUseCases.AddColumn(Unit.FromCentimeter(7));
+            column.Format.Alignment = ParagraphAlignment.Center;
+
+            //lub row.Height = Unit.FromCentimeter(1);
+            TabUseCases.Rows.Height = Unit.FromCentimeter(1);
 
             var row = TabUseCases.AddRow();
-            row.Height = Unit.FromCentimeter(1);
             row.Shading.Color = Colors.LightSalmon;
-            row.Format.Alignment = ParagraphAlignment.Center;
+            row.VerticalAlignment = VerticalAlignment.Center;
 
             //dodajemy tekst do nagłówków kolumn
             var cell = row.Cells[0];          
@@ -1326,9 +1334,8 @@ namespace Aplikacja
 
 
             //tylko dodaje do pierwszego kolor
-            row = TabUseCases.AddRow();
-            row.Height = Unit.FromCentimeter(1);
-            row.Format.Alignment = ParagraphAlignment.Center;
+            row = TabUseCases.AddRow();            
+            row.VerticalAlignment = VerticalAlignment.Center;
             cell = row.Cells[0];
             cell.AddParagraph("Prosty");
             cell = row.Cells[1];
@@ -1339,8 +1346,7 @@ namespace Aplikacja
             cell.AddParagraph("od 1 do 3");
 
             row = TabUseCases.AddRow();
-            row.Height = Unit.FromCentimeter(1);
-            row.Format.Alignment = ParagraphAlignment.Center;
+            row.VerticalAlignment = VerticalAlignment.Center;
             cell = row.Cells[0];
             cell.AddParagraph("Średni");
             cell = row.Cells[1];
@@ -1351,8 +1357,7 @@ namespace Aplikacja
             cell.AddParagraph("od 4 do 7");
 
             row = TabUseCases.AddRow();
-            //row.Height = Unit.FromCentimeter(1);
-            row.Format.Alignment = ParagraphAlignment.Center;
+            row.VerticalAlignment = VerticalAlignment.Center;
             cell = row.Cells[0];
             cell.AddParagraph("Złożony");
             cell = row.Cells[1];
@@ -1381,15 +1386,22 @@ namespace Aplikacja
 
             //dodajemy kolumny
             var column2 = TabAktorzy.AddColumn(Unit.FromCentimeter(2.5));
-            TabAktorzy.AddColumn(Unit.FromCentimeter(2));
-            TabAktorzy.AddColumn(Unit.FromCentimeter(4));
-            TabAktorzy.AddColumn(Unit.FromCentimeter(7));
+            column2.Format.Alignment = ParagraphAlignment.Center;
 
+            column2 = TabAktorzy.AddColumn(Unit.FromCentimeter(2));
+            column2.Format.Alignment = ParagraphAlignment.Center;
+
+            column2 = TabAktorzy.AddColumn(Unit.FromCentimeter(4));
+            column2.Format.Alignment = ParagraphAlignment.Center;
+
+            column2 = TabAktorzy.AddColumn(Unit.FromCentimeter(7));
+            column2.Format.Alignment = ParagraphAlignment.Center;
+
+            TabAktorzy.Rows.Height = Unit.FromCentimeter(1);
 
             var row2 = TabAktorzy.AddRow();
-            row2.Height = Unit.FromCentimeter(1);
+            row2.VerticalAlignment = VerticalAlignment.Center;
             row2.Shading.Color = Colors.LightSalmon;
-            row2.Format.Alignment = ParagraphAlignment.Center;
 
             //dodajemy tekst do nagłówków kolumn
             var cell2 = row2.Cells[0];
@@ -1404,8 +1416,7 @@ namespace Aplikacja
 
             //tylko dodaje do pierwszego kolor
             row2 = TabAktorzy.AddRow();
-            row2.Height = Unit.FromCentimeter(1);
-            row2.Format.Alignment = ParagraphAlignment.Center;
+            row2.VerticalAlignment = VerticalAlignment.Center;
             cell2 = row2.Cells[0];
             cell2.AddParagraph("Prosty");
             cell2 = row2.Cells[1];
@@ -1416,8 +1427,7 @@ namespace Aplikacja
             cell2.AddParagraph("aktor systemowy poprzez API");
 
             row2 = TabAktorzy.AddRow();
-            row2.Height = Unit.FromCentimeter(1);
-            row2.Format.Alignment = ParagraphAlignment.Center;
+            row2.VerticalAlignment = VerticalAlignment.Center;
             cell2 = row2.Cells[0];
             cell2.AddParagraph("Średni");
             cell2 = row2.Cells[1];
@@ -1428,8 +1438,7 @@ namespace Aplikacja
             cell2.AddParagraph("aktor systemowy poprzez protokół / człowiek poprzez wiersz poleceń");
 
             row2 = TabAktorzy.AddRow();
-            //row2.Height = Unit.FromCentimeter(1);
-            row2.Format.Alignment = ParagraphAlignment.Center;
+            row2.VerticalAlignment = VerticalAlignment.Center;
             cell2 = row2.Cells[0];
             cell2.AddParagraph("Złożony");
             cell2 = row2.Cells[1];
