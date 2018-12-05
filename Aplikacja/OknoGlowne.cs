@@ -1006,8 +1006,7 @@ namespace Aplikacja
             var dokument = new Document();
 
             dokument.Info.Title = "Oszacowanie pracochłonności projektu";
-            dokument.Info.Subject = "Raport zawierający oszacowanie pracochłonności projektu z wykorzystaniem połączenia dwóch metod estymacji:" +
-                "Use Case Points i COCOMO II";
+            dokument.Info.Subject = "Raport zawierający oszacowanie pracochłonności projektu";
             dokument.Info.Author = Szacujacy;
 
             string raport = NazwaProjektu + " - oszacowanie pracochłonności";
@@ -1458,9 +1457,16 @@ namespace Aplikacja
 
         }
 
+        /*
+        paragraph.AddTab();
+        paragraph.Format.LeftIndent = "2cm";
+        paragraph.AddFormattedText("bold & italic", TextFormat.Bold | TextFormat.Italic);
+        paragraph.AddLineBreak();
 
-
-
+        formattedText = paragraph.AddFormattedText("subscript");
+        formattedText.Subscript = true;
+        paragraph.Format.Shading.Color = Colors.LightCoral;
+        */
 
     }
 }
