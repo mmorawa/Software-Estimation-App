@@ -5,21 +5,16 @@ Plik Form1.cs zawiera rdzeń programu czyli główne okno aplikacji wraz z menu,
 */
 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 using MigraDoc.DocumentObjectModel;
-using MigraDoc.DocumentObjectModel.Fields;
 using MigraDoc.Rendering;
 using MigraDoc.DocumentObjectModel.Tables;
 using TabAlignment = MigraDoc.DocumentObjectModel.TabAlignment;
+using MigraDoc.DocumentObjectModel.Fields;
+
 
 
 //! Przestrzeń nazw Password_Manager obejmuje całą aplikację Menedżera Haseł.
