@@ -1050,6 +1050,69 @@ namespace Aplikacja
             Process.Start(filename);
         }
 
+        private void ButtonPodsumowanieProjektu_Click(object sender, EventArgs e)
+        {
+            // Utworzenie dokumentu przy pomocy MigraDoc
+            var dokument = new Document();
 
+            dokument.Info.Title = "Oszacowanie pracochłonności projektu";
+            dokument.Info.Subject = "Raport zawierający oszacowanie pracochłonności projektu";
+            dokument.Info.Author = Szacujacy;
+
+            string raport = NazwaProjektu + " - oszacowanie pracochłonności";
+
+
+            // Zdefiniowanie stylu
+            TrescRaportow.DefinicjaStylu(dokument);
+
+            // Dodajemy stronę tytułową
+            TrescRaportow.StronaTytulowa(dokument, raport);
+
+            // Schemat treści
+            TrescRaportow.DefinicjaZawartosci(dokument, raport);
+
+            // Dodanie strony z opisem projektu
+            TrescRaportow.StronaZOpisem(dokument);
+
+            // Dodanie tabeli
+            TrescRaportow.WprowadzoneDane(dokument);
+
+
+            // Flaga wskazuje na to czy dokument ma być utworzony jako plik Unicode PDF czy jako WinAnsi PDF.
+            // To ustawienie dotyczy wszystkich czcionek użytych w dokumencie.
+            //const bool unicode = true;
+
+            // Utworzenie renderera dla dokumentu
+            //var pdfRenderer = new PdfDocumentRenderer(unicode);
+
+            // Powiązanie dokumentu z rendererem
+            //pdfRenderer.Document = dokument;
+
+            // Wyrenderowanie dokumentu do formatu PDF
+            //pdfRenderer.RenderDocument();
+
+
+            // Wariant z oknem dialogowym
+            //pdfRenderer.PdfDocument.Save(ZapiszPDFDialog.FileName);
+            //Process.Start(ZapiszPDFDialog.FileName);
+
+
+            // Zapisanie dokumentu do pliku PDF
+            //const string filename = "Raport_Oszacowanie_Pracochlonnosci.pdf";
+            //pdfRenderer.PdfDocument.Save(filename);
+
+
+
+            using (OknoPodgladRaportow OknoZalProj = new OknoPodgladRaportow(dokument))
+            {
+                DialogResult rezultat = OknoZalProj.ShowDialog();
+
+
+                if (rezultat == DialogResult.OK)
+                {
+
+                }
+            }
+        }
     }
 }

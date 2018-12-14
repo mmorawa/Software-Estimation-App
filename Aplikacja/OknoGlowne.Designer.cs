@@ -117,11 +117,11 @@
             this.LabelWynikHarm = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.LabelPktUUCP = new System.Windows.Forms.Label();
             this.LabelRozmiar = new System.Windows.Forms.Label();
             this.LabelWynikPrac = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
+            this.LabelPktUUCP = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
@@ -157,7 +157,7 @@
             this.ToolStripMenuPomoc});
             this.PasekMenu.Location = new System.Drawing.Point(0, 0);
             this.PasekMenu.Name = "PasekMenu";
-            this.PasekMenu.Size = new System.Drawing.Size(1125, 25);
+            this.PasekMenu.Size = new System.Drawing.Size(1113, 25);
             this.PasekMenu.TabIndex = 0;
             this.PasekMenu.Text = "Pasek Menu";
             // 
@@ -1042,6 +1042,7 @@
             this.ButtonPodsumowanieProjektu.TabIndex = 19;
             this.ButtonPodsumowanieProjektu.Text = "Podsumowanie";
             this.ButtonPodsumowanieProjektu.UseVisualStyleBackColor = true;
+            this.ButtonPodsumowanieProjektu.Click += new System.EventHandler(this.ButtonPodsumowanieProjektu_Click);
             // 
             // ButtonOszacowanie
             // 
@@ -1191,20 +1192,6 @@
             this.label27.Text = "Harmonogram:";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // LabelPktUUCP
-            // 
-            this.LabelPktUUCP.AutoSize = true;
-            this.LabelPktUUCP.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelPktUUCP.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelPktUUCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelPktUUCP.Location = new System.Drawing.Point(369, 0);
-            this.LabelPktUUCP.MinimumSize = new System.Drawing.Size(100, 0);
-            this.LabelPktUUCP.Name = "LabelPktUUCP";
-            this.LabelPktUUCP.Size = new System.Drawing.Size(126, 36);
-            this.LabelPktUUCP.TabIndex = 9;
-            this.LabelPktUUCP.Text = "0";
-            this.LabelPktUUCP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // LabelRozmiar
             // 
             this.LabelRozmiar.AutoSize = true;
@@ -1255,6 +1242,20 @@
             this.label32.Text = "Rozmiar:";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // LabelPktUUCP
+            // 
+            this.LabelPktUUCP.AutoSize = true;
+            this.LabelPktUUCP.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelPktUUCP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelPktUUCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelPktUUCP.Location = new System.Drawing.Point(369, 0);
+            this.LabelPktUUCP.MinimumSize = new System.Drawing.Size(100, 0);
+            this.LabelPktUUCP.Name = "LabelPktUUCP";
+            this.LabelPktUUCP.Size = new System.Drawing.Size(126, 36);
+            this.LabelPktUUCP.TabIndex = 9;
+            this.LabelPktUUCP.Text = "0";
+            this.LabelPktUUCP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.ButtonMnPr);
@@ -1271,9 +1272,9 @@
             // 
             this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripStatusLabel});
-            this.StatusStrip.Location = new System.Drawing.Point(0, 752);
+            this.StatusStrip.Location = new System.Drawing.Point(0, 737);
             this.StatusStrip.Name = "StatusStrip";
-            this.StatusStrip.Size = new System.Drawing.Size(1125, 22);
+            this.StatusStrip.Size = new System.Drawing.Size(1113, 22);
             this.StatusStrip.TabIndex = 7;
             this.StatusStrip.Text = "StatusStrip";
             // 
@@ -1300,7 +1301,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1125, 774);
+            this.ClientSize = new System.Drawing.Size(1125, 750);
             this.Controls.Add(this.ButtonKreator);
             this.Controls.Add(this.ButtonKalibracja);
             this.Controls.Add(this.ButtonUstawienia);
