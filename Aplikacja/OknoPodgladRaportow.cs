@@ -21,8 +21,6 @@ namespace Aplikacja
 {
     public partial class OknoPodgladRaportow : Form
     {
-        //private DocumentPreview documentPreview1;
-
 
         public OknoPodgladRaportow(Document Raport)
         {
@@ -33,20 +31,33 @@ namespace Aplikacja
 
             // HACK
             var ddl = DdlWriter.WriteToString(dokument);
-            documentPreview1.Ddl = ddl;
+            PodgladRaportu.Ddl = ddl;
         }
 
+        readonly PrinterSettings _printerSettings = new PrinterSettings();
 
 
         private void ButtonPoprzednia_Click(object sender, EventArgs e)
         {
-            documentPreview1.PrevPage();
+            PodgladRaportu.PrevPage();
             //UpdateStatusBar();
         }
 
         private void ButtonNastepna_Click(object sender, EventArgs e)
         {
-            documentPreview1.NextPage();
+            PodgladRaportu.NextPage();
+        }
+
+        private void ButtonUstawieniaDruk_Click(object sender, EventArgs e)
+        {
+                using (var dialog = new PrintDialog())
+                {
+                    dialog.PrinterSettings = _printerSettings;
+                    dialog.AllowSelection = true;
+                    dialog.AllowSomePages = true;
+                    dialog.ShowDialog();
+                }
+            
         }
     }
 }

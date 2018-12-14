@@ -28,30 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.documentPreview1 = new MigraDoc.Rendering.Forms.DocumentPreview();
+            this.PodgladRaportu = new MigraDoc.Rendering.Forms.DocumentPreview();
             this.ButtonDrukuj = new System.Windows.Forms.Button();
             this.ButtonNastepna = new System.Windows.Forms.Button();
             this.ButtonPoprzednia = new System.Windows.Forms.Button();
+            this.ButtonUstawieniaDruk = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // documentPreview1
+            // PodgladRaportu
             // 
-            this.documentPreview1.Ddl = null;
-            this.documentPreview1.DesktopColor = System.Drawing.SystemColors.ControlDark;
-            this.documentPreview1.Document = null;
-            this.documentPreview1.Location = new System.Drawing.Point(12, 62);
-            this.documentPreview1.Name = "documentPreview1";
-            this.documentPreview1.Page = 0;
-            this.documentPreview1.PageColor = System.Drawing.Color.GhostWhite;
-            this.documentPreview1.PageSize = new System.Drawing.Size(595, 842);
-            this.documentPreview1.PrivateFonts = null;
-            this.documentPreview1.Size = new System.Drawing.Size(796, 467);
-            this.documentPreview1.TabIndex = 1;
-            this.documentPreview1.ZoomPercent = 60;
+            this.PodgladRaportu.AutoSize = true;
+            this.PodgladRaportu.Ddl = null;
+            this.PodgladRaportu.DesktopColor = System.Drawing.SystemColors.ControlDark;
+            this.PodgladRaportu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PodgladRaportu.Document = null;
+            this.PodgladRaportu.Location = new System.Drawing.Point(0, 0);
+            this.PodgladRaportu.Name = "PodgladRaportu";
+            this.PodgladRaportu.Padding = new System.Windows.Forms.Padding(0, 80, 0, 0);
+            this.PodgladRaportu.Page = 0;
+            this.PodgladRaportu.PageColor = System.Drawing.Color.GhostWhite;
+            this.PodgladRaportu.PageSize = new System.Drawing.Size(595, 842);
+            this.PodgladRaportu.PrivateFonts = null;
+            this.PodgladRaportu.Size = new System.Drawing.Size(828, 541);
+            this.PodgladRaportu.TabIndex = 1;
+            this.PodgladRaportu.Zoom = MigraDoc.Rendering.Forms.Zoom.OriginalSize;
+            this.PodgladRaportu.ZoomPercent = 75;
             // 
             // ButtonDrukuj
             // 
-            this.ButtonDrukuj.Location = new System.Drawing.Point(12, 12);
+            this.ButtonDrukuj.Location = new System.Drawing.Point(12, 15);
             this.ButtonDrukuj.Name = "ButtonDrukuj";
             this.ButtonDrukuj.Size = new System.Drawing.Size(75, 23);
             this.ButtonDrukuj.TabIndex = 2;
@@ -60,7 +67,7 @@
             // 
             // ButtonNastepna
             // 
-            this.ButtonNastepna.Location = new System.Drawing.Point(426, 12);
+            this.ButtonNastepna.Location = new System.Drawing.Point(440, 15);
             this.ButtonNastepna.Name = "ButtonNastepna";
             this.ButtonNastepna.Size = new System.Drawing.Size(75, 23);
             this.ButtonNastepna.TabIndex = 3;
@@ -70,7 +77,7 @@
             // 
             // ButtonPoprzednia
             // 
-            this.ButtonPoprzednia.Location = new System.Drawing.Point(345, 12);
+            this.ButtonPoprzednia.Location = new System.Drawing.Point(359, 15);
             this.ButtonPoprzednia.Name = "ButtonPoprzednia";
             this.ButtonPoprzednia.Size = new System.Drawing.Size(75, 23);
             this.ButtonPoprzednia.TabIndex = 4;
@@ -78,26 +85,49 @@
             this.ButtonPoprzednia.UseVisualStyleBackColor = true;
             this.ButtonPoprzednia.Click += new System.EventHandler(this.ButtonPoprzednia_Click);
             // 
+            // ButtonUstawieniaDruk
+            // 
+            this.ButtonUstawieniaDruk.Location = new System.Drawing.Point(104, 15);
+            this.ButtonUstawieniaDruk.Name = "ButtonUstawieniaDruk";
+            this.ButtonUstawieniaDruk.Size = new System.Drawing.Size(134, 23);
+            this.ButtonUstawieniaDruk.TabIndex = 5;
+            this.ButtonUstawieniaDruk.Text = "Ustawienia drukowania";
+            this.ButtonUstawieniaDruk.UseVisualStyleBackColor = true;
+            this.ButtonUstawieniaDruk.Click += new System.EventHandler(this.ButtonUstawieniaDruk_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.ButtonDrukuj);
+            this.panel1.Controls.Add(this.ButtonNastepna);
+            this.panel1.Controls.Add(this.ButtonPoprzednia);
+            this.panel1.Controls.Add(this.ButtonUstawieniaDruk);
+            this.panel1.Location = new System.Drawing.Point(0, -1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(828, 79);
+            this.panel1.TabIndex = 6;
+            // 
             // OknoPodgladRaportow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(820, 541);
-            this.Controls.Add(this.ButtonPoprzednia);
-            this.Controls.Add(this.ButtonNastepna);
-            this.Controls.Add(this.ButtonDrukuj);
-            this.Controls.Add(this.documentPreview1);
+            this.ClientSize = new System.Drawing.Size(828, 541);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.PodgladRaportu);
             this.Name = "OknoPodgladRaportow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Podgląd Raportu";
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private MigraDoc.Rendering.Forms.DocumentPreview documentPreview1;
+        private MigraDoc.Rendering.Forms.DocumentPreview PodgladRaportu;
         private System.Windows.Forms.Button ButtonDrukuj;
         private System.Windows.Forms.Button ButtonNastepna;
         private System.Windows.Forms.Button ButtonPoprzednia;
+        private System.Windows.Forms.Button ButtonUstawieniaDruk;
+        private System.Windows.Forms.Panel panel1;
     }
 }
