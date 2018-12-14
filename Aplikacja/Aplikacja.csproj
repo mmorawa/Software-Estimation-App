@@ -132,6 +132,9 @@
     <Compile Include="OknoZalozeniaProjektu.Designer.cs">
       <DependentUpon>OknoZalozeniaProjektu.cs</DependentUpon>
     </Compile>
+    <Compile Include="TrescRaportow.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <EmbeddedResource Include="OknoDaneProjektu.resx">
       <DependentUpon>OknoDaneProjektu.cs</DependentUpon>
     </EmbeddedResource>
