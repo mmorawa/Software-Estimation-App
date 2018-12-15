@@ -44,13 +44,11 @@ namespace Aplikacja
             ComboBoxMnPrLokal.SelectedIndex = OknoGlowne.TabIndEM[15];
             ComboBoxMnPrHarm.SelectedIndex = OknoGlowne.TabIndEM[16];
 
-
-            //TODO doświadczenie a nie znajomość??
-
-
             //ToolTip.SetToolTip(comboBox1, "Save changes");
 
         }
+
+        string test = "12";
 
         //---------------Dot. produktu----------------------------------
         private void ComboBoxMnPrNiezaw_SelectedIndexChanged(object sender, EventArgs e)

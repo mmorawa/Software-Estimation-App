@@ -157,7 +157,7 @@
             this.ToolStripMenuPomoc});
             this.PasekMenu.Location = new System.Drawing.Point(0, 0);
             this.PasekMenu.Name = "PasekMenu";
-            this.PasekMenu.Size = new System.Drawing.Size(1113, 25);
+            this.PasekMenu.Size = new System.Drawing.Size(1132, 25);
             this.PasekMenu.TabIndex = 0;
             this.PasekMenu.Text = "Pasek Menu";
             // 
@@ -1001,7 +1001,7 @@
             // 
             // ButtonTablicaPrzeliczeniowa
             // 
-            this.ButtonTablicaPrzeliczeniowa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonTablicaPrzeliczeniowa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ButtonTablicaPrzeliczeniowa.Location = new System.Drawing.Point(302, 496);
             this.ButtonTablicaPrzeliczeniowa.Name = "ButtonTablicaPrzeliczeniowa";
             this.ButtonTablicaPrzeliczeniowa.Size = new System.Drawing.Size(173, 27);
@@ -1272,9 +1272,9 @@
             // 
             this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripStatusLabel});
-            this.StatusStrip.Location = new System.Drawing.Point(0, 737);
+            this.StatusStrip.Location = new System.Drawing.Point(0, 753);
             this.StatusStrip.Name = "StatusStrip";
-            this.StatusStrip.Size = new System.Drawing.Size(1113, 22);
+            this.StatusStrip.Size = new System.Drawing.Size(1132, 22);
             this.StatusStrip.TabIndex = 7;
             this.StatusStrip.Text = "StatusStrip";
             // 
@@ -1301,7 +1301,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1125, 750);
+            this.ClientSize = new System.Drawing.Size(1132, 775);
             this.Controls.Add(this.ButtonKreator);
             this.Controls.Add(this.ButtonKalibracja);
             this.Controls.Add(this.ButtonUstawienia);
