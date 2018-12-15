@@ -47,8 +47,7 @@ namespace Aplikacja
             //ToolTip.SetToolTip(comboBox1, "Save changes");
 
         }
-
-        string test = "12";
+        
 
         //---------------Dot. produktu----------------------------------
         private void ComboBoxMnPrNiezaw_SelectedIndexChanged(object sender, EventArgs e)

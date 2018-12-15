@@ -120,6 +120,12 @@
   <data name="label19.Text" xml:space="preserve">
     <value>Odzwierciedla wpływ dużych wymagań odnośnie danych testowych na wytwarzanie oprogramowania. Ocena jest zależna od stosunku liczby bajtów testowej bazy danych do rozmiaru aplikacji liczonego w liniach kodu (D/P).</value>
   </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>Ocena złożoności produktu obejmuje pięć głównych obszarów: operacje kontrolne, operacje obliczeniowe, operacje zależne od sprzętu, operacje zarządzania danymi oraz operacje zarządzania interfejsem użytkownika.  </value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>Ten mnożnik odpowiada za uwzględnienie dodatkowego nakładu pracy, który wiąże się z tworzeniem komponentów aplikacji w sposób pozwalający na ich ponowne użycie w przyszłości. Im bardziej abstrakcyjny i ogólny musi być dany komponent tym większa będzie pracochłonność jego wytworzenia.</value>
+  </data>
   <metadata name="ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

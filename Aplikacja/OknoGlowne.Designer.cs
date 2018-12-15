@@ -172,64 +172,64 @@
             this.ToolStripMenuZapiszProj,
             this.ToolStripMenuZapiszJakoProj,
             this.ToolStripMenuWyjscie});
-            this.ToolStripMenuPlik.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ToolStripMenuPlik.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ToolStripMenuPlik.Name = "ToolStripMenuPlik";
-            this.ToolStripMenuPlik.Size = new System.Drawing.Size(43, 21);
+            this.ToolStripMenuPlik.Size = new System.Drawing.Size(41, 21);
             this.ToolStripMenuPlik.Text = "&Plik";
             // 
             // ToolStripMenuNowyProj
             // 
             this.ToolStripMenuNowyProj.Name = "ToolStripMenuNowyProj";
-            this.ToolStripMenuNowyProj.Size = new System.Drawing.Size(193, 22);
+            this.ToolStripMenuNowyProj.Size = new System.Drawing.Size(190, 22);
             this.ToolStripMenuNowyProj.Text = "&Nowy projekt";
             this.ToolStripMenuNowyProj.Click += new System.EventHandler(this.ToolStripMenuNowyProj_Click);
             // 
             // ToolStripMenuOtworzProj
             // 
             this.ToolStripMenuOtworzProj.Name = "ToolStripMenuOtworzProj";
-            this.ToolStripMenuOtworzProj.Size = new System.Drawing.Size(193, 22);
+            this.ToolStripMenuOtworzProj.Size = new System.Drawing.Size(190, 22);
             this.ToolStripMenuOtworzProj.Text = "&Otwórz projekt";
             this.ToolStripMenuOtworzProj.Click += new System.EventHandler(this.ToolStripMenuOtworzProj_Click);
             // 
             // ToolStripMenuSzczegolyProjektu
             // 
             this.ToolStripMenuSzczegolyProjektu.Name = "ToolStripMenuSzczegolyProjektu";
-            this.ToolStripMenuSzczegolyProjektu.Size = new System.Drawing.Size(193, 22);
+            this.ToolStripMenuSzczegolyProjektu.Size = new System.Drawing.Size(190, 22);
             this.ToolStripMenuSzczegolyProjektu.Text = "&Szczegóły projektu";
             this.ToolStripMenuSzczegolyProjektu.Click += new System.EventHandler(this.ToolStripMenuSzczegolyProjektu_Click);
             // 
             // ToolStripMenuZalozeniaProjektu
             // 
             this.ToolStripMenuZalozeniaProjektu.Name = "ToolStripMenuZalozeniaProjektu";
-            this.ToolStripMenuZalozeniaProjektu.Size = new System.Drawing.Size(193, 22);
+            this.ToolStripMenuZalozeniaProjektu.Size = new System.Drawing.Size(190, 22);
             this.ToolStripMenuZalozeniaProjektu.Text = "Założenia &projektu";
             this.ToolStripMenuZalozeniaProjektu.Click += new System.EventHandler(this.ToolStripMenuZalozeniaProjektu_Click);
             // 
             // ToolStripOszacuj
             // 
             this.ToolStripOszacuj.Name = "ToolStripOszacuj";
-            this.ToolStripOszacuj.Size = new System.Drawing.Size(193, 22);
+            this.ToolStripOszacuj.Size = new System.Drawing.Size(190, 22);
             this.ToolStripOszacuj.Text = "Osza&cuj";
             this.ToolStripOszacuj.Click += new System.EventHandler(this.ToolStripOszacuj_Click);
             // 
             // ToolStripMenuZapiszProj
             // 
             this.ToolStripMenuZapiszProj.Name = "ToolStripMenuZapiszProj";
-            this.ToolStripMenuZapiszProj.Size = new System.Drawing.Size(193, 22);
+            this.ToolStripMenuZapiszProj.Size = new System.Drawing.Size(190, 22);
             this.ToolStripMenuZapiszProj.Text = "&Zapisz projekt";
             this.ToolStripMenuZapiszProj.Click += new System.EventHandler(this.ToolStripMenuZapiszProj_Click);
             // 
             // ToolStripMenuZapiszJakoProj
             // 
             this.ToolStripMenuZapiszJakoProj.Name = "ToolStripMenuZapiszJakoProj";
-            this.ToolStripMenuZapiszJakoProj.Size = new System.Drawing.Size(193, 22);
+            this.ToolStripMenuZapiszJakoProj.Size = new System.Drawing.Size(190, 22);
             this.ToolStripMenuZapiszJakoProj.Text = "Z&apisz projekt jako";
             this.ToolStripMenuZapiszJakoProj.Click += new System.EventHandler(this.ToolStripMenuZapiszJakoProj_Click);
             // 
             // ToolStripMenuWyjscie
             // 
             this.ToolStripMenuWyjscie.Name = "ToolStripMenuWyjscie";
-            this.ToolStripMenuWyjscie.Size = new System.Drawing.Size(193, 22);
+            this.ToolStripMenuWyjscie.Size = new System.Drawing.Size(190, 22);
             this.ToolStripMenuWyjscie.Text = "&Wyjście";
             this.ToolStripMenuWyjscie.Click += new System.EventHandler(this.ToolStripMenuWyjscie_Click);
             // 
@@ -239,7 +239,7 @@
             this.ToolStripOpisProjektu,
             this.ToolStripPełneOszacowanie,
             this.ToolStripPodsumowanieProjektu});
-            this.ToolStripMenuRaporty.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ToolStripMenuRaporty.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ToolStripMenuRaporty.Name = "ToolStripMenuRaporty";
             this.ToolStripMenuRaporty.Size = new System.Drawing.Size(68, 21);
             this.ToolStripMenuRaporty.Text = "&Raporty";
@@ -247,21 +247,21 @@
             // ToolStripOpisProjektu
             // 
             this.ToolStripOpisProjektu.Name = "ToolStripOpisProjektu";
-            this.ToolStripOpisProjektu.Size = new System.Drawing.Size(226, 22);
+            this.ToolStripOpisProjektu.Size = new System.Drawing.Size(224, 22);
             this.ToolStripOpisProjektu.Text = "&Opis projektu";
             // 
             // ToolStripPełneOszacowanie
             // 
             this.ToolStripPełneOszacowanie.Enabled = false;
             this.ToolStripPełneOszacowanie.Name = "ToolStripPełneOszacowanie";
-            this.ToolStripPełneOszacowanie.Size = new System.Drawing.Size(226, 22);
+            this.ToolStripPełneOszacowanie.Size = new System.Drawing.Size(224, 22);
             this.ToolStripPełneOszacowanie.Text = "&Pełne oszacowanie";
             // 
             // ToolStripPodsumowanieProjektu
             // 
             this.ToolStripPodsumowanieProjektu.Enabled = false;
             this.ToolStripPodsumowanieProjektu.Name = "ToolStripPodsumowanieProjektu";
-            this.ToolStripPodsumowanieProjektu.Size = new System.Drawing.Size(226, 22);
+            this.ToolStripPodsumowanieProjektu.Size = new System.Drawing.Size(224, 22);
             this.ToolStripPodsumowanieProjektu.Text = "Po&dsumowanie projektu";
             // 
             // ToolStripMenuOpcje
@@ -271,35 +271,35 @@
             this.ToolStripMenuKalibracja,
             this.ToolStripMenuUstawienia,
             this.ToolStripTablicaPrzeliczeniowa});
-            this.ToolStripMenuOpcje.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ToolStripMenuOpcje.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ToolStripMenuOpcje.Name = "ToolStripMenuOpcje";
-            this.ToolStripMenuOpcje.Size = new System.Drawing.Size(55, 21);
+            this.ToolStripMenuOpcje.Size = new System.Drawing.Size(54, 21);
             this.ToolStripMenuOpcje.Text = "&Opcje";
             // 
             // ToolStripMenuKreator
             // 
             this.ToolStripMenuKreator.Name = "ToolStripMenuKreator";
-            this.ToolStripMenuKreator.Size = new System.Drawing.Size(214, 22);
+            this.ToolStripMenuKreator.Size = new System.Drawing.Size(208, 22);
             this.ToolStripMenuKreator.Text = "K&reator";
             // 
             // ToolStripMenuKalibracja
             // 
             this.ToolStripMenuKalibracja.Name = "ToolStripMenuKalibracja";
-            this.ToolStripMenuKalibracja.Size = new System.Drawing.Size(214, 22);
+            this.ToolStripMenuKalibracja.Size = new System.Drawing.Size(208, 22);
             this.ToolStripMenuKalibracja.Text = "&Kalibracja";
             this.ToolStripMenuKalibracja.Click += new System.EventHandler(this.ToolStripMenuKalibracja_Click);
             // 
             // ToolStripMenuUstawienia
             // 
             this.ToolStripMenuUstawienia.Name = "ToolStripMenuUstawienia";
-            this.ToolStripMenuUstawienia.Size = new System.Drawing.Size(214, 22);
+            this.ToolStripMenuUstawienia.Size = new System.Drawing.Size(208, 22);
             this.ToolStripMenuUstawienia.Text = "&Ustawienia";
             this.ToolStripMenuUstawienia.Click += new System.EventHandler(this.ToolStripMenuUstawienia_Click);
             // 
             // ToolStripTablicaPrzeliczeniowa
             // 
             this.ToolStripTablicaPrzeliczeniowa.Name = "ToolStripTablicaPrzeliczeniowa";
-            this.ToolStripTablicaPrzeliczeniowa.Size = new System.Drawing.Size(214, 22);
+            this.ToolStripTablicaPrzeliczeniowa.Size = new System.Drawing.Size(208, 22);
             this.ToolStripTablicaPrzeliczeniowa.Text = "&Tablica przeliczeniowa";
             this.ToolStripTablicaPrzeliczeniowa.Click += new System.EventHandler(this.ToolStripTablicaPrzeliczeniowa_Click);
             // 
@@ -308,7 +308,7 @@
             this.ToolStripMenuPomoc.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuDokumentacja,
             this.ToolStripMenuOProgramie});
-            this.ToolStripMenuPomoc.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ToolStripMenuPomoc.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ToolStripMenuPomoc.Name = "ToolStripMenuPomoc";
             this.ToolStripMenuPomoc.Size = new System.Drawing.Size(62, 21);
             this.ToolStripMenuPomoc.Text = "Pomo&c";
@@ -316,14 +316,14 @@
             // ToolStripMenuDokumentacja
             // 
             this.ToolStripMenuDokumentacja.Name = "ToolStripMenuDokumentacja";
-            this.ToolStripMenuDokumentacja.Size = new System.Drawing.Size(165, 22);
+            this.ToolStripMenuDokumentacja.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuDokumentacja.Text = "&Dokumentacja";
             this.ToolStripMenuDokumentacja.Click += new System.EventHandler(this.ToolStripMenuDokumentacja_Click);
             // 
             // ToolStripMenuOProgramie
             // 
             this.ToolStripMenuOProgramie.Name = "ToolStripMenuOProgramie";
-            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(165, 22);
+            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuOProgramie.Text = "&O aplikacji";
             this.ToolStripMenuOProgramie.Click += new System.EventHandler(this.ToolStripMenuOProgramie_Click);
             // 
@@ -335,7 +335,7 @@
             this.GroupBoxDaneProjektu.Controls.Add(this.ButtonWiecejSzczeg);
             this.GroupBoxDaneProjektu.Controls.Add(this.LabelNazwaProjektu);
             this.GroupBoxDaneProjektu.Controls.Add(this.TextBoxNazwaProjektu);
-            this.GroupBoxDaneProjektu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.GroupBoxDaneProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxDaneProjektu.Location = new System.Drawing.Point(12, 69);
             this.GroupBoxDaneProjektu.Name = "GroupBoxDaneProjektu";
             this.GroupBoxDaneProjektu.Size = new System.Drawing.Size(564, 150);
@@ -358,7 +358,7 @@
             this.LabelDataRozp.AutoSize = true;
             this.LabelDataRozp.Location = new System.Drawing.Point(6, 74);
             this.LabelDataRozp.Name = "LabelDataRozp";
-            this.LabelDataRozp.Size = new System.Drawing.Size(133, 16);
+            this.LabelDataRozp.Size = new System.Drawing.Size(122, 16);
             this.LabelDataRozp.TabIndex = 4;
             this.LabelDataRozp.Text = "Data rozpoczęcia:";
             // 
@@ -386,7 +386,7 @@
             this.LabelNazwaProjektu.AutoSize = true;
             this.LabelNazwaProjektu.Location = new System.Drawing.Point(6, 30);
             this.LabelNazwaProjektu.Name = "LabelNazwaProjektu";
-            this.LabelNazwaProjektu.Size = new System.Drawing.Size(118, 16);
+            this.LabelNazwaProjektu.Size = new System.Drawing.Size(111, 16);
             this.LabelNazwaProjektu.TabIndex = 1;
             this.LabelNazwaProjektu.Text = "Nazwa projektu:";
             // 
@@ -402,7 +402,7 @@
             // GroupBoxUUCW
             // 
             this.GroupBoxUUCW.Controls.Add(this.tableLayoutPanel1);
-            this.GroupBoxUUCW.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.GroupBoxUUCW.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxUUCW.Location = new System.Drawing.Point(12, 225);
             this.GroupBoxUUCW.Name = "GroupBoxUUCW";
             this.GroupBoxUUCW.Size = new System.Drawing.Size(564, 200);
@@ -445,8 +445,9 @@
             // NumUUCWZlozony
             // 
             this.NumUUCWZlozony.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumUUCWZlozony.Location = new System.Drawing.Point(133, 141);
-            this.NumUUCWZlozony.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
+            this.NumUUCWZlozony.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.NumUUCWZlozony.Location = new System.Drawing.Point(133, 142);
+            this.NumUUCWZlozony.Margin = new System.Windows.Forms.Padding(3, 9, 3, 3);
             this.NumUUCWZlozony.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -465,6 +466,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.Location = new System.Drawing.Point(3, 93);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 40);
@@ -475,8 +477,9 @@
             // NumUUCWSredni
             // 
             this.NumUUCWSredni.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumUUCWSredni.Location = new System.Drawing.Point(133, 101);
-            this.NumUUCWSredni.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
+            this.NumUUCWSredni.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.NumUUCWSredni.Location = new System.Drawing.Point(133, 102);
+            this.NumUUCWSredni.Margin = new System.Windows.Forms.Padding(3, 9, 3, 3);
             this.NumUUCWSredni.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -492,8 +495,9 @@
             // NumUUCWProsty
             // 
             this.NumUUCWProsty.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumUUCWProsty.Location = new System.Drawing.Point(133, 61);
-            this.NumUUCWProsty.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
+            this.NumUUCWProsty.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.NumUUCWProsty.Location = new System.Drawing.Point(133, 62);
+            this.NumUUCWProsty.Margin = new System.Windows.Forms.Padding(3, 9, 3, 3);
             this.NumUUCWProsty.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -512,6 +516,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.Location = new System.Drawing.Point(3, 133);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 40);
@@ -525,8 +530,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label4.Location = new System.Drawing.Point(78, 0);
             this.label4.Name = "label4";
+            this.label4.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.label4.Size = new System.Drawing.Size(49, 53);
             this.label4.TabIndex = 8;
             this.label4.Text = "Waga";
@@ -538,8 +545,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label5.Location = new System.Drawing.Point(133, 0);
             this.label5.Name = "label5";
+            this.label5.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.label5.Size = new System.Drawing.Size(142, 53);
             this.label5.TabIndex = 9;
             this.label5.Text = "Liczba przypadków użycia";
@@ -551,8 +560,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label6.Location = new System.Drawing.Point(281, 0);
             this.label6.Name = "label6";
+            this.label6.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.label6.Size = new System.Drawing.Size(259, 53);
             this.label6.TabIndex = 10;
             this.label6.Text = "Liczba transakcji";
@@ -564,6 +575,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label7.Location = new System.Drawing.Point(78, 53);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 40);
@@ -577,6 +589,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label8.Location = new System.Drawing.Point(78, 93);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 40);
@@ -590,6 +603,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label9.Location = new System.Drawing.Point(78, 133);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(49, 40);
@@ -603,6 +617,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label10.Location = new System.Drawing.Point(281, 53);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(259, 40);
@@ -616,6 +631,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label11.Location = new System.Drawing.Point(281, 93);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(259, 40);
@@ -629,6 +645,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label12.Location = new System.Drawing.Point(281, 133);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(259, 40);
@@ -642,6 +659,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(3, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 40);
@@ -651,7 +669,7 @@
             // 
             // ButtonOszacuj
             // 
-            this.ButtonOszacuj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOszacuj.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ButtonOszacuj.Location = new System.Drawing.Point(207, 21);
             this.ButtonOszacuj.Name = "ButtonOszacuj";
             this.ButtonOszacuj.Size = new System.Drawing.Size(173, 44);
@@ -682,10 +700,10 @@
             // 
             // ButtonNowyProjekt
             // 
-            this.ButtonNowyProjekt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonNowyProjekt.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ButtonNowyProjekt.Location = new System.Drawing.Point(12, 36);
             this.ButtonNowyProjekt.Name = "ButtonNowyProjekt";
-            this.ButtonNowyProjekt.Size = new System.Drawing.Size(173, 27);
+            this.ButtonNowyProjekt.Size = new System.Drawing.Size(137, 27);
             this.ButtonNowyProjekt.TabIndex = 8;
             this.ButtonNowyProjekt.Text = "Nowy projekt";
             this.ButtonNowyProjekt.UseVisualStyleBackColor = true;
@@ -693,10 +711,10 @@
             // 
             // ButtonOtworzProjekt
             // 
-            this.ButtonOtworzProjekt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOtworzProjekt.Location = new System.Drawing.Point(191, 36);
+            this.ButtonOtworzProjekt.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOtworzProjekt.Location = new System.Drawing.Point(154, 36);
             this.ButtonOtworzProjekt.Name = "ButtonOtworzProjekt";
-            this.ButtonOtworzProjekt.Size = new System.Drawing.Size(173, 27);
+            this.ButtonOtworzProjekt.Size = new System.Drawing.Size(137, 27);
             this.ButtonOtworzProjekt.TabIndex = 9;
             this.ButtonOtworzProjekt.Text = "Otwórz projekt";
             this.ButtonOtworzProjekt.UseVisualStyleBackColor = true;
@@ -704,10 +722,10 @@
             // 
             // ButtonZapiszProjekt
             // 
-            this.ButtonZapiszProjekt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonZapiszProjekt.Location = new System.Drawing.Point(370, 36);
+            this.ButtonZapiszProjekt.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonZapiszProjekt.Location = new System.Drawing.Point(296, 36);
             this.ButtonZapiszProjekt.Name = "ButtonZapiszProjekt";
-            this.ButtonZapiszProjekt.Size = new System.Drawing.Size(173, 27);
+            this.ButtonZapiszProjekt.Size = new System.Drawing.Size(137, 27);
             this.ButtonZapiszProjekt.TabIndex = 10;
             this.ButtonZapiszProjekt.Text = "Zapisz projekt";
             this.ButtonZapiszProjekt.UseVisualStyleBackColor = true;
@@ -715,10 +733,10 @@
             // 
             // ButtonUstawienia
             // 
-            this.ButtonUstawienia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonUstawienia.Location = new System.Drawing.Point(728, 36);
+            this.ButtonUstawienia.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonUstawienia.Location = new System.Drawing.Point(582, 36);
             this.ButtonUstawienia.Name = "ButtonUstawienia";
-            this.ButtonUstawienia.Size = new System.Drawing.Size(173, 27);
+            this.ButtonUstawienia.Size = new System.Drawing.Size(137, 27);
             this.ButtonUstawienia.TabIndex = 12;
             this.ButtonUstawienia.Text = "Ustawienia";
             this.ButtonUstawienia.UseVisualStyleBackColor = true;
@@ -726,10 +744,10 @@
             // 
             // ButtonKalibracja
             // 
-            this.ButtonKalibracja.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonKalibracja.Location = new System.Drawing.Point(907, 36);
+            this.ButtonKalibracja.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonKalibracja.Location = new System.Drawing.Point(725, 36);
             this.ButtonKalibracja.Name = "ButtonKalibracja";
-            this.ButtonKalibracja.Size = new System.Drawing.Size(173, 27);
+            this.ButtonKalibracja.Size = new System.Drawing.Size(137, 27);
             this.ButtonKalibracja.TabIndex = 13;
             this.ButtonKalibracja.Text = "Kalibracja";
             this.ButtonKalibracja.UseVisualStyleBackColor = true;
@@ -738,7 +756,7 @@
             // GroupBoxUAW
             // 
             this.GroupBoxUAW.Controls.Add(this.tableLayoutPanel2);
-            this.GroupBoxUAW.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.GroupBoxUAW.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxUAW.Location = new System.Drawing.Point(9, 431);
             this.GroupBoxUAW.Name = "GroupBoxUAW";
             this.GroupBoxUAW.Size = new System.Drawing.Size(567, 206);
@@ -781,8 +799,9 @@
             // NumUAWZlozony
             // 
             this.NumUAWZlozony.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumUAWZlozony.Location = new System.Drawing.Point(134, 134);
-            this.NumUAWZlozony.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
+            this.NumUAWZlozony.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.NumUAWZlozony.Location = new System.Drawing.Point(134, 135);
+            this.NumUAWZlozony.Margin = new System.Windows.Forms.Padding(3, 9, 3, 3);
             this.NumUAWZlozony.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -811,8 +830,9 @@
             // NumUAWSredni
             // 
             this.NumUAWSredni.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumUAWSredni.Location = new System.Drawing.Point(134, 95);
-            this.NumUAWSredni.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
+            this.NumUAWSredni.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.NumUAWSredni.Location = new System.Drawing.Point(134, 96);
+            this.NumUAWSredni.Margin = new System.Windows.Forms.Padding(3, 9, 3, 3);
             this.NumUAWSredni.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -841,8 +861,9 @@
             // NumUAWProsty
             // 
             this.NumUAWProsty.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumUAWProsty.Location = new System.Drawing.Point(134, 56);
-            this.NumUAWProsty.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
+            this.NumUAWProsty.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.NumUAWProsty.Location = new System.Drawing.Point(134, 57);
+            this.NumUAWProsty.Margin = new System.Windows.Forms.Padding(3, 9, 3, 3);
             this.NumUAWProsty.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -913,6 +934,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label19.Location = new System.Drawing.Point(78, 48);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(50, 39);
@@ -926,6 +948,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label20.Location = new System.Drawing.Point(78, 87);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(50, 39);
@@ -939,6 +962,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label21.Location = new System.Drawing.Point(78, 126);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(50, 41);
@@ -952,6 +976,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label22.Location = new System.Drawing.Point(282, 48);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(267, 39);
@@ -965,6 +990,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label23.Location = new System.Drawing.Point(282, 87);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(267, 39);
@@ -978,6 +1004,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label24.Location = new System.Drawing.Point(282, 126);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(267, 41);
@@ -987,11 +1014,10 @@
             // 
             // GroupBoxWyniki
             // 
-            this.GroupBoxWyniki.Controls.Add(this.ButtonTablicaPrzeliczeniowa);
             this.GroupBoxWyniki.Controls.Add(this.GroupBoxRaporty);
             this.GroupBoxWyniki.Controls.Add(this.tableLayoutPanel3);
             this.GroupBoxWyniki.Controls.Add(this.ButtonOszacuj);
-            this.GroupBoxWyniki.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.GroupBoxWyniki.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxWyniki.Location = new System.Drawing.Point(582, 69);
             this.GroupBoxWyniki.Name = "GroupBoxWyniki";
             this.GroupBoxWyniki.Size = new System.Drawing.Size(531, 668);
@@ -1002,11 +1028,11 @@
             // ButtonTablicaPrzeliczeniowa
             // 
             this.ButtonTablicaPrzeliczeniowa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonTablicaPrzeliczeniowa.Location = new System.Drawing.Point(302, 496);
+            this.ButtonTablicaPrzeliczeniowa.Location = new System.Drawing.Point(868, 36);
             this.ButtonTablicaPrzeliczeniowa.Name = "ButtonTablicaPrzeliczeniowa";
-            this.ButtonTablicaPrzeliczeniowa.Size = new System.Drawing.Size(173, 27);
+            this.ButtonTablicaPrzeliczeniowa.Size = new System.Drawing.Size(198, 27);
             this.ButtonTablicaPrzeliczeniowa.TabIndex = 21;
-            this.ButtonTablicaPrzeliczeniowa.Text = "Tablica";
+            this.ButtonTablicaPrzeliczeniowa.Text = "Tablica przeliczeniowa";
             this.ButtonTablicaPrzeliczeniowa.UseVisualStyleBackColor = true;
             this.ButtonTablicaPrzeliczeniowa.Click += new System.EventHandler(this.ButtonTablicaPrzeliczeniowa_Click);
             // 
@@ -1015,16 +1041,16 @@
             this.GroupBoxRaporty.Controls.Add(this.ButtonOpisProjektu);
             this.GroupBoxRaporty.Controls.Add(this.ButtonPodsumowanieProjektu);
             this.GroupBoxRaporty.Controls.Add(this.ButtonOszacowanie);
-            this.GroupBoxRaporty.Location = new System.Drawing.Point(56, 439);
+            this.GroupBoxRaporty.Location = new System.Drawing.Point(41, 483);
             this.GroupBoxRaporty.Name = "GroupBoxRaporty";
-            this.GroupBoxRaporty.Size = new System.Drawing.Size(219, 178);
+            this.GroupBoxRaporty.Size = new System.Drawing.Size(224, 165);
             this.GroupBoxRaporty.TabIndex = 20;
             this.GroupBoxRaporty.TabStop = false;
             this.GroupBoxRaporty.Text = "Raporty";
             // 
             // ButtonOpisProjektu
             // 
-            this.ButtonOpisProjektu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOpisProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ButtonOpisProjektu.Location = new System.Drawing.Point(29, 44);
             this.ButtonOpisProjektu.Name = "ButtonOpisProjektu";
             this.ButtonOpisProjektu.Size = new System.Drawing.Size(173, 27);
@@ -1035,7 +1061,7 @@
             // 
             // ButtonPodsumowanieProjektu
             // 
-            this.ButtonPodsumowanieProjektu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonPodsumowanieProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ButtonPodsumowanieProjektu.Location = new System.Drawing.Point(29, 110);
             this.ButtonPodsumowanieProjektu.Name = "ButtonPodsumowanieProjektu";
             this.ButtonPodsumowanieProjektu.Size = new System.Drawing.Size(173, 27);
@@ -1046,7 +1072,7 @@
             // 
             // ButtonOszacowanie
             // 
-            this.ButtonOszacowanie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOszacowanie.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ButtonOszacowanie.Location = new System.Drawing.Point(29, 77);
             this.ButtonOszacowanie.Name = "ButtonOszacowanie";
             this.ButtonOszacowanie.Size = new System.Drawing.Size(173, 27);
@@ -1092,6 +1118,7 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label34.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label34.Location = new System.Drawing.Point(369, 230);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(126, 46);
@@ -1104,7 +1131,7 @@
             this.LabelWynikKoszt.AutoSize = true;
             this.LabelWynikKoszt.BackColor = System.Drawing.SystemColors.Control;
             this.LabelWynikKoszt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikKoszt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikKoszt.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.LabelWynikKoszt.Location = new System.Drawing.Point(135, 230);
             this.LabelWynikKoszt.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelWynikKoszt.Name = "LabelWynikKoszt";
@@ -1130,7 +1157,7 @@
             this.tableLayoutPanel3.SetColumnSpan(this.label25, 2);
             this.label25.Location = new System.Drawing.Point(3, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(340, 32);
+            this.label25.Size = new System.Drawing.Size(360, 32);
             this.label25.TabIndex = 3;
             this.label25.Text = "Liczba nieskorygowanych punktów  przypadków użycia UUCP:";
             // 
@@ -1138,6 +1165,7 @@
             // 
             this.label30.AutoSize = true;
             this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label30.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label30.Location = new System.Drawing.Point(369, 184);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(126, 46);
@@ -1149,6 +1177,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label26.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label26.Location = new System.Drawing.Point(369, 92);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(126, 46);
@@ -1161,7 +1190,7 @@
             this.LabelWynikHarm.AutoSize = true;
             this.LabelWynikHarm.BackColor = System.Drawing.SystemColors.Control;
             this.LabelWynikHarm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikHarm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikHarm.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.LabelWynikHarm.Location = new System.Drawing.Point(135, 184);
             this.LabelWynikHarm.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelWynikHarm.Name = "LabelWynikHarm";
@@ -1174,6 +1203,7 @@
             // 
             this.label29.AutoSize = true;
             this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label29.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label29.Location = new System.Drawing.Point(369, 138);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(126, 46);
@@ -1197,7 +1227,7 @@
             this.LabelRozmiar.AutoSize = true;
             this.LabelRozmiar.BackColor = System.Drawing.SystemColors.Control;
             this.LabelRozmiar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelRozmiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelRozmiar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.LabelRozmiar.Location = new System.Drawing.Point(135, 92);
             this.LabelRozmiar.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelRozmiar.Name = "LabelRozmiar";
@@ -1211,7 +1241,7 @@
             this.LabelWynikPrac.AutoSize = true;
             this.LabelWynikPrac.BackColor = System.Drawing.SystemColors.Control;
             this.LabelWynikPrac.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikPrac.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikPrac.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.LabelWynikPrac.Location = new System.Drawing.Point(135, 138);
             this.LabelWynikPrac.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelWynikPrac.Name = "LabelWynikPrac";
@@ -1247,7 +1277,7 @@
             this.LabelPktUUCP.AutoSize = true;
             this.LabelPktUUCP.BackColor = System.Drawing.SystemColors.Control;
             this.LabelPktUUCP.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelPktUUCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelPktUUCP.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.LabelPktUUCP.Location = new System.Drawing.Point(369, 0);
             this.LabelPktUUCP.MinimumSize = new System.Drawing.Size(100, 0);
             this.LabelPktUUCP.Name = "LabelPktUUCP";
@@ -1260,7 +1290,7 @@
             // 
             this.groupBox1.Controls.Add(this.ButtonMnPr);
             this.groupBox1.Controls.Add(this.ButtonCzSk);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox1.Location = new System.Drawing.Point(12, 643);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(564, 94);
@@ -1287,10 +1317,10 @@
             // 
             // ButtonKreator
             // 
-            this.ButtonKreator.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonKreator.Location = new System.Drawing.Point(549, 36);
+            this.ButtonKreator.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonKreator.Location = new System.Drawing.Point(439, 36);
             this.ButtonKreator.Name = "ButtonKreator";
-            this.ButtonKreator.Size = new System.Drawing.Size(173, 27);
+            this.ButtonKreator.Size = new System.Drawing.Size(137, 27);
             this.ButtonKreator.TabIndex = 14;
             this.ButtonKreator.Text = "Kreator";
             this.ButtonKreator.UseVisualStyleBackColor = true;
@@ -1302,6 +1332,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1132, 775);
+            this.Controls.Add(this.ButtonTablicaPrzeliczeniowa);
             this.Controls.Add(this.ButtonKreator);
             this.Controls.Add(this.ButtonKalibracja);
             this.Controls.Add(this.ButtonUstawienia);
