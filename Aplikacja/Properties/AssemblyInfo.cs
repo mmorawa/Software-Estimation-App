@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Państwowa Wyższa Szkoła Zawodowa w Nowym Sączu")]
 [assembly: AssemblyProduct("Aplikacja")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: AssemblyCopyright("Copyright © 2019 Mateusz Morawa ")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -67,7 +67,8 @@
             // 
             // ButtonNastepna
             // 
-            this.ButtonNastepna.Location = new System.Drawing.Point(440, 15);
+            this.ButtonNastepna.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonNastepna.Location = new System.Drawing.Point(468, 15);
             this.ButtonNastepna.Name = "ButtonNastepna";
             this.ButtonNastepna.Size = new System.Drawing.Size(75, 23);
             this.ButtonNastepna.TabIndex = 3;
@@ -77,9 +78,10 @@
             // 
             // ButtonPoprzednia
             // 
-            this.ButtonPoprzednia.Location = new System.Drawing.Point(359, 15);
+            this.ButtonPoprzednia.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonPoprzednia.Location = new System.Drawing.Point(346, 15);
             this.ButtonPoprzednia.Name = "ButtonPoprzednia";
-            this.ButtonPoprzednia.Size = new System.Drawing.Size(75, 23);
+            this.ButtonPoprzednia.Size = new System.Drawing.Size(98, 23);
             this.ButtonPoprzednia.TabIndex = 4;
             this.ButtonPoprzednia.Text = "Poprzednia";
             this.ButtonPoprzednia.UseVisualStyleBackColor = true;

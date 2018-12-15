@@ -102,7 +102,6 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.GroupBoxWyniki = new System.Windows.Forms.GroupBox();
-            this.ButtonTablicaPrzeliczeniowa = new System.Windows.Forms.Button();
             this.GroupBoxRaporty = new System.Windows.Forms.GroupBox();
             this.ButtonOpisProjektu = new System.Windows.Forms.Button();
             this.ButtonPodsumowanieProjektu = new System.Windows.Forms.Button();
@@ -122,6 +121,7 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.LabelPktUUCP = new System.Windows.Forms.Label();
+            this.ButtonTablicaPrzeliczeniowa = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
@@ -316,14 +316,14 @@
             // ToolStripMenuDokumentacja
             // 
             this.ToolStripMenuDokumentacja.Name = "ToolStripMenuDokumentacja";
-            this.ToolStripMenuDokumentacja.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuDokumentacja.Size = new System.Drawing.Size(163, 22);
             this.ToolStripMenuDokumentacja.Text = "&Dokumentacja";
             this.ToolStripMenuDokumentacja.Click += new System.EventHandler(this.ToolStripMenuDokumentacja_Click);
             // 
             // ToolStripMenuOProgramie
             // 
             this.ToolStripMenuOProgramie.Name = "ToolStripMenuOProgramie";
-            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(163, 22);
             this.ToolStripMenuOProgramie.Text = "&O aplikacji";
             this.ToolStripMenuOProgramie.Click += new System.EventHandler(this.ToolStripMenuOProgramie_Click);
             // 
@@ -670,9 +670,9 @@
             // ButtonOszacuj
             // 
             this.ButtonOszacuj.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOszacuj.Location = new System.Drawing.Point(207, 21);
+            this.ButtonOszacuj.Location = new System.Drawing.Point(143, 21);
             this.ButtonOszacuj.Name = "ButtonOszacuj";
-            this.ButtonOszacuj.Size = new System.Drawing.Size(173, 44);
+            this.ButtonOszacuj.Size = new System.Drawing.Size(137, 44);
             this.ButtonOszacuj.TabIndex = 2;
             this.ButtonOszacuj.Text = "Oszacuj";
             this.ButtonOszacuj.UseVisualStyleBackColor = true;
@@ -1025,17 +1025,6 @@
             this.GroupBoxWyniki.TabStop = false;
             this.GroupBoxWyniki.Text = "Wyniki";
             // 
-            // ButtonTablicaPrzeliczeniowa
-            // 
-            this.ButtonTablicaPrzeliczeniowa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonTablicaPrzeliczeniowa.Location = new System.Drawing.Point(868, 36);
-            this.ButtonTablicaPrzeliczeniowa.Name = "ButtonTablicaPrzeliczeniowa";
-            this.ButtonTablicaPrzeliczeniowa.Size = new System.Drawing.Size(198, 27);
-            this.ButtonTablicaPrzeliczeniowa.TabIndex = 21;
-            this.ButtonTablicaPrzeliczeniowa.Text = "Tablica przeliczeniowa";
-            this.ButtonTablicaPrzeliczeniowa.UseVisualStyleBackColor = true;
-            this.ButtonTablicaPrzeliczeniowa.Click += new System.EventHandler(this.ButtonTablicaPrzeliczeniowa_Click);
-            // 
             // GroupBoxRaporty
             // 
             this.GroupBoxRaporty.Controls.Add(this.ButtonOpisProjektu);
@@ -1285,6 +1274,17 @@
             this.LabelPktUUCP.TabIndex = 9;
             this.LabelPktUUCP.Text = "0";
             this.LabelPktUUCP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ButtonTablicaPrzeliczeniowa
+            // 
+            this.ButtonTablicaPrzeliczeniowa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonTablicaPrzeliczeniowa.Location = new System.Drawing.Point(868, 36);
+            this.ButtonTablicaPrzeliczeniowa.Name = "ButtonTablicaPrzeliczeniowa";
+            this.ButtonTablicaPrzeliczeniowa.Size = new System.Drawing.Size(198, 27);
+            this.ButtonTablicaPrzeliczeniowa.TabIndex = 21;
+            this.ButtonTablicaPrzeliczeniowa.Text = "Tablica przeliczeniowa";
+            this.ButtonTablicaPrzeliczeniowa.UseVisualStyleBackColor = true;
+            this.ButtonTablicaPrzeliczeniowa.Click += new System.EventHandler(this.ButtonTablicaPrzeliczeniowa_Click);
             // 
             // groupBox1
             // 

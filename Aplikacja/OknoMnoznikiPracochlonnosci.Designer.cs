@@ -55,18 +55,21 @@
             this.label22 = new System.Windows.Forms.Label();
             this.TabPagePersonel = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.ComboBoxMnPrProgr = new System.Windows.Forms.ComboBox();
-            this.ComboBoxMnPrZnajJ = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMnPrDoswJ = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.ComboBoxMnPrAnal = new System.Windows.Forms.ComboBox();
-            this.ComboBoxMnPrZnajA = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMnPrDoswA = new System.Windows.Forms.ComboBox();
             this.ComboBoxMnPrZesp = new System.Windows.Forms.ComboBox();
-            this.ComboBoxMnPrZnajP = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMnPrDoswP = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -75,6 +78,9 @@
             this.label28 = new System.Windows.Forms.Label();
             this.TabPagePlatforma = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
             this.ComboBoxMnPrOgrCz = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -86,6 +92,9 @@
             this.label31 = new System.Windows.Forms.Label();
             this.TabPageProjekt = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.ComboBoxMnPrNarzP = new System.Windows.Forms.ComboBox();
             this.ComboBoxMnPrLokal = new System.Windows.Forms.ComboBox();
@@ -97,15 +106,6 @@
             this.label34 = new System.Windows.Forms.Label();
             this.ButtonOk = new System.Windows.Forms.Button();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
             this.GroupBoxMnoPrac.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.TabPageProdukt.SuspendLayout();
@@ -227,7 +227,7 @@
             this.label36.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.label36.Size = new System.Drawing.Size(118, 71);
             this.label36.TabIndex = 38;
-            this.label36.Text = "Mnożnik pracochłonności";
+            this.label36.Text = "Nazwa mnożnika pracochłonności";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label35
@@ -499,9 +499,9 @@
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 3;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.62344F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.13641F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.33622F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.10375F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.6561F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.14409F));
             this.tableLayoutPanel3.Controls.Add(this.label44, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label41, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.label38, 2, 0);
@@ -511,12 +511,12 @@
             this.tableLayoutPanel3.Controls.Add(this.label10, 0, 5);
             this.tableLayoutPanel3.Controls.Add(this.label11, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.ComboBoxMnPrProgr, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.ComboBoxMnPrZnajJ, 1, 6);
+            this.tableLayoutPanel3.Controls.Add(this.ComboBoxMnPrDoswJ, 1, 6);
             this.tableLayoutPanel3.Controls.Add(this.label16, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.ComboBoxMnPrAnal, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.ComboBoxMnPrZnajA, 1, 4);
+            this.tableLayoutPanel3.Controls.Add(this.ComboBoxMnPrDoswA, 1, 4);
             this.tableLayoutPanel3.Controls.Add(this.ComboBoxMnPrZesp, 1, 3);
-            this.tableLayoutPanel3.Controls.Add(this.ComboBoxMnPrZnajP, 1, 5);
+            this.tableLayoutPanel3.Controls.Add(this.ComboBoxMnPrDoswP, 1, 5);
             this.tableLayoutPanel3.Controls.Add(this.label23, 2, 1);
             this.tableLayoutPanel3.Controls.Add(this.label24, 2, 2);
             this.tableLayoutPanel3.Controls.Add(this.label25, 2, 3);
@@ -537,6 +537,51 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1041, 484);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
+            // label44
+            // 
+            this.label44.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label44.Location = new System.Drawing.Point(3, 0);
+            this.label44.Name = "label44";
+            this.label44.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.label44.Size = new System.Drawing.Size(120, 69);
+            this.label44.TabIndex = 39;
+            this.label44.Text = "Nazwa mnożnika pracochłonności";
+            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label41
+            // 
+            this.label41.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label41.Location = new System.Drawing.Point(129, 0);
+            this.label41.Name = "label41";
+            this.label41.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.label41.Size = new System.Drawing.Size(386, 69);
+            this.label41.TabIndex = 38;
+            this.label41.Text = "Poziom oceny danego mnożnika";
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label38
+            // 
+            this.label38.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label38.Location = new System.Drawing.Point(521, 0);
+            this.label38.Name = "label38";
+            this.label38.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.label38.Size = new System.Drawing.Size(517, 69);
+            this.label38.TabIndex = 40;
+            this.label38.Text = "Krótki opis";
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -545,9 +590,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(3, 414);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(114, 70);
+            this.label5.Size = new System.Drawing.Size(120, 70);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Doświadczenie w stosowaniu języka i narzędzi";
+            this.label5.Text = "Doświadczenie \r\nw stosowaniu języka i narzędzi";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
@@ -558,7 +603,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(3, 69);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 69);
+            this.label6.Size = new System.Drawing.Size(120, 69);
             this.label6.TabIndex = 15;
             this.label6.Text = "Umiejętności analityków wymagań";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -571,7 +616,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(3, 138);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 69);
+            this.label7.Size = new System.Drawing.Size(120, 69);
             this.label7.TabIndex = 16;
             this.label7.Text = "Umiejętności programistów";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -584,9 +629,9 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(3, 345);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(114, 69);
+            this.label10.Size = new System.Drawing.Size(120, 69);
             this.label10.TabIndex = 19;
-            this.label10.Text = "Doświadczenie w korzystaniu z platformy";
+            this.label10.Text = "Doświadczenie \r\nw korzystaniu \r\nz platformy";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label11
@@ -597,7 +642,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(3, 207);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(114, 69);
+            this.label11.Size = new System.Drawing.Size(120, 69);
             this.label11.TabIndex = 20;
             this.label11.Text = "Ciągłość zespołu";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -614,31 +659,31 @@
             "Nominalny: 55 percentyl - przeciętni programiści",
             "Wysoki: 75 percentyl - dobrzy programiści",
             "Bardzo wysoki: 90 percentyl - najlepsi programiści"});
-            this.ComboBoxMnPrProgr.Location = new System.Drawing.Point(123, 161);
+            this.ComboBoxMnPrProgr.Location = new System.Drawing.Point(129, 161);
             this.ComboBoxMnPrProgr.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
             this.ComboBoxMnPrProgr.Name = "ComboBoxMnPrProgr";
-            this.ComboBoxMnPrProgr.Size = new System.Drawing.Size(390, 24);
+            this.ComboBoxMnPrProgr.Size = new System.Drawing.Size(386, 24);
             this.ComboBoxMnPrProgr.TabIndex = 32;
             this.ComboBoxMnPrProgr.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrProgr_SelectedIndexChanged);
             // 
-            // ComboBoxMnPrZnajJ
+            // ComboBoxMnPrDoswJ
             // 
-            this.ComboBoxMnPrZnajJ.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ComboBoxMnPrZnajJ.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxMnPrZnajJ.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ComboBoxMnPrZnajJ.FormattingEnabled = true;
-            this.ComboBoxMnPrZnajJ.Items.AddRange(new object[] {
+            this.ComboBoxMnPrDoswJ.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrDoswJ.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxMnPrDoswJ.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxMnPrDoswJ.FormattingEnabled = true;
+            this.ComboBoxMnPrDoswJ.Items.AddRange(new object[] {
             "Bardzo niski: poniżej 2 miesięcy",
             "Niski: 6 miesięcy",
             "Nominalny: 1 rok",
             "Wysoki: 3 lata",
             "Bardzo wysoki: powyżej 6 lat"});
-            this.ComboBoxMnPrZnajJ.Location = new System.Drawing.Point(123, 437);
-            this.ComboBoxMnPrZnajJ.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
-            this.ComboBoxMnPrZnajJ.Name = "ComboBoxMnPrZnajJ";
-            this.ComboBoxMnPrZnajJ.Size = new System.Drawing.Size(390, 24);
-            this.ComboBoxMnPrZnajJ.TabIndex = 34;
-            this.ComboBoxMnPrZnajJ.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrZnajJ_SelectedIndexChanged);
+            this.ComboBoxMnPrDoswJ.Location = new System.Drawing.Point(129, 437);
+            this.ComboBoxMnPrDoswJ.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
+            this.ComboBoxMnPrDoswJ.Name = "ComboBoxMnPrDoswJ";
+            this.ComboBoxMnPrDoswJ.Size = new System.Drawing.Size(386, 24);
+            this.ComboBoxMnPrDoswJ.TabIndex = 34;
+            this.ComboBoxMnPrDoswJ.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrDoswJ_SelectedIndexChanged);
             // 
             // label16
             // 
@@ -648,9 +693,9 @@
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(3, 276);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(114, 69);
+            this.label16.Size = new System.Drawing.Size(120, 69);
             this.label16.TabIndex = 25;
-            this.label16.Text = "Doświadczenie w tworzeniu aplikacji";
+            this.label16.Text = "Doświadczenie \r\nw tworzeniu aplikacji";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ComboBoxMnPrAnal
@@ -665,31 +710,31 @@
             "Nominalny: 55 percentyl - przeciętni analitycy",
             "Wysoki: 75 percentyl - dobrzy analitycy",
             "Bardzo wysoki: 90 percentyl - najlepsi analitycy"});
-            this.ComboBoxMnPrAnal.Location = new System.Drawing.Point(123, 92);
+            this.ComboBoxMnPrAnal.Location = new System.Drawing.Point(129, 92);
             this.ComboBoxMnPrAnal.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
             this.ComboBoxMnPrAnal.Name = "ComboBoxMnPrAnal";
-            this.ComboBoxMnPrAnal.Size = new System.Drawing.Size(390, 24);
+            this.ComboBoxMnPrAnal.Size = new System.Drawing.Size(386, 24);
             this.ComboBoxMnPrAnal.TabIndex = 31;
             this.ComboBoxMnPrAnal.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrAnal_SelectedIndexChanged);
             // 
-            // ComboBoxMnPrZnajA
+            // ComboBoxMnPrDoswA
             // 
-            this.ComboBoxMnPrZnajA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ComboBoxMnPrZnajA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxMnPrZnajA.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ComboBoxMnPrZnajA.FormattingEnabled = true;
-            this.ComboBoxMnPrZnajA.Items.AddRange(new object[] {
+            this.ComboBoxMnPrDoswA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrDoswA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxMnPrDoswA.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxMnPrDoswA.FormattingEnabled = true;
+            this.ComboBoxMnPrDoswA.Items.AddRange(new object[] {
             "Bardzo niski: poniżej 2 miesięcy",
             "Niski: 6 miesięcy",
             "Nominalny: 1 rok",
             "Wysoki: 3 lata",
             "Bardzo wysoki: powyżej 6 lat"});
-            this.ComboBoxMnPrZnajA.Location = new System.Drawing.Point(123, 299);
-            this.ComboBoxMnPrZnajA.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
-            this.ComboBoxMnPrZnajA.Name = "ComboBoxMnPrZnajA";
-            this.ComboBoxMnPrZnajA.Size = new System.Drawing.Size(390, 24);
-            this.ComboBoxMnPrZnajA.TabIndex = 37;
-            this.ComboBoxMnPrZnajA.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrZnajA_SelectedIndexChanged);
+            this.ComboBoxMnPrDoswA.Location = new System.Drawing.Point(129, 299);
+            this.ComboBoxMnPrDoswA.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
+            this.ComboBoxMnPrDoswA.Name = "ComboBoxMnPrDoswA";
+            this.ComboBoxMnPrDoswA.Size = new System.Drawing.Size(386, 24);
+            this.ComboBoxMnPrDoswA.TabIndex = 37;
+            this.ComboBoxMnPrDoswA.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrDoswA_SelectedIndexChanged);
             // 
             // ComboBoxMnPrZesp
             // 
@@ -703,37 +748,37 @@
             "Nominalny: rotacja dotyka 12% zespołu rocznie",
             "Wysoki: rotacja dotyka 6% zespołu rocznie",
             "Bardzo wysoki: rotacja dotyka 3% zespołu rocznie"});
-            this.ComboBoxMnPrZesp.Location = new System.Drawing.Point(123, 230);
+            this.ComboBoxMnPrZesp.Location = new System.Drawing.Point(129, 230);
             this.ComboBoxMnPrZesp.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
             this.ComboBoxMnPrZesp.Name = "ComboBoxMnPrZesp";
-            this.ComboBoxMnPrZesp.Size = new System.Drawing.Size(390, 24);
+            this.ComboBoxMnPrZesp.Size = new System.Drawing.Size(386, 24);
             this.ComboBoxMnPrZesp.TabIndex = 36;
             this.ComboBoxMnPrZesp.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrZesp_SelectedIndexChanged);
             // 
-            // ComboBoxMnPrZnajP
+            // ComboBoxMnPrDoswP
             // 
-            this.ComboBoxMnPrZnajP.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ComboBoxMnPrZnajP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxMnPrZnajP.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ComboBoxMnPrZnajP.FormattingEnabled = true;
-            this.ComboBoxMnPrZnajP.Items.AddRange(new object[] {
+            this.ComboBoxMnPrDoswP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMnPrDoswP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxMnPrDoswP.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxMnPrDoswP.FormattingEnabled = true;
+            this.ComboBoxMnPrDoswP.Items.AddRange(new object[] {
             "Bardzo niski: poniżej 2 miesięcy",
             "Niski: 6 miesięcy",
             "Nominalny: 1 rok",
             "Wysoki: 3 lata",
             "Bardzo wysoki: powyżej 6 lat"});
-            this.ComboBoxMnPrZnajP.Location = new System.Drawing.Point(123, 368);
-            this.ComboBoxMnPrZnajP.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
-            this.ComboBoxMnPrZnajP.Name = "ComboBoxMnPrZnajP";
-            this.ComboBoxMnPrZnajP.Size = new System.Drawing.Size(390, 24);
-            this.ComboBoxMnPrZnajP.TabIndex = 41;
-            this.ComboBoxMnPrZnajP.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrZnajP_SelectedIndexChanged);
+            this.ComboBoxMnPrDoswP.Location = new System.Drawing.Point(129, 368);
+            this.ComboBoxMnPrDoswP.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
+            this.ComboBoxMnPrDoswP.Name = "ComboBoxMnPrDoswP";
+            this.ComboBoxMnPrDoswP.Size = new System.Drawing.Size(386, 24);
+            this.ComboBoxMnPrDoswP.TabIndex = 41;
+            this.ComboBoxMnPrDoswP.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrDoswP_SelectedIndexChanged);
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label23.Location = new System.Drawing.Point(519, 77);
+            this.label23.Location = new System.Drawing.Point(521, 77);
             this.label23.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(35, 16);
@@ -744,7 +789,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label24.Location = new System.Drawing.Point(519, 146);
+            this.label24.Location = new System.Drawing.Point(521, 146);
             this.label24.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(35, 16);
@@ -755,7 +800,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label25.Location = new System.Drawing.Point(519, 215);
+            this.label25.Location = new System.Drawing.Point(521, 215);
             this.label25.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(35, 16);
@@ -766,7 +811,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label26.Location = new System.Drawing.Point(519, 284);
+            this.label26.Location = new System.Drawing.Point(521, 284);
             this.label26.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(35, 16);
@@ -777,7 +822,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label27.Location = new System.Drawing.Point(519, 353);
+            this.label27.Location = new System.Drawing.Point(521, 353);
             this.label27.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(35, 16);
@@ -788,7 +833,7 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label28.Location = new System.Drawing.Point(519, 422);
+            this.label28.Location = new System.Drawing.Point(521, 422);
             this.label28.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(35, 16);
@@ -835,6 +880,51 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1038, 265);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
+            // label45
+            // 
+            this.label45.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label45.Location = new System.Drawing.Point(3, 0);
+            this.label45.Name = "label45";
+            this.label45.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.label45.Size = new System.Drawing.Size(120, 66);
+            this.label45.TabIndex = 39;
+            this.label45.Text = "Nazwa mnożnika pracochłonności";
+            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label42
+            // 
+            this.label42.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label42.Location = new System.Drawing.Point(129, 0);
+            this.label42.Name = "label42";
+            this.label42.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.label42.Size = new System.Drawing.Size(421, 66);
+            this.label42.TabIndex = 38;
+            this.label42.Text = "Poziom oceny danego mnożnika";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label39
+            // 
+            this.label39.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label39.Location = new System.Drawing.Point(556, 0);
+            this.label39.Name = "label39";
+            this.label39.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.label39.Size = new System.Drawing.Size(479, 66);
+            this.label39.TabIndex = 40;
+            this.label39.Text = "Krótki opis";
+            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ComboBoxMnPrOgrCz
             // 
             this.ComboBoxMnPrOgrCz.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -842,12 +932,12 @@
             this.ComboBoxMnPrOgrCz.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrOgrCz.FormattingEnabled = true;
             this.ComboBoxMnPrOgrCz.Items.AddRange(new object[] {
-            "Nominalny",
-            "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.ComboBoxMnPrOgrCz.Location = new System.Drawing.Point(129, 78);
-            this.ComboBoxMnPrOgrCz.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            "Nominalny: ≤ 50% zużycia dostępnego czasu wykonania",
+            "Wysoki: 70% zużycia dostępnego czasu wykonania",
+            "Bardzo wysoki: 85% zużycia dostępnego czasu wykonania",
+            "Ekstra wysoki: 95% zużycia dostępnego czasu wykonania"});
+            this.ComboBoxMnPrOgrCz.Location = new System.Drawing.Point(129, 88);
+            this.ComboBoxMnPrOgrCz.Margin = new System.Windows.Forms.Padding(3, 22, 3, 3);
             this.ComboBoxMnPrOgrCz.Name = "ComboBoxMnPrOgrCz";
             this.ComboBoxMnPrOgrCz.Size = new System.Drawing.Size(421, 24);
             this.ComboBoxMnPrOgrCz.TabIndex = 0;
@@ -886,12 +976,12 @@
             this.ComboBoxMnPrOgrP.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrOgrP.FormattingEnabled = true;
             this.ComboBoxMnPrOgrP.Items.AddRange(new object[] {
-            "Nominalny",
-            "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.ComboBoxMnPrOgrP.Location = new System.Drawing.Point(129, 144);
-            this.ComboBoxMnPrOgrP.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            "Nominalny: ≤ 50% użycia dostępnej pamięci",
+            "Wysoki: 70% użycia dostępnej pamięci",
+            "Bardzo wysoki: 85% użycia dostępnej pamięci",
+            "Ekstra wysoki: 95% użycia dostępnej pamięci"});
+            this.ComboBoxMnPrOgrP.Location = new System.Drawing.Point(129, 154);
+            this.ComboBoxMnPrOgrP.Margin = new System.Windows.Forms.Padding(3, 22, 3, 3);
             this.ComboBoxMnPrOgrP.Name = "ComboBoxMnPrOgrP";
             this.ComboBoxMnPrOgrP.Size = new System.Drawing.Size(421, 24);
             this.ComboBoxMnPrOgrP.TabIndex = 27;
@@ -917,12 +1007,12 @@
             this.ComboBoxMnPrZmP.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrZmP.FormattingEnabled = true;
             this.ComboBoxMnPrZmP.Items.AddRange(new object[] {
-            "Niski",
-            "Nominalny",
-            "Wysoki",
-            "Bardzo wysoki"});
-            this.ComboBoxMnPrZmP.Location = new System.Drawing.Point(129, 210);
-            this.ComboBoxMnPrZmP.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            "Niski: duża zmiana co 12 miesięcy, mała zmiana co miesiąc",
+            "Nominalny: duża zmiana co 6 miesięcy, mała zmiana co 2 tygodnie",
+            "Wysoki: duża zmiana co 2 miesiące, mała zmiana co tydzień",
+            "Bardzo wysoki: duża zmiana co 2 tygodnie, mała zmiana co 2 dni"});
+            this.ComboBoxMnPrZmP.Location = new System.Drawing.Point(129, 220);
+            this.ComboBoxMnPrZmP.Margin = new System.Windows.Forms.Padding(3, 22, 3, 3);
             this.ComboBoxMnPrZmP.Name = "ComboBoxMnPrZmP";
             this.ComboBoxMnPrZmP.Size = new System.Drawing.Size(421, 24);
             this.ComboBoxMnPrZmP.TabIndex = 28;
@@ -974,9 +1064,9 @@
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 3;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.11005F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.27751F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.61244F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.83525F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.16858F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.09195F));
             this.tableLayoutPanel5.Controls.Add(this.label46, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.label43, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.label40, 2, 0);
@@ -999,6 +1089,51 @@
             this.tableLayoutPanel5.Size = new System.Drawing.Size(1044, 260);
             this.tableLayoutPanel5.TabIndex = 2;
             // 
+            // label46
+            // 
+            this.label46.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label46.Location = new System.Drawing.Point(3, 0);
+            this.label46.Name = "label46";
+            this.label46.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.label46.Size = new System.Drawing.Size(127, 65);
+            this.label46.TabIndex = 39;
+            this.label46.Text = "Nazwa mnożnika pracochłonności";
+            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label43
+            // 
+            this.label43.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label43.Location = new System.Drawing.Point(136, 0);
+            this.label43.Name = "label43";
+            this.label43.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.label43.Size = new System.Drawing.Size(475, 65);
+            this.label43.TabIndex = 38;
+            this.label43.Text = "Poziom oceny danego mnożnika";
+            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label40
+            // 
+            this.label40.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label40.Location = new System.Drawing.Point(617, 0);
+            this.label40.Name = "label40";
+            this.label40.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.label40.Size = new System.Drawing.Size(424, 65);
+            this.label40.TabIndex = 40;
+            this.label40.Text = "Krótki opis";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1008,7 +1143,7 @@
             this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(3, 195);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 65);
+            this.label1.Size = new System.Drawing.Size(127, 65);
             this.label1.TabIndex = 6;
             this.label1.Text = "Ograniczenia nałożone na harmonogram";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1020,17 +1155,16 @@
             this.ComboBoxMnPrNarzP.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrNarzP.FormattingEnabled = true;
             this.ComboBoxMnPrNarzP.Items.AddRange(new object[] {
-            "Bardzo niski",
-            "Niski",
-            "Nominalny",
-            "Wysoki",
-            "Bardzo wysoki"});
-            this.ComboBoxMnPrNarzP.Location = new System.Drawing.Point(139, 77);
-            this.ComboBoxMnPrNarzP.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            "Bardzo niski: narzędzia do edycji, programowania i debugowania",
+            "Niski: proste narzędzia CASE, mała integracja",
+            "Nominalny: podstawowe narzędzia cyklu życia, umiarkowanie zintegrowane",
+            "Wysoki: dojrzałe narzędzia cyklu życia, umiarkowanie zintegrowane",
+            "Bardzo wysoki: proaktywne narzędzia cyklu życia, w pełni zintegrowane"});
+            this.ComboBoxMnPrNarzP.Location = new System.Drawing.Point(136, 86);
+            this.ComboBoxMnPrNarzP.Margin = new System.Windows.Forms.Padding(3, 21, 3, 3);
             this.ComboBoxMnPrNarzP.Name = "ComboBoxMnPrNarzP";
-            this.ComboBoxMnPrNarzP.Size = new System.Drawing.Size(393, 24);
+            this.ComboBoxMnPrNarzP.Size = new System.Drawing.Size(475, 24);
             this.ComboBoxMnPrNarzP.TabIndex = 0;
-            this.ToolTip.SetToolTip(this.ComboBoxMnPrNarzP, "Niski 15 percentyl\r\nWysoki 50 percentyl");
             this.ComboBoxMnPrNarzP.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrNarzP_SelectedIndexChanged);
             // 
             // ComboBoxMnPrLokal
@@ -1040,16 +1174,16 @@
             this.ComboBoxMnPrLokal.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrLokal.FormattingEnabled = true;
             this.ComboBoxMnPrLokal.Items.AddRange(new object[] {
-            "Bardzo niski",
-            "Niski",
-            "Nominalny",
-            "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.ComboBoxMnPrLokal.Location = new System.Drawing.Point(139, 142);
-            this.ComboBoxMnPrLokal.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            "Bardzo niski: w różnych państwach / telefon, poczta",
+            "Niski:  w wielu miastach i przedsiębiorstwach / telefon, FAX",
+            "Nominalny: w wielu miastach lub przedsiębiorstwach / e-mail",
+            "Wysoki: w tym samym mieście lub obszarze metropolitalnym / komunikatory",
+            "Bardzo wysoki: w tym samym budynku lub kompleksie / video konferencje",
+            "Ekstra wysoki: w tym samym miejscu / interaktywne multimedia"});
+            this.ComboBoxMnPrLokal.Location = new System.Drawing.Point(136, 151);
+            this.ComboBoxMnPrLokal.Margin = new System.Windows.Forms.Padding(3, 21, 3, 3);
             this.ComboBoxMnPrLokal.Name = "ComboBoxMnPrLokal";
-            this.ComboBoxMnPrLokal.Size = new System.Drawing.Size(393, 24);
+            this.ComboBoxMnPrLokal.Size = new System.Drawing.Size(475, 24);
             this.ComboBoxMnPrLokal.TabIndex = 27;
             this.ComboBoxMnPrLokal.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrLokal_SelectedIndexChanged);
             // 
@@ -1060,15 +1194,15 @@
             this.ComboBoxMnPrHarm.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxMnPrHarm.FormattingEnabled = true;
             this.ComboBoxMnPrHarm.Items.AddRange(new object[] {
-            "Bardzo niski",
-            "Niski",
-            "Nominalny",
-            "Wysoki",
-            "Bardzo wysoki"});
-            this.ComboBoxMnPrHarm.Location = new System.Drawing.Point(139, 207);
-            this.ComboBoxMnPrHarm.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            "Bardzo niski: 75% nominalnego harmonogramu",
+            "Niski: 85% nominalnego harmonogramu",
+            "Nominalny: 100% nominalnego harmonogramu",
+            "Wysoki: 130% nominalnego harmonogramu",
+            "Bardzo wysoki: 160% nominalnego harmonogramu"});
+            this.ComboBoxMnPrHarm.Location = new System.Drawing.Point(136, 216);
+            this.ComboBoxMnPrHarm.Margin = new System.Windows.Forms.Padding(3, 21, 3, 3);
             this.ComboBoxMnPrHarm.Name = "ComboBoxMnPrHarm";
-            this.ComboBoxMnPrHarm.Size = new System.Drawing.Size(393, 24);
+            this.ComboBoxMnPrHarm.Size = new System.Drawing.Size(475, 24);
             this.ComboBoxMnPrHarm.TabIndex = 28;
             this.ComboBoxMnPrHarm.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrHarm_SelectedIndexChanged);
             // 
@@ -1080,7 +1214,7 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(3, 65);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(130, 65);
+            this.label15.Size = new System.Drawing.Size(127, 65);
             this.label15.TabIndex = 24;
             this.label15.Text = "Wykorzystanie narzędzi programistycznych";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1093,16 +1227,16 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 130);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 65);
+            this.label2.Size = new System.Drawing.Size(127, 65);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Programowanie w wielu lokalizacjach";
+            this.label2.Text = "Programowanie \r\nw wielu lokalizacjach";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label32
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label32.Location = new System.Drawing.Point(538, 73);
+            this.label32.Location = new System.Drawing.Point(617, 73);
             this.label32.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(35, 16);
@@ -1113,7 +1247,7 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label33.Location = new System.Drawing.Point(538, 138);
+            this.label33.Location = new System.Drawing.Point(617, 138);
             this.label33.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(35, 16);
@@ -1124,7 +1258,7 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label34.Location = new System.Drawing.Point(538, 203);
+            this.label34.Location = new System.Drawing.Point(617, 203);
             this.label34.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(35, 16);
@@ -1141,141 +1275,6 @@
             this.ButtonOk.TabIndex = 6;
             this.ButtonOk.Text = "OK";
             this.ButtonOk.UseVisualStyleBackColor = true;
-            // 
-            // label38
-            // 
-            this.label38.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label38.Location = new System.Drawing.Point(519, 0);
-            this.label38.Name = "label38";
-            this.label38.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label38.Size = new System.Drawing.Size(519, 69);
-            this.label38.TabIndex = 40;
-            this.label38.Text = "Krótki opis";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label39
-            // 
-            this.label39.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label39.Location = new System.Drawing.Point(556, 0);
-            this.label39.Name = "label39";
-            this.label39.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label39.Size = new System.Drawing.Size(479, 66);
-            this.label39.TabIndex = 40;
-            this.label39.Text = "Krótki opis";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label40
-            // 
-            this.label40.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label40.Location = new System.Drawing.Point(538, 0);
-            this.label40.Name = "label40";
-            this.label40.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label40.Size = new System.Drawing.Size(503, 65);
-            this.label40.TabIndex = 40;
-            this.label40.Text = "Krótki opis";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label41
-            // 
-            this.label41.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label41.Location = new System.Drawing.Point(123, 0);
-            this.label41.Name = "label41";
-            this.label41.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label41.Size = new System.Drawing.Size(390, 69);
-            this.label41.TabIndex = 38;
-            this.label41.Text = "Poziom oceny danego mnożnika";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label42
-            // 
-            this.label42.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label42.Location = new System.Drawing.Point(129, 0);
-            this.label42.Name = "label42";
-            this.label42.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label42.Size = new System.Drawing.Size(421, 66);
-            this.label42.TabIndex = 38;
-            this.label42.Text = "Poziom oceny danego mnożnika";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label43
-            // 
-            this.label43.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label43.Location = new System.Drawing.Point(139, 0);
-            this.label43.Name = "label43";
-            this.label43.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label43.Size = new System.Drawing.Size(393, 65);
-            this.label43.TabIndex = 38;
-            this.label43.Text = "Poziom oceny danego mnożnika";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label44
-            // 
-            this.label44.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label44.Location = new System.Drawing.Point(3, 0);
-            this.label44.Name = "label44";
-            this.label44.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label44.Size = new System.Drawing.Size(114, 69);
-            this.label44.TabIndex = 39;
-            this.label44.Text = "Mnożnik pracochłonności";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label45
-            // 
-            this.label45.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label45.Location = new System.Drawing.Point(3, 0);
-            this.label45.Name = "label45";
-            this.label45.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label45.Size = new System.Drawing.Size(120, 66);
-            this.label45.TabIndex = 39;
-            this.label45.Text = "Mnożnik pracochłonności";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label46
-            // 
-            this.label46.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label46.Location = new System.Drawing.Point(3, 0);
-            this.label46.Name = "label46";
-            this.label46.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label46.Size = new System.Drawing.Size(130, 65);
-            this.label46.TabIndex = 39;
-            this.label46.Text = "Mnożnik pracochłonności";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // OknoMnoznikiPracochlonnosci
             // 
@@ -1334,10 +1333,10 @@
         private System.Windows.Forms.ComboBox ComboBoxMnPrDoku;
         private System.Windows.Forms.ComboBox ComboBoxMnPrAnal;
         private System.Windows.Forms.ComboBox ComboBoxMnPrProgr;
-        private System.Windows.Forms.ComboBox ComboBoxMnPrZnajJ;
+        private System.Windows.Forms.ComboBox ComboBoxMnPrDoswJ;
         private System.Windows.Forms.ComboBox ComboBoxMnPrZesp;
-        private System.Windows.Forms.ComboBox ComboBoxMnPrZnajA;
-        private System.Windows.Forms.ComboBox ComboBoxMnPrZnajP;
+        private System.Windows.Forms.ComboBox ComboBoxMnPrDoswA;
+        private System.Windows.Forms.ComboBox ComboBoxMnPrDoswP;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage TabPageProdukt;
         private System.Windows.Forms.TabPage TabPagePersonel;

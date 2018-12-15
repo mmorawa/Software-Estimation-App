@@ -49,6 +49,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.ButtonAnuluj = new System.Windows.Forms.Button();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.GroupBoxCzynSkali.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -57,7 +60,7 @@
             // 
             this.ButtonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.ButtonOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOk.Location = new System.Drawing.Point(206, 400);
+            this.ButtonOk.Location = new System.Drawing.Point(343, 453);
             this.ButtonOk.Name = "ButtonOk";
             this.ButtonOk.Size = new System.Drawing.Size(104, 27);
             this.ButtonOk.TabIndex = 3;
@@ -67,10 +70,10 @@
             // GroupBoxCzynSkali
             // 
             this.GroupBoxCzynSkali.Controls.Add(this.tableLayoutPanel1);
-            this.GroupBoxCzynSkali.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.GroupBoxCzynSkali.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxCzynSkali.Location = new System.Drawing.Point(12, 12);
             this.GroupBoxCzynSkali.Name = "GroupBoxCzynSkali";
-            this.GroupBoxCzynSkali.Size = new System.Drawing.Size(659, 365);
+            this.GroupBoxCzynSkali.Size = new System.Drawing.Size(969, 426);
             this.GroupBoxCzynSkali.TabIndex = 4;
             this.GroupBoxCzynSkali.TabStop = false;
             this.GroupBoxCzynSkali.Text = "Czynniki skali";
@@ -79,34 +82,37 @@
             // 
             this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 136F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 361F));
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSkTyp, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSkElast, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSkRyzyko, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSkZesp, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSkDojrz, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label8, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label9, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label10, 2, 4);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(14, 35);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 390F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 106F));
+            this.tableLayoutPanel1.Controls.Add(this.label13, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label12, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label11, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSkTyp, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSkElast, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSkRyzyko, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSkZesp, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxCzynnSkDojrz, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label6, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label7, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label8, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label9, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label10, 2, 5);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 21);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(626, 324);
+            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(957, 390);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label2
@@ -115,9 +121,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 64);
+            this.label2.Location = new System.Drawing.Point(3, 130);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 64);
+            this.label2.Size = new System.Drawing.Size(124, 65);
             this.label2.TabIndex = 7;
             this.label2.Text = "Elastyczność wytwarzania oprogramowania";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -128,9 +134,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 128);
+            this.label3.Location = new System.Drawing.Point(3, 195);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 64);
+            this.label3.Size = new System.Drawing.Size(124, 65);
             this.label3.TabIndex = 8;
             this.label3.Text = "Zarządzanie ryzykiem";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -141,9 +147,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 192);
+            this.label4.Location = new System.Drawing.Point(3, 260);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 64);
+            this.label4.Size = new System.Drawing.Size(124, 65);
             this.label4.TabIndex = 9;
             this.label4.Text = "Spójność zespołu";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -154,9 +160,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 256);
+            this.label5.Location = new System.Drawing.Point(3, 325);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 68);
+            this.label5.Size = new System.Drawing.Size(124, 65);
             this.label5.TabIndex = 10;
             this.label5.Text = "Dojrzałość procesu";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -167,9 +173,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Location = new System.Drawing.Point(3, 65);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 64);
+            this.label1.Size = new System.Drawing.Size(124, 65);
             this.label1.TabIndex = 6;
             this.label1.Text = "Typowość projektu";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -178,19 +184,19 @@
             // 
             this.ComboBoxCzynnSkTyp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ComboBoxCzynnSkTyp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCzynnSkTyp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzynnSkTyp.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxCzynnSkTyp.FormattingEnabled = true;
             this.ComboBoxCzynnSkTyp.Items.AddRange(new object[] {
-            "Bardzo niski",
-            "Niski",
-            "Nominalny",
-            "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.ComboBoxCzynnSkTyp.Location = new System.Drawing.Point(139, 17);
-            this.ComboBoxCzynnSkTyp.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            "Bardzo niski: całkowicie nietypowy projekt",
+            "Niski: w większości nietypowy projekt",
+            "Nominalny: częściowo nietypowy projekt",
+            "Wysoki: ogólnie znajomy projekt",
+            "Bardzo wysoki: w większości znajomy projekt",
+            "Ekstra wysoki: całkowicie znajomy projekt"});
+            this.ComboBoxCzynnSkTyp.Location = new System.Drawing.Point(133, 86);
+            this.ComboBoxCzynnSkTyp.Margin = new System.Windows.Forms.Padding(3, 21, 3, 3);
             this.ComboBoxCzynnSkTyp.Name = "ComboBoxCzynnSkTyp";
-            this.ComboBoxCzynnSkTyp.Size = new System.Drawing.Size(123, 24);
+            this.ComboBoxCzynnSkTyp.Size = new System.Drawing.Size(384, 24);
             this.ComboBoxCzynnSkTyp.TabIndex = 0;
             this.ComboBoxCzynnSkTyp.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzynnSkTyp_SelectedIndexChanged);
             // 
@@ -198,19 +204,19 @@
             // 
             this.ComboBoxCzynnSkElast.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ComboBoxCzynnSkElast.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCzynnSkElast.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzynnSkElast.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxCzynnSkElast.FormattingEnabled = true;
             this.ComboBoxCzynnSkElast.Items.AddRange(new object[] {
-            "Bardzo niski",
-            "Niski",
-            "Nominalny",
-            "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.ComboBoxCzynnSkElast.Location = new System.Drawing.Point(139, 78);
-            this.ComboBoxCzynnSkElast.Margin = new System.Windows.Forms.Padding(3, 14, 3, 3);
+            "Bardzo niski: rygorystyczne wymagania co do projektu",
+            "Niski: okazjonalne rozluźnienie wymagań",
+            "Nominalny: częściowa swoboda odnośnie wymagań",
+            "Wysoki: ogólna zgodność z wymaganiami",
+            "Bardzo wysoki: częściowa zgodność z wymaganiami",
+            "Ekstra wysoki: wymagana ogólna zgodność z celami projektu"});
+            this.ComboBoxCzynnSkElast.Location = new System.Drawing.Point(133, 151);
+            this.ComboBoxCzynnSkElast.Margin = new System.Windows.Forms.Padding(3, 21, 3, 3);
             this.ComboBoxCzynnSkElast.Name = "ComboBoxCzynnSkElast";
-            this.ComboBoxCzynnSkElast.Size = new System.Drawing.Size(123, 24);
+            this.ComboBoxCzynnSkElast.Size = new System.Drawing.Size(384, 24);
             this.ComboBoxCzynnSkElast.TabIndex = 11;
             this.ComboBoxCzynnSkElast.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzynnSkElast_SelectedIndexChanged);
             // 
@@ -218,19 +224,19 @@
             // 
             this.ComboBoxCzynnSkRyzyko.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ComboBoxCzynnSkRyzyko.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCzynnSkRyzyko.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzynnSkRyzyko.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxCzynnSkRyzyko.FormattingEnabled = true;
             this.ComboBoxCzynnSkRyzyko.Items.AddRange(new object[] {
-            "Bardzo niski",
-            "Niski",
-            "Nominalny",
-            "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.ComboBoxCzynnSkRyzyko.Location = new System.Drawing.Point(139, 145);
-            this.ComboBoxCzynnSkRyzyko.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            "Bardzo niski: małe (20%)",
+            "Niski: częściowe (40%)",
+            "Nominalny: częste (60%)",
+            "Wysoki: na ogół (75%)",
+            "Bardzo wysoki: w większości (90%)",
+            "Ekstra wysoki: całkowite (100%)"});
+            this.ComboBoxCzynnSkRyzyko.Location = new System.Drawing.Point(133, 216);
+            this.ComboBoxCzynnSkRyzyko.Margin = new System.Windows.Forms.Padding(3, 21, 3, 3);
             this.ComboBoxCzynnSkRyzyko.Name = "ComboBoxCzynnSkRyzyko";
-            this.ComboBoxCzynnSkRyzyko.Size = new System.Drawing.Size(123, 24);
+            this.ComboBoxCzynnSkRyzyko.Size = new System.Drawing.Size(384, 24);
             this.ComboBoxCzynnSkRyzyko.TabIndex = 12;
             this.ComboBoxCzynnSkRyzyko.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzynnSkRyzyko_SelectedIndexChanged);
             // 
@@ -238,19 +244,19 @@
             // 
             this.ComboBoxCzynnSkZesp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ComboBoxCzynnSkZesp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCzynnSkZesp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzynnSkZesp.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxCzynnSkZesp.FormattingEnabled = true;
             this.ComboBoxCzynnSkZesp.Items.AddRange(new object[] {
-            "Bardzo niski",
-            "Niski",
-            "Nominalny",
-            "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.ComboBoxCzynnSkZesp.Location = new System.Drawing.Point(139, 209);
-            this.ComboBoxCzynnSkZesp.Margin = new System.Windows.Forms.Padding(3, 17, 3, 3);
+            "Bardzo niski: bardzo trudne interakcje w zespole",
+            "Niski: czasami pojawiają się trudne interakcje w zespole",
+            "Nominalny: zasadniczo kooperatywne interakcje w zespole",
+            "Wysoki: w dużej mierze kooperatywne interakcje w zespole",
+            "Bardzo wysoki: wysoce kooperatywne interakcje w zespole",
+            "Ekstra wysoki: interakcje w zespole pozbawione zakłóceń"});
+            this.ComboBoxCzynnSkZesp.Location = new System.Drawing.Point(133, 281);
+            this.ComboBoxCzynnSkZesp.Margin = new System.Windows.Forms.Padding(3, 21, 3, 3);
             this.ComboBoxCzynnSkZesp.Name = "ComboBoxCzynnSkZesp";
-            this.ComboBoxCzynnSkZesp.Size = new System.Drawing.Size(123, 24);
+            this.ComboBoxCzynnSkZesp.Size = new System.Drawing.Size(384, 24);
             this.ComboBoxCzynnSkZesp.TabIndex = 13;
             this.ComboBoxCzynnSkZesp.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzynnSkZesp_SelectedIndexChanged);
             // 
@@ -258,74 +264,74 @@
             // 
             this.ComboBoxCzynnSkDojrz.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ComboBoxCzynnSkDojrz.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCzynnSkDojrz.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ComboBoxCzynnSkDojrz.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ComboBoxCzynnSkDojrz.FormattingEnabled = true;
             this.ComboBoxCzynnSkDojrz.Items.AddRange(new object[] {
-            "Bardzo niski",
-            "Niski",
-            "Nominalny",
-            "Wysoki",
-            "Bardzo wysoki",
-            "Ekstra wysoki"});
-            this.ComboBoxCzynnSkDojrz.Location = new System.Drawing.Point(139, 274);
-            this.ComboBoxCzynnSkDojrz.Margin = new System.Windows.Forms.Padding(3, 18, 3, 3);
+            "Bardzo niski: SW-CMM Poziom 1 Niższy",
+            "Niski: SW-CMM Poziom 1 Wyższy",
+            "Nominalny: SW-CMM Poziom 2",
+            "Wysoki: SW-CMM Poziom 3",
+            "Bardzo wysoki: SW-CMM Poziom 4",
+            "Ekstra wysoki: SW-CMM Poziom 5"});
+            this.ComboBoxCzynnSkDojrz.Location = new System.Drawing.Point(133, 346);
+            this.ComboBoxCzynnSkDojrz.Margin = new System.Windows.Forms.Padding(3, 21, 3, 3);
             this.ComboBoxCzynnSkDojrz.Name = "ComboBoxCzynnSkDojrz";
-            this.ComboBoxCzynnSkDojrz.Size = new System.Drawing.Size(123, 24);
+            this.ComboBoxCzynnSkDojrz.Size = new System.Drawing.Size(384, 24);
             this.ComboBoxCzynnSkDojrz.TabIndex = 14;
             this.ComboBoxCzynnSkDojrz.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzynnSkDojrz_SelectedIndexChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(268, 8);
+            this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Location = new System.Drawing.Point(523, 73);
             this.label6.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(28, 13);
+            this.label6.Size = new System.Drawing.Size(35, 16);
             this.label6.TabIndex = 15;
             this.label6.Text = "Opis";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(268, 72);
+            this.label7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.Location = new System.Drawing.Point(523, 138);
             this.label7.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(28, 13);
+            this.label7.Size = new System.Drawing.Size(35, 16);
             this.label7.TabIndex = 16;
             this.label7.Text = "Opis";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(268, 136);
+            this.label8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label8.Location = new System.Drawing.Point(523, 203);
             this.label8.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(28, 13);
+            this.label8.Size = new System.Drawing.Size(35, 16);
             this.label8.TabIndex = 17;
             this.label8.Text = "Opis";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.Location = new System.Drawing.Point(268, 200);
+            this.label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label9.Location = new System.Drawing.Point(523, 268);
             this.label9.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(28, 13);
+            this.label9.Size = new System.Drawing.Size(35, 16);
             this.label9.TabIndex = 18;
             this.label9.Text = "Opis";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label10.Location = new System.Drawing.Point(268, 264);
+            this.label10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label10.Location = new System.Drawing.Point(523, 333);
             this.label10.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(28, 13);
+            this.label10.Size = new System.Drawing.Size(35, 16);
             this.label10.TabIndex = 19;
             this.label10.Text = "Opis";
             // 
@@ -333,18 +339,60 @@
             // 
             this.ButtonAnuluj.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.ButtonAnuluj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonAnuluj.Location = new System.Drawing.Point(366, 400);
+            this.ButtonAnuluj.Location = new System.Drawing.Point(503, 453);
             this.ButtonAnuluj.Name = "ButtonAnuluj";
             this.ButtonAnuluj.Size = new System.Drawing.Size(104, 27);
             this.ButtonAnuluj.TabIndex = 5;
             this.ButtonAnuluj.Text = "Anuluj";
             this.ButtonAnuluj.UseVisualStyleBackColor = true;
             // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(3, 0);
+            this.label11.Name = "label11";
+            this.label11.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.label11.Size = new System.Drawing.Size(124, 65);
+            this.label11.TabIndex = 11;
+            this.label11.Text = "Nazwa czynnika skali";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(133, 0);
+            this.label12.Name = "label12";
+            this.label12.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.label12.Size = new System.Drawing.Size(384, 65);
+            this.label12.TabIndex = 11;
+            this.label12.Text = "Poziom oceny danego czynnika";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(523, 0);
+            this.label13.Name = "label13";
+            this.label13.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.label13.Size = new System.Drawing.Size(431, 65);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "Krótki opis";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // OknoCzynnikiSkali
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(718, 467);
+            this.ClientSize = new System.Drawing.Size(993, 504);
             this.Controls.Add(this.ButtonAnuluj);
             this.Controls.Add(this.GroupBoxCzynSkali);
             this.Controls.Add(this.ButtonOk);
@@ -380,5 +428,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
     }
 }

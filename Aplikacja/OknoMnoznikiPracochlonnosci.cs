@@ -31,9 +31,9 @@ namespace Aplikacja
             ComboBoxMnPrAnal.SelectedIndex = OknoGlowne.TabIndEM[5];
             ComboBoxMnPrProgr.SelectedIndex = OknoGlowne.TabIndEM[6];
             ComboBoxMnPrZesp.SelectedIndex = OknoGlowne.TabIndEM[7];
-            ComboBoxMnPrZnajA.SelectedIndex = OknoGlowne.TabIndEM[8];
-            ComboBoxMnPrZnajP.SelectedIndex = OknoGlowne.TabIndEM[9];
-            ComboBoxMnPrZnajJ.SelectedIndex = OknoGlowne.TabIndEM[10];
+            ComboBoxMnPrDoswA.SelectedIndex = OknoGlowne.TabIndEM[8];
+            ComboBoxMnPrDoswP.SelectedIndex = OknoGlowne.TabIndEM[9];
+            ComboBoxMnPrDoswJ.SelectedIndex = OknoGlowne.TabIndEM[10];
             
 
             ComboBoxMnPrOgrCz.SelectedIndex = OknoGlowne.TabIndEM[11];
@@ -91,19 +91,19 @@ namespace Aplikacja
             OknoGlowne.TempTabIndEM[7] = ComboBoxMnPrZesp.SelectedIndex;
         }
 
-        private void ComboBoxMnPrZnajA_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBoxMnPrDoswA_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabIndEM[8] = ComboBoxMnPrZnajA.SelectedIndex;
+            OknoGlowne.TempTabIndEM[8] = ComboBoxMnPrDoswA.SelectedIndex;
         }
 
-        private void ComboBoxMnPrZnajP_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBoxMnPrDoswP_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabIndEM[9] = ComboBoxMnPrZnajP.SelectedIndex;
+            OknoGlowne.TempTabIndEM[9] = ComboBoxMnPrDoswP.SelectedIndex;
         }
 
-        private void ComboBoxMnPrZnajJ_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBoxMnPrDoswJ_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabIndEM[10] = ComboBoxMnPrZnajJ.SelectedIndex;
+            OknoGlowne.TempTabIndEM[10] = ComboBoxMnPrDoswJ.SelectedIndex;
         }
 
         //-----------------Dot. platformy-------------------------------------------
@@ -138,5 +138,7 @@ namespace Aplikacja
         {
             OknoGlowne.TempTabIndEM[16] = ComboBoxMnPrHarm.SelectedIndex;
         }
+
+
     }
 }

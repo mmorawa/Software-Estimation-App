@@ -33,9 +33,9 @@
             this.labelProductName = new System.Windows.Forms.Label();
             this.labelVersion = new System.Windows.Forms.Label();
             this.labelCopyright = new System.Windows.Forms.Label();
-            this.labelCompanyName = new System.Windows.Forms.Label();
-            this.TextBoxOpis = new System.Windows.Forms.TextBox();
             this.okButton = new System.Windows.Forms.Button();
+            this.TextBoxOpis = new System.Windows.Forms.TextBox();
+            this.labelCompanyName = new System.Windows.Forms.Label();
             this.tableLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -59,8 +59,8 @@
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 126F));
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 15F));
+            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 109F));
+            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel.Size = new System.Drawing.Size(443, 265);
             this.tableLayoutPanel.TabIndex = 0;
             // 
@@ -112,6 +112,31 @@
             this.labelCopyright.Text = "Copyright";
             this.labelCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // okButton
+            // 
+            this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.okButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.okButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.okButton.Location = new System.Drawing.Point(336, 235);
+            this.okButton.Name = "okButton";
+            this.okButton.Size = new System.Drawing.Size(104, 27);
+            this.okButton.TabIndex = 24;
+            this.okButton.Text = "&OK";
+            // 
+            // TextBoxOpis
+            // 
+            this.TextBoxOpis.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextBoxOpis.Location = new System.Drawing.Point(152, 110);
+            this.TextBoxOpis.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.TextBoxOpis.Multiline = true;
+            this.TextBoxOpis.Name = "TextBoxOpis";
+            this.TextBoxOpis.ReadOnly = true;
+            this.TextBoxOpis.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.TextBoxOpis.Size = new System.Drawing.Size(288, 103);
+            this.TextBoxOpis.TabIndex = 23;
+            this.TextBoxOpis.TabStop = false;
+            this.TextBoxOpis.Text = "Opis";
+            // 
             // labelCompanyName
             // 
             this.labelCompanyName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -124,30 +149,6 @@
             this.labelCompanyName.Size = new System.Drawing.Size(288, 38);
             this.labelCompanyName.TabIndex = 22;
             this.labelCompanyName.Text = "Company Name";
-            // 
-            // TextBoxOpis
-            // 
-            this.TextBoxOpis.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxOpis.Location = new System.Drawing.Point(152, 110);
-            this.TextBoxOpis.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.TextBoxOpis.Multiline = true;
-            this.TextBoxOpis.Name = "TextBoxOpis";
-            this.TextBoxOpis.ReadOnly = true;
-            this.TextBoxOpis.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.TextBoxOpis.Size = new System.Drawing.Size(288, 120);
-            this.TextBoxOpis.TabIndex = 23;
-            this.TextBoxOpis.TabStop = false;
-            this.TextBoxOpis.Text = "Opis";
-            // 
-            // okButton
-            // 
-            this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.okButton.Location = new System.Drawing.Point(365, 240);
-            this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(75, 22);
-            this.okButton.TabIndex = 24;
-            this.okButton.Text = "&OK";
             // 
             // OknoOAplikacji
             // 
