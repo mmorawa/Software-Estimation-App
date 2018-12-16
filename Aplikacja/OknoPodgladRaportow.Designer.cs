@@ -34,6 +34,12 @@
             this.ButtonPoprzednia = new System.Windows.Forms.Button();
             this.ButtonUstawieniaDruk = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ButtonEksportPDF = new System.Windows.Forms.Button();
+            this.ButtonEksportRTF = new System.Windows.Forms.Button();
+            this.ButtonPowieksz = new System.Windows.Forms.Button();
+            this.ButtonPomniejsz = new System.Windows.Forms.Button();
+            this.LabelStrona = new System.Windows.Forms.Label();
+            this.LabelPowiekszenie = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,16 +57,17 @@
             this.PodgladRaportu.PageColor = System.Drawing.Color.GhostWhite;
             this.PodgladRaportu.PageSize = new System.Drawing.Size(595, 842);
             this.PodgladRaportu.PrivateFonts = null;
-            this.PodgladRaportu.Size = new System.Drawing.Size(828, 541);
+            this.PodgladRaportu.Size = new System.Drawing.Size(847, 711);
             this.PodgladRaportu.TabIndex = 1;
             this.PodgladRaportu.Zoom = MigraDoc.Rendering.Forms.Zoom.OriginalSize;
             this.PodgladRaportu.ZoomPercent = 75;
             // 
             // ButtonDrukuj
             // 
-            this.ButtonDrukuj.Location = new System.Drawing.Point(12, 15);
+            this.ButtonDrukuj.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonDrukuj.Location = new System.Drawing.Point(12, 11);
             this.ButtonDrukuj.Name = "ButtonDrukuj";
-            this.ButtonDrukuj.Size = new System.Drawing.Size(75, 23);
+            this.ButtonDrukuj.Size = new System.Drawing.Size(91, 27);
             this.ButtonDrukuj.TabIndex = 2;
             this.ButtonDrukuj.Text = "Drukuj";
             this.ButtonDrukuj.UseVisualStyleBackColor = true;
@@ -69,9 +76,9 @@
             // ButtonNastepna
             // 
             this.ButtonNastepna.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonNastepna.Location = new System.Drawing.Point(468, 15);
+            this.ButtonNastepna.Location = new System.Drawing.Point(724, 13);
             this.ButtonNastepna.Name = "ButtonNastepna";
-            this.ButtonNastepna.Size = new System.Drawing.Size(75, 23);
+            this.ButtonNastepna.Size = new System.Drawing.Size(96, 27);
             this.ButtonNastepna.TabIndex = 3;
             this.ButtonNastepna.Text = "Następna";
             this.ButtonNastepna.UseVisualStyleBackColor = true;
@@ -80,9 +87,9 @@
             // ButtonPoprzednia
             // 
             this.ButtonPoprzednia.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPoprzednia.Location = new System.Drawing.Point(346, 15);
+            this.ButtonPoprzednia.Location = new System.Drawing.Point(563, 13);
             this.ButtonPoprzednia.Name = "ButtonPoprzednia";
-            this.ButtonPoprzednia.Size = new System.Drawing.Size(98, 23);
+            this.ButtonPoprzednia.Size = new System.Drawing.Size(98, 27);
             this.ButtonPoprzednia.TabIndex = 4;
             this.ButtonPoprzednia.Text = "Poprzednia";
             this.ButtonPoprzednia.UseVisualStyleBackColor = true;
@@ -90,9 +97,10 @@
             // 
             // ButtonUstawieniaDruk
             // 
-            this.ButtonUstawieniaDruk.Location = new System.Drawing.Point(104, 15);
+            this.ButtonUstawieniaDruk.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonUstawieniaDruk.Location = new System.Drawing.Point(109, 11);
             this.ButtonUstawieniaDruk.Name = "ButtonUstawieniaDruk";
-            this.ButtonUstawieniaDruk.Size = new System.Drawing.Size(134, 23);
+            this.ButtonUstawieniaDruk.Size = new System.Drawing.Size(173, 27);
             this.ButtonUstawieniaDruk.TabIndex = 5;
             this.ButtonUstawieniaDruk.Text = "Ustawienia drukowania";
             this.ButtonUstawieniaDruk.UseVisualStyleBackColor = true;
@@ -100,26 +108,97 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.LabelPowiekszenie);
+            this.panel1.Controls.Add(this.LabelStrona);
+            this.panel1.Controls.Add(this.ButtonPomniejsz);
+            this.panel1.Controls.Add(this.ButtonPowieksz);
+            this.panel1.Controls.Add(this.ButtonEksportRTF);
+            this.panel1.Controls.Add(this.ButtonEksportPDF);
             this.panel1.Controls.Add(this.ButtonDrukuj);
             this.panel1.Controls.Add(this.ButtonNastepna);
             this.panel1.Controls.Add(this.ButtonPoprzednia);
             this.panel1.Controls.Add(this.ButtonUstawieniaDruk);
             this.panel1.Location = new System.Drawing.Point(0, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(828, 79);
+            this.panel1.Size = new System.Drawing.Size(847, 79);
             this.panel1.TabIndex = 6;
+            // 
+            // ButtonEksportPDF
+            // 
+            this.ButtonEksportPDF.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonEksportPDF.Location = new System.Drawing.Point(301, 11);
+            this.ButtonEksportPDF.Name = "ButtonEksportPDF";
+            this.ButtonEksportPDF.Size = new System.Drawing.Size(205, 27);
+            this.ButtonEksportPDF.TabIndex = 6;
+            this.ButtonEksportPDF.Text = "Eksportuj do formatu PDF";
+            this.ButtonEksportPDF.UseVisualStyleBackColor = true;
+            this.ButtonEksportPDF.Click += new System.EventHandler(this.ButtonEksportPDF_Click);
+            // 
+            // ButtonEksportRTF
+            // 
+            this.ButtonEksportRTF.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonEksportRTF.Location = new System.Drawing.Point(301, 44);
+            this.ButtonEksportRTF.Name = "ButtonEksportRTF";
+            this.ButtonEksportRTF.Size = new System.Drawing.Size(205, 27);
+            this.ButtonEksportRTF.TabIndex = 7;
+            this.ButtonEksportRTF.Text = "Eksportuj do formatu RTF";
+            this.ButtonEksportRTF.UseVisualStyleBackColor = true;
+            this.ButtonEksportRTF.Click += new System.EventHandler(this.ButtonEksportRTF_Click);
+            // 
+            // ButtonPowieksz
+            // 
+            this.ButtonPowieksz.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonPowieksz.Location = new System.Drawing.Point(724, 44);
+            this.ButtonPowieksz.Name = "ButtonPowieksz";
+            this.ButtonPowieksz.Size = new System.Drawing.Size(96, 27);
+            this.ButtonPowieksz.TabIndex = 8;
+            this.ButtonPowieksz.Text = "Powiększ";
+            this.ButtonPowieksz.UseVisualStyleBackColor = true;
+            this.ButtonPowieksz.Click += new System.EventHandler(this.ButtonPowieksz_Click);
+            // 
+            // ButtonPomniejsz
+            // 
+            this.ButtonPomniejsz.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonPomniejsz.Location = new System.Drawing.Point(563, 44);
+            this.ButtonPomniejsz.Name = "ButtonPomniejsz";
+            this.ButtonPomniejsz.Size = new System.Drawing.Size(98, 27);
+            this.ButtonPomniejsz.TabIndex = 9;
+            this.ButtonPomniejsz.Text = "Pomniejsz";
+            this.ButtonPomniejsz.UseVisualStyleBackColor = true;
+            this.ButtonPomniejsz.Click += new System.EventHandler(this.ButtonPomniejsz_Click);
+            // 
+            // LabelStrona
+            // 
+            this.LabelStrona.AutoSize = true;
+            this.LabelStrona.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelStrona.Location = new System.Drawing.Point(667, 16);
+            this.LabelStrona.Name = "LabelStrona";
+            this.LabelStrona.Size = new System.Drawing.Size(50, 18);
+            this.LabelStrona.TabIndex = 10;
+            this.LabelStrona.Text = "label1";
+            // 
+            // LabelPowiekszenie
+            // 
+            this.LabelPowiekszenie.AutoSize = true;
+            this.LabelPowiekszenie.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelPowiekszenie.Location = new System.Drawing.Point(667, 47);
+            this.LabelPowiekszenie.Name = "LabelPowiekszenie";
+            this.LabelPowiekszenie.Size = new System.Drawing.Size(50, 18);
+            this.LabelPowiekszenie.TabIndex = 11;
+            this.LabelPowiekszenie.Text = "label2";
             // 
             // OknoPodgladRaportow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(828, 541);
+            this.ClientSize = new System.Drawing.Size(847, 711);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PodgladRaportu);
             this.Name = "OknoPodgladRaportow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Podgląd Raportu";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,5 +211,11 @@
         private System.Windows.Forms.Button ButtonPoprzednia;
         private System.Windows.Forms.Button ButtonUstawieniaDruk;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button ButtonEksportRTF;
+        private System.Windows.Forms.Button ButtonEksportPDF;
+        private System.Windows.Forms.Button ButtonPomniejsz;
+        private System.Windows.Forms.Button ButtonPowieksz;
+        private System.Windows.Forms.Label LabelPowiekszenie;
+        private System.Windows.Forms.Label LabelStrona;
     }
 }

@@ -11,10 +11,6 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using MigraDoc.DocumentObjectModel;
 using MigraDoc.Rendering;
-using MigraDoc.DocumentObjectModel.Tables;
-using TabAlignment = MigraDoc.DocumentObjectModel.TabAlignment;
-using MigraDoc.DocumentObjectModel.Fields;
-
 
 
 //! Przestrzeń nazw Password_Manager obejmuje całą aplikację Menedżera Haseł.
@@ -924,19 +920,7 @@ namespace Aplikacja
         private void ButtonOpisProjektu_Click(object sender, EventArgs e)
         {
             /*
-            using (SaveFileDialog ZapiszPDFDialog = new SaveFileDialog())
-            {
-                ZapiszPDFDialog.Filter = "Plik Raportu | *.pdf";
-                ZapiszPDFDialog.FileName = "Raport_Opis_Projektu.pdf";
-                ZapiszPDFDialog.Title = "Zapisz plik Raportu jako:";
 
-                DialogResult rezultat = ZapiszPDFDialog.ShowDialog();
-
-
-                //zapisanie danych do pliku tekstowego
-                if (rezultat == DialogResult.OK)
-                {
-                    //ZapiszPDFDialog.FileName;
                     */
 
             // Utworzenie dokumentu przy pomocy MigraDoc
@@ -1063,6 +1047,8 @@ namespace Aplikacja
 
         private void ButtonPodsumowanieProjektu_Click(object sender, EventArgs e)
         {
+            const string NazwaPliku = "Raport_Podsumowanie";
+
             // Utworzenie dokumentu przy pomocy MigraDoc
             var dokument = new Document();
 
@@ -1089,14 +1075,14 @@ namespace Aplikacja
             TrescRaportow.WprowadzoneDane(dokument);
 
 
-            using (OknoPodgladRaportow OknoZalProj = new OknoPodgladRaportow(dokument))
+            using (OknoPodgladRaportow OknoZalProj = new OknoPodgladRaportow(dokument, NazwaPliku))
             {
                 DialogResult rezultat = OknoZalProj.ShowDialog();
 
 
                 if (rezultat == DialogResult.OK)
                 {
-
+                    //??
                 }
             }
         }

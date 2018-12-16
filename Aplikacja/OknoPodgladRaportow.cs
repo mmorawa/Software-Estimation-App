@@ -1,19 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
-using System.Drawing.Imaging;
 using System.Drawing.Printing;
 using System.Windows.Forms;
-using System.IO;
-using PdfSharp.Drawing;
-using PdfSharp.Forms;
 using MigraDoc.DocumentObjectModel.IO;
 using MigraDoc.Rendering;
 using MigraDoc.Rendering.Printing; 
-using MigraDoc.Rendering.Forms;
 using MigraDoc.RtfRendering;
 using MigraDoc.DocumentObjectModel;
 
@@ -22,9 +13,11 @@ namespace Aplikacja
     public partial class OknoPodgladRaportow : Form
     {
 
-        public OknoPodgladRaportow(Document Raport)
+        public OknoPodgladRaportow(Document Raport, string NazwaPliku)
         {
             InitializeComponent();
+
+            NazwaPlikuZapis = NazwaPliku;
 
             // Create a new MigraDoc document
             var dokument = Raport;
@@ -32,20 +25,26 @@ namespace Aplikacja
             // HACK
             var ddl = DdlWriter.WriteToString(dokument);
             PodgladRaportu.Ddl = ddl;
+
+            LabelPowiekszenie.Text = "75%";
+            LabelStrona.Text = "Str. " + PodgladRaportu.Page.ToString();
         }
 
         readonly PrinterSettings _printerSettings = new PrinterSettings();
+        string NazwaPlikuZapis;
+        int Powiekszenie = 75;
 
 
         private void ButtonPoprzednia_Click(object sender, EventArgs e)
         {
             PodgladRaportu.PrevPage();
-            //UpdateStatusBar();
+            LabelStrona.Text = "Str. " + PodgladRaportu.Page.ToString();
         }
 
         private void ButtonNastepna_Click(object sender, EventArgs e)
         {
             PodgladRaportu.NextPage();
+            LabelStrona.Text = "Str. " + PodgladRaportu.Page.ToString();
         }
 
         private void ButtonUstawieniaDruk_Click(object sender, EventArgs e)
@@ -87,6 +86,65 @@ namespace Aplikacja
                 printDocument.Print();
                 //#endif
 
+        }
+
+        private void ButtonEksportPDF_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog ZapiszPDFDialog = new SaveFileDialog())
+            {
+                ZapiszPDFDialog.Filter = "Plik Raportu | *.pdf";
+                ZapiszPDFDialog.FileName = NazwaPlikuZapis + ".pdf";
+                ZapiszPDFDialog.Title = "Zapisz plik Raportu jako:";
+
+                DialogResult rezultat = ZapiszPDFDialog.ShowDialog();
+
+                if (rezultat == DialogResult.OK)
+                {               
+                    var printer = new PdfDocumentRenderer();
+                    printer.DocumentRenderer = PodgladRaportu.Renderer;
+                    printer.Document = PodgladRaportu.Document;
+                    printer.RenderDocument();
+                    PodgladRaportu.Document.BindToRenderer(null);
+                    printer.Save(ZapiszPDFDialog.FileName);
+
+                    Process.Start(ZapiszPDFDialog.FileName);
+                }
+            }
+        }
+
+        private void ButtonEksportRTF_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog ZapiszRTFDialog = new SaveFileDialog())
+            {
+                ZapiszRTFDialog.Filter = "Plik Raportu | *.rtf";
+                ZapiszRTFDialog.FileName = NazwaPlikuZapis + ".rtf";
+                ZapiszRTFDialog.Title = "Zapisz plik Raportu jako:";
+
+                DialogResult rezultat = ZapiszRTFDialog.ShowDialog();
+
+                if (rezultat == DialogResult.OK)
+                {
+
+                    var rtf = new RtfDocumentRenderer();
+                    rtf.Render(PodgladRaportu.Document, "test.rtf", null);
+
+                    Process.Start("test.rtf");
+                }
+            }
+        }
+
+        private void ButtonPowieksz_Click(object sender, EventArgs e)
+        {
+            Powiekszenie += 10;
+            PodgladRaportu.ZoomPercent = Powiekszenie;
+            LabelPowiekszenie.Text = Powiekszenie.ToString() + "%"; 
+        }
+
+        private void ButtonPomniejsz_Click(object sender, EventArgs e)
+        {
+            Powiekszenie -= 10;
+            PodgladRaportu.ZoomPercent = Powiekszenie;
+            LabelPowiekszenie.Text = Powiekszenie.ToString() + "%";
         }
     }
 }
