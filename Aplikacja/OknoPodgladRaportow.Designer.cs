@@ -64,6 +64,7 @@
             this.ButtonDrukuj.TabIndex = 2;
             this.ButtonDrukuj.Text = "Drukuj";
             this.ButtonDrukuj.UseVisualStyleBackColor = true;
+            this.ButtonDrukuj.Click += new System.EventHandler(this.ButtonDrukuj_Click);
             // 
             // ButtonNastepna
             // 

@@ -12,7 +12,7 @@ using PdfSharp.Drawing;
 using PdfSharp.Forms;
 using MigraDoc.DocumentObjectModel.IO;
 using MigraDoc.Rendering;
-using MigraDoc.Rendering.Printing; // TODO: MigraDoc.Rendering.Printing doesn't exist
+using MigraDoc.Rendering.Printing; 
 using MigraDoc.Rendering.Forms;
 using MigraDoc.RtfRendering;
 using MigraDoc.DocumentObjectModel;
@@ -58,6 +58,35 @@ namespace Aplikacja
                     dialog.ShowDialog();
                 }
             
+        }
+
+        private void ButtonDrukuj_Click(object sender, EventArgs e)
+        {
+
+                //#if true_ // TODO: MigraDoc.Rendering.Printing doesn't exist
+                // Reuse the renderer from the preview
+                var renderer = PodgladRaportu.Renderer;
+                if (renderer == null)
+                    return;
+
+                var pageCount = renderer.FormattedDocument.PageCount;
+
+                // Creates a PrintDocument that simplifies printing of MigraDoc documents
+                var printDocument = new MigraDocPrintDocument();
+
+                // Attach the current printer settings
+                printDocument.PrinterSettings = _printerSettings;
+
+                if (_printerSettings.PrintRange == PrintRange.Selection)
+                    printDocument.SelectedPage = PodgladRaportu.Page;
+
+                // Attach the current document renderer
+                printDocument.Renderer = renderer;
+
+                // Print the document
+                printDocument.Print();
+                //#endif
+
         }
     }
 }

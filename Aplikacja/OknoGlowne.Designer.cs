@@ -157,7 +157,7 @@
             this.ToolStripMenuPomoc});
             this.PasekMenu.Location = new System.Drawing.Point(0, 0);
             this.PasekMenu.Name = "PasekMenu";
-            this.PasekMenu.Size = new System.Drawing.Size(1132, 25);
+            this.PasekMenu.Size = new System.Drawing.Size(1082, 25);
             this.PasekMenu.TabIndex = 0;
             this.PasekMenu.Text = "Pasek Menu";
             // 
@@ -669,10 +669,10 @@
             // 
             // ButtonOszacuj
             // 
-            this.ButtonOszacuj.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOszacuj.Location = new System.Drawing.Point(143, 21);
+            this.ButtonOszacuj.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOszacuj.Location = new System.Drawing.Point(652, 118);
             this.ButtonOszacuj.Name = "ButtonOszacuj";
-            this.ButtonOszacuj.Size = new System.Drawing.Size(137, 44);
+            this.ButtonOszacuj.Size = new System.Drawing.Size(130, 50);
             this.ButtonOszacuj.TabIndex = 2;
             this.ButtonOszacuj.Text = "Oszacuj";
             this.ButtonOszacuj.UseVisualStyleBackColor = true;
@@ -1014,13 +1014,11 @@
             // 
             // GroupBoxWyniki
             // 
-            this.GroupBoxWyniki.Controls.Add(this.GroupBoxRaporty);
             this.GroupBoxWyniki.Controls.Add(this.tableLayoutPanel3);
-            this.GroupBoxWyniki.Controls.Add(this.ButtonOszacuj);
             this.GroupBoxWyniki.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.GroupBoxWyniki.Location = new System.Drawing.Point(582, 69);
+            this.GroupBoxWyniki.Location = new System.Drawing.Point(582, 225);
             this.GroupBoxWyniki.Name = "GroupBoxWyniki";
-            this.GroupBoxWyniki.Size = new System.Drawing.Size(531, 668);
+            this.GroupBoxWyniki.Size = new System.Drawing.Size(472, 512);
             this.GroupBoxWyniki.TabIndex = 5;
             this.GroupBoxWyniki.TabStop = false;
             this.GroupBoxWyniki.Text = "Wyniki";
@@ -1030,9 +1028,10 @@
             this.GroupBoxRaporty.Controls.Add(this.ButtonOpisProjektu);
             this.GroupBoxRaporty.Controls.Add(this.ButtonPodsumowanieProjektu);
             this.GroupBoxRaporty.Controls.Add(this.ButtonOszacowanie);
-            this.GroupBoxRaporty.Location = new System.Drawing.Point(41, 483);
+            this.GroupBoxRaporty.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.GroupBoxRaporty.Location = new System.Drawing.Point(844, 69);
             this.GroupBoxRaporty.Name = "GroupBoxRaporty";
-            this.GroupBoxRaporty.Size = new System.Drawing.Size(224, 165);
+            this.GroupBoxRaporty.Size = new System.Drawing.Size(210, 150);
             this.GroupBoxRaporty.TabIndex = 20;
             this.GroupBoxRaporty.TabStop = false;
             this.GroupBoxRaporty.Text = "Raporty";
@@ -1040,7 +1039,7 @@
             // ButtonOpisProjektu
             // 
             this.ButtonOpisProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOpisProjektu.Location = new System.Drawing.Point(29, 44);
+            this.ButtonOpisProjektu.Location = new System.Drawing.Point(24, 36);
             this.ButtonOpisProjektu.Name = "ButtonOpisProjektu";
             this.ButtonOpisProjektu.Size = new System.Drawing.Size(173, 27);
             this.ButtonOpisProjektu.TabIndex = 16;
@@ -1051,7 +1050,7 @@
             // ButtonPodsumowanieProjektu
             // 
             this.ButtonPodsumowanieProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPodsumowanieProjektu.Location = new System.Drawing.Point(29, 110);
+            this.ButtonPodsumowanieProjektu.Location = new System.Drawing.Point(24, 102);
             this.ButtonPodsumowanieProjektu.Name = "ButtonPodsumowanieProjektu";
             this.ButtonPodsumowanieProjektu.Size = new System.Drawing.Size(173, 27);
             this.ButtonPodsumowanieProjektu.TabIndex = 19;
@@ -1062,7 +1061,7 @@
             // ButtonOszacowanie
             // 
             this.ButtonOszacowanie.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOszacowanie.Location = new System.Drawing.Point(29, 77);
+            this.ButtonOszacowanie.Location = new System.Drawing.Point(24, 69);
             this.ButtonOszacowanie.Name = "ButtonOszacowanie";
             this.ButtonOszacowanie.Size = new System.Drawing.Size(173, 27);
             this.ButtonOszacowanie.TabIndex = 18;
@@ -1090,7 +1089,7 @@
             this.tableLayoutPanel3.Controls.Add(this.label28, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.label32, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.LabelPktUUCP, 2, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(16, 85);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(6, 21);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 7;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.07692F));
@@ -1100,7 +1099,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(498, 325);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(453, 325);
             this.tableLayoutPanel3.TabIndex = 15;
             // 
             // label34
@@ -1108,9 +1107,9 @@
             this.label34.AutoSize = true;
             this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label34.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label34.Location = new System.Drawing.Point(369, 230);
+            this.label34.Location = new System.Drawing.Point(336, 230);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(126, 46);
+            this.label34.Size = new System.Drawing.Size(114, 46);
             this.label34.TabIndex = 16;
             this.label34.Text = "zł";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1121,10 +1120,10 @@
             this.LabelWynikKoszt.BackColor = System.Drawing.SystemColors.Control;
             this.LabelWynikKoszt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LabelWynikKoszt.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikKoszt.Location = new System.Drawing.Point(135, 230);
+            this.LabelWynikKoszt.Location = new System.Drawing.Point(123, 230);
             this.LabelWynikKoszt.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelWynikKoszt.Name = "LabelWynikKoszt";
-            this.LabelWynikKoszt.Size = new System.Drawing.Size(228, 46);
+            this.LabelWynikKoszt.Size = new System.Drawing.Size(207, 46);
             this.LabelWynikKoszt.TabIndex = 16;
             this.LabelWynikKoszt.Text = "0";
             this.LabelWynikKoszt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1135,7 +1134,7 @@
             this.label31.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label31.Location = new System.Drawing.Point(3, 230);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(126, 46);
+            this.label31.Size = new System.Drawing.Size(114, 46);
             this.label31.TabIndex = 16;
             this.label31.Text = "Koszt projektu:";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1146,7 +1145,7 @@
             this.tableLayoutPanel3.SetColumnSpan(this.label25, 2);
             this.label25.Location = new System.Drawing.Point(3, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(360, 32);
+            this.label25.Size = new System.Drawing.Size(319, 32);
             this.label25.TabIndex = 3;
             this.label25.Text = "Liczba nieskorygowanych punktów  przypadków użycia UUCP:";
             // 
@@ -1155,9 +1154,9 @@
             this.label30.AutoSize = true;
             this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label30.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label30.Location = new System.Drawing.Point(369, 184);
+            this.label30.Location = new System.Drawing.Point(336, 184);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(126, 46);
+            this.label30.Size = new System.Drawing.Size(114, 46);
             this.label30.TabIndex = 11;
             this.label30.Text = "miesięcy";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1167,9 +1166,9 @@
             this.label26.AutoSize = true;
             this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label26.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label26.Location = new System.Drawing.Point(369, 92);
+            this.label26.Location = new System.Drawing.Point(336, 92);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(126, 46);
+            this.label26.Size = new System.Drawing.Size(114, 46);
             this.label26.TabIndex = 14;
             this.label26.Text = "SLOC";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1180,10 +1179,10 @@
             this.LabelWynikHarm.BackColor = System.Drawing.SystemColors.Control;
             this.LabelWynikHarm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LabelWynikHarm.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikHarm.Location = new System.Drawing.Point(135, 184);
+            this.LabelWynikHarm.Location = new System.Drawing.Point(123, 184);
             this.LabelWynikHarm.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelWynikHarm.Name = "LabelWynikHarm";
-            this.LabelWynikHarm.Size = new System.Drawing.Size(228, 46);
+            this.LabelWynikHarm.Size = new System.Drawing.Size(207, 46);
             this.LabelWynikHarm.TabIndex = 8;
             this.LabelWynikHarm.Text = "0";
             this.LabelWynikHarm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1193,9 +1192,9 @@
             this.label29.AutoSize = true;
             this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label29.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label29.Location = new System.Drawing.Point(369, 138);
+            this.label29.Location = new System.Drawing.Point(336, 138);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(126, 46);
+            this.label29.Size = new System.Drawing.Size(114, 46);
             this.label29.TabIndex = 10;
             this.label29.Text = "osobomiesięcy";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1206,7 +1205,7 @@
             this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label27.Location = new System.Drawing.Point(3, 184);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(126, 46);
+            this.label27.Size = new System.Drawing.Size(114, 46);
             this.label27.TabIndex = 5;
             this.label27.Text = "Harmonogram:";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1217,10 +1216,10 @@
             this.LabelRozmiar.BackColor = System.Drawing.SystemColors.Control;
             this.LabelRozmiar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LabelRozmiar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelRozmiar.Location = new System.Drawing.Point(135, 92);
+            this.LabelRozmiar.Location = new System.Drawing.Point(123, 92);
             this.LabelRozmiar.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelRozmiar.Name = "LabelRozmiar";
-            this.LabelRozmiar.Size = new System.Drawing.Size(228, 46);
+            this.LabelRozmiar.Size = new System.Drawing.Size(207, 46);
             this.LabelRozmiar.TabIndex = 13;
             this.LabelRozmiar.Text = "0";
             this.LabelRozmiar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1231,10 +1230,10 @@
             this.LabelWynikPrac.BackColor = System.Drawing.SystemColors.Control;
             this.LabelWynikPrac.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LabelWynikPrac.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikPrac.Location = new System.Drawing.Point(135, 138);
+            this.LabelWynikPrac.Location = new System.Drawing.Point(123, 138);
             this.LabelWynikPrac.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelWynikPrac.Name = "LabelWynikPrac";
-            this.LabelWynikPrac.Size = new System.Drawing.Size(228, 46);
+            this.LabelWynikPrac.Size = new System.Drawing.Size(207, 46);
             this.LabelWynikPrac.TabIndex = 7;
             this.LabelWynikPrac.Text = "0";
             this.LabelWynikPrac.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1245,7 +1244,7 @@
             this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label28.Location = new System.Drawing.Point(3, 138);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(126, 46);
+            this.label28.Size = new System.Drawing.Size(114, 46);
             this.label28.TabIndex = 6;
             this.label28.Text = "Pracochłonność:";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1256,7 +1255,7 @@
             this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label32.Location = new System.Drawing.Point(3, 92);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(126, 46);
+            this.label32.Size = new System.Drawing.Size(114, 46);
             this.label32.TabIndex = 12;
             this.label32.Text = "Rozmiar:";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1267,10 +1266,10 @@
             this.LabelPktUUCP.BackColor = System.Drawing.SystemColors.Control;
             this.LabelPktUUCP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LabelPktUUCP.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelPktUUCP.Location = new System.Drawing.Point(369, 0);
+            this.LabelPktUUCP.Location = new System.Drawing.Point(336, 0);
             this.LabelPktUUCP.MinimumSize = new System.Drawing.Size(100, 0);
             this.LabelPktUUCP.Name = "LabelPktUUCP";
-            this.LabelPktUUCP.Size = new System.Drawing.Size(126, 36);
+            this.LabelPktUUCP.Size = new System.Drawing.Size(114, 36);
             this.LabelPktUUCP.TabIndex = 9;
             this.LabelPktUUCP.Text = "0";
             this.LabelPktUUCP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1280,7 +1279,7 @@
             this.ButtonTablicaPrzeliczeniowa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ButtonTablicaPrzeliczeniowa.Location = new System.Drawing.Point(868, 36);
             this.ButtonTablicaPrzeliczeniowa.Name = "ButtonTablicaPrzeliczeniowa";
-            this.ButtonTablicaPrzeliczeniowa.Size = new System.Drawing.Size(198, 27);
+            this.ButtonTablicaPrzeliczeniowa.Size = new System.Drawing.Size(173, 27);
             this.ButtonTablicaPrzeliczeniowa.TabIndex = 21;
             this.ButtonTablicaPrzeliczeniowa.Text = "Tablica przeliczeniowa";
             this.ButtonTablicaPrzeliczeniowa.UseVisualStyleBackColor = true;
@@ -1304,7 +1303,7 @@
             this.ToolStripStatusLabel});
             this.StatusStrip.Location = new System.Drawing.Point(0, 753);
             this.StatusStrip.Name = "StatusStrip";
-            this.StatusStrip.Size = new System.Drawing.Size(1132, 22);
+            this.StatusStrip.Size = new System.Drawing.Size(1082, 22);
             this.StatusStrip.TabIndex = 7;
             this.StatusStrip.Text = "StatusStrip";
             // 
@@ -1331,9 +1330,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1132, 775);
+            this.ClientSize = new System.Drawing.Size(1082, 775);
+            this.Controls.Add(this.GroupBoxRaporty);
             this.Controls.Add(this.ButtonTablicaPrzeliczeniowa);
             this.Controls.Add(this.ButtonKreator);
+            this.Controls.Add(this.ButtonOszacuj);
             this.Controls.Add(this.ButtonKalibracja);
             this.Controls.Add(this.ButtonUstawienia);
             this.Controls.Add(this.ButtonZapiszProjekt);
