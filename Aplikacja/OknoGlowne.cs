@@ -167,6 +167,7 @@ namespace Aplikacja
         double Pracochlonnosc;
         double Harmonogram;
         double Koszt;
+        double SrZespol;
 
         /*******************************************************************************
         *  Metody klasy Form1.
@@ -315,7 +316,7 @@ namespace Aplikacja
         }
 
 
-        //-----------------------------------------------------------------------------------------------
+        //---------------------------------------Dane COCOMO II--------------------------------------------------
 
 
         private void ButtonCzSk_Click(object sender, EventArgs e)
@@ -357,7 +358,7 @@ namespace Aplikacja
         }
 
 
-        //-----------------------------------------------------------------------------------------------
+        //-----------------------------------Dane UCP-----------------------------------------------------
 
         private void TextBoxNazwaProjektu_TextChanged(object sender, EventArgs e)
         {
@@ -459,12 +460,15 @@ namespace Aplikacja
 
             Koszt = Pracochlonnosc * OsoboMGodz * StawkaGodz;
 
+            SrZespol = Pracochlonnosc / Harmonogram;
+
             //Wyświetlenie wyników
             LabelPktUUCP.Text = string.Format("{0:N0}", UUCP);
             LabelRozmiar.Text = string.Format("{0:N0}", Rozmiar);
             LabelWynikPrac.Text = string.Format("{0:N1}", Pracochlonnosc);
             LabelWynikHarm.Text = string.Format("{0:N1}", Harmonogram);
             LabelWynikKoszt.Text = string.Format("{0:N}", Koszt);
+            LabelWynikSrZesp.Text = string.Format("{0:N0}", SrZespol);
 
             string Ostrzezenie = "";
             //Ograniczenia projektu
@@ -644,6 +648,7 @@ namespace Aplikacja
                             Pracochlonnosc = double.Parse(sr.ReadLine());
                             Harmonogram = double.Parse(sr.ReadLine());
                             Koszt = double.Parse(sr.ReadLine());
+                            
 
                             LabelPktUUCP.Text = string.Format("{0:N0}", UUCP);
                             LabelRozmiar.Text = string.Format("{0:N0}", Rozmiar);
@@ -654,6 +659,9 @@ namespace Aplikacja
                             LabelWynikPrac.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
                             LabelWynikHarm.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
                             LabelWynikKoszt.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+
+                            SrZespol = double.Parse(sr.ReadLine());
+                            LabelWynikSrZesp.Text = string.Format("{0:N0}", SrZespol);
                         }
                     }
                     catch (Exception)
@@ -762,6 +770,7 @@ namespace Aplikacja
                 sw.WriteLine(LabelWynikPrac.BackColor.Name);
                 sw.WriteLine(LabelWynikHarm.BackColor.Name);
                 sw.WriteLine(LabelWynikKoszt.BackColor.Name);
+                sw.WriteLine(SrZespol);
 
                 //sw.Dispose();
                 MessageBox.Show("Plik zapisano.");
@@ -821,6 +830,8 @@ namespace Aplikacja
             LabelWynikHarm.BackColor = System.Drawing.Color.FromName("Control");
             LabelWynikKoszt.Text = "0";
             LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("Control");
+            LabelWynikSrZesp.Text = "0";
+
         }
 
 
@@ -1076,31 +1087,6 @@ namespace Aplikacja
 
             // Dodanie tabeli
             TrescRaportow.WprowadzoneDane(dokument);
-
-
-            // Flaga wskazuje na to czy dokument ma być utworzony jako plik Unicode PDF czy jako WinAnsi PDF.
-            // To ustawienie dotyczy wszystkich czcionek użytych w dokumencie.
-            //const bool unicode = true;
-
-            // Utworzenie renderera dla dokumentu
-            //var pdfRenderer = new PdfDocumentRenderer(unicode);
-
-            // Powiązanie dokumentu z rendererem
-            //pdfRenderer.Document = dokument;
-
-            // Wyrenderowanie dokumentu do formatu PDF
-            //pdfRenderer.RenderDocument();
-
-
-            // Wariant z oknem dialogowym
-            //pdfRenderer.PdfDocument.Save(ZapiszPDFDialog.FileName);
-            //Process.Start(ZapiszPDFDialog.FileName);
-
-
-            // Zapisanie dokumentu do pliku PDF
-            //const string filename = "Raport_Oszacowanie_Pracochlonnosci.pdf";
-            //pdfRenderer.PdfDocument.Save(filename);
-
 
 
             using (OknoPodgladRaportow OknoZalProj = new OknoPodgladRaportow(dokument))

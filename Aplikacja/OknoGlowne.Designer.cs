@@ -126,6 +126,9 @@
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.ButtonKreator = new System.Windows.Forms.Button();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.LabelWynikSrZesp = new System.Windows.Forms.Label();
             this.PasekMenu.SuspendLayout();
             this.GroupBoxDaneProjektu.SuspendLayout();
             this.GroupBoxUUCW.SuspendLayout();
@@ -157,7 +160,7 @@
             this.ToolStripMenuPomoc});
             this.PasekMenu.Location = new System.Drawing.Point(0, 0);
             this.PasekMenu.Name = "PasekMenu";
-            this.PasekMenu.Size = new System.Drawing.Size(1082, 25);
+            this.PasekMenu.Size = new System.Drawing.Size(1072, 25);
             this.PasekMenu.TabIndex = 0;
             this.PasekMenu.Text = "Pasek Menu";
             // 
@@ -338,7 +341,7 @@
             this.GroupBoxDaneProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxDaneProjektu.Location = new System.Drawing.Point(12, 69);
             this.GroupBoxDaneProjektu.Name = "GroupBoxDaneProjektu";
-            this.GroupBoxDaneProjektu.Size = new System.Drawing.Size(564, 150);
+            this.GroupBoxDaneProjektu.Size = new System.Drawing.Size(564, 129);
             this.GroupBoxDaneProjektu.TabIndex = 1;
             this.GroupBoxDaneProjektu.TabStop = false;
             this.GroupBoxDaneProjektu.Text = "Dane projektu";
@@ -403,7 +406,7 @@
             // 
             this.GroupBoxUUCW.Controls.Add(this.tableLayoutPanel1);
             this.GroupBoxUUCW.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.GroupBoxUUCW.Location = new System.Drawing.Point(12, 225);
+            this.GroupBoxUUCW.Location = new System.Drawing.Point(12, 204);
             this.GroupBoxUUCW.Name = "GroupBoxUUCW";
             this.GroupBoxUUCW.Size = new System.Drawing.Size(564, 200);
             this.GroupBoxUUCW.TabIndex = 2;
@@ -680,7 +683,7 @@
             // 
             // ButtonMnPr
             // 
-            this.ButtonMnPr.Location = new System.Drawing.Point(295, 30);
+            this.ButtonMnPr.Location = new System.Drawing.Point(293, 30);
             this.ButtonMnPr.Name = "ButtonMnPr";
             this.ButtonMnPr.Size = new System.Drawing.Size(173, 44);
             this.ButtonMnPr.TabIndex = 3;
@@ -690,7 +693,7 @@
             // 
             // ButtonCzSk
             // 
-            this.ButtonCzSk.Location = new System.Drawing.Point(68, 30);
+            this.ButtonCzSk.Location = new System.Drawing.Point(87, 30);
             this.ButtonCzSk.Name = "ButtonCzSk";
             this.ButtonCzSk.Size = new System.Drawing.Size(173, 44);
             this.ButtonCzSk.TabIndex = 2;
@@ -757,7 +760,7 @@
             // 
             this.GroupBoxUAW.Controls.Add(this.tableLayoutPanel2);
             this.GroupBoxUAW.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.GroupBoxUAW.Location = new System.Drawing.Point(9, 431);
+            this.GroupBoxUAW.Location = new System.Drawing.Point(9, 410);
             this.GroupBoxUAW.Name = "GroupBoxUAW";
             this.GroupBoxUAW.Size = new System.Drawing.Size(567, 206);
             this.GroupBoxUAW.TabIndex = 3;
@@ -1016,7 +1019,7 @@
             // 
             this.GroupBoxWyniki.Controls.Add(this.tableLayoutPanel3);
             this.GroupBoxWyniki.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.GroupBoxWyniki.Location = new System.Drawing.Point(582, 225);
+            this.GroupBoxWyniki.Location = new System.Drawing.Point(582, 204);
             this.GroupBoxWyniki.Name = "GroupBoxWyniki";
             this.GroupBoxWyniki.Size = new System.Drawing.Size(472, 512);
             this.GroupBoxWyniki.TabIndex = 5;
@@ -1031,7 +1034,7 @@
             this.GroupBoxRaporty.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxRaporty.Location = new System.Drawing.Point(844, 69);
             this.GroupBoxRaporty.Name = "GroupBoxRaporty";
-            this.GroupBoxRaporty.Size = new System.Drawing.Size(210, 150);
+            this.GroupBoxRaporty.Size = new System.Drawing.Size(210, 129);
             this.GroupBoxRaporty.TabIndex = 20;
             this.GroupBoxRaporty.TabStop = false;
             this.GroupBoxRaporty.Text = "Raporty";
@@ -1039,7 +1042,7 @@
             // ButtonOpisProjektu
             // 
             this.ButtonOpisProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOpisProjektu.Location = new System.Drawing.Point(24, 36);
+            this.ButtonOpisProjektu.Location = new System.Drawing.Point(24, 25);
             this.ButtonOpisProjektu.Name = "ButtonOpisProjektu";
             this.ButtonOpisProjektu.Size = new System.Drawing.Size(173, 27);
             this.ButtonOpisProjektu.TabIndex = 16;
@@ -1050,7 +1053,7 @@
             // ButtonPodsumowanieProjektu
             // 
             this.ButtonPodsumowanieProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPodsumowanieProjektu.Location = new System.Drawing.Point(24, 102);
+            this.ButtonPodsumowanieProjektu.Location = new System.Drawing.Point(24, 88);
             this.ButtonPodsumowanieProjektu.Name = "ButtonPodsumowanieProjektu";
             this.ButtonPodsumowanieProjektu.Size = new System.Drawing.Size(173, 27);
             this.ButtonPodsumowanieProjektu.TabIndex = 19;
@@ -1061,7 +1064,7 @@
             // ButtonOszacowanie
             // 
             this.ButtonOszacowanie.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOszacowanie.Location = new System.Drawing.Point(24, 69);
+            this.ButtonOszacowanie.Location = new System.Drawing.Point(24, 58);
             this.ButtonOszacowanie.Name = "ButtonOszacowanie";
             this.ButtonOszacowanie.Size = new System.Drawing.Size(173, 27);
             this.ButtonOszacowanie.TabIndex = 18;
@@ -1075,6 +1078,8 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.70683F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.18876F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.30522F));
+            this.tableLayoutPanel3.Controls.Add(this.LabelWynikSrZesp, 0, 6);
+            this.tableLayoutPanel3.Controls.Add(this.label33, 0, 6);
             this.tableLayoutPanel3.Controls.Add(this.label34, 2, 5);
             this.tableLayoutPanel3.Controls.Add(this.LabelWynikKoszt, 1, 5);
             this.tableLayoutPanel3.Controls.Add(this.label31, 0, 5);
@@ -1089,6 +1094,7 @@
             this.tableLayoutPanel3.Controls.Add(this.label28, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.label32, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.LabelPktUUCP, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label35, 2, 6);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(6, 21);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 7;
@@ -1119,7 +1125,7 @@
             this.LabelWynikKoszt.AutoSize = true;
             this.LabelWynikKoszt.BackColor = System.Drawing.SystemColors.Control;
             this.LabelWynikKoszt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikKoszt.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikKoszt.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.LabelWynikKoszt.Location = new System.Drawing.Point(123, 230);
             this.LabelWynikKoszt.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelWynikKoszt.Name = "LabelWynikKoszt";
@@ -1178,7 +1184,7 @@
             this.LabelWynikHarm.AutoSize = true;
             this.LabelWynikHarm.BackColor = System.Drawing.SystemColors.Control;
             this.LabelWynikHarm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikHarm.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikHarm.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.LabelWynikHarm.Location = new System.Drawing.Point(123, 184);
             this.LabelWynikHarm.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelWynikHarm.Name = "LabelWynikHarm";
@@ -1215,7 +1221,7 @@
             this.LabelRozmiar.AutoSize = true;
             this.LabelRozmiar.BackColor = System.Drawing.SystemColors.Control;
             this.LabelRozmiar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelRozmiar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelRozmiar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.LabelRozmiar.Location = new System.Drawing.Point(123, 92);
             this.LabelRozmiar.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelRozmiar.Name = "LabelRozmiar";
@@ -1229,7 +1235,7 @@
             this.LabelWynikPrac.AutoSize = true;
             this.LabelWynikPrac.BackColor = System.Drawing.SystemColors.Control;
             this.LabelWynikPrac.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikPrac.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikPrac.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.LabelWynikPrac.Location = new System.Drawing.Point(123, 138);
             this.LabelWynikPrac.MinimumSize = new System.Drawing.Size(150, 0);
             this.LabelWynikPrac.Name = "LabelWynikPrac";
@@ -1265,7 +1271,7 @@
             this.LabelPktUUCP.AutoSize = true;
             this.LabelPktUUCP.BackColor = System.Drawing.SystemColors.Control;
             this.LabelPktUUCP.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelPktUUCP.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelPktUUCP.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.LabelPktUUCP.Location = new System.Drawing.Point(336, 0);
             this.LabelPktUUCP.MinimumSize = new System.Drawing.Size(100, 0);
             this.LabelPktUUCP.Name = "LabelPktUUCP";
@@ -1290,7 +1296,7 @@
             this.groupBox1.Controls.Add(this.ButtonMnPr);
             this.groupBox1.Controls.Add(this.ButtonCzSk);
             this.groupBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 643);
+            this.groupBox1.Location = new System.Drawing.Point(12, 622);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(564, 94);
             this.groupBox1.TabIndex = 6;
@@ -1301,9 +1307,9 @@
             // 
             this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripStatusLabel});
-            this.StatusStrip.Location = new System.Drawing.Point(0, 753);
+            this.StatusStrip.Location = new System.Drawing.Point(0, 731);
             this.StatusStrip.Name = "StatusStrip";
-            this.StatusStrip.Size = new System.Drawing.Size(1082, 22);
+            this.StatusStrip.Size = new System.Drawing.Size(1072, 22);
             this.StatusStrip.TabIndex = 7;
             this.StatusStrip.Text = "StatusStrip";
             // 
@@ -1325,12 +1331,49 @@
             this.ButtonKreator.UseVisualStyleBackColor = true;
             this.ButtonKreator.Click += new System.EventHandler(this.ButtonKreator_Click);
             // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label33.Location = new System.Drawing.Point(3, 276);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(114, 49);
+            this.label33.TabIndex = 23;
+            this.label33.Text = "Średnia wielkość zespołu";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label35.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label35.Location = new System.Drawing.Point(336, 276);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(114, 49);
+            this.label35.TabIndex = 24;
+            this.label35.Text = "programistów";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LabelWynikSrZesp
+            // 
+            this.LabelWynikSrZesp.AutoSize = true;
+            this.LabelWynikSrZesp.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikSrZesp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelWynikSrZesp.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikSrZesp.Location = new System.Drawing.Point(123, 276);
+            this.LabelWynikSrZesp.MinimumSize = new System.Drawing.Size(150, 0);
+            this.LabelWynikSrZesp.Name = "LabelWynikSrZesp";
+            this.LabelWynikSrZesp.Size = new System.Drawing.Size(207, 49);
+            this.LabelWynikSrZesp.TabIndex = 25;
+            this.LabelWynikSrZesp.Text = "0";
+            this.LabelWynikSrZesp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // OknoGlowne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1082, 775);
+            this.ClientSize = new System.Drawing.Size(1072, 753);
             this.Controls.Add(this.GroupBoxRaporty);
             this.Controls.Add(this.ButtonTablicaPrzeliczeniowa);
             this.Controls.Add(this.ButtonKreator);
@@ -1478,6 +1521,9 @@
         private System.Windows.Forms.Button ButtonTablicaPrzeliczeniowa;
         private System.Windows.Forms.ToolStripMenuItem ToolStripTablicaPrzeliczeniowa;
         private System.Windows.Forms.ToolStripMenuItem ToolStripOszacuj;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label LabelWynikSrZesp;
+        private System.Windows.Forms.Label label35;
     }
 }
 
