@@ -664,7 +664,7 @@
             // 
             this.ButtonMnPr.Location = new System.Drawing.Point(293, 30);
             this.ButtonMnPr.Name = "ButtonMnPr";
-            this.ButtonMnPr.Size = new System.Drawing.Size(173, 44);
+            this.ButtonMnPr.Size = new System.Drawing.Size(219, 27);
             this.ButtonMnPr.TabIndex = 3;
             this.ButtonMnPr.Text = "Mnożniki pracochłonności";
             this.ButtonMnPr.UseVisualStyleBackColor = true;
@@ -672,9 +672,9 @@
             // 
             // ButtonCzSk
             // 
-            this.ButtonCzSk.Location = new System.Drawing.Point(87, 30);
+            this.ButtonCzSk.Location = new System.Drawing.Point(72, 30);
             this.ButtonCzSk.Name = "ButtonCzSk";
-            this.ButtonCzSk.Size = new System.Drawing.Size(173, 44);
+            this.ButtonCzSk.Size = new System.Drawing.Size(173, 27);
             this.ButtonCzSk.TabIndex = 2;
             this.ButtonCzSk.Text = "Czynniki skali";
             this.ButtonCzSk.UseVisualStyleBackColor = true;
@@ -1266,7 +1266,7 @@
             // ButtonOpisProjektu
             // 
             this.ButtonOpisProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOpisProjektu.Location = new System.Drawing.Point(14, 39);
+            this.ButtonOpisProjektu.Location = new System.Drawing.Point(6, 30);
             this.ButtonOpisProjektu.Name = "ButtonOpisProjektu";
             this.ButtonOpisProjektu.Size = new System.Drawing.Size(123, 27);
             this.ButtonOpisProjektu.TabIndex = 16;
@@ -1277,7 +1277,7 @@
             // ButtonPodsumowanieProjektu
             // 
             this.ButtonPodsumowanieProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPodsumowanieProjektu.Location = new System.Drawing.Point(305, 39);
+            this.ButtonPodsumowanieProjektu.Location = new System.Drawing.Point(301, 30);
             this.ButtonPodsumowanieProjektu.Name = "ButtonPodsumowanieProjektu";
             this.ButtonPodsumowanieProjektu.Size = new System.Drawing.Size(155, 27);
             this.ButtonPodsumowanieProjektu.TabIndex = 19;
@@ -1288,7 +1288,7 @@
             // ButtonOszacowanie
             // 
             this.ButtonOszacowanie.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOszacowanie.Location = new System.Drawing.Point(143, 39);
+            this.ButtonOszacowanie.Location = new System.Drawing.Point(135, 30);
             this.ButtonOszacowanie.Name = "ButtonOszacowanie";
             this.ButtonOszacowanie.Size = new System.Drawing.Size(156, 27);
             this.ButtonOszacowanie.TabIndex = 18;

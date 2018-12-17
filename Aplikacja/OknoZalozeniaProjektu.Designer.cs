@@ -55,6 +55,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.NumericMaxHarm = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
+            this.ButtonPrzywrocDomyslne = new System.Windows.Forms.Button();
             this.GroupBoxSzczDaneProjektu.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumericStawkaGodz)).BeginInit();
@@ -70,7 +71,7 @@
             // ButtonAnuluj
             // 
             this.ButtonAnuluj.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.ButtonAnuluj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonAnuluj.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ButtonAnuluj.Location = new System.Drawing.Point(311, 584);
             this.ButtonAnuluj.Name = "ButtonAnuluj";
             this.ButtonAnuluj.Size = new System.Drawing.Size(104, 27);
@@ -81,7 +82,7 @@
             // ButtonOk
             // 
             this.ButtonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.ButtonOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOk.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ButtonOk.Location = new System.Drawing.Point(151, 584);
             this.ButtonOk.Name = "ButtonOk";
             this.ButtonOk.Size = new System.Drawing.Size(104, 27);
@@ -91,9 +92,10 @@
             // 
             // GroupBoxSzczDaneProjektu
             // 
+            this.GroupBoxSzczDaneProjektu.Controls.Add(this.ButtonPrzywrocDomyslne);
             this.GroupBoxSzczDaneProjektu.Controls.Add(this.tableLayoutPanel2);
             this.GroupBoxSzczDaneProjektu.Controls.Add(this.GroupBoxOgraniczenia);
-            this.GroupBoxSzczDaneProjektu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.GroupBoxSzczDaneProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxSzczDaneProjektu.Location = new System.Drawing.Point(12, 12);
             this.GroupBoxSzczDaneProjektu.Name = "GroupBoxSzczDaneProjektu";
             this.GroupBoxSzczDaneProjektu.Size = new System.Drawing.Size(569, 556);
@@ -314,7 +316,7 @@
             // 
             this.GroupBoxOgraniczenia.Controls.Add(this.CheckBoxAktywacja);
             this.GroupBoxOgraniczenia.Controls.Add(this.TableLayoutOgraniczenia);
-            this.GroupBoxOgraniczenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.GroupBoxOgraniczenia.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxOgraniczenia.Location = new System.Drawing.Point(6, 304);
             this.GroupBoxOgraniczenia.Name = "GroupBoxOgraniczenia";
             this.GroupBoxOgraniczenia.Size = new System.Drawing.Size(540, 221);
@@ -327,7 +329,7 @@
             this.CheckBoxAktywacja.AutoSize = true;
             this.CheckBoxAktywacja.Location = new System.Drawing.Point(12, 32);
             this.CheckBoxAktywacja.Name = "CheckBoxAktywacja";
-            this.CheckBoxAktywacja.Size = new System.Drawing.Size(97, 20);
+            this.CheckBoxAktywacja.Size = new System.Drawing.Size(92, 20);
             this.CheckBoxAktywacja.TabIndex = 30;
             this.CheckBoxAktywacja.Text = "Aktywacja";
             this.CheckBoxAktywacja.UseVisualStyleBackColor = true;
@@ -393,6 +395,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label16.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label16.Location = new System.Drawing.Point(386, 89);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(151, 42);
@@ -421,6 +424,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label17.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label17.Location = new System.Drawing.Point(386, 3);
             this.label17.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label17.Name = "label17";
@@ -444,7 +448,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label10.Location = new System.Drawing.Point(3, 48);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(217, 41);
@@ -473,6 +477,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label14.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label14.Location = new System.Drawing.Point(386, 51);
             this.label14.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label14.Name = "label14";
@@ -480,6 +485,16 @@
             this.label14.TabIndex = 27;
             this.label14.Text = "miesięcy";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // ButtonPrzywrocDomyslne
+            // 
+            this.ButtonPrzywrocDomyslne.Location = new System.Drawing.Point(299, 244);
+            this.ButtonPrzywrocDomyslne.Name = "ButtonPrzywrocDomyslne";
+            this.ButtonPrzywrocDomyslne.Size = new System.Drawing.Size(192, 42);
+            this.ButtonPrzywrocDomyslne.TabIndex = 45;
+            this.ButtonPrzywrocDomyslne.Text = "Przywróć wartości  domyślne";
+            this.ButtonPrzywrocDomyslne.UseVisualStyleBackColor = true;
+            this.ButtonPrzywrocDomyslne.Click += new System.EventHandler(this.ButtonPrzywrocDomyslne_Click);
             // 
             // OknoZalozeniaProjektu
             // 
@@ -538,5 +553,6 @@
         private System.Windows.Forms.CheckBox CheckBoxAktywacja;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox ComboBoxJezykProgram;
+        private System.Windows.Forms.Button ButtonPrzywrocDomyslne;
     }
 }

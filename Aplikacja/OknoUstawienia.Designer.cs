@@ -41,6 +41,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.ComboBoxJezykProgram = new System.Windows.Forms.ComboBox();
             this.GroupBoxDomDaneProjektu = new System.Windows.Forms.GroupBox();
             this.LabelNazwaProjektu = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -56,7 +57,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.ButtonAnuluj = new System.Windows.Forms.Button();
             this.ButtonOk = new System.Windows.Forms.Button();
-            this.ComboBoxJezykProgram = new System.Windows.Forms.ComboBox();
             this.GroupBoxSzczDomyslneUstawienia.SuspendLayout();
             this.GroupBoxDomZalozeniaProjektu.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -246,6 +246,57 @@
             this.label12.Text = "osobogodzin";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // ComboBoxJezykProgram
+            // 
+            this.tableLayoutPanel2.SetColumnSpan(this.ComboBoxJezykProgram, 2);
+            this.ComboBoxJezykProgram.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxJezykProgram.FormattingEnabled = true;
+            this.ComboBoxJezykProgram.Items.AddRange(new object[] {
+            "ABAP (SAP) ",
+            "ASP",
+            "Assembler",
+            "Brio",
+            "C",
+            "C++",
+            "C#",
+            "COBOL",
+            "Cognos Impromptu Scripts",
+            "Cross System Products (CSP)",
+            "Cool:Gen/IEF",
+            "Datastage",
+            "Excel",
+            "Focus",
+            "FoxPro",
+            "HTML",
+            "J2EE",
+            "Java",
+            "JavaScript",
+            "JCL",
+            "LINC II",
+            "Lotus Notes",
+            "Natural",
+            ".NET",
+            "Oracle",
+            "PACBASE",
+            "Perl",
+            "PL/I",
+            "PL/SQL",
+            "Powerbuilder",
+            "REXX",
+            "Sabretalk",
+            "SAS",
+            "Siebel",
+            "SLOGAN",
+            "SQL",
+            "VB.NET",
+            "Visual Basic"});
+            this.ComboBoxJezykProgram.Location = new System.Drawing.Point(188, 13);
+            this.ComboBoxJezykProgram.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
+            this.ComboBoxJezykProgram.Name = "ComboBoxJezykProgram";
+            this.ComboBoxJezykProgram.Size = new System.Drawing.Size(271, 24);
+            this.ComboBoxJezykProgram.TabIndex = 31;
+            this.ComboBoxJezykProgram.SelectedIndexChanged += new System.EventHandler(this.ComboBoxJezykProgram_SelectedIndexChanged);
+            // 
             // GroupBoxDomDaneProjektu
             // 
             this.GroupBoxDomDaneProjektu.Controls.Add(this.LabelNazwaProjektu);
@@ -391,57 +442,6 @@
             this.ButtonOk.TabIndex = 17;
             this.ButtonOk.Text = "OK";
             this.ButtonOk.UseVisualStyleBackColor = true;
-            // 
-            // ComboBoxJezykProgram
-            // 
-            this.tableLayoutPanel2.SetColumnSpan(this.ComboBoxJezykProgram, 2);
-            this.ComboBoxJezykProgram.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxJezykProgram.FormattingEnabled = true;
-            this.ComboBoxJezykProgram.Items.AddRange(new object[] {
-            "ABAP (SAP) ",
-            "ASP",
-            "Assembler",
-            "Brio",
-            "C",
-            "C++",
-            "C#",
-            "COBOL",
-            "Cognos Impromptu Scripts",
-            "Cross System Products (CSP)",
-            "Cool:Gen/IEF",
-            "Datastage",
-            "Excel",
-            "Focus",
-            "FoxPro",
-            "HTML",
-            "J2EE",
-            "Java",
-            "JavaScript",
-            "JCL",
-            "LINC II",
-            "Lotus Notes",
-            "Natural",
-            ".NET",
-            "Oracle",
-            "PACBASE",
-            "Perl",
-            "PL/I",
-            "PL/SQL",
-            "Powerbuilder",
-            "REXX",
-            "Sabretalk",
-            "SAS",
-            "Siebel",
-            "SLOGAN",
-            "SQL",
-            "VB.NET",
-            "Visual Basic"});
-            this.ComboBoxJezykProgram.Location = new System.Drawing.Point(188, 13);
-            this.ComboBoxJezykProgram.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
-            this.ComboBoxJezykProgram.Name = "ComboBoxJezykProgram";
-            this.ComboBoxJezykProgram.Size = new System.Drawing.Size(271, 24);
-            this.ComboBoxJezykProgram.TabIndex = 31;
-            this.ComboBoxJezykProgram.SelectedIndexChanged += new System.EventHandler(this.ComboBoxJezykProgram_SelectedIndexChanged);
             // 
             // OknoUstawienia
             // 

@@ -83,6 +83,19 @@ namespace Aplikacja
             OknoGlowne.TempMaxHarm = (long)NumericMaxHarm.Value;
         }
 
+        private void ButtonPrzywrocDomyslne_Click(object sender, EventArgs e)
+        {
+            OknoGlowne.TempJezykProgramowania = Properties.Settings.Default.JezykProgramowania;
+            OknoGlowne.TempStawkaGodz = Properties.Settings.Default.StawkaGodz;
+            OknoGlowne.TempOsoboMGodz = Properties.Settings.Default.OsoboMGodz;
+            OknoGlowne.TempDzRobGodz = Properties.Settings.Default.DzRobGodz;
 
+            ComboBoxJezykProgram.SelectedIndex = Properties.Settings.Default.JezykProgramowania;
+            NumericStawkaGodz.Value = (decimal)Properties.Settings.Default.StawkaGodz;
+            NumericOsoboMGodz.Value = Properties.Settings.Default.OsoboMGodz;
+            NumericDzRobGodz.Value = Properties.Settings.Default.DzRobGodz;
+
+            MessageBox.Show("Domyślne wartości zostały przywrócone.", "Sukces");
+        }
     }
 }
