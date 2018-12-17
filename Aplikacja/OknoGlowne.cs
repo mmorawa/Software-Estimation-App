@@ -321,8 +321,9 @@ namespace Aplikacja
                         TabIndSF[i] = TempTabIndSF[i];
                     }
 
-                    MessageBox.Show("Czynniki skali zostały zmienione.", "Sukces");
                     Oszacowanie();
+                    MessageBox.Show("Czynniki skali zostały zmienione.", "Sukces");
+                    
                 }
             }
         }
@@ -341,8 +342,9 @@ namespace Aplikacja
                         TabIndEM[i] = TempTabIndEM[i];
                     }
 
-                    MessageBox.Show("Mnożniki pracochłonności zostały zmienione.", "Sukces");
                     Oszacowanie();
+                    MessageBox.Show("Mnożniki pracochłonności zostały zmienione.", "Sukces");
+                    
                 }
             }
         }

@@ -1299,9 +1299,9 @@
             // ButtonTablicaPrzeliczeniowa
             // 
             this.ButtonTablicaPrzeliczeniowa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonTablicaPrzeliczeniowa.Location = new System.Drawing.Point(881, 36);
+            this.ButtonTablicaPrzeliczeniowa.Location = new System.Drawing.Point(868, 36);
             this.ButtonTablicaPrzeliczeniowa.Name = "ButtonTablicaPrzeliczeniowa";
-            this.ButtonTablicaPrzeliczeniowa.Size = new System.Drawing.Size(173, 27);
+            this.ButtonTablicaPrzeliczeniowa.Size = new System.Drawing.Size(186, 27);
             this.ButtonTablicaPrzeliczeniowa.TabIndex = 21;
             this.ButtonTablicaPrzeliczeniowa.Text = "Tablica przeliczeniowa";
             this.ButtonTablicaPrzeliczeniowa.UseVisualStyleBackColor = true;

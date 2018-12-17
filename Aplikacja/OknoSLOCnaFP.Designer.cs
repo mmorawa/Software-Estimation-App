@@ -155,7 +155,7 @@
             // 
             this.GroupBoxKalibracja.Controls.Add(this.tableLayoutPanel2);
             this.GroupBoxKalibracja.Controls.Add(this.ButtonPrzywrocDomyslne);
-            this.GroupBoxKalibracja.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.GroupBoxKalibracja.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxKalibracja.Location = new System.Drawing.Point(12, 12);
             this.GroupBoxKalibracja.Name = "GroupBoxKalibracja";
             this.GroupBoxKalibracja.Size = new System.Drawing.Size(583, 620);
@@ -166,10 +166,10 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 4;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.00713F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.10339F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.92754F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.73913F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.06417F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.89483F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.35116F));
             this.tableLayoutPanel2.Controls.Add(this.NumericJavaScript, 0, 18);
             this.tableLayoutPanel2.Controls.Add(this.label12, 0, 18);
             this.tableLayoutPanel2.Controls.Add(this.LabelDataRozp, 0, 0);
@@ -279,14 +279,14 @@
             // NumericJavaScript
             // 
             this.NumericJavaScript.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericJavaScript.Location = new System.Drawing.Point(205, 489);
+            this.NumericJavaScript.Location = new System.Drawing.Point(190, 489);
             this.NumericJavaScript.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericJavaScript.Name = "NumericJavaScript";
-            this.NumericJavaScript.Size = new System.Drawing.Size(118, 22);
+            this.NumericJavaScript.Size = new System.Drawing.Size(129, 22);
             this.NumericJavaScript.TabIndex = 109;
             this.NumericJavaScript.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericJavaScript.ThousandsSeparator = true;
@@ -298,7 +298,7 @@
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label12.Location = new System.Drawing.Point(3, 486);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(196, 30);
+            this.label12.Size = new System.Drawing.Size(181, 30);
             this.label12.TabIndex = 50;
             this.label12.Text = "JavaScript";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -309,7 +309,7 @@
             this.LabelDataRozp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LabelDataRozp.Location = new System.Drawing.Point(3, 0);
             this.LabelDataRozp.Name = "LabelDataRozp";
-            this.LabelDataRozp.Size = new System.Drawing.Size(196, 27);
+            this.LabelDataRozp.Size = new System.Drawing.Size(181, 27);
             this.LabelDataRozp.TabIndex = 4;
             this.LabelDataRozp.Text = "ABAP (SAP)";
             this.LabelDataRozp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -317,14 +317,14 @@
             // NumericABAP
             // 
             this.NumericABAP.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericABAP.Location = new System.Drawing.Point(205, 3);
+            this.NumericABAP.Location = new System.Drawing.Point(190, 3);
             this.NumericABAP.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericABAP.Name = "NumericABAP";
-            this.NumericABAP.Size = new System.Drawing.Size(118, 22);
+            this.NumericABAP.Size = new System.Drawing.Size(129, 22);
             this.NumericABAP.TabIndex = 16;
             this.NumericABAP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericABAP.ThousandsSeparator = true;
@@ -336,7 +336,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Location = new System.Drawing.Point(3, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 27);
+            this.label1.Size = new System.Drawing.Size(181, 27);
             this.label1.TabIndex = 17;
             this.label1.Text = "ASP";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -347,7 +347,7 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Location = new System.Drawing.Point(3, 54);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(196, 27);
+            this.label3.Size = new System.Drawing.Size(181, 27);
             this.label3.TabIndex = 19;
             this.label3.Text = "Assembler";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -358,7 +358,7 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Location = new System.Drawing.Point(3, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(196, 27);
+            this.label2.Size = new System.Drawing.Size(181, 27);
             this.label2.TabIndex = 18;
             this.label2.Text = "Brio";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -367,9 +367,9 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Location = new System.Drawing.Point(329, 0);
+            this.label8.Location = new System.Drawing.Point(325, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(106, 27);
+            this.label8.Size = new System.Drawing.Size(100, 27);
             this.label8.TabIndex = 24;
             this.label8.Text = "JCL";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -378,9 +378,9 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Location = new System.Drawing.Point(329, 27);
+            this.label7.Location = new System.Drawing.Point(325, 27);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 27);
+            this.label7.Size = new System.Drawing.Size(100, 27);
             this.label7.TabIndex = 23;
             this.label7.Text = "LINC II";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -389,9 +389,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(329, 54);
+            this.label4.Location = new System.Drawing.Point(325, 54);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 27);
+            this.label4.Size = new System.Drawing.Size(100, 27);
             this.label4.TabIndex = 20;
             this.label4.Text = "Lotus Notes";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -400,9 +400,9 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Location = new System.Drawing.Point(329, 81);
+            this.label10.Location = new System.Drawing.Point(325, 81);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(106, 27);
+            this.label10.Size = new System.Drawing.Size(100, 27);
             this.label10.TabIndex = 26;
             this.label10.Text = "Natural";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -411,9 +411,9 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Location = new System.Drawing.Point(329, 108);
+            this.label9.Location = new System.Drawing.Point(325, 108);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(106, 27);
+            this.label9.Size = new System.Drawing.Size(100, 27);
             this.label9.TabIndex = 25;
             this.label9.Text = ".NET";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -422,9 +422,9 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label14.Location = new System.Drawing.Point(329, 135);
+            this.label14.Location = new System.Drawing.Point(325, 135);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(106, 27);
+            this.label14.Size = new System.Drawing.Size(100, 27);
             this.label14.TabIndex = 30;
             this.label14.Text = "Oracle";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -433,9 +433,9 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label18.Location = new System.Drawing.Point(329, 162);
+            this.label18.Location = new System.Drawing.Point(325, 162);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(106, 27);
+            this.label18.Size = new System.Drawing.Size(100, 27);
             this.label18.TabIndex = 34;
             this.label18.Text = "PACBASE";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -444,9 +444,9 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label22.Location = new System.Drawing.Point(329, 189);
+            this.label22.Location = new System.Drawing.Point(325, 189);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(106, 27);
+            this.label22.Size = new System.Drawing.Size(100, 27);
             this.label22.TabIndex = 38;
             this.label22.Text = "Perl";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -455,9 +455,9 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label26.Location = new System.Drawing.Point(329, 216);
+            this.label26.Location = new System.Drawing.Point(325, 216);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(106, 27);
+            this.label26.Size = new System.Drawing.Size(100, 27);
             this.label26.TabIndex = 42;
             this.label26.Text = "PL/I";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -466,9 +466,9 @@
             // 
             this.label30.AutoSize = true;
             this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label30.Location = new System.Drawing.Point(329, 243);
+            this.label30.Location = new System.Drawing.Point(325, 243);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(106, 27);
+            this.label30.Size = new System.Drawing.Size(100, 27);
             this.label30.TabIndex = 46;
             this.label30.Text = "PL/SQL";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -477,9 +477,9 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Location = new System.Drawing.Point(329, 270);
+            this.label13.Location = new System.Drawing.Point(325, 270);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(106, 27);
+            this.label13.Size = new System.Drawing.Size(100, 27);
             this.label13.TabIndex = 29;
             this.label13.Text = "Powerbuilder";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -490,7 +490,7 @@
             this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label17.Location = new System.Drawing.Point(3, 108);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(196, 27);
+            this.label17.Size = new System.Drawing.Size(181, 27);
             this.label17.TabIndex = 33;
             this.label17.Text = "C";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -499,9 +499,9 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label21.Location = new System.Drawing.Point(329, 297);
+            this.label21.Location = new System.Drawing.Point(325, 297);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(106, 27);
+            this.label21.Size = new System.Drawing.Size(100, 27);
             this.label21.TabIndex = 37;
             this.label21.Text = "REXX";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -512,7 +512,7 @@
             this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label25.Location = new System.Drawing.Point(3, 135);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(196, 27);
+            this.label25.Size = new System.Drawing.Size(181, 27);
             this.label25.TabIndex = 41;
             this.label25.Text = "C++";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -523,7 +523,7 @@
             this.label31.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label31.Location = new System.Drawing.Point(3, 162);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(196, 27);
+            this.label31.Size = new System.Drawing.Size(181, 27);
             this.label31.TabIndex = 47;
             this.label31.Text = "C#";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -534,7 +534,7 @@
             this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label33.Location = new System.Drawing.Point(3, 189);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(196, 27);
+            this.label33.Size = new System.Drawing.Size(181, 27);
             this.label33.TabIndex = 49;
             this.label33.Text = "COBOL";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -543,9 +543,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(329, 324);
+            this.label6.Location = new System.Drawing.Point(325, 324);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(106, 27);
+            this.label6.Size = new System.Drawing.Size(100, 27);
             this.label6.TabIndex = 22;
             this.label6.Text = "Sabretalk";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -554,9 +554,9 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Location = new System.Drawing.Point(329, 351);
+            this.label11.Location = new System.Drawing.Point(325, 351);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(106, 27);
+            this.label11.Size = new System.Drawing.Size(100, 27);
             this.label11.TabIndex = 27;
             this.label11.Text = "SAS";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -565,9 +565,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(329, 378);
+            this.label5.Location = new System.Drawing.Point(325, 378);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 27);
+            this.label5.Size = new System.Drawing.Size(100, 27);
             this.label5.TabIndex = 21;
             this.label5.Text = "Siebel";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -576,9 +576,9 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label15.Location = new System.Drawing.Point(329, 405);
+            this.label15.Location = new System.Drawing.Point(325, 405);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(106, 27);
+            this.label15.Size = new System.Drawing.Size(100, 27);
             this.label15.TabIndex = 51;
             this.label15.Text = "SLOGAN";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -587,9 +587,9 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label23.Location = new System.Drawing.Point(329, 432);
+            this.label23.Location = new System.Drawing.Point(325, 432);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(106, 27);
+            this.label23.Size = new System.Drawing.Size(100, 27);
             this.label23.TabIndex = 55;
             this.label23.Text = "SQL";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -598,9 +598,9 @@
             // 
             this.label29.AutoSize = true;
             this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label29.Location = new System.Drawing.Point(329, 459);
+            this.label29.Location = new System.Drawing.Point(325, 459);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(106, 27);
+            this.label29.Size = new System.Drawing.Size(100, 27);
             this.label29.TabIndex = 59;
             this.label29.Text = "VB.NET";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -611,7 +611,7 @@
             this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label36.Location = new System.Drawing.Point(3, 216);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(196, 27);
+            this.label36.Size = new System.Drawing.Size(181, 27);
             this.label36.TabIndex = 63;
             this.label36.Text = "Cognos Impromptu Scripts";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -622,7 +622,7 @@
             this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label16.Location = new System.Drawing.Point(3, 243);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(196, 27);
+            this.label16.Size = new System.Drawing.Size(181, 27);
             this.label16.TabIndex = 52;
             this.label16.Text = "Cross System Products";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -633,7 +633,7 @@
             this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label19.Location = new System.Drawing.Point(3, 270);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(196, 27);
+            this.label19.Size = new System.Drawing.Size(181, 27);
             this.label19.TabIndex = 53;
             this.label19.Text = "Cool:Gen/IEF";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -644,7 +644,7 @@
             this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label20.Location = new System.Drawing.Point(3, 297);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(196, 27);
+            this.label20.Size = new System.Drawing.Size(181, 27);
             this.label20.TabIndex = 54;
             this.label20.Text = "Datastage";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -655,7 +655,7 @@
             this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label27.Location = new System.Drawing.Point(3, 324);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(196, 27);
+            this.label27.Size = new System.Drawing.Size(181, 27);
             this.label27.TabIndex = 57;
             this.label27.Text = "Excel";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -666,7 +666,7 @@
             this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label32.Location = new System.Drawing.Point(3, 351);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(196, 27);
+            this.label32.Size = new System.Drawing.Size(181, 27);
             this.label32.TabIndex = 60;
             this.label32.Text = "Focus";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -677,7 +677,7 @@
             this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label28.Location = new System.Drawing.Point(3, 378);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(196, 27);
+            this.label28.Size = new System.Drawing.Size(181, 27);
             this.label28.TabIndex = 58;
             this.label28.Text = "FoxPro";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -688,7 +688,7 @@
             this.label37.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label37.Location = new System.Drawing.Point(3, 405);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(196, 27);
+            this.label37.Size = new System.Drawing.Size(181, 27);
             this.label37.TabIndex = 64;
             this.label37.Text = "HTML";
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -699,7 +699,7 @@
             this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label35.Location = new System.Drawing.Point(3, 432);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(196, 27);
+            this.label35.Size = new System.Drawing.Size(181, 27);
             this.label35.TabIndex = 62;
             this.label35.Text = "J2EE";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -710,7 +710,7 @@
             this.label40.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label40.Location = new System.Drawing.Point(3, 459);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(196, 27);
+            this.label40.Size = new System.Drawing.Size(181, 27);
             this.label40.TabIndex = 67;
             this.label40.Text = "Java";
             this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -719,9 +719,9 @@
             // 
             this.label45.AutoSize = true;
             this.label45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label45.Location = new System.Drawing.Point(329, 486);
+            this.label45.Location = new System.Drawing.Point(325, 486);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(106, 30);
+            this.label45.Size = new System.Drawing.Size(100, 30);
             this.label45.TabIndex = 72;
             this.label45.Text = "Visual Basic";
             this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -729,14 +729,14 @@
             // NumericASP
             // 
             this.NumericASP.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericASP.Location = new System.Drawing.Point(205, 30);
+            this.NumericASP.Location = new System.Drawing.Point(190, 30);
             this.NumericASP.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericASP.Name = "NumericASP";
-            this.NumericASP.Size = new System.Drawing.Size(118, 22);
+            this.NumericASP.Size = new System.Drawing.Size(129, 22);
             this.NumericASP.TabIndex = 73;
             this.NumericASP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericASP.ThousandsSeparator = true;
@@ -745,14 +745,14 @@
             // NumericBrio
             // 
             this.NumericBrio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericBrio.Location = new System.Drawing.Point(205, 84);
+            this.NumericBrio.Location = new System.Drawing.Point(190, 84);
             this.NumericBrio.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericBrio.Name = "NumericBrio";
-            this.NumericBrio.Size = new System.Drawing.Size(118, 22);
+            this.NumericBrio.Size = new System.Drawing.Size(129, 22);
             this.NumericBrio.TabIndex = 74;
             this.NumericBrio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericBrio.ThousandsSeparator = true;
@@ -761,14 +761,14 @@
             // NumericAssembler
             // 
             this.NumericAssembler.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericAssembler.Location = new System.Drawing.Point(205, 57);
+            this.NumericAssembler.Location = new System.Drawing.Point(190, 57);
             this.NumericAssembler.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericAssembler.Name = "NumericAssembler";
-            this.NumericAssembler.Size = new System.Drawing.Size(118, 22);
+            this.NumericAssembler.Size = new System.Drawing.Size(129, 22);
             this.NumericAssembler.TabIndex = 75;
             this.NumericAssembler.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericAssembler.ThousandsSeparator = true;
@@ -777,14 +777,14 @@
             // NumericC
             // 
             this.NumericC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericC.Location = new System.Drawing.Point(205, 111);
+            this.NumericC.Location = new System.Drawing.Point(190, 111);
             this.NumericC.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericC.Name = "NumericC";
-            this.NumericC.Size = new System.Drawing.Size(118, 22);
+            this.NumericC.Size = new System.Drawing.Size(129, 22);
             this.NumericC.TabIndex = 76;
             this.NumericC.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericC.ThousandsSeparator = true;
@@ -793,14 +793,14 @@
             // NumericCpp
             // 
             this.NumericCpp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericCpp.Location = new System.Drawing.Point(205, 138);
+            this.NumericCpp.Location = new System.Drawing.Point(190, 138);
             this.NumericCpp.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericCpp.Name = "NumericCpp";
-            this.NumericCpp.Size = new System.Drawing.Size(118, 22);
+            this.NumericCpp.Size = new System.Drawing.Size(129, 22);
             this.NumericCpp.TabIndex = 77;
             this.NumericCpp.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCpp.ThousandsSeparator = true;
@@ -809,14 +809,14 @@
             // NumericCsharp
             // 
             this.NumericCsharp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericCsharp.Location = new System.Drawing.Point(205, 165);
+            this.NumericCsharp.Location = new System.Drawing.Point(190, 165);
             this.NumericCsharp.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericCsharp.Name = "NumericCsharp";
-            this.NumericCsharp.Size = new System.Drawing.Size(118, 22);
+            this.NumericCsharp.Size = new System.Drawing.Size(129, 22);
             this.NumericCsharp.TabIndex = 78;
             this.NumericCsharp.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCsharp.ThousandsSeparator = true;
@@ -825,14 +825,14 @@
             // NumericCOBOL
             // 
             this.NumericCOBOL.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericCOBOL.Location = new System.Drawing.Point(205, 192);
+            this.NumericCOBOL.Location = new System.Drawing.Point(190, 192);
             this.NumericCOBOL.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericCOBOL.Name = "NumericCOBOL";
-            this.NumericCOBOL.Size = new System.Drawing.Size(118, 22);
+            this.NumericCOBOL.Size = new System.Drawing.Size(129, 22);
             this.NumericCOBOL.TabIndex = 79;
             this.NumericCOBOL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCOBOL.ThousandsSeparator = true;
@@ -841,14 +841,14 @@
             // NumericCognos
             // 
             this.NumericCognos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericCognos.Location = new System.Drawing.Point(205, 219);
+            this.NumericCognos.Location = new System.Drawing.Point(190, 219);
             this.NumericCognos.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericCognos.Name = "NumericCognos";
-            this.NumericCognos.Size = new System.Drawing.Size(118, 22);
+            this.NumericCognos.Size = new System.Drawing.Size(129, 22);
             this.NumericCognos.TabIndex = 80;
             this.NumericCognos.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCognos.ThousandsSeparator = true;
@@ -857,14 +857,14 @@
             // NumericCross
             // 
             this.NumericCross.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericCross.Location = new System.Drawing.Point(205, 246);
+            this.NumericCross.Location = new System.Drawing.Point(190, 246);
             this.NumericCross.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericCross.Name = "NumericCross";
-            this.NumericCross.Size = new System.Drawing.Size(118, 22);
+            this.NumericCross.Size = new System.Drawing.Size(129, 22);
             this.NumericCross.TabIndex = 81;
             this.NumericCross.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCross.ThousandsSeparator = true;
@@ -873,14 +873,14 @@
             // NumericCool
             // 
             this.NumericCool.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericCool.Location = new System.Drawing.Point(205, 273);
+            this.NumericCool.Location = new System.Drawing.Point(190, 273);
             this.NumericCool.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericCool.Name = "NumericCool";
-            this.NumericCool.Size = new System.Drawing.Size(118, 22);
+            this.NumericCool.Size = new System.Drawing.Size(129, 22);
             this.NumericCool.TabIndex = 82;
             this.NumericCool.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCool.ThousandsSeparator = true;
@@ -889,14 +889,14 @@
             // NumericDatastage
             // 
             this.NumericDatastage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericDatastage.Location = new System.Drawing.Point(205, 300);
+            this.NumericDatastage.Location = new System.Drawing.Point(190, 300);
             this.NumericDatastage.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericDatastage.Name = "NumericDatastage";
-            this.NumericDatastage.Size = new System.Drawing.Size(118, 22);
+            this.NumericDatastage.Size = new System.Drawing.Size(129, 22);
             this.NumericDatastage.TabIndex = 83;
             this.NumericDatastage.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericDatastage.ThousandsSeparator = true;
@@ -905,14 +905,14 @@
             // NumericExcel
             // 
             this.NumericExcel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericExcel.Location = new System.Drawing.Point(205, 327);
+            this.NumericExcel.Location = new System.Drawing.Point(190, 327);
             this.NumericExcel.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericExcel.Name = "NumericExcel";
-            this.NumericExcel.Size = new System.Drawing.Size(118, 22);
+            this.NumericExcel.Size = new System.Drawing.Size(129, 22);
             this.NumericExcel.TabIndex = 84;
             this.NumericExcel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericExcel.ThousandsSeparator = true;
@@ -921,14 +921,14 @@
             // NumericFocus
             // 
             this.NumericFocus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericFocus.Location = new System.Drawing.Point(205, 354);
+            this.NumericFocus.Location = new System.Drawing.Point(190, 354);
             this.NumericFocus.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericFocus.Name = "NumericFocus";
-            this.NumericFocus.Size = new System.Drawing.Size(118, 22);
+            this.NumericFocus.Size = new System.Drawing.Size(129, 22);
             this.NumericFocus.TabIndex = 85;
             this.NumericFocus.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericFocus.ThousandsSeparator = true;
@@ -937,14 +937,14 @@
             // NumericFoxPro
             // 
             this.NumericFoxPro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericFoxPro.Location = new System.Drawing.Point(205, 381);
+            this.NumericFoxPro.Location = new System.Drawing.Point(190, 381);
             this.NumericFoxPro.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericFoxPro.Name = "NumericFoxPro";
-            this.NumericFoxPro.Size = new System.Drawing.Size(118, 22);
+            this.NumericFoxPro.Size = new System.Drawing.Size(129, 22);
             this.NumericFoxPro.TabIndex = 86;
             this.NumericFoxPro.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericFoxPro.ThousandsSeparator = true;
@@ -953,14 +953,14 @@
             // NumericHTML
             // 
             this.NumericHTML.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericHTML.Location = new System.Drawing.Point(205, 408);
+            this.NumericHTML.Location = new System.Drawing.Point(190, 408);
             this.NumericHTML.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericHTML.Name = "NumericHTML";
-            this.NumericHTML.Size = new System.Drawing.Size(118, 22);
+            this.NumericHTML.Size = new System.Drawing.Size(129, 22);
             this.NumericHTML.TabIndex = 87;
             this.NumericHTML.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericHTML.ThousandsSeparator = true;
@@ -969,14 +969,14 @@
             // NumericJ2EE
             // 
             this.NumericJ2EE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericJ2EE.Location = new System.Drawing.Point(205, 435);
+            this.NumericJ2EE.Location = new System.Drawing.Point(190, 435);
             this.NumericJ2EE.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericJ2EE.Name = "NumericJ2EE";
-            this.NumericJ2EE.Size = new System.Drawing.Size(118, 22);
+            this.NumericJ2EE.Size = new System.Drawing.Size(129, 22);
             this.NumericJ2EE.TabIndex = 88;
             this.NumericJ2EE.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericJ2EE.ThousandsSeparator = true;
@@ -985,14 +985,14 @@
             // NumericJava
             // 
             this.NumericJava.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericJava.Location = new System.Drawing.Point(205, 462);
+            this.NumericJava.Location = new System.Drawing.Point(190, 462);
             this.NumericJava.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericJava.Name = "NumericJava";
-            this.NumericJava.Size = new System.Drawing.Size(118, 22);
+            this.NumericJava.Size = new System.Drawing.Size(129, 22);
             this.NumericJava.TabIndex = 89;
             this.NumericJava.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericJava.ThousandsSeparator = true;
@@ -1001,14 +1001,14 @@
             // NumericJCL
             // 
             this.NumericJCL.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericJCL.Location = new System.Drawing.Point(441, 3);
+            this.NumericJCL.Location = new System.Drawing.Point(431, 3);
             this.NumericJCL.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericJCL.Name = "NumericJCL";
-            this.NumericJCL.Size = new System.Drawing.Size(117, 22);
+            this.NumericJCL.Size = new System.Drawing.Size(127, 22);
             this.NumericJCL.TabIndex = 90;
             this.NumericJCL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericJCL.ThousandsSeparator = true;
@@ -1017,14 +1017,14 @@
             // NumericLINC
             // 
             this.NumericLINC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericLINC.Location = new System.Drawing.Point(441, 30);
+            this.NumericLINC.Location = new System.Drawing.Point(431, 30);
             this.NumericLINC.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericLINC.Name = "NumericLINC";
-            this.NumericLINC.Size = new System.Drawing.Size(117, 22);
+            this.NumericLINC.Size = new System.Drawing.Size(127, 22);
             this.NumericLINC.TabIndex = 91;
             this.NumericLINC.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericLINC.ThousandsSeparator = true;
@@ -1033,14 +1033,14 @@
             // NumericLotus
             // 
             this.NumericLotus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericLotus.Location = new System.Drawing.Point(441, 57);
+            this.NumericLotus.Location = new System.Drawing.Point(431, 57);
             this.NumericLotus.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericLotus.Name = "NumericLotus";
-            this.NumericLotus.Size = new System.Drawing.Size(117, 22);
+            this.NumericLotus.Size = new System.Drawing.Size(127, 22);
             this.NumericLotus.TabIndex = 92;
             this.NumericLotus.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericLotus.ThousandsSeparator = true;
@@ -1049,14 +1049,14 @@
             // NumericNatural
             // 
             this.NumericNatural.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericNatural.Location = new System.Drawing.Point(441, 84);
+            this.NumericNatural.Location = new System.Drawing.Point(431, 84);
             this.NumericNatural.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericNatural.Name = "NumericNatural";
-            this.NumericNatural.Size = new System.Drawing.Size(117, 22);
+            this.NumericNatural.Size = new System.Drawing.Size(127, 22);
             this.NumericNatural.TabIndex = 93;
             this.NumericNatural.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericNatural.ThousandsSeparator = true;
@@ -1065,14 +1065,14 @@
             // NumericDotNet
             // 
             this.NumericDotNet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericDotNet.Location = new System.Drawing.Point(441, 111);
+            this.NumericDotNet.Location = new System.Drawing.Point(431, 111);
             this.NumericDotNet.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericDotNet.Name = "NumericDotNet";
-            this.NumericDotNet.Size = new System.Drawing.Size(117, 22);
+            this.NumericDotNet.Size = new System.Drawing.Size(127, 22);
             this.NumericDotNet.TabIndex = 94;
             this.NumericDotNet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericDotNet.ThousandsSeparator = true;
@@ -1081,14 +1081,14 @@
             // NumericOracle
             // 
             this.NumericOracle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericOracle.Location = new System.Drawing.Point(441, 138);
+            this.NumericOracle.Location = new System.Drawing.Point(431, 138);
             this.NumericOracle.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericOracle.Name = "NumericOracle";
-            this.NumericOracle.Size = new System.Drawing.Size(117, 22);
+            this.NumericOracle.Size = new System.Drawing.Size(127, 22);
             this.NumericOracle.TabIndex = 95;
             this.NumericOracle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericOracle.ThousandsSeparator = true;
@@ -1097,14 +1097,14 @@
             // NumericPACBASE
             // 
             this.NumericPACBASE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericPACBASE.Location = new System.Drawing.Point(441, 165);
+            this.NumericPACBASE.Location = new System.Drawing.Point(431, 165);
             this.NumericPACBASE.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericPACBASE.Name = "NumericPACBASE";
-            this.NumericPACBASE.Size = new System.Drawing.Size(117, 22);
+            this.NumericPACBASE.Size = new System.Drawing.Size(127, 22);
             this.NumericPACBASE.TabIndex = 96;
             this.NumericPACBASE.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericPACBASE.ThousandsSeparator = true;
@@ -1113,14 +1113,14 @@
             // NumericPerl
             // 
             this.NumericPerl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericPerl.Location = new System.Drawing.Point(441, 192);
+            this.NumericPerl.Location = new System.Drawing.Point(431, 192);
             this.NumericPerl.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericPerl.Name = "NumericPerl";
-            this.NumericPerl.Size = new System.Drawing.Size(117, 22);
+            this.NumericPerl.Size = new System.Drawing.Size(127, 22);
             this.NumericPerl.TabIndex = 97;
             this.NumericPerl.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericPerl.ThousandsSeparator = true;
@@ -1129,14 +1129,14 @@
             // NumericPLI
             // 
             this.NumericPLI.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericPLI.Location = new System.Drawing.Point(441, 219);
+            this.NumericPLI.Location = new System.Drawing.Point(431, 219);
             this.NumericPLI.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericPLI.Name = "NumericPLI";
-            this.NumericPLI.Size = new System.Drawing.Size(117, 22);
+            this.NumericPLI.Size = new System.Drawing.Size(127, 22);
             this.NumericPLI.TabIndex = 98;
             this.NumericPLI.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericPLI.ThousandsSeparator = true;
@@ -1145,14 +1145,14 @@
             // NumericPLSQL
             // 
             this.NumericPLSQL.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericPLSQL.Location = new System.Drawing.Point(441, 246);
+            this.NumericPLSQL.Location = new System.Drawing.Point(431, 246);
             this.NumericPLSQL.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericPLSQL.Name = "NumericPLSQL";
-            this.NumericPLSQL.Size = new System.Drawing.Size(117, 22);
+            this.NumericPLSQL.Size = new System.Drawing.Size(127, 22);
             this.NumericPLSQL.TabIndex = 99;
             this.NumericPLSQL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericPLSQL.ThousandsSeparator = true;
@@ -1161,14 +1161,14 @@
             // NumericPowerbuilder
             // 
             this.NumericPowerbuilder.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericPowerbuilder.Location = new System.Drawing.Point(441, 273);
+            this.NumericPowerbuilder.Location = new System.Drawing.Point(431, 273);
             this.NumericPowerbuilder.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericPowerbuilder.Name = "NumericPowerbuilder";
-            this.NumericPowerbuilder.Size = new System.Drawing.Size(117, 22);
+            this.NumericPowerbuilder.Size = new System.Drawing.Size(127, 22);
             this.NumericPowerbuilder.TabIndex = 100;
             this.NumericPowerbuilder.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericPowerbuilder.ThousandsSeparator = true;
@@ -1177,14 +1177,14 @@
             // NumericREXX
             // 
             this.NumericREXX.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericREXX.Location = new System.Drawing.Point(441, 300);
+            this.NumericREXX.Location = new System.Drawing.Point(431, 300);
             this.NumericREXX.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericREXX.Name = "NumericREXX";
-            this.NumericREXX.Size = new System.Drawing.Size(117, 22);
+            this.NumericREXX.Size = new System.Drawing.Size(127, 22);
             this.NumericREXX.TabIndex = 101;
             this.NumericREXX.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericREXX.ThousandsSeparator = true;
@@ -1193,14 +1193,14 @@
             // NumericSabretalk
             // 
             this.NumericSabretalk.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericSabretalk.Location = new System.Drawing.Point(441, 327);
+            this.NumericSabretalk.Location = new System.Drawing.Point(431, 327);
             this.NumericSabretalk.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericSabretalk.Name = "NumericSabretalk";
-            this.NumericSabretalk.Size = new System.Drawing.Size(117, 22);
+            this.NumericSabretalk.Size = new System.Drawing.Size(127, 22);
             this.NumericSabretalk.TabIndex = 102;
             this.NumericSabretalk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericSabretalk.ThousandsSeparator = true;
@@ -1209,14 +1209,14 @@
             // NumericSAS
             // 
             this.NumericSAS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericSAS.Location = new System.Drawing.Point(441, 354);
+            this.NumericSAS.Location = new System.Drawing.Point(431, 354);
             this.NumericSAS.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericSAS.Name = "NumericSAS";
-            this.NumericSAS.Size = new System.Drawing.Size(117, 22);
+            this.NumericSAS.Size = new System.Drawing.Size(127, 22);
             this.NumericSAS.TabIndex = 103;
             this.NumericSAS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericSAS.ThousandsSeparator = true;
@@ -1225,14 +1225,14 @@
             // NumericSiebel
             // 
             this.NumericSiebel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericSiebel.Location = new System.Drawing.Point(441, 381);
+            this.NumericSiebel.Location = new System.Drawing.Point(431, 381);
             this.NumericSiebel.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericSiebel.Name = "NumericSiebel";
-            this.NumericSiebel.Size = new System.Drawing.Size(117, 22);
+            this.NumericSiebel.Size = new System.Drawing.Size(127, 22);
             this.NumericSiebel.TabIndex = 104;
             this.NumericSiebel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericSiebel.ThousandsSeparator = true;
@@ -1241,14 +1241,14 @@
             // NumericSLOGAN
             // 
             this.NumericSLOGAN.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericSLOGAN.Location = new System.Drawing.Point(441, 408);
+            this.NumericSLOGAN.Location = new System.Drawing.Point(431, 408);
             this.NumericSLOGAN.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericSLOGAN.Name = "NumericSLOGAN";
-            this.NumericSLOGAN.Size = new System.Drawing.Size(117, 22);
+            this.NumericSLOGAN.Size = new System.Drawing.Size(127, 22);
             this.NumericSLOGAN.TabIndex = 105;
             this.NumericSLOGAN.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericSLOGAN.ThousandsSeparator = true;
@@ -1257,14 +1257,14 @@
             // NumericSQL
             // 
             this.NumericSQL.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericSQL.Location = new System.Drawing.Point(441, 435);
+            this.NumericSQL.Location = new System.Drawing.Point(431, 435);
             this.NumericSQL.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericSQL.Name = "NumericSQL";
-            this.NumericSQL.Size = new System.Drawing.Size(117, 22);
+            this.NumericSQL.Size = new System.Drawing.Size(127, 22);
             this.NumericSQL.TabIndex = 106;
             this.NumericSQL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericSQL.ThousandsSeparator = true;
@@ -1273,14 +1273,14 @@
             // NumericVBNet
             // 
             this.NumericVBNet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericVBNet.Location = new System.Drawing.Point(441, 462);
+            this.NumericVBNet.Location = new System.Drawing.Point(431, 462);
             this.NumericVBNet.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericVBNet.Name = "NumericVBNet";
-            this.NumericVBNet.Size = new System.Drawing.Size(117, 22);
+            this.NumericVBNet.Size = new System.Drawing.Size(127, 22);
             this.NumericVBNet.TabIndex = 107;
             this.NumericVBNet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericVBNet.ThousandsSeparator = true;
@@ -1289,14 +1289,14 @@
             // NumericVisualBasic
             // 
             this.NumericVisualBasic.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericVisualBasic.Location = new System.Drawing.Point(441, 489);
+            this.NumericVisualBasic.Location = new System.Drawing.Point(431, 489);
             this.NumericVisualBasic.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.NumericVisualBasic.Name = "NumericVisualBasic";
-            this.NumericVisualBasic.Size = new System.Drawing.Size(117, 22);
+            this.NumericVisualBasic.Size = new System.Drawing.Size(127, 22);
             this.NumericVisualBasic.TabIndex = 108;
             this.NumericVisualBasic.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericVisualBasic.ThousandsSeparator = true;
@@ -1315,8 +1315,8 @@
             // ButtonAnuluj
             // 
             this.ButtonAnuluj.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.ButtonAnuluj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonAnuluj.Location = new System.Drawing.Point(341, 659);
+            this.ButtonAnuluj.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonAnuluj.Location = new System.Drawing.Point(324, 654);
             this.ButtonAnuluj.Name = "ButtonAnuluj";
             this.ButtonAnuluj.Size = new System.Drawing.Size(104, 27);
             this.ButtonAnuluj.TabIndex = 24;
@@ -1326,8 +1326,8 @@
             // ButtonOk
             // 
             this.ButtonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.ButtonOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOk.Location = new System.Drawing.Point(181, 659);
+            this.ButtonOk.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOk.Location = new System.Drawing.Point(164, 654);
             this.ButtonOk.Name = "ButtonOk";
             this.ButtonOk.Size = new System.Drawing.Size(104, 27);
             this.ButtonOk.TabIndex = 23;

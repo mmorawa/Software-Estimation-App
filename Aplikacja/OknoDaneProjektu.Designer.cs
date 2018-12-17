@@ -52,7 +52,7 @@
             // ButtonAnuluj
             // 
             this.ButtonAnuluj.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.ButtonAnuluj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonAnuluj.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ButtonAnuluj.Location = new System.Drawing.Point(267, 679);
             this.ButtonAnuluj.Name = "ButtonAnuluj";
             this.ButtonAnuluj.Size = new System.Drawing.Size(104, 27);
@@ -63,7 +63,7 @@
             // ButtonOk
             // 
             this.ButtonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.ButtonOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOk.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ButtonOk.Location = new System.Drawing.Point(107, 679);
             this.ButtonOk.Name = "ButtonOk";
             this.ButtonOk.Size = new System.Drawing.Size(104, 27);
@@ -88,7 +88,7 @@
             this.GroupBoxSzczDaneProjektu.Controls.Add(this.label3);
             this.GroupBoxSzczDaneProjektu.Controls.Add(this.label1);
             this.GroupBoxSzczDaneProjektu.Controls.Add(this.TextBoxKierownikProjektu);
-            this.GroupBoxSzczDaneProjektu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.GroupBoxSzczDaneProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxSzczDaneProjektu.Location = new System.Drawing.Point(12, 12);
             this.GroupBoxSzczDaneProjektu.Name = "GroupBoxSzczDaneProjektu";
             this.GroupBoxSzczDaneProjektu.Size = new System.Drawing.Size(489, 661);
@@ -101,7 +101,7 @@
             this.CheckBoxDomyslne.AutoSize = true;
             this.CheckBoxDomyslne.Location = new System.Drawing.Point(274, 21);
             this.CheckBoxDomyslne.Name = "CheckBoxDomyslne";
-            this.CheckBoxDomyslne.Size = new System.Drawing.Size(197, 20);
+            this.CheckBoxDomyslne.Size = new System.Drawing.Size(183, 20);
             this.CheckBoxDomyslne.TabIndex = 17;
             this.CheckBoxDomyslne.Text = "Użyj danych domyślnych";
             this.CheckBoxDomyslne.UseVisualStyleBackColor = true;
@@ -122,7 +122,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(7, 299);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 16);
+            this.label7.Size = new System.Drawing.Size(96, 16);
             this.label7.TabIndex = 15;
             this.label7.Text = "Opis projektu:";
             // 
@@ -131,7 +131,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(7, 79);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(285, 16);
+            this.label2.Size = new System.Drawing.Size(264, 16);
             this.label2.TabIndex = 13;
             this.label2.Text = "Osoba odpowiedzialna za oszacowanie:";
             // 
@@ -149,7 +149,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(9, 255);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 16);
+            this.label6.Size = new System.Drawing.Size(51, 16);
             this.label6.TabIndex = 11;
             this.label6.Text = "E-Mail:";
             // 
@@ -167,7 +167,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(6, 211);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 16);
+            this.label5.Size = new System.Drawing.Size(87, 16);
             this.label5.TabIndex = 9;
             this.label5.Text = "Telefon/Fax:";
             // 
@@ -213,7 +213,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(9, 123);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 16);
+            this.label3.Size = new System.Drawing.Size(91, 16);
             this.label3.TabIndex = 4;
             this.label3.Text = "Nazwa firmy:";
             // 
@@ -222,7 +222,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(9, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 16);
+            this.label1.Size = new System.Drawing.Size(132, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Kierownik projektu:";
             // 

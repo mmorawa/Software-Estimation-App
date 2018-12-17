@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Aplikacja")]
 [assembly: AssemblyDescription("Aplikacja wspomagająca szacowanie pracochłonności wytwarzania oprogramowania.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Państwowa Wyższa Szkoła Zawodowa w Nowym Sączu")]
+[assembly: AssemblyCompany("Państwowa Wyższa Szkoła Zawodowa \nw Nowym Sączu")]
 [assembly: AssemblyProduct("Aplikacja")]
 [assembly: AssemblyCopyright("Copyright © 2019 Mateusz Morawa ")]
 [assembly: AssemblyTrademark("")]
