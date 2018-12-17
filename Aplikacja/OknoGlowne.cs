@@ -217,14 +217,6 @@ namespace Aplikacja
             ButtonZapiszProjekt_Click(sender, e);
         }
 
-        //! Metoda wywoływana po naciśnięciu przycisku Save na pasku Menu.
-        /*! Metoda SaveToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Save na pasku Menu.
-         * Powoduje ona automatyczne zaszyfrowanie wpisów z hasłami, znajdujących w głównym oknie programu bez konieczności podania ścieżki do pliku bazy.
-         */
-        private void ToolStripOszacuj_Click(object sender, EventArgs e)
-        {
-            ButtonOszacuj_Click(sender, e);
-        }
 
         //! Metoda wywoływana po naciśnięciu przycisku Save As na pasku Menu.
         /*! Metoda SaveAsToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Save As na pasku Menu.
@@ -296,7 +288,7 @@ namespace Aplikacja
         private void ToolStripMenuDokumentacja_Click(object sender, EventArgs e)
         {
             //TODO odpowiedni plik w odpowiednim miejscu.
-            System.Diagnostics.Process.Start("Dokumentacja.pdf");
+            Process.Start("Dokumentacja.pdf");
         }
 
         //! Metoda wywoływana po naciśnięciu przycisku Exit na pasku Menu.
@@ -330,6 +322,7 @@ namespace Aplikacja
                     }
 
                     MessageBox.Show("Czynniki skali zostały zmienione.", "Sukces");
+                    Oszacowanie();
                 }
             }
         }
@@ -349,6 +342,7 @@ namespace Aplikacja
                     }
 
                     MessageBox.Show("Mnożniki pracochłonności zostały zmienione.", "Sukces");
+                    Oszacowanie();
                 }
             }
         }
@@ -364,44 +358,52 @@ namespace Aplikacja
         private void DateTimePicker_ValueChanged(object sender, EventArgs e)
         {
             DataProjektu = DateTimePicker.Text;
+            Oszacowanie();
         }
 
         private void NumUUCWProsty_ValueChanged(object sender, EventArgs e)
         {
             TabUUCW[0] = (long)NumUUCWProsty.Value;
+            Oszacowanie();
         }
 
         private void NumUUCWSredni_ValueChanged(object sender, EventArgs e)
         {
             TabUUCW[1] = (long)NumUUCWSredni.Value;
+            Oszacowanie();
         }
 
         private void NumUUCWZlozony_ValueChanged(object sender, EventArgs e)
         {
             TabUUCW[2] = (long)NumUUCWZlozony.Value;
+            Oszacowanie();
         }
 
         private void NumUAWProsty_ValueChanged(object sender, EventArgs e)
         {
             TabUAW[0] = (long)NumUAWProsty.Value;
+            Oszacowanie();
         }
 
         private void NumUAWSredni_ValueChanged(object sender, EventArgs e)
         {
             TabUAW[1] = (long)NumUAWSredni.Value;
+            Oszacowanie();
         }
 
         private void NumUAWZlozony_ValueChanged(object sender, EventArgs e)
         {
             TabUAW[2] = (long)NumUAWZlozony.Value;
+            Oszacowanie();
         }
 
         //------------------------Algorytm------------------------------------------------------
 
 
-        private void ButtonOszacuj_Click(object sender, EventArgs e)
+        private void Oszacowanie()
         {
             //TODO walidacja danych wejściowych, zaokrąglanie
+
 
             //Obliczenia UUCP
 
@@ -409,6 +411,21 @@ namespace Aplikacja
             for (int i = 0; i < 3; i++)
             {
                 UUCW += TabUUCW[i] * wagiUC[i];
+            }
+
+            if (UUCW == 0)
+            {
+
+                LabelRozmiar.Text = "0";
+                LabelPktUUCP.Text = "0";
+                LabelWynikPrac.Text = "0";
+                LabelWynikPrac.BackColor = System.Drawing.Color.FromName("Control");
+                LabelWynikHarm.Text = "0";
+                LabelWynikHarm.BackColor = System.Drawing.Color.FromName("Control");
+                LabelWynikKoszt.Text = "0";
+                LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("Control");
+                LabelWynikSrZesp.Text = "0";
+                return;
             }
 
             UAW = 0;
@@ -691,6 +708,7 @@ namespace Aplikacja
 
                     //Properties.Settings.Default.Save();
                     MessageBox.Show("Domyślne ustawienia projektu zostały zmienione.", "Sukces");
+
                 }
             }
         }
@@ -851,7 +869,7 @@ namespace Aplikacja
                     MaxKoszt = TempMaxKoszt;
                     MaxPrac = TempMaxPrac;
                     MaxHarm = TempMaxHarm;
-
+                    Oszacowanie();
                 }
             }
         }
@@ -872,6 +890,7 @@ namespace Aplikacja
                     Properties.Settings.Default.D = TempD;
 
                     //Properties.Settings.Default.Save();
+                    Oszacowanie();
                     MessageBox.Show("Kalibracja modelu została wykonana.", "Sukces");
                 }
             }
@@ -891,6 +910,8 @@ namespace Aplikacja
             MessageBox.Show(Properties.Settings.Default.C.ToString());
             MessageBox.Show(Properties.Settings.Default.D.ToString());
             */
+
+            Oszacowanie();
         }
 
 
@@ -907,7 +928,8 @@ namespace Aplikacja
                         Properties.Settings.Default.TabPrzeliczeniowa[i] = TempTabPrzeliczeniowa[i];
                     }
 
-                    //Properties.Settings.Default.Save();
+                    //TODO Properties.Settings.Default.Save();
+                    Oszacowanie();
                     MessageBox.Show("Wprowadzono nowe dane do tablicy przeliczeniowej punktów funkcyjnych na źródłowe linie kodu.", "Sukces");
                 }
             }
@@ -919,9 +941,7 @@ namespace Aplikacja
         ********************************************************************************/
         private void ButtonOpisProjektu_Click(object sender, EventArgs e)
         {
-            /*
 
-                    */
 
             // Utworzenie dokumentu przy pomocy MigraDoc
             var dokument = new Document();

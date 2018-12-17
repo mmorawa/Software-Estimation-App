@@ -35,7 +35,6 @@
             this.ToolStripMenuOtworzProj = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuSzczegolyProjektu = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuZalozeniaProjektu = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripOszacuj = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuZapiszProj = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuZapiszJakoProj = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuWyjscie = new System.Windows.Forms.ToolStripMenuItem();
@@ -76,7 +75,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.ButtonOszacuj = new System.Windows.Forms.Button();
             this.ButtonMnPr = new System.Windows.Forms.Button();
             this.ButtonCzSk = new System.Windows.Forms.Button();
             this.ButtonNowyProjekt = new System.Windows.Forms.Button();
@@ -102,11 +100,9 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.GroupBoxWyniki = new System.Windows.Forms.GroupBox();
-            this.GroupBoxRaporty = new System.Windows.Forms.GroupBox();
-            this.ButtonOpisProjektu = new System.Windows.Forms.Button();
-            this.ButtonPodsumowanieProjektu = new System.Windows.Forms.Button();
-            this.ButtonOszacowanie = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.LabelWynikSrZesp = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.LabelWynikKoszt = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
@@ -121,14 +117,16 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.LabelPktUUCP = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.GroupBoxRaporty = new System.Windows.Forms.GroupBox();
+            this.ButtonOpisProjektu = new System.Windows.Forms.Button();
+            this.ButtonPodsumowanieProjektu = new System.Windows.Forms.Button();
+            this.ButtonOszacowanie = new System.Windows.Forms.Button();
             this.ButtonTablicaPrzeliczeniowa = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.ButtonKreator = new System.Windows.Forms.Button();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.LabelWynikSrZesp = new System.Windows.Forms.Label();
             this.PasekMenu.SuspendLayout();
             this.GroupBoxDaneProjektu.SuspendLayout();
             this.GroupBoxUUCW.SuspendLayout();
@@ -142,8 +140,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWSredni)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWProsty)).BeginInit();
             this.GroupBoxWyniki.SuspendLayout();
-            this.GroupBoxRaporty.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.GroupBoxRaporty.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.StatusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -171,7 +169,6 @@
             this.ToolStripMenuOtworzProj,
             this.ToolStripMenuSzczegolyProjektu,
             this.ToolStripMenuZalozeniaProjektu,
-            this.ToolStripOszacuj,
             this.ToolStripMenuZapiszProj,
             this.ToolStripMenuZapiszJakoProj,
             this.ToolStripMenuWyjscie});
@@ -207,13 +204,6 @@
             this.ToolStripMenuZalozeniaProjektu.Size = new System.Drawing.Size(190, 22);
             this.ToolStripMenuZalozeniaProjektu.Text = "Założenia &projektu";
             this.ToolStripMenuZalozeniaProjektu.Click += new System.EventHandler(this.ToolStripMenuZalozeniaProjektu_Click);
-            // 
-            // ToolStripOszacuj
-            // 
-            this.ToolStripOszacuj.Name = "ToolStripOszacuj";
-            this.ToolStripOszacuj.Size = new System.Drawing.Size(190, 22);
-            this.ToolStripOszacuj.Text = "Osza&cuj";
-            this.ToolStripOszacuj.Click += new System.EventHandler(this.ToolStripOszacuj_Click);
             // 
             // ToolStripMenuZapiszProj
             // 
@@ -670,17 +660,6 @@
             this.label1.Text = "Prosty";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ButtonOszacuj
-            // 
-            this.ButtonOszacuj.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOszacuj.Location = new System.Drawing.Point(652, 118);
-            this.ButtonOszacuj.Name = "ButtonOszacuj";
-            this.ButtonOszacuj.Size = new System.Drawing.Size(130, 50);
-            this.ButtonOszacuj.TabIndex = 2;
-            this.ButtonOszacuj.Text = "Oszacuj";
-            this.ButtonOszacuj.UseVisualStyleBackColor = true;
-            this.ButtonOszacuj.Click += new System.EventHandler(this.ButtonOszacuj_Click);
-            // 
             // ButtonMnPr
             // 
             this.ButtonMnPr.Location = new System.Drawing.Point(293, 30);
@@ -1026,52 +1005,6 @@
             this.GroupBoxWyniki.TabStop = false;
             this.GroupBoxWyniki.Text = "Wyniki";
             // 
-            // GroupBoxRaporty
-            // 
-            this.GroupBoxRaporty.Controls.Add(this.ButtonOpisProjektu);
-            this.GroupBoxRaporty.Controls.Add(this.ButtonPodsumowanieProjektu);
-            this.GroupBoxRaporty.Controls.Add(this.ButtonOszacowanie);
-            this.GroupBoxRaporty.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.GroupBoxRaporty.Location = new System.Drawing.Point(844, 69);
-            this.GroupBoxRaporty.Name = "GroupBoxRaporty";
-            this.GroupBoxRaporty.Size = new System.Drawing.Size(210, 129);
-            this.GroupBoxRaporty.TabIndex = 20;
-            this.GroupBoxRaporty.TabStop = false;
-            this.GroupBoxRaporty.Text = "Raporty";
-            // 
-            // ButtonOpisProjektu
-            // 
-            this.ButtonOpisProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOpisProjektu.Location = new System.Drawing.Point(24, 25);
-            this.ButtonOpisProjektu.Name = "ButtonOpisProjektu";
-            this.ButtonOpisProjektu.Size = new System.Drawing.Size(173, 27);
-            this.ButtonOpisProjektu.TabIndex = 16;
-            this.ButtonOpisProjektu.Text = "Opis projektu";
-            this.ButtonOpisProjektu.UseVisualStyleBackColor = true;
-            this.ButtonOpisProjektu.Click += new System.EventHandler(this.ButtonOpisProjektu_Click);
-            // 
-            // ButtonPodsumowanieProjektu
-            // 
-            this.ButtonPodsumowanieProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPodsumowanieProjektu.Location = new System.Drawing.Point(24, 88);
-            this.ButtonPodsumowanieProjektu.Name = "ButtonPodsumowanieProjektu";
-            this.ButtonPodsumowanieProjektu.Size = new System.Drawing.Size(173, 27);
-            this.ButtonPodsumowanieProjektu.TabIndex = 19;
-            this.ButtonPodsumowanieProjektu.Text = "Podsumowanie";
-            this.ButtonPodsumowanieProjektu.UseVisualStyleBackColor = true;
-            this.ButtonPodsumowanieProjektu.Click += new System.EventHandler(this.ButtonPodsumowanieProjektu_Click);
-            // 
-            // ButtonOszacowanie
-            // 
-            this.ButtonOszacowanie.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOszacowanie.Location = new System.Drawing.Point(24, 58);
-            this.ButtonOszacowanie.Name = "ButtonOszacowanie";
-            this.ButtonOszacowanie.Size = new System.Drawing.Size(173, 27);
-            this.ButtonOszacowanie.TabIndex = 18;
-            this.ButtonOszacowanie.Text = "Pełne oszacowanie";
-            this.ButtonOszacowanie.UseVisualStyleBackColor = true;
-            this.ButtonOszacowanie.Click += new System.EventHandler(this.ButtonOszacowanie_Click);
-            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 3;
@@ -1107,6 +1040,31 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(453, 325);
             this.tableLayoutPanel3.TabIndex = 15;
+            // 
+            // LabelWynikSrZesp
+            // 
+            this.LabelWynikSrZesp.AutoSize = true;
+            this.LabelWynikSrZesp.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikSrZesp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelWynikSrZesp.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikSrZesp.Location = new System.Drawing.Point(123, 276);
+            this.LabelWynikSrZesp.MinimumSize = new System.Drawing.Size(150, 0);
+            this.LabelWynikSrZesp.Name = "LabelWynikSrZesp";
+            this.LabelWynikSrZesp.Size = new System.Drawing.Size(207, 49);
+            this.LabelWynikSrZesp.TabIndex = 25;
+            this.LabelWynikSrZesp.Text = "0";
+            this.LabelWynikSrZesp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label33.Location = new System.Drawing.Point(3, 276);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(114, 49);
+            this.label33.TabIndex = 23;
+            this.label33.Text = "Średnia wielkość zespołu";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label34
             // 
@@ -1280,6 +1238,64 @@
             this.LabelPktUUCP.Text = "0";
             this.LabelPktUUCP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label35.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label35.Location = new System.Drawing.Point(336, 276);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(114, 49);
+            this.label35.TabIndex = 24;
+            this.label35.Text = "programistów";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // GroupBoxRaporty
+            // 
+            this.GroupBoxRaporty.Controls.Add(this.ButtonOpisProjektu);
+            this.GroupBoxRaporty.Controls.Add(this.ButtonPodsumowanieProjektu);
+            this.GroupBoxRaporty.Controls.Add(this.ButtonOszacowanie);
+            this.GroupBoxRaporty.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.GroupBoxRaporty.Location = new System.Drawing.Point(844, 69);
+            this.GroupBoxRaporty.Name = "GroupBoxRaporty";
+            this.GroupBoxRaporty.Size = new System.Drawing.Size(210, 129);
+            this.GroupBoxRaporty.TabIndex = 20;
+            this.GroupBoxRaporty.TabStop = false;
+            this.GroupBoxRaporty.Text = "Raporty";
+            // 
+            // ButtonOpisProjektu
+            // 
+            this.ButtonOpisProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOpisProjektu.Location = new System.Drawing.Point(24, 25);
+            this.ButtonOpisProjektu.Name = "ButtonOpisProjektu";
+            this.ButtonOpisProjektu.Size = new System.Drawing.Size(173, 27);
+            this.ButtonOpisProjektu.TabIndex = 16;
+            this.ButtonOpisProjektu.Text = "Opis projektu";
+            this.ButtonOpisProjektu.UseVisualStyleBackColor = true;
+            this.ButtonOpisProjektu.Click += new System.EventHandler(this.ButtonOpisProjektu_Click);
+            // 
+            // ButtonPodsumowanieProjektu
+            // 
+            this.ButtonPodsumowanieProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonPodsumowanieProjektu.Location = new System.Drawing.Point(24, 88);
+            this.ButtonPodsumowanieProjektu.Name = "ButtonPodsumowanieProjektu";
+            this.ButtonPodsumowanieProjektu.Size = new System.Drawing.Size(173, 27);
+            this.ButtonPodsumowanieProjektu.TabIndex = 19;
+            this.ButtonPodsumowanieProjektu.Text = "Podsumowanie";
+            this.ButtonPodsumowanieProjektu.UseVisualStyleBackColor = true;
+            this.ButtonPodsumowanieProjektu.Click += new System.EventHandler(this.ButtonPodsumowanieProjektu_Click);
+            // 
+            // ButtonOszacowanie
+            // 
+            this.ButtonOszacowanie.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOszacowanie.Location = new System.Drawing.Point(24, 58);
+            this.ButtonOszacowanie.Name = "ButtonOszacowanie";
+            this.ButtonOszacowanie.Size = new System.Drawing.Size(173, 27);
+            this.ButtonOszacowanie.TabIndex = 18;
+            this.ButtonOszacowanie.Text = "Pełne oszacowanie";
+            this.ButtonOszacowanie.UseVisualStyleBackColor = true;
+            this.ButtonOszacowanie.Click += new System.EventHandler(this.ButtonOszacowanie_Click);
+            // 
             // ButtonTablicaPrzeliczeniowa
             // 
             this.ButtonTablicaPrzeliczeniowa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -1331,43 +1347,6 @@
             this.ButtonKreator.UseVisualStyleBackColor = true;
             this.ButtonKreator.Click += new System.EventHandler(this.ButtonKreator_Click);
             // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label33.Location = new System.Drawing.Point(3, 276);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(114, 49);
-            this.label33.TabIndex = 23;
-            this.label33.Text = "Średnia wielkość zespołu";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label35.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label35.Location = new System.Drawing.Point(336, 276);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(114, 49);
-            this.label35.TabIndex = 24;
-            this.label35.Text = "programistów";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // LabelWynikSrZesp
-            // 
-            this.LabelWynikSrZesp.AutoSize = true;
-            this.LabelWynikSrZesp.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelWynikSrZesp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikSrZesp.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikSrZesp.Location = new System.Drawing.Point(123, 276);
-            this.LabelWynikSrZesp.MinimumSize = new System.Drawing.Size(150, 0);
-            this.LabelWynikSrZesp.Name = "LabelWynikSrZesp";
-            this.LabelWynikSrZesp.Size = new System.Drawing.Size(207, 49);
-            this.LabelWynikSrZesp.TabIndex = 25;
-            this.LabelWynikSrZesp.Text = "0";
-            this.LabelWynikSrZesp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // OknoGlowne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1377,7 +1356,6 @@
             this.Controls.Add(this.GroupBoxRaporty);
             this.Controls.Add(this.ButtonTablicaPrzeliczeniowa);
             this.Controls.Add(this.ButtonKreator);
-            this.Controls.Add(this.ButtonOszacuj);
             this.Controls.Add(this.ButtonKalibracja);
             this.Controls.Add(this.ButtonUstawienia);
             this.Controls.Add(this.ButtonZapiszProjekt);
@@ -1411,9 +1389,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWSredni)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWProsty)).EndInit();
             this.GroupBoxWyniki.ResumeLayout(false);
-            this.GroupBoxRaporty.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.GroupBoxRaporty.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.StatusStrip.ResumeLayout(false);
             this.StatusStrip.PerformLayout();
@@ -1480,7 +1458,6 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.GroupBox GroupBoxWyniki;
-        private System.Windows.Forms.Button ButtonOszacuj;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button ButtonMnPr;
         private System.Windows.Forms.Button ButtonCzSk;
@@ -1520,7 +1497,6 @@
         private System.Windows.Forms.Button ButtonOszacowanie;
         private System.Windows.Forms.Button ButtonTablicaPrzeliczeniowa;
         private System.Windows.Forms.ToolStripMenuItem ToolStripTablicaPrzeliczeniowa;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripOszacuj;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label LabelWynikSrZesp;
         private System.Windows.Forms.Label label35;
