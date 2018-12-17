@@ -477,6 +477,18 @@ namespace Aplikacja
 
             SrZespol = Pracochlonnosc / Harmonogram;
 
+            // Nie może nad projektem pracować zero programistów
+            if (SrZespol < 1)
+            {
+                SrZespol = 1;
+            }
+           
+            //TODO better
+            int Dni = (int)Math.Round(Harmonogram * 30.42);           
+            DateTime DataZakonczenia = Convert.ToDateTime(DateTimePicker.Text);
+            DataZakonczenia = DataZakonczenia.AddDays(Dni);
+
+
             //Wyświetlenie wyników
             LabelPktUUCP.Text = string.Format("{0:N0}", UUCP);
             LabelRozmiar.Text = string.Format("{0:N0}", Rozmiar);
@@ -484,6 +496,7 @@ namespace Aplikacja
             LabelWynikHarm.Text = string.Format("{0:N1}", Harmonogram);
             LabelWynikKoszt.Text = string.Format("{0:N}", Koszt);
             LabelWynikSrZesp.Text = string.Format("{0:N0}", SrZespol);
+            LabelData.Text = string.Format("{0:d MMMM yyyy}", DataZakonczenia);
 
             string Ostrzezenie = "";
             //Ograniczenia projektu
@@ -677,6 +690,7 @@ namespace Aplikacja
 
                             SrZespol = double.Parse(sr.ReadLine());
                             LabelWynikSrZesp.Text = string.Format("{0:N0}", SrZespol);
+                            LabelData.Text = sr.ReadLine();
                         }
                     }
                     catch (Exception)
@@ -787,6 +801,7 @@ namespace Aplikacja
                 sw.WriteLine(LabelWynikHarm.BackColor.Name);
                 sw.WriteLine(LabelWynikKoszt.BackColor.Name);
                 sw.WriteLine(SrZespol);
+                sw.WriteLine(LabelData.Text);
 
                 //sw.Dispose();
                 MessageBox.Show("Plik zapisano.");
@@ -847,6 +862,7 @@ namespace Aplikacja
             LabelWynikKoszt.Text = "0";
             LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("Control");
             LabelWynikSrZesp.Text = "0";
+            LabelData.Text = "0";
 
         }
 
