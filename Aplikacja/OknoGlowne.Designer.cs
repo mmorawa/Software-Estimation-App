@@ -998,9 +998,9 @@
             // 
             this.GroupBoxWyniki.Controls.Add(this.tableLayoutPanel3);
             this.GroupBoxWyniki.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.GroupBoxWyniki.Location = new System.Drawing.Point(582, 204);
+            this.GroupBoxWyniki.Location = new System.Drawing.Point(582, 69);
             this.GroupBoxWyniki.Name = "GroupBoxWyniki";
-            this.GroupBoxWyniki.Size = new System.Drawing.Size(472, 512);
+            this.GroupBoxWyniki.Size = new System.Drawing.Size(472, 547);
             this.GroupBoxWyniki.TabIndex = 5;
             this.GroupBoxWyniki.TabStop = false;
             this.GroupBoxWyniki.Text = "Wyniki";
@@ -1256,9 +1256,9 @@
             this.GroupBoxRaporty.Controls.Add(this.ButtonPodsumowanieProjektu);
             this.GroupBoxRaporty.Controls.Add(this.ButtonOszacowanie);
             this.GroupBoxRaporty.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.GroupBoxRaporty.Location = new System.Drawing.Point(844, 69);
+            this.GroupBoxRaporty.Location = new System.Drawing.Point(582, 622);
             this.GroupBoxRaporty.Name = "GroupBoxRaporty";
-            this.GroupBoxRaporty.Size = new System.Drawing.Size(210, 129);
+            this.GroupBoxRaporty.Size = new System.Drawing.Size(472, 94);
             this.GroupBoxRaporty.TabIndex = 20;
             this.GroupBoxRaporty.TabStop = false;
             this.GroupBoxRaporty.Text = "Raporty";
@@ -1266,9 +1266,9 @@
             // ButtonOpisProjektu
             // 
             this.ButtonOpisProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOpisProjektu.Location = new System.Drawing.Point(24, 25);
+            this.ButtonOpisProjektu.Location = new System.Drawing.Point(14, 39);
             this.ButtonOpisProjektu.Name = "ButtonOpisProjektu";
-            this.ButtonOpisProjektu.Size = new System.Drawing.Size(173, 27);
+            this.ButtonOpisProjektu.Size = new System.Drawing.Size(123, 27);
             this.ButtonOpisProjektu.TabIndex = 16;
             this.ButtonOpisProjektu.Text = "Opis projektu";
             this.ButtonOpisProjektu.UseVisualStyleBackColor = true;
@@ -1277,9 +1277,9 @@
             // ButtonPodsumowanieProjektu
             // 
             this.ButtonPodsumowanieProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPodsumowanieProjektu.Location = new System.Drawing.Point(24, 88);
+            this.ButtonPodsumowanieProjektu.Location = new System.Drawing.Point(305, 39);
             this.ButtonPodsumowanieProjektu.Name = "ButtonPodsumowanieProjektu";
-            this.ButtonPodsumowanieProjektu.Size = new System.Drawing.Size(173, 27);
+            this.ButtonPodsumowanieProjektu.Size = new System.Drawing.Size(155, 27);
             this.ButtonPodsumowanieProjektu.TabIndex = 19;
             this.ButtonPodsumowanieProjektu.Text = "Podsumowanie";
             this.ButtonPodsumowanieProjektu.UseVisualStyleBackColor = true;
@@ -1288,9 +1288,9 @@
             // ButtonOszacowanie
             // 
             this.ButtonOszacowanie.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOszacowanie.Location = new System.Drawing.Point(24, 58);
+            this.ButtonOszacowanie.Location = new System.Drawing.Point(143, 39);
             this.ButtonOszacowanie.Name = "ButtonOszacowanie";
-            this.ButtonOszacowanie.Size = new System.Drawing.Size(173, 27);
+            this.ButtonOszacowanie.Size = new System.Drawing.Size(156, 27);
             this.ButtonOszacowanie.TabIndex = 18;
             this.ButtonOszacowanie.Text = "Pełne oszacowanie";
             this.ButtonOszacowanie.UseVisualStyleBackColor = true;
@@ -1299,7 +1299,7 @@
             // ButtonTablicaPrzeliczeniowa
             // 
             this.ButtonTablicaPrzeliczeniowa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonTablicaPrzeliczeniowa.Location = new System.Drawing.Point(868, 36);
+            this.ButtonTablicaPrzeliczeniowa.Location = new System.Drawing.Point(881, 36);
             this.ButtonTablicaPrzeliczeniowa.Name = "ButtonTablicaPrzeliczeniowa";
             this.ButtonTablicaPrzeliczeniowa.Size = new System.Drawing.Size(173, 27);
             this.ButtonTablicaPrzeliczeniowa.TabIndex = 21;
