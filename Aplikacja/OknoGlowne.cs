@@ -401,7 +401,7 @@ namespace Aplikacja
 
         //------------------------Algorytm------------------------------------------------------
 
-
+        //TODO kasowanie danych częściowo zbędne bo teraz automatycznie wywołuje się funkcja Oszacowanie
         private void Oszacowanie()
         {
             //TODO walidacja danych wejściowych, zaokrąglanie
@@ -427,6 +427,7 @@ namespace Aplikacja
                 LabelWynikKoszt.Text = "0";
                 LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("Control");
                 LabelWynikSrZesp.Text = "0";
+                LabelWynikData.Text = "";
                 return;
             }
 
@@ -483,7 +484,7 @@ namespace Aplikacja
                 SrZespol = 1;
             }
            
-            //TODO better
+            //TODO pusta data -> brak? danych..., czynniki COCOMO post architecture
             int Dni = (int)Math.Round(Harmonogram * 30.42);           
             DateTime DataZakonczenia = Convert.ToDateTime(DateTimePicker.Text);
             DataZakonczenia = DataZakonczenia.AddDays(Dni);
@@ -496,7 +497,7 @@ namespace Aplikacja
             LabelWynikHarm.Text = string.Format("{0:N1}", Harmonogram);
             LabelWynikKoszt.Text = string.Format("{0:N}", Koszt);
             LabelWynikSrZesp.Text = string.Format("{0:N0}", SrZespol);
-            LabelData.Text = string.Format("{0:d MMMM yyyy}", DataZakonczenia);
+            LabelWynikData.Text = string.Format("{0:d MMMM yyyy}", DataZakonczenia);
 
             string Ostrzezenie = "";
             //Ograniczenia projektu
@@ -690,7 +691,7 @@ namespace Aplikacja
 
                             SrZespol = double.Parse(sr.ReadLine());
                             LabelWynikSrZesp.Text = string.Format("{0:N0}", SrZespol);
-                            LabelData.Text = sr.ReadLine();
+                            LabelWynikData.Text = sr.ReadLine();
                         }
                     }
                     catch (Exception)
@@ -801,7 +802,7 @@ namespace Aplikacja
                 sw.WriteLine(LabelWynikHarm.BackColor.Name);
                 sw.WriteLine(LabelWynikKoszt.BackColor.Name);
                 sw.WriteLine(SrZespol);
-                sw.WriteLine(LabelData.Text);
+                sw.WriteLine(LabelWynikData.Text);
 
                 //sw.Dispose();
                 MessageBox.Show("Plik zapisano.");
@@ -862,7 +863,7 @@ namespace Aplikacja
             LabelWynikKoszt.Text = "0";
             LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("Control");
             LabelWynikSrZesp.Text = "0";
-            LabelData.Text = "0";
+            LabelWynikData.Text = "0";
 
         }
 
