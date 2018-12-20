@@ -21,8 +21,7 @@ namespace Aplikacja
 
             // Create a new MigraDoc document
             var dokument = Raport;
-
-            // HACK
+           
             var ddl = DdlWriter.WriteToString(dokument);
             PodgladRaportu.Ddl = ddl;
 

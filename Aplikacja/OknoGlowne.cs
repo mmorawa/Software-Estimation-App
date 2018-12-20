@@ -322,7 +322,7 @@ namespace Aplikacja
                     }
 
                     Oszacowanie();
-                    MessageBox.Show("Czynniki skali zostały zmienione.", "Sukces");
+                    //MessageBox.Show("Czynniki skali zostały zmienione.", "Sukces");
                     
                 }
             }
@@ -343,7 +343,7 @@ namespace Aplikacja
                     }
 
                     Oszacowanie();
-                    MessageBox.Show("Mnożniki pracochłonności zostały zmienione.", "Sukces");
+                    //MessageBox.Show("Mnożniki pracochłonności zostały zmienione.", "Sukces");
                     
                 }
             }
@@ -1125,5 +1125,7 @@ namespace Aplikacja
                 }
             }
         }
+
+
     }
 }

@@ -7,7 +7,7 @@ Plik Form1.cs zawiera rdzeń programu czyli główne okno aplikacji wraz z menu,
 using System;
 using System.Windows.Forms;
 
-//TODO: wysoki/a, wyrównanie, tooltipy, opisy.
+//TODO:   wyrównanie, tooltipy, opisy.
 
 //! Przestrzeń nazw Password_Manager obejmuje całą aplikację Menedżera Haseł.
 /*! Password_Manager to przestrzeń nazw, która obejmuje całą aplikację Menedżera Haseł, ze wszystkimi klasami Form. */
