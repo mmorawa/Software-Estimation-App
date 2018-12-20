@@ -270,7 +270,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(118, 71);
             this.label17.TabIndex = 31;
-            this.label17.Text = "Wymagana niezawodność oprogramownia";
+            this.label17.Text = "Wymagana niezawodność oprogramowania";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label12
@@ -534,7 +534,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1041, 484);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1041, 501);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // label44
@@ -547,7 +547,7 @@
             this.label44.Location = new System.Drawing.Point(3, 0);
             this.label44.Name = "label44";
             this.label44.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label44.Size = new System.Drawing.Size(120, 69);
+            this.label44.Size = new System.Drawing.Size(120, 71);
             this.label44.TabIndex = 39;
             this.label44.Text = "Nazwa mnożnika pracochłonności";
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -562,7 +562,7 @@
             this.label41.Location = new System.Drawing.Point(129, 0);
             this.label41.Name = "label41";
             this.label41.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label41.Size = new System.Drawing.Size(386, 69);
+            this.label41.Size = new System.Drawing.Size(386, 71);
             this.label41.TabIndex = 38;
             this.label41.Text = "Poziom oceny danego mnożnika";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -577,7 +577,7 @@
             this.label38.Location = new System.Drawing.Point(521, 0);
             this.label38.Name = "label38";
             this.label38.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label38.Size = new System.Drawing.Size(517, 69);
+            this.label38.Size = new System.Drawing.Size(517, 71);
             this.label38.TabIndex = 40;
             this.label38.Text = "Krótki opis";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -588,9 +588,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 414);
+            this.label5.Location = new System.Drawing.Point(3, 426);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(120, 70);
+            this.label5.Size = new System.Drawing.Size(120, 75);
             this.label5.TabIndex = 10;
             this.label5.Text = "Doświadczenie \r\nw stosowaniu języka i narzędzi";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -601,11 +601,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 69);
+            this.label6.Location = new System.Drawing.Point(3, 71);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(120, 69);
+            this.label6.Size = new System.Drawing.Size(120, 71);
             this.label6.TabIndex = 15;
-            this.label6.Text = "Umiejętności analityków wymagań";
+            this.label6.Text = "Umiejętności analityków biznesowych";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
@@ -614,9 +614,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 138);
+            this.label7.Location = new System.Drawing.Point(3, 142);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(120, 69);
+            this.label7.Size = new System.Drawing.Size(120, 71);
             this.label7.TabIndex = 16;
             this.label7.Text = "Umiejętności programistów";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -627,9 +627,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(3, 345);
+            this.label10.Location = new System.Drawing.Point(3, 355);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(120, 69);
+            this.label10.Size = new System.Drawing.Size(120, 71);
             this.label10.TabIndex = 19;
             this.label10.Text = "Doświadczenie \r\nw korzystaniu \r\nz platformy";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -640,9 +640,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 207);
+            this.label11.Location = new System.Drawing.Point(3, 213);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(120, 69);
+            this.label11.Size = new System.Drawing.Size(120, 71);
             this.label11.TabIndex = 20;
             this.label11.Text = "Ciągłość zespołu";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -659,7 +659,7 @@
             "Nominalny: 55 percentyl - przeciętni programiści",
             "Wysoki: 75 percentyl - dobrzy programiści",
             "Bardzo wysoki: 90 percentyl - najlepsi programiści"});
-            this.ComboBoxMnPrProgr.Location = new System.Drawing.Point(129, 161);
+            this.ComboBoxMnPrProgr.Location = new System.Drawing.Point(129, 165);
             this.ComboBoxMnPrProgr.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
             this.ComboBoxMnPrProgr.Name = "ComboBoxMnPrProgr";
             this.ComboBoxMnPrProgr.Size = new System.Drawing.Size(386, 24);
@@ -678,7 +678,7 @@
             "Nominalny: 1 rok",
             "Wysoki: 3 lata",
             "Bardzo wysoki: powyżej 6 lat"});
-            this.ComboBoxMnPrDoswJ.Location = new System.Drawing.Point(129, 437);
+            this.ComboBoxMnPrDoswJ.Location = new System.Drawing.Point(129, 449);
             this.ComboBoxMnPrDoswJ.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
             this.ComboBoxMnPrDoswJ.Name = "ComboBoxMnPrDoswJ";
             this.ComboBoxMnPrDoswJ.Size = new System.Drawing.Size(386, 24);
@@ -691,9 +691,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(3, 276);
+            this.label16.Location = new System.Drawing.Point(3, 284);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(120, 69);
+            this.label16.Size = new System.Drawing.Size(120, 71);
             this.label16.TabIndex = 25;
             this.label16.Text = "Doświadczenie \r\nw tworzeniu aplikacji";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -710,7 +710,7 @@
             "Nominalny: 55 percentyl - przeciętni analitycy",
             "Wysoki: 75 percentyl - dobrzy analitycy",
             "Bardzo wysoki: 90 percentyl - najlepsi analitycy"});
-            this.ComboBoxMnPrAnal.Location = new System.Drawing.Point(129, 92);
+            this.ComboBoxMnPrAnal.Location = new System.Drawing.Point(129, 94);
             this.ComboBoxMnPrAnal.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
             this.ComboBoxMnPrAnal.Name = "ComboBoxMnPrAnal";
             this.ComboBoxMnPrAnal.Size = new System.Drawing.Size(386, 24);
@@ -729,7 +729,7 @@
             "Nominalny: 1 rok",
             "Wysoki: 3 lata",
             "Bardzo wysoki: powyżej 6 lat"});
-            this.ComboBoxMnPrDoswA.Location = new System.Drawing.Point(129, 299);
+            this.ComboBoxMnPrDoswA.Location = new System.Drawing.Point(129, 307);
             this.ComboBoxMnPrDoswA.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
             this.ComboBoxMnPrDoswA.Name = "ComboBoxMnPrDoswA";
             this.ComboBoxMnPrDoswA.Size = new System.Drawing.Size(386, 24);
@@ -748,7 +748,7 @@
             "Nominalny: rotacja dotyka 12% zespołu rocznie",
             "Wysoki: rotacja dotyka 6% zespołu rocznie",
             "Bardzo wysoki: rotacja dotyka 3% zespołu rocznie"});
-            this.ComboBoxMnPrZesp.Location = new System.Drawing.Point(129, 230);
+            this.ComboBoxMnPrZesp.Location = new System.Drawing.Point(129, 236);
             this.ComboBoxMnPrZesp.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
             this.ComboBoxMnPrZesp.Name = "ComboBoxMnPrZesp";
             this.ComboBoxMnPrZesp.Size = new System.Drawing.Size(386, 24);
@@ -767,7 +767,7 @@
             "Nominalny: 1 rok",
             "Wysoki: 3 lata",
             "Bardzo wysoki: powyżej 6 lat"});
-            this.ComboBoxMnPrDoswP.Location = new System.Drawing.Point(129, 368);
+            this.ComboBoxMnPrDoswP.Location = new System.Drawing.Point(129, 378);
             this.ComboBoxMnPrDoswP.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
             this.ComboBoxMnPrDoswP.Name = "ComboBoxMnPrDoswP";
             this.ComboBoxMnPrDoswP.Size = new System.Drawing.Size(386, 24);
@@ -777,41 +777,47 @@
             // label23
             // 
             this.label23.AutoSize = true;
+            this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label23.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label23.Location = new System.Drawing.Point(521, 77);
-            this.label23.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label23.Location = new System.Drawing.Point(521, 74);
+            this.label23.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(35, 16);
+            this.label23.Size = new System.Drawing.Size(517, 68);
             this.label23.TabIndex = 42;
-            this.label23.Text = "Opis";
+            this.label23.Text = resources.GetString("label23.Text");
             // 
             // label24
             // 
             this.label24.AutoSize = true;
+            this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label24.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label24.Location = new System.Drawing.Point(521, 146);
-            this.label24.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label24.Location = new System.Drawing.Point(521, 145);
+            this.label24.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(35, 16);
+            this.label24.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.label24.Size = new System.Drawing.Size(517, 68);
             this.label24.TabIndex = 43;
-            this.label24.Text = "Opis";
+            this.label24.Text = resources.GetString("label24.Text");
             // 
             // label25
             // 
             this.label25.AutoSize = true;
+            this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label25.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label25.Location = new System.Drawing.Point(521, 215);
-            this.label25.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label25.Location = new System.Drawing.Point(521, 216);
+            this.label25.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(35, 16);
+            this.label25.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
+            this.label25.Size = new System.Drawing.Size(517, 68);
             this.label25.TabIndex = 44;
-            this.label25.Text = "Opis";
+            this.label25.Text = "Poziom oceny tego mnożnika zależy od tego jak wielka jest rotacja pracowników zat" +
+    "rudnionych przy projekcie w skali jednego roku.";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label26.Location = new System.Drawing.Point(521, 284);
+            this.label26.Location = new System.Drawing.Point(521, 292);
             this.label26.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(35, 16);
@@ -822,7 +828,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label27.Location = new System.Drawing.Point(521, 353);
+            this.label27.Location = new System.Drawing.Point(521, 363);
             this.label27.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(35, 16);
@@ -833,7 +839,7 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label28.Location = new System.Drawing.Point(521, 422);
+            this.label28.Location = new System.Drawing.Point(521, 434);
             this.label28.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(35, 16);

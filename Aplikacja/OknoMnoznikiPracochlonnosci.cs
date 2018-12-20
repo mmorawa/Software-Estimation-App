@@ -25,8 +25,10 @@ namespace Aplikacja
             ComboBoxMnPrNiezaw.SelectedIndex = OknoGlowne.TabIndEM[0];
             ComboBoxMnPrBaza.SelectedIndex = OknoGlowne.TabIndEM[1];
             ComboBoxMnPrZloz.SelectedIndex = OknoGlowne.TabIndEM[2];
-            ComboBoxMnPrPonow.SelectedIndex = OknoGlowne.TabIndEM[3];
+            //zamiana kolejności inicjalizacji ze względu na warunek ograniczający mnożnik 
             ComboBoxMnPrDoku.SelectedIndex = OknoGlowne.TabIndEM[4];
+            ComboBoxMnPrPonow.SelectedIndex = OknoGlowne.TabIndEM[3];
+            
 
             ComboBoxMnPrAnal.SelectedIndex = OknoGlowne.TabIndEM[5];
             ComboBoxMnPrProgr.SelectedIndex = OknoGlowne.TabIndEM[6];
@@ -52,7 +54,18 @@ namespace Aplikacja
         //---------------Dot. produktu----------------------------------
         private void ComboBoxMnPrNiezaw_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabIndEM[0] = ComboBoxMnPrNiezaw.SelectedIndex;
+            //uwzględniamy ograniczenia nałożone przez mnożnik możliwość ponownego wykorzystania
+            if (ComboBoxMnPrNiezaw.SelectedIndex >= (OknoGlowne.TempTabIndEM[3]))
+            {
+                OknoGlowne.TempTabIndEM[0] = ComboBoxMnPrNiezaw.SelectedIndex;
+            }
+            else
+            {
+                ComboBoxMnPrNiezaw.SelectedIndex = OknoGlowne.TempTabIndEM[0];
+                MessageBox.Show("Mnożnik wymagana niezawodność oprogramowania może być co najwyżej o jeden poziom niższy od " +
+                    "mnożnika możliwość ponownego wykorzystania.", "Ostrzeżenie");
+            }
+            
         }
 
         private void ComboBoxMnPrBaza_SelectedIndexChanged(object sender, EventArgs e)
@@ -67,12 +80,53 @@ namespace Aplikacja
 
         private void ComboBoxMnPrPonow_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabIndEM[3] = ComboBoxMnPrPonow.SelectedIndex;
+            //uwzględniamy ograniczenia           
+            if (OknoGlowne.TempTabIndEM[0] < ComboBoxMnPrPonow.SelectedIndex)
+            {
+                ComboBoxMnPrPonow.SelectedIndex = OknoGlowne.TempTabIndEM[3];
+                MessageBox.Show("Zwiększenie poziomu mnożnika możliwość ponownego wykorzystania wymaga najpierw podwyższenia poziomu" +
+                    " mnożnika wymagana niezawodność oprogramowania co najmniej do poziomu o jeden niższego od zaplanowanego zwiększenia tego pierwszego. ", "Ostrzeżenie");
+
+            }
+            else if ((ComboBoxMnPrPonow.SelectedIndex == 1 || ComboBoxMnPrPonow.SelectedIndex == 2) && OknoGlowne.TempTabIndEM[4] < 2)
+            {
+                ComboBoxMnPrPonow.SelectedIndex = OknoGlowne.TempTabIndEM[3];
+                MessageBox.Show("Zwiększenie poziomu mnożnika możliwość ponownego wykorzystania do poziomu nominalnego lub wysokiego wymaga najpierw podwyższenia poziomu" +
+                    " mnożnika dokumentacja odpowiada wymaganiom cyklu życia co najmniej do poziomu nominalnego. ", "Ostrzeżenie");
+            }
+            else if ((ComboBoxMnPrPonow.SelectedIndex == 3 || ComboBoxMnPrPonow.SelectedIndex == 4) && OknoGlowne.TempTabIndEM[4] < 3)
+            {
+                MessageBox.Show("Zwiększenie poziomu mnożnika możliwość ponownego wykorzystania do poziomu bardzo wysokiego lub ekstra wysokiego wymaga najpierw podwyższenia poziomu" +
+                    " mnożnika dokumentacja odpowiada wymaganiom cyklu życia co najmniej do poziomu wysokiego. ", "Ostrzeżenie");
+                ComboBoxMnPrPonow.SelectedIndex = OknoGlowne.TempTabIndEM[3];
+            }
+            else
+            {
+                OknoGlowne.TempTabIndEM[3] = ComboBoxMnPrPonow.SelectedIndex;
+            }
+
         }
 
         private void ComboBoxMnPrDoku_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabIndEM[4] = ComboBoxMnPrDoku.SelectedIndex;
+            //uwzględniamy ograniczenia nałożone przez mnożnik możliwość ponownego wykorzystania
+            if ((OknoGlowne.TempTabIndEM[3] == 1 || OknoGlowne.TempTabIndEM[3] == 2) && ComboBoxMnPrDoku.SelectedIndex < 2)
+            {
+                ComboBoxMnPrDoku.SelectedIndex = OknoGlowne.TempTabIndEM[4];
+                MessageBox.Show("Mnożnik dokumentacja odpowiada wymaganiom cyklu życia musi być co najmniej na poziomie nominalnym," +
+                    " gdy poziom mnożnika możliwość ponownego wykorzystania jest na poziomie nominalnym lub wysokim.", "Ostrzeżenie"); 
+            }
+            else if ((OknoGlowne.TempTabIndEM[3] == 3 || OknoGlowne.TempTabIndEM[3] == 4) && ComboBoxMnPrDoku.SelectedIndex < 3)
+            {
+                ComboBoxMnPrDoku.SelectedIndex = OknoGlowne.TempTabIndEM[4];
+                MessageBox.Show("Mnożnik dokumentacja odpowiada wymaganiom cyklu życia musi być co najmniej na poziomie wysokim," +
+                    " gdy poziom mnożnika możliwość ponownego wykorzystania jest na poziomie bardzo wysokim lub esktra wysokim.", "Ostrzeżenie");
+            }
+            else
+            {
+                OknoGlowne.TempTabIndEM[4] = ComboBoxMnPrDoku.SelectedIndex;
+            }
+
         }
 
         //----------------Dot. personelu--------------------------------------------

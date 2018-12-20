@@ -126,6 +126,12 @@
   <data name="label21.Text" xml:space="preserve">
     <value>Ten mnożnik odpowiada za uwzględnienie dodatkowego nakładu pracy, który wiąże się z tworzeniem komponentów aplikacji w sposób pozwalający na ich ponowne użycie w przyszłości. Im bardziej abstrakcyjny i ogólny musi być dany komponent tym większa będzie pracochłonność jego wytworzenia.</value>
   </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>Analitycy biznesowi opracowują wymagania, które musi spełniać projektowane oprogramowanie w celu uzyskania przez organizację określonych korzyści biznesowych. Ocena umiejętności analityków powinna obejmować ich zdolność analizy i projektowania, dokładność, efektywność oraz komunikatywność.</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>Główne czynniki jakie należy wziąć pod uwagę oceniając umiejętności programistów stanowią: ich efektywność, dokładność, komunikatywność oraz kooperatywność. Natomiast doświadczenie jest uwzględnione przez inne mnożniki. </value>
+  </data>
   <metadata name="ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
