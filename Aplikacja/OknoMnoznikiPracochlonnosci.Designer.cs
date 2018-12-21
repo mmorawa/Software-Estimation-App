@@ -206,11 +206,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label37.AutoSize = true;
+            this.label37.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label37.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label37.Location = new System.Drawing.Point(540, 0);
+            this.label37.Location = new System.Drawing.Point(539, 10);
+            this.label37.Margin = new System.Windows.Forms.Padding(2, 10, 0, 0);
             this.label37.Name = "label37";
-            this.label37.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label37.Size = new System.Drawing.Size(495, 71);
+            this.label37.Size = new System.Drawing.Size(499, 61);
             this.label37.TabIndex = 39;
             this.label37.Text = "Krótki opis";
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -221,11 +222,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label36.AutoSize = true;
+            this.label36.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label36.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label36.Location = new System.Drawing.Point(3, 0);
+            this.label36.Location = new System.Drawing.Point(0, 10);
+            this.label36.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.label36.Name = "label36";
-            this.label36.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label36.Size = new System.Drawing.Size(118, 71);
+            this.label36.Size = new System.Drawing.Size(124, 61);
             this.label36.TabIndex = 38;
             this.label36.Text = "Nazwa mnożnika pracochłonności";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -236,11 +238,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label35.AutoSize = true;
+            this.label35.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label35.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label35.Location = new System.Drawing.Point(127, 0);
+            this.label35.Location = new System.Drawing.Point(126, 10);
+            this.label35.Margin = new System.Windows.Forms.Padding(2, 10, 0, 0);
             this.label35.Name = "label35";
-            this.label35.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label35.Size = new System.Drawing.Size(407, 71);
+            this.label35.Size = new System.Drawing.Size(411, 61);
             this.label35.TabIndex = 37;
             this.label35.Text = "Poziom oceny danego mnożnika";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -543,11 +546,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label44.AutoSize = true;
+            this.label44.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label44.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label44.Location = new System.Drawing.Point(3, 0);
+            this.label44.Location = new System.Drawing.Point(0, 10);
+            this.label44.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.label44.Name = "label44";
-            this.label44.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label44.Size = new System.Drawing.Size(120, 71);
+            this.label44.Size = new System.Drawing.Size(126, 61);
             this.label44.TabIndex = 39;
             this.label44.Text = "Nazwa mnożnika pracochłonności";
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -558,11 +562,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label41.AutoSize = true;
+            this.label41.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label41.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label41.Location = new System.Drawing.Point(129, 0);
+            this.label41.Location = new System.Drawing.Point(128, 10);
+            this.label41.Margin = new System.Windows.Forms.Padding(2, 10, 0, 0);
             this.label41.Name = "label41";
-            this.label41.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label41.Size = new System.Drawing.Size(386, 71);
+            this.label41.Size = new System.Drawing.Size(390, 61);
             this.label41.TabIndex = 38;
             this.label41.Text = "Poziom oceny danego mnożnika";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -573,11 +578,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label38.AutoSize = true;
+            this.label38.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label38.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label38.Location = new System.Drawing.Point(521, 0);
+            this.label38.Location = new System.Drawing.Point(520, 10);
+            this.label38.Margin = new System.Windows.Forms.Padding(2, 10, 0, 0);
             this.label38.Name = "label38";
-            this.label38.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label38.Size = new System.Drawing.Size(517, 71);
+            this.label38.Size = new System.Drawing.Size(521, 61);
             this.label38.TabIndex = 40;
             this.label38.Text = "Krótki opis";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -901,11 +907,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label45.AutoSize = true;
+            this.label45.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label45.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label45.Location = new System.Drawing.Point(3, 0);
+            this.label45.Location = new System.Drawing.Point(0, 10);
+            this.label45.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.label45.Name = "label45";
-            this.label45.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label45.Size = new System.Drawing.Size(120, 68);
+            this.label45.Size = new System.Drawing.Size(126, 58);
             this.label45.TabIndex = 39;
             this.label45.Text = "Nazwa mnożnika pracochłonności";
             this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -916,11 +923,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label42.AutoSize = true;
+            this.label42.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label42.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label42.Location = new System.Drawing.Point(129, 0);
+            this.label42.Location = new System.Drawing.Point(128, 10);
+            this.label42.Margin = new System.Windows.Forms.Padding(2, 10, 0, 0);
             this.label42.Name = "label42";
-            this.label42.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label42.Size = new System.Drawing.Size(421, 68);
+            this.label42.Size = new System.Drawing.Size(425, 58);
             this.label42.TabIndex = 38;
             this.label42.Text = "Poziom oceny danego mnożnika";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -931,11 +939,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label39.AutoSize = true;
+            this.label39.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label39.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label39.Location = new System.Drawing.Point(556, 0);
+            this.label39.Location = new System.Drawing.Point(555, 10);
+            this.label39.Margin = new System.Windows.Forms.Padding(2, 10, 0, 0);
             this.label39.Name = "label39";
-            this.label39.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label39.Size = new System.Drawing.Size(479, 68);
+            this.label39.Size = new System.Drawing.Size(483, 58);
             this.label39.TabIndex = 40;
             this.label39.Text = "Krótki opis";
             this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1113,11 +1122,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label46.AutoSize = true;
+            this.label46.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label46.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label46.Location = new System.Drawing.Point(3, 0);
+            this.label46.Location = new System.Drawing.Point(0, 10);
+            this.label46.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.label46.Name = "label46";
-            this.label46.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label46.Size = new System.Drawing.Size(127, 65);
+            this.label46.Size = new System.Drawing.Size(133, 55);
             this.label46.TabIndex = 39;
             this.label46.Text = "Nazwa mnożnika pracochłonności";
             this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1128,11 +1138,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label43.AutoSize = true;
+            this.label43.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label43.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label43.Location = new System.Drawing.Point(136, 0);
+            this.label43.Location = new System.Drawing.Point(135, 10);
+            this.label43.Margin = new System.Windows.Forms.Padding(2, 10, 0, 0);
             this.label43.Name = "label43";
-            this.label43.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label43.Size = new System.Drawing.Size(475, 65);
+            this.label43.Size = new System.Drawing.Size(479, 55);
             this.label43.TabIndex = 38;
             this.label43.Text = "Poziom oceny danego mnożnika";
             this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1143,11 +1154,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label40.AutoSize = true;
+            this.label40.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label40.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label40.Location = new System.Drawing.Point(617, 0);
+            this.label40.Location = new System.Drawing.Point(616, 10);
+            this.label40.Margin = new System.Windows.Forms.Padding(2, 10, 0, 0);
             this.label40.Name = "label40";
-            this.label40.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label40.Size = new System.Drawing.Size(424, 65);
+            this.label40.Size = new System.Drawing.Size(428, 55);
             this.label40.TabIndex = 40;
             this.label40.Text = "Krótki opis";
             this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

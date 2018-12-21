@@ -121,10 +121,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(523, 0);
+            this.label13.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label13.Location = new System.Drawing.Point(522, 10);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 10, 0, 0);
             this.label13.Name = "label13";
-            this.label13.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label13.Size = new System.Drawing.Size(431, 64);
+            this.label13.Size = new System.Drawing.Size(435, 54);
             this.label13.TabIndex = 11;
             this.label13.Text = "Krótki opis";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -135,10 +136,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(133, 0);
+            this.label12.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label12.Location = new System.Drawing.Point(132, 10);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 10, 0, 0);
             this.label12.Name = "label12";
-            this.label12.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label12.Size = new System.Drawing.Size(384, 64);
+            this.label12.Size = new System.Drawing.Size(388, 54);
             this.label12.TabIndex = 11;
             this.label12.Text = "Poziom oceny danego czynnika";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -149,12 +151,13 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 0);
+            this.label11.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label11.Location = new System.Drawing.Point(0, 10);
+            this.label11.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.label11.Name = "label11";
-            this.label11.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label11.Size = new System.Drawing.Size(124, 64);
+            this.label11.Size = new System.Drawing.Size(130, 54);
             this.label11.TabIndex = 11;
-            this.label11.Text = "Nazwa czynnika skali";
+            this.label11.Text = "Nazwa \r\nczynnika skali";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2

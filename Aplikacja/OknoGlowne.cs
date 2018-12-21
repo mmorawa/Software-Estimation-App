@@ -496,7 +496,7 @@ namespace Aplikacja
             LabelWynikPrac.Text = string.Format("{0:N1}", Pracochlonnosc);
             LabelWynikHarm.Text = string.Format("{0:N1}", Harmonogram);
             LabelWynikKoszt.Text = string.Format("{0:N}", Koszt);
-            LabelWynikSrZesp.Text = string.Format("{0:N0}", SrZespol);
+            LabelWynikSrZesp.Text = string.Format("{0:N1}", SrZespol);
             LabelWynikData.Text = string.Format("{0:d MMMM yyyy}", DataZakonczenia);
 
             string Ostrzezenie = "";
@@ -540,9 +540,9 @@ namespace Aplikacja
             }
             else
             {
-                LabelWynikPrac.BackColor = System.Drawing.Color.FromName("GreenYellow");
-                LabelWynikHarm.BackColor = System.Drawing.Color.FromName("GreenYellow");
-                LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("GreenYellow");
+                //LabelWynikPrac.BackColor = System.Drawing.Color.FromName("GreenYellow");
+                //LabelWynikHarm.BackColor = System.Drawing.Color.FromName("GreenYellow");
+                //LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("GreenYellow");
             }
 
         }
