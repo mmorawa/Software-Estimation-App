@@ -1246,9 +1246,9 @@
             this.groupBox1.Controls.Add(this.ButtonMnPr);
             this.groupBox1.Controls.Add(this.ButtonCzSk);
             this.groupBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 622);
+            this.groupBox1.Location = new System.Drawing.Point(9, 622);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(564, 94);
+            this.groupBox1.Size = new System.Drawing.Size(567, 94);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Czynniki modyfikujące COCOMO II";
