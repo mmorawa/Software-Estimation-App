@@ -144,6 +144,12 @@
   <data name="label31.Text" xml:space="preserve">
     <value>Ten mnożnik bierze pod uwagę, jak bardzo podlega zmianom platforma, na której działał będzie tworzony system. W ramach oceny należy uwzględnić zarówno zmiany zachodzące w sprzęcie komputerowym, jak i w oprogramowaniu platformy.</value>
   </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>Użycie nowoczesnych narzędzi programistycznych umożliwia znaczne zmniejszenie nakładu pracy potrzebnego do wytworzenia oprogramowania, przy czym im bardziej są one zaawansowane i rozbudowane, tym większą przynoszą korzyść.</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>Osoby pracujące nad projektem mogą znajdować się w jednym budynku lub w wielu różnych miejscach, co przekłada się na wzrost pracochłonności. Drugim czynnikiem branym pod uwagę przy ocenie tego mnożnika jest sposób komunikacji pomiędzy członkami zespołu.</value>
+  </data>
   <metadata name="ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
