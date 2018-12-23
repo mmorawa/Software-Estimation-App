@@ -23,11 +23,11 @@ namespace Aplikacja
             InitializeComponent();
 
             ComboBoxMnPrNiezaw.SelectedIndex = OknoGlowne.TabIndMnPrac[0];
-            ComboBoxMnPrBaza.SelectedIndex = OknoGlowne.TabIndMnPrac[1];
+            ComboBoxMnPrBaza.SelectedIndex = OknoGlowne.TabIndMnPrac[1] - 1;
             ComboBoxMnPrZloz.SelectedIndex = OknoGlowne.TabIndMnPrac[2];
             //zamiana kolejności inicjalizacji ze względu na warunek ograniczający mnożnik 
             ComboBoxMnPrDoku.SelectedIndex = OknoGlowne.TabIndMnPrac[4];
-            ComboBoxMnPrPonow.SelectedIndex = OknoGlowne.TabIndMnPrac[3];
+            ComboBoxMnPrPonow.SelectedIndex = OknoGlowne.TabIndMnPrac[3] - 1;
             
 
             ComboBoxMnPrAnal.SelectedIndex = OknoGlowne.TabIndMnPrac[5];
@@ -38,9 +38,9 @@ namespace Aplikacja
             ComboBoxMnPrDoswJ.SelectedIndex = OknoGlowne.TabIndMnPrac[10];
             
 
-            ComboBoxMnPrOgrCz.SelectedIndex = OknoGlowne.TabIndMnPrac[11];
-            ComboBoxMnPrOgrP.SelectedIndex = OknoGlowne.TabIndMnPrac[12];
-            ComboBoxMnPrZmP.SelectedIndex = OknoGlowne.TabIndMnPrac[13];
+            ComboBoxMnPrOgrCz.SelectedIndex = OknoGlowne.TabIndMnPrac[11] - 2;
+            ComboBoxMnPrOgrP.SelectedIndex = OknoGlowne.TabIndMnPrac[12] - 2;
+            ComboBoxMnPrZmP.SelectedIndex = OknoGlowne.TabIndMnPrac[13] - 1;
 
             ComboBoxMnPrNarzP.SelectedIndex = OknoGlowne.TabIndMnPrac[14];
             ComboBoxMnPrLokal.SelectedIndex = OknoGlowne.TabIndMnPrac[15];
@@ -70,7 +70,7 @@ namespace Aplikacja
 
         private void ComboBoxMnPrBaza_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabIndMnPrac[1] = ComboBoxMnPrBaza.SelectedIndex;
+            OknoGlowne.TempTabIndMnPrac[1] = ComboBoxMnPrBaza.SelectedIndex + 1;
         }
 
         private void ComboBoxMnPrZloz_SelectedIndexChanged(object sender, EventArgs e)
@@ -102,7 +102,7 @@ namespace Aplikacja
             }
             else
             {
-                OknoGlowne.TempTabIndMnPrac[3] = ComboBoxMnPrPonow.SelectedIndex;
+                OknoGlowne.TempTabIndMnPrac[3] = ComboBoxMnPrPonow.SelectedIndex + 1;
             }
 
         }
@@ -163,17 +163,17 @@ namespace Aplikacja
         //-----------------Dot. platformy-------------------------------------------
         private void ComboBoxMnPrOgrCz_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabIndMnPrac[11] = ComboBoxMnPrOgrCz.SelectedIndex;
+            OknoGlowne.TempTabIndMnPrac[11] = ComboBoxMnPrOgrCz.SelectedIndex + 2;
         }
 
         private void ComboBoxMnPrOgrP_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabIndMnPrac[12] = ComboBoxMnPrOgrP.SelectedIndex;
+            OknoGlowne.TempTabIndMnPrac[12] = ComboBoxMnPrOgrP.SelectedIndex + 2;
         }
 
         private void ComboBoxMnPrZmP_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabIndMnPrac[13] = ComboBoxMnPrZmP.SelectedIndex;
+            OknoGlowne.TempTabIndMnPrac[13] = ComboBoxMnPrZmP.SelectedIndex + 1;
         }
 
 

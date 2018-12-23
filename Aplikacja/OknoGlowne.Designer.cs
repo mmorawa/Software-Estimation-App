@@ -59,12 +59,12 @@
             this.TextBoxNazwaProjektu = new System.Windows.Forms.TextBox();
             this.GroupBoxUUCW = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label43 = new System.Windows.Forms.Label();
             this.NumUUCWZlozony = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.NumUUCWSredni = new System.Windows.Forms.NumericUpDown();
             this.NumUUCWProsty = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -74,6 +74,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.ButtonMnPr = new System.Windows.Forms.Button();
             this.ButtonCzSk = new System.Windows.Forms.Button();
@@ -84,6 +85,7 @@
             this.ButtonKalibracja = new System.Windows.Forms.Button();
             this.GroupBoxUAW = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label46 = new System.Windows.Forms.Label();
             this.NumUAWZlozony = new System.Windows.Forms.NumericUpDown();
             this.label13 = new System.Windows.Forms.Label();
             this.NumUAWSredni = new System.Windows.Forms.NumericUpDown();
@@ -100,17 +102,40 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.GroupBoxWyniki = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.label25 = new System.Windows.Forms.Label();
-            this.LabelWynikHarm = new System.Windows.Forms.Label();
-            this.LabelRozmiar = new System.Windows.Forms.Label();
-            this.LabelWynikPrac = new System.Windows.Forms.Label();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label28 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.LabelWynikWydaj = new System.Windows.Forms.Label();
+            this.LabelWynikNGorWydaj = new System.Windows.Forms.Label();
+            this.LabelWynikNLepWydaj = new System.Windows.Forms.Label();
+            this.LabelWynikNGorData = new System.Windows.Forms.Label();
+            this.LabelWynikNLepData = new System.Windows.Forms.Label();
+            this.LabelWynikNGorSrZesp = new System.Windows.Forms.Label();
+            this.LabelWynikNLepHarm = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.LabelWynikHarm = new System.Windows.Forms.Label();
+            this.LabelWynikPrac = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.LabelWynikNLepPrac = new System.Windows.Forms.Label();
+            this.LabelWynikKoszt = new System.Windows.Forms.Label();
+            this.LabelWynikNGorPrac = new System.Windows.Forms.Label();
+            this.LabelWynikSrZesp = new System.Windows.Forms.Label();
+            this.LabelWynikData = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.LabelWynikNGorHarm = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.LabelWynikNLepSrZesp = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.LabelWynikNGorKoszt = new System.Windows.Forms.Label();
+            this.LabelWynikNLepKoszt = new System.Windows.Forms.Label();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.LabelPktUUCP = new System.Windows.Forms.Label();
-            this.LabelWynikKoszt = new System.Windows.Forms.Label();
-            this.LabelWynikData = new System.Windows.Forms.Label();
-            this.LabelWynikSrZesp = new System.Windows.Forms.Label();
+            this.LabelRozmiar = new System.Windows.Forms.Label();
             this.GroupBoxRaporty = new System.Windows.Forms.GroupBox();
             this.ButtonOpisProjektu = new System.Windows.Forms.Button();
             this.ButtonPodsumowanieProjektu = new System.Windows.Forms.Button();
@@ -120,31 +145,6 @@
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.ButtonKreator = new System.Windows.Forms.Button();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.LabelWynikNLepHarm = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.LabelWynikNLepPrac = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.LabelWynikNGorHarm = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.LabelWynikNLepKoszt = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.LabelWynikNGorPrac = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.LabelWynikNGorKoszt = new System.Windows.Forms.Label();
-            this.LabelWynikNLepSrZesp = new System.Windows.Forms.Label();
-            this.LabelWynikNGorSrZesp = new System.Windows.Forms.Label();
-            this.LabelWynikNLepData = new System.Windows.Forms.Label();
-            this.LabelWynikNGorData = new System.Windows.Forms.Label();
-            this.LabelWynikNLepWydaj = new System.Windows.Forms.Label();
-            this.LabelWynikNGorWydaj = new System.Windows.Forms.Label();
-            this.LabelWynikWydaj = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
             this.PasekMenu.SuspendLayout();
             this.GroupBoxDaneProjektu.SuspendLayout();
             this.GroupBoxUUCW.SuspendLayout();
@@ -158,11 +158,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWSredni)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWProsty)).BeginInit();
             this.GroupBoxWyniki.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.GroupBoxRaporty.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.StatusStrip.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // PasekMenu
@@ -456,6 +456,22 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(543, 173);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
+            // label43
+            // 
+            this.label43.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label43.AutoSize = true;
+            this.label43.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label43.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label43.Location = new System.Drawing.Point(77, 0);
+            this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(49, 43);
+            this.label43.TabIndex = 17;
+            this.label43.Text = "Waga";
+            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // NumUUCWZlozony
             // 
             this.NumUUCWZlozony.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -537,22 +553,6 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Złożony";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(0, 0);
-            this.label4.Margin = new System.Windows.Forms.Padding(0);
-            this.label4.Name = "label4";
-            this.label4.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.label4.Size = new System.Drawing.Size(75, 43);
-            this.label4.TabIndex = 8;
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
@@ -684,6 +684,22 @@
             this.label1.Text = "Prosty";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(0, 0);
+            this.label4.Margin = new System.Windows.Forms.Padding(0);
+            this.label4.Name = "label4";
+            this.label4.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.label4.Size = new System.Drawing.Size(75, 43);
+            this.label4.TabIndex = 8;
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ButtonMnPr
             // 
             this.ButtonMnPr.Location = new System.Drawing.Point(271, 30);
@@ -776,7 +792,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 51F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 234F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutPanel2.Controls.Add(this.label46, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.NumUAWZlozony, 2, 3);
             this.tableLayoutPanel2.Controls.Add(this.label13, 0, 2);
@@ -802,6 +818,22 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.71104F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(546, 167);
             this.tableLayoutPanel2.TabIndex = 3;
+            // 
+            // label46
+            // 
+            this.label46.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label46.AutoSize = true;
+            this.label46.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label46.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label46.Location = new System.Drawing.Point(0, 0);
+            this.label46.Margin = new System.Windows.Forms.Padding(0);
+            this.label46.Name = "label46";
+            this.label46.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.label46.Size = new System.Drawing.Size(75, 44);
+            this.label46.TabIndex = 9;
+            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // NumUAWZlozony
             // 
@@ -1037,6 +1069,400 @@
             this.GroupBoxWyniki.TabStop = false;
             this.GroupBoxWyniki.Text = "Wyniki";
             // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 3;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.37251F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.03326F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.59423F));
+            this.tableLayoutPanel4.Controls.Add(this.label34, 0, 7);
+            this.tableLayoutPanel4.Controls.Add(this.LabelWynikWydaj, 1, 8);
+            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNGorWydaj, 2, 8);
+            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNLepWydaj, 0, 8);
+            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNGorData, 2, 6);
+            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNLepData, 0, 6);
+            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNGorSrZesp, 2, 12);
+            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNLepHarm, 1, 3);
+            this.tableLayoutPanel4.Controls.Add(this.label42, 0, 3);
+            this.tableLayoutPanel4.Controls.Add(this.LabelWynikHarm, 1, 4);
+            this.tableLayoutPanel4.Controls.Add(this.label28, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.LabelWynikPrac, 1, 2);
+            this.tableLayoutPanel4.Controls.Add(this.label45, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.label37, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.label39, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNLepPrac, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.LabelWynikKoszt, 1, 10);
+            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNGorPrac, 2, 2);
+            this.tableLayoutPanel4.Controls.Add(this.LabelWynikSrZesp, 1, 12);
+            this.tableLayoutPanel4.Controls.Add(this.LabelWynikData, 1, 6);
+            this.tableLayoutPanel4.Controls.Add(this.label49, 0, 9);
+            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNGorHarm, 2, 4);
+            this.tableLayoutPanel4.Controls.Add(this.label52, 0, 5);
+            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNLepSrZesp, 0, 12);
+            this.tableLayoutPanel4.Controls.Add(this.label54, 0, 11);
+            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNGorKoszt, 2, 10);
+            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNLepKoszt, 0, 10);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(12, 156);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 13;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(453, 373);
+            this.tableLayoutPanel4.TabIndex = 16;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.label28, 3);
+            this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label28.Location = new System.Drawing.Point(3, 38);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(447, 27);
+            this.label28.TabIndex = 6;
+            this.label28.Text = "Pracochłonność: (w osobomiesiącach)";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.label34, 3);
+            this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label34.Location = new System.Drawing.Point(3, 200);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(447, 27);
+            this.label34.TabIndex = 22;
+            this.label34.Text = "Wydajność: (w liniach kodu)";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelWynikWydaj
+            // 
+            this.LabelWynikWydaj.AutoSize = true;
+            this.LabelWynikWydaj.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikWydaj.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelWynikWydaj.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikWydaj.Location = new System.Drawing.Point(149, 227);
+            this.LabelWynikWydaj.Name = "LabelWynikWydaj";
+            this.LabelWynikWydaj.Size = new System.Drawing.Size(152, 27);
+            this.LabelWynikWydaj.TabIndex = 26;
+            this.LabelWynikWydaj.Text = "0";
+            this.LabelWynikWydaj.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelWynikNGorWydaj
+            // 
+            this.LabelWynikNGorWydaj.AutoSize = true;
+            this.LabelWynikNGorWydaj.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikNGorWydaj.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelWynikNGorWydaj.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikNGorWydaj.Location = new System.Drawing.Point(307, 227);
+            this.LabelWynikNGorWydaj.Name = "LabelWynikNGorWydaj";
+            this.LabelWynikNGorWydaj.Size = new System.Drawing.Size(143, 27);
+            this.LabelWynikNGorWydaj.TabIndex = 26;
+            this.LabelWynikNGorWydaj.Text = "0";
+            this.LabelWynikNGorWydaj.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelWynikNLepWydaj
+            // 
+            this.LabelWynikNLepWydaj.AutoSize = true;
+            this.LabelWynikNLepWydaj.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikNLepWydaj.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelWynikNLepWydaj.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikNLepWydaj.Location = new System.Drawing.Point(3, 227);
+            this.LabelWynikNLepWydaj.Name = "LabelWynikNLepWydaj";
+            this.LabelWynikNLepWydaj.Size = new System.Drawing.Size(140, 27);
+            this.LabelWynikNLepWydaj.TabIndex = 26;
+            this.LabelWynikNLepWydaj.Text = "0";
+            this.LabelWynikNLepWydaj.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelWynikNGorData
+            // 
+            this.LabelWynikNGorData.AutoSize = true;
+            this.LabelWynikNGorData.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikNGorData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelWynikNGorData.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikNGorData.Location = new System.Drawing.Point(307, 173);
+            this.LabelWynikNGorData.Name = "LabelWynikNGorData";
+            this.LabelWynikNGorData.Size = new System.Drawing.Size(143, 27);
+            this.LabelWynikNGorData.TabIndex = 28;
+            this.LabelWynikNGorData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelWynikNLepData
+            // 
+            this.LabelWynikNLepData.AutoSize = true;
+            this.LabelWynikNLepData.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikNLepData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelWynikNLepData.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikNLepData.Location = new System.Drawing.Point(3, 173);
+            this.LabelWynikNLepData.Name = "LabelWynikNLepData";
+            this.LabelWynikNLepData.Size = new System.Drawing.Size(140, 27);
+            this.LabelWynikNLepData.TabIndex = 27;
+            this.LabelWynikNLepData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelWynikNGorSrZesp
+            // 
+            this.LabelWynikNGorSrZesp.AutoSize = true;
+            this.LabelWynikNGorSrZesp.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikNGorSrZesp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelWynikNGorSrZesp.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikNGorSrZesp.Location = new System.Drawing.Point(307, 335);
+            this.LabelWynikNGorSrZesp.Name = "LabelWynikNGorSrZesp";
+            this.LabelWynikNGorSrZesp.Size = new System.Drawing.Size(143, 38);
+            this.LabelWynikNGorSrZesp.TabIndex = 27;
+            this.LabelWynikNGorSrZesp.Text = "0";
+            this.LabelWynikNGorSrZesp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelWynikNLepHarm
+            // 
+            this.LabelWynikNLepHarm.AutoSize = true;
+            this.LabelWynikNLepHarm.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikNLepHarm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelWynikNLepHarm.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikNLepHarm.Location = new System.Drawing.Point(3, 119);
+            this.LabelWynikNLepHarm.Name = "LabelWynikNLepHarm";
+            this.LabelWynikNLepHarm.Size = new System.Drawing.Size(140, 27);
+            this.LabelWynikNLepHarm.TabIndex = 8;
+            this.LabelWynikNLepHarm.Text = "0";
+            this.LabelWynikNLepHarm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.label42, 3);
+            this.label42.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label42.Location = new System.Drawing.Point(3, 92);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(447, 27);
+            this.label42.TabIndex = 5;
+            this.label42.Text = "Harmonogram: (w miesiącach)";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelWynikHarm
+            // 
+            this.LabelWynikHarm.AutoSize = true;
+            this.LabelWynikHarm.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikHarm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelWynikHarm.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikHarm.Location = new System.Drawing.Point(149, 119);
+            this.LabelWynikHarm.Name = "LabelWynikHarm";
+            this.LabelWynikHarm.Size = new System.Drawing.Size(152, 27);
+            this.LabelWynikHarm.TabIndex = 8;
+            this.LabelWynikHarm.Text = "0";
+            this.LabelWynikHarm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelWynikPrac
+            // 
+            this.LabelWynikPrac.AutoSize = true;
+            this.LabelWynikPrac.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikPrac.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelWynikPrac.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikPrac.Location = new System.Drawing.Point(149, 65);
+            this.LabelWynikPrac.Name = "LabelWynikPrac";
+            this.LabelWynikPrac.Size = new System.Drawing.Size(152, 27);
+            this.LabelWynikPrac.TabIndex = 7;
+            this.LabelWynikPrac.Text = "0";
+            this.LabelWynikPrac.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label45.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label45.Location = new System.Drawing.Point(0, 0);
+            this.label45.Margin = new System.Windows.Forms.Padding(0);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(146, 38);
+            this.label45.TabIndex = 6;
+            this.label45.Text = "Najlepszy przypadek";
+            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label37.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label37.Location = new System.Drawing.Point(306, 0);
+            this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(147, 38);
+            this.label37.TabIndex = 26;
+            this.label37.Text = "Najgorszy przypadek";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label39.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label39.Location = new System.Drawing.Point(148, 0);
+            this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(156, 38);
+            this.label39.TabIndex = 27;
+            this.label39.Text = "Oczekiwany przypadek";
+            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelWynikNLepPrac
+            // 
+            this.LabelWynikNLepPrac.AutoSize = true;
+            this.LabelWynikNLepPrac.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikNLepPrac.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelWynikNLepPrac.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikNLepPrac.Location = new System.Drawing.Point(3, 65);
+            this.LabelWynikNLepPrac.Name = "LabelWynikNLepPrac";
+            this.LabelWynikNLepPrac.Size = new System.Drawing.Size(140, 27);
+            this.LabelWynikNLepPrac.TabIndex = 7;
+            this.LabelWynikNLepPrac.Text = "0";
+            this.LabelWynikNLepPrac.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelWynikKoszt
+            // 
+            this.LabelWynikKoszt.AutoSize = true;
+            this.LabelWynikKoszt.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikKoszt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelWynikKoszt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikKoszt.Location = new System.Drawing.Point(149, 281);
+            this.LabelWynikKoszt.Name = "LabelWynikKoszt";
+            this.LabelWynikKoszt.Size = new System.Drawing.Size(152, 27);
+            this.LabelWynikKoszt.TabIndex = 16;
+            this.LabelWynikKoszt.Text = "0";
+            this.LabelWynikKoszt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelWynikNGorPrac
+            // 
+            this.LabelWynikNGorPrac.AutoSize = true;
+            this.LabelWynikNGorPrac.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikNGorPrac.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelWynikNGorPrac.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikNGorPrac.Location = new System.Drawing.Point(307, 65);
+            this.LabelWynikNGorPrac.Name = "LabelWynikNGorPrac";
+            this.LabelWynikNGorPrac.Size = new System.Drawing.Size(143, 27);
+            this.LabelWynikNGorPrac.TabIndex = 28;
+            this.LabelWynikNGorPrac.Text = "0";
+            this.LabelWynikNGorPrac.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelWynikSrZesp
+            // 
+            this.LabelWynikSrZesp.AutoSize = true;
+            this.LabelWynikSrZesp.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikSrZesp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelWynikSrZesp.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikSrZesp.Location = new System.Drawing.Point(149, 335);
+            this.LabelWynikSrZesp.Name = "LabelWynikSrZesp";
+            this.LabelWynikSrZesp.Size = new System.Drawing.Size(152, 38);
+            this.LabelWynikSrZesp.TabIndex = 25;
+            this.LabelWynikSrZesp.Text = "0";
+            this.LabelWynikSrZesp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelWynikData
+            // 
+            this.LabelWynikData.AutoSize = true;
+            this.LabelWynikData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelWynikData.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikData.Location = new System.Drawing.Point(149, 173);
+            this.LabelWynikData.Name = "LabelWynikData";
+            this.LabelWynikData.Size = new System.Drawing.Size(152, 27);
+            this.LabelWynikData.TabIndex = 24;
+            this.LabelWynikData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.label49, 3);
+            this.label49.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label49.Location = new System.Drawing.Point(3, 254);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(447, 27);
+            this.label49.TabIndex = 16;
+            this.label49.Text = "Koszt projektu: (w złotych)";
+            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelWynikNGorHarm
+            // 
+            this.LabelWynikNGorHarm.AutoSize = true;
+            this.LabelWynikNGorHarm.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikNGorHarm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelWynikNGorHarm.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikNGorHarm.Location = new System.Drawing.Point(307, 119);
+            this.LabelWynikNGorHarm.Name = "LabelWynikNGorHarm";
+            this.LabelWynikNGorHarm.Size = new System.Drawing.Size(143, 27);
+            this.LabelWynikNGorHarm.TabIndex = 16;
+            this.LabelWynikNGorHarm.Text = "0";
+            this.LabelWynikNGorHarm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.label52, 3);
+            this.label52.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label52.Location = new System.Drawing.Point(3, 146);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(447, 27);
+            this.label52.TabIndex = 24;
+            this.label52.Text = "Szacowana data zakończenia:";
+            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelWynikNLepSrZesp
+            // 
+            this.LabelWynikNLepSrZesp.AutoSize = true;
+            this.LabelWynikNLepSrZesp.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikNLepSrZesp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelWynikNLepSrZesp.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikNLepSrZesp.Location = new System.Drawing.Point(3, 335);
+            this.LabelWynikNLepSrZesp.Name = "LabelWynikNLepSrZesp";
+            this.LabelWynikNLepSrZesp.Size = new System.Drawing.Size(140, 38);
+            this.LabelWynikNLepSrZesp.TabIndex = 26;
+            this.LabelWynikNLepSrZesp.Text = "0";
+            this.LabelWynikNLepSrZesp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.label54, 3);
+            this.label54.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label54.Location = new System.Drawing.Point(3, 308);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(447, 27);
+            this.label54.TabIndex = 23;
+            this.label54.Text = "Średnia wielkość zespołu (w osobach)";
+            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelWynikNGorKoszt
+            // 
+            this.LabelWynikNGorKoszt.AutoSize = true;
+            this.LabelWynikNGorKoszt.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikNGorKoszt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelWynikNGorKoszt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikNGorKoszt.Location = new System.Drawing.Point(307, 281);
+            this.LabelWynikNGorKoszt.Name = "LabelWynikNGorKoszt";
+            this.LabelWynikNGorKoszt.Size = new System.Drawing.Size(143, 27);
+            this.LabelWynikNGorKoszt.TabIndex = 26;
+            this.LabelWynikNGorKoszt.Text = "0";
+            this.LabelWynikNGorKoszt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelWynikNLepKoszt
+            // 
+            this.LabelWynikNLepKoszt.AutoSize = true;
+            this.LabelWynikNLepKoszt.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelWynikNLepKoszt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelWynikNLepKoszt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelWynikNLepKoszt.Location = new System.Drawing.Point(3, 281);
+            this.LabelWynikNLepKoszt.Name = "LabelWynikNLepKoszt";
+            this.LabelWynikNLepKoszt.Size = new System.Drawing.Size(140, 27);
+            this.LabelWynikNLepKoszt.TabIndex = 25;
+            this.LabelWynikNLepKoszt.Text = "0";
+            this.LabelWynikNLepKoszt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 3;
@@ -1058,6 +1484,18 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(453, 129);
             this.tableLayoutPanel3.TabIndex = 15;
             // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.tableLayoutPanel3.SetColumnSpan(this.label26, 3);
+            this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label26.Location = new System.Drawing.Point(3, 64);
+            this.label26.Name = "label26";
+            this.tableLayoutPanel3.SetRowSpan(this.label26, 2);
+            this.label26.Size = new System.Drawing.Size(447, 65);
+            this.label26.TabIndex = 22;
+            this.label26.Text = "Uwagi: brak";
+            // 
             // label25
             // 
             this.label25.AutoSize = true;
@@ -1068,58 +1506,6 @@
             this.label25.TabIndex = 3;
             this.label25.Text = "Liczba nieskorygowanych punktów \r\nprzypadków użycia UUCP:";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // LabelWynikHarm
-            // 
-            this.LabelWynikHarm.AutoSize = true;
-            this.LabelWynikHarm.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelWynikHarm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikHarm.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikHarm.Location = new System.Drawing.Point(149, 119);
-            this.LabelWynikHarm.Name = "LabelWynikHarm";
-            this.LabelWynikHarm.Size = new System.Drawing.Size(152, 27);
-            this.LabelWynikHarm.TabIndex = 8;
-            this.LabelWynikHarm.Text = "0";
-            this.LabelWynikHarm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LabelRozmiar
-            // 
-            this.LabelRozmiar.AutoSize = true;
-            this.LabelRozmiar.BackColor = System.Drawing.SystemColors.Control;
-            this.tableLayoutPanel3.SetColumnSpan(this.LabelRozmiar, 2);
-            this.LabelRozmiar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelRozmiar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelRozmiar.Location = new System.Drawing.Point(244, 32);
-            this.LabelRozmiar.Name = "LabelRozmiar";
-            this.LabelRozmiar.Size = new System.Drawing.Size(206, 32);
-            this.LabelRozmiar.TabIndex = 13;
-            this.LabelRozmiar.Text = "0";
-            this.LabelRozmiar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LabelWynikPrac
-            // 
-            this.LabelWynikPrac.AutoSize = true;
-            this.LabelWynikPrac.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelWynikPrac.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikPrac.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikPrac.Location = new System.Drawing.Point(149, 65);
-            this.LabelWynikPrac.Name = "LabelWynikPrac";
-            this.LabelWynikPrac.Size = new System.Drawing.Size(152, 27);
-            this.LabelWynikPrac.TabIndex = 7;
-            this.LabelWynikPrac.Text = "0";
-            this.LabelWynikPrac.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.label28, 3);
-            this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label28.Location = new System.Drawing.Point(3, 38);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(447, 27);
-            this.label28.TabIndex = 6;
-            this.label28.Text = "Pracochłonność: (w osobomiesiącach)";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label32
             // 
@@ -1147,42 +1533,19 @@
             this.LabelPktUUCP.Text = "0";
             this.LabelPktUUCP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // LabelWynikKoszt
+            // LabelRozmiar
             // 
-            this.LabelWynikKoszt.AutoSize = true;
-            this.LabelWynikKoszt.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelWynikKoszt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikKoszt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikKoszt.Location = new System.Drawing.Point(149, 281);
-            this.LabelWynikKoszt.Name = "LabelWynikKoszt";
-            this.LabelWynikKoszt.Size = new System.Drawing.Size(152, 27);
-            this.LabelWynikKoszt.TabIndex = 16;
-            this.LabelWynikKoszt.Text = "0";
-            this.LabelWynikKoszt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LabelWynikData
-            // 
-            this.LabelWynikData.AutoSize = true;
-            this.LabelWynikData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikData.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikData.Location = new System.Drawing.Point(149, 173);
-            this.LabelWynikData.Name = "LabelWynikData";
-            this.LabelWynikData.Size = new System.Drawing.Size(152, 27);
-            this.LabelWynikData.TabIndex = 24;
-            this.LabelWynikData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LabelWynikSrZesp
-            // 
-            this.LabelWynikSrZesp.AutoSize = true;
-            this.LabelWynikSrZesp.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelWynikSrZesp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikSrZesp.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikSrZesp.Location = new System.Drawing.Point(149, 335);
-            this.LabelWynikSrZesp.Name = "LabelWynikSrZesp";
-            this.LabelWynikSrZesp.Size = new System.Drawing.Size(152, 38);
-            this.LabelWynikSrZesp.TabIndex = 25;
-            this.LabelWynikSrZesp.Text = "0";
-            this.LabelWynikSrZesp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LabelRozmiar.AutoSize = true;
+            this.LabelRozmiar.BackColor = System.Drawing.SystemColors.Control;
+            this.tableLayoutPanel3.SetColumnSpan(this.LabelRozmiar, 2);
+            this.LabelRozmiar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelRozmiar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelRozmiar.Location = new System.Drawing.Point(244, 32);
+            this.LabelRozmiar.Name = "LabelRozmiar";
+            this.LabelRozmiar.Size = new System.Drawing.Size(206, 32);
+            this.LabelRozmiar.TabIndex = 13;
+            this.LabelRozmiar.Text = "0";
+            this.LabelRozmiar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // GroupBoxRaporty
             // 
@@ -1281,369 +1644,6 @@
             this.ButtonKreator.UseVisualStyleBackColor = true;
             this.ButtonKreator.Click += new System.EventHandler(this.ButtonKreator_Click);
             // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 3;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.37251F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.03326F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.59423F));
-            this.tableLayoutPanel4.Controls.Add(this.label34, 0, 7);
-            this.tableLayoutPanel4.Controls.Add(this.LabelWynikWydaj, 1, 8);
-            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNGorWydaj, 2, 8);
-            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNLepWydaj, 0, 8);
-            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNGorData, 2, 6);
-            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNLepData, 0, 6);
-            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNGorSrZesp, 2, 12);
-            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNLepHarm, 1, 3);
-            this.tableLayoutPanel4.Controls.Add(this.label42, 0, 3);
-            this.tableLayoutPanel4.Controls.Add(this.LabelWynikHarm, 1, 4);
-            this.tableLayoutPanel4.Controls.Add(this.label28, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.LabelWynikPrac, 1, 2);
-            this.tableLayoutPanel4.Controls.Add(this.label45, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label37, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label39, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNLepPrac, 0, 2);
-            this.tableLayoutPanel4.Controls.Add(this.LabelWynikKoszt, 1, 10);
-            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNGorPrac, 2, 2);
-            this.tableLayoutPanel4.Controls.Add(this.LabelWynikSrZesp, 1, 12);
-            this.tableLayoutPanel4.Controls.Add(this.LabelWynikData, 1, 6);
-            this.tableLayoutPanel4.Controls.Add(this.label49, 0, 9);
-            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNGorHarm, 2, 4);
-            this.tableLayoutPanel4.Controls.Add(this.label52, 0, 5);
-            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNLepSrZesp, 0, 12);
-            this.tableLayoutPanel4.Controls.Add(this.label54, 0, 11);
-            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNGorKoszt, 2, 10);
-            this.tableLayoutPanel4.Controls.Add(this.LabelWynikNLepKoszt, 0, 10);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(12, 156);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 13;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333334F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(453, 373);
-            this.tableLayoutPanel4.TabIndex = 16;
-            // 
-            // LabelWynikNLepHarm
-            // 
-            this.LabelWynikNLepHarm.AutoSize = true;
-            this.LabelWynikNLepHarm.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelWynikNLepHarm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikNLepHarm.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikNLepHarm.Location = new System.Drawing.Point(3, 119);
-            this.LabelWynikNLepHarm.Name = "LabelWynikNLepHarm";
-            this.LabelWynikNLepHarm.Size = new System.Drawing.Size(140, 27);
-            this.LabelWynikNLepHarm.TabIndex = 8;
-            this.LabelWynikNLepHarm.Text = "0";
-            this.LabelWynikNLepHarm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.label42, 3);
-            this.label42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label42.Location = new System.Drawing.Point(3, 92);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(447, 27);
-            this.label42.TabIndex = 5;
-            this.label42.Text = "Harmonogram: (w miesiącach)";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LabelWynikNLepPrac
-            // 
-            this.LabelWynikNLepPrac.AutoSize = true;
-            this.LabelWynikNLepPrac.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelWynikNLepPrac.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikNLepPrac.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikNLepPrac.Location = new System.Drawing.Point(3, 65);
-            this.LabelWynikNLepPrac.Name = "LabelWynikNLepPrac";
-            this.LabelWynikNLepPrac.Size = new System.Drawing.Size(140, 27);
-            this.LabelWynikNLepPrac.TabIndex = 7;
-            this.LabelWynikNLepPrac.Text = "0";
-            this.LabelWynikNLepPrac.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label45.Location = new System.Drawing.Point(0, 0);
-            this.label45.Margin = new System.Windows.Forms.Padding(0);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(146, 38);
-            this.label45.TabIndex = 6;
-            this.label45.Text = "Najlepszy przypadek";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.label49, 3);
-            this.label49.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label49.Location = new System.Drawing.Point(3, 254);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(447, 27);
-            this.label49.TabIndex = 16;
-            this.label49.Text = "Koszt projektu: (w złotych)";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LabelWynikNGorHarm
-            // 
-            this.LabelWynikNGorHarm.AutoSize = true;
-            this.LabelWynikNGorHarm.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelWynikNGorHarm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikNGorHarm.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikNGorHarm.Location = new System.Drawing.Point(307, 119);
-            this.LabelWynikNGorHarm.Name = "LabelWynikNGorHarm";
-            this.LabelWynikNGorHarm.Size = new System.Drawing.Size(143, 27);
-            this.LabelWynikNGorHarm.TabIndex = 16;
-            this.LabelWynikNGorHarm.Text = "0";
-            this.LabelWynikNGorHarm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.label52, 3);
-            this.label52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label52.Location = new System.Drawing.Point(3, 146);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(447, 27);
-            this.label52.TabIndex = 24;
-            this.label52.Text = "Szacowana data zakończenia:";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.label54, 3);
-            this.label54.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label54.Location = new System.Drawing.Point(3, 308);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(447, 27);
-            this.label54.TabIndex = 23;
-            this.label54.Text = "Średnia wielkość zespołu (w osobach)";
-            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LabelWynikNLepKoszt
-            // 
-            this.LabelWynikNLepKoszt.AutoSize = true;
-            this.LabelWynikNLepKoszt.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelWynikNLepKoszt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikNLepKoszt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikNLepKoszt.Location = new System.Drawing.Point(3, 281);
-            this.LabelWynikNLepKoszt.Name = "LabelWynikNLepKoszt";
-            this.LabelWynikNLepKoszt.Size = new System.Drawing.Size(140, 27);
-            this.LabelWynikNLepKoszt.TabIndex = 25;
-            this.LabelWynikNLepKoszt.Text = "0";
-            this.LabelWynikNLepKoszt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label37.Location = new System.Drawing.Point(306, 0);
-            this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(147, 38);
-            this.label37.TabIndex = 26;
-            this.label37.Text = "Najgorszy przypadek";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label39.Location = new System.Drawing.Point(148, 0);
-            this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(156, 38);
-            this.label39.TabIndex = 27;
-            this.label39.Text = "Oczekiwany przypadek";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LabelWynikNGorPrac
-            // 
-            this.LabelWynikNGorPrac.AutoSize = true;
-            this.LabelWynikNGorPrac.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelWynikNGorPrac.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikNGorPrac.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikNGorPrac.Location = new System.Drawing.Point(307, 65);
-            this.LabelWynikNGorPrac.Name = "LabelWynikNGorPrac";
-            this.LabelWynikNGorPrac.Size = new System.Drawing.Size(143, 27);
-            this.LabelWynikNGorPrac.TabIndex = 28;
-            this.LabelWynikNGorPrac.Text = "0";
-            this.LabelWynikNGorPrac.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label43
-            // 
-            this.label43.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label43.AutoSize = true;
-            this.label43.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label43.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label43.Location = new System.Drawing.Point(77, 0);
-            this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(49, 43);
-            this.label43.TabIndex = 17;
-            this.label43.Text = "Waga";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label46
-            // 
-            this.label46.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label46.AutoSize = true;
-            this.label46.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label46.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label46.Location = new System.Drawing.Point(0, 0);
-            this.label46.Margin = new System.Windows.Forms.Padding(0);
-            this.label46.Name = "label46";
-            this.label46.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.label46.Size = new System.Drawing.Size(75, 44);
-            this.label46.TabIndex = 9;
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LabelWynikNGorKoszt
-            // 
-            this.LabelWynikNGorKoszt.AutoSize = true;
-            this.LabelWynikNGorKoszt.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelWynikNGorKoszt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikNGorKoszt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikNGorKoszt.Location = new System.Drawing.Point(307, 281);
-            this.LabelWynikNGorKoszt.Name = "LabelWynikNGorKoszt";
-            this.LabelWynikNGorKoszt.Size = new System.Drawing.Size(143, 27);
-            this.LabelWynikNGorKoszt.TabIndex = 26;
-            this.LabelWynikNGorKoszt.Text = "0";
-            this.LabelWynikNGorKoszt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LabelWynikNLepSrZesp
-            // 
-            this.LabelWynikNLepSrZesp.AutoSize = true;
-            this.LabelWynikNLepSrZesp.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelWynikNLepSrZesp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikNLepSrZesp.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikNLepSrZesp.Location = new System.Drawing.Point(3, 335);
-            this.LabelWynikNLepSrZesp.Name = "LabelWynikNLepSrZesp";
-            this.LabelWynikNLepSrZesp.Size = new System.Drawing.Size(140, 38);
-            this.LabelWynikNLepSrZesp.TabIndex = 26;
-            this.LabelWynikNLepSrZesp.Text = "0";
-            this.LabelWynikNLepSrZesp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LabelWynikNGorSrZesp
-            // 
-            this.LabelWynikNGorSrZesp.AutoSize = true;
-            this.LabelWynikNGorSrZesp.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelWynikNGorSrZesp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikNGorSrZesp.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikNGorSrZesp.Location = new System.Drawing.Point(307, 335);
-            this.LabelWynikNGorSrZesp.Name = "LabelWynikNGorSrZesp";
-            this.LabelWynikNGorSrZesp.Size = new System.Drawing.Size(143, 38);
-            this.LabelWynikNGorSrZesp.TabIndex = 27;
-            this.LabelWynikNGorSrZesp.Text = "0";
-            this.LabelWynikNGorSrZesp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LabelWynikNLepData
-            // 
-            this.LabelWynikNLepData.AutoSize = true;
-            this.LabelWynikNLepData.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelWynikNLepData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikNLepData.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikNLepData.Location = new System.Drawing.Point(3, 173);
-            this.LabelWynikNLepData.Name = "LabelWynikNLepData";
-            this.LabelWynikNLepData.Size = new System.Drawing.Size(140, 27);
-            this.LabelWynikNLepData.TabIndex = 27;
-            this.LabelWynikNLepData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LabelWynikNGorData
-            // 
-            this.LabelWynikNGorData.AutoSize = true;
-            this.LabelWynikNGorData.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelWynikNGorData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikNGorData.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikNGorData.Location = new System.Drawing.Point(307, 173);
-            this.LabelWynikNGorData.Name = "LabelWynikNGorData";
-            this.LabelWynikNGorData.Size = new System.Drawing.Size(143, 27);
-            this.LabelWynikNGorData.TabIndex = 28;
-            this.LabelWynikNGorData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LabelWynikNLepWydaj
-            // 
-            this.LabelWynikNLepWydaj.AutoSize = true;
-            this.LabelWynikNLepWydaj.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelWynikNLepWydaj.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikNLepWydaj.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikNLepWydaj.Location = new System.Drawing.Point(3, 227);
-            this.LabelWynikNLepWydaj.Name = "LabelWynikNLepWydaj";
-            this.LabelWynikNLepWydaj.Size = new System.Drawing.Size(140, 27);
-            this.LabelWynikNLepWydaj.TabIndex = 26;
-            this.LabelWynikNLepWydaj.Text = "0";
-            this.LabelWynikNLepWydaj.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LabelWynikNGorWydaj
-            // 
-            this.LabelWynikNGorWydaj.AutoSize = true;
-            this.LabelWynikNGorWydaj.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelWynikNGorWydaj.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikNGorWydaj.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikNGorWydaj.Location = new System.Drawing.Point(307, 227);
-            this.LabelWynikNGorWydaj.Name = "LabelWynikNGorWydaj";
-            this.LabelWynikNGorWydaj.Size = new System.Drawing.Size(143, 27);
-            this.LabelWynikNGorWydaj.TabIndex = 26;
-            this.LabelWynikNGorWydaj.Text = "0";
-            this.LabelWynikNGorWydaj.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LabelWynikWydaj
-            // 
-            this.LabelWynikWydaj.AutoSize = true;
-            this.LabelWynikWydaj.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelWynikWydaj.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LabelWynikWydaj.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelWynikWydaj.Location = new System.Drawing.Point(149, 227);
-            this.LabelWynikWydaj.Name = "LabelWynikWydaj";
-            this.LabelWynikWydaj.Size = new System.Drawing.Size(152, 27);
-            this.LabelWynikWydaj.TabIndex = 26;
-            this.LabelWynikWydaj.Text = "0";
-            this.LabelWynikWydaj.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.label34, 3);
-            this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label34.Location = new System.Drawing.Point(3, 200);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(447, 27);
-            this.label34.TabIndex = 22;
-            this.label34.Text = "Wydajność: (w liniach kodu)";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.tableLayoutPanel3.SetColumnSpan(this.label26, 3);
-            this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label26.Location = new System.Drawing.Point(3, 64);
-            this.label26.Name = "label26";
-            this.tableLayoutPanel3.SetRowSpan(this.label26, 2);
-            this.label26.Size = new System.Drawing.Size(447, 65);
-            this.label26.TabIndex = 22;
-            this.label26.Text = "Uwagi: brak";
-            // 
             // OknoGlowne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1686,14 +1686,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWSredni)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWProsty)).EndInit();
             this.GroupBoxWyniki.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.GroupBoxRaporty.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.StatusStrip.ResumeLayout(false);
             this.StatusStrip.PerformLayout();
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

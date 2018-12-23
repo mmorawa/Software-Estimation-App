@@ -6,11 +6,9 @@ Plik Form1.cs zawiera rdzeń programu czyli główne okno aplikacji wraz z menu,
 
 using System;
 using System.IO;
-using System.Linq;
 using System.Windows.Forms;
 using System.Diagnostics;
 using MigraDoc.DocumentObjectModel;
-using MigraDoc.Rendering;
 
 
 //! Przestrzeń nazw Password_Manager obejmuje całą aplikację Menedżera Haseł.
@@ -77,7 +75,7 @@ namespace Aplikacja
         public static int[] TabIndCzynnSkali = { 2, 2, 2, 2, 2 };
         public static int[] TempTabIndCzynnSkali = new int[5];
 
-        public static int[] TabIndMnPrac = { 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2 };
+        public static int[] TabIndMnPrac = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 };
         public static int[] TempTabIndMnPrac = new int[17];
 
         double[,] TabCzynnSkali =
@@ -95,9 +93,9 @@ namespace Aplikacja
         double[,] TabMnPrac =
         {
             {0.82, 0.92, 1, 1.1, 1.26, 0 },
-            {0.9, 1, 1.14, 1.28, 0, 0 },
+            {0, 0.9, 1, 1.14, 1.28, 0 },
             {0.73, 0.87, 1, 1.17, 1.34, 1.74 },
-            {0.95, 1, 1.07, 1.15, 1.24, 0 },
+            {0, 0.95, 1, 1.07, 1.15, 1.24 },
             {0.81, 0.91, 1, 1.11, 1.23, 0 },
             {1.42, 1.19, 1, 0.85, 0.71, 0 },
             {1.34, 1.15, 1, 0.88, 0.76, 0 },
@@ -105,15 +103,15 @@ namespace Aplikacja
             {1.22, 1.10, 1, 0.88, 0.81, 0 },
             {1.19, 1.09, 1, 0.91, 0.85, 0 },
             {1.2, 1.09, 1, 0.91, 0.84, 0 },
-            {1, 1.11, 1.29, 1.63, 0, 0 },
-            {1, 1.05, 1.17, 1.46, 0, 0 },
-            {0.87, 1, 1.15, 1.3, 0, 0 },
+            {0, 0, 1, 1.11, 1.29, 1.63 },
+            {0, 0, 1, 1.05, 1.17, 1.46 },
+            {0, 0.87, 1, 1.15, 1.3, 0 },
             {1.17, 1.09, 1, 0.9, 0.78, 0 },
             {1.22, 1.09, 1, 0.93, 0.86, 0.8 },
             {1.43, 1.14, 1, 1, 1, 0 }
         };
 
-        public static string[] TabStringMnPrac = { "Niski", "Nominalny", "Wysoki", "Bardzo wysoki", "Ekstra wysoki" };
+        public static string[] TabStringMnPrac = { "Bardzo niski", "Niski", "Nominalny", "Wysoki", "Bardzo wysoki", "Ekstra wysoki" };
 
         double[] TabOgranHarm = { 0.75, 0.85, 1, 1.3, 1.6 };
 
@@ -447,7 +445,7 @@ namespace Aplikacja
             Rozmiar = (UUCP * Properties.Settings.Default.UCPnaFP * Properties.Settings.Default.TabPrzeliczeniowa[JezykProgramowania]);
 
             RozmiarKSLOC = Rozmiar / 1000;
-
+            //RozmiarKSLOC = 5;
             //Obliczenia COCOMO II
 
             SumaSF = 0;
@@ -809,7 +807,7 @@ namespace Aplikacja
                 sw.WriteLine(SrZespol);
                 sw.WriteLine(LabelWynikData.Text);
 
-                //sw.Dispose();
+                
                 MessageBox.Show("Plik zapisano.");
             }
         }
@@ -844,7 +842,7 @@ namespace Aplikacja
 
 
             TabIndCzynnSkali = new int[] { 2, 2, 2, 2, 2 };
-            TabIndMnPrac = new int[] { 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2 };
+            TabIndMnPrac = new int[] { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 };
 
             Ograniczenia = false;
             Domyslne = false;
@@ -965,7 +963,7 @@ namespace Aplikacja
         ********************************************************************************/
         private void ButtonOpisProjektu_Click(object sender, EventArgs e)
         {
-
+            const string NazwaPliku = "Raport_Opis_Projektu";
 
             // Utworzenie dokumentu przy pomocy MigraDoc
             var dokument = new Document();
@@ -989,115 +987,26 @@ namespace Aplikacja
             // Dodanie strony z opisem projektu
             TrescRaportow.StronaZOpisem(dokument);
 
-            // Flaga wskazuje na to czy dokument ma być utworzony jako plik Unicode PDF czy jako WinAnsi PDF.
-            // To ustawienie dotyczy wszystkich czcionek użytych w dokumencie.
-            const bool unicode = true;
+            using (OknoPodgladRaportow OknoZalProj = new OknoPodgladRaportow(dokument, NazwaPliku))
+            {
+                DialogResult rezultat = OknoZalProj.ShowDialog();
 
-            // Utworzenie renderera dla dokumentu
-            var pdfRenderer = new PdfDocumentRenderer(unicode);
-
-            // Powiązanie dokumentu z rendererem
-            pdfRenderer.Document = dokument;
-
-            // Wyrenderowanie dokumentu do formatu PDF
-            pdfRenderer.RenderDocument();
-
-
-            // Wariant z oknem dialogowym
-            //pdfRenderer.PdfDocument.Save(ZapiszPDFDialog.FileName);
-            //Process.Start(ZapiszPDFDialog.FileName);
-
-
-            // Zapisanie dokumentu do pliku PDF
-            const string filename = "Raport_Opis_Projektu.pdf";
-            pdfRenderer.PdfDocument.Save(filename);
-
-            // Uruchomienie pliku z raportem
-            Process.Start(filename);
-
+                if (rezultat == DialogResult.OK)
+                {
+                    //TODO walidacja??
+                }
+            }
         }
 
         private void ButtonOszacowanie_Click(object sender, EventArgs e)
         {
-            /*
-            using (SaveFileDialog ZapiszPDFDialog = new SaveFileDialog())
-            {
-                ZapiszPDFDialog.Filter = "Plik Raportu | *.pdf";
-                ZapiszPDFDialog.FileName = "Raport_Oszacowanie_Pracochlonnosci.pdf";
-                ZapiszPDFDialog.Title = "Zapisz plik Raportu jako:";
-
-                DialogResult rezultat = ZapiszPDFDialog.ShowDialog();
-
-
-                //zapisanie danych do pliku tekstowego
-                if (rezultat == DialogResult.OK)
-                {
-                    //ZapiszPDFDialog.FileName;
-                    
-             */
+            const string NazwaPliku = "Raport_Oszacowanie_Pracochlonnosci";
 
             // Utworzenie dokumentu przy pomocy MigraDoc
             var dokument = new Document();
 
-            dokument.Info.Title = "Oszacowanie pracochłonności projektu";
-            dokument.Info.Subject = "Raport zawierający oszacowanie pracochłonności projektu";
-            dokument.Info.Author = Szacujacy;
-
-            string raport = NazwaProjektu + " - oszacowanie pracochłonności";
-
-
-            // Zdefiniowanie stylu
-            TrescRaportow.DefinicjaStylu(dokument);
-
-            // Dodajemy stronę tytułową
-            TrescRaportow.StronaTytulowa(dokument, raport);
-
-            // Schemat treści
-            TrescRaportow.DefinicjaZawartosci(dokument, raport);
-
-            // Dodanie strony z opisem projektu
-            TrescRaportow.StronaZOpisem(dokument);
-
-            // Dodanie tabeli
-            TrescRaportow.WprowadzoneDane(dokument);
-
-
-            // Flaga wskazuje na to czy dokument ma być utworzony jako plik Unicode PDF czy jako WinAnsi PDF.
-            // To ustawienie dotyczy wszystkich czcionek użytych w dokumencie.
-            const bool unicode = true;
-
-            // Utworzenie renderera dla dokumentu
-            var pdfRenderer = new PdfDocumentRenderer(unicode);
-
-            // Powiązanie dokumentu z rendererem
-            pdfRenderer.Document = dokument;
-
-            // Wyrenderowanie dokumentu do formatu PDF
-            pdfRenderer.RenderDocument();
-
-
-            // Wariant z oknem dialogowym
-            //pdfRenderer.PdfDocument.Save(ZapiszPDFDialog.FileName);
-            //Process.Start(ZapiszPDFDialog.FileName);
-
-
-            // Zapisanie dokumentu do pliku PDF
-            const string filename = "Raport_Oszacowanie_Pracochlonnosci.pdf";
-            pdfRenderer.PdfDocument.Save(filename);
-
-            // Uruchomienie pliku z raportem
-            Process.Start(filename);
-        }
-
-        private void ButtonPodsumowanieProjektu_Click(object sender, EventArgs e)
-        {
-            const string NazwaPliku = "Raport_Podsumowanie";
-
-            // Utworzenie dokumentu przy pomocy MigraDoc
-            var dokument = new Document();
-
-            dokument.Info.Title = "Oszacowanie pracochłonności projektu";
-            dokument.Info.Subject = "Raport zawierający oszacowanie pracochłonności projektu";
+            dokument.Info.Title = "Pełne oszacowanie pracochłonności projektu";
+            dokument.Info.Subject = "Raport zawierający pełne oszacowanie pracochłonności projektu";
             dokument.Info.Author = Szacujacy;
 
             string raport = NazwaProjektu + " - oszacowanie pracochłonności";
@@ -1123,11 +1032,46 @@ namespace Aplikacja
             {
                 DialogResult rezultat = OknoZalProj.ShowDialog();
 
+            }
 
-                if (rezultat == DialogResult.OK)
-                {
-                    //??
-                }
+
+
+        }
+
+        private void ButtonPodsumowanieProjektu_Click(object sender, EventArgs e)
+        {
+            const string NazwaPliku = "Raport_Podsumowanie";
+
+            // Utworzenie dokumentu przy pomocy MigraDoc
+            var dokument = new Document();
+
+            dokument.Info.Title = "Podsumowanie oszacowania pracochłonności projektu";
+            dokument.Info.Subject = "Raport zawierający podsumowanie oszacowania pracochłonności projektu";
+            dokument.Info.Author = Szacujacy;
+
+            string raport = NazwaProjektu + " - podsumowanie oszacowania pracochłonności";
+
+
+            // Zdefiniowanie stylu
+            TrescRaportow.DefinicjaStylu(dokument);
+
+            // Dodajemy stronę tytułową
+            TrescRaportow.StronaTytulowa(dokument, raport);
+
+            // Schemat treści
+            TrescRaportow.DefinicjaZawartosci(dokument, raport);
+
+            // Dodanie strony z opisem projektu
+            TrescRaportow.StronaZOpisem(dokument);
+
+            // Dodanie wyników oszacowania
+            // TrescRaportow.WprowadzoneDane(dokument);
+
+
+            using (OknoPodgladRaportow OknoZalProj = new OknoPodgladRaportow(dokument, NazwaPliku))
+            {
+                DialogResult rezultat = OknoZalProj.ShowDialog();
+
             }
         }
 

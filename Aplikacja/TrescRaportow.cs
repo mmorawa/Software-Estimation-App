@@ -240,7 +240,7 @@ namespace Aplikacja
         }
 
 
-        //Tabela z danymi wprowadzonymi do szacowania
+        //Dane wprowadzone przez użytkownika w celu dokonania oszacowania
         public static void WprowadzoneDane(Document dokument)
         {
             //var sekcja = dokument.LastSection;
@@ -269,7 +269,7 @@ namespace Aplikacja
             column = TabelaUUCW.AddColumn(Unit.FromCentimeter(4));
             column.Format.Alignment = ParagraphAlignment.Center;
 
-            column = TabelaUUCW.AddColumn(Unit.FromCentimeter(7));
+            column = TabelaUUCW.AddColumn(Unit.FromCentimeter(7.6));
             column.Format.Alignment = ParagraphAlignment.Center;
 
             //lub row.Height = Unit.FromCentimeter(1);
@@ -285,7 +285,7 @@ namespace Aplikacja
             cell = row.Cells[1];
             cell.AddParagraph("Waga");
             cell = row.Cells[2];
-            cell.AddParagraph("Liczba przypadków użycia");
+            cell.AddParagraph("Liczba \nprzypadków użycia");
             cell = row.Cells[3];
             cell.AddParagraph("Liczba transakcji");
 
@@ -351,7 +351,7 @@ namespace Aplikacja
             column = TabelaUAW.AddColumn(Unit.FromCentimeter(4));
             column.Format.Alignment = ParagraphAlignment.Center;
 
-            column = TabelaUAW.AddColumn(Unit.FromCentimeter(7));
+            column = TabelaUAW.AddColumn(Unit.FromCentimeter(7.6));
             column.Format.Alignment = ParagraphAlignment.Center;
 
             TabelaUAW.Rows.Height = Unit.FromCentimeter(1);
@@ -424,13 +424,13 @@ namespace Aplikacja
             var TabelaCzynnSkali = new Table();
 
             //dodajemy kolumny
-            column = TabelaCzynnSkali.AddColumn(Unit.FromCentimeter(3.5));
+            column = TabelaCzynnSkali.AddColumn(Unit.FromCentimeter(3.9));
             column.Format.Alignment = ParagraphAlignment.Center;
 
-            column = TabelaCzynnSkali.AddColumn(Unit.FromCentimeter(2.5));
+            column = TabelaCzynnSkali.AddColumn(Unit.FromCentimeter(2.4));
             column.Format.Alignment = ParagraphAlignment.Center;
 
-            column = TabelaCzynnSkali.AddColumn(Unit.FromCentimeter(9.5));
+            column = TabelaCzynnSkali.AddColumn(Unit.FromCentimeter(9.8));
             column.Format.Alignment = ParagraphAlignment.Justify;
 
             TabelaCzynnSkali.Rows.Height = Unit.FromCentimeter(3);
@@ -510,20 +510,20 @@ namespace Aplikacja
 
 
             //nagłówek tabelii
-            paragraf = sekcja.AddParagraph("Tabela 4 - Mnożniki pracochłonności");
+            paragraf = sekcja.AddParagraph("Tabela 4 - Mnożniki pracochłonności dot. produktu");
             paragraf.Format.SpaceAfter = "0.2cm";
             paragraf.Format.SpaceBefore = "1cm";
 
             var TabelaMnPracProd = new Table();
 
             //dodajemy kolumny
-            column = TabelaMnPracProd.AddColumn(Unit.FromCentimeter(3.5));
+            column = TabelaMnPracProd.AddColumn(Unit.FromCentimeter(3.9));
             column.Format.Alignment = ParagraphAlignment.Center;
 
-            column = TabelaMnPracProd.AddColumn(Unit.FromCentimeter(2.5));
+            column = TabelaMnPracProd.AddColumn(Unit.FromCentimeter(2.4));
             column.Format.Alignment = ParagraphAlignment.Center;
 
-            column = TabelaMnPracProd.AddColumn(Unit.FromCentimeter(9.5));
+            column = TabelaMnPracProd.AddColumn(Unit.FromCentimeter(9.8));
             column.Format.Alignment = ParagraphAlignment.Justify;
 
             TabelaMnPracProd.Rows.Height = Unit.FromCentimeter(3);
@@ -597,7 +597,263 @@ namespace Aplikacja
 
             dokument.LastSection.Add(TabelaMnPracProd);
 
+            //--------------------------------------------------------------------------------
+
+            paragraf = sekcja.AddParagraph("Metoda COCOMO II - Mnożniki pracochłonności dot. personelu", "Heading2");
+
+
+            //nagłówek tabelii
+            paragraf = sekcja.AddParagraph("Tabela 5 - Mnożniki pracochłonności dot. personelu");
+            paragraf.Format.SpaceAfter = "0.2cm";
+            paragraf.Format.SpaceBefore = "1cm";
+
+            var TabelaMnPracPersonel = new Table();
+
+            //dodajemy kolumny
+            column = TabelaMnPracPersonel.AddColumn(Unit.FromCentimeter(3.9));
+            column.Format.Alignment = ParagraphAlignment.Center;
+
+            column = TabelaMnPracPersonel.AddColumn(Unit.FromCentimeter(2.4));
+            column.Format.Alignment = ParagraphAlignment.Center;
+
+            column = TabelaMnPracPersonel.AddColumn(Unit.FromCentimeter(9.8));
+            column.Format.Alignment = ParagraphAlignment.Justify;
+
+            TabelaMnPracPersonel.Rows.Height = Unit.FromCentimeter(3);
+
+            row = TabelaMnPracPersonel.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            row.Shading.Color = Colors.LightSalmon;
+            row.Height = Unit.FromCentimeter(2);
+
+            //dodajemy tekst do nagłówków kolumn
+            cell = row.Cells[0];
+            cell.AddParagraph("Nazwa mnożnika pracochłonności");
+            cell = row.Cells[1];
+            cell.AddParagraph("Poziom oceny");
+            cell = row.Cells[2];
+            cell.AddParagraph("Krótki opis");
+            //przywracay wycentrowany nagłówek
+            cell.Format.Alignment = ParagraphAlignment.Center;
+
+
+            //tylko dodaje do pierwszego kolor
+            row = TabelaMnPracPersonel.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Umiejętności analityków biznesowych");
+            cell = row.Cells[1];
+            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[5]]);
+            cell = row.Cells[2];
+            cell.AddParagraph("Analitycy biznesowi opracowują wymagania, które musi spełniać projektowane oprogramowanie w celu uzyskania przez organizację określonych korzyści biznesowych. Ocena umiejętności analityków powinna obejmować ich zdolność analizy i projektowania, dokładność, efektywność oraz komunikatywność.");
+
+
+            row = TabelaMnPracPersonel.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Umiejętności programistów");
+            cell = row.Cells[1];
+            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[6]]);
+            cell = row.Cells[2];
+            cell.AddParagraph("Główne czynniki jakie należy wziąć pod uwagę oceniając umiejętności programistów stanowią: ich efektywność, dokładność, komunikatywność oraz kooperatywność. Natomiast doświadczenie jest uwzględnione przez inne mnożniki.");
+
+
+            row = TabelaMnPracPersonel.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Ciągłość zespołu");
+            cell = row.Cells[1];
+            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[7]]);
+            cell = row.Cells[2];
+            cell.AddParagraph("Poziom oceny tego mnożnika zależy od tego jak wielka jest rotacja pracowników zatrudnionych przy projekcie w skali jednego roku.");
+
+            row = TabelaMnPracPersonel.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Doświadczenie \nw tworzeniu aplikacji");
+            cell = row.Cells[1];
+            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[8]]);
+            cell = row.Cells[2];
+            cell.AddParagraph("W celu prawidłowego ustalenia oceny tego mnożnika należy ustalić wielkość doświadczenia w tworzeniu aplikacji zespołu programistycznego, który pracuje nad danym projektem.");
+
+            row = TabelaMnPracPersonel.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Doświadczenie \nw korzystaniu z platformy");
+            cell = row.Cells[1];
+            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[9]]);
+            cell = row.Cells[2];
+            cell.AddParagraph("W przypadku tego mnożnika konieczne jest określenie wielkości doświadczenia zespołu projektowego związanego z wykorzystaniem określonej platformy czyli połączenia sprzętu komputerowego i oprogramowania, na którym działał będzie tworzony produkt.");
+
+            row = TabelaMnPracPersonel.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Doświadczenie \nw stosowaniu języka i narzędzi");
+            cell = row.Cells[1];
+            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[10]]);
+            cell = row.Cells[2];
+            cell.AddParagraph("Ten mnożnik odzwierciedla wielkość doświadczenia programistów w pracy z zastosowaniem języka programowania i narzędzi, które wykorzystane będą w tworzonym projekcie.");
+
+
+            TabelaMnPracPersonel.SetEdge(0, 0, 3, 7, Edge.Bottom, MigraDoc.DocumentObjectModel.BorderStyle.Single, 1, Colors.LightSalmon);
+
+            dokument.LastSection.Add(TabelaMnPracPersonel);
+
+            //--------------------------------------------------------------------------
+
+            paragraf = sekcja.AddParagraph("Metoda COCOMO II - Mnożniki pracochłonności dot. platformy", "Heading2");
+
+
+            //nagłówek tabelii
+            paragraf = sekcja.AddParagraph("Tabela 6 - Mnożniki pracochłonności dot. platformy");
+            paragraf.Format.SpaceAfter = "0.2cm";
+            paragraf.Format.SpaceBefore = "1cm";
+
+            var TabelaMnPracPlatforma = new Table();
+
+            //dodajemy kolumny
+            column = TabelaMnPracPlatforma.AddColumn(Unit.FromCentimeter(3.9));
+            column.Format.Alignment = ParagraphAlignment.Center;
+
+            column = TabelaMnPracPlatforma.AddColumn(Unit.FromCentimeter(2.4));
+            column.Format.Alignment = ParagraphAlignment.Center;
+
+            column = TabelaMnPracPlatforma.AddColumn(Unit.FromCentimeter(9.8));
+            column.Format.Alignment = ParagraphAlignment.Justify;
+
+            TabelaMnPracPlatforma.Rows.Height = Unit.FromCentimeter(3.1);
+
+            row = TabelaMnPracPlatforma.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            row.Shading.Color = Colors.LightSalmon;
+            row.Height = Unit.FromCentimeter(2);
+
+            //dodajemy tekst do nagłówków kolumn
+            cell = row.Cells[0];
+            cell.AddParagraph("Nazwa mnożnika pracochłonności");
+            cell = row.Cells[1];
+            cell.AddParagraph("Poziom oceny");
+            cell = row.Cells[2];
+            cell.AddParagraph("Krótki opis");
+            //przywracay wycentrowany nagłówek
+            cell.Format.Alignment = ParagraphAlignment.Center;
+
+
+            //tylko dodaje do pierwszego kolor
+            row = TabelaMnPracPlatforma.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Ograniczenia czasu wykonania");
+            cell = row.Cells[1];
+            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[11]]);
+            cell = row.Cells[2];
+            cell.AddParagraph("Poziom oceny tego mnożnika zależy od narzuconego na projektowany system ograniczenia czasu wykonania. Jest ono wyrażone w postaci procentowej wielkości dostępnego czasu wykonania, która zostanie zużyta przez tworzony system.");
+
+
+            row = TabelaMnPracPlatforma.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Ograniczenia pamięciowe");
+            cell = row.Cells[1];
+            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[12]]);
+            cell = row.Cells[2];
+            cell.AddParagraph("W tym przypadku ocenie podlega stopień nałożonego na projektowany system ograniczenia pamięciowego określonego w postaci procentowej wielkości dostępnej pamięci, która zostanie zajęta przez tworzony system.");
+
+
+            row = TabelaMnPracPlatforma.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Zmienność platformy");
+            cell = row.Cells[1];
+            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[13]]);
+            cell = row.Cells[2];
+            cell.AddParagraph("Ten mnożnik bierze pod uwagę, jak bardzo podlega zmianom platforma, na której działał będzie tworzony system. W ramach oceny należy uwzględnić zarówno zmiany zachodzące w sprzęcie komputerowym, jak i w oprogramowaniu platformy.");
+
+
+            TabelaMnPracPlatforma.SetEdge(0, 0, 3, 4, Edge.Bottom, MigraDoc.DocumentObjectModel.BorderStyle.Single, 1, Colors.LightSalmon);
+
+            dokument.LastSection.Add(TabelaMnPracPlatforma);
+
+
+            //----------------------------------------------------------------------------------
+
+            paragraf = sekcja.AddParagraph("Metoda COCOMO II - Mnożniki pracochłonności dot. projektu", "Heading2");
+
+
+            //nagłówek tabelii
+            paragraf = sekcja.AddParagraph("Tabela 7 - Mnożniki pracochłonności dot. projektu");
+            paragraf.Format.SpaceAfter = "0.2cm";
+            paragraf.Format.SpaceBefore = "1cm";
+
+            var TabelaMnPracProjekt = new Table();
+
+            //dodajemy kolumny
+            column = TabelaMnPracProjekt.AddColumn(Unit.FromCentimeter(3.9));
+            column.Format.Alignment = ParagraphAlignment.Center;
+
+            column = TabelaMnPracProjekt.AddColumn(Unit.FromCentimeter(2.4));
+            column.Format.Alignment = ParagraphAlignment.Center;
+
+            column = TabelaMnPracProjekt.AddColumn(Unit.FromCentimeter(9.8));
+            column.Format.Alignment = ParagraphAlignment.Justify;
+
+            TabelaMnPracProjekt.Rows.Height = Unit.FromCentimeter(3.1);
+
+            row = TabelaMnPracProjekt.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            row.Shading.Color = Colors.LightSalmon;
+            row.Height = Unit.FromCentimeter(2);
+
+            //dodajemy tekst do nagłówków kolumn
+            cell = row.Cells[0];
+            cell.AddParagraph("Nazwa mnożnika pracochłonności");
+            cell = row.Cells[1];
+            cell.AddParagraph("Poziom oceny");
+            cell = row.Cells[2];
+            cell.AddParagraph("Krótki opis");
+            //przywracay wycentrowany nagłówek
+            cell.Format.Alignment = ParagraphAlignment.Center;
+
+
+            //tylko dodaje do pierwszego kolor
+            row = TabelaMnPracProjekt.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Wykorzystanie narzędzi programistycznych");
+            cell = row.Cells[1];
+            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[14]]);
+            cell = row.Cells[2];
+            cell.AddParagraph("Użycie nowoczesnych narzędzi programistycznych umożliwia znaczne zmniejszenie nakładu pracy potrzebnego do wytworzenia oprogramowania, przy czym im bardziej są one zaawansowane i rozbudowane, tym większą przynoszą korzyść.");
+
+
+            row = TabelaMnPracProjekt.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Programowanie w wielu lokalizacjach");
+            cell = row.Cells[1];
+            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[15]]);
+            cell = row.Cells[2];
+            cell.AddParagraph("Osoby pracujące nad projektem mogą znajdować się w jednym budynku lub w wielu różnych miejscach, co przekłada się na wzrost pracochłonności. Drugim czynnikiem branym pod uwagę przy ocenie tego mnożnika jest sposób komunikacji pomiędzy członkami zespołu.");
+
+
+            row = TabelaMnPracProjekt.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Ograniczenia nałożone na harmonogram");
+            cell = row.Cells[1];
+            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[16]]);
+            cell = row.Cells[2];
+            cell.AddParagraph("Ten mnożnik odzwierciedla sytuację, gdy zachodzi konieczność skrócenia lub wydłużenia harmonogramu o określony procent jego wartości nominalnej.");
+
+
+            TabelaMnPracProjekt.SetEdge(0, 0, 3, 4, Edge.Bottom, MigraDoc.DocumentObjectModel.BorderStyle.Single, 1, Colors.LightSalmon);
+
+            dokument.LastSection.Add(TabelaMnPracProjekt);
+
+
         }
+
+
 
         /*
         paragraph.AddTab();
