@@ -74,13 +74,13 @@ namespace Aplikacja
         double[] wagiUC = { 5, 10, 15 };
 
 
-        public static int[] TabIndSF = { 2, 2, 2, 2, 2 };
-        public static int[] TempTabIndSF = new int[5];
+        public static int[] TabIndCzynnSkali = { 2, 2, 2, 2, 2 };
+        public static int[] TempTabIndCzynnSkali = new int[5];
 
-        public static int[] TabIndEM = { 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2 };
-        public static int[] TempTabIndEM = new int[17];
+        public static int[] TabIndMnPrac = { 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2 };
+        public static int[] TempTabIndMnPrac = new int[17];
 
-        double[,] TabWspSF =
+        double[,] TabCzynnSkali =
         {
             {6.2, 4.96, 3.72, 2.48, 1.24, 0 },
             {5.07, 4.05, 3.04, 2.03, 1.01, 0 },
@@ -89,7 +89,10 @@ namespace Aplikacja
             {7.8, 6.24, 4.68, 3.12, 1.56, 0 }
         };
 
-        double[,] TabWspEM =
+        public static string[] TabStringCzynnSkali = { "Bardzo niski", "Niski", "Nominalny", "Wysoki", "Bardzo wysoki", "Ekstra wysoki" };
+
+
+        double[,] TabMnPrac =
         {
             {0.82, 0.92, 1, 1.1, 1.26, 0 },
             {0.9, 1, 1.14, 1.28, 0, 0 },
@@ -109,6 +112,8 @@ namespace Aplikacja
             {1.22, 1.09, 1, 0.93, 0.86, 0.8 },
             {1.43, 1.14, 1, 1, 1, 0 }
         };
+
+        public static string[] TabStringMnPrac = { "Niski", "Nominalny", "Wysoki", "Bardzo wysoki", "Ekstra wysoki" };
 
         double[] TabOgranHarm = { 0.75, 0.85, 1, 1.3, 1.6 };
 
@@ -318,7 +323,7 @@ namespace Aplikacja
                 {
                     for (int i = 0; i < 5; i++)
                     {
-                        TabIndSF[i] = TempTabIndSF[i];
+                        TabIndCzynnSkali[i] = TempTabIndCzynnSkali[i];
                     }
 
                     Oszacowanie();
@@ -339,7 +344,7 @@ namespace Aplikacja
                 {
                     for (int i = 0; i < 17; i++)
                     {
-                        TabIndEM[i] = TempTabIndEM[i];
+                        TabIndMnPrac[i] = TempTabIndMnPrac[i];
                     }
 
                     Oszacowanie();
@@ -448,13 +453,13 @@ namespace Aplikacja
             SumaSF = 0;
             for (int i = 0; i < 5; i++)
             {
-                SumaSF += TabWspSF[i, TabIndSF[i]];
+                SumaSF += TabCzynnSkali[i, TabIndCzynnSkali[i]];
             }
 
             IloczynEM = 1;
             for (int i = 0; i < 17; i++)
             {
-                IloczynEM *= TabWspEM[i, TabIndEM[i]];
+                IloczynEM *= TabMnPrac[i, TabIndMnPrac[i]];
             }
 
             E = Properties.Settings.Default.B + 0.01 * SumaSF;
@@ -465,14 +470,14 @@ namespace Aplikacja
             IloczynEMOgranHarm = 1;
             for (int i = 0; i < 16; i++)
             {
-                IloczynEMOgranHarm *= TabWspEM[i, TabIndEM[i]];
+                IloczynEMOgranHarm *= TabMnPrac[i, TabIndMnPrac[i]];
             }
 
             PracochlonnoscBezOgran = Properties.Settings.Default.A * Math.Pow(RozmiarKSLOC, E) * IloczynEMOgranHarm;
 
             F = Properties.Settings.Default.D + 0.2 * (E - Properties.Settings.Default.B);
 
-            Harmonogram = Properties.Settings.Default.C * Math.Pow(PracochlonnoscBezOgran, F) * TabOgranHarm[TabIndEM[16]];
+            Harmonogram = Properties.Settings.Default.C * Math.Pow(PracochlonnoscBezOgran, F) * TabOgranHarm[TabIndMnPrac[16]];
 
             Koszt = Pracochlonnosc * OsoboMGodz * StawkaGodz;
 
@@ -655,12 +660,12 @@ namespace Aplikacja
 
                             for (int i = 0; i < 5; i++)
                             {
-                                TabIndSF[i] = int.Parse(sr.ReadLine());
+                                TabIndCzynnSkali[i] = int.Parse(sr.ReadLine());
                             }
 
                             for (int i = 0; i < 17; i++)
                             {
-                                TabIndEM[i] = int.Parse(sr.ReadLine());
+                                TabIndMnPrac[i] = int.Parse(sr.ReadLine());
                             }
 
                             JezykProgramowania = int.Parse(sr.ReadLine());
@@ -774,12 +779,12 @@ namespace Aplikacja
                     sw.WriteLine(item);
                 }
 
-                foreach (var item in TabIndSF)
+                foreach (var item in TabIndCzynnSkali)
                 {
                     sw.WriteLine(item);
                 }
 
-                foreach (var item in TabIndEM)
+                foreach (var item in TabIndMnPrac)
                 {
                     sw.WriteLine(item);
                 }
@@ -838,8 +843,8 @@ namespace Aplikacja
             NumUAWZlozony.Value = 0;
 
 
-            TabIndSF = new int[] { 2, 2, 2, 2, 2 };
-            TabIndEM = new int[] { 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2 };
+            TabIndCzynnSkali = new int[] { 2, 2, 2, 2, 2 };
+            TabIndMnPrac = new int[] { 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2 };
 
             Ograniczenia = false;
             Domyslne = false;

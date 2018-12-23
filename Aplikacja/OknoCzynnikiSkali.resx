@@ -124,9 +124,12 @@
     <value>Uwzględnia wpływ jaki na wielkość pracochłonności mogą wywrzeć problemy z brakiem kooperacji pomiędzy interesariuszami czyli klientami, programistami, testerami i innymi osobami związanymi z projektem. </value>
   </data>
   <data name="label10.Text" xml:space="preserve">
-    <value>Procedura ustalania dojrzałości procesu opiera się na modelu CMM (Capability Maturity Model). Może ona przybrać formę zorganizowanego badania albo sprawdzenia procentowej zgodności z modelem CMM każdego z kluczowych obszarów procesu.</value>
+    <value>Procedura ustalania dojrzałości procesu opiera się na modelu CMM (Capability Maturity Model). Może ona przybrać formę zorganizowanego badania albo sprawdzenia procentowej zgodności z modelem CMM każdego z kluczowych obszarów procesu wytwarzania oprogramowania.</value>
   </data>
   <metadata name="ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>78</value>
   </metadata>
 </root>

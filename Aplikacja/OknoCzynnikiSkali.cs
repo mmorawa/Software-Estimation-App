@@ -23,38 +23,38 @@ namespace Aplikacja
         {
             InitializeComponent();
 
-            ComboBoxCzynnSkTyp.SelectedIndex = OknoGlowne.TabIndSF[0];
-            ComboBoxCzynnSkElast.SelectedIndex = OknoGlowne.TabIndSF[1];
-            ComboBoxCzynnSkRyzyko.SelectedIndex = OknoGlowne.TabIndSF[2];
-            ComboBoxCzynnSkZesp.SelectedIndex = OknoGlowne.TabIndSF[3];
-            ComboBoxCzynnSkDojrz.SelectedIndex = OknoGlowne.TabIndSF[4];
+            ComboBoxCzynnSkTyp.SelectedIndex = OknoGlowne.TabIndCzynnSkali[0];
+            ComboBoxCzynnSkElast.SelectedIndex = OknoGlowne.TabIndCzynnSkali[1];
+            ComboBoxCzynnSkRyzyko.SelectedIndex = OknoGlowne.TabIndCzynnSkali[2];
+            ComboBoxCzynnSkZesp.SelectedIndex = OknoGlowne.TabIndCzynnSkali[3];
+            ComboBoxCzynnSkDojrz.SelectedIndex = OknoGlowne.TabIndCzynnSkali[4];
         }
 
         
 
         private void ComboBoxCzynnSkTyp_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabIndSF[0] = ComboBoxCzynnSkTyp.SelectedIndex;
+            OknoGlowne.TempTabIndCzynnSkali[0] = ComboBoxCzynnSkTyp.SelectedIndex;
         }
 
         private void ComboBoxCzynnSkElast_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabIndSF[1] = ComboBoxCzynnSkElast.SelectedIndex;
+            OknoGlowne.TempTabIndCzynnSkali[1] = ComboBoxCzynnSkElast.SelectedIndex;
         }
 
         private void ComboBoxCzynnSkRyzyko_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabIndSF[2] = ComboBoxCzynnSkRyzyko.SelectedIndex;
+            OknoGlowne.TempTabIndCzynnSkali[2] = ComboBoxCzynnSkRyzyko.SelectedIndex;
         }
 
         private void ComboBoxCzynnSkZesp_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabIndSF[3] = ComboBoxCzynnSkZesp.SelectedIndex;
+            OknoGlowne.TempTabIndCzynnSkali[3] = ComboBoxCzynnSkZesp.SelectedIndex;
         }
 
         private void ComboBoxCzynnSkDojrz_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempTabIndSF[4] = ComboBoxCzynnSkDojrz.SelectedIndex;
+            OknoGlowne.TempTabIndCzynnSkali[4] = ComboBoxCzynnSkDojrz.SelectedIndex;
         }
     }
 }

@@ -99,7 +99,7 @@ namespace Aplikacja
 
                 if (rezultat == DialogResult.OK)
                 {               
-                    var printer = new PdfDocumentRenderer();
+                    var printer = new PdfDocumentRenderer(true);
                     printer.DocumentRenderer = PodgladRaportu.Renderer;
                     printer.Document = PodgladRaportu.Document;
                     printer.RenderDocument();
