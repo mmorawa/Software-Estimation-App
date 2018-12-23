@@ -115,6 +115,8 @@ namespace Aplikacja
 
         double[] TabOgranHarm = { 0.75, 0.85, 1, 1.3, 1.6 };
 
+        string Ostrzezenie;
+
         //współczynniki
         public static double TempUCPnaFP;
         public static double TempA;
@@ -159,14 +161,36 @@ namespace Aplikacja
         double IloczynEM;
         double IloczynEMOgranHarm;
         double PracochlonnoscBezOgran;
+        double PracochlonnoscBezOgranNLep;
+        double PracochlonnoscBezOgranNGor;
 
         //wyniki końcowe
         double UUCP;
         double Rozmiar;
+
         double Pracochlonnosc;
+        double PracochlonnoscNLep;
+        double PracochlonnoscNGor;
+
         double Harmonogram;
+        double HarmonogramNLep;
+        double HarmonogramNGor;
+
+        DateTime DataZakonczenia;
+        DateTime DataZakonczeniaNLep;
+        DateTime DataZakonczeniaNGor;
+
+        double Wydajnosc;
+        double WydajnoscNLep;
+        double WydajnoscNGor;
+
         double Koszt;
+        double KosztNLep;
+        double KosztNGor;
+
         double SrZespol;
+        double SrZespolNLep;
+        double SrZespolNGor;
 
         /*******************************************************************************
         *  Metody klasy Form1.
@@ -404,7 +428,7 @@ namespace Aplikacja
         private void Oszacowanie()
         {
             //TODO walidacja danych wejściowych, zaokrąglanie
-            string Ostrzezenie = "";
+            Ostrzezenie = "";
 
             //Obliczenia UUCP
 
@@ -446,7 +470,7 @@ namespace Aplikacja
             }
 
             RozmiarKSLOC = Rozmiar / 1000;
-            //RozmiarKSLOC = 5;
+
             
             //Obliczenia COCOMO II
 
@@ -464,8 +488,10 @@ namespace Aplikacja
 
             E = Properties.Settings.Default.B + 0.01 * SumaSF;
 
-            Pracochlonnosc = Properties.Settings.Default.A * Math.Pow(RozmiarKSLOC, E) * IloczynEM;
 
+            Pracochlonnosc = Properties.Settings.Default.A * Math.Pow(RozmiarKSLOC, E) * IloczynEM;
+            PracochlonnoscNLep = Pracochlonnosc * 0.8;
+            PracochlonnoscNGor = Pracochlonnosc * 1.25;
 
             IloczynEMOgranHarm = 1;
             for (int i = 0; i < 16; i++)
@@ -474,30 +500,68 @@ namespace Aplikacja
             }
 
             PracochlonnoscBezOgran = Properties.Settings.Default.A * Math.Pow(RozmiarKSLOC, E) * IloczynEMOgranHarm;
+            PracochlonnoscBezOgranNLep = PracochlonnoscBezOgran * 0.8;
+            PracochlonnoscBezOgranNGor = PracochlonnoscBezOgran * 1.25;
 
             F = Properties.Settings.Default.D + 0.2 * (E - Properties.Settings.Default.B);
 
             Harmonogram = Properties.Settings.Default.C * Math.Pow(PracochlonnoscBezOgran, F) * TabOgranHarm[TabIndMnPrac[16]];
+            HarmonogramNLep = Properties.Settings.Default.C * Math.Pow(PracochlonnoscBezOgranNLep, F) * TabOgranHarm[TabIndMnPrac[16]];
+            HarmonogramNGor = Properties.Settings.Default.C * Math.Pow(PracochlonnoscBezOgranNGor, F) * TabOgranHarm[TabIndMnPrac[16]];
+
+            //TODO pusta data -> brak? danych..., czynniki COCOMO post architecture
+
+            DataZakonczenia = Convert.ToDateTime(DateTimePicker.Text);
+            DataZakonczenia = DataZakonczenia.AddDays((int)Math.Round(Harmonogram * 30.42));
+            DataZakonczeniaNLep = Convert.ToDateTime(DateTimePicker.Text);
+            DataZakonczeniaNLep = DataZakonczeniaNLep.AddDays((int)Math.Round(HarmonogramNLep * 30.42));
+            DataZakonczeniaNGor = Convert.ToDateTime(DateTimePicker.Text);
+            DataZakonczeniaNGor = DataZakonczeniaNGor.AddDays((int)Math.Round(HarmonogramNGor * 30.42));
+
+
+            Wydajnosc = Rozmiar / Pracochlonnosc;
+            WydajnoscNLep = Rozmiar / PracochlonnoscNLep;
+            WydajnoscNGor = Rozmiar / PracochlonnoscNGor;
 
             Koszt = Pracochlonnosc * OsoboMGodz * StawkaGodz;
+            KosztNLep = PracochlonnoscNLep * OsoboMGodz * StawkaGodz;
+            KosztNGor = PracochlonnoscNGor * OsoboMGodz * StawkaGodz;
 
             SrZespol = Pracochlonnosc / Harmonogram;
+            SrZespolNLep = PracochlonnoscNLep / HarmonogramNLep;
+            SrZespolNGor = PracochlonnoscNGor / HarmonogramNGor;
 
-           
-            //TODO pusta data -> brak? danych..., czynniki COCOMO post architecture
-            int Dni = (int)Math.Round(Harmonogram * 30.42);           
-            DateTime DataZakonczenia = Convert.ToDateTime(DateTimePicker.Text);
-            DataZakonczenia = DataZakonczenia.AddDays(Dni);
 
 
             //Wyświetlenie wyników
             LabelPktUUCP.Text = string.Format("{0:N0}", UUCP);
             LabelRozmiar.Text = string.Format("{0:N0}", Rozmiar);
+
             LabelWynikPrac.Text = string.Format("{0:N1}", Pracochlonnosc);
+            LabelWynikNLepPrac.Text = string.Format("{0:N1}", PracochlonnoscNLep);
+            LabelWynikNGorPrac.Text = string.Format("{0:N1}", PracochlonnoscNGor);
+
             LabelWynikHarm.Text = string.Format("{0:N1}", Harmonogram);
-            LabelWynikKoszt.Text = string.Format("{0:N}", Koszt);
-            LabelWynikSrZesp.Text = string.Format("{0:N1}", SrZespol);
+            LabelWynikNLepHarm.Text = string.Format("{0:N1}", HarmonogramNLep);
+            LabelWynikNGorHarm.Text = string.Format("{0:N1}", HarmonogramNGor);
+
             LabelWynikData.Text = string.Format("{0:d MMMM yyyy}", DataZakonczenia);
+            LabelWynikNLepData.Text = string.Format("{0:d MMMM yyyy}", DataZakonczeniaNLep);
+            LabelWynikNGorData.Text = string.Format("{0:d MMMM yyyy}", DataZakonczeniaNGor);
+
+            LabelWynikWydaj.Text = string.Format("{0:N1}", Wydajnosc);
+            LabelWynikNLepWydaj.Text = string.Format("{0:N1}", WydajnoscNLep);
+            LabelWynikNGorWydaj.Text = string.Format("{0:N1}", WydajnoscNGor);
+
+            LabelWynikKoszt.Text = string.Format("{0:N}", Koszt);
+            LabelWynikNLepKoszt.Text = string.Format("{0:N}", KosztNLep);
+            LabelWynikNGorKoszt.Text = string.Format("{0:N}", KosztNGor);
+
+            LabelWynikSrZesp.Text = string.Format("{0:N1}", SrZespol);
+            LabelWynikNLepSrZesp.Text = string.Format("{0:N1}", SrZespolNLep);
+            LabelWynikNGorSrZesp.Text = string.Format("{0:N1}", SrZespolNGor);
+
+            
 
             
             //Ograniczenia projektu
