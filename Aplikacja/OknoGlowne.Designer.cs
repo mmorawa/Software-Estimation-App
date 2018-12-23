@@ -103,7 +103,6 @@
             this.label24 = new System.Windows.Forms.Label();
             this.GroupBoxWyniki = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label28 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.LabelWynikWydaj = new System.Windows.Forms.Label();
             this.LabelWynikNGorWydaj = new System.Windows.Forms.Label();
@@ -114,6 +113,7 @@
             this.LabelWynikNLepHarm = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.LabelWynikHarm = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.LabelWynikPrac = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
@@ -131,7 +131,7 @@
             this.LabelWynikNGorKoszt = new System.Windows.Forms.Label();
             this.LabelWynikNLepKoszt = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.label26 = new System.Windows.Forms.Label();
+            this.LabelUwagi = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.LabelPktUUCP = new System.Windows.Forms.Label();
@@ -1122,18 +1122,6 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(453, 373);
             this.tableLayoutPanel4.TabIndex = 16;
             // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.label28, 3);
-            this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label28.Location = new System.Drawing.Point(3, 38);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(447, 27);
-            this.label28.TabIndex = 6;
-            this.label28.Text = "Pracochłonność: (w osobomiesiącach)";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label34
             // 
             this.label34.AutoSize = true;
@@ -1259,6 +1247,18 @@
             this.LabelWynikHarm.TabIndex = 8;
             this.LabelWynikHarm.Text = "0";
             this.LabelWynikHarm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.label28, 3);
+            this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label28.Location = new System.Drawing.Point(3, 38);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(447, 27);
+            this.label28.TabIndex = 6;
+            this.label28.Text = "Pracochłonność: (w osobomiesiącach)";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelWynikPrac
             // 
@@ -1469,7 +1469,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.20088F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.90728F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.67108F));
-            this.tableLayoutPanel3.Controls.Add(this.label26, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.LabelUwagi, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.label25, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label32, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.LabelPktUUCP, 1, 0);
@@ -1484,17 +1484,17 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(453, 129);
             this.tableLayoutPanel3.TabIndex = 15;
             // 
-            // label26
+            // LabelUwagi
             // 
-            this.label26.AutoSize = true;
-            this.tableLayoutPanel3.SetColumnSpan(this.label26, 3);
-            this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label26.Location = new System.Drawing.Point(3, 64);
-            this.label26.Name = "label26";
-            this.tableLayoutPanel3.SetRowSpan(this.label26, 2);
-            this.label26.Size = new System.Drawing.Size(447, 65);
-            this.label26.TabIndex = 22;
-            this.label26.Text = "Uwagi: brak";
+            this.LabelUwagi.AutoSize = true;
+            this.tableLayoutPanel3.SetColumnSpan(this.LabelUwagi, 3);
+            this.LabelUwagi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelUwagi.Location = new System.Drawing.Point(3, 64);
+            this.LabelUwagi.Name = "LabelUwagi";
+            this.tableLayoutPanel3.SetRowSpan(this.LabelUwagi, 2);
+            this.LabelUwagi.Size = new System.Drawing.Size(447, 65);
+            this.LabelUwagi.TabIndex = 22;
+            this.LabelUwagi.Text = "Uwagi: Ten model nie jest skalibrowany dla projektów poniżej 2000 linii kodu.";
             // 
             // label25
             // 
@@ -1816,7 +1816,7 @@
         private System.Windows.Forms.Label LabelWynikWydaj;
         private System.Windows.Forms.Label LabelWynikNGorWydaj;
         private System.Windows.Forms.Label LabelWynikNLepWydaj;
-        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label LabelUwagi;
     }
 }
 

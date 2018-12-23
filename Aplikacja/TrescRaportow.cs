@@ -59,7 +59,6 @@ namespace Aplikacja
 
         }
 
-
         //Funkcja definiująca schemat zawartości generowanego dokumentu
         public static void DefinicjaZawartosci(Document dokument, string nazwaRaportu)
         {
@@ -88,8 +87,6 @@ namespace Aplikacja
             // Klonuje powyższy paragraf dla parzystych stron. Klonowanie jest konieczne gdyż obiekt nie może należeć do więcej niż jednego obiektu?
             sekcja.Footers.EvenPage.Add(paragraf.Clone());
         }
-
-
 
         //Domyślny wzór strony tytułowej
         public static void StronaTytulowa(Document dokument, string nazwaRaportu)
@@ -238,7 +235,6 @@ namespace Aplikacja
 
 
         }
-
 
         //Dane wprowadzone przez użytkownika w celu dokonania oszacowania
         public static void WprowadzoneDane(Document dokument)
@@ -853,18 +849,24 @@ namespace Aplikacja
 
         }
 
+        //Końcowe wyniki oszacowania
+        public static void Wyniki(Document dokument)
+        {
+            //TODO wyniki
+
+            /*
+            paragraph.AddTab();
+            paragraph.Format.LeftIndent = "2cm";
+            paragraph.AddFormattedText("bold & italic", TextFormat.Bold | TextFormat.Italic);
+            paragraph.AddLineBreak();
+
+            formattedText = paragraph.AddFormattedText("subscript");
+            formattedText.Subscript = true;
+            paragraph.Format.Shading.Color = Colors.LightCoral;
+            */
+        }
 
 
-        /*
-        paragraph.AddTab();
-        paragraph.Format.LeftIndent = "2cm";
-        paragraph.AddFormattedText("bold & italic", TextFormat.Bold | TextFormat.Italic);
-        paragraph.AddLineBreak();
-
-        formattedText = paragraph.AddFormattedText("subscript");
-        formattedText.Subscript = true;
-        paragraph.Format.Shading.Color = Colors.LightCoral;
-        */
 
 
     }

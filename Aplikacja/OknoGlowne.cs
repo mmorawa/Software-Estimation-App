@@ -324,9 +324,7 @@ namespace Aplikacja
                         TabIndCzynnSkali[i] = TempTabIndCzynnSkali[i];
                     }
 
-                    Oszacowanie();
-                    //MessageBox.Show("Czynniki skali zostały zmienione.", "Sukces");
-                    
+                    Oszacowanie();                                    
                 }
             }
         }
@@ -346,8 +344,6 @@ namespace Aplikacja
                     }
 
                     Oszacowanie();
-                    //MessageBox.Show("Mnożniki pracochłonności zostały zmienione.", "Sukces");
-                    
                 }
             }
         }
@@ -408,7 +404,7 @@ namespace Aplikacja
         private void Oszacowanie()
         {
             //TODO walidacja danych wejściowych, zaokrąglanie
-
+            string Ostrzezenie = "";
 
             //Obliczenia UUCP
 
@@ -444,8 +440,14 @@ namespace Aplikacja
 
             Rozmiar = (UUCP * Properties.Settings.Default.UCPnaFP * Properties.Settings.Default.TabPrzeliczeniowa[JezykProgramowania]);
 
+            if (Rozmiar < 2000)
+            {
+                Ostrzezenie = "Ten model nie jest skalibrowany dla projektów poniżej 2000 linii kodu. ";
+            }
+
             RozmiarKSLOC = Rozmiar / 1000;
             //RozmiarKSLOC = 5;
+            
             //Obliczenia COCOMO II
 
             SumaSF = 0;
@@ -481,11 +483,6 @@ namespace Aplikacja
 
             SrZespol = Pracochlonnosc / Harmonogram;
 
-            // Nie może nad projektem pracować zero programistów
-            if (SrZespol < 1)
-            {
-                SrZespol = 1;
-            }
            
             //TODO pusta data -> brak? danych..., czynniki COCOMO post architecture
             int Dni = (int)Math.Round(Harmonogram * 30.42);           
@@ -502,7 +499,7 @@ namespace Aplikacja
             LabelWynikSrZesp.Text = string.Format("{0:N1}", SrZespol);
             LabelWynikData.Text = string.Format("{0:d MMMM yyyy}", DataZakonczenia);
 
-            string Ostrzezenie = "";
+            
             //Ograniczenia projektu
 
             if (Ograniczenia == true)
@@ -537,9 +534,7 @@ namespace Aplikacja
                 else
                 {
                     LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("GreenYellow");
-                }
-
-                MessageBox.Show(Ostrzezenie, "Ostrzeżenie!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }               
             }
             else
             {
@@ -547,6 +542,16 @@ namespace Aplikacja
                 //LabelWynikHarm.BackColor = System.Drawing.Color.FromName("GreenYellow");
                 //LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("GreenYellow");
             }
+
+            if (Ostrzezenie.Length == 0)
+            {
+                LabelUwagi.Text = "Uwagi: brak.";
+            }
+            else
+            {
+                LabelUwagi.Text = "Uwagi: " + Ostrzezenie;
+            }
+            
 
         }
 
@@ -1027,6 +1032,8 @@ namespace Aplikacja
             // Dodanie tabeli
             TrescRaportow.WprowadzoneDane(dokument);
 
+            // Dodanie wyników oszacowania
+            TrescRaportow.Wyniki(dokument);
 
             using (OknoPodgladRaportow OknoZalProj = new OknoPodgladRaportow(dokument, NazwaPliku))
             {
@@ -1065,7 +1072,7 @@ namespace Aplikacja
             TrescRaportow.StronaZOpisem(dokument);
 
             // Dodanie wyników oszacowania
-            // TrescRaportow.WprowadzoneDane(dokument);
+            TrescRaportow.Wyniki(dokument);
 
 
             using (OknoPodgladRaportow OknoZalProj = new OknoPodgladRaportow(dokument, NazwaPliku))
