@@ -592,8 +592,6 @@ namespace Aplikacja
                 }
 
 
-
-
                 if (MaxHarm != 0 && MaxHarm < Harmonogram)
                 {
                     LabelWynikHarm.BackColor = System.Drawing.Color.FromName("red");
@@ -814,8 +812,7 @@ namespace Aplikacja
                             Adres = sr.ReadLine();
                             Telefon = sr.ReadLine();
                             Email = sr.ReadLine();
-                            OpisProjektu = sr.ReadLine();
-
+                            
                             Ograniczenia = Convert.ToBoolean(sr.ReadLine());
                             Domyslne = Convert.ToBoolean(sr.ReadLine());
 
@@ -842,30 +839,83 @@ namespace Aplikacja
                             OsoboMGodz = long.Parse(sr.ReadLine());
                             DzRobGodz = long.Parse(sr.ReadLine());
 
-                            MaxKoszt = double.Parse(sr.ReadLine());
                             MaxPrac = long.Parse(sr.ReadLine());
                             MaxHarm = long.Parse(sr.ReadLine());
+                            Deadline = Convert.ToDateTime(sr.ReadLine());
+                            MaxKoszt = double.Parse(sr.ReadLine());
+                            MaxZespol = long.Parse(sr.ReadLine());
 
                             UUCP = double.Parse(sr.ReadLine());
                             Rozmiar = double.Parse(sr.ReadLine());
-                            Pracochlonnosc = double.Parse(sr.ReadLine());
-                            Harmonogram = double.Parse(sr.ReadLine());
-                            Koszt = double.Parse(sr.ReadLine());
-                            
-
                             LabelPktUUCP.Text = string.Format("{0:N0}", UUCP);
                             LabelRozmiar.Text = string.Format("{0:N0}", Rozmiar);
-                            LabelWynikPrac.Text = string.Format("{0:N1}", Pracochlonnosc);
-                            LabelWynikHarm.Text = string.Format("{0:N1}", Harmonogram);
-                            LabelWynikKoszt.Text = string.Format("{0:N}", Koszt);
 
+                            LabelUwagi.Text = sr.ReadLine();
+
+                            Pracochlonnosc = double.Parse(sr.ReadLine());
+                            LabelWynikPrac.Text = string.Format("{0:N1}", Pracochlonnosc);
                             LabelWynikPrac.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+                            PracochlonnoscNLep = double.Parse(sr.ReadLine());
+                            LabelWynikNLepPrac.Text = string.Format("{0:N1}", PracochlonnoscNLep);
+                            LabelWynikNLepPrac.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+                            PracochlonnoscNGor = double.Parse(sr.ReadLine());
+                            LabelWynikNGorPrac.Text = string.Format("{0:N1}", PracochlonnoscNGor);
+                            LabelWynikNGorPrac.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+
+
+                            Harmonogram = double.Parse(sr.ReadLine());
+                            LabelWynikHarm.Text = string.Format("{0:N1}", Harmonogram);
                             LabelWynikHarm.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+                            HarmonogramNLep = double.Parse(sr.ReadLine());
+                            LabelWynikNLepHarm.Text = string.Format("{0:N1}", HarmonogramNLep);
+                            LabelWynikNLepHarm.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+                            HarmonogramNGor = double.Parse(sr.ReadLine());
+                            LabelWynikNGorHarm.Text = string.Format("{0:N1}", HarmonogramNGor);
+                            LabelWynikNGorHarm.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+
+                            DataZakonczenia = Convert.ToDateTime(sr.ReadLine());
+                            LabelWynikData.Text = string.Format("{0:d MMMM yyyy}", DataZakonczenia);
+                            LabelWynikData.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+                            DataZakonczeniaNLep = Convert.ToDateTime(sr.ReadLine());
+                            LabelWynikNLepData.Text = string.Format("{0:d MMMM yyyy}", DataZakonczeniaNLep);
+                            LabelWynikNLepData.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+                            DataZakonczeniaNGor = Convert.ToDateTime(sr.ReadLine());
+                            LabelWynikNGorData.Text = string.Format("{0:d MMMM yyyy}", DataZakonczeniaNGor);
+                            LabelWynikNGorData.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+
+                            Wydajnosc = double.Parse(sr.ReadLine());
+                            LabelWynikWydaj.Text = string.Format("{0:N1}", Wydajnosc);
+                            LabelWynikWydaj.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+                            WydajnoscNLep = double.Parse(sr.ReadLine());
+                            LabelWynikNLepWydaj.Text = string.Format("{0:N1}", WydajnoscNLep);
+                            LabelWynikNLepWydaj.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+                            WydajnoscNGor = double.Parse(sr.ReadLine());
+                            LabelWynikNGorWydaj.Text = string.Format("{0:N1}", WydajnoscNGor);
+                            LabelWynikNGorWydaj.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+
+                            Koszt = double.Parse(sr.ReadLine());
+                            LabelWynikKoszt.Text = string.Format("{0:N2}", Koszt);
                             LabelWynikKoszt.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+                            KosztNLep = double.Parse(sr.ReadLine());
+                            LabelWynikNLepKoszt.Text = string.Format("{0:N2}", KosztNLep);
+                            LabelWynikNLepKoszt.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+                            KosztNGor = double.Parse(sr.ReadLine());
+                            LabelWynikNGorKoszt.Text = string.Format("{0:N2}", KosztNGor);
+                            LabelWynikNGorKoszt.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+
 
                             SrZespol = double.Parse(sr.ReadLine());
-                            LabelWynikSrZesp.Text = string.Format("{0:N0}", SrZespol);
-                            LabelWynikData.Text = sr.ReadLine();
+                            LabelWynikSrZesp.Text = string.Format("{0:N1}", SrZespol);
+                            LabelWynikSrZesp.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+                            SrZespolNLep = double.Parse(sr.ReadLine());
+                            LabelWynikNLepSrZesp.Text = string.Format("{0:N1}", SrZespolNLep);
+                            LabelWynikNLepSrZesp.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+                            SrZespolNGor = double.Parse(sr.ReadLine());
+                            LabelWynikNGorSrZesp.Text = string.Format("{0:N1}", SrZespolNGor);
+                            LabelWynikNGorSrZesp.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
+
+                            OpisProjektu = sr.ReadLine();
+
                         }
                     }
                     catch (Exception)
@@ -933,8 +983,7 @@ namespace Aplikacja
                 sw.WriteLine(Adres);
                 sw.WriteLine(Telefon);
                 sw.WriteLine(Email);
-                sw.WriteLine(OpisProjektu);
-
+                
                 sw.WriteLine(Ograniczenia);
                 sw.WriteLine(Domyslne);
 
@@ -963,22 +1012,65 @@ namespace Aplikacja
                 sw.WriteLine(OsoboMGodz);
                 sw.WriteLine(DzRobGodz);
 
-                sw.WriteLine(MaxKoszt);
                 sw.WriteLine(MaxPrac);
                 sw.WriteLine(MaxHarm);
+                sw.WriteLine(Deadline);
+                sw.WriteLine(MaxKoszt);
+                sw.WriteLine(MaxZespol);
 
                 sw.WriteLine(UUCP);
                 sw.WriteLine(Rozmiar);
-                sw.WriteLine(Pracochlonnosc);
-                sw.WriteLine(Harmonogram);
-                sw.WriteLine(Koszt);
-                sw.WriteLine(LabelWynikPrac.BackColor.Name);
-                sw.WriteLine(LabelWynikHarm.BackColor.Name);
-                sw.WriteLine(LabelWynikKoszt.BackColor.Name);
-                sw.WriteLine(SrZespol);
-                sw.WriteLine(LabelWynikData.Text);
 
-                
+                sw.WriteLine(LabelUwagi.Text);
+
+                sw.WriteLine(Pracochlonnosc);
+                sw.WriteLine(LabelWynikPrac.BackColor.Name);
+                sw.WriteLine(PracochlonnoscNLep);
+                sw.WriteLine(LabelWynikNLepPrac.BackColor.Name);
+                sw.WriteLine(PracochlonnoscNGor);
+                sw.WriteLine(LabelWynikNGorPrac.BackColor.Name);
+
+                sw.WriteLine(Harmonogram);
+                sw.WriteLine(LabelWynikHarm.BackColor.Name);
+                sw.WriteLine(HarmonogramNLep);
+                sw.WriteLine(LabelWynikNLepHarm.BackColor.Name);
+                sw.WriteLine(HarmonogramNGor);
+                sw.WriteLine(LabelWynikNGorHarm.BackColor.Name);
+
+                sw.WriteLine(DataZakonczenia);
+                sw.WriteLine(LabelWynikData.BackColor.Name);
+                sw.WriteLine(DataZakonczeniaNLep);
+                sw.WriteLine(LabelWynikNLepData.BackColor.Name);
+                sw.WriteLine(DataZakonczeniaNGor);
+                sw.WriteLine(LabelWynikNGorData.BackColor.Name);
+
+
+                sw.WriteLine(Wydajnosc);
+                sw.WriteLine(LabelWynikWydaj.BackColor.Name);
+                sw.WriteLine(WydajnoscNLep);
+                sw.WriteLine(LabelWynikNLepWydaj.BackColor.Name);
+                sw.WriteLine(WydajnoscNGor);
+                sw.WriteLine(LabelWynikNGorWydaj.BackColor.Name);
+
+
+                sw.WriteLine(Koszt);
+                sw.WriteLine(LabelWynikKoszt.BackColor.Name);
+                sw.WriteLine(KosztNLep);
+                sw.WriteLine(LabelWynikNLepKoszt.BackColor.Name);
+                sw.WriteLine(KosztNGor);
+                sw.WriteLine(LabelWynikNGorKoszt.BackColor.Name);
+
+
+                sw.WriteLine(SrZespol);
+                sw.WriteLine(LabelWynikSrZesp.BackColor.Name);
+                sw.WriteLine(SrZespolNLep);
+                sw.WriteLine(LabelWynikNLepSrZesp.BackColor.Name);
+                sw.WriteLine(SrZespolNGor);
+                sw.WriteLine(LabelWynikNGorSrZesp.BackColor.Name);
+
+                sw.WriteLine(OpisProjektu);
+
+
                 MessageBox.Show("Plik zapisano.");
             }
         }
@@ -1002,6 +1094,8 @@ namespace Aplikacja
             Email = "";
             OpisProjektu = "";
 
+            Ograniczenia = false;
+            Domyslne = false;
 
             NumUUCWProsty.Value = 0;
             NumUUCWSredni.Value = 0;
@@ -1015,8 +1109,7 @@ namespace Aplikacja
             TabIndCzynnSkali = new int[] { 2, 2, 2, 2, 2 };
             TabIndMnPrac = new int[] { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 };
 
-            Ograniczenia = false;
-            Domyslne = false;
+
 
             JezykProgramowania = Properties.Settings.Default.JezykProgramowania;
             StawkaGodz = Properties.Settings.Default.StawkaGodz;
