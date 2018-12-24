@@ -61,7 +61,7 @@
             this.ButtonAnuluj.Location = new System.Drawing.Point(298, 512);
             this.ButtonAnuluj.Name = "ButtonAnuluj";
             this.ButtonAnuluj.Size = new System.Drawing.Size(104, 27);
-            this.ButtonAnuluj.TabIndex = 20;
+            this.ButtonAnuluj.TabIndex = 1;
             this.ButtonAnuluj.Text = "Anuluj";
             this.ButtonAnuluj.UseVisualStyleBackColor = true;
             // 
@@ -72,7 +72,7 @@
             this.ButtonOk.Location = new System.Drawing.Point(138, 512);
             this.ButtonOk.Name = "ButtonOk";
             this.ButtonOk.Size = new System.Drawing.Size(104, 27);
-            this.ButtonOk.TabIndex = 19;
+            this.ButtonOk.TabIndex = 0;
             this.ButtonOk.Text = "OK";
             this.ButtonOk.UseVisualStyleBackColor = true;
             // 
@@ -175,7 +175,7 @@
             this.TextBoxD.Location = new System.Drawing.Point(272, 234);
             this.TextBoxD.Name = "TextBoxD";
             this.TextBoxD.Size = new System.Drawing.Size(140, 22);
-            this.TextBoxD.TabIndex = 42;
+            this.TextBoxD.TabIndex = 7;
             this.TextBoxD.TextChanged += new System.EventHandler(this.TextBoxD_TextChanged);
             // 
             // TextBoxA
@@ -183,7 +183,7 @@
             this.TextBoxA.Location = new System.Drawing.Point(41, 110);
             this.TextBoxA.Name = "TextBoxA";
             this.TextBoxA.Size = new System.Drawing.Size(122, 22);
-            this.TextBoxA.TabIndex = 34;
+            this.TextBoxA.TabIndex = 4;
             this.TextBoxA.TextChanged += new System.EventHandler(this.TextBoxA_TextChanged);
             // 
             // TextBoxC
@@ -191,7 +191,7 @@
             this.TextBoxC.Location = new System.Drawing.Point(41, 234);
             this.TextBoxC.Name = "TextBoxC";
             this.TextBoxC.Size = new System.Drawing.Size(122, 22);
-            this.TextBoxC.TabIndex = 41;
+            this.TextBoxC.TabIndex = 6;
             this.TextBoxC.TextChanged += new System.EventHandler(this.TextBoxC_TextChanged);
             // 
             // TextBoxB
@@ -199,7 +199,7 @@
             this.TextBoxB.Location = new System.Drawing.Point(268, 110);
             this.TextBoxB.Name = "TextBoxB";
             this.TextBoxB.Size = new System.Drawing.Size(140, 22);
-            this.TextBoxB.TabIndex = 35;
+            this.TextBoxB.TabIndex = 5;
             this.TextBoxB.TextChanged += new System.EventHandler(this.TextBoxB_TextChanged);
             // 
             // label10
@@ -234,8 +234,8 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(495, 57);
             this.tableLayoutPanel2.TabIndex = 38;
             // 
@@ -263,7 +263,7 @@
             0});
             this.NumericUCPnaFP.Name = "NumericUCPnaFP";
             this.NumericUCPnaFP.Size = new System.Drawing.Size(185, 22);
-            this.NumericUCPnaFP.TabIndex = 16;
+            this.NumericUCPnaFP.TabIndex = 3;
             this.NumericUCPnaFP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericUCPnaFP.ThousandsSeparator = true;
             this.NumericUCPnaFP.ValueChanged += new System.EventHandler(this.NumericUCPnaFP_ValueChanged);
@@ -273,7 +273,7 @@
             this.ButtonPrzywroc.Location = new System.Drawing.Point(321, 430);
             this.ButtonPrzywroc.Name = "ButtonPrzywroc";
             this.ButtonPrzywroc.Size = new System.Drawing.Size(192, 42);
-            this.ButtonPrzywroc.TabIndex = 44;
+            this.ButtonPrzywroc.TabIndex = 2;
             this.ButtonPrzywroc.Text = "Przywróć wartości  domyślne modelu";
             this.ButtonPrzywroc.UseVisualStyleBackColor = true;
             this.ButtonPrzywroc.Click += new System.EventHandler(this.ButtonPrzywroc_Click);

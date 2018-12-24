@@ -162,7 +162,7 @@
             0});
             this.NumericStawkaGodz.Name = "NumericStawkaGodz";
             this.NumericStawkaGodz.Size = new System.Drawing.Size(157, 22);
-            this.NumericStawkaGodz.TabIndex = 16;
+            this.NumericStawkaGodz.TabIndex = 9;
             this.NumericStawkaGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericStawkaGodz.ThousandsSeparator = true;
             this.NumericStawkaGodz.ValueChanged += new System.EventHandler(this.NumericStawkaGodz_ValueChanged);
@@ -179,7 +179,7 @@
             0});
             this.NumericOsoboMGodz.Name = "NumericOsoboMGodz";
             this.NumericOsoboMGodz.Size = new System.Drawing.Size(157, 22);
-            this.NumericOsoboMGodz.TabIndex = 24;
+            this.NumericOsoboMGodz.TabIndex = 10;
             this.NumericOsoboMGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericOsoboMGodz.ThousandsSeparator = true;
             this.NumericOsoboMGodz.ValueChanged += new System.EventHandler(this.NumericOsoboMGodz_ValueChanged);
@@ -195,7 +195,7 @@
             0});
             this.NumericDzRobGodz.Name = "NumericDzRobGodz";
             this.NumericDzRobGodz.Size = new System.Drawing.Size(157, 22);
-            this.NumericDzRobGodz.TabIndex = 26;
+            this.NumericDzRobGodz.TabIndex = 11;
             this.NumericDzRobGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericDzRobGodz.ThousandsSeparator = true;
             this.NumericDzRobGodz.ValueChanged += new System.EventHandler(this.NumericDzRobGodz_ValueChanged);
@@ -294,7 +294,7 @@
             this.ComboBoxJezykProgram.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
             this.ComboBoxJezykProgram.Name = "ComboBoxJezykProgram";
             this.ComboBoxJezykProgram.Size = new System.Drawing.Size(285, 24);
-            this.ComboBoxJezykProgram.TabIndex = 31;
+            this.ComboBoxJezykProgram.TabIndex = 8;
             this.ComboBoxJezykProgram.SelectedIndexChanged += new System.EventHandler(this.ComboBoxJezykProgram_SelectedIndexChanged);
             // 
             // GroupBoxDomDaneProjektu
@@ -341,7 +341,7 @@
             this.TextBoxKierownikProjektu.Location = new System.Drawing.Point(6, 48);
             this.TextBoxKierownikProjektu.Name = "TextBoxKierownikProjektu";
             this.TextBoxKierownikProjektu.Size = new System.Drawing.Size(462, 22);
-            this.TextBoxKierownikProjektu.TabIndex = 29;
+            this.TextBoxKierownikProjektu.TabIndex = 2;
             this.TextBoxKierownikProjektu.TextChanged += new System.EventHandler(this.TextBoxKierownikProjektu_TextChanged);
             // 
             // TextBoxSzacujacy
@@ -349,7 +349,7 @@
             this.TextBoxSzacujacy.Location = new System.Drawing.Point(6, 92);
             this.TextBoxSzacujacy.Name = "TextBoxSzacujacy";
             this.TextBoxSzacujacy.Size = new System.Drawing.Size(462, 22);
-            this.TextBoxSzacujacy.TabIndex = 39;
+            this.TextBoxSzacujacy.TabIndex = 3;
             this.TextBoxSzacujacy.TextChanged += new System.EventHandler(this.TextBoxSzacujacy_TextChanged);
             // 
             // label14
@@ -375,7 +375,7 @@
             this.TextBoxNazwaFirmy.Location = new System.Drawing.Point(6, 171);
             this.TextBoxNazwaFirmy.Name = "TextBoxNazwaFirmy";
             this.TextBoxNazwaFirmy.Size = new System.Drawing.Size(462, 22);
-            this.TextBoxNazwaFirmy.TabIndex = 32;
+            this.TextBoxNazwaFirmy.TabIndex = 4;
             this.TextBoxNazwaFirmy.TextChanged += new System.EventHandler(this.TextBoxNazwaFirmy_TextChanged);
             // 
             // TextBoxEmail
@@ -383,7 +383,7 @@
             this.TextBoxEmail.Location = new System.Drawing.Point(6, 303);
             this.TextBoxEmail.Name = "TextBoxEmail";
             this.TextBoxEmail.Size = new System.Drawing.Size(462, 22);
-            this.TextBoxEmail.TabIndex = 37;
+            this.TextBoxEmail.TabIndex = 7;
             this.TextBoxEmail.TextChanged += new System.EventHandler(this.TextBoxEmail_TextChanged);
             // 
             // TextBoxAdres
@@ -391,7 +391,7 @@
             this.TextBoxAdres.Location = new System.Drawing.Point(9, 215);
             this.TextBoxAdres.Name = "TextBoxAdres";
             this.TextBoxAdres.Size = new System.Drawing.Size(462, 22);
-            this.TextBoxAdres.TabIndex = 33;
+            this.TextBoxAdres.TabIndex = 5;
             this.TextBoxAdres.TextChanged += new System.EventHandler(this.TextBoxAdres_TextChanged);
             // 
             // label10
@@ -408,7 +408,7 @@
             this.TextBoxTelefon.Location = new System.Drawing.Point(6, 259);
             this.TextBoxTelefon.Name = "TextBoxTelefon";
             this.TextBoxTelefon.Size = new System.Drawing.Size(462, 22);
-            this.TextBoxTelefon.TabIndex = 34;
+            this.TextBoxTelefon.TabIndex = 6;
             this.TextBoxTelefon.TextChanged += new System.EventHandler(this.TextBoxTelefon_TextChanged);
             // 
             // label11
@@ -428,7 +428,7 @@
             this.ButtonAnuluj.Location = new System.Drawing.Point(283, 666);
             this.ButtonAnuluj.Name = "ButtonAnuluj";
             this.ButtonAnuluj.Size = new System.Drawing.Size(104, 27);
-            this.ButtonAnuluj.TabIndex = 18;
+            this.ButtonAnuluj.TabIndex = 1;
             this.ButtonAnuluj.Text = "Anuluj";
             this.ButtonAnuluj.UseVisualStyleBackColor = true;
             // 
@@ -439,7 +439,7 @@
             this.ButtonOk.Location = new System.Drawing.Point(123, 666);
             this.ButtonOk.Name = "ButtonOk";
             this.ButtonOk.Size = new System.Drawing.Size(104, 27);
-            this.ButtonOk.TabIndex = 17;
+            this.ButtonOk.TabIndex = 0;
             this.ButtonOk.Text = "OK";
             this.ButtonOk.UseVisualStyleBackColor = true;
             // 

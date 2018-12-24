@@ -81,7 +81,7 @@
             this.ButtonAnuluj.Location = new System.Drawing.Point(311, 584);
             this.ButtonAnuluj.Name = "ButtonAnuluj";
             this.ButtonAnuluj.Size = new System.Drawing.Size(104, 27);
-            this.ButtonAnuluj.TabIndex = 13;
+            this.ButtonAnuluj.TabIndex = 1;
             this.ButtonAnuluj.Text = "Anuluj";
             this.ButtonAnuluj.UseVisualStyleBackColor = true;
             // 
@@ -92,7 +92,7 @@
             this.ButtonOk.Location = new System.Drawing.Point(151, 584);
             this.ButtonOk.Name = "ButtonOk";
             this.ButtonOk.Size = new System.Drawing.Size(104, 27);
-            this.ButtonOk.TabIndex = 12;
+            this.ButtonOk.TabIndex = 0;
             this.ButtonOk.Text = "OK";
             this.ButtonOk.UseVisualStyleBackColor = true;
             // 
@@ -111,10 +111,10 @@
             // 
             // ButtonPrzywrocDomyslne
             // 
-            this.ButtonPrzywrocDomyslne.Location = new System.Drawing.Point(327, 203);
+            this.ButtonPrzywrocDomyslne.Location = new System.Drawing.Point(327, 221);
             this.ButtonPrzywrocDomyslne.Name = "ButtonPrzywrocDomyslne";
             this.ButtonPrzywrocDomyslne.Size = new System.Drawing.Size(192, 42);
-            this.ButtonPrzywrocDomyslne.TabIndex = 45;
+            this.ButtonPrzywrocDomyslne.TabIndex = 2;
             this.ButtonPrzywrocDomyslne.Text = "Przywróć wartości  domyślne";
             this.ButtonPrzywrocDomyslne.UseVisualStyleBackColor = true;
             this.ButtonPrzywrocDomyslne.Click += new System.EventHandler(this.ButtonPrzywrocDomyslne_Click);
@@ -196,7 +196,7 @@
             this.ComboBoxJezykProgram.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.ComboBoxJezykProgram.Name = "ComboBoxJezykProgram";
             this.ComboBoxJezykProgram.Size = new System.Drawing.Size(303, 24);
-            this.ComboBoxJezykProgram.TabIndex = 32;
+            this.ComboBoxJezykProgram.TabIndex = 3;
             this.ComboBoxJezykProgram.SelectedIndexChanged += new System.EventHandler(this.ComboBoxJezykProgram_SelectedIndexChanged);
             // 
             // label8
@@ -245,7 +245,7 @@
             0});
             this.NumericStawkaGodz.Name = "NumericStawkaGodz";
             this.NumericStawkaGodz.Size = new System.Drawing.Size(151, 22);
-            this.NumericStawkaGodz.TabIndex = 16;
+            this.NumericStawkaGodz.TabIndex = 4;
             this.NumericStawkaGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericStawkaGodz.ThousandsSeparator = true;
             this.NumericStawkaGodz.ValueChanged += new System.EventHandler(this.NumericStawkaGodz_ValueChanged);
@@ -262,7 +262,7 @@
             0});
             this.NumericOsoboMGodz.Name = "NumericOsoboMGodz";
             this.NumericOsoboMGodz.Size = new System.Drawing.Size(151, 22);
-            this.NumericOsoboMGodz.TabIndex = 24;
+            this.NumericOsoboMGodz.TabIndex = 5;
             this.NumericOsoboMGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericOsoboMGodz.ThousandsSeparator = true;
             this.NumericOsoboMGodz.ValueChanged += new System.EventHandler(this.NumericOsoboMGodz_ValueChanged);
@@ -279,7 +279,7 @@
             0});
             this.NumericDzRobGodz.Name = "NumericDzRobGodz";
             this.NumericDzRobGodz.Size = new System.Drawing.Size(151, 22);
-            this.NumericDzRobGodz.TabIndex = 26;
+            this.NumericDzRobGodz.TabIndex = 6;
             this.NumericDzRobGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericDzRobGodz.ThousandsSeparator = true;
             this.NumericDzRobGodz.ValueChanged += new System.EventHandler(this.NumericDzRobGodz_ValueChanged);
@@ -351,7 +351,7 @@
             this.CheckBoxAktywacja.Location = new System.Drawing.Point(6, 21);
             this.CheckBoxAktywacja.Name = "CheckBoxAktywacja";
             this.CheckBoxAktywacja.Size = new System.Drawing.Size(92, 20);
-            this.CheckBoxAktywacja.TabIndex = 30;
+            this.CheckBoxAktywacja.TabIndex = 7;
             this.CheckBoxAktywacja.Text = "Aktywacja";
             this.CheckBoxAktywacja.UseVisualStyleBackColor = true;
             this.CheckBoxAktywacja.CheckedChanged += new System.EventHandler(this.CheckBoxAktywacja_CheckedChanged);
@@ -400,7 +400,7 @@
             0});
             this.NumericMaxZespol.Name = "NumericMaxZespol";
             this.NumericMaxZespol.Size = new System.Drawing.Size(141, 22);
-            this.NumericMaxZespol.TabIndex = 46;
+            this.NumericMaxZespol.TabIndex = 12;
             this.NumericMaxZespol.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericMaxZespol.ThousandsSeparator = true;
             this.NumericMaxZespol.ValueChanged += new System.EventHandler(this.NumericMaxZespol_ValueChanged);
@@ -452,7 +452,7 @@
             0});
             this.NumericMaxKoszt.Name = "NumericMaxKoszt";
             this.NumericMaxKoszt.Size = new System.Drawing.Size(141, 22);
-            this.NumericMaxKoszt.TabIndex = 16;
+            this.NumericMaxKoszt.TabIndex = 11;
             this.NumericMaxKoszt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericMaxKoszt.ThousandsSeparator = true;
             this.NumericMaxKoszt.ValueChanged += new System.EventHandler(this.NumericMaxKoszt_ValueChanged);
@@ -492,7 +492,7 @@
             0});
             this.NumericMaxPrac.Name = "NumericMaxPrac";
             this.NumericMaxPrac.Size = new System.Drawing.Size(141, 22);
-            this.NumericMaxPrac.TabIndex = 24;
+            this.NumericMaxPrac.TabIndex = 8;
             this.NumericMaxPrac.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericMaxPrac.ThousandsSeparator = true;
             this.NumericMaxPrac.ValueChanged += new System.EventHandler(this.NumericMaxPrac_ValueChanged);
@@ -545,7 +545,7 @@
             0});
             this.NumericMaxHarm.Name = "NumericMaxHarm";
             this.NumericMaxHarm.Size = new System.Drawing.Size(141, 22);
-            this.NumericMaxHarm.TabIndex = 26;
+            this.NumericMaxHarm.TabIndex = 9;
             this.NumericMaxHarm.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericMaxHarm.ThousandsSeparator = true;
             this.NumericMaxHarm.ValueChanged += new System.EventHandler(this.NumericMaxHarm_ValueChanged);
@@ -571,7 +571,7 @@
             this.TimePickerDeadline.Margin = new System.Windows.Forms.Padding(3, 11, 3, 3);
             this.TimePickerDeadline.Name = "TimePickerDeadline";
             this.TimePickerDeadline.Size = new System.Drawing.Size(183, 22);
-            this.TimePickerDeadline.TabIndex = 47;
+            this.TimePickerDeadline.TabIndex = 10;
             this.TimePickerDeadline.ValueChanged += new System.EventHandler(this.TimePickerDeadline_ValueChanged);
             // 
             // OknoZalozeniaProjektu

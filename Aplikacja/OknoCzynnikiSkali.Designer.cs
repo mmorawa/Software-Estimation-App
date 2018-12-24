@@ -64,7 +64,7 @@
             this.ButtonOk.Location = new System.Drawing.Point(366, 485);
             this.ButtonOk.Name = "ButtonOk";
             this.ButtonOk.Size = new System.Drawing.Size(104, 27);
-            this.ButtonOk.TabIndex = 3;
+            this.ButtonOk.TabIndex = 5;
             this.ButtonOk.Text = "OK";
             this.ButtonOk.UseVisualStyleBackColor = true;
             // 
@@ -263,7 +263,7 @@
             this.ComboBoxCzynnSkElast.Margin = new System.Windows.Forms.Padding(3, 24, 3, 3);
             this.ComboBoxCzynnSkElast.Name = "ComboBoxCzynnSkElast";
             this.ComboBoxCzynnSkElast.Size = new System.Drawing.Size(384, 24);
-            this.ComboBoxCzynnSkElast.TabIndex = 11;
+            this.ComboBoxCzynnSkElast.TabIndex = 1;
             this.ComboBoxCzynnSkElast.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzynnSkElast_SelectedIndexChanged);
             // 
             // ComboBoxCzynnSkRyzyko
@@ -283,7 +283,7 @@
             this.ComboBoxCzynnSkRyzyko.Margin = new System.Windows.Forms.Padding(3, 24, 3, 3);
             this.ComboBoxCzynnSkRyzyko.Name = "ComboBoxCzynnSkRyzyko";
             this.ComboBoxCzynnSkRyzyko.Size = new System.Drawing.Size(384, 24);
-            this.ComboBoxCzynnSkRyzyko.TabIndex = 12;
+            this.ComboBoxCzynnSkRyzyko.TabIndex = 2;
             this.ComboBoxCzynnSkRyzyko.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzynnSkRyzyko_SelectedIndexChanged);
             // 
             // ComboBoxCzynnSkZesp
@@ -303,7 +303,7 @@
             this.ComboBoxCzynnSkZesp.Margin = new System.Windows.Forms.Padding(3, 24, 3, 3);
             this.ComboBoxCzynnSkZesp.Name = "ComboBoxCzynnSkZesp";
             this.ComboBoxCzynnSkZesp.Size = new System.Drawing.Size(384, 24);
-            this.ComboBoxCzynnSkZesp.TabIndex = 13;
+            this.ComboBoxCzynnSkZesp.TabIndex = 3;
             this.ComboBoxCzynnSkZesp.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzynnSkZesp_SelectedIndexChanged);
             // 
             // ComboBoxCzynnSkDojrz
@@ -323,7 +323,7 @@
             this.ComboBoxCzynnSkDojrz.Margin = new System.Windows.Forms.Padding(3, 24, 3, 3);
             this.ComboBoxCzynnSkDojrz.Name = "ComboBoxCzynnSkDojrz";
             this.ComboBoxCzynnSkDojrz.Size = new System.Drawing.Size(384, 24);
-            this.ComboBoxCzynnSkDojrz.TabIndex = 14;
+            this.ComboBoxCzynnSkDojrz.TabIndex = 4;
             this.ComboBoxCzynnSkDojrz.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzynnSkDojrz_SelectedIndexChanged);
             // 
             // label6
@@ -398,7 +398,7 @@
             this.ButtonAnuluj.Location = new System.Drawing.Point(526, 485);
             this.ButtonAnuluj.Name = "ButtonAnuluj";
             this.ButtonAnuluj.Size = new System.Drawing.Size(104, 27);
-            this.ButtonAnuluj.TabIndex = 5;
+            this.ButtonAnuluj.TabIndex = 6;
             this.ButtonAnuluj.Text = "Anuluj";
             this.ButtonAnuluj.UseVisualStyleBackColor = true;
             // 

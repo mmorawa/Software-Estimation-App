@@ -68,7 +68,7 @@
             this.ButtonDrukuj.Location = new System.Drawing.Point(3, 11);
             this.ButtonDrukuj.Name = "ButtonDrukuj";
             this.ButtonDrukuj.Size = new System.Drawing.Size(91, 27);
-            this.ButtonDrukuj.TabIndex = 2;
+            this.ButtonDrukuj.TabIndex = 0;
             this.ButtonDrukuj.Text = "Drukuj";
             this.ButtonDrukuj.UseVisualStyleBackColor = true;
             this.ButtonDrukuj.Click += new System.EventHandler(this.ButtonDrukuj_Click);
@@ -79,7 +79,7 @@
             this.ButtonNastepna.Location = new System.Drawing.Point(669, 11);
             this.ButtonNastepna.Name = "ButtonNastepna";
             this.ButtonNastepna.Size = new System.Drawing.Size(34, 27);
-            this.ButtonNastepna.TabIndex = 3;
+            this.ButtonNastepna.TabIndex = 5;
             this.ButtonNastepna.Text = ">>";
             this.ButtonNastepna.UseVisualStyleBackColor = true;
             this.ButtonNastepna.Click += new System.EventHandler(this.ButtonNastepna_Click);
@@ -101,7 +101,7 @@
             this.ButtonUstawieniaDruk.Location = new System.Drawing.Point(100, 11);
             this.ButtonUstawieniaDruk.Name = "ButtonUstawieniaDruk";
             this.ButtonUstawieniaDruk.Size = new System.Drawing.Size(173, 27);
-            this.ButtonUstawieniaDruk.TabIndex = 5;
+            this.ButtonUstawieniaDruk.TabIndex = 1;
             this.ButtonUstawieniaDruk.Text = "Ustawienia drukowania";
             this.ButtonUstawieniaDruk.UseVisualStyleBackColor = true;
             this.ButtonUstawieniaDruk.Click += new System.EventHandler(this.ButtonUstawieniaDruk_Click);
@@ -150,7 +150,7 @@
             this.ButtonPomniejsz.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.ButtonPomniejsz.Name = "ButtonPomniejsz";
             this.ButtonPomniejsz.Size = new System.Drawing.Size(35, 27);
-            this.ButtonPomniejsz.TabIndex = 9;
+            this.ButtonPomniejsz.TabIndex = 6;
             this.ButtonPomniejsz.Text = "-";
             this.ButtonPomniejsz.UseVisualStyleBackColor = true;
             this.ButtonPomniejsz.Click += new System.EventHandler(this.ButtonPomniejsz_Click);
@@ -161,7 +161,7 @@
             this.ButtonPowieksz.Location = new System.Drawing.Point(815, 11);
             this.ButtonPowieksz.Name = "ButtonPowieksz";
             this.ButtonPowieksz.Size = new System.Drawing.Size(28, 27);
-            this.ButtonPowieksz.TabIndex = 8;
+            this.ButtonPowieksz.TabIndex = 7;
             this.ButtonPowieksz.Text = "+";
             this.ButtonPowieksz.UseVisualStyleBackColor = true;
             this.ButtonPowieksz.Click += new System.EventHandler(this.ButtonPowieksz_Click);
@@ -172,7 +172,7 @@
             this.ButtonEksportRTF.Location = new System.Drawing.Point(424, 11);
             this.ButtonEksportRTF.Name = "ButtonEksportRTF";
             this.ButtonEksportRTF.Size = new System.Drawing.Size(131, 27);
-            this.ButtonEksportRTF.TabIndex = 7;
+            this.ButtonEksportRTF.TabIndex = 3;
             this.ButtonEksportRTF.Text = "Eksportuj do RTF";
             this.ButtonEksportRTF.UseVisualStyleBackColor = true;
             this.ButtonEksportRTF.Click += new System.EventHandler(this.ButtonEksportRTF_Click);
@@ -183,7 +183,7 @@
             this.ButtonEksportPDF.Location = new System.Drawing.Point(279, 11);
             this.ButtonEksportPDF.Name = "ButtonEksportPDF";
             this.ButtonEksportPDF.Size = new System.Drawing.Size(139, 27);
-            this.ButtonEksportPDF.TabIndex = 6;
+            this.ButtonEksportPDF.TabIndex = 2;
             this.ButtonEksportPDF.Text = "Eksportuj do PDF";
             this.ButtonEksportPDF.UseVisualStyleBackColor = true;
             this.ButtonEksportPDF.Click += new System.EventHandler(this.ButtonEksportPDF_Click);

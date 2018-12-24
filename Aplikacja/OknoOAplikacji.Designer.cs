@@ -123,7 +123,7 @@
             this.okButton.Location = new System.Drawing.Point(358, 235);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(104, 27);
-            this.okButton.TabIndex = 24;
+            this.okButton.TabIndex = 0;
             this.okButton.Text = "&OK";
             // 
             // TextBoxOpis

@@ -360,7 +360,7 @@
             this.ButtonZalozenia.Location = new System.Drawing.Point(382, 90);
             this.ButtonZalozenia.Name = "ButtonZalozenia";
             this.ButtonZalozenia.Size = new System.Drawing.Size(173, 27);
-            this.ButtonZalozenia.TabIndex = 5;
+            this.ButtonZalozenia.TabIndex = 3;
             this.ButtonZalozenia.Text = "Założenia projektu";
             this.ButtonZalozenia.UseVisualStyleBackColor = true;
             this.ButtonZalozenia.Click += new System.EventHandler(this.ButtonZalozenia_Click);
@@ -379,7 +379,7 @@
             this.DateTimePicker.Location = new System.Drawing.Point(6, 93);
             this.DateTimePicker.Name = "DateTimePicker";
             this.DateTimePicker.Size = new System.Drawing.Size(191, 22);
-            this.DateTimePicker.TabIndex = 3;
+            this.DateTimePicker.TabIndex = 1;
             this.DateTimePicker.Value = new System.DateTime(2018, 12, 17, 0, 0, 0, 0);
             this.DateTimePicker.ValueChanged += new System.EventHandler(this.DateTimePicker_ValueChanged);
             // 
@@ -535,7 +535,7 @@
             0});
             this.NumUUCWProsty.Name = "NumUUCWProsty";
             this.NumUUCWProsty.Size = new System.Drawing.Size(177, 22);
-            this.NumUUCWProsty.TabIndex = 6;
+            this.NumUUCWProsty.TabIndex = 4;
             this.NumUUCWProsty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUUCWProsty.ThousandsSeparator = true;
             this.NumUUCWProsty.ValueChanged += new System.EventHandler(this.NumUUCWProsty_ValueChanged);
@@ -705,7 +705,7 @@
             this.ButtonMnPr.Location = new System.Drawing.Point(271, 30);
             this.ButtonMnPr.Name = "ButtonMnPr";
             this.ButtonMnPr.Size = new System.Drawing.Size(219, 27);
-            this.ButtonMnPr.TabIndex = 3;
+            this.ButtonMnPr.TabIndex = 11;
             this.ButtonMnPr.Text = "Mnożniki pracochłonności";
             this.ButtonMnPr.UseVisualStyleBackColor = true;
             this.ButtonMnPr.Click += new System.EventHandler(this.ButtonMnPr_Click);
@@ -715,7 +715,7 @@
             this.ButtonCzSk.Location = new System.Drawing.Point(59, 30);
             this.ButtonCzSk.Name = "ButtonCzSk";
             this.ButtonCzSk.Size = new System.Drawing.Size(173, 27);
-            this.ButtonCzSk.TabIndex = 2;
+            this.ButtonCzSk.TabIndex = 10;
             this.ButtonCzSk.Text = "Czynniki skali";
             this.ButtonCzSk.UseVisualStyleBackColor = true;
             this.ButtonCzSk.Click += new System.EventHandler(this.ButtonCzSk_Click);
@@ -726,7 +726,7 @@
             this.ButtonNowyProjekt.Location = new System.Drawing.Point(12, 36);
             this.ButtonNowyProjekt.Name = "ButtonNowyProjekt";
             this.ButtonNowyProjekt.Size = new System.Drawing.Size(137, 27);
-            this.ButtonNowyProjekt.TabIndex = 8;
+            this.ButtonNowyProjekt.TabIndex = 12;
             this.ButtonNowyProjekt.Text = "Nowy projekt";
             this.ButtonNowyProjekt.UseVisualStyleBackColor = true;
             this.ButtonNowyProjekt.Click += new System.EventHandler(this.ButtonNowyProjekt_Click);
@@ -737,7 +737,7 @@
             this.ButtonOtworzProjekt.Location = new System.Drawing.Point(154, 36);
             this.ButtonOtworzProjekt.Name = "ButtonOtworzProjekt";
             this.ButtonOtworzProjekt.Size = new System.Drawing.Size(137, 27);
-            this.ButtonOtworzProjekt.TabIndex = 9;
+            this.ButtonOtworzProjekt.TabIndex = 13;
             this.ButtonOtworzProjekt.Text = "Otwórz projekt";
             this.ButtonOtworzProjekt.UseVisualStyleBackColor = true;
             this.ButtonOtworzProjekt.Click += new System.EventHandler(this.ButtonOtworzProjekt_Click);
@@ -748,7 +748,7 @@
             this.ButtonZapiszProjekt.Location = new System.Drawing.Point(296, 36);
             this.ButtonZapiszProjekt.Name = "ButtonZapiszProjekt";
             this.ButtonZapiszProjekt.Size = new System.Drawing.Size(137, 27);
-            this.ButtonZapiszProjekt.TabIndex = 10;
+            this.ButtonZapiszProjekt.TabIndex = 14;
             this.ButtonZapiszProjekt.Text = "Zapisz projekt";
             this.ButtonZapiszProjekt.UseVisualStyleBackColor = true;
             this.ButtonZapiszProjekt.Click += new System.EventHandler(this.ButtonZapiszProjekt_Click);
@@ -759,7 +759,7 @@
             this.ButtonUstawienia.Location = new System.Drawing.Point(582, 36);
             this.ButtonUstawienia.Name = "ButtonUstawienia";
             this.ButtonUstawienia.Size = new System.Drawing.Size(137, 27);
-            this.ButtonUstawienia.TabIndex = 12;
+            this.ButtonUstawienia.TabIndex = 16;
             this.ButtonUstawienia.Text = "Ustawienia";
             this.ButtonUstawienia.UseVisualStyleBackColor = true;
             this.ButtonUstawienia.Click += new System.EventHandler(this.ButtonUstawienia_Click);
@@ -770,7 +770,7 @@
             this.ButtonKalibracja.Location = new System.Drawing.Point(725, 36);
             this.ButtonKalibracja.Name = "ButtonKalibracja";
             this.ButtonKalibracja.Size = new System.Drawing.Size(137, 27);
-            this.ButtonKalibracja.TabIndex = 13;
+            this.ButtonKalibracja.TabIndex = 17;
             this.ButtonKalibracja.Text = "Kalibracja";
             this.ButtonKalibracja.UseVisualStyleBackColor = true;
             this.ButtonKalibracja.Click += new System.EventHandler(this.ButtonKalibracja_Click);
@@ -848,7 +848,7 @@
             0});
             this.NumUAWZlozony.Name = "NumUAWZlozony";
             this.NumUAWZlozony.Size = new System.Drawing.Size(177, 22);
-            this.NumUAWZlozony.TabIndex = 6;
+            this.NumUAWZlozony.TabIndex = 9;
             this.NumUAWZlozony.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUAWZlozony.ThousandsSeparator = true;
             this.NumUAWZlozony.ValueChanged += new System.EventHandler(this.NumUAWZlozony_ValueChanged);
@@ -879,7 +879,7 @@
             0});
             this.NumUAWSredni.Name = "NumUAWSredni";
             this.NumUAWSredni.Size = new System.Drawing.Size(177, 22);
-            this.NumUAWSredni.TabIndex = 5;
+            this.NumUAWSredni.TabIndex = 8;
             this.NumUAWSredni.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUAWSredni.ThousandsSeparator = true;
             this.NumUAWSredni.ValueChanged += new System.EventHandler(this.NumUAWSredni_ValueChanged);
@@ -910,7 +910,7 @@
             0});
             this.NumUAWProsty.Name = "NumUAWProsty";
             this.NumUAWProsty.Size = new System.Drawing.Size(177, 22);
-            this.NumUAWProsty.TabIndex = 6;
+            this.NumUAWProsty.TabIndex = 7;
             this.NumUAWProsty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUAWProsty.ThousandsSeparator = true;
             this.NumUAWProsty.ValueChanged += new System.EventHandler(this.NumUAWProsty_ValueChanged);
@@ -1569,7 +1569,7 @@
             this.ButtonOpisProjektu.Location = new System.Drawing.Point(6, 30);
             this.ButtonOpisProjektu.Name = "ButtonOpisProjektu";
             this.ButtonOpisProjektu.Size = new System.Drawing.Size(123, 27);
-            this.ButtonOpisProjektu.TabIndex = 16;
+            this.ButtonOpisProjektu.TabIndex = 19;
             this.ButtonOpisProjektu.Text = "Opis projektu";
             this.ButtonOpisProjektu.UseVisualStyleBackColor = true;
             this.ButtonOpisProjektu.Click += new System.EventHandler(this.ButtonOpisProjektu_Click);
@@ -1580,7 +1580,7 @@
             this.ButtonPodsumowanieProjektu.Location = new System.Drawing.Point(301, 30);
             this.ButtonPodsumowanieProjektu.Name = "ButtonPodsumowanieProjektu";
             this.ButtonPodsumowanieProjektu.Size = new System.Drawing.Size(155, 27);
-            this.ButtonPodsumowanieProjektu.TabIndex = 19;
+            this.ButtonPodsumowanieProjektu.TabIndex = 21;
             this.ButtonPodsumowanieProjektu.Text = "Podsumowanie";
             this.ButtonPodsumowanieProjektu.UseVisualStyleBackColor = true;
             this.ButtonPodsumowanieProjektu.Click += new System.EventHandler(this.ButtonPodsumowanieProjektu_Click);
@@ -1591,7 +1591,7 @@
             this.ButtonOszacowanie.Location = new System.Drawing.Point(135, 30);
             this.ButtonOszacowanie.Name = "ButtonOszacowanie";
             this.ButtonOszacowanie.Size = new System.Drawing.Size(156, 27);
-            this.ButtonOszacowanie.TabIndex = 18;
+            this.ButtonOszacowanie.TabIndex = 20;
             this.ButtonOszacowanie.Text = "Pełne oszacowanie";
             this.ButtonOszacowanie.UseVisualStyleBackColor = true;
             this.ButtonOszacowanie.Click += new System.EventHandler(this.ButtonOszacowanie_Click);
@@ -1602,7 +1602,7 @@
             this.ButtonTablicaPrzeliczeniowa.Location = new System.Drawing.Point(868, 36);
             this.ButtonTablicaPrzeliczeniowa.Name = "ButtonTablicaPrzeliczeniowa";
             this.ButtonTablicaPrzeliczeniowa.Size = new System.Drawing.Size(192, 27);
-            this.ButtonTablicaPrzeliczeniowa.TabIndex = 21;
+            this.ButtonTablicaPrzeliczeniowa.TabIndex = 18;
             this.ButtonTablicaPrzeliczeniowa.Text = "Tablica przeliczeniowa";
             this.ButtonTablicaPrzeliczeniowa.UseVisualStyleBackColor = true;
             this.ButtonTablicaPrzeliczeniowa.Click += new System.EventHandler(this.ButtonTablicaPrzeliczeniowa_Click);
@@ -1642,7 +1642,7 @@
             this.ButtonKreator.Location = new System.Drawing.Point(439, 36);
             this.ButtonKreator.Name = "ButtonKreator";
             this.ButtonKreator.Size = new System.Drawing.Size(137, 27);
-            this.ButtonKreator.TabIndex = 14;
+            this.ButtonKreator.TabIndex = 15;
             this.ButtonKreator.Text = "Kreator";
             this.ButtonKreator.UseVisualStyleBackColor = true;
             this.ButtonKreator.Click += new System.EventHandler(this.ButtonKreator_Click);

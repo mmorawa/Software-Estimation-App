@@ -125,7 +125,7 @@
             this.ButtonAnuluj.Location = new System.Drawing.Point(558, 601);
             this.ButtonAnuluj.Name = "ButtonAnuluj";
             this.ButtonAnuluj.Size = new System.Drawing.Size(104, 27);
-            this.ButtonAnuluj.TabIndex = 8;
+            this.ButtonAnuluj.TabIndex = 1;
             this.ButtonAnuluj.Text = "Anuluj";
             this.ButtonAnuluj.UseVisualStyleBackColor = true;
             // 
@@ -151,7 +151,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1058, 542);
-            this.tabControl1.TabIndex = 9;
+            this.tabControl1.TabIndex = 2;
             // 
             // TabPageProdukt
             // 
@@ -334,7 +334,7 @@
             this.ComboBoxMnPrNiezaw.Margin = new System.Windows.Forms.Padding(3, 25, 3, 3);
             this.ComboBoxMnPrNiezaw.Name = "ComboBoxMnPrNiezaw";
             this.ComboBoxMnPrNiezaw.Size = new System.Drawing.Size(408, 24);
-            this.ComboBoxMnPrNiezaw.TabIndex = 0;
+            this.ComboBoxMnPrNiezaw.TabIndex = 3;
             this.ComboBoxMnPrNiezaw.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrNiezaw_SelectedIndexChanged);
             // 
             // ComboBoxMnPrBaza
@@ -352,7 +352,7 @@
             this.ComboBoxMnPrBaza.Margin = new System.Windows.Forms.Padding(3, 22, 3, 3);
             this.ComboBoxMnPrBaza.Name = "ComboBoxMnPrBaza";
             this.ComboBoxMnPrBaza.Size = new System.Drawing.Size(408, 24);
-            this.ComboBoxMnPrBaza.TabIndex = 27;
+            this.ComboBoxMnPrBaza.TabIndex = 4;
             this.ComboBoxMnPrBaza.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrBaza_SelectedIndexChanged);
             // 
             // ComboBoxMnPrDoku
@@ -371,7 +371,7 @@
             this.ComboBoxMnPrDoku.Margin = new System.Windows.Forms.Padding(3, 22, 3, 3);
             this.ComboBoxMnPrDoku.Name = "ComboBoxMnPrDoku";
             this.ComboBoxMnPrDoku.Size = new System.Drawing.Size(408, 24);
-            this.ComboBoxMnPrDoku.TabIndex = 30;
+            this.ComboBoxMnPrDoku.TabIndex = 7;
             this.ComboBoxMnPrDoku.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrDoku_SelectedIndexChanged);
             // 
             // ComboBoxMnPrPonow
@@ -390,7 +390,7 @@
             this.ComboBoxMnPrPonow.Margin = new System.Windows.Forms.Padding(3, 22, 3, 3);
             this.ComboBoxMnPrPonow.Name = "ComboBoxMnPrPonow";
             this.ComboBoxMnPrPonow.Size = new System.Drawing.Size(408, 24);
-            this.ComboBoxMnPrPonow.TabIndex = 29;
+            this.ComboBoxMnPrPonow.TabIndex = 6;
             this.ComboBoxMnPrPonow.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrPonow_SelectedIndexChanged);
             // 
             // ComboBoxMnPrZloz
@@ -410,7 +410,7 @@
             this.ComboBoxMnPrZloz.Margin = new System.Windows.Forms.Padding(3, 22, 3, 3);
             this.ComboBoxMnPrZloz.Name = "ComboBoxMnPrZloz";
             this.ComboBoxMnPrZloz.Size = new System.Drawing.Size(408, 24);
-            this.ComboBoxMnPrZloz.TabIndex = 28;
+            this.ComboBoxMnPrZloz.TabIndex = 5;
             this.ComboBoxMnPrZloz.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrZloz_SelectedIndexChanged);
             // 
             // label4
@@ -669,7 +669,7 @@
             this.ComboBoxMnPrProgr.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
             this.ComboBoxMnPrProgr.Name = "ComboBoxMnPrProgr";
             this.ComboBoxMnPrProgr.Size = new System.Drawing.Size(386, 24);
-            this.ComboBoxMnPrProgr.TabIndex = 32;
+            this.ComboBoxMnPrProgr.TabIndex = 4;
             this.ComboBoxMnPrProgr.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrProgr_SelectedIndexChanged);
             // 
             // ComboBoxMnPrDoswJ
@@ -688,7 +688,7 @@
             this.ComboBoxMnPrDoswJ.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
             this.ComboBoxMnPrDoswJ.Name = "ComboBoxMnPrDoswJ";
             this.ComboBoxMnPrDoswJ.Size = new System.Drawing.Size(386, 24);
-            this.ComboBoxMnPrDoswJ.TabIndex = 34;
+            this.ComboBoxMnPrDoswJ.TabIndex = 8;
             this.ComboBoxMnPrDoswJ.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrDoswJ_SelectedIndexChanged);
             // 
             // label16
@@ -720,7 +720,7 @@
             this.ComboBoxMnPrAnal.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
             this.ComboBoxMnPrAnal.Name = "ComboBoxMnPrAnal";
             this.ComboBoxMnPrAnal.Size = new System.Drawing.Size(386, 24);
-            this.ComboBoxMnPrAnal.TabIndex = 31;
+            this.ComboBoxMnPrAnal.TabIndex = 3;
             this.ComboBoxMnPrAnal.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrAnal_SelectedIndexChanged);
             // 
             // ComboBoxMnPrDoswA
@@ -739,7 +739,7 @@
             this.ComboBoxMnPrDoswA.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
             this.ComboBoxMnPrDoswA.Name = "ComboBoxMnPrDoswA";
             this.ComboBoxMnPrDoswA.Size = new System.Drawing.Size(386, 24);
-            this.ComboBoxMnPrDoswA.TabIndex = 37;
+            this.ComboBoxMnPrDoswA.TabIndex = 6;
             this.ComboBoxMnPrDoswA.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrDoswA_SelectedIndexChanged);
             // 
             // ComboBoxMnPrZesp
@@ -758,7 +758,7 @@
             this.ComboBoxMnPrZesp.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
             this.ComboBoxMnPrZesp.Name = "ComboBoxMnPrZesp";
             this.ComboBoxMnPrZesp.Size = new System.Drawing.Size(386, 24);
-            this.ComboBoxMnPrZesp.TabIndex = 36;
+            this.ComboBoxMnPrZesp.TabIndex = 5;
             this.ComboBoxMnPrZesp.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrZesp_SelectedIndexChanged);
             // 
             // ComboBoxMnPrDoswP
@@ -777,7 +777,7 @@
             this.ComboBoxMnPrDoswP.Margin = new System.Windows.Forms.Padding(3, 23, 3, 3);
             this.ComboBoxMnPrDoswP.Name = "ComboBoxMnPrDoswP";
             this.ComboBoxMnPrDoswP.Size = new System.Drawing.Size(386, 24);
-            this.ComboBoxMnPrDoswP.TabIndex = 41;
+            this.ComboBoxMnPrDoswP.TabIndex = 7;
             this.ComboBoxMnPrDoswP.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrDoswP_SelectedIndexChanged);
             // 
             // label23
@@ -964,7 +964,7 @@
             this.ComboBoxMnPrOgrCz.Margin = new System.Windows.Forms.Padding(3, 22, 3, 3);
             this.ComboBoxMnPrOgrCz.Name = "ComboBoxMnPrOgrCz";
             this.ComboBoxMnPrOgrCz.Size = new System.Drawing.Size(422, 24);
-            this.ComboBoxMnPrOgrCz.TabIndex = 0;
+            this.ComboBoxMnPrOgrCz.TabIndex = 3;
             this.ComboBoxMnPrOgrCz.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrOgrCz_SelectedIndexChanged);
             // 
             // label13
@@ -1008,7 +1008,7 @@
             this.ComboBoxMnPrOgrP.Margin = new System.Windows.Forms.Padding(3, 22, 3, 3);
             this.ComboBoxMnPrOgrP.Name = "ComboBoxMnPrOgrP";
             this.ComboBoxMnPrOgrP.Size = new System.Drawing.Size(422, 24);
-            this.ComboBoxMnPrOgrP.TabIndex = 27;
+            this.ComboBoxMnPrOgrP.TabIndex = 4;
             this.ComboBoxMnPrOgrP.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrOgrP_SelectedIndexChanged);
             // 
             // label14
@@ -1039,7 +1039,7 @@
             this.ComboBoxMnPrZmP.Margin = new System.Windows.Forms.Padding(3, 22, 3, 3);
             this.ComboBoxMnPrZmP.Name = "ComboBoxMnPrZmP";
             this.ComboBoxMnPrZmP.Size = new System.Drawing.Size(422, 24);
-            this.ComboBoxMnPrZmP.TabIndex = 28;
+            this.ComboBoxMnPrZmP.TabIndex = 5;
             this.ComboBoxMnPrZmP.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrZmP_SelectedIndexChanged);
             // 
             // label29
@@ -1194,7 +1194,7 @@
             this.ComboBoxMnPrNarzP.Margin = new System.Windows.Forms.Padding(3, 21, 3, 3);
             this.ComboBoxMnPrNarzP.Name = "ComboBoxMnPrNarzP";
             this.ComboBoxMnPrNarzP.Size = new System.Drawing.Size(474, 24);
-            this.ComboBoxMnPrNarzP.TabIndex = 0;
+            this.ComboBoxMnPrNarzP.TabIndex = 3;
             this.ComboBoxMnPrNarzP.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrNarzP_SelectedIndexChanged);
             // 
             // ComboBoxMnPrLokal
@@ -1214,7 +1214,7 @@
             this.ComboBoxMnPrLokal.Margin = new System.Windows.Forms.Padding(3, 21, 3, 3);
             this.ComboBoxMnPrLokal.Name = "ComboBoxMnPrLokal";
             this.ComboBoxMnPrLokal.Size = new System.Drawing.Size(474, 24);
-            this.ComboBoxMnPrLokal.TabIndex = 27;
+            this.ComboBoxMnPrLokal.TabIndex = 4;
             this.ComboBoxMnPrLokal.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrLokal_SelectedIndexChanged);
             // 
             // ComboBoxMnPrHarm
@@ -1233,7 +1233,7 @@
             this.ComboBoxMnPrHarm.Margin = new System.Windows.Forms.Padding(3, 21, 3, 3);
             this.ComboBoxMnPrHarm.Name = "ComboBoxMnPrHarm";
             this.ComboBoxMnPrHarm.Size = new System.Drawing.Size(474, 24);
-            this.ComboBoxMnPrHarm.TabIndex = 28;
+            this.ComboBoxMnPrHarm.TabIndex = 5;
             this.ComboBoxMnPrHarm.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrHarm_SelectedIndexChanged);
             // 
             // label15
@@ -1307,7 +1307,7 @@
             this.ButtonOk.Location = new System.Drawing.Point(398, 601);
             this.ButtonOk.Name = "ButtonOk";
             this.ButtonOk.Size = new System.Drawing.Size(104, 27);
-            this.ButtonOk.TabIndex = 6;
+            this.ButtonOk.TabIndex = 0;
             this.ButtonOk.Text = "OK";
             this.ButtonOk.UseVisualStyleBackColor = true;
             // 

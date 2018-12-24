@@ -56,7 +56,7 @@
             this.ButtonAnuluj.Location = new System.Drawing.Point(267, 679);
             this.ButtonAnuluj.Name = "ButtonAnuluj";
             this.ButtonAnuluj.Size = new System.Drawing.Size(104, 27);
-            this.ButtonAnuluj.TabIndex = 13;
+            this.ButtonAnuluj.TabIndex = 1;
             this.ButtonAnuluj.Text = "Anuluj";
             this.ButtonAnuluj.UseVisualStyleBackColor = true;
             // 
@@ -67,7 +67,7 @@
             this.ButtonOk.Location = new System.Drawing.Point(107, 679);
             this.ButtonOk.Name = "ButtonOk";
             this.ButtonOk.Size = new System.Drawing.Size(104, 27);
-            this.ButtonOk.TabIndex = 12;
+            this.ButtonOk.TabIndex = 0;
             this.ButtonOk.Text = "OK";
             this.ButtonOk.UseVisualStyleBackColor = true;
             // 
@@ -102,7 +102,7 @@
             this.CheckBoxDomyslne.Location = new System.Drawing.Point(274, 21);
             this.CheckBoxDomyslne.Name = "CheckBoxDomyslne";
             this.CheckBoxDomyslne.Size = new System.Drawing.Size(183, 20);
-            this.CheckBoxDomyslne.TabIndex = 17;
+            this.CheckBoxDomyslne.TabIndex = 2;
             this.CheckBoxDomyslne.Text = "Użyj danych domyślnych";
             this.CheckBoxDomyslne.UseVisualStyleBackColor = true;
             this.CheckBoxDomyslne.Click += new System.EventHandler(this.CheckBoxDomyslne_Click);
@@ -113,7 +113,7 @@
             this.RichTextBoxOpisProjektu.MaxLength = 2000;
             this.RichTextBoxOpisProjektu.Name = "RichTextBoxOpisProjektu";
             this.RichTextBoxOpisProjektu.Size = new System.Drawing.Size(459, 326);
-            this.RichTextBoxOpisProjektu.TabIndex = 16;
+            this.RichTextBoxOpisProjektu.TabIndex = 9;
             this.RichTextBoxOpisProjektu.Text = "";
             this.RichTextBoxOpisProjektu.TextChanged += new System.EventHandler(this.RichTextBoxOpisProjektu_TextChanged);
             // 
@@ -141,7 +141,7 @@
             this.TextBoxSzacujacy.MaxLength = 50;
             this.TextBoxSzacujacy.Name = "TextBoxSzacujacy";
             this.TextBoxSzacujacy.Size = new System.Drawing.Size(462, 22);
-            this.TextBoxSzacujacy.TabIndex = 12;
+            this.TextBoxSzacujacy.TabIndex = 4;
             this.TextBoxSzacujacy.TextChanged += new System.EventHandler(this.TextBoxSzacujacy_TextChanged);
             // 
             // label6
@@ -159,7 +159,7 @@
             this.TextBoxEmail.MaxLength = 50;
             this.TextBoxEmail.Name = "TextBoxEmail";
             this.TextBoxEmail.Size = new System.Drawing.Size(462, 22);
-            this.TextBoxEmail.TabIndex = 10;
+            this.TextBoxEmail.TabIndex = 8;
             this.TextBoxEmail.TextChanged += new System.EventHandler(this.TextBoxEmail_TextChanged);
             // 
             // label5
@@ -232,7 +232,7 @@
             this.TextBoxKierownikProjektu.MaxLength = 50;
             this.TextBoxKierownikProjektu.Name = "TextBoxKierownikProjektu";
             this.TextBoxKierownikProjektu.Size = new System.Drawing.Size(462, 22);
-            this.TextBoxKierownikProjektu.TabIndex = 0;
+            this.TextBoxKierownikProjektu.TabIndex = 3;
             this.TextBoxKierownikProjektu.TextChanged += new System.EventHandler(this.TextBoxKierownikProjektu_TextChanged);
             // 
             // OknoDaneProjektu

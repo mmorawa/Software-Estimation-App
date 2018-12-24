@@ -287,7 +287,7 @@
             0});
             this.NumericJavaScript.Name = "NumericJavaScript";
             this.NumericJavaScript.Size = new System.Drawing.Size(129, 22);
-            this.NumericJavaScript.TabIndex = 109;
+            this.NumericJavaScript.TabIndex = 21;
             this.NumericJavaScript.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericJavaScript.ThousandsSeparator = true;
             this.NumericJavaScript.ValueChanged += new System.EventHandler(this.NumericJavaScript_ValueChanged);
@@ -325,7 +325,7 @@
             0});
             this.NumericABAP.Name = "NumericABAP";
             this.NumericABAP.Size = new System.Drawing.Size(129, 22);
-            this.NumericABAP.TabIndex = 16;
+            this.NumericABAP.TabIndex = 3;
             this.NumericABAP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericABAP.ThousandsSeparator = true;
             this.NumericABAP.ValueChanged += new System.EventHandler(this.NumericABAP_ValueChanged);
@@ -737,7 +737,7 @@
             0});
             this.NumericASP.Name = "NumericASP";
             this.NumericASP.Size = new System.Drawing.Size(129, 22);
-            this.NumericASP.TabIndex = 73;
+            this.NumericASP.TabIndex = 4;
             this.NumericASP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericASP.ThousandsSeparator = true;
             this.NumericASP.ValueChanged += new System.EventHandler(this.NumericASP_ValueChanged);
@@ -753,7 +753,7 @@
             0});
             this.NumericBrio.Name = "NumericBrio";
             this.NumericBrio.Size = new System.Drawing.Size(129, 22);
-            this.NumericBrio.TabIndex = 74;
+            this.NumericBrio.TabIndex = 6;
             this.NumericBrio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericBrio.ThousandsSeparator = true;
             this.NumericBrio.ValueChanged += new System.EventHandler(this.NumericBrio_ValueChanged);
@@ -769,7 +769,7 @@
             0});
             this.NumericAssembler.Name = "NumericAssembler";
             this.NumericAssembler.Size = new System.Drawing.Size(129, 22);
-            this.NumericAssembler.TabIndex = 75;
+            this.NumericAssembler.TabIndex = 5;
             this.NumericAssembler.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericAssembler.ThousandsSeparator = true;
             this.NumericAssembler.ValueChanged += new System.EventHandler(this.NumericAssembler_ValueChanged);
@@ -785,7 +785,7 @@
             0});
             this.NumericC.Name = "NumericC";
             this.NumericC.Size = new System.Drawing.Size(129, 22);
-            this.NumericC.TabIndex = 76;
+            this.NumericC.TabIndex = 7;
             this.NumericC.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericC.ThousandsSeparator = true;
             this.NumericC.ValueChanged += new System.EventHandler(this.NumericC_ValueChanged);
@@ -801,7 +801,7 @@
             0});
             this.NumericCpp.Name = "NumericCpp";
             this.NumericCpp.Size = new System.Drawing.Size(129, 22);
-            this.NumericCpp.TabIndex = 77;
+            this.NumericCpp.TabIndex = 8;
             this.NumericCpp.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCpp.ThousandsSeparator = true;
             this.NumericCpp.ValueChanged += new System.EventHandler(this.NumericCpp_ValueChanged);
@@ -817,7 +817,7 @@
             0});
             this.NumericCsharp.Name = "NumericCsharp";
             this.NumericCsharp.Size = new System.Drawing.Size(129, 22);
-            this.NumericCsharp.TabIndex = 78;
+            this.NumericCsharp.TabIndex = 9;
             this.NumericCsharp.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCsharp.ThousandsSeparator = true;
             this.NumericCsharp.ValueChanged += new System.EventHandler(this.NumericCsharp_ValueChanged);
@@ -833,7 +833,7 @@
             0});
             this.NumericCOBOL.Name = "NumericCOBOL";
             this.NumericCOBOL.Size = new System.Drawing.Size(129, 22);
-            this.NumericCOBOL.TabIndex = 79;
+            this.NumericCOBOL.TabIndex = 10;
             this.NumericCOBOL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCOBOL.ThousandsSeparator = true;
             this.NumericCOBOL.ValueChanged += new System.EventHandler(this.NumericCOBOL_ValueChanged);
@@ -849,7 +849,7 @@
             0});
             this.NumericCognos.Name = "NumericCognos";
             this.NumericCognos.Size = new System.Drawing.Size(129, 22);
-            this.NumericCognos.TabIndex = 80;
+            this.NumericCognos.TabIndex = 11;
             this.NumericCognos.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCognos.ThousandsSeparator = true;
             this.NumericCognos.ValueChanged += new System.EventHandler(this.NumericCognos_ValueChanged);
@@ -865,7 +865,7 @@
             0});
             this.NumericCross.Name = "NumericCross";
             this.NumericCross.Size = new System.Drawing.Size(129, 22);
-            this.NumericCross.TabIndex = 81;
+            this.NumericCross.TabIndex = 12;
             this.NumericCross.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCross.ThousandsSeparator = true;
             this.NumericCross.ValueChanged += new System.EventHandler(this.NumericCross_ValueChanged);
@@ -881,7 +881,7 @@
             0});
             this.NumericCool.Name = "NumericCool";
             this.NumericCool.Size = new System.Drawing.Size(129, 22);
-            this.NumericCool.TabIndex = 82;
+            this.NumericCool.TabIndex = 13;
             this.NumericCool.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCool.ThousandsSeparator = true;
             this.NumericCool.ValueChanged += new System.EventHandler(this.NumericCool_ValueChanged);
@@ -897,7 +897,7 @@
             0});
             this.NumericDatastage.Name = "NumericDatastage";
             this.NumericDatastage.Size = new System.Drawing.Size(129, 22);
-            this.NumericDatastage.TabIndex = 83;
+            this.NumericDatastage.TabIndex = 14;
             this.NumericDatastage.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericDatastage.ThousandsSeparator = true;
             this.NumericDatastage.ValueChanged += new System.EventHandler(this.NumericDatastage_ValueChanged);
@@ -913,7 +913,7 @@
             0});
             this.NumericExcel.Name = "NumericExcel";
             this.NumericExcel.Size = new System.Drawing.Size(129, 22);
-            this.NumericExcel.TabIndex = 84;
+            this.NumericExcel.TabIndex = 15;
             this.NumericExcel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericExcel.ThousandsSeparator = true;
             this.NumericExcel.ValueChanged += new System.EventHandler(this.NumericExcel_ValueChanged);
@@ -929,7 +929,7 @@
             0});
             this.NumericFocus.Name = "NumericFocus";
             this.NumericFocus.Size = new System.Drawing.Size(129, 22);
-            this.NumericFocus.TabIndex = 85;
+            this.NumericFocus.TabIndex = 16;
             this.NumericFocus.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericFocus.ThousandsSeparator = true;
             this.NumericFocus.ValueChanged += new System.EventHandler(this.NumericFocus_ValueChanged);
@@ -945,7 +945,7 @@
             0});
             this.NumericFoxPro.Name = "NumericFoxPro";
             this.NumericFoxPro.Size = new System.Drawing.Size(129, 22);
-            this.NumericFoxPro.TabIndex = 86;
+            this.NumericFoxPro.TabIndex = 17;
             this.NumericFoxPro.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericFoxPro.ThousandsSeparator = true;
             this.NumericFoxPro.ValueChanged += new System.EventHandler(this.NumericFoxPro_ValueChanged);
@@ -961,7 +961,7 @@
             0});
             this.NumericHTML.Name = "NumericHTML";
             this.NumericHTML.Size = new System.Drawing.Size(129, 22);
-            this.NumericHTML.TabIndex = 87;
+            this.NumericHTML.TabIndex = 18;
             this.NumericHTML.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericHTML.ThousandsSeparator = true;
             this.NumericHTML.ValueChanged += new System.EventHandler(this.NumericHTML_ValueChanged);
@@ -977,7 +977,7 @@
             0});
             this.NumericJ2EE.Name = "NumericJ2EE";
             this.NumericJ2EE.Size = new System.Drawing.Size(129, 22);
-            this.NumericJ2EE.TabIndex = 88;
+            this.NumericJ2EE.TabIndex = 19;
             this.NumericJ2EE.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericJ2EE.ThousandsSeparator = true;
             this.NumericJ2EE.ValueChanged += new System.EventHandler(this.NumericJ2EE_ValueChanged);
@@ -993,7 +993,7 @@
             0});
             this.NumericJava.Name = "NumericJava";
             this.NumericJava.Size = new System.Drawing.Size(129, 22);
-            this.NumericJava.TabIndex = 89;
+            this.NumericJava.TabIndex = 20;
             this.NumericJava.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericJava.ThousandsSeparator = true;
             this.NumericJava.ValueChanged += new System.EventHandler(this.NumericJava_ValueChanged);
@@ -1009,7 +1009,7 @@
             0});
             this.NumericJCL.Name = "NumericJCL";
             this.NumericJCL.Size = new System.Drawing.Size(127, 22);
-            this.NumericJCL.TabIndex = 90;
+            this.NumericJCL.TabIndex = 22;
             this.NumericJCL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericJCL.ThousandsSeparator = true;
             this.NumericJCL.ValueChanged += new System.EventHandler(this.NumericJCL_ValueChanged);
@@ -1025,7 +1025,7 @@
             0});
             this.NumericLINC.Name = "NumericLINC";
             this.NumericLINC.Size = new System.Drawing.Size(127, 22);
-            this.NumericLINC.TabIndex = 91;
+            this.NumericLINC.TabIndex = 23;
             this.NumericLINC.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericLINC.ThousandsSeparator = true;
             this.NumericLINC.ValueChanged += new System.EventHandler(this.NumericLINC_ValueChanged);
@@ -1041,7 +1041,7 @@
             0});
             this.NumericLotus.Name = "NumericLotus";
             this.NumericLotus.Size = new System.Drawing.Size(127, 22);
-            this.NumericLotus.TabIndex = 92;
+            this.NumericLotus.TabIndex = 24;
             this.NumericLotus.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericLotus.ThousandsSeparator = true;
             this.NumericLotus.ValueChanged += new System.EventHandler(this.NumericLotus_ValueChanged);
@@ -1057,7 +1057,7 @@
             0});
             this.NumericNatural.Name = "NumericNatural";
             this.NumericNatural.Size = new System.Drawing.Size(127, 22);
-            this.NumericNatural.TabIndex = 93;
+            this.NumericNatural.TabIndex = 25;
             this.NumericNatural.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericNatural.ThousandsSeparator = true;
             this.NumericNatural.ValueChanged += new System.EventHandler(this.NumericNatural_ValueChanged);
@@ -1073,7 +1073,7 @@
             0});
             this.NumericDotNet.Name = "NumericDotNet";
             this.NumericDotNet.Size = new System.Drawing.Size(127, 22);
-            this.NumericDotNet.TabIndex = 94;
+            this.NumericDotNet.TabIndex = 26;
             this.NumericDotNet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericDotNet.ThousandsSeparator = true;
             this.NumericDotNet.ValueChanged += new System.EventHandler(this.NumericDotNet_ValueChanged);
@@ -1089,7 +1089,7 @@
             0});
             this.NumericOracle.Name = "NumericOracle";
             this.NumericOracle.Size = new System.Drawing.Size(127, 22);
-            this.NumericOracle.TabIndex = 95;
+            this.NumericOracle.TabIndex = 27;
             this.NumericOracle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericOracle.ThousandsSeparator = true;
             this.NumericOracle.ValueChanged += new System.EventHandler(this.NumericOracle_ValueChanged);
@@ -1105,7 +1105,7 @@
             0});
             this.NumericPACBASE.Name = "NumericPACBASE";
             this.NumericPACBASE.Size = new System.Drawing.Size(127, 22);
-            this.NumericPACBASE.TabIndex = 96;
+            this.NumericPACBASE.TabIndex = 28;
             this.NumericPACBASE.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericPACBASE.ThousandsSeparator = true;
             this.NumericPACBASE.ValueChanged += new System.EventHandler(this.NumericPACBASE_ValueChanged);
@@ -1121,7 +1121,7 @@
             0});
             this.NumericPerl.Name = "NumericPerl";
             this.NumericPerl.Size = new System.Drawing.Size(127, 22);
-            this.NumericPerl.TabIndex = 97;
+            this.NumericPerl.TabIndex = 29;
             this.NumericPerl.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericPerl.ThousandsSeparator = true;
             this.NumericPerl.ValueChanged += new System.EventHandler(this.NumericPerl_ValueChanged);
@@ -1137,7 +1137,7 @@
             0});
             this.NumericPLI.Name = "NumericPLI";
             this.NumericPLI.Size = new System.Drawing.Size(127, 22);
-            this.NumericPLI.TabIndex = 98;
+            this.NumericPLI.TabIndex = 30;
             this.NumericPLI.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericPLI.ThousandsSeparator = true;
             this.NumericPLI.ValueChanged += new System.EventHandler(this.NumericPLI_ValueChanged);
@@ -1153,7 +1153,7 @@
             0});
             this.NumericPLSQL.Name = "NumericPLSQL";
             this.NumericPLSQL.Size = new System.Drawing.Size(127, 22);
-            this.NumericPLSQL.TabIndex = 99;
+            this.NumericPLSQL.TabIndex = 31;
             this.NumericPLSQL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericPLSQL.ThousandsSeparator = true;
             this.NumericPLSQL.ValueChanged += new System.EventHandler(this.NumericPLSQL_ValueChanged);
@@ -1169,7 +1169,7 @@
             0});
             this.NumericPowerbuilder.Name = "NumericPowerbuilder";
             this.NumericPowerbuilder.Size = new System.Drawing.Size(127, 22);
-            this.NumericPowerbuilder.TabIndex = 100;
+            this.NumericPowerbuilder.TabIndex = 32;
             this.NumericPowerbuilder.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericPowerbuilder.ThousandsSeparator = true;
             this.NumericPowerbuilder.ValueChanged += new System.EventHandler(this.NumericPowerbuilder_ValueChanged);
@@ -1185,7 +1185,7 @@
             0});
             this.NumericREXX.Name = "NumericREXX";
             this.NumericREXX.Size = new System.Drawing.Size(127, 22);
-            this.NumericREXX.TabIndex = 101;
+            this.NumericREXX.TabIndex = 33;
             this.NumericREXX.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericREXX.ThousandsSeparator = true;
             this.NumericREXX.ValueChanged += new System.EventHandler(this.NumericREXX_ValueChanged);
@@ -1201,7 +1201,7 @@
             0});
             this.NumericSabretalk.Name = "NumericSabretalk";
             this.NumericSabretalk.Size = new System.Drawing.Size(127, 22);
-            this.NumericSabretalk.TabIndex = 102;
+            this.NumericSabretalk.TabIndex = 34;
             this.NumericSabretalk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericSabretalk.ThousandsSeparator = true;
             this.NumericSabretalk.ValueChanged += new System.EventHandler(this.NumericSabretalk_ValueChanged);
@@ -1217,7 +1217,7 @@
             0});
             this.NumericSAS.Name = "NumericSAS";
             this.NumericSAS.Size = new System.Drawing.Size(127, 22);
-            this.NumericSAS.TabIndex = 103;
+            this.NumericSAS.TabIndex = 35;
             this.NumericSAS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericSAS.ThousandsSeparator = true;
             this.NumericSAS.ValueChanged += new System.EventHandler(this.NumericSAS_ValueChanged);
@@ -1233,7 +1233,7 @@
             0});
             this.NumericSiebel.Name = "NumericSiebel";
             this.NumericSiebel.Size = new System.Drawing.Size(127, 22);
-            this.NumericSiebel.TabIndex = 104;
+            this.NumericSiebel.TabIndex = 36;
             this.NumericSiebel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericSiebel.ThousandsSeparator = true;
             this.NumericSiebel.ValueChanged += new System.EventHandler(this.NumericSiebel_ValueChanged);
@@ -1249,7 +1249,7 @@
             0});
             this.NumericSLOGAN.Name = "NumericSLOGAN";
             this.NumericSLOGAN.Size = new System.Drawing.Size(127, 22);
-            this.NumericSLOGAN.TabIndex = 105;
+            this.NumericSLOGAN.TabIndex = 37;
             this.NumericSLOGAN.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericSLOGAN.ThousandsSeparator = true;
             this.NumericSLOGAN.ValueChanged += new System.EventHandler(this.NumericSLOGAN_ValueChanged);
@@ -1265,7 +1265,7 @@
             0});
             this.NumericSQL.Name = "NumericSQL";
             this.NumericSQL.Size = new System.Drawing.Size(127, 22);
-            this.NumericSQL.TabIndex = 106;
+            this.NumericSQL.TabIndex = 38;
             this.NumericSQL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericSQL.ThousandsSeparator = true;
             this.NumericSQL.ValueChanged += new System.EventHandler(this.NumericSQL_ValueChanged);
@@ -1281,7 +1281,7 @@
             0});
             this.NumericVBNet.Name = "NumericVBNet";
             this.NumericVBNet.Size = new System.Drawing.Size(127, 22);
-            this.NumericVBNet.TabIndex = 107;
+            this.NumericVBNet.TabIndex = 39;
             this.NumericVBNet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericVBNet.ThousandsSeparator = true;
             this.NumericVBNet.ValueChanged += new System.EventHandler(this.NumericVBNet_ValueChanged);
@@ -1297,7 +1297,7 @@
             0});
             this.NumericVisualBasic.Name = "NumericVisualBasic";
             this.NumericVisualBasic.Size = new System.Drawing.Size(127, 22);
-            this.NumericVisualBasic.TabIndex = 108;
+            this.NumericVisualBasic.TabIndex = 40;
             this.NumericVisualBasic.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericVisualBasic.ThousandsSeparator = true;
             this.NumericVisualBasic.ValueChanged += new System.EventHandler(this.NumericVisualBasic_ValueChanged);
@@ -1307,7 +1307,7 @@
             this.ButtonPrzywrocDomyslne.Location = new System.Drawing.Point(378, 563);
             this.ButtonPrzywrocDomyslne.Name = "ButtonPrzywrocDomyslne";
             this.ButtonPrzywrocDomyslne.Size = new System.Drawing.Size(192, 42);
-            this.ButtonPrzywrocDomyslne.TabIndex = 44;
+            this.ButtonPrzywrocDomyslne.TabIndex = 2;
             this.ButtonPrzywrocDomyslne.Text = "Przywróć wartości  domyślne";
             this.ButtonPrzywrocDomyslne.UseVisualStyleBackColor = true;
             this.ButtonPrzywrocDomyslne.Click += new System.EventHandler(this.ButtonPrzywrocDomyslne_Click);
@@ -1319,7 +1319,7 @@
             this.ButtonAnuluj.Location = new System.Drawing.Point(324, 654);
             this.ButtonAnuluj.Name = "ButtonAnuluj";
             this.ButtonAnuluj.Size = new System.Drawing.Size(104, 27);
-            this.ButtonAnuluj.TabIndex = 24;
+            this.ButtonAnuluj.TabIndex = 1;
             this.ButtonAnuluj.Text = "Anuluj";
             this.ButtonAnuluj.UseVisualStyleBackColor = true;
             // 
@@ -1330,7 +1330,7 @@
             this.ButtonOk.Location = new System.Drawing.Point(164, 654);
             this.ButtonOk.Name = "ButtonOk";
             this.ButtonOk.Size = new System.Drawing.Size(104, 27);
-            this.ButtonOk.TabIndex = 23;
+            this.ButtonOk.TabIndex = 0;
             this.ButtonOk.Text = "OK";
             this.ButtonOk.UseVisualStyleBackColor = true;
             // 
