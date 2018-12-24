@@ -136,9 +136,12 @@ namespace Aplikacja
         public static long OsoboMGodz = Properties.Settings.Default.OsoboMGodz;
         public static long DzRobGodz = Properties.Settings.Default.DzRobGodz;
 
-        public static double MaxKoszt = 0;
         public static long MaxPrac = 0;
         public static long MaxHarm = 0;
+        public static DateTime Deadline = DateTime.Now;
+        public static double MaxKoszt = 0;
+        public static long MaxZespol = 0;
+
 
         //wartości tymczasowe
         public static int TempJezykProgramowania;
@@ -146,9 +149,11 @@ namespace Aplikacja
         public static long TempOsoboMGodz;
         public static long TempDzRobGodz;
 
-        public static double TempMaxKoszt;
         public static long TempMaxPrac;
         public static long TempMaxHarm;
+        public static DateTime TempDeadline;
+        public static double TempMaxKoszt;
+        public static long TempMaxZespol;
 
         //wyniki pośrednie 
 
@@ -443,14 +448,50 @@ namespace Aplikacja
 
                 LabelRozmiar.Text = "0";
                 LabelPktUUCP.Text = "0";
+
                 LabelWynikPrac.Text = "0";
+                LabelWynikNLepPrac.Text = "0";
+                LabelWynikNGorPrac.Text = "0";
                 LabelWynikPrac.BackColor = System.Drawing.Color.FromName("Control");
+                LabelWynikNLepPrac.BackColor = System.Drawing.Color.FromName("Control");
+                LabelWynikNGorPrac.BackColor = System.Drawing.Color.FromName("Control");
+
                 LabelWynikHarm.Text = "0";
+                LabelWynikNLepHarm.Text = "0";
+                LabelWynikNGorHarm.Text = "0";
                 LabelWynikHarm.BackColor = System.Drawing.Color.FromName("Control");
+                LabelWynikNLepHarm.BackColor = System.Drawing.Color.FromName("Control");
+                LabelWynikNGorHarm.BackColor = System.Drawing.Color.FromName("Control");
+
+                LabelWynikData.Text = "brak";
+                LabelWynikNLepData.Text = "brak";
+                LabelWynikNGorData.Text = "brak";
+                LabelWynikHarm.BackColor = System.Drawing.Color.FromName("Control");
+                LabelWynikNLepHarm.BackColor = System.Drawing.Color.FromName("Control");
+                LabelWynikNGorHarm.BackColor = System.Drawing.Color.FromName("Control");
+
                 LabelWynikKoszt.Text = "0";
+                LabelWynikNLepKoszt.Text = "0";
+                LabelWynikNGorKoszt.Text = "0";
                 LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("Control");
+                LabelWynikNLepKoszt.BackColor = System.Drawing.Color.FromName("Control");
+                LabelWynikNGorKoszt.BackColor = System.Drawing.Color.FromName("Control");
+
+                LabelWynikWydaj.Text = "0";
+                LabelWynikNLepWydaj.Text = "0";
+                LabelWynikNGorWydaj.Text = "0";
+                LabelWynikWydaj.BackColor = System.Drawing.Color.FromName("Control");
+                LabelWynikNLepWydaj.BackColor = System.Drawing.Color.FromName("Control");
+                LabelWynikNGorWydaj.BackColor = System.Drawing.Color.FromName("Control");
+                                
                 LabelWynikSrZesp.Text = "0";
-                LabelWynikData.Text = "";
+                LabelWynikNLepSrZesp.Text = "0";
+                LabelWynikNGorSrZesp.Text = "0";
+                LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("Control");
+                LabelWynikNLepKoszt.BackColor = System.Drawing.Color.FromName("Control");
+                LabelWynikNGorKoszt.BackColor = System.Drawing.Color.FromName("Control");
+
+                
                 return;
             }
 
@@ -572,40 +613,88 @@ namespace Aplikacja
                 if (MaxPrac != 0 && MaxPrac < Pracochlonnosc)
                 {
                     LabelWynikPrac.BackColor = System.Drawing.Color.FromName("red");
+                }
 
-                    Ostrzezenie += "Przekroczono założoną pracochłonność projektu. \n";
-                }
-                else
+                if (MaxPrac != 0 && MaxPrac < PracochlonnoscNLep)
                 {
-                    LabelWynikPrac.BackColor = System.Drawing.Color.FromName("GreenYellow");
+                    LabelWynikNLepPrac.BackColor = System.Drawing.Color.FromName("red");
                 }
+
+                if (MaxPrac != 0 && MaxPrac < PracochlonnoscNGor)
+                {
+                    LabelWynikNGorPrac.BackColor = System.Drawing.Color.FromName("red");
+                }
+
+
+
 
                 if (MaxHarm != 0 && MaxHarm < Harmonogram)
                 {
                     LabelWynikHarm.BackColor = System.Drawing.Color.FromName("red");
-                    Ostrzezenie += "Przekroczono założony harmonogram projektu. \n";
                 }
-                else
+
+                if (MaxHarm != 0 && MaxHarm < HarmonogramNLep)
                 {
-                    LabelWynikHarm.BackColor = System.Drawing.Color.FromName("GreenYellow");
+                    LabelWynikNLepHarm.BackColor = System.Drawing.Color.FromName("red");
                 }
+
+                if (MaxHarm != 0 && MaxHarm < HarmonogramNGor)
+                {
+                    LabelWynikNGorHarm.BackColor = System.Drawing.Color.FromName("red");
+                }
+
+
+
+                if (Deadline.ToLongDateString() != DateTime.Now.ToLongDateString() && Deadline < DataZakonczenia)
+                {
+                    LabelWynikData.BackColor = System.Drawing.Color.FromName("red");
+                }
+
+                if (Deadline.ToLongDateString() != DateTime.Now.ToLongDateString() && Deadline < DataZakonczeniaNLep)
+                {
+                    LabelWynikNLepData.BackColor = System.Drawing.Color.FromName("red");
+                }
+
+                if (Deadline.ToLongDateString() != DateTime.Now.ToLongDateString() && Deadline < DataZakonczeniaNGor)
+                {
+                    LabelWynikNGorData.BackColor = System.Drawing.Color.FromName("red");
+                }
+
 
                 if (MaxKoszt != 0 && MaxKoszt < Koszt)
                 {
                     LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("red");
-                    Ostrzezenie += "Przekroczono założony koszt projektu. \n";
                 }
-                else
+
+                if (MaxKoszt != 0 && MaxKoszt < KosztNLep)
                 {
-                    LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("GreenYellow");
-                }               
+                    LabelWynikNLepKoszt.BackColor = System.Drawing.Color.FromName("red");
+                }
+
+                if (MaxKoszt != 0 && MaxKoszt < KosztNGor)
+                {
+                    LabelWynikNGorKoszt.BackColor = System.Drawing.Color.FromName("red");
+                }
+
+
+                if (MaxZespol != 0 && MaxZespol < SrZespol)
+                {
+                    LabelWynikSrZesp.BackColor = System.Drawing.Color.FromName("red");
+                }
+
+                if (MaxZespol != 0 && MaxZespol < SrZespolNLep)
+                {
+                    LabelWynikNLepSrZesp.BackColor = System.Drawing.Color.FromName("red");
+                }
+
+                if (MaxZespol != 0 && MaxZespol < SrZespolNGor)
+                {
+                    LabelWynikNGorSrZesp.BackColor = System.Drawing.Color.FromName("red");
+                }
+
+
             }
-            else
-            {
-                //LabelWynikPrac.BackColor = System.Drawing.Color.FromName("GreenYellow");
-                //LabelWynikHarm.BackColor = System.Drawing.Color.FromName("GreenYellow");
-                //LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("GreenYellow");
-            }
+
 
             if (Ostrzezenie.Length == 0)
             {
@@ -921,10 +1010,12 @@ namespace Aplikacja
             OsoboMGodz = Properties.Settings.Default.OsoboMGodz;
             DzRobGodz = Properties.Settings.Default.DzRobGodz;
 
-            MaxKoszt = 0;
+            
             MaxPrac = 0;
             MaxHarm = 0;
-
+            Deadline = DateTime.Now;
+            MaxKoszt = 0;
+            MaxZespol = 0;
 
             LabelRozmiar.Text = "0";
             LabelPktUUCP.Text = "0";
@@ -957,9 +1048,13 @@ namespace Aplikacja
                     StawkaGodz = TempStawkaGodz;
                     OsoboMGodz = TempOsoboMGodz;
                     DzRobGodz = TempDzRobGodz;
-                    MaxKoszt = TempMaxKoszt;
+
                     MaxPrac = TempMaxPrac;
                     MaxHarm = TempMaxHarm;
+                    Deadline = TempDeadline;
+                    MaxKoszt = TempMaxKoszt;
+                    MaxZespol = TempMaxZespol;
+
                     Oszacowanie();
                 }
             }

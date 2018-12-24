@@ -16,13 +16,17 @@ namespace Aplikacja
             InitializeComponent();
 
             ComboBoxJezykProgram.SelectedIndex = OknoGlowne.JezykProgramowania;
+
             NumericStawkaGodz.Value = (decimal)OknoGlowne.StawkaGodz;
             NumericOsoboMGodz.Value = OknoGlowne.OsoboMGodz;
             NumericDzRobGodz.Value = OknoGlowne.DzRobGodz;
-            NumericMaxKoszt.Value = (decimal)OknoGlowne.MaxKoszt;
+
             NumericMaxPrac.Value = OknoGlowne.MaxPrac;
             NumericMaxHarm.Value = OknoGlowne.MaxHarm;
-            
+
+            NumericMaxKoszt.Value = (decimal)OknoGlowne.MaxKoszt;
+            NumericMaxZespol.Value = OknoGlowne.MaxZespol;
+            TimePickerDeadline.Value = OknoGlowne.Deadline;
             CheckBoxAktywacja.Checked = OknoGlowne.Ograniczenia;
             TableLayoutOgraniczenia.Enabled = OknoGlowne.Ograniczenia;
 
@@ -68,11 +72,6 @@ namespace Aplikacja
             OknoGlowne.TempDzRobGodz = (long)NumericDzRobGodz.Value;
         }
 
-        private void NumericMaxKoszt_ValueChanged(object sender, EventArgs e)
-        {
-            OknoGlowne.TempMaxKoszt = (double)NumericMaxKoszt.Value;
-        }
-
         private void NumericMaxPrac_ValueChanged(object sender, EventArgs e)
         {
             OknoGlowne.TempMaxPrac = (long)NumericMaxPrac.Value;
@@ -82,6 +81,22 @@ namespace Aplikacja
         {
             OknoGlowne.TempMaxHarm = (long)NumericMaxHarm.Value;
         }
+
+        private void TimePickerDeadline_ValueChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TempDeadline = TimePickerDeadline.Value;
+        }
+
+        private void NumericMaxKoszt_ValueChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TempMaxKoszt = (double)NumericMaxKoszt.Value;
+        }
+
+        private void NumericMaxZespol_ValueChanged(object sender, EventArgs e)
+        {
+            OknoGlowne.TempMaxZespol = (long)NumericMaxZespol.Value;
+        }
+
 
         private void ButtonPrzywrocDomyslne_Click(object sender, EventArgs e)
         {
@@ -97,5 +112,7 @@ namespace Aplikacja
 
             MessageBox.Show("Domyślne wartości zostały przywrócone.", "Sukces");
         }
+
+
     }
 }

@@ -1131,7 +1131,7 @@
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(447, 27);
             this.label34.TabIndex = 22;
-            this.label34.Text = "Wydajność: (w liniach kodu)";
+            this.label34.Text = "Wydajność (w liniach kodu):";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelWynikWydaj
@@ -1183,6 +1183,7 @@
             this.LabelWynikNGorData.Name = "LabelWynikNGorData";
             this.LabelWynikNGorData.Size = new System.Drawing.Size(143, 27);
             this.LabelWynikNGorData.TabIndex = 28;
+            this.LabelWynikNGorData.Text = "brak";
             this.LabelWynikNGorData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelWynikNLepData
@@ -1195,6 +1196,7 @@
             this.LabelWynikNLepData.Name = "LabelWynikNLepData";
             this.LabelWynikNLepData.Size = new System.Drawing.Size(140, 27);
             this.LabelWynikNLepData.TabIndex = 27;
+            this.LabelWynikNLepData.Text = "brak";
             this.LabelWynikNLepData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelWynikNGorSrZesp
@@ -1232,7 +1234,7 @@
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(447, 27);
             this.label42.TabIndex = 5;
-            this.label42.Text = "Harmonogram: (w miesiącach)";
+            this.label42.Text = "Harmonogram (w miesiącach):";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelWynikHarm
@@ -1257,7 +1259,7 @@
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(447, 27);
             this.label28.TabIndex = 6;
-            this.label28.Text = "Pracochłonność: (w osobomiesiącach)";
+            this.label28.Text = "Pracochłonność (w osobomiesiącach):";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelWynikPrac
@@ -1373,6 +1375,7 @@
             this.LabelWynikData.Name = "LabelWynikData";
             this.LabelWynikData.Size = new System.Drawing.Size(152, 27);
             this.LabelWynikData.TabIndex = 24;
+            this.LabelWynikData.Text = "brak";
             this.LabelWynikData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label49
@@ -1384,7 +1387,7 @@
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(447, 27);
             this.label49.TabIndex = 16;
-            this.label49.Text = "Koszt projektu: (w złotych)";
+            this.label49.Text = "Koszt projektu (w złotych):";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelWynikNGorHarm
@@ -1434,7 +1437,7 @@
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(447, 27);
             this.label54.TabIndex = 23;
-            this.label54.Text = "Średnia wielkość zespołu (w osobach)";
+            this.label54.Text = "Średnia wielkość zespołu (w osobach):";
             this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelWynikNGorKoszt
