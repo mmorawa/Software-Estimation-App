@@ -445,53 +445,7 @@ namespace Aplikacja
 
             if (UUCW == 0)
             {
-
-                LabelRozmiar.Text = "0";
-                LabelPktUUCP.Text = "0";
-
-                LabelWynikPrac.Text = "0";
-                LabelWynikNLepPrac.Text = "0";
-                LabelWynikNGorPrac.Text = "0";
-                LabelWynikPrac.BackColor = System.Drawing.Color.FromName("Control");
-                LabelWynikNLepPrac.BackColor = System.Drawing.Color.FromName("Control");
-                LabelWynikNGorPrac.BackColor = System.Drawing.Color.FromName("Control");
-
-                LabelWynikHarm.Text = "0";
-                LabelWynikNLepHarm.Text = "0";
-                LabelWynikNGorHarm.Text = "0";
-                LabelWynikHarm.BackColor = System.Drawing.Color.FromName("Control");
-                LabelWynikNLepHarm.BackColor = System.Drawing.Color.FromName("Control");
-                LabelWynikNGorHarm.BackColor = System.Drawing.Color.FromName("Control");
-
-                LabelWynikData.Text = "brak";
-                LabelWynikNLepData.Text = "brak";
-                LabelWynikNGorData.Text = "brak";
-                LabelWynikHarm.BackColor = System.Drawing.Color.FromName("Control");
-                LabelWynikNLepHarm.BackColor = System.Drawing.Color.FromName("Control");
-                LabelWynikNGorHarm.BackColor = System.Drawing.Color.FromName("Control");
-
-                LabelWynikKoszt.Text = "0";
-                LabelWynikNLepKoszt.Text = "0";
-                LabelWynikNGorKoszt.Text = "0";
-                LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("Control");
-                LabelWynikNLepKoszt.BackColor = System.Drawing.Color.FromName("Control");
-                LabelWynikNGorKoszt.BackColor = System.Drawing.Color.FromName("Control");
-
-                LabelWynikWydaj.Text = "0";
-                LabelWynikNLepWydaj.Text = "0";
-                LabelWynikNGorWydaj.Text = "0";
-                LabelWynikWydaj.BackColor = System.Drawing.Color.FromName("Control");
-                LabelWynikNLepWydaj.BackColor = System.Drawing.Color.FromName("Control");
-                LabelWynikNGorWydaj.BackColor = System.Drawing.Color.FromName("Control");
-                                
-                LabelWynikSrZesp.Text = "0";
-                LabelWynikNLepSrZesp.Text = "0";
-                LabelWynikNGorSrZesp.Text = "0";
-                LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("Control");
-                LabelWynikNLepKoszt.BackColor = System.Drawing.Color.FromName("Control");
-                LabelWynikNGorKoszt.BackColor = System.Drawing.Color.FromName("Control");
-
-                
+                UsuniecieWynikow();               
                 return;
             }
 
@@ -605,7 +559,7 @@ namespace Aplikacja
             
 
             
-            //Ograniczenia projektu
+            //Ograniczenia nałożone na projekt
 
             if (Ograniczenia == true)
             {
@@ -614,15 +568,27 @@ namespace Aplikacja
                 {
                     LabelWynikPrac.BackColor = System.Drawing.Color.FromName("red");
                 }
+                else
+                {
+                    LabelWynikPrac.BackColor = System.Drawing.Color.FromName("control");
+                }
 
                 if (MaxPrac != 0 && MaxPrac < PracochlonnoscNLep)
                 {
                     LabelWynikNLepPrac.BackColor = System.Drawing.Color.FromName("red");
                 }
+                else
+                {
+                    LabelWynikNLepPrac.BackColor = System.Drawing.Color.FromName("control");
+                }
 
                 if (MaxPrac != 0 && MaxPrac < PracochlonnoscNGor)
                 {
                     LabelWynikNGorPrac.BackColor = System.Drawing.Color.FromName("red");
+                }
+                else
+                {
+                    LabelWynikNGorPrac.BackColor = System.Drawing.Color.FromName("control");
                 }
 
 
@@ -632,32 +598,55 @@ namespace Aplikacja
                 {
                     LabelWynikHarm.BackColor = System.Drawing.Color.FromName("red");
                 }
+                else
+                {
+                    LabelWynikHarm.BackColor = System.Drawing.Color.FromName("control");
+                }
 
                 if (MaxHarm != 0 && MaxHarm < HarmonogramNLep)
                 {
                     LabelWynikNLepHarm.BackColor = System.Drawing.Color.FromName("red");
+                }
+                else
+                {
+                    LabelWynikNLepHarm.BackColor = System.Drawing.Color.FromName("control");
                 }
 
                 if (MaxHarm != 0 && MaxHarm < HarmonogramNGor)
                 {
                     LabelWynikNGorHarm.BackColor = System.Drawing.Color.FromName("red");
                 }
-
+                else
+                {
+                    LabelWynikNGorHarm.BackColor = System.Drawing.Color.FromName("control");
+                }
 
 
                 if (Deadline.ToLongDateString() != DateTime.Now.ToLongDateString() && Deadline < DataZakonczenia)
                 {
                     LabelWynikData.BackColor = System.Drawing.Color.FromName("red");
                 }
+                else
+                {
+                    LabelWynikData.BackColor = System.Drawing.Color.FromName("control");
+                }
 
                 if (Deadline.ToLongDateString() != DateTime.Now.ToLongDateString() && Deadline < DataZakonczeniaNLep)
                 {
                     LabelWynikNLepData.BackColor = System.Drawing.Color.FromName("red");
                 }
+                else
+                {
+                    LabelWynikNLepData.BackColor = System.Drawing.Color.FromName("control");
+                }
 
                 if (Deadline.ToLongDateString() != DateTime.Now.ToLongDateString() && Deadline < DataZakonczeniaNGor)
                 {
                     LabelWynikNGorData.BackColor = System.Drawing.Color.FromName("red");
+                }
+                else
+                {
+                    LabelWynikNGorData.BackColor = System.Drawing.Color.FromName("control");
                 }
 
 
@@ -665,15 +654,27 @@ namespace Aplikacja
                 {
                     LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("red");
                 }
+                else
+                {
+                    LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("control");
+                }
 
                 if (MaxKoszt != 0 && MaxKoszt < KosztNLep)
                 {
                     LabelWynikNLepKoszt.BackColor = System.Drawing.Color.FromName("red");
                 }
+                else
+                {
+                    LabelWynikNLepKoszt.BackColor = System.Drawing.Color.FromName("control");
+                }
 
                 if (MaxKoszt != 0 && MaxKoszt < KosztNGor)
                 {
                     LabelWynikNGorKoszt.BackColor = System.Drawing.Color.FromName("red");
+                }
+                else
+                {
+                    LabelWynikNGorKoszt.BackColor = System.Drawing.Color.FromName("control");
                 }
 
 
@@ -681,15 +682,27 @@ namespace Aplikacja
                 {
                     LabelWynikSrZesp.BackColor = System.Drawing.Color.FromName("red");
                 }
+                else
+                {
+                    LabelWynikSrZesp.BackColor = System.Drawing.Color.FromName("control");
+                }
 
                 if (MaxZespol != 0 && MaxZespol < SrZespolNLep)
                 {
                     LabelWynikNLepSrZesp.BackColor = System.Drawing.Color.FromName("red");
                 }
+                else
+                {
+                    LabelWynikNLepSrZesp.BackColor = System.Drawing.Color.FromName("control");
+                }
 
                 if (MaxZespol != 0 && MaxZespol < SrZespolNGor)
                 {
                     LabelWynikNGorSrZesp.BackColor = System.Drawing.Color.FromName("red");
+                }
+                else
+                {
+                    LabelWynikNGorSrZesp.BackColor = System.Drawing.Color.FromName("control");
                 }
 
 
@@ -1017,19 +1030,59 @@ namespace Aplikacja
             MaxKoszt = 0;
             MaxZespol = 0;
 
-            LabelRozmiar.Text = "0";
-            LabelPktUUCP.Text = "0";
-            LabelWynikPrac.Text = "0";
-            LabelWynikPrac.BackColor = System.Drawing.Color.FromName("Control");
-            LabelWynikHarm.Text = "0";
-            LabelWynikHarm.BackColor = System.Drawing.Color.FromName("Control");
-            LabelWynikKoszt.Text = "0";
-            LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("Control");
-            LabelWynikSrZesp.Text = "0";
-            LabelWynikData.Text = "0";
+            UsuniecieWynikow();
 
         }
 
+        private void UsuniecieWynikow()
+        {
+            LabelRozmiar.Text = "0";
+            LabelPktUUCP.Text = "0";
+
+            LabelUwagi.Text = "Uwagi: Ten model nie jest skalibrowany dla projektów poniżej 2000 linii kodu. ";
+
+            LabelWynikPrac.Text = "0";
+            LabelWynikNLepPrac.Text = "0";
+            LabelWynikNGorPrac.Text = "0";
+            LabelWynikPrac.BackColor = System.Drawing.Color.FromName("Control");
+            LabelWynikNLepPrac.BackColor = System.Drawing.Color.FromName("Control");
+            LabelWynikNGorPrac.BackColor = System.Drawing.Color.FromName("Control");
+
+            LabelWynikHarm.Text = "0";
+            LabelWynikNLepHarm.Text = "0";
+            LabelWynikNGorHarm.Text = "0";
+            LabelWynikHarm.BackColor = System.Drawing.Color.FromName("Control");
+            LabelWynikNLepHarm.BackColor = System.Drawing.Color.FromName("Control");
+            LabelWynikNGorHarm.BackColor = System.Drawing.Color.FromName("Control");
+
+            LabelWynikData.Text = "brak";
+            LabelWynikNLepData.Text = "brak";
+            LabelWynikNGorData.Text = "brak";
+            LabelWynikData.BackColor = System.Drawing.Color.FromName("Control");
+            LabelWynikNLepData.BackColor = System.Drawing.Color.FromName("Control");
+            LabelWynikNGorData.BackColor = System.Drawing.Color.FromName("Control");
+
+            LabelWynikKoszt.Text = "0";
+            LabelWynikNLepKoszt.Text = "0";
+            LabelWynikNGorKoszt.Text = "0";
+            LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("Control");
+            LabelWynikNLepKoszt.BackColor = System.Drawing.Color.FromName("Control");
+            LabelWynikNGorKoszt.BackColor = System.Drawing.Color.FromName("Control");
+
+            LabelWynikWydaj.Text = "0";
+            LabelWynikNLepWydaj.Text = "0";
+            LabelWynikNGorWydaj.Text = "0";
+            LabelWynikWydaj.BackColor = System.Drawing.Color.FromName("Control");
+            LabelWynikNLepWydaj.BackColor = System.Drawing.Color.FromName("Control");
+            LabelWynikNGorWydaj.BackColor = System.Drawing.Color.FromName("Control");
+
+            LabelWynikSrZesp.Text = "0";
+            LabelWynikNLepSrZesp.Text = "0";
+            LabelWynikNGorSrZesp.Text = "0";
+            LabelWynikSrZesp.BackColor = System.Drawing.Color.FromName("Control");
+            LabelWynikNLepSrZesp.BackColor = System.Drawing.Color.FromName("Control");
+            LabelWynikNGorSrZesp.BackColor = System.Drawing.Color.FromName("Control");
+        }
 
         private void ButtonZalozenia_Click(object sender, EventArgs e)
         {
