@@ -851,17 +851,18 @@ namespace Aplikacja
         //Końcowe wyniki oszacowania
         public static void Wyniki(Document dokument)
         {
-            //TODO wyniki
-
-            //var sekcja = dokument.LastSection;
+            //TODO Rozmiar, UCP, Przekroczenia
+          
             var sekcja = dokument.LastSection;
 
             var paragraf = sekcja.AddParagraph("Wyniki oszacowania pracochłonności", "Heading1");
 
+            paragraf = sekcja.AddParagraph(Ostrzezenie);
             //paragraf = sekcja.AddParagraph("Metoda Use Case Points", "Heading3");
 
             //nagłówek tabelii
             paragraf = sekcja.AddParagraph("Tabela 8 - wyniki");
+            paragraf.Format.SpaceBefore = "1cm";
             paragraf.Format.SpaceAfter = "0.2cm";
 
             var TabelaWyniki = new Table();
@@ -933,15 +934,30 @@ namespace Aplikacja
             cell.AddParagraph("Szacowana data zakończenia:");
             cell.MergeRight = 2;
 
+            if (DataZakonczenia.Date == DateTime.Today )
+            {
+                row = TabelaWyniki.AddRow();
+                row.VerticalAlignment = VerticalAlignment.Center;
+                cell = row.Cells[0];
+                cell.AddParagraph("brak");
+                cell = row.Cells[1];
+                cell.AddParagraph("brak");
+                cell = row.Cells[2];
+                cell.AddParagraph("brak");
+            }
+            else
+            {
+                row = TabelaWyniki.AddRow();
+                row.VerticalAlignment = VerticalAlignment.Center;
+                cell = row.Cells[0];
+                cell.AddParagraph(string.Format("{0:d MMMM yyyy}", DataZakonczeniaNLep));
+                cell = row.Cells[1];
+                cell.AddParagraph(string.Format("{0:d MMMM yyyy}", DataZakonczenia));
+                cell = row.Cells[2];
+                cell.AddParagraph(string.Format("{0:d MMMM yyyy}", DataZakonczeniaNGor));
+            }
 
-            row = TabelaWyniki.AddRow();
-            row.VerticalAlignment = VerticalAlignment.Center;
-            cell = row.Cells[0];
-            cell.AddParagraph(string.Format("{0:d MMMM yyyy}", DataZakonczeniaNLep));
-            cell = row.Cells[1];
-            cell.AddParagraph(string.Format("{0:d MMMM yyyy}", DataZakonczenia));
-            cell = row.Cells[2];
-            cell.AddParagraph(string.Format("{0:d MMMM yyyy}", DataZakonczeniaNGor));
+
 
 
             row = TabelaWyniki.AddRow();

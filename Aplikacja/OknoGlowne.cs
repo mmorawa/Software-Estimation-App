@@ -26,7 +26,7 @@ namespace Aplikacja
         {
             InitializeComponent();
             TextBoxNazwaProjektu.Text = NazwaProjektu;
-            DateTimePicker.Value = DateTime.Now;
+            DateTimePicker.Value = DateTime.Today;
 
         }
 
@@ -116,7 +116,7 @@ namespace Aplikacja
 
         double[] TabOgranHarm = { 0.75, 0.85, 1, 1.3, 1.6 };
 
-        string Ostrzezenie;
+        public static string Ostrzezenie = "Uwagi: Ten model nie jest skalibrowany dla projektów poniżej 2000 linii kodu.";
 
         //współczynniki
         public static double TempUCPnaFP;
@@ -139,7 +139,7 @@ namespace Aplikacja
 
         public static long MaxPrac = 0;
         public static long MaxHarm = 0;
-        public static DateTime Deadline = DateTime.Now;
+        public static DateTime Deadline = DateTime.Today;
         public static double MaxKoszt = 0;
         public static long MaxZespol = 0;
 
@@ -620,7 +620,7 @@ namespace Aplikacja
                 }
 
                 
-                if (Deadline.Date != DateTime.Now && Deadline.Date < DataZakonczenia.Date)
+                if (Deadline.Date != DateTime.Today && Deadline.Date < DataZakonczenia.Date)
                 {
                     LabelWynikData.BackColor = System.Drawing.Color.FromName("red");
                 }
@@ -629,7 +629,7 @@ namespace Aplikacja
                     LabelWynikData.BackColor = System.Drawing.Color.FromName("control");
                 }
 
-                if (Deadline.Date != DateTime.Now && Deadline.Date < DataZakonczeniaNLep.Date)
+                if (Deadline.Date != DateTime.Today && Deadline.Date < DataZakonczeniaNLep.Date)
                 {
                     LabelWynikNLepData.BackColor = System.Drawing.Color.FromName("red");
                 }
@@ -638,7 +638,7 @@ namespace Aplikacja
                     LabelWynikNLepData.BackColor = System.Drawing.Color.FromName("control");
                 }
 
-                if (Deadline.Date != DateTime.Now && Deadline.Date < DataZakonczeniaNGor.Date)
+                if (Deadline.Date != DateTime.Today && Deadline.Date < DataZakonczeniaNGor.Date)
                 {
                     LabelWynikNGorData.BackColor = System.Drawing.Color.FromName("red");
                 }
@@ -709,11 +709,13 @@ namespace Aplikacja
 
             if (Ostrzezenie.Length == 0)
             {
-                LabelUwagi.Text = "Uwagi: brak.";
+                Ostrzezenie = "Uwagi: brak.";
+                LabelUwagi.Text = Ostrzezenie;
             }
             else
             {
-                LabelUwagi.Text = "Uwagi: " + Ostrzezenie;
+                Ostrzezenie = "Uwagi: " + Ostrzezenie;
+                LabelUwagi.Text = Ostrzezenie;
             }
             
 
@@ -1089,8 +1091,8 @@ namespace Aplikacja
 
             TextBoxNazwaProjektu.Text = "Projekt";
             NazwaProjektu = "Projekt";
-            DateTimePicker.Value = DateTime.Now;
-            DataProjektu = DateTime.Now.ToString();
+            DateTimePicker.Value = DateTime.Today;
+            DataProjektu = DateTime.Today.ToString();
 
             KierownikProjektu = "";
             Szacujacy = "";
@@ -1125,7 +1127,7 @@ namespace Aplikacja
             
             MaxPrac = 0;
             MaxHarm = 0;
-            Deadline = DateTime.Now;
+            Deadline = DateTime.Today;
             MaxKoszt = 0;
             MaxZespol = 0;
 
@@ -1136,6 +1138,35 @@ namespace Aplikacja
 
         private void UsuniecieWynikow()
         {
+            UUCP = 0;
+            Rozmiar = 0;
+
+            Ostrzezenie = "Uwagi: Ten model nie jest skalibrowany dla projektów poniżej 2000 linii kodu.";
+
+            Pracochlonnosc = 0;
+            PracochlonnoscNLep = 0;
+            PracochlonnoscNGor = 0;
+
+            Harmonogram = 0;
+            HarmonogramNLep = 0;
+            HarmonogramNGor = 0;
+
+            DataZakonczenia = DateTime.Today;
+            DataZakonczeniaNLep = DateTime.Today;
+            DataZakonczeniaNGor = DateTime.Today;
+
+            Wydajnosc = 0;
+            WydajnoscNLep = 0;
+            WydajnoscNGor = 0;
+
+            Koszt = 0;
+            KosztNLep = 0;
+            KosztNGor = 0;
+
+            SrZespol = 0;
+            SrZespolNLep = 0;
+            SrZespolNGor = 0;
+
             LabelRozmiar.Text = "0";
             LabelPktUUCP.Text = "0";
 
