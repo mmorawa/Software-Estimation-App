@@ -52,20 +52,20 @@
             this.PodgladRaportu.Document = null;
             this.PodgladRaportu.Location = new System.Drawing.Point(0, 0);
             this.PodgladRaportu.Name = "PodgladRaportu";
-            this.PodgladRaportu.Padding = new System.Windows.Forms.Padding(0, 80, 0, 0);
+            this.PodgladRaportu.Padding = new System.Windows.Forms.Padding(0, 50, 0, 0);
             this.PodgladRaportu.Page = 0;
             this.PodgladRaportu.PageColor = System.Drawing.Color.GhostWhite;
             this.PodgladRaportu.PageSize = new System.Drawing.Size(595, 842);
             this.PodgladRaportu.PrivateFonts = null;
-            this.PodgladRaportu.Size = new System.Drawing.Size(847, 711);
+            this.PodgladRaportu.Size = new System.Drawing.Size(877, 711);
             this.PodgladRaportu.TabIndex = 1;
-            this.PodgladRaportu.Zoom = MigraDoc.Rendering.Forms.Zoom.OriginalSize;
-            this.PodgladRaportu.ZoomPercent = 75;
+            this.PodgladRaportu.Zoom = MigraDoc.Rendering.Forms.Zoom.Percent100;
+            this.PodgladRaportu.ZoomPercent = 100;
             // 
             // ButtonDrukuj
             // 
             this.ButtonDrukuj.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonDrukuj.Location = new System.Drawing.Point(12, 11);
+            this.ButtonDrukuj.Location = new System.Drawing.Point(3, 11);
             this.ButtonDrukuj.Name = "ButtonDrukuj";
             this.ButtonDrukuj.Size = new System.Drawing.Size(91, 27);
             this.ButtonDrukuj.TabIndex = 2;
@@ -76,7 +76,7 @@
             // ButtonNastepna
             // 
             this.ButtonNastepna.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonNastepna.Location = new System.Drawing.Point(724, 13);
+            this.ButtonNastepna.Location = new System.Drawing.Point(669, 11);
             this.ButtonNastepna.Name = "ButtonNastepna";
             this.ButtonNastepna.Size = new System.Drawing.Size(34, 27);
             this.ButtonNastepna.TabIndex = 3;
@@ -87,7 +87,7 @@
             // ButtonPoprzednia
             // 
             this.ButtonPoprzednia.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPoprzednia.Location = new System.Drawing.Point(626, 13);
+            this.ButtonPoprzednia.Location = new System.Drawing.Point(576, 11);
             this.ButtonPoprzednia.Name = "ButtonPoprzednia";
             this.ButtonPoprzednia.Size = new System.Drawing.Size(35, 27);
             this.ButtonPoprzednia.TabIndex = 4;
@@ -98,7 +98,7 @@
             // ButtonUstawieniaDruk
             // 
             this.ButtonUstawieniaDruk.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonUstawieniaDruk.Location = new System.Drawing.Point(109, 11);
+            this.ButtonUstawieniaDruk.Location = new System.Drawing.Point(100, 11);
             this.ButtonUstawieniaDruk.Name = "ButtonUstawieniaDruk";
             this.ButtonUstawieniaDruk.Size = new System.Drawing.Size(173, 27);
             this.ButtonUstawieniaDruk.TabIndex = 5;
@@ -120,33 +120,34 @@
             this.panel1.Controls.Add(this.ButtonUstawieniaDruk);
             this.panel1.Location = new System.Drawing.Point(0, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(847, 79);
+            this.panel1.Size = new System.Drawing.Size(877, 50);
             this.panel1.TabIndex = 6;
             // 
             // LabelPowiekszenie
             // 
             this.LabelPowiekszenie.AutoSize = true;
-            this.LabelPowiekszenie.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelPowiekszenie.Location = new System.Drawing.Point(667, 47);
+            this.LabelPowiekszenie.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelPowiekszenie.Location = new System.Drawing.Point(763, 16);
             this.LabelPowiekszenie.Name = "LabelPowiekszenie";
-            this.LabelPowiekszenie.Size = new System.Drawing.Size(50, 18);
+            this.LabelPowiekszenie.Size = new System.Drawing.Size(46, 17);
             this.LabelPowiekszenie.TabIndex = 11;
             this.LabelPowiekszenie.Text = "label2";
             // 
             // LabelStrona
             // 
             this.LabelStrona.AutoSize = true;
-            this.LabelStrona.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelStrona.Location = new System.Drawing.Point(667, 16);
+            this.LabelStrona.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelStrona.Location = new System.Drawing.Point(617, 16);
             this.LabelStrona.Name = "LabelStrona";
-            this.LabelStrona.Size = new System.Drawing.Size(50, 18);
+            this.LabelStrona.Size = new System.Drawing.Size(46, 17);
             this.LabelStrona.TabIndex = 10;
             this.LabelStrona.Text = "label1";
             // 
             // ButtonPomniejsz
             // 
-            this.ButtonPomniejsz.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPomniejsz.Location = new System.Drawing.Point(626, 44);
+            this.ButtonPomniejsz.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonPomniejsz.Location = new System.Drawing.Point(722, 11);
+            this.ButtonPomniejsz.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.ButtonPomniejsz.Name = "ButtonPomniejsz";
             this.ButtonPomniejsz.Size = new System.Drawing.Size(35, 27);
             this.ButtonPomniejsz.TabIndex = 9;
@@ -156,10 +157,10 @@
             // 
             // ButtonPowieksz
             // 
-            this.ButtonPowieksz.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPowieksz.Location = new System.Drawing.Point(724, 44);
+            this.ButtonPowieksz.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonPowieksz.Location = new System.Drawing.Point(815, 11);
             this.ButtonPowieksz.Name = "ButtonPowieksz";
-            this.ButtonPowieksz.Size = new System.Drawing.Size(34, 27);
+            this.ButtonPowieksz.Size = new System.Drawing.Size(28, 27);
             this.ButtonPowieksz.TabIndex = 8;
             this.ButtonPowieksz.Text = "+";
             this.ButtonPowieksz.UseVisualStyleBackColor = true;
@@ -168,22 +169,22 @@
             // ButtonEksportRTF
             // 
             this.ButtonEksportRTF.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonEksportRTF.Location = new System.Drawing.Point(301, 44);
+            this.ButtonEksportRTF.Location = new System.Drawing.Point(424, 11);
             this.ButtonEksportRTF.Name = "ButtonEksportRTF";
-            this.ButtonEksportRTF.Size = new System.Drawing.Size(205, 27);
+            this.ButtonEksportRTF.Size = new System.Drawing.Size(131, 27);
             this.ButtonEksportRTF.TabIndex = 7;
-            this.ButtonEksportRTF.Text = "Eksportuj do formatu RTF";
+            this.ButtonEksportRTF.Text = "Eksportuj do RTF";
             this.ButtonEksportRTF.UseVisualStyleBackColor = true;
             this.ButtonEksportRTF.Click += new System.EventHandler(this.ButtonEksportRTF_Click);
             // 
             // ButtonEksportPDF
             // 
             this.ButtonEksportPDF.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonEksportPDF.Location = new System.Drawing.Point(301, 11);
+            this.ButtonEksportPDF.Location = new System.Drawing.Point(279, 11);
             this.ButtonEksportPDF.Name = "ButtonEksportPDF";
-            this.ButtonEksportPDF.Size = new System.Drawing.Size(205, 27);
+            this.ButtonEksportPDF.Size = new System.Drawing.Size(139, 27);
             this.ButtonEksportPDF.TabIndex = 6;
-            this.ButtonEksportPDF.Text = "Eksportuj do formatu PDF";
+            this.ButtonEksportPDF.Text = "Eksportuj do PDF";
             this.ButtonEksportPDF.UseVisualStyleBackColor = true;
             this.ButtonEksportPDF.Click += new System.EventHandler(this.ButtonEksportPDF_Click);
             // 
@@ -191,7 +192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(847, 711);
+            this.ClientSize = new System.Drawing.Size(877, 711);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PodgladRaportu);
             this.Name = "OknoPodgladRaportow";

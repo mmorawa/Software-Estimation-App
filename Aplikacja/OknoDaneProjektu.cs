@@ -54,7 +54,7 @@ namespace Aplikacja
             OknoGlowne.TempOpisProjektu = RichTextBoxOpisProjektu.Text;
         }
 
-        //BUG Problem gdy click zmienia checkbox szybciej niż odczyt jego stanu??
+        
         private void CheckBoxDomyslne_Click(object sender, EventArgs e)
         {
             if (Properties.Settings.Default.KierownikProjektu.Length == 0 &&

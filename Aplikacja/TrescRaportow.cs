@@ -853,6 +853,155 @@ namespace Aplikacja
         {
             //TODO wyniki
 
+            //var sekcja = dokument.LastSection;
+            var sekcja = dokument.LastSection;
+
+            var paragraf = sekcja.AddParagraph("Wyniki oszacowania pracochłonności", "Heading1");
+
+            //paragraf = sekcja.AddParagraph("Metoda Use Case Points", "Heading3");
+
+            //nagłówek tabelii
+            paragraf = sekcja.AddParagraph("Tabela 8 - wyniki");
+            paragraf.Format.SpaceAfter = "0.2cm";
+
+            var TabelaWyniki = new Table();
+
+            //dodajemy kolumny
+            var column = TabelaWyniki.AddColumn(Unit.FromCentimeter(5.3));
+            column.Format.Alignment = ParagraphAlignment.Center;
+
+            column = TabelaWyniki.AddColumn(Unit.FromCentimeter(5.3));
+            column.Format.Alignment = ParagraphAlignment.Center;
+
+            column = TabelaWyniki.AddColumn(Unit.FromCentimeter(5.3));
+            column.Format.Alignment = ParagraphAlignment.Center;
+
+            TabelaWyniki.Rows.Height = Unit.FromCentimeter(1);
+
+            var row = TabelaWyniki.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            row.Shading.Color = Colors.LightSalmon;
+            
+
+            //dodajemy tekst do nagłówków kolumn
+            var cell = row.Cells[0];
+            cell.AddParagraph("Najlepszy przypadek");
+            cell = row.Cells[1];
+            cell.AddParagraph("Oczekiwany przypadek");
+            cell = row.Cells[2];
+            cell.AddParagraph("Najgorszy przypadek");
+
+
+
+            row = TabelaWyniki.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Pracochłonność (w osobomiesiącach):");                      
+            cell.MergeRight = 2;
+
+
+            row = TabelaWyniki.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph(string.Format("{0:N1}", PracochlonnoscNLep));
+            cell = row.Cells[1];
+            cell.AddParagraph(string.Format("{0:N1}", Pracochlonnosc));
+            cell = row.Cells[2];
+            cell.AddParagraph(string.Format("{0:N1}", PracochlonnoscNGor));
+
+
+            row = TabelaWyniki.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Harmonogram (w miesiącach):");
+            cell.MergeRight = 2;
+
+
+            row = TabelaWyniki.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph(string.Format("{0:N1}", HarmonogramNLep));
+            cell = row.Cells[1];
+            cell.AddParagraph(string.Format("{0:N1}", Harmonogram));
+            cell = row.Cells[2];
+            cell.AddParagraph(string.Format("{0:N1}", HarmonogramNGor));
+
+
+            row = TabelaWyniki.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Szacowana data zakończenia:");
+            cell.MergeRight = 2;
+
+
+            row = TabelaWyniki.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph(string.Format("{0:d MMMM yyyy}", DataZakonczeniaNLep));
+            cell = row.Cells[1];
+            cell.AddParagraph(string.Format("{0:d MMMM yyyy}", DataZakonczenia));
+            cell = row.Cells[2];
+            cell.AddParagraph(string.Format("{0:d MMMM yyyy}", DataZakonczeniaNGor));
+
+
+            row = TabelaWyniki.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Wydajność (w liniach kodu):");
+            cell.MergeRight = 2;
+
+
+            row = TabelaWyniki.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph(string.Format("{0:N1}", WydajnoscNLep));
+            cell = row.Cells[1];
+            cell.AddParagraph(string.Format("{0:N1}", Wydajnosc));
+            cell = row.Cells[2];
+            cell.AddParagraph(string.Format("{0:N1}", WydajnoscNGor));
+
+
+            row = TabelaWyniki.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Koszt projektu (w złotych):");
+            cell.MergeRight = 2;
+
+
+            row = TabelaWyniki.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph(string.Format("{0:N}", KosztNLep));
+            cell = row.Cells[1];
+            cell.AddParagraph(string.Format("{0:N}", Koszt));
+            cell = row.Cells[2];
+            cell.AddParagraph(string.Format("{0:N}", KosztNGor));
+
+
+            row = TabelaWyniki.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph("Średnia wielkość zespołu (w osobach):");
+            cell.MergeRight = 2;
+
+
+            row = TabelaWyniki.AddRow();
+            row.VerticalAlignment = VerticalAlignment.Center;
+            cell = row.Cells[0];
+            cell.AddParagraph(string.Format("{0:N1}", SrZespolNLep));
+            cell = row.Cells[1];
+            cell.AddParagraph(string.Format("{0:N1}", SrZespol));
+            cell = row.Cells[2];
+            cell.AddParagraph(string.Format("{0:N1}", SrZespolNGor));
+
+
+
+
+            TabelaWyniki.SetEdge(0, 0, 3, 13, Edge.Bottom, MigraDoc.DocumentObjectModel.BorderStyle.Single, 1, Colors.LightSalmon);
+
+            dokument.LastSection.Add(TabelaWyniki);
+
+
             /*
             paragraph.AddTab();
             paragraph.Format.LeftIndent = "2cm";

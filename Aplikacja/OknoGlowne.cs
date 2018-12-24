@@ -171,32 +171,32 @@ namespace Aplikacja
         double PracochlonnoscBezOgranNGor;
 
         //wyniki końcowe
-        double UUCP;
-        double Rozmiar;
+        public static double UUCP;
+        public static double Rozmiar;
 
-        double Pracochlonnosc;
-        double PracochlonnoscNLep;
-        double PracochlonnoscNGor;
+        public static double Pracochlonnosc;
+        public static double PracochlonnoscNLep;
+        public static double PracochlonnoscNGor;
 
-        double Harmonogram;
-        double HarmonogramNLep;
-        double HarmonogramNGor;
+        public static double Harmonogram;
+        public static double HarmonogramNLep;
+        public static double HarmonogramNGor;
 
-        DateTime DataZakonczenia;
-        DateTime DataZakonczeniaNLep;
-        DateTime DataZakonczeniaNGor;
+        public static DateTime DataZakonczenia;
+        public static DateTime DataZakonczeniaNLep;
+        public static DateTime DataZakonczeniaNGor;
 
-        double Wydajnosc;
-        double WydajnoscNLep;
-        double WydajnoscNGor;
+        public static double Wydajnosc;
+        public static double WydajnoscNLep;
+        public static double WydajnoscNGor;
 
-        double Koszt;
-        double KosztNLep;
-        double KosztNGor;
+        public static double Koszt;
+        public static double KosztNLep;
+        public static double KosztNGor;
 
-        double SrZespol;
-        double SrZespolNLep;
-        double SrZespolNGor;
+        public static double SrZespol;
+        public static double SrZespolNLep;
+        public static double SrZespolNGor;
 
         /*******************************************************************************
         *  Metody klasy Form1.
@@ -619,8 +619,8 @@ namespace Aplikacja
                     LabelWynikNGorHarm.BackColor = System.Drawing.Color.FromName("control");
                 }
 
-
-                if (Deadline.ToLongDateString() != DateTime.Now.ToLongDateString() && Deadline < DataZakonczenia)
+                
+                if (Deadline.Date != DateTime.Now && Deadline.Date < DataZakonczenia.Date)
                 {
                     LabelWynikData.BackColor = System.Drawing.Color.FromName("red");
                 }
@@ -629,7 +629,7 @@ namespace Aplikacja
                     LabelWynikData.BackColor = System.Drawing.Color.FromName("control");
                 }
 
-                if (Deadline.ToLongDateString() != DateTime.Now.ToLongDateString() && Deadline < DataZakonczeniaNLep)
+                if (Deadline.Date != DateTime.Now && Deadline.Date < DataZakonczeniaNLep.Date)
                 {
                     LabelWynikNLepData.BackColor = System.Drawing.Color.FromName("red");
                 }
@@ -638,7 +638,7 @@ namespace Aplikacja
                     LabelWynikNLepData.BackColor = System.Drawing.Color.FromName("control");
                 }
 
-                if (Deadline.ToLongDateString() != DateTime.Now.ToLongDateString() && Deadline < DataZakonczeniaNGor)
+                if (Deadline.Date != DateTime.Now && Deadline.Date < DataZakonczeniaNGor.Date)
                 {
                     LabelWynikNGorData.BackColor = System.Drawing.Color.FromName("red");
                 }
@@ -705,7 +705,7 @@ namespace Aplikacja
 
 
             }
-
+            //TODO Ostrzezenia
 
             if (Ostrzezenie.Length == 0)
             {

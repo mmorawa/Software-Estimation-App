@@ -25,13 +25,13 @@ namespace Aplikacja
             var ddl = DdlWriter.WriteToString(dokument);
             PodgladRaportu.Ddl = ddl;
 
-            LabelPowiekszenie.Text = "75%";
+            LabelPowiekszenie.Text = "100%";
             LabelStrona.Text = "Str. " + PodgladRaportu.Page.ToString();
         }
 
         readonly PrinterSettings _printerSettings = new PrinterSettings();
         string NazwaPlikuZapis;
-        int Powiekszenie = 75;
+        int Powiekszenie = 100;
 
 
         private void ButtonPoprzednia_Click(object sender, EventArgs e)
@@ -134,16 +134,30 @@ namespace Aplikacja
 
         private void ButtonPowieksz_Click(object sender, EventArgs e)
         {
-            Powiekszenie += 10;
-            PodgladRaportu.ZoomPercent = Powiekszenie;
-            LabelPowiekszenie.Text = Powiekszenie.ToString() + "%"; 
+            if (Powiekszenie >= 800)
+            {
+                return;
+            }
+            else
+            {
+                Powiekszenie += 10;
+                PodgladRaportu.ZoomPercent = Powiekszenie;
+                LabelPowiekszenie.Text = Powiekszenie.ToString() + "%";
+            }
         }
 
         private void ButtonPomniejsz_Click(object sender, EventArgs e)
         {
-            Powiekszenie -= 10;
-            PodgladRaportu.ZoomPercent = Powiekszenie;
-            LabelPowiekszenie.Text = Powiekszenie.ToString() + "%";
+            if (Powiekszenie <= 10)
+            {
+                return;
+            }
+            else
+            {
+                Powiekszenie -= 10;
+                PodgladRaportu.ZoomPercent = Powiekszenie;
+                LabelPowiekszenie.Text = Powiekszenie.ToString() + "%";
+            }
         }
     }
 }
