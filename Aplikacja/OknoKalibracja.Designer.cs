@@ -58,7 +58,7 @@
             // 
             this.ButtonAnuluj.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.ButtonAnuluj.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonAnuluj.Location = new System.Drawing.Point(285, 685);
+            this.ButtonAnuluj.Location = new System.Drawing.Point(298, 512);
             this.ButtonAnuluj.Name = "ButtonAnuluj";
             this.ButtonAnuluj.Size = new System.Drawing.Size(104, 27);
             this.ButtonAnuluj.TabIndex = 20;
@@ -69,7 +69,7 @@
             // 
             this.ButtonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.ButtonOk.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOk.Location = new System.Drawing.Point(125, 685);
+            this.ButtonOk.Location = new System.Drawing.Point(138, 512);
             this.ButtonOk.Name = "ButtonOk";
             this.ButtonOk.Size = new System.Drawing.Size(104, 27);
             this.ButtonOk.TabIndex = 19;
@@ -84,7 +84,7 @@
             this.GroupBoxKalibracja.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxKalibracja.Location = new System.Drawing.Point(12, 12);
             this.GroupBoxKalibracja.Name = "GroupBoxKalibracja";
-            this.GroupBoxKalibracja.Size = new System.Drawing.Size(527, 667);
+            this.GroupBoxKalibracja.Size = new System.Drawing.Size(527, 485);
             this.GroupBoxKalibracja.TabIndex = 21;
             this.GroupBoxKalibracja.TabStop = false;
             this.GroupBoxKalibracja.Text = "Kalibracja";
@@ -103,7 +103,7 @@
             this.GroupBoxCOCOMOII.Controls.Add(this.TextBoxB);
             this.GroupBoxCOCOMOII.Controls.Add(this.label10);
             this.GroupBoxCOCOMOII.Controls.Add(this.label7);
-            this.GroupBoxCOCOMOII.Location = new System.Drawing.Point(18, 276);
+            this.GroupBoxCOCOMOII.Location = new System.Drawing.Point(18, 117);
             this.GroupBoxCOCOMOII.Name = "GroupBoxCOCOMOII";
             this.GroupBoxCOCOMOII.Size = new System.Drawing.Size(495, 293);
             this.GroupBoxCOCOMOII.TabIndex = 44;
@@ -232,12 +232,11 @@
             this.tableLayoutPanel2.Controls.Add(this.NumericUCPnaFP, 2, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(18, 44);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(495, 196);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(495, 57);
             this.tableLayoutPanel2.TabIndex = 38;
             // 
             // LabelDataRozp
@@ -247,7 +246,7 @@
             this.LabelDataRozp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LabelDataRozp.Location = new System.Drawing.Point(3, 0);
             this.LabelDataRozp.Name = "LabelDataRozp";
-            this.LabelDataRozp.Size = new System.Drawing.Size(301, 65);
+            this.LabelDataRozp.Size = new System.Drawing.Size(301, 57);
             this.LabelDataRozp.TabIndex = 4;
             this.LabelDataRozp.Text = "Współczynnik konwersji punktów przypadków użycia na punkty funkcyjne:\r\n";
             this.LabelDataRozp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -258,8 +257,8 @@
             this.NumericUCPnaFP.Location = new System.Drawing.Point(310, 18);
             this.NumericUCPnaFP.Margin = new System.Windows.Forms.Padding(3, 18, 3, 3);
             this.NumericUCPnaFP.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            1000000,
+            0,
             0,
             0});
             this.NumericUCPnaFP.Name = "NumericUCPnaFP";
@@ -271,7 +270,7 @@
             // 
             // ButtonPrzywroc
             // 
-            this.ButtonPrzywroc.Location = new System.Drawing.Point(321, 595);
+            this.ButtonPrzywroc.Location = new System.Drawing.Point(321, 430);
             this.ButtonPrzywroc.Name = "ButtonPrzywroc";
             this.ButtonPrzywroc.Size = new System.Drawing.Size(192, 42);
             this.ButtonPrzywroc.TabIndex = 44;
@@ -283,7 +282,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(550, 737);
+            this.ClientSize = new System.Drawing.Size(550, 564);
             this.Controls.Add(this.GroupBoxKalibracja);
             this.Controls.Add(this.ButtonAnuluj);
             this.Controls.Add(this.ButtonOk);

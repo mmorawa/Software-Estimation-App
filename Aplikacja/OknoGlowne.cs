@@ -9,6 +9,7 @@ using System.IO;
 using System.Windows.Forms;
 using System.Diagnostics;
 using MigraDoc.DocumentObjectModel;
+using System.Linq;
 
 
 //! Przestrzeń nazw Password_Manager obejmuje całą aplikację Menedżera Haseł.
@@ -432,7 +433,7 @@ namespace Aplikacja
         //TODO kasowanie danych częściowo zbędne bo teraz automatycznie wywołuje się funkcja Oszacowanie
         private void Oszacowanie()
         {
-            //TODO walidacja danych wejściowych, zaokrąglanie
+            
             Ostrzezenie = "";
 
             //Obliczenia UUCP
@@ -504,8 +505,7 @@ namespace Aplikacja
             HarmonogramNLep = Properties.Settings.Default.C * Math.Pow(PracochlonnoscBezOgranNLep, F) * TabOgranHarm[TabIndMnPrac[16]];
             HarmonogramNGor = Properties.Settings.Default.C * Math.Pow(PracochlonnoscBezOgranNGor, F) * TabOgranHarm[TabIndMnPrac[16]];
 
-            //TODO pusta data -> brak? danych..., czynniki COCOMO post architecture
-
+            
             DataZakonczenia = Convert.ToDateTime(DateTimePicker.Text);
             DataZakonczenia = DataZakonczenia.AddDays((int)Math.Round(Harmonogram * 30.42));
             DataZakonczeniaNLep = Convert.ToDateTime(DateTimePicker.Text);
@@ -798,10 +798,12 @@ namespace Aplikacja
                     try
                     {
                         SciezkaDoPliku = OtworzProjektDialog.FileName;
-
+                        
                         using (StreamReader sr = new StreamReader(SciezkaDoPliku))
                         {
-                            //int LiczbaLinii = File.ReadLines(SciezkaDoPliku).Count();
+                            int LiczbaLinii = File.ReadLines(SciezkaDoPliku).Count();
+
+                            //MessageBox.Show(LiczbaLinii.ToString()); 96
 
                             TextBoxNazwaProjektu.Text = sr.ReadLine();
                             DateTimePicker.Text = sr.ReadLine();
@@ -914,7 +916,11 @@ namespace Aplikacja
                             LabelWynikNGorSrZesp.Text = string.Format("{0:N1}", SrZespolNGor);
                             LabelWynikNGorSrZesp.BackColor = System.Drawing.Color.FromName(sr.ReadLine());
 
-                            OpisProjektu = sr.ReadLine();
+                            for (int i = 0; i < (LiczbaLinii - 86); i++)
+                            {
+                                OpisProjektu += sr.ReadLine() + "\n";
+                            }
+                            
 
                         }
                     }
@@ -1127,6 +1133,7 @@ namespace Aplikacja
 
         }
 
+
         private void UsuniecieWynikow()
         {
             LabelRozmiar.Text = "0";
@@ -1176,6 +1183,7 @@ namespace Aplikacja
             LabelWynikNLepSrZesp.BackColor = System.Drawing.Color.FromName("Control");
             LabelWynikNGorSrZesp.BackColor = System.Drawing.Color.FromName("Control");
         }
+
 
         private void ButtonZalozenia_Click(object sender, EventArgs e)
         {

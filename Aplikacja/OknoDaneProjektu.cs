@@ -48,7 +48,7 @@ namespace Aplikacja
         {
             OknoGlowne.TempEmail = TextBoxEmail.Text;
         }
-        //BUG: problem z wieloma liniami tekstu i zapisz/odczyt
+        
         private void RichTextBoxOpisProjektu_TextChanged(object sender, EventArgs e)
         {
             OknoGlowne.TempOpisProjektu = RichTextBoxOpisProjektu.Text;

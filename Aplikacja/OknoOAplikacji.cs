@@ -19,6 +19,7 @@ namespace Aplikacja
             this.labelCopyright.Text = AssemblyCopyright;
             this.labelCompanyName.Text = AssemblyCompany;
             this.TextBoxOpis.Text = AssemblyDescription;
+            //TODO obrazek
         }
 
         #region Assembly Attribute Accessors

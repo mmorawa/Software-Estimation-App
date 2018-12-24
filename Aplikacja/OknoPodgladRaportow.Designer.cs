@@ -34,12 +34,12 @@
             this.ButtonPoprzednia = new System.Windows.Forms.Button();
             this.ButtonUstawieniaDruk = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ButtonEksportPDF = new System.Windows.Forms.Button();
-            this.ButtonEksportRTF = new System.Windows.Forms.Button();
-            this.ButtonPowieksz = new System.Windows.Forms.Button();
-            this.ButtonPomniejsz = new System.Windows.Forms.Button();
-            this.LabelStrona = new System.Windows.Forms.Label();
             this.LabelPowiekszenie = new System.Windows.Forms.Label();
+            this.LabelStrona = new System.Windows.Forms.Label();
+            this.ButtonPomniejsz = new System.Windows.Forms.Button();
+            this.ButtonPowieksz = new System.Windows.Forms.Button();
+            this.ButtonEksportRTF = new System.Windows.Forms.Button();
+            this.ButtonEksportPDF = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,20 +78,20 @@
             this.ButtonNastepna.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ButtonNastepna.Location = new System.Drawing.Point(724, 13);
             this.ButtonNastepna.Name = "ButtonNastepna";
-            this.ButtonNastepna.Size = new System.Drawing.Size(96, 27);
+            this.ButtonNastepna.Size = new System.Drawing.Size(34, 27);
             this.ButtonNastepna.TabIndex = 3;
-            this.ButtonNastepna.Text = "Następna";
+            this.ButtonNastepna.Text = ">>";
             this.ButtonNastepna.UseVisualStyleBackColor = true;
             this.ButtonNastepna.Click += new System.EventHandler(this.ButtonNastepna_Click);
             // 
             // ButtonPoprzednia
             // 
             this.ButtonPoprzednia.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPoprzednia.Location = new System.Drawing.Point(563, 13);
+            this.ButtonPoprzednia.Location = new System.Drawing.Point(626, 13);
             this.ButtonPoprzednia.Name = "ButtonPoprzednia";
-            this.ButtonPoprzednia.Size = new System.Drawing.Size(98, 27);
+            this.ButtonPoprzednia.Size = new System.Drawing.Size(35, 27);
             this.ButtonPoprzednia.TabIndex = 4;
-            this.ButtonPoprzednia.Text = "Poprzednia";
+            this.ButtonPoprzednia.Text = "<<";
             this.ButtonPoprzednia.UseVisualStyleBackColor = true;
             this.ButtonPoprzednia.Click += new System.EventHandler(this.ButtonPoprzednia_Click);
             // 
@@ -123,16 +123,47 @@
             this.panel1.Size = new System.Drawing.Size(847, 79);
             this.panel1.TabIndex = 6;
             // 
-            // ButtonEksportPDF
+            // LabelPowiekszenie
             // 
-            this.ButtonEksportPDF.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonEksportPDF.Location = new System.Drawing.Point(301, 11);
-            this.ButtonEksportPDF.Name = "ButtonEksportPDF";
-            this.ButtonEksportPDF.Size = new System.Drawing.Size(205, 27);
-            this.ButtonEksportPDF.TabIndex = 6;
-            this.ButtonEksportPDF.Text = "Eksportuj do formatu PDF";
-            this.ButtonEksportPDF.UseVisualStyleBackColor = true;
-            this.ButtonEksportPDF.Click += new System.EventHandler(this.ButtonEksportPDF_Click);
+            this.LabelPowiekszenie.AutoSize = true;
+            this.LabelPowiekszenie.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelPowiekszenie.Location = new System.Drawing.Point(667, 47);
+            this.LabelPowiekszenie.Name = "LabelPowiekszenie";
+            this.LabelPowiekszenie.Size = new System.Drawing.Size(50, 18);
+            this.LabelPowiekszenie.TabIndex = 11;
+            this.LabelPowiekszenie.Text = "label2";
+            // 
+            // LabelStrona
+            // 
+            this.LabelStrona.AutoSize = true;
+            this.LabelStrona.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelStrona.Location = new System.Drawing.Point(667, 16);
+            this.LabelStrona.Name = "LabelStrona";
+            this.LabelStrona.Size = new System.Drawing.Size(50, 18);
+            this.LabelStrona.TabIndex = 10;
+            this.LabelStrona.Text = "label1";
+            // 
+            // ButtonPomniejsz
+            // 
+            this.ButtonPomniejsz.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonPomniejsz.Location = new System.Drawing.Point(626, 44);
+            this.ButtonPomniejsz.Name = "ButtonPomniejsz";
+            this.ButtonPomniejsz.Size = new System.Drawing.Size(35, 27);
+            this.ButtonPomniejsz.TabIndex = 9;
+            this.ButtonPomniejsz.Text = "-";
+            this.ButtonPomniejsz.UseVisualStyleBackColor = true;
+            this.ButtonPomniejsz.Click += new System.EventHandler(this.ButtonPomniejsz_Click);
+            // 
+            // ButtonPowieksz
+            // 
+            this.ButtonPowieksz.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonPowieksz.Location = new System.Drawing.Point(724, 44);
+            this.ButtonPowieksz.Name = "ButtonPowieksz";
+            this.ButtonPowieksz.Size = new System.Drawing.Size(34, 27);
+            this.ButtonPowieksz.TabIndex = 8;
+            this.ButtonPowieksz.Text = "+";
+            this.ButtonPowieksz.UseVisualStyleBackColor = true;
+            this.ButtonPowieksz.Click += new System.EventHandler(this.ButtonPowieksz_Click);
             // 
             // ButtonEksportRTF
             // 
@@ -145,47 +176,16 @@
             this.ButtonEksportRTF.UseVisualStyleBackColor = true;
             this.ButtonEksportRTF.Click += new System.EventHandler(this.ButtonEksportRTF_Click);
             // 
-            // ButtonPowieksz
+            // ButtonEksportPDF
             // 
-            this.ButtonPowieksz.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPowieksz.Location = new System.Drawing.Point(724, 44);
-            this.ButtonPowieksz.Name = "ButtonPowieksz";
-            this.ButtonPowieksz.Size = new System.Drawing.Size(96, 27);
-            this.ButtonPowieksz.TabIndex = 8;
-            this.ButtonPowieksz.Text = "Powiększ";
-            this.ButtonPowieksz.UseVisualStyleBackColor = true;
-            this.ButtonPowieksz.Click += new System.EventHandler(this.ButtonPowieksz_Click);
-            // 
-            // ButtonPomniejsz
-            // 
-            this.ButtonPomniejsz.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPomniejsz.Location = new System.Drawing.Point(563, 44);
-            this.ButtonPomniejsz.Name = "ButtonPomniejsz";
-            this.ButtonPomniejsz.Size = new System.Drawing.Size(98, 27);
-            this.ButtonPomniejsz.TabIndex = 9;
-            this.ButtonPomniejsz.Text = "Pomniejsz";
-            this.ButtonPomniejsz.UseVisualStyleBackColor = true;
-            this.ButtonPomniejsz.Click += new System.EventHandler(this.ButtonPomniejsz_Click);
-            // 
-            // LabelStrona
-            // 
-            this.LabelStrona.AutoSize = true;
-            this.LabelStrona.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelStrona.Location = new System.Drawing.Point(667, 16);
-            this.LabelStrona.Name = "LabelStrona";
-            this.LabelStrona.Size = new System.Drawing.Size(50, 18);
-            this.LabelStrona.TabIndex = 10;
-            this.LabelStrona.Text = "label1";
-            // 
-            // LabelPowiekszenie
-            // 
-            this.LabelPowiekszenie.AutoSize = true;
-            this.LabelPowiekszenie.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelPowiekszenie.Location = new System.Drawing.Point(667, 47);
-            this.LabelPowiekszenie.Name = "LabelPowiekszenie";
-            this.LabelPowiekszenie.Size = new System.Drawing.Size(50, 18);
-            this.LabelPowiekszenie.TabIndex = 11;
-            this.LabelPowiekszenie.Text = "label2";
+            this.ButtonEksportPDF.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonEksportPDF.Location = new System.Drawing.Point(301, 11);
+            this.ButtonEksportPDF.Name = "ButtonEksportPDF";
+            this.ButtonEksportPDF.Size = new System.Drawing.Size(205, 27);
+            this.ButtonEksportPDF.TabIndex = 6;
+            this.ButtonEksportPDF.Text = "Eksportuj do formatu PDF";
+            this.ButtonEksportPDF.UseVisualStyleBackColor = true;
+            this.ButtonEksportPDF.Click += new System.EventHandler(this.ButtonEksportPDF_Click);
             // 
             // OknoPodgladRaportow
             // 

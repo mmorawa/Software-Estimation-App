@@ -73,7 +73,7 @@
             this.GroupBoxSzczDomyslneUstawienia.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxSzczDomyslneUstawienia.Location = new System.Drawing.Point(12, 12);
             this.GroupBoxSzczDomyslneUstawienia.Name = "GroupBoxSzczDomyslneUstawienia";
-            this.GroupBoxSzczDomyslneUstawienia.Size = new System.Drawing.Size(510, 716);
+            this.GroupBoxSzczDomyslneUstawienia.Size = new System.Drawing.Size(510, 648);
             this.GroupBoxSzczDomyslneUstawienia.TabIndex = 16;
             this.GroupBoxSzczDomyslneUstawienia.TabStop = false;
             this.GroupBoxSzczDomyslneUstawienia.Text = "Domyślne ustawienia";
@@ -81,9 +81,9 @@
             // GroupBoxDomZalozeniaProjektu
             // 
             this.GroupBoxDomZalozeniaProjektu.Controls.Add(this.tableLayoutPanel2);
-            this.GroupBoxDomZalozeniaProjektu.Location = new System.Drawing.Point(12, 385);
+            this.GroupBoxDomZalozeniaProjektu.Location = new System.Drawing.Point(12, 372);
             this.GroupBoxDomZalozeniaProjektu.Name = "GroupBoxDomZalozeniaProjektu";
-            this.GroupBoxDomZalozeniaProjektu.Size = new System.Drawing.Size(482, 310);
+            this.GroupBoxDomZalozeniaProjektu.Size = new System.Drawing.Size(482, 254);
             this.GroupBoxDomZalozeniaProjektu.TabIndex = 42;
             this.GroupBoxDomZalozeniaProjektu.TabStop = false;
             this.GroupBoxDomZalozeniaProjektu.Text = "Odnośnie założeń projektu";
@@ -156,8 +156,8 @@
             this.NumericStawkaGodz.Location = new System.Drawing.Point(174, 61);
             this.NumericStawkaGodz.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
             this.NumericStawkaGodz.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            1000000000,
+            0,
             0,
             0});
             this.NumericStawkaGodz.Name = "NumericStawkaGodz";
@@ -173,8 +173,8 @@
             this.NumericOsoboMGodz.Location = new System.Drawing.Point(174, 109);
             this.NumericOsoboMGodz.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
             this.NumericOsoboMGodz.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            1000000,
+            0,
             0,
             0});
             this.NumericOsoboMGodz.Name = "NumericOsoboMGodz";
@@ -189,8 +189,8 @@
             this.NumericDzRobGodz.Location = new System.Drawing.Point(174, 157);
             this.NumericDzRobGodz.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
             this.NumericDzRobGodz.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            24,
+            0,
             0,
             0});
             this.NumericDzRobGodz.Name = "NumericDzRobGodz";
@@ -311,7 +311,7 @@
             this.GroupBoxDomDaneProjektu.Controls.Add(this.label10);
             this.GroupBoxDomDaneProjektu.Controls.Add(this.TextBoxTelefon);
             this.GroupBoxDomDaneProjektu.Controls.Add(this.label11);
-            this.GroupBoxDomDaneProjektu.Location = new System.Drawing.Point(12, 34);
+            this.GroupBoxDomDaneProjektu.Location = new System.Drawing.Point(12, 21);
             this.GroupBoxDomDaneProjektu.Name = "GroupBoxDomDaneProjektu";
             this.GroupBoxDomDaneProjektu.Size = new System.Drawing.Size(482, 345);
             this.GroupBoxDomDaneProjektu.TabIndex = 41;
@@ -425,7 +425,7 @@
             // 
             this.ButtonAnuluj.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.ButtonAnuluj.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonAnuluj.Location = new System.Drawing.Point(287, 746);
+            this.ButtonAnuluj.Location = new System.Drawing.Point(283, 666);
             this.ButtonAnuluj.Name = "ButtonAnuluj";
             this.ButtonAnuluj.Size = new System.Drawing.Size(104, 27);
             this.ButtonAnuluj.TabIndex = 18;
@@ -436,7 +436,7 @@
             // 
             this.ButtonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.ButtonOk.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOk.Location = new System.Drawing.Point(127, 746);
+            this.ButtonOk.Location = new System.Drawing.Point(123, 666);
             this.ButtonOk.Name = "ButtonOk";
             this.ButtonOk.Size = new System.Drawing.Size(104, 27);
             this.ButtonOk.TabIndex = 17;
@@ -447,7 +447,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 797);
+            this.ClientSize = new System.Drawing.Size(536, 710);
             this.Controls.Add(this.ButtonAnuluj);
             this.Controls.Add(this.ButtonOk);
             this.Controls.Add(this.GroupBoxSzczDomyslneUstawienia);

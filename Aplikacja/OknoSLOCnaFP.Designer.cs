@@ -281,7 +281,7 @@
             this.NumericJavaScript.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericJavaScript.Location = new System.Drawing.Point(190, 489);
             this.NumericJavaScript.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -319,7 +319,7 @@
             this.NumericABAP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericABAP.Location = new System.Drawing.Point(190, 3);
             this.NumericABAP.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -731,7 +731,7 @@
             this.NumericASP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericASP.Location = new System.Drawing.Point(190, 30);
             this.NumericASP.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -747,7 +747,7 @@
             this.NumericBrio.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericBrio.Location = new System.Drawing.Point(190, 84);
             this.NumericBrio.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -763,7 +763,7 @@
             this.NumericAssembler.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericAssembler.Location = new System.Drawing.Point(190, 57);
             this.NumericAssembler.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -779,7 +779,7 @@
             this.NumericC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericC.Location = new System.Drawing.Point(190, 111);
             this.NumericC.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -795,7 +795,7 @@
             this.NumericCpp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericCpp.Location = new System.Drawing.Point(190, 138);
             this.NumericCpp.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -811,7 +811,7 @@
             this.NumericCsharp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericCsharp.Location = new System.Drawing.Point(190, 165);
             this.NumericCsharp.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -827,7 +827,7 @@
             this.NumericCOBOL.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericCOBOL.Location = new System.Drawing.Point(190, 192);
             this.NumericCOBOL.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -843,7 +843,7 @@
             this.NumericCognos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericCognos.Location = new System.Drawing.Point(190, 219);
             this.NumericCognos.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -859,7 +859,7 @@
             this.NumericCross.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericCross.Location = new System.Drawing.Point(190, 246);
             this.NumericCross.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -875,7 +875,7 @@
             this.NumericCool.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericCool.Location = new System.Drawing.Point(190, 273);
             this.NumericCool.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -891,7 +891,7 @@
             this.NumericDatastage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericDatastage.Location = new System.Drawing.Point(190, 300);
             this.NumericDatastage.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -907,7 +907,7 @@
             this.NumericExcel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericExcel.Location = new System.Drawing.Point(190, 327);
             this.NumericExcel.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -923,7 +923,7 @@
             this.NumericFocus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericFocus.Location = new System.Drawing.Point(190, 354);
             this.NumericFocus.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -939,7 +939,7 @@
             this.NumericFoxPro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericFoxPro.Location = new System.Drawing.Point(190, 381);
             this.NumericFoxPro.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -955,7 +955,7 @@
             this.NumericHTML.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericHTML.Location = new System.Drawing.Point(190, 408);
             this.NumericHTML.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -971,7 +971,7 @@
             this.NumericJ2EE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericJ2EE.Location = new System.Drawing.Point(190, 435);
             this.NumericJ2EE.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -987,7 +987,7 @@
             this.NumericJava.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericJava.Location = new System.Drawing.Point(190, 462);
             this.NumericJava.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -1003,7 +1003,7 @@
             this.NumericJCL.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericJCL.Location = new System.Drawing.Point(431, 3);
             this.NumericJCL.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -1019,7 +1019,7 @@
             this.NumericLINC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericLINC.Location = new System.Drawing.Point(431, 30);
             this.NumericLINC.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -1035,7 +1035,7 @@
             this.NumericLotus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericLotus.Location = new System.Drawing.Point(431, 57);
             this.NumericLotus.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -1051,7 +1051,7 @@
             this.NumericNatural.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericNatural.Location = new System.Drawing.Point(431, 84);
             this.NumericNatural.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -1067,7 +1067,7 @@
             this.NumericDotNet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericDotNet.Location = new System.Drawing.Point(431, 111);
             this.NumericDotNet.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -1083,7 +1083,7 @@
             this.NumericOracle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericOracle.Location = new System.Drawing.Point(431, 138);
             this.NumericOracle.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -1099,7 +1099,7 @@
             this.NumericPACBASE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericPACBASE.Location = new System.Drawing.Point(431, 165);
             this.NumericPACBASE.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -1115,7 +1115,7 @@
             this.NumericPerl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericPerl.Location = new System.Drawing.Point(431, 192);
             this.NumericPerl.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -1131,7 +1131,7 @@
             this.NumericPLI.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericPLI.Location = new System.Drawing.Point(431, 219);
             this.NumericPLI.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -1147,7 +1147,7 @@
             this.NumericPLSQL.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericPLSQL.Location = new System.Drawing.Point(431, 246);
             this.NumericPLSQL.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -1163,7 +1163,7 @@
             this.NumericPowerbuilder.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericPowerbuilder.Location = new System.Drawing.Point(431, 273);
             this.NumericPowerbuilder.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -1179,7 +1179,7 @@
             this.NumericREXX.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericREXX.Location = new System.Drawing.Point(431, 300);
             this.NumericREXX.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -1195,7 +1195,7 @@
             this.NumericSabretalk.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericSabretalk.Location = new System.Drawing.Point(431, 327);
             this.NumericSabretalk.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -1211,7 +1211,7 @@
             this.NumericSAS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericSAS.Location = new System.Drawing.Point(431, 354);
             this.NumericSAS.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -1227,7 +1227,7 @@
             this.NumericSiebel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericSiebel.Location = new System.Drawing.Point(431, 381);
             this.NumericSiebel.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -1243,7 +1243,7 @@
             this.NumericSLOGAN.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericSLOGAN.Location = new System.Drawing.Point(431, 408);
             this.NumericSLOGAN.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -1259,7 +1259,7 @@
             this.NumericSQL.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericSQL.Location = new System.Drawing.Point(431, 435);
             this.NumericSQL.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -1275,7 +1275,7 @@
             this.NumericVBNet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericVBNet.Location = new System.Drawing.Point(431, 462);
             this.NumericVBNet.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});
@@ -1291,7 +1291,7 @@
             this.NumericVisualBasic.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumericVisualBasic.Location = new System.Drawing.Point(431, 489);
             this.NumericVisualBasic.Maximum = new decimal(new int[] {
-            2000000000,
+            1000000,
             0,
             0,
             0});

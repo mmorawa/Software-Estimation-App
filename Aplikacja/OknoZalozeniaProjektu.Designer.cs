@@ -47,6 +47,10 @@
             this.GroupBoxOgraniczenia = new System.Windows.Forms.GroupBox();
             this.CheckBoxAktywacja = new System.Windows.Forms.CheckBox();
             this.TableLayoutOgraniczenia = new System.Windows.Forms.TableLayoutPanel();
+            this.NumericMaxZespol = new System.Windows.Forms.NumericUpDown();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.NumericMaxKoszt = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -56,10 +60,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.NumericMaxHarm = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.NumericMaxZespol = new System.Windows.Forms.NumericUpDown();
             this.TimePickerDeadline = new System.Windows.Forms.DateTimePicker();
             this.GroupBoxSzczDaneProjektu.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -68,10 +68,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumericDzRobGodz)).BeginInit();
             this.GroupBoxOgraniczenia.SuspendLayout();
             this.TableLayoutOgraniczenia.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericMaxZespol)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericMaxKoszt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericMaxPrac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericMaxHarm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericMaxZespol)).BeginInit();
             this.SuspendLayout();
             // 
             // ButtonAnuluj
@@ -239,7 +239,7 @@
             this.NumericStawkaGodz.Location = new System.Drawing.Point(207, 56);
             this.NumericStawkaGodz.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
             this.NumericStawkaGodz.Maximum = new decimal(new int[] {
-            1000000,
+            1000000000,
             0,
             0,
             0});
@@ -273,7 +273,7 @@
             this.NumericDzRobGodz.Location = new System.Drawing.Point(207, 144);
             this.NumericDzRobGodz.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
             this.NumericDzRobGodz.Maximum = new decimal(new int[] {
-            1000000,
+            24,
             0,
             0,
             0});
@@ -361,7 +361,7 @@
             this.TableLayoutOgraniczenia.ColumnCount = 3;
             this.TableLayoutOgraniczenia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 205F));
             this.TableLayoutOgraniczenia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 147F));
-            this.TableLayoutOgraniczenia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
+            this.TableLayoutOgraniczenia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 137F));
             this.TableLayoutOgraniczenia.Controls.Add(this.NumericMaxZespol, 1, 4);
             this.TableLayoutOgraniczenia.Controls.Add(this.label9, 2, 4);
             this.TableLayoutOgraniczenia.Controls.Add(this.label4, 0, 2);
@@ -387,6 +387,57 @@
             this.TableLayoutOgraniczenia.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.TableLayoutOgraniczenia.Size = new System.Drawing.Size(489, 204);
             this.TableLayoutOgraniczenia.TabIndex = 29;
+            // 
+            // NumericMaxZespol
+            // 
+            this.NumericMaxZespol.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NumericMaxZespol.Location = new System.Drawing.Point(208, 171);
+            this.NumericMaxZespol.Margin = new System.Windows.Forms.Padding(3, 11, 3, 3);
+            this.NumericMaxZespol.Maximum = new decimal(new int[] {
+            1000000000,
+            0,
+            0,
+            0});
+            this.NumericMaxZespol.Name = "NumericMaxZespol";
+            this.NumericMaxZespol.Size = new System.Drawing.Size(141, 22);
+            this.NumericMaxZespol.TabIndex = 46;
+            this.NumericMaxZespol.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.NumericMaxZespol.ThousandsSeparator = true;
+            this.NumericMaxZespol.ValueChanged += new System.EventHandler(this.NumericMaxZespol_ValueChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label9.Location = new System.Drawing.Point(355, 160);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(131, 44);
+            this.label9.TabIndex = 46;
+            this.label9.Text = "osób";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Location = new System.Drawing.Point(3, 80);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(199, 40);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "Nieprzekraczalny termin zakończenia projektu:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Location = new System.Drawing.Point(3, 160);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(199, 44);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Maksymalna średnia wielkość zespołu:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // NumericMaxKoszt
             // 
@@ -512,57 +563,6 @@
             this.label14.Text = "miesięcy";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(3, 160);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(199, 44);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Maksymalna średnia wielkość zespołu:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(3, 80);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(199, 40);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "Nieprzekraczalny termin zakończenia projektu:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.Location = new System.Drawing.Point(355, 160);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(131, 44);
-            this.label9.TabIndex = 46;
-            this.label9.Text = "osób";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // NumericMaxZespol
-            // 
-            this.NumericMaxZespol.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericMaxZespol.Location = new System.Drawing.Point(208, 171);
-            this.NumericMaxZespol.Margin = new System.Windows.Forms.Padding(3, 11, 3, 3);
-            this.NumericMaxZespol.Maximum = new decimal(new int[] {
-            1000000000,
-            0,
-            0,
-            0});
-            this.NumericMaxZespol.Name = "NumericMaxZespol";
-            this.NumericMaxZespol.Size = new System.Drawing.Size(141, 22);
-            this.NumericMaxZespol.TabIndex = 46;
-            this.NumericMaxZespol.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.NumericMaxZespol.ThousandsSeparator = true;
-            this.NumericMaxZespol.ValueChanged += new System.EventHandler(this.NumericMaxZespol_ValueChanged);
-            // 
             // TimePickerDeadline
             // 
             this.TableLayoutOgraniczenia.SetColumnSpan(this.TimePickerDeadline, 2);
@@ -595,10 +595,10 @@
             this.GroupBoxOgraniczenia.PerformLayout();
             this.TableLayoutOgraniczenia.ResumeLayout(false);
             this.TableLayoutOgraniczenia.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericMaxZespol)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericMaxKoszt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericMaxPrac)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericMaxHarm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericMaxZespol)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -148,8 +148,7 @@ namespace Aplikacja
         {
             var sekcja = dokument.LastSection;
 
-            //EXT Jak brak to wpisz brak
-
+            
             var paragraf = sekcja.AddParagraph("Podstawowe informacje", "Heading1");
 
             paragraf = sekcja.AddParagraph("Dane projektu", "Heading3");
@@ -201,7 +200,7 @@ namespace Aplikacja
             paragraf.Format.Font.Bold = true;
             paragraf.AddFormattedText(JezykProg[JezykProgramowania], TextFormat.NotBold);
 
-            //TODO ładnie opisane
+            //EXT ładnie opisane
             paragraf = sekcja.AddParagraph("Stawka godzinowa: ");
             paragraf.Format.Font.Bold = true;
             paragraf.AddFormattedText(StawkaGodz + " zł", TextFormat.NotBold);
