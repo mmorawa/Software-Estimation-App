@@ -261,20 +261,21 @@
             this.ToolStripOpisProjektu.Name = "ToolStripOpisProjektu";
             this.ToolStripOpisProjektu.Size = new System.Drawing.Size(224, 22);
             this.ToolStripOpisProjektu.Text = "&Opis projektu";
+            this.ToolStripOpisProjektu.Click += new System.EventHandler(this.ToolStripOpisProjektu_Click);
             // 
             // ToolStripPełneOszacowanie
             // 
-            this.ToolStripPełneOszacowanie.Enabled = false;
             this.ToolStripPełneOszacowanie.Name = "ToolStripPełneOszacowanie";
             this.ToolStripPełneOszacowanie.Size = new System.Drawing.Size(224, 22);
             this.ToolStripPełneOszacowanie.Text = "&Pełne oszacowanie";
+            this.ToolStripPełneOszacowanie.Click += new System.EventHandler(this.ToolStripPełneOszacowanie_Click);
             // 
             // ToolStripPodsumowanieProjektu
             // 
-            this.ToolStripPodsumowanieProjektu.Enabled = false;
             this.ToolStripPodsumowanieProjektu.Name = "ToolStripPodsumowanieProjektu";
             this.ToolStripPodsumowanieProjektu.Size = new System.Drawing.Size(224, 22);
             this.ToolStripPodsumowanieProjektu.Text = "Po&dsumowanie projektu";
+            this.ToolStripPodsumowanieProjektu.Click += new System.EventHandler(this.ToolStripPodsumowanieProjektu_Click);
             // 
             // ToolStripMenuOpcje
             // 

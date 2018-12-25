@@ -286,6 +286,35 @@ namespace Aplikacja
             Application.Exit();
         }
 
+        //! Metoda wywoływana po naciśnięciu przycisku Save As na pasku Menu.
+        /*! Metoda SaveAsToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Save As na pasku Menu.
+         * Powoduje ona zamknięcie aktywnej bazy poprzez wywołanie metody CloseDatabase.
+         */
+        private void ToolStripOpisProjektu_Click(object sender, EventArgs e)
+        {
+            ButtonOpisProjektu_Click(sender, e);
+        }
+
+        //! Metoda wywoływana po naciśnięciu przycisku Save As na pasku Menu.
+        /*! Metoda SaveAsToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Save As na pasku Menu.
+         * Powoduje ona zamknięcie aktywnej bazy poprzez wywołanie metody CloseDatabase.
+         */
+        private void ToolStripPełneOszacowanie_Click(object sender, EventArgs e)
+        {
+            ButtonOszacowanie_Click(sender, e);
+        }
+
+        //! Metoda wywoływana po naciśnięciu przycisku Save As na pasku Menu.
+        /*! Metoda SaveAsToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Save As na pasku Menu.
+         * Powoduje ona zamknięcie aktywnej bazy poprzez wywołanie metody CloseDatabase.
+         */
+        private void ToolStripPodsumowanieProjektu_Click(object sender, EventArgs e)
+        {
+            ButtonPodsumowanieProjektu_Click(sender, e);
+        }
+
+
+
         //! Metoda wywoływana po naciśnięciu przycisku Exit na pasku Menu.
         /*! Metoda ExitToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Exit na pasku Menu.
          * Skutkuje ona zamknięciem aktywnej bazy poprzez wywołanie metody CloseDatabase oraz wyjściem z programu.
@@ -1270,19 +1299,8 @@ namespace Aplikacja
 
         private void ButtonKreator_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show(TabPktFunkSLOC[JezykProgramowania].ToString());
-            //MessageBox.Show(F.ToString());
-            //MessageBox.Show(E.ToString());
 
 
-            /*
-            MessageBox.Show(Properties.Settings.Default.A.ToString());
-            MessageBox.Show(Properties.Settings.Default.B.ToString());
-            MessageBox.Show(Properties.Settings.Default.C.ToString());
-            MessageBox.Show(Properties.Settings.Default.D.ToString());
-            */
-
-            Oszacowanie();
         }
 
 
