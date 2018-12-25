@@ -284,6 +284,18 @@ namespace Aplikacja
          */
         private void ToolStripMenuWyjscie_Click(object sender, EventArgs e)
         {
+
+            DialogResult rezultat = MessageBox.Show("Czy chcesz zapisać obecny projekt?", "Uwaga!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+
+            if (rezultat == DialogResult.Yes)
+            {
+                ButtonZapiszProjekt_Click(sender, e);
+            }
+            else if (rezultat == DialogResult.Cancel)
+            {
+                return;
+            }
+
             Application.Exit();
         }
 
@@ -782,10 +794,7 @@ namespace Aplikacja
         private void ButtonNowyProjekt_Click(object sender, EventArgs e)
         {
 
-            DialogResult rezultat = MessageBox.Show("Czy chcesz zapisać obecny projekt?",
-                "Uwaga!",
-                MessageBoxButtons.YesNoCancel,
-                MessageBoxIcon.Exclamation);
+            DialogResult rezultat = MessageBox.Show("Czy chcesz zapisać obecny projekt?", "Uwaga!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
 
             if (rezultat == DialogResult.Yes)
             {
@@ -1325,11 +1334,26 @@ namespace Aplikacja
 
         private void ButtonKreator_Click(object sender, EventArgs e)
         {
+
+            DialogResult rezultat = MessageBox.Show("Czy chcesz zapisać obecny projekt?", "Uwaga!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+
+            if (rezultat == DialogResult.Yes)
+            {
+                ButtonZapiszProjekt_Click(sender, e);
+            }
+            else if (rezultat == DialogResult.Cancel)
+            {
+                return;
+            }
+
+            UsuniecieDanych();
+
+
             using (OknoKreator OknoKreatorOszacowania = new OknoKreator())
             {
-                DialogResult rezultat = OknoKreatorOszacowania.ShowDialog();
+                DialogResult rezultatOkna = OknoKreatorOszacowania.ShowDialog();
 
-                if (rezultat == DialogResult.OK)
+                if (rezultatOkna == DialogResult.OK)
                 {
 
                    
