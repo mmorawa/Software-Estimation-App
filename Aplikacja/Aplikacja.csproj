@@ -87,6 +87,12 @@
     <Compile Include="OknoKalibracja.Designer.cs">
       <DependentUpon>OknoKalibracja.cs</DependentUpon>
     </Compile>
+    <Compile Include="OknoKreator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OknoKreator.Designer.cs">
+      <DependentUpon>OknoKreator.cs</DependentUpon>
+    </Compile>
     <Compile Include="OknoMnoznikiPracochlonnosci.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OknoKalibracja.resx">
       <DependentUpon>OknoKalibracja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OknoKreator.resx">
+      <DependentUpon>OknoKreator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OknoMnoznikiPracochlonnosci.resx">
       <DependentUpon>OknoMnoznikiPracochlonnosci.cs</DependentUpon>

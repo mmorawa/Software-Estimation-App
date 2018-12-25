@@ -117,40 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label19.Text" xml:space="preserve">
-    <value>Odzwierciedla wpływ dużych wymagań odnośnie danych testowych na wytwarzanie oprogramowania. Ocena jest zależna od stosunku liczby bajtów testowej bazy danych do rozmiaru aplikacji liczonego w liniach kodu (D/P).</value>
-  </data>
-  <data name="label20.Text" xml:space="preserve">
-    <value>Ocena złożoności produktu obejmuje pięć głównych obszarów: operacje kontrolne, operacje obliczeniowe, operacje zależne od sprzętu, operacje zarządzania danymi oraz operacje zarządzania interfejsem użytkownika.  </value>
-  </data>
-  <data name="label21.Text" xml:space="preserve">
-    <value>Ten mnożnik odpowiada za uwzględnienie dodatkowego nakładu pracy, który wiąże się z tworzeniem komponentów aplikacji w sposób pozwalający na ich ponowne użycie w przyszłości. Im bardziej abstrakcyjny i ogólny musi być dany komponent tym większa będzie pracochłonność jego wytworzenia.</value>
-  </data>
-  <data name="label23.Text" xml:space="preserve">
-    <value>Analitycy biznesowi opracowują wymagania, które musi spełniać projektowane oprogramowanie w celu uzyskania przez organizację określonych korzyści biznesowych. Ocena umiejętności analityków powinna obejmować ich zdolność analizy i projektowania, dokładność, efektywność oraz komunikatywność.</value>
-  </data>
-  <data name="label24.Text" xml:space="preserve">
-    <value>Główne czynniki jakie należy wziąć pod uwagę oceniając umiejętności programistów stanowią: ich efektywność, dokładność, komunikatywność oraz kooperatywność. Natomiast doświadczenie jest uwzględnione przez inne mnożniki. </value>
-  </data>
-  <data name="label27.Text" xml:space="preserve">
-    <value>W przypadku tego mnożnika konieczne jest określenie wielkości doświadczenia zespołu projektowego związanego z wykorzystaniem określonej platformy czyli połączenia sprzętu komputerowego i oprogramowania, na którym działał będzie tworzony produkt.</value>
-  </data>
-  <data name="label29.Text" xml:space="preserve">
-    <value>Poziom oceny tego mnożnika zależy od narzuconego na projektowany system ograniczenia czasu wykonania. Jest ono wyrażone w postaci procentowej wielkości dostępnego czasu wykonania, która zostanie zużyta przez tworzony system.</value>
-  </data>
-  <data name="label30.Text" xml:space="preserve">
-    <value>W tym przypadku ocenie podlega stopień nałożonego na projektowany system ograniczenia pamięciowego określonego w postaci procentowej wielkości dostępnej pamięci, która zostanie zajęta przez tworzony system.</value>
-  </data>
-  <data name="label31.Text" xml:space="preserve">
-    <value>Ten mnożnik bierze pod uwagę, jak bardzo podlega zmianom platforma, na której działał będzie tworzony system. W ramach oceny należy uwzględnić zarówno zmiany zachodzące w sprzęcie komputerowym, jak i w oprogramowaniu platformy.</value>
-  </data>
-  <data name="label32.Text" xml:space="preserve">
-    <value>Użycie nowoczesnych narzędzi programistycznych umożliwia znaczne zmniejszenie nakładu pracy potrzebnego do wytworzenia oprogramowania, przy czym im bardziej są one zaawansowane i rozbudowane, tym większą przynoszą korzyść.</value>
-  </data>
-  <data name="label33.Text" xml:space="preserve">
-    <value>Osoby pracujące nad projektem mogą znajdować się w jednym budynku lub w wielu różnych miejscach, co przekłada się na wzrost pracochłonności. Drugim czynnikiem branym pod uwagę przy ocenie tego mnożnika jest sposób komunikacji pomiędzy członkami zespołu.</value>
-  </data>
-  <metadata name="ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
 </root>
