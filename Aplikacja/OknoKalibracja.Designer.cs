@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoKalibracja));
             this.ButtonAnuluj = new System.Windows.Forms.Button();
             this.ButtonOk = new System.Windows.Forms.Button();
             this.GroupBoxKalibracja = new System.Windows.Forms.GroupBox();
@@ -286,6 +287,7 @@
             this.Controls.Add(this.GroupBoxKalibracja);
             this.Controls.Add(this.ButtonAnuluj);
             this.Controls.Add(this.ButtonOk);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OknoKalibracja";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Kalibracja";

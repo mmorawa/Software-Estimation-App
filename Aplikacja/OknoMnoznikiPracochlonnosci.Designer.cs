@@ -1319,6 +1319,7 @@
             this.Controls.Add(this.ButtonAnuluj);
             this.Controls.Add(this.GroupBoxMnoPrac);
             this.Controls.Add(this.ButtonOk);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OknoMnoznikiPracochlonnosci";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Mnożniki pracochłonności";

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoGlowne));
             this.PasekMenu = new System.Windows.Forms.MenuStrip();
             this.ToolStripMenuPlik = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuNowyProj = new System.Windows.Forms.ToolStripMenuItem();
@@ -1669,6 +1670,7 @@
             this.Controls.Add(this.GroupBoxUUCW);
             this.Controls.Add(this.GroupBoxDaneProjektu);
             this.Controls.Add(this.PasekMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.PasekMenu;
             this.Name = "OknoGlowne";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

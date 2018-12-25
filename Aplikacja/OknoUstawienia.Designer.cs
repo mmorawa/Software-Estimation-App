@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoUstawienia));
             this.GroupBoxSzczDomyslneUstawienia = new System.Windows.Forms.GroupBox();
             this.GroupBoxDomZalozeniaProjektu = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -451,6 +452,7 @@
             this.Controls.Add(this.ButtonAnuluj);
             this.Controls.Add(this.ButtonOk);
             this.Controls.Add(this.GroupBoxSzczDomyslneUstawienia);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OknoUstawienia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Ustawienia";

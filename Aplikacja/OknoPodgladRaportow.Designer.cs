@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoPodgladRaportow));
             this.PodgladRaportu = new MigraDoc.Rendering.Forms.DocumentPreview();
             this.ButtonDrukuj = new System.Windows.Forms.Button();
             this.ButtonNastepna = new System.Windows.Forms.Button();
@@ -195,6 +196,7 @@
             this.ClientSize = new System.Drawing.Size(877, 711);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PodgladRaportu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OknoPodgladRaportow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Podgląd Raportu";

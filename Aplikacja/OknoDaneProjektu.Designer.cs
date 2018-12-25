@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoDaneProjektu));
             this.ButtonAnuluj = new System.Windows.Forms.Button();
             this.ButtonOk = new System.Windows.Forms.Button();
             this.GroupBoxSzczDaneProjektu = new System.Windows.Forms.GroupBox();
@@ -243,6 +244,7 @@
             this.Controls.Add(this.GroupBoxSzczDaneProjektu);
             this.Controls.Add(this.ButtonAnuluj);
             this.Controls.Add(this.ButtonOk);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OknoDaneProjektu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Dane projektu";

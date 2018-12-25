@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoSLOCnaFP));
             this.GroupBoxKalibracja = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.NumericJavaScript = new System.Windows.Forms.NumericUpDown();
@@ -1342,6 +1343,7 @@
             this.Controls.Add(this.ButtonAnuluj);
             this.Controls.Add(this.ButtonOk);
             this.Controls.Add(this.GroupBoxKalibracja);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OknoSLOCnaFP";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Tablica przeliczeniowa punktów funkcyjnych na źródłowe linie kodu";
