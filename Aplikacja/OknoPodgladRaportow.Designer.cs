@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoPodgladRaportow));
             this.PodgladRaportu = new MigraDoc.Rendering.Forms.DocumentPreview();
             this.ButtonDrukuj = new System.Windows.Forms.Button();
@@ -41,6 +42,7 @@
             this.ButtonPowieksz = new System.Windows.Forms.Button();
             this.ButtonEksportRTF = new System.Windows.Forms.Button();
             this.ButtonEksportPDF = new System.Windows.Forms.Button();
+            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -220,5 +222,6 @@
         private System.Windows.Forms.Button ButtonPowieksz;
         private System.Windows.Forms.Label LabelPowiekszenie;
         private System.Windows.Forms.Label LabelStrona;
+        private System.Windows.Forms.ToolTip ToolTip;
     }
 }

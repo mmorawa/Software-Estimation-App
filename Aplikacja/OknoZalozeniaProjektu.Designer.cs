@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoZalozeniaProjektu));
             this.ButtonAnuluj = new System.Windows.Forms.Button();
             this.ButtonOk = new System.Windows.Forms.Button();
@@ -62,6 +63,7 @@
             this.NumericMaxHarm = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
             this.TimePickerDeadline = new System.Windows.Forms.DateTimePicker();
+            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.GroupBoxSzczDaneProjektu.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumericStawkaGodz)).BeginInit();
@@ -640,5 +642,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker TimePickerDeadline;
+        private System.Windows.Forms.ToolTip ToolTip;
     }
 }

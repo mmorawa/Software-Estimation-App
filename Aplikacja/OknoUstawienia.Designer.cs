@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoUstawienia));
             this.GroupBoxSzczDomyslneUstawienia = new System.Windows.Forms.GroupBox();
             this.GroupBoxDomZalozeniaProjektu = new System.Windows.Forms.GroupBox();
@@ -58,6 +59,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.ButtonAnuluj = new System.Windows.Forms.Button();
             this.ButtonOk = new System.Windows.Forms.Button();
+            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.GroupBoxSzczDomyslneUstawienia.SuspendLayout();
             this.GroupBoxDomZalozeniaProjektu.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -500,5 +502,6 @@
         private System.Windows.Forms.GroupBox GroupBoxDomZalozeniaProjektu;
         private System.Windows.Forms.GroupBox GroupBoxDomDaneProjektu;
         private System.Windows.Forms.ComboBox ComboBoxJezykProgram;
+        private System.Windows.Forms.ToolTip ToolTip;
     }
 }

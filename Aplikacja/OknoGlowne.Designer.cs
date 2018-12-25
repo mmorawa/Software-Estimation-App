@@ -295,6 +295,7 @@
             this.ToolStripMenuKreator.Name = "ToolStripMenuKreator";
             this.ToolStripMenuKreator.Size = new System.Drawing.Size(208, 22);
             this.ToolStripMenuKreator.Text = "K&reator";
+            this.ToolStripMenuKreator.Click += new System.EventHandler(this.ToolStripMenuKreator_Click);
             // 
             // ToolStripMenuKalibracja
             // 

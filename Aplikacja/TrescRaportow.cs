@@ -851,11 +851,15 @@ namespace Aplikacja
         //Końcowe wyniki oszacowania
         public static void Wyniki(Document dokument)
         {
-            //TODO Rozmiar, UCP, Przekroczenia
+            //TODO Przekroczenia
           
             var sekcja = dokument.LastSection;
 
             var paragraf = sekcja.AddParagraph("Wyniki oszacowania pracochłonności", "Heading1");
+
+            paragraf = sekcja.AddParagraph("Liczba nieskorygowanych punktów przypadków użycia UUCP: " + UUCP);
+            paragraf = sekcja.AddParagraph("Rozmiar (w liniach kodu): " + Rozmiar);
+
 
             paragraf = sekcja.AddParagraph(Ostrzezenie);
             //paragraf = sekcja.AddParagraph("Metoda Use Case Points", "Heading3");

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoDaneProjektu));
             this.ButtonAnuluj = new System.Windows.Forms.Button();
             this.ButtonOk = new System.Windows.Forms.Button();
@@ -47,6 +48,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.TextBoxKierownikProjektu = new System.Windows.Forms.TextBox();
+            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.GroupBoxSzczDaneProjektu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -274,5 +276,6 @@
         private System.Windows.Forms.TextBox TextBoxEmail;
         private System.Windows.Forms.RichTextBox RichTextBoxOpisProjektu;
         private System.Windows.Forms.CheckBox CheckBoxDomyslne;
+        private System.Windows.Forms.ToolTip ToolTip;
     }
 }

@@ -169,6 +169,7 @@ namespace Aplikacja
         double PracochlonnoscBezOgran;
         double PracochlonnoscBezOgranNLep;
         double PracochlonnoscBezOgranNGor;
+        bool Przekroczenie = false;
 
         //wyniki końcowe
         public static double UUCP;
@@ -313,7 +314,14 @@ namespace Aplikacja
             ButtonPodsumowanieProjektu_Click(sender, e);
         }
 
-
+        //! Metoda wywoływana po naciśnięciu przycisku Save As na pasku Menu.
+        /*! Metoda SaveAsToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Save As na pasku Menu.
+         * Powoduje ona zamknięcie aktywnej bazy poprzez wywołanie metody CloseDatabase.
+         */
+        private void ToolStripMenuKreator_Click(object sender, EventArgs e)
+        {
+            ButtonKreator_Click(sender, e);
+        }
 
         //! Metoda wywoływana po naciśnięciu przycisku Exit na pasku Menu.
         /*! Metoda ExitToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Exit na pasku Menu.
@@ -464,6 +472,7 @@ namespace Aplikacja
         {
             
             Ostrzezenie = "";
+            Przekroczenie = false;
 
             //Obliczenia UUCP
 
@@ -596,6 +605,7 @@ namespace Aplikacja
                 if (MaxPrac != 0 && MaxPrac < Pracochlonnosc)
                 {
                     LabelWynikPrac.BackColor = System.Drawing.Color.FromName("red");
+                    Przekroczenie = true;
                 }
                 else
                 {
@@ -605,6 +615,7 @@ namespace Aplikacja
                 if (MaxPrac != 0 && MaxPrac < PracochlonnoscNLep)
                 {
                     LabelWynikNLepPrac.BackColor = System.Drawing.Color.FromName("red");
+                    Przekroczenie = true;
                 }
                 else
                 {
@@ -614,6 +625,7 @@ namespace Aplikacja
                 if (MaxPrac != 0 && MaxPrac < PracochlonnoscNGor)
                 {
                     LabelWynikNGorPrac.BackColor = System.Drawing.Color.FromName("red");
+                    Przekroczenie = true;
                 }
                 else
                 {
@@ -624,6 +636,7 @@ namespace Aplikacja
                 if (MaxHarm != 0 && MaxHarm < Harmonogram)
                 {
                     LabelWynikHarm.BackColor = System.Drawing.Color.FromName("red");
+                    Przekroczenie = true;
                 }
                 else
                 {
@@ -633,6 +646,7 @@ namespace Aplikacja
                 if (MaxHarm != 0 && MaxHarm < HarmonogramNLep)
                 {
                     LabelWynikNLepHarm.BackColor = System.Drawing.Color.FromName("red");
+                    Przekroczenie = true;
                 }
                 else
                 {
@@ -642,6 +656,7 @@ namespace Aplikacja
                 if (MaxHarm != 0 && MaxHarm < HarmonogramNGor)
                 {
                     LabelWynikNGorHarm.BackColor = System.Drawing.Color.FromName("red");
+                    Przekroczenie = true;
                 }
                 else
                 {
@@ -652,6 +667,7 @@ namespace Aplikacja
                 if (Deadline.Date != DateTime.Today && Deadline.Date < DataZakonczenia.Date)
                 {
                     LabelWynikData.BackColor = System.Drawing.Color.FromName("red");
+                    Przekroczenie = true;
                 }
                 else
                 {
@@ -661,6 +677,7 @@ namespace Aplikacja
                 if (Deadline.Date != DateTime.Today && Deadline.Date < DataZakonczeniaNLep.Date)
                 {
                     LabelWynikNLepData.BackColor = System.Drawing.Color.FromName("red");
+                    Przekroczenie = true;
                 }
                 else
                 {
@@ -670,6 +687,7 @@ namespace Aplikacja
                 if (Deadline.Date != DateTime.Today && Deadline.Date < DataZakonczeniaNGor.Date)
                 {
                     LabelWynikNGorData.BackColor = System.Drawing.Color.FromName("red");
+                    Przekroczenie = true;
                 }
                 else
                 {
@@ -680,6 +698,7 @@ namespace Aplikacja
                 if (MaxKoszt != 0 && MaxKoszt < Koszt)
                 {
                     LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("red");
+                    Przekroczenie = true;
                 }
                 else
                 {
@@ -689,6 +708,7 @@ namespace Aplikacja
                 if (MaxKoszt != 0 && MaxKoszt < KosztNLep)
                 {
                     LabelWynikNLepKoszt.BackColor = System.Drawing.Color.FromName("red");
+                    Przekroczenie = true;
                 }
                 else
                 {
@@ -698,6 +718,7 @@ namespace Aplikacja
                 if (MaxKoszt != 0 && MaxKoszt < KosztNGor)
                 {
                     LabelWynikNGorKoszt.BackColor = System.Drawing.Color.FromName("red");
+                    Przekroczenie = true;
                 }
                 else
                 {
@@ -708,6 +729,7 @@ namespace Aplikacja
                 if (MaxZespol != 0 && MaxZespol < SrZespol)
                 {
                     LabelWynikSrZesp.BackColor = System.Drawing.Color.FromName("red");
+                    Przekroczenie = true;
                 }
                 else
                 {
@@ -717,6 +739,7 @@ namespace Aplikacja
                 if (MaxZespol != 0 && MaxZespol < SrZespolNLep)
                 {
                     LabelWynikNLepSrZesp.BackColor = System.Drawing.Color.FromName("red");
+                    Przekroczenie = true;
                 }
                 else
                 {
@@ -726,15 +749,18 @@ namespace Aplikacja
                 if (MaxZespol != 0 && MaxZespol < SrZespolNGor)
                 {
                     LabelWynikNGorSrZesp.BackColor = System.Drawing.Color.FromName("red");
+                    Przekroczenie = true;
                 }
                 else
                 {
                     LabelWynikNGorSrZesp.BackColor = System.Drawing.Color.FromName("control");
                 }
 
-
+                if (Przekroczenie == true)
+                {
+                    Ostrzezenie += "Doszło do przekroczenia nałożonych na oszacowanie ograniczeń.";
+                }
             }
-            //TODO Ostrzezenia
 
             if (Ostrzezenie.Length == 0)
             {

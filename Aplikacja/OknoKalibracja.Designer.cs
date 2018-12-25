@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoKalibracja));
             this.ButtonAnuluj = new System.Windows.Forms.Button();
             this.ButtonOk = new System.Windows.Forms.Button();
@@ -49,6 +50,7 @@
             this.LabelDataRozp = new System.Windows.Forms.Label();
             this.NumericUCPnaFP = new System.Windows.Forms.NumericUpDown();
             this.ButtonPrzywroc = new System.Windows.Forms.Button();
+            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.GroupBoxKalibracja.SuspendLayout();
             this.GroupBoxCOCOMOII.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -323,5 +325,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolTip ToolTip;
     }
 }

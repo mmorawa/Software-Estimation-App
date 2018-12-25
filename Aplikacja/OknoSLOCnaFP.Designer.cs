@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoSLOCnaFP));
             this.GroupBoxKalibracja = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -110,6 +111,7 @@
             this.ButtonPrzywrocDomyslne = new System.Windows.Forms.Button();
             this.ButtonAnuluj = new System.Windows.Forms.Button();
             this.ButtonOk = new System.Windows.Forms.Button();
+            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.GroupBoxKalibracja.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumericJavaScript)).BeginInit();
@@ -1475,5 +1477,6 @@
         private System.Windows.Forms.NumericUpDown NumericSQL;
         private System.Windows.Forms.NumericUpDown NumericVBNet;
         private System.Windows.Forms.NumericUpDown NumericVisualBasic;
+        private System.Windows.Forms.ToolTip ToolTip;
     }
 }

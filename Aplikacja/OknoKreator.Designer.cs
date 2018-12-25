@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoKreator));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.DaneProjektu = new System.Windows.Forms.TabPage();
@@ -130,6 +131,9 @@
             this.label24 = new System.Windows.Forms.Label();
             this.NumUUCWZlozony = new System.Windows.Forms.NumericUpDown();
             this.label43 = new System.Windows.Forms.Label();
+            this.ButtonMnPr = new System.Windows.Forms.Button();
+            this.ButtonCzSk = new System.Windows.Forms.Button();
+            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.tabControl1.SuspendLayout();
             this.DaneProjektu.SuspendLayout();
             this.Zalozenia.SuspendLayout();
@@ -233,6 +237,8 @@
             // COCOMO
             // 
             this.COCOMO.BackColor = System.Drawing.SystemColors.Control;
+            this.COCOMO.Controls.Add(this.ButtonMnPr);
+            this.COCOMO.Controls.Add(this.ButtonCzSk);
             this.COCOMO.Controls.Add(this.button14);
             this.COCOMO.Controls.Add(this.button13);
             this.COCOMO.Controls.Add(this.button12);
@@ -1548,6 +1554,24 @@
             this.label43.Text = "Waga";
             this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // ButtonMnPr
+            // 
+            this.ButtonMnPr.Location = new System.Drawing.Point(280, 368);
+            this.ButtonMnPr.Name = "ButtonMnPr";
+            this.ButtonMnPr.Size = new System.Drawing.Size(219, 27);
+            this.ButtonMnPr.TabIndex = 13;
+            this.ButtonMnPr.Text = "Mnożniki pracochłonności";
+            this.ButtonMnPr.UseVisualStyleBackColor = true;
+            // 
+            // ButtonCzSk
+            // 
+            this.ButtonCzSk.Location = new System.Drawing.Point(68, 368);
+            this.ButtonCzSk.Name = "ButtonCzSk";
+            this.ButtonCzSk.Size = new System.Drawing.Size(173, 27);
+            this.ButtonCzSk.TabIndex = 12;
+            this.ButtonCzSk.Text = "Czynniki skali";
+            this.ButtonCzSk.UseVisualStyleBackColor = true;
+            // 
             // OknoKreator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1695,5 +1719,8 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Button ButtonMnPr;
+        private System.Windows.Forms.Button ButtonCzSk;
+        private System.Windows.Forms.ToolTip ToolTip;
     }
 }
