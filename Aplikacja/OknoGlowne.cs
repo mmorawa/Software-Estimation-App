@@ -1299,10 +1299,20 @@ namespace Aplikacja
 
         private void ButtonKreator_Click(object sender, EventArgs e)
         {
+            using (OknoKreator OknoKreatorOszacowania = new OknoKreator())
+            {
+                DialogResult rezultat = OknoKreatorOszacowania.ShowDialog();
 
+                if (rezultat == DialogResult.OK)
+                {
 
+                   
+                    Oszacowanie();
+                    MessageBox.Show("Udało się wykonać oszacowanie.", "Sukces");
+                }
+
+            }
         }
-
 
         private void ButtonTablicaPrzeliczeniowa_Click(object sender, EventArgs e)
         {

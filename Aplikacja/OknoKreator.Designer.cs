@@ -166,7 +166,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(575, 736);
+            this.tabControl1.Size = new System.Drawing.Size(575, 792);
             this.tabControl1.TabIndex = 0;
             // 
             // DaneProjektu
@@ -197,7 +197,7 @@
             this.DaneProjektu.Location = new System.Drawing.Point(4, 25);
             this.DaneProjektu.Name = "DaneProjektu";
             this.DaneProjektu.Padding = new System.Windows.Forms.Padding(3);
-            this.DaneProjektu.Size = new System.Drawing.Size(567, 707);
+            this.DaneProjektu.Size = new System.Drawing.Size(567, 763);
             this.DaneProjektu.TabIndex = 0;
             this.DaneProjektu.Text = "Dane projektu";
             // 
@@ -212,7 +212,7 @@
             this.Zalozenia.Location = new System.Drawing.Point(4, 25);
             this.Zalozenia.Name = "Zalozenia";
             this.Zalozenia.Padding = new System.Windows.Forms.Padding(3);
-            this.Zalozenia.Size = new System.Drawing.Size(567, 707);
+            this.Zalozenia.Size = new System.Drawing.Size(567, 763);
             this.Zalozenia.TabIndex = 1;
             this.Zalozenia.Text = "Założenia projektu";
             // 
@@ -226,7 +226,7 @@
             this.UCP.Controls.Add(this.button10);
             this.UCP.Location = new System.Drawing.Point(4, 25);
             this.UCP.Name = "UCP";
-            this.UCP.Size = new System.Drawing.Size(567, 707);
+            this.UCP.Size = new System.Drawing.Size(567, 763);
             this.UCP.TabIndex = 2;
             this.UCP.Text = "Use Case Points";
             // 
@@ -238,7 +238,7 @@
             this.COCOMO.Controls.Add(this.button12);
             this.COCOMO.Location = new System.Drawing.Point(4, 25);
             this.COCOMO.Name = "COCOMO";
-            this.COCOMO.Size = new System.Drawing.Size(567, 707);
+            this.COCOMO.Size = new System.Drawing.Size(567, 763);
             this.COCOMO.TabIndex = 4;
             this.COCOMO.Text = "Model COCOMO II";
             // 
@@ -246,7 +246,7 @@
             // 
             this.button3.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.button3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.Location = new System.Drawing.Point(102, 638);
+            this.button3.Location = new System.Drawing.Point(146, 696);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(104, 27);
             this.button3.TabIndex = 6;
@@ -257,7 +257,7 @@
             // 
             this.button4.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.button4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.Location = new System.Drawing.Point(222, 638);
+            this.button4.Location = new System.Drawing.Point(266, 696);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(104, 27);
             this.button4.TabIndex = 5;
@@ -268,7 +268,7 @@
             // 
             this.button5.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button5.Location = new System.Drawing.Point(372, 638);
+            this.button5.Location = new System.Drawing.Point(416, 696);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(104, 27);
             this.button5.TabIndex = 7;
@@ -306,7 +306,7 @@
             this.TextBoxNazwaProjektu.Location = new System.Drawing.Point(15, 62);
             this.TextBoxNazwaProjektu.MaxLength = 60;
             this.TextBoxNazwaProjektu.Name = "TextBoxNazwaProjektu";
-            this.TextBoxNazwaProjektu.Size = new System.Drawing.Size(466, 22);
+            this.TextBoxNazwaProjektu.Size = new System.Drawing.Size(534, 22);
             this.TextBoxNazwaProjektu.TabIndex = 8;
             // 
             // CheckBoxDomyslne
@@ -324,7 +324,7 @@
             this.RichTextBoxOpisProjektu.Location = new System.Drawing.Point(19, 428);
             this.RichTextBoxOpisProjektu.MaxLength = 2000;
             this.RichTextBoxOpisProjektu.Name = "RichTextBoxOpisProjektu";
-            this.RichTextBoxOpisProjektu.Size = new System.Drawing.Size(459, 178);
+            this.RichTextBoxOpisProjektu.Size = new System.Drawing.Size(530, 178);
             this.RichTextBoxOpisProjektu.TabIndex = 26;
             this.RichTextBoxOpisProjektu.Text = "";
             // 
@@ -351,7 +351,7 @@
             this.TextBoxSzacujacy.Location = new System.Drawing.Point(16, 199);
             this.TextBoxSzacujacy.MaxLength = 50;
             this.TextBoxSzacujacy.Name = "TextBoxSzacujacy";
-            this.TextBoxSzacujacy.Size = new System.Drawing.Size(462, 22);
+            this.TextBoxSzacujacy.Size = new System.Drawing.Size(533, 22);
             this.TextBoxSzacujacy.TabIndex = 19;
             // 
             // label6
@@ -368,7 +368,7 @@
             this.TextBoxEmail.Location = new System.Drawing.Point(16, 375);
             this.TextBoxEmail.MaxLength = 50;
             this.TextBoxEmail.Name = "TextBoxEmail";
-            this.TextBoxEmail.Size = new System.Drawing.Size(462, 22);
+            this.TextBoxEmail.Size = new System.Drawing.Size(533, 22);
             this.TextBoxEmail.TabIndex = 24;
             // 
             // label5
@@ -395,7 +395,7 @@
             this.TextBoxTelefon.Location = new System.Drawing.Point(16, 331);
             this.TextBoxTelefon.MaxLength = 50;
             this.TextBoxTelefon.Name = "TextBoxTelefon";
-            this.TextBoxTelefon.Size = new System.Drawing.Size(462, 22);
+            this.TextBoxTelefon.Size = new System.Drawing.Size(533, 22);
             this.TextBoxTelefon.TabIndex = 23;
             // 
             // TextBoxAdres
@@ -403,7 +403,7 @@
             this.TextBoxAdres.Location = new System.Drawing.Point(19, 287);
             this.TextBoxAdres.MaxLength = 50;
             this.TextBoxAdres.Name = "TextBoxAdres";
-            this.TextBoxAdres.Size = new System.Drawing.Size(462, 22);
+            this.TextBoxAdres.Size = new System.Drawing.Size(530, 22);
             this.TextBoxAdres.TabIndex = 22;
             // 
             // TextBoxNazwaFirmy
@@ -411,7 +411,7 @@
             this.TextBoxNazwaFirmy.Location = new System.Drawing.Point(16, 243);
             this.TextBoxNazwaFirmy.MaxLength = 50;
             this.TextBoxNazwaFirmy.Name = "TextBoxNazwaFirmy";
-            this.TextBoxNazwaFirmy.Size = new System.Drawing.Size(462, 22);
+            this.TextBoxNazwaFirmy.Size = new System.Drawing.Size(533, 22);
             this.TextBoxNazwaFirmy.TabIndex = 21;
             // 
             // label3
@@ -437,7 +437,7 @@
             this.TextBoxKierownikProjektu.Location = new System.Drawing.Point(16, 155);
             this.TextBoxKierownikProjektu.MaxLength = 50;
             this.TextBoxKierownikProjektu.Name = "TextBoxKierownikProjektu";
-            this.TextBoxKierownikProjektu.Size = new System.Drawing.Size(462, 22);
+            this.TextBoxKierownikProjektu.Size = new System.Drawing.Size(533, 22);
             this.TextBoxKierownikProjektu.TabIndex = 18;
             // 
             // GroupBoxSzczDaneProjektu
@@ -1552,7 +1552,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 760);
+            this.ClientSize = new System.Drawing.Size(600, 816);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OknoKreator";
