@@ -289,18 +289,6 @@ namespace Aplikacja
          */
         private void ToolStripMenuWyjscie_Click(object sender, EventArgs e)
         {
-
-            DialogResult rezultat = MessageBox.Show("Czy chcesz zapisać obecny projekt?", "Uwaga!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
-
-            if (rezultat == DialogResult.Yes)
-            {
-                ButtonZapiszProjekt_Click(sender, e);
-            }
-            else if (rezultat == DialogResult.Cancel)
-            {
-                return;
-            }
-
             Application.Exit();
         }
 
@@ -1572,5 +1560,21 @@ namespace Aplikacja
         }
 
 
+
+
+
+        private void OknoGlowne_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult rezultat = MessageBox.Show("Czy chcesz zapisać obecny projekt?", "Uwaga!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+
+            if (rezultat == DialogResult.Yes)
+            {
+                ButtonZapiszProjekt_Click(sender, e);
+            }
+            else if (rezultat == DialogResult.Cancel)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

@@ -1676,6 +1676,7 @@
             this.Name = "OknoGlowne";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aplikacja wspomagająca szacowanie pracochłonności wytwarzania oprogramowania";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OknoGlowne_FormClosing);
             this.PasekMenu.ResumeLayout(false);
             this.PasekMenu.PerformLayout();
             this.GroupBoxDaneProjektu.ResumeLayout(false);
