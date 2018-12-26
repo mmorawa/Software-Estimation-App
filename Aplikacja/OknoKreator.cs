@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Aplikacja
@@ -16,6 +9,7 @@ namespace Aplikacja
         {
             InitializeComponent();
 
+            TextBoxNazwaProjektu.Text = OknoGlowne.TempNazwaProjektu;
             DateTimePicker.Value = DateTime.Today;
 
             ComboBoxJezykProgram.SelectedIndex = OknoGlowne.JezykProgramowania;
@@ -23,17 +17,16 @@ namespace Aplikacja
             NumericOsoboMGodz.Value = OknoGlowne.OsoboMGodz;
             NumericDzRobGodz.Value = OknoGlowne.DzRobGodz;
 
-
         }
 
         private void TextBoxNazwaProjektu_TextChanged(object sender, EventArgs e)
         {
-
+            OknoGlowne.TempNazwaProjektu = TextBoxNazwaProjektu.Text;
         }
 
         private void DateTimePicker_ValueChanged(object sender, EventArgs e)
         {
-
+            OknoGlowne.TempDataProjektu = DateTimePicker.Text;
         }
 
         private void TextBoxKierownikProjektu_TextChanged(object sender, EventArgs e)
@@ -194,32 +187,32 @@ namespace Aplikacja
 
         private void NumUUCWProsty_ValueChanged(object sender, EventArgs e)
         {
-
+            OknoGlowne.TempTabUUCW[0] = (long)NumUUCWProsty.Value;
         }
 
         private void NumUUCWSredni_ValueChanged(object sender, EventArgs e)
         {
-
+            OknoGlowne.TempTabUUCW[1] = (long)NumUUCWSredni.Value;
         }
 
         private void NumUUCWZlozony_ValueChanged(object sender, EventArgs e)
         {
-
+            OknoGlowne.TempTabUUCW[2] = (long)NumUUCWZlozony.Value;
         }
 
         private void NumUAWProsty_ValueChanged(object sender, EventArgs e)
         {
-
+            OknoGlowne.TempTabUAW[0] = (long)NumUAWProsty.Value;
         }
 
         private void NumUAWSredni_ValueChanged(object sender, EventArgs e)
         {
-
+            OknoGlowne.TempTabUAW[1] = (long)NumUAWSredni.Value;
         }
 
         private void NumUAWZlozony_ValueChanged(object sender, EventArgs e)
         {
-
+            OknoGlowne.TempTabUAW[2] = (long)NumUAWZlozony.Value;
         }
 
         private void ButtonPopUCP_Click(object sender, EventArgs e)
@@ -237,12 +230,20 @@ namespace Aplikacja
 
         private void ButtonCzSk_Click(object sender, EventArgs e)
         {
+            using (OknoCzynnikiSkali OknoCzynS = new OknoCzynnikiSkali())
+            {
+                DialogResult rezultat = OknoCzynS.ShowDialog();
 
+            }
         }
 
         private void ButtonMnPr_Click(object sender, EventArgs e)
         {
+            using (OknoMnoznikiPracochlonnosci OknoMnozP = new OknoMnoznikiPracochlonnosci())
+            {
+                DialogResult rezultat = OknoMnozP.ShowDialog();
 
+            }
         }
 
         private void ButtonPopCOCOMO_Click(object sender, EventArgs e)

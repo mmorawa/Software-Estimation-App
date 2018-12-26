@@ -50,6 +50,8 @@ namespace Aplikacja
         public static string OpisProjektu = "";
 
         //Zmienne tymczasowe
+        public static string TempNazwaProjektu = "Projekt";
+        public static string TempDataProjektu = "";
         public static string TempKierownikProjektu = "";
         public static string TempSzacujacy = "";
         public static string TempNazwaFirmy = "";
@@ -67,17 +69,20 @@ namespace Aplikacja
         //Dane modelu
         public static int[] TempTabPrzeliczeniowa = new int[38];
 
-        public static long[] TabUAW = new long[3];
-        double[] wagiAktorow = { 1, 2, 3 };
+
         public static long[] TabUUCW = new long[3];
+        public static long[] TempTabUUCW = new long[3];
         double[] wagiUC = { 5, 10, 15 };
 
+        public static long[] TabUAW = new long[3];
+        public static long[] TempTabUAW = new long[3];
+        double[] wagiAktorow = { 1, 2, 3 };
 
         public static int[] TabIndCzynnSkali = { 2, 2, 2, 2, 2 };
-        public static int[] TempTabIndCzynnSkali = new int[5];
+        public static int[] TempTabIndCzynnSkali = { 2, 2, 2, 2, 2 };
 
         public static int[] TabIndMnPrac = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 };
-        public static int[] TempTabIndMnPrac = new int[17];
+        public static int[] TempTabIndMnPrac = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 };
 
         double[,] TabCzynnSkali =
         {
@@ -152,7 +157,7 @@ namespace Aplikacja
 
         public static long TempMaxPrac;
         public static long TempMaxHarm;
-        public static DateTime TempDeadline;
+        public static DateTime TempDeadline = DateTime.Today;
         public static double TempMaxKoszt;
         public static long TempMaxZespol;
 
@@ -773,6 +778,24 @@ namespace Aplikacja
                     Ostrzezenie += "Doszło do przekroczenia nałożonych na oszacowanie ograniczeń.";
                 }
             }
+            else
+            {
+                LabelWynikPrac.BackColor = System.Drawing.Color.FromName("control");
+                LabelWynikNLepPrac.BackColor = System.Drawing.Color.FromName("control");
+                LabelWynikNGorPrac.BackColor = System.Drawing.Color.FromName("control");
+                LabelWynikHarm.BackColor = System.Drawing.Color.FromName("control");
+                LabelWynikNLepHarm.BackColor = System.Drawing.Color.FromName("control");
+                LabelWynikNGorHarm.BackColor = System.Drawing.Color.FromName("control");
+                LabelWynikData.BackColor = System.Drawing.Color.FromName("control");
+                LabelWynikNLepData.BackColor = System.Drawing.Color.FromName("control");
+                LabelWynikNGorData.BackColor = System.Drawing.Color.FromName("control");
+                LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("control");
+                LabelWynikNLepKoszt.BackColor = System.Drawing.Color.FromName("control");
+                LabelWynikNGorKoszt.BackColor = System.Drawing.Color.FromName("control");
+                LabelWynikSrZesp.BackColor = System.Drawing.Color.FromName("control");
+                LabelWynikNLepSrZesp.BackColor = System.Drawing.Color.FromName("control");
+                LabelWynikNGorSrZesp.BackColor = System.Drawing.Color.FromName("control");
+            }
 
             if (Ostrzezenie.Length == 0)
             {
@@ -1355,8 +1378,52 @@ namespace Aplikacja
 
                 if (rezultatOkna == DialogResult.OK)
                 {
+                    TextBoxNazwaProjektu.Text = TempNazwaProjektu;
+                    DateTimePicker.Text = TempDataProjektu;
+                    
 
-                   
+                    KierownikProjektu = TempKierownikProjektu;
+                    Szacujacy = TempSzacujacy;
+                    NazwaFirmy = TempNazwaFirmy;
+                    Adres = TempAdres;
+                    Telefon = TempTelefon;
+                    Email = TempEmail;
+                    OpisProjektu = TempOpisProjektu;
+                    //czy są użyte dane domyślne
+                    Domyslne = TempDomyslne;
+
+                    Ograniczenia = TempOgraniczenia;
+
+                    JezykProgramowania = TempJezykProgramowania;
+                    StawkaGodz = TempStawkaGodz;
+                    OsoboMGodz = TempOsoboMGodz;
+                    DzRobGodz = TempDzRobGodz;
+
+                    MaxPrac = TempMaxPrac;
+                    MaxHarm = TempMaxHarm;
+                    Deadline = TempDeadline;
+                    MaxKoszt = TempMaxKoszt;
+                    MaxZespol = TempMaxZespol;
+
+
+                    NumUUCWProsty.Value = TempTabUUCW[0];
+                    NumUUCWSredni.Value = TempTabUUCW[1];
+                    NumUUCWZlozony.Value = TempTabUUCW[2];
+                    NumUAWProsty.Value = TempTabUAW[0];
+                    NumUAWSredni.Value = TempTabUAW[1];
+                    NumUAWZlozony.Value = TempTabUAW[2];
+
+
+                    for (int i = 0; i < 5; i++)
+                    {
+                        TabIndCzynnSkali[i] = TempTabIndCzynnSkali[i];
+                    }
+
+                    for (int i = 0; i < 17; i++)
+                    {
+                        TabIndMnPrac[i] = TempTabIndMnPrac[i];
+                    }
+
                     Oszacowanie();
                     MessageBox.Show("Udało się wykonać oszacowanie.", "Sukces");
                 }
