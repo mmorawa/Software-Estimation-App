@@ -59,14 +59,6 @@ namespace Aplikacja
 
             MessageBox.Show("Domyślne wartości modelu zostały przywrócone.", "Sukces");
 
-        }
-
-
-
-
-
-
-        //EXT różne kalibracje dla różnych zespołów/projektów
-
+        }       
     }
 }

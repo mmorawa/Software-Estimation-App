@@ -380,47 +380,6 @@ namespace Aplikacja
         }
 
 
-        //---------------------------------------Dane COCOMO II--------------------------------------------------
-
-
-        private void ButtonCzSk_Click(object sender, EventArgs e)
-        {
-            using (OknoCzynnikiSkali OknoCzynS = new OknoCzynnikiSkali())
-            {
-                DialogResult rezultat = OknoCzynS.ShowDialog();
-
-
-                if (rezultat == DialogResult.OK)
-                {
-                    for (int i = 0; i < 5; i++)
-                    {
-                        TabIndCzynnSkali[i] = TempTabIndCzynnSkali[i];
-                    }
-
-                    Oszacowanie();
-
-                }
-            }
-        }
-
-
-        private void ButtonMnPr_Click(object sender, EventArgs e)
-        {
-            using (OknoMnoznikiPracochlonnosci OknoMnozP = new OknoMnoznikiPracochlonnosci())
-            {
-                DialogResult rezultat = OknoMnozP.ShowDialog();
-
-                if (rezultat == DialogResult.OK)
-                {
-                    for (int i = 0; i < 17; i++)
-                    {
-                        TabIndMnPrac[i] = TempTabIndMnPrac[i];
-                    }
-
-                    Oszacowanie();
-                }
-            }
-        }
 
 
         //-----------------------------------Dane UCP-----------------------------------------------------
@@ -472,9 +431,53 @@ namespace Aplikacja
             Oszacowanie();
         }
 
+
+        //---------------------------------------Dane COCOMO II--------------------------------------------------
+
+
+        private void ButtonCzSk_Click(object sender, EventArgs e)
+        {
+            using (OknoCzynnikiSkali OknoCzynS = new OknoCzynnikiSkali())
+            {
+                DialogResult rezultat = OknoCzynS.ShowDialog();
+
+
+                if (rezultat == DialogResult.OK)
+                {
+                    for (int i = 0; i < 5; i++)
+                    {
+                        TabIndCzynnSkali[i] = TempTabIndCzynnSkali[i];
+                    }
+
+                    Oszacowanie();
+
+                }
+            }
+        }
+
+
+        private void ButtonMnPr_Click(object sender, EventArgs e)
+        {
+            using (OknoMnoznikiPracochlonnosci OknoMnozP = new OknoMnoznikiPracochlonnosci())
+            {
+                DialogResult rezultat = OknoMnozP.ShowDialog();
+
+                if (rezultat == DialogResult.OK)
+                {
+                    for (int i = 0; i < 17; i++)
+                    {
+                        TabIndMnPrac[i] = TempTabIndMnPrac[i];
+                    }
+
+                    Oszacowanie();
+                }
+            }
+        }
+
+
         //------------------------Algorytm------------------------------------------------------
 
-        //TODO kasowanie danych częściowo zbędne bo teraz automatycznie wywołuje się funkcja Oszacowanie
+
         private void Oszacowanie()
         {
 
@@ -802,7 +805,7 @@ namespace Aplikacja
         }
 
 
-        //--------------------------------Do zrobienia---------------------------------------------------------
+        //--------------------------------Funkcje---------------------------------------------------------
 
         private void ButtonNowyProjekt_Click(object sender, EventArgs e)
         {
