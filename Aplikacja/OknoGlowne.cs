@@ -25,9 +25,10 @@ namespace Aplikacja
         public OknoGlowne()
         {
             InitializeComponent();
+            ZmianaStatusStrip("Gotowy");
+
             TextBoxNazwaProjektu.Text = NazwaProjektu;
             DateTimePicker.Value = DateTime.Today;
-
         }
 
         /*****************************************************************************//**
@@ -396,7 +397,8 @@ namespace Aplikacja
                         TabIndCzynnSkali[i] = TempTabIndCzynnSkali[i];
                     }
 
-                    Oszacowanie();                                    
+                    Oszacowanie();
+
                 }
             }
         }
@@ -475,7 +477,7 @@ namespace Aplikacja
         //TODO kasowanie danych częściowo zbędne bo teraz automatycznie wywołuje się funkcja Oszacowanie
         private void Oszacowanie()
         {
-            
+
             Ostrzezenie = "";
             Przekroczenie = false;
 
@@ -489,7 +491,7 @@ namespace Aplikacja
 
             if (UUCW == 0)
             {
-                UsuniecieWynikow();               
+                UsuniecieWynikow();
                 return;
             }
 
@@ -510,7 +512,7 @@ namespace Aplikacja
 
             RozmiarKSLOC = Rozmiar / 1000;
 
-            
+
             //Obliczenia COCOMO II
 
             SumaSF = 0;
@@ -548,7 +550,7 @@ namespace Aplikacja
             HarmonogramNLep = Properties.Settings.Default.C * Math.Pow(PracochlonnoscBezOgranNLep, F) * TabOgranHarm[TabIndMnPrac[16]];
             HarmonogramNGor = Properties.Settings.Default.C * Math.Pow(PracochlonnoscBezOgranNGor, F) * TabOgranHarm[TabIndMnPrac[16]];
 
-            
+
             DataZakonczenia = Convert.ToDateTime(DateTimePicker.Text);
             DataZakonczenia = DataZakonczenia.AddDays((int)Math.Round(Harmonogram * 30.42));
             DataZakonczeniaNLep = Convert.ToDateTime(DateTimePicker.Text);
@@ -599,9 +601,9 @@ namespace Aplikacja
             LabelWynikNLepSrZesp.Text = string.Format("{0:N1}", SrZespolNLep);
             LabelWynikNGorSrZesp.Text = string.Format("{0:N1}", SrZespolNGor);
 
-            
 
-            
+
+
             //Ograniczenia nałożone na projekt
 
             if (Ograniczenia == true)
@@ -668,7 +670,7 @@ namespace Aplikacja
                     LabelWynikNGorHarm.BackColor = System.Drawing.Color.FromName("control");
                 }
 
-                
+
                 if (Deadline.Date != DateTime.Today && Deadline.Date < DataZakonczenia.Date)
                 {
                     LabelWynikData.BackColor = System.Drawing.Color.FromName("red");
@@ -795,8 +797,8 @@ namespace Aplikacja
                 Ostrzezenie = "Uwagi: " + Ostrzezenie;
                 LabelUwagi.Text = Ostrzezenie;
             }
-            
 
+            ZmianaStatusStrip("Wykonano oszacowanie.");
         }
 
 
@@ -819,6 +821,7 @@ namespace Aplikacja
             UsuniecieDanych();
 
             MessageBox.Show("Rozpoczęto nowy projekt.");
+            ZmianaStatusStrip("Rozpoczęto nowy projekt.");
         }
 
 
@@ -841,6 +844,7 @@ namespace Aplikacja
                     Domyslne = TempDomyslne;
 
                     MessageBox.Show("Szczegółowe dane projektu zostały zmienione.", "Sukces");
+                    ZmianaStatusStrip("Szczegółowe dane projektu zostały zmienione.");
                 }
             }
         }
@@ -875,12 +879,11 @@ namespace Aplikacja
                     try
                     {
                         SciezkaDoPliku = OtworzProjektDialog.FileName;
-                        
+
                         using (StreamReader sr = new StreamReader(SciezkaDoPliku))
                         {
                             int LiczbaLinii = File.ReadLines(SciezkaDoPliku).Count();
 
-                            //MessageBox.Show(LiczbaLinii.ToString()); 96
 
                             TextBoxNazwaProjektu.Text = sr.ReadLine();
                             DateTimePicker.Text = sr.ReadLine();
@@ -891,7 +894,7 @@ namespace Aplikacja
                             Adres = sr.ReadLine();
                             Telefon = sr.ReadLine();
                             Email = sr.ReadLine();
-                            
+
                             Ograniczenia = Convert.ToBoolean(sr.ReadLine());
                             Domyslne = Convert.ToBoolean(sr.ReadLine());
 
@@ -997,7 +1000,9 @@ namespace Aplikacja
                             {
                                 OpisProjektu += sr.ReadLine() + "\n";
                             }
-                            
+
+                            MessageBox.Show("Udało się otworzyć projekt z pliku.", "Sukces");
+                            ZmianaStatusStrip("Udało się otworzyć projekt z pliku.");
 
                         }
                     }
@@ -1032,7 +1037,7 @@ namespace Aplikacja
 
                     //Properties.Settings.Default.Save();
                     MessageBox.Show("Domyślne ustawienia projektu zostały zmienione.", "Sukces");
-
+                    ZmianaStatusStrip("Domyślne ustawienia projektu zostały zmienione.");
                 }
             }
         }
@@ -1066,7 +1071,7 @@ namespace Aplikacja
                 sw.WriteLine(Adres);
                 sw.WriteLine(Telefon);
                 sw.WriteLine(Email);
-                
+
                 sw.WriteLine(Ograniczenia);
                 sw.WriteLine(Domyslne);
 
@@ -1199,7 +1204,7 @@ namespace Aplikacja
             OsoboMGodz = Properties.Settings.Default.OsoboMGodz;
             DzRobGodz = Properties.Settings.Default.DzRobGodz;
 
-            
+
             MaxPrac = 0;
             MaxHarm = 0;
             Deadline = DateTime.Today;
@@ -1300,8 +1305,6 @@ namespace Aplikacja
 
                 if (rezultat == DialogResult.OK)
                 {
-                    MessageBox.Show("Założenia projektu zostały zmienione.", "Sukces");
-
                     Ograniczenia = TempOgraniczenia;
 
                     JezykProgramowania = TempJezykProgramowania;
@@ -1316,6 +1319,9 @@ namespace Aplikacja
                     MaxZespol = TempMaxZespol;
 
                     Oszacowanie();
+
+                    MessageBox.Show("Założenia projektu zostały zmienione.", "Sukces");
+                    ZmianaStatusStrip("Założenia projektu zostały zmienione.");
                 }
             }
         }
@@ -1337,7 +1343,9 @@ namespace Aplikacja
 
                     //Properties.Settings.Default.Save();
                     Oszacowanie();
+
                     MessageBox.Show("Kalibracja modelu została wykonana.", "Sukces");
+                    ZmianaStatusStrip("Kalibracja modelu została wykonana.");
                 }
             }
         }
@@ -1368,7 +1376,7 @@ namespace Aplikacja
                 {
                     TextBoxNazwaProjektu.Text = TempNazwaProjektu;
                     DateTimePicker.Text = TempDataProjektu;
-                    
+
 
                     KierownikProjektu = TempKierownikProjektu;
                     Szacujacy = TempSzacujacy;
@@ -1413,11 +1421,12 @@ namespace Aplikacja
                     }
 
                     Oszacowanie();
-                    MessageBox.Show("Udało się wykonać oszacowanie.", "Sukces");
+                    ZmianaStatusStrip("Wykonano oszacowanie.");
                 }
 
             }
         }
+
 
         private void ButtonTablicaPrzeliczeniowa_Click(object sender, EventArgs e)
         {
@@ -1433,8 +1442,11 @@ namespace Aplikacja
                     }
 
                     //TODO Properties.Settings.Default.Save();
+
                     Oszacowanie();
+
                     MessageBox.Show("Wprowadzono nowe dane do tablicy przeliczeniowej punktów funkcyjnych na źródłowe linie kodu.", "Sukces");
+                    ZmianaStatusStrip("Wprowadzono nowe dane do tablicy przeliczeniowej punktów funkcyjnych na źródłowe linie kodu.");
                 }
             }
         }
@@ -1576,5 +1588,13 @@ namespace Aplikacja
                 e.Cancel = true;
             }
         }
+
+
+        void ZmianaStatusStrip(string info)
+        {            
+            ToolStripStatusLabel.Text = info;
+        }
+
+
     }
 }
