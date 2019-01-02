@@ -954,7 +954,7 @@ namespace Aplikacja
 
         private void ButtonUstawienia_Click(object sender, EventArgs e)
         {
-            using (OknoUstawienia OknoUstawDomyslne = new OknoUstawienia())
+            using (OknoDomyslneUstawienia OknoUstawDomyslne = new OknoDomyslneUstawienia())
             {
                 DialogResult rezultat = OknoUstawDomyslne.ShowDialog();
 
@@ -1366,7 +1366,7 @@ namespace Aplikacja
 
         private void ButtonTablicaPrzeliczeniowa_Click(object sender, EventArgs e)
         {
-            using (OknoSLOCnaFP OknoSLOC_FP = new OknoSLOCnaFP())
+            using (OknoTablicaPrzeliczeniowa OknoSLOC_FP = new OknoTablicaPrzeliczeniowa())
             {
                 DialogResult rezultat = OknoSLOC_FP.ShowDialog();
 

@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace Aplikacja
 {
-    public partial class OknoSLOCnaFP : Form
+    public partial class OknoTablicaPrzeliczeniowa : Form
     {
-        public OknoSLOCnaFP()
+        public OknoTablicaPrzeliczeniowa()
         {
             InitializeComponent();
 

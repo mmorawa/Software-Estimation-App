@@ -1,6 +1,6 @@
 ﻿namespace Aplikacja
 {
-    partial class OknoUstawienia
+    partial class OknoDomyslneUstawienia
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoUstawienia));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoDomyslneUstawienia));
             this.GroupBoxSzczDomyslneUstawienia = new System.Windows.Forms.GroupBox();
             this.GroupBoxDomZalozeniaProjektu = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();

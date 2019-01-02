@@ -1,6 +1,6 @@
 ﻿namespace Aplikacja
 {
-    partial class OknoSLOCnaFP
+    partial class OknoTablicaPrzeliczeniowa
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoSLOCnaFP));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoTablicaPrzeliczeniowa));
             this.GroupBoxKalibracja = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.NumericJavaScript = new System.Windows.Forms.NumericUpDown();

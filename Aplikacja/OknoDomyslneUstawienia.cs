@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace Aplikacja
 {
-    public partial class OknoUstawienia : Form
+    public partial class OknoDomyslneUstawienia : Form
     {
-        public OknoUstawienia()
+        public OknoDomyslneUstawienia()
         {
             InitializeComponent();
             TextBoxKierownikProjektu.Text = Properties.Settings.Default.KierownikProjektu;

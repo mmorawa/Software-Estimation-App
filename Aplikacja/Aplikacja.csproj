@@ -120,17 +120,17 @@
     <Compile Include="OknoOAplikacji.Designer.cs">
       <DependentUpon>OknoOAplikacji.cs</DependentUpon>
     </Compile>
-    <Compile Include="OknoSLOCnaFP.cs">
+    <Compile Include="OknoTablicaPrzeliczeniowa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OknoSLOCnaFP.Designer.cs">
-      <DependentUpon>OknoSLOCnaFP.cs</DependentUpon>
+    <Compile Include="OknoTablicaPrzeliczeniowa.Designer.cs">
+      <DependentUpon>OknoTablicaPrzeliczeniowa.cs</DependentUpon>
     </Compile>
-    <Compile Include="OknoUstawienia.cs">
+    <Compile Include="OknoDomyslneUstawienia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OknoUstawienia.Designer.cs">
-      <DependentUpon>OknoUstawienia.cs</DependentUpon>
+    <Compile Include="OknoDomyslneUstawienia.Designer.cs">
+      <DependentUpon>OknoDomyslneUstawienia.cs</DependentUpon>
     </Compile>
     <Compile Include="OknoPodgladRaportow.cs">
       <SubType>Form</SubType>
@@ -171,11 +171,11 @@
     <EmbeddedResource Include="OknoOAplikacji.resx">
       <DependentUpon>OknoOAplikacji.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OknoSLOCnaFP.resx">
-      <DependentUpon>OknoSLOCnaFP.cs</DependentUpon>
+    <EmbeddedResource Include="OknoTablicaPrzeliczeniowa.resx">
+      <DependentUpon>OknoTablicaPrzeliczeniowa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OknoUstawienia.resx">
-      <DependentUpon>OknoUstawienia.cs</DependentUpon>
+    <EmbeddedResource Include="OknoDomyslneUstawienia.resx">
+      <DependentUpon>OknoDomyslneUstawienia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OknoZalozeniaProjektu.resx">
       <DependentUpon>OknoZalozeniaProjektu.cs</DependentUpon>
