@@ -76,7 +76,7 @@
             this.GroupBoxSzczDomyslneUstawienia.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.GroupBoxSzczDomyslneUstawienia.Location = new System.Drawing.Point(12, 12);
             this.GroupBoxSzczDomyslneUstawienia.Name = "GroupBoxSzczDomyslneUstawienia";
-            this.GroupBoxSzczDomyslneUstawienia.Size = new System.Drawing.Size(510, 648);
+            this.GroupBoxSzczDomyslneUstawienia.Size = new System.Drawing.Size(510, 629);
             this.GroupBoxSzczDomyslneUstawienia.TabIndex = 16;
             this.GroupBoxSzczDomyslneUstawienia.TabStop = false;
             this.GroupBoxSzczDomyslneUstawienia.Text = "Domyślne ustawienia";
@@ -84,7 +84,7 @@
             // GroupBoxDomZalozeniaProjektu
             // 
             this.GroupBoxDomZalozeniaProjektu.Controls.Add(this.tableLayoutPanel2);
-            this.GroupBoxDomZalozeniaProjektu.Location = new System.Drawing.Point(12, 372);
+            this.GroupBoxDomZalozeniaProjektu.Location = new System.Drawing.Point(12, 352);
             this.GroupBoxDomZalozeniaProjektu.Name = "GroupBoxDomZalozeniaProjektu";
             this.GroupBoxDomZalozeniaProjektu.Size = new System.Drawing.Size(482, 254);
             this.GroupBoxDomZalozeniaProjektu.TabIndex = 42;
@@ -316,7 +316,7 @@
             this.GroupBoxDomDaneProjektu.Controls.Add(this.label11);
             this.GroupBoxDomDaneProjektu.Location = new System.Drawing.Point(12, 21);
             this.GroupBoxDomDaneProjektu.Name = "GroupBoxDomDaneProjektu";
-            this.GroupBoxDomDaneProjektu.Size = new System.Drawing.Size(482, 345);
+            this.GroupBoxDomDaneProjektu.Size = new System.Drawing.Size(482, 325);
             this.GroupBoxDomDaneProjektu.TabIndex = 41;
             this.GroupBoxDomDaneProjektu.TabStop = false;
             this.GroupBoxDomDaneProjektu.Text = "Odnośnie danych projektu";
@@ -358,7 +358,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(6, 152);
+            this.label14.Location = new System.Drawing.Point(6, 126);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(91, 16);
             this.label14.TabIndex = 31;
@@ -367,7 +367,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 284);
+            this.label6.Location = new System.Drawing.Point(6, 258);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(51, 16);
             this.label6.TabIndex = 38;
@@ -375,7 +375,7 @@
             // 
             // TextBoxNazwaFirmy
             // 
-            this.TextBoxNazwaFirmy.Location = new System.Drawing.Point(6, 171);
+            this.TextBoxNazwaFirmy.Location = new System.Drawing.Point(6, 145);
             this.TextBoxNazwaFirmy.Name = "TextBoxNazwaFirmy";
             this.TextBoxNazwaFirmy.Size = new System.Drawing.Size(462, 22);
             this.TextBoxNazwaFirmy.TabIndex = 4;
@@ -383,7 +383,7 @@
             // 
             // TextBoxEmail
             // 
-            this.TextBoxEmail.Location = new System.Drawing.Point(6, 303);
+            this.TextBoxEmail.Location = new System.Drawing.Point(6, 277);
             this.TextBoxEmail.Name = "TextBoxEmail";
             this.TextBoxEmail.Size = new System.Drawing.Size(462, 22);
             this.TextBoxEmail.TabIndex = 7;
@@ -391,7 +391,7 @@
             // 
             // TextBoxAdres
             // 
-            this.TextBoxAdres.Location = new System.Drawing.Point(9, 215);
+            this.TextBoxAdres.Location = new System.Drawing.Point(9, 189);
             this.TextBoxAdres.Name = "TextBoxAdres";
             this.TextBoxAdres.Size = new System.Drawing.Size(462, 22);
             this.TextBoxAdres.TabIndex = 5;
@@ -400,7 +400,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(3, 240);
+            this.label10.Location = new System.Drawing.Point(3, 214);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(87, 16);
             this.label10.TabIndex = 36;
@@ -408,7 +408,7 @@
             // 
             // TextBoxTelefon
             // 
-            this.TextBoxTelefon.Location = new System.Drawing.Point(6, 259);
+            this.TextBoxTelefon.Location = new System.Drawing.Point(6, 233);
             this.TextBoxTelefon.Name = "TextBoxTelefon";
             this.TextBoxTelefon.Size = new System.Drawing.Size(462, 22);
             this.TextBoxTelefon.TabIndex = 6;
@@ -418,7 +418,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label11.Location = new System.Drawing.Point(6, 196);
+            this.label11.Location = new System.Drawing.Point(6, 170);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(48, 16);
             this.label11.TabIndex = 35;
@@ -428,7 +428,7 @@
             // 
             this.ButtonAnuluj.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.ButtonAnuluj.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonAnuluj.Location = new System.Drawing.Point(283, 666);
+            this.ButtonAnuluj.Location = new System.Drawing.Point(286, 647);
             this.ButtonAnuluj.Name = "ButtonAnuluj";
             this.ButtonAnuluj.Size = new System.Drawing.Size(104, 27);
             this.ButtonAnuluj.TabIndex = 1;
@@ -439,7 +439,7 @@
             // 
             this.ButtonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.ButtonOk.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOk.Location = new System.Drawing.Point(123, 666);
+            this.ButtonOk.Location = new System.Drawing.Point(126, 647);
             this.ButtonOk.Name = "ButtonOk";
             this.ButtonOk.Size = new System.Drawing.Size(104, 27);
             this.ButtonOk.TabIndex = 0;
@@ -450,7 +450,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 710);
+            this.ClientSize = new System.Drawing.Size(536, 698);
             this.Controls.Add(this.ButtonAnuluj);
             this.Controls.Add(this.ButtonOk);
             this.Controls.Add(this.GroupBoxSzczDomyslneUstawienia);

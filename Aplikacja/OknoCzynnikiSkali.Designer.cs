@@ -334,11 +334,11 @@
             this.label6.Location = new System.Drawing.Point(523, 73);
             this.label6.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label6.Name = "label6";
-            this.label6.Padding = new System.Windows.Forms.Padding(0, 16, 0, 0);
+            this.label6.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
             this.label6.Size = new System.Drawing.Size(431, 67);
             this.label6.TabIndex = 15;
             this.label6.Text = "Czynnik ten bierze pod uwagę stopień podobieństwa obecnego projektu, do tych któr" +
-    "e były wcześniej zrealizowane.";
+    "e były wcześniej zrealizowane przez dany zespół programistyczny.";
             // 
             // label7
             // 

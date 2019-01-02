@@ -7,6 +7,7 @@ using MigraDoc.DocumentObjectModel.Fields;
 
 namespace Aplikacja
 {
+    //BUG partial zamiast dziedziczenia
     class TrescRaportow : OknoGlowne
     {
 
@@ -454,7 +455,7 @@ namespace Aplikacja
             cell = row.Cells[1];
             cell.AddParagraph(TabStringCzynnSkali[TabIndCzynnSkali[0]]);
             cell = row.Cells[2];
-            cell.AddParagraph("Czynnik ten bierze pod uwagę stopień podobieństwa obecnego projektu, do tych które były wcześniej zrealizowane.");
+            cell.AddParagraph("Czynnik ten bierze pod uwagę stopień podobieństwa obecnego projektu, do tych które były wcześniej zrealizowane przez dany zespół programistyczny.");
 
 
             row = TabelaCzynnSkali.AddRow();
@@ -1021,17 +1022,6 @@ namespace Aplikacja
 
             dokument.LastSection.Add(TabelaWyniki);
 
-
-            /*
-            paragraph.AddTab();
-            paragraph.Format.LeftIndent = "2cm";
-            paragraph.AddFormattedText("bold & italic", TextFormat.Bold | TextFormat.Italic);
-            paragraph.AddLineBreak();
-
-            formattedText = paragraph.AddFormattedText("subscript");
-            formattedText.Subscript = true;
-            paragraph.Format.Shading.Color = Colors.LightCoral;
-            */
         }
 
 

@@ -1,10 +1,4 @@
-﻿/*! \file Form1.cs
-\brief Plik Form1.cs zawiera klasę Form1 z głównym oknem aplikacji.
-
-Plik Form1.cs zawiera rdzeń programu czyli główne okno aplikacji wraz z menu, pozwalającym na dokonanie wyboru różnych opcji menadżera zadań takich jak: szyfrowanie/deszyfrowanie bazy danych.
-*/
-
-using System;
+﻿using System;
 using System.IO;
 using System.Windows.Forms;
 using System.Diagnostics;
@@ -12,16 +6,10 @@ using MigraDoc.DocumentObjectModel;
 using System.Linq;
 
 
-//! Przestrzeń nazw Password_Manager obejmuje całą aplikację Menedżera Haseł.
-/*! Password_Manager to przestrzeń nazw, która obejmuje całą aplikację Menedżera Haseł, ze wszystkimi klasami Form. */
 namespace Aplikacja
 {
-    //! Klasa Form1 zawiera główne okno aplikacji.
-    /*! W klasie Form1 znajduje się menu główne aplikacji, przyciski oraz Textboxy z danymi, oraz warstwa logiczna aplikacji */
     public partial class OknoGlowne : Form
     {
-        //! Konstruktor klasy Form1.
-        /*! Inicjalizuje komponenty klasy Form1. */
         public OknoGlowne()
         {
             InitializeComponent();
@@ -32,7 +20,7 @@ namespace Aplikacja
         }
 
         /*****************************************************************************//**
-        *  Properties.
+        *  Zmienne i tablice
         ********************************************************************************/
 
         //EXT encapsulate?? 
@@ -163,7 +151,6 @@ namespace Aplikacja
         public static long TempMaxZespol;
 
         //wyniki pośrednie 
-
         double UUCW;
         double UAW;
         double RozmiarKSLOC;
@@ -209,59 +196,36 @@ namespace Aplikacja
         *  Metody klasy Form1.
         ********************************************************************************/
 
-        //! Metoda wywoływana po naciśnięciu przycisku New na pasku Menu.
-        /*! Metoda NewToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku New na pasku Menu.
-         * Najpierw otwiera nowe okno, gdzie pyta użytkownika o podstawowe dane odnośnie nowej bazy a następnie tworzy pierwszy Panel, w którym użytkownik może zacząć wpisywać swoje dane.
-         */
         private void ToolStripMenuNowyProj_Click(object sender, EventArgs e)
         {
             ButtonNowyProjekt_Click(sender, e);
         }
 
-        //! Metoda wywoływana po naciśnięciu przycisku Open na pasku Menu.
-        /*! Metoda OpenToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Open na pasku Menu.
-         * Odpowiada za wczytanie pliku z bazą haseł a następnie jego odszyfrowanie przy użyciu podanego przez użytkownika klucza.
-         * Następnie generuje ona Panele z Textboxami, do których podstawiane są odszyfrowane dane tekstowe. 
-         */
+
         private void ToolStripMenuOtworzProj_Click(object sender, EventArgs e)
         {
             ButtonOtworzProjekt_Click(sender, e);
         }
 
-        //! Metoda wywoływana po naciśnięciu przycisku Open na pasku Menu.
-        /*! Metoda OpenToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Open na pasku Menu.
-         * Odpowiada za wczytanie pliku z bazą haseł a następnie jego odszyfrowanie przy użyciu podanego przez użytkownika klucza.
-         * Następnie generuje ona Panele z Textboxami, do których podstawiane są odszyfrowane dane tekstowe. 
-         */
+
         private void ToolStripMenuSzczegolyProjektu_Click(object sender, EventArgs e)
         {
             ButtonWiecejSzczeg_Click(sender, e);
         }
 
-        //! Metoda wywoływana po naciśnięciu przycisku Open na pasku Menu.
-        /*! Metoda OpenToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Open na pasku Menu.
-         * Odpowiada za wczytanie pliku z bazą haseł a następnie jego odszyfrowanie przy użyciu podanego przez użytkownika klucza.
-         * Następnie generuje ona Panele z Textboxami, do których podstawiane są odszyfrowane dane tekstowe. 
-         */
+
         private void ToolStripMenuZalozeniaProjektu_Click(object sender, EventArgs e)
         {
             ButtonZalozenia_Click(sender, e);
         }
 
-        //! Metoda wywoływana po naciśnięciu przycisku Save na pasku Menu.
-        /*! Metoda SaveToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Save na pasku Menu.
-         * Powoduje ona automatyczne zaszyfrowanie wpisów z hasłami, znajdujących w głównym oknie programu bez konieczności podania ścieżki do pliku bazy.
-         */
+
         private void ToolStripMenuZapiszProj_Click(object sender, EventArgs e)
         {
             ButtonZapiszProjekt_Click(sender, e);
         }
 
 
-        //! Metoda wywoływana po naciśnięciu przycisku Save As na pasku Menu.
-        /*! Metoda SaveAsToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Save As na pasku Menu.
-         * Powoduje ona zamknięcie aktywnej bazy poprzez wywołanie metody CloseDatabase.
-         */
         private void ToolStripMenuZapiszJakoProj_Click(object sender, EventArgs e)
         {
             using (SaveFileDialog ZapiszProjektDialog = new SaveFileDialog())
@@ -284,93 +248,62 @@ namespace Aplikacja
             }
         }
 
-        //! Metoda wywoływana po naciśnięciu przycisku Exit na pasku Menu.
-        /*! Metoda ExitToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Exit na pasku Menu.
-         * Skutkuje ona zamknięciem aktywnej bazy poprzez wywołanie metody CloseDatabase oraz wyjściem z programu.
-         */
+
         private void ToolStripMenuWyjscie_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        //! Metoda wywoływana po naciśnięciu przycisku Save As na pasku Menu.
-        /*! Metoda SaveAsToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Save As na pasku Menu.
-         * Powoduje ona zamknięcie aktywnej bazy poprzez wywołanie metody CloseDatabase.
-         */
+
         private void ToolStripOpisProjektu_Click(object sender, EventArgs e)
         {
             ButtonOpisProjektu_Click(sender, e);
         }
 
-        //! Metoda wywoływana po naciśnięciu przycisku Save As na pasku Menu.
-        /*! Metoda SaveAsToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Save As na pasku Menu.
-         * Powoduje ona zamknięcie aktywnej bazy poprzez wywołanie metody CloseDatabase.
-         */
+
         private void ToolStripPełneOszacowanie_Click(object sender, EventArgs e)
         {
             ButtonOszacowanie_Click(sender, e);
         }
 
-        //! Metoda wywoływana po naciśnięciu przycisku Save As na pasku Menu.
-        /*! Metoda SaveAsToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Save As na pasku Menu.
-         * Powoduje ona zamknięcie aktywnej bazy poprzez wywołanie metody CloseDatabase.
-         */
+
         private void ToolStripPodsumowanieProjektu_Click(object sender, EventArgs e)
         {
             ButtonPodsumowanieProjektu_Click(sender, e);
         }
 
-        //! Metoda wywoływana po naciśnięciu przycisku Save As na pasku Menu.
-        /*! Metoda SaveAsToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Save As na pasku Menu.
-         * Powoduje ona zamknięcie aktywnej bazy poprzez wywołanie metody CloseDatabase.
-         */
+ 
         private void ToolStripMenuKreator_Click(object sender, EventArgs e)
         {
             ButtonKreator_Click(sender, e);
         }
 
-        //! Metoda wywoływana po naciśnięciu przycisku Exit na pasku Menu.
-        /*! Metoda ExitToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Exit na pasku Menu.
-         * Skutkuje ona zamknięciem aktywnej bazy poprzez wywołanie metody CloseDatabase oraz wyjściem z programu.
-         */
+
         private void ToolStripMenuKalibracja_Click(object sender, EventArgs e)
         {
             ButtonKalibracja_Click(sender, e);
         }
 
-        //! Metoda wywoływana po naciśnięciu przycisku Exit na pasku Menu.
-        /*! Metoda ExitToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Exit na pasku Menu.
-         * Skutkuje ona zamknięciem aktywnej bazy poprzez wywołanie metody CloseDatabase oraz wyjściem z programu.
-         */
+
         private void ToolStripMenuUstawienia_Click(object sender, EventArgs e)
         {
             ButtonUstawienia_Click(sender, e);
         }
 
 
-        //! Metoda wywoływana po naciśnięciu przycisku Exit na pasku Menu.
-        /*! Metoda ExitToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Exit na pasku Menu.
-         * Skutkuje ona zamknięciem aktywnej bazy poprzez wywołanie metody CloseDatabase oraz wyjściem z programu.
-         */
         private void ToolStripTablicaPrzeliczeniowa_Click(object sender, EventArgs e)
         {
             ButtonTablicaPrzeliczeniowa_Click(sender, e);
         }
 
-        //! Metoda wywoływana po naciśnięciu przycisku Exit na pasku Menu.
-        /*! Metoda ExitToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Exit na pasku Menu.
-         * Skutkuje ona zamknięciem aktywnej bazy poprzez wywołanie metody CloseDatabase oraz wyjściem z programu.
-         */
+
         private void ToolStripMenuDokumentacja_Click(object sender, EventArgs e)
         {
             //TODO odpowiedni plik w odpowiednim miejscu.
             Process.Start("Dokumentacja.pdf");
         }
 
-        //! Metoda wywoływana po naciśnięciu przycisku Exit na pasku Menu.
-        /*! Metoda ExitToolStripMenuItem_Click jest wywoływana po naciśnięciu przycisku Exit na pasku Menu.
-         * Skutkuje ona zamknięciem aktywnej bazy poprzez wywołanie metody CloseDatabase oraz wyjściem z programu.
-         */
+
         private void ToolStripMenuOProgramie_Click(object sender, EventArgs e)
         {
             using (OknoOAplikacji OknoOProgramie = new OknoOAplikacji())
@@ -432,7 +365,7 @@ namespace Aplikacja
         }
 
 
-        //---------------------------------------Dane COCOMO II--------------------------------------------------
+        //-----------------------------------Dane COCOMO II--------------------------------------------------
 
 
         private void ButtonCzSk_Click(object sender, EventArgs e)
@@ -475,7 +408,7 @@ namespace Aplikacja
         }
 
 
-        //------------------------Algorytm------------------------------------------------------
+        //-----------------------------------Algorytm------------------------------------------------------
 
 
         private void Oszacowanie()
@@ -805,7 +738,7 @@ namespace Aplikacja
         }
 
 
-        //--------------------------------Funkcje---------------------------------------------------------
+        //-----------------------------------Funkcje---------------------------------------------------------
 
         private void ButtonNowyProjekt_Click(object sender, EventArgs e)
         {
@@ -1455,9 +1388,29 @@ namespace Aplikacja
         }
 
 
-        /*****************************************************************************//**
-        *  Raporty.
-        ********************************************************************************/
+        private void OknoGlowne_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult rezultat = MessageBox.Show("Czy chcesz zapisać obecny projekt?", "Uwaga!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+
+            if (rezultat == DialogResult.Yes)
+            {
+                ButtonZapiszProjekt_Click(sender, e);
+            }
+            else if (rezultat == DialogResult.Cancel)
+            {
+                e.Cancel = true;
+            }
+        }
+
+
+        void ZmianaStatusStrip(string info)
+        {
+            ToolStripStatusLabel.Text = info;
+        }
+
+
+        //-----------------------------------Raporty----------------------------------------------
+
         private void ButtonOpisProjektu_Click(object sender, EventArgs e)
         {
             const string NazwaPliku = "Raport_Opis_Projektu";
@@ -1577,26 +1530,6 @@ namespace Aplikacja
 
 
 
-
-        private void OknoGlowne_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            DialogResult rezultat = MessageBox.Show("Czy chcesz zapisać obecny projekt?", "Uwaga!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
-
-            if (rezultat == DialogResult.Yes)
-            {
-                ButtonZapiszProjekt_Click(sender, e);
-            }
-            else if (rezultat == DialogResult.Cancel)
-            {
-                e.Cancel = true;
-            }
-        }
-
-
-        void ZmianaStatusStrip(string info)
-        {            
-            ToolStripStatusLabel.Text = info;
-        }
 
 
     }
