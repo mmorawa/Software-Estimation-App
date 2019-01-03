@@ -851,8 +851,7 @@ namespace Aplikacja
         //Końcowe wyniki oszacowania
         public static void Wyniki(Document dokument)
         {
-            //TODO Przekroczenia
-          
+                      
             var sekcja = dokument.LastSection;
 
             var paragraf = sekcja.AddParagraph("Wyniki oszacowania pracochłonności", "Heading1");
@@ -908,10 +907,13 @@ namespace Aplikacja
             row = TabelaWyniki.AddRow();
             row.VerticalAlignment = VerticalAlignment.Center;
             cell = row.Cells[0];
+            if (Ograniczenia == true && MaxPrac != 0 && MaxPrac < PracochlonnoscNLep) cell.Shading.Color = Colors.Red;
             cell.AddParagraph(string.Format("{0:N1}", PracochlonnoscNLep));
             cell = row.Cells[1];
+            if (Ograniczenia == true && MaxPrac != 0 && MaxPrac < Pracochlonnosc) cell.Shading.Color = Colors.Red;
             cell.AddParagraph(string.Format("{0:N1}", Pracochlonnosc));
             cell = row.Cells[2];
+            if (Ograniczenia == true && MaxPrac != 0 && MaxPrac < PracochlonnoscNGor) cell.Shading.Color = Colors.Red;
             cell.AddParagraph(string.Format("{0:N1}", PracochlonnoscNGor));
 
 
@@ -925,10 +927,13 @@ namespace Aplikacja
             row = TabelaWyniki.AddRow();
             row.VerticalAlignment = VerticalAlignment.Center;
             cell = row.Cells[0];
+            if (Ograniczenia == true && MaxHarm != 0 && MaxHarm < HarmonogramNLep) cell.Shading.Color = Colors.Red;
             cell.AddParagraph(string.Format("{0:N1}", HarmonogramNLep));
             cell = row.Cells[1];
+            if (Ograniczenia == true && MaxHarm != 0 && MaxHarm < Harmonogram) cell.Shading.Color = Colors.Red;
             cell.AddParagraph(string.Format("{0:N1}", Harmonogram));
             cell = row.Cells[2];
+            if (Ograniczenia == true && MaxHarm != 0 && MaxHarm < HarmonogramNGor) cell.Shading.Color = Colors.Red;
             cell.AddParagraph(string.Format("{0:N1}", HarmonogramNGor));
 
 
@@ -954,10 +959,13 @@ namespace Aplikacja
                 row = TabelaWyniki.AddRow();
                 row.VerticalAlignment = VerticalAlignment.Center;
                 cell = row.Cells[0];
+                if (Ograniczenia == true && Deadline.Date != DateTime.Today && Deadline.Date < DataZakonczeniaNLep.Date) cell.Shading.Color = Colors.Red;
                 cell.AddParagraph(string.Format("{0:d MMMM yyyy}", DataZakonczeniaNLep));
                 cell = row.Cells[1];
+                if (Ograniczenia == true && Deadline.Date != DateTime.Today && Deadline.Date < DataZakonczenia.Date) cell.Shading.Color = Colors.Red;
                 cell.AddParagraph(string.Format("{0:d MMMM yyyy}", DataZakonczenia));
                 cell = row.Cells[2];
+                if (Ograniczenia == true && Deadline.Date != DateTime.Today && Deadline.Date < DataZakonczeniaNGor.Date) cell.Shading.Color = Colors.Red;
                 cell.AddParagraph(string.Format("{0:d MMMM yyyy}", DataZakonczeniaNGor));
             }
 
@@ -991,10 +999,13 @@ namespace Aplikacja
             row = TabelaWyniki.AddRow();
             row.VerticalAlignment = VerticalAlignment.Center;
             cell = row.Cells[0];
+            if (Ograniczenia == true && MaxKoszt != 0 && MaxKoszt < KosztNLep) cell.Shading.Color = Colors.Red;
             cell.AddParagraph(string.Format("{0:N}", KosztNLep));
             cell = row.Cells[1];
+            if (Ograniczenia == true && MaxKoszt != 0 && MaxKoszt < Koszt) cell.Shading.Color = Colors.Red;
             cell.AddParagraph(string.Format("{0:N}", Koszt));
             cell = row.Cells[2];
+            if (Ograniczenia == true && MaxKoszt != 0 && MaxKoszt < KosztNGor) cell.Shading.Color = Colors.Red;
             cell.AddParagraph(string.Format("{0:N}", KosztNGor));
 
 
@@ -1008,10 +1019,13 @@ namespace Aplikacja
             row = TabelaWyniki.AddRow();
             row.VerticalAlignment = VerticalAlignment.Center;
             cell = row.Cells[0];
+            if (Ograniczenia == true && MaxZespol != 0 && MaxZespol < SrZespolNLep) cell.Shading.Color = Colors.Red;
             cell.AddParagraph(string.Format("{0:N1}", SrZespolNLep));
             cell = row.Cells[1];
+            if (Ograniczenia == true && MaxZespol != 0 && MaxZespol < SrZespol) cell.Shading.Color = Colors.Red;
             cell.AddParagraph(string.Format("{0:N1}", SrZespol));
             cell = row.Cells[2];
+            if (Ograniczenia == true && MaxZespol != 0 && MaxZespol < SrZespolNGor) cell.Shading.Color = Colors.Red;
             cell.AddParagraph(string.Format("{0:N1}", SrZespolNGor));
 
 

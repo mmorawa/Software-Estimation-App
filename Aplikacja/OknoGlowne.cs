@@ -543,8 +543,8 @@ namespace Aplikacja
             //Ograniczenia nałożone na projekt
 
             if (Ograniczenia == true)
-            {
-
+            { 
+                //Ograniczenia nałożone na pracochłonność
                 if (MaxPrac != 0 && MaxPrac < Pracochlonnosc)
                 {
                     LabelWynikPrac.BackColor = System.Drawing.Color.FromName("red");
@@ -575,7 +575,7 @@ namespace Aplikacja
                     LabelWynikNGorPrac.BackColor = System.Drawing.Color.FromName("control");
                 }
 
-
+                //Ograniczenia nałożone na harmonogram
                 if (MaxHarm != 0 && MaxHarm < Harmonogram)
                 {
                     LabelWynikHarm.BackColor = System.Drawing.Color.FromName("red");
@@ -606,7 +606,7 @@ namespace Aplikacja
                     LabelWynikNGorHarm.BackColor = System.Drawing.Color.FromName("control");
                 }
 
-
+                //Ograniczenia nałożone na datę zakończenia
                 if (Deadline.Date != DateTime.Today && Deadline.Date < DataZakonczenia.Date)
                 {
                     LabelWynikData.BackColor = System.Drawing.Color.FromName("red");
@@ -637,7 +637,7 @@ namespace Aplikacja
                     LabelWynikNGorData.BackColor = System.Drawing.Color.FromName("control");
                 }
 
-
+                //Ograniczenia nałożone na koszt
                 if (MaxKoszt != 0 && MaxKoszt < Koszt)
                 {
                     LabelWynikKoszt.BackColor = System.Drawing.Color.FromName("red");
@@ -668,7 +668,7 @@ namespace Aplikacja
                     LabelWynikNGorKoszt.BackColor = System.Drawing.Color.FromName("control");
                 }
 
-
+                //Ograniczenia nałożone na średnią wielkość zespołu
                 if (MaxZespol != 0 && MaxZespol < SrZespol)
                 {
                     LabelWynikSrZesp.BackColor = System.Drawing.Color.FromName("red");
