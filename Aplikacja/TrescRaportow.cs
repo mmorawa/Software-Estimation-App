@@ -201,7 +201,6 @@ namespace Aplikacja
             paragraf.Format.Font.Bold = true;
             paragraf.AddFormattedText(JezykProg[JezykProgramowania], TextFormat.NotBold);
 
-            //EXT ładnie opisane
             paragraf = sekcja.AddParagraph("Stawka godzinowa: ");
             paragraf.Format.Font.Bold = true;
             paragraf.AddFormattedText(StawkaGodz + " zł", TextFormat.NotBold);

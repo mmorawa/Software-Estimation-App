@@ -81,9 +81,10 @@
             this.ButtonNastepna.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ButtonNastepna.Location = new System.Drawing.Point(669, 11);
             this.ButtonNastepna.Name = "ButtonNastepna";
-            this.ButtonNastepna.Size = new System.Drawing.Size(34, 27);
+            this.ButtonNastepna.Size = new System.Drawing.Size(35, 27);
             this.ButtonNastepna.TabIndex = 5;
             this.ButtonNastepna.Text = ">>";
+            this.ButtonNastepna.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ButtonNastepna.UseVisualStyleBackColor = true;
             this.ButtonNastepna.Click += new System.EventHandler(this.ButtonNastepna_Click);
             // 
@@ -95,6 +96,7 @@
             this.ButtonPoprzednia.Size = new System.Drawing.Size(35, 27);
             this.ButtonPoprzednia.TabIndex = 4;
             this.ButtonPoprzednia.Text = "<<";
+            this.ButtonPoprzednia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ButtonPoprzednia.UseVisualStyleBackColor = true;
             this.ButtonPoprzednia.Click += new System.EventHandler(this.ButtonPoprzednia_Click);
             // 
@@ -163,9 +165,10 @@
             this.ButtonPowieksz.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ButtonPowieksz.Location = new System.Drawing.Point(815, 11);
             this.ButtonPowieksz.Name = "ButtonPowieksz";
-            this.ButtonPowieksz.Size = new System.Drawing.Size(28, 27);
+            this.ButtonPowieksz.Size = new System.Drawing.Size(35, 27);
             this.ButtonPowieksz.TabIndex = 7;
             this.ButtonPowieksz.Text = "+";
+            this.ButtonPowieksz.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.ButtonPowieksz.UseVisualStyleBackColor = true;
             this.ButtonPowieksz.Click += new System.EventHandler(this.ButtonPowieksz_Click);
             // 

@@ -23,8 +23,6 @@ namespace Aplikacja
         *  Zmienne i tablice
         ********************************************************************************/
 
-        //EXT encapsulate?? 
-
         string SciezkaDoPliku = "";
 
         //Dane projektu
@@ -196,6 +194,8 @@ namespace Aplikacja
         *  Metody klasy Form1.
         ********************************************************************************/
 
+        //-----------------------------------Pasek menu------------------------------------------------------
+
         private void ToolStripMenuNowyProj_Click(object sender, EventArgs e)
         {
             ButtonNowyProjekt_Click(sender, e);
@@ -315,7 +315,7 @@ namespace Aplikacja
 
 
 
-        //-----------------------------------Dane UCP-----------------------------------------------------
+        //-----------------------------------Wprowadzenie danych do metody UCP-------------------------------
 
         private void TextBoxNazwaProjektu_TextChanged(object sender, EventArgs e)
         {
@@ -365,7 +365,7 @@ namespace Aplikacja
         }
 
 
-        //-----------------------------------Dane COCOMO II--------------------------------------------------
+        //-----------------------------------Wprowadzenie danych do metody COCOMO II-------------------------
 
 
         private void ButtonCzSk_Click(object sender, EventArgs e)
@@ -408,7 +408,7 @@ namespace Aplikacja
         }
 
 
-        //-----------------------------------Algorytm------------------------------------------------------
+        //-----------------------------------Algorytm szacujący----------------------------------------------
 
 
         private void Oszacowanie()
@@ -1409,7 +1409,7 @@ namespace Aplikacja
         }
 
 
-        //-----------------------------------Raporty----------------------------------------------
+        //-----------------------------------Raporty---------------------------------------------------------
 
         private void ButtonOpisProjektu_Click(object sender, EventArgs e)
         {

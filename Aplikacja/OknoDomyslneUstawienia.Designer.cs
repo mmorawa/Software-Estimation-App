@@ -446,7 +446,7 @@
             this.ButtonOk.Text = "OK";
             this.ButtonOk.UseVisualStyleBackColor = true;
             // 
-            // OknoUstawienia
+            // OknoDomyslneUstawienia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -455,7 +455,7 @@
             this.Controls.Add(this.ButtonOk);
             this.Controls.Add(this.GroupBoxSzczDomyslneUstawienia);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "OknoUstawienia";
+            this.Name = "OknoDomyslneUstawienia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Ustawienia";
             this.GroupBoxSzczDomyslneUstawienia.ResumeLayout(false);

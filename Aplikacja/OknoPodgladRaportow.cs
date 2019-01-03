@@ -19,7 +19,7 @@ namespace Aplikacja
 
             NazwaPlikuZapis = NazwaPliku;
 
-            // Create a new MigraDoc document
+            // Utworzenie nowego dokumentu MigraDoc
             var dokument = Raport;
            
             var ddl = DdlWriter.WriteToString(dokument);
@@ -61,29 +61,29 @@ namespace Aplikacja
         private void ButtonDrukuj_Click(object sender, EventArgs e)
         {
 
-                //#if true_ // TODO: MigraDoc.Rendering.Printing doesn't exist
-                // Reuse the renderer from the preview
+
+                // Wykorzystaj ponownie renderer z podglądu wydruku
                 var renderer = PodgladRaportu.Renderer;
                 if (renderer == null)
                     return;
 
                 var pageCount = renderer.FormattedDocument.PageCount;
 
-                // Creates a PrintDocument that simplifies printing of MigraDoc documents
+                //Tworzy PrintDocument, który upraszcza drukowanie dokumentu utworzonego przez MigraDoc
                 var printDocument = new MigraDocPrintDocument();
 
-                // Attach the current printer settings
+                // Dołącz istniejące ustawienia drukowania
                 printDocument.PrinterSettings = _printerSettings;
 
                 if (_printerSettings.PrintRange == PrintRange.Selection)
                     printDocument.SelectedPage = PodgladRaportu.Page;
 
-                // Attach the current document renderer
+                // Dołącz istniejący renderer dokumentu
                 printDocument.Renderer = renderer;
 
-                // Print the document
+                // Wydrukowanie dokumentu
                 printDocument.Print();
-                //#endif
+
 
         }
 
