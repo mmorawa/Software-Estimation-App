@@ -36,6 +36,7 @@
             this.okButton = new System.Windows.Forms.Button();
             this.TextBoxOpis = new System.Windows.Forms.TextBox();
             this.labelCompanyName = new System.Windows.Forms.Label();
+            this.LinkLicencja = new System.Windows.Forms.LinkLabel();
             this.tableLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -49,18 +50,20 @@
             this.tableLayoutPanel.Controls.Add(this.labelProductName, 1, 0);
             this.tableLayoutPanel.Controls.Add(this.labelVersion, 1, 1);
             this.tableLayoutPanel.Controls.Add(this.labelCopyright, 1, 2);
-            this.tableLayoutPanel.Controls.Add(this.okButton, 1, 5);
+            this.tableLayoutPanel.Controls.Add(this.okButton, 1, 6);
             this.tableLayoutPanel.Controls.Add(this.TextBoxOpis, 1, 4);
             this.tableLayoutPanel.Controls.Add(this.labelCompanyName, 1, 3);
+            this.tableLayoutPanel.Controls.Add(this.LinkLicencja, 1, 5);
             this.tableLayoutPanel.Location = new System.Drawing.Point(9, 9);
             this.tableLayoutPanel.Name = "tableLayoutPanel";
-            this.tableLayoutPanel.RowCount = 6;
+            this.tableLayoutPanel.RowCount = 7;
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 109F));
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 95F));
+            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tableLayoutPanel.Size = new System.Drawing.Size(465, 265);
             this.tableLayoutPanel.TabIndex = 0;
             // 
@@ -70,8 +73,8 @@
             this.logoPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("logoPictureBox.Image")));
             this.logoPictureBox.Location = new System.Drawing.Point(3, 3);
             this.logoPictureBox.Name = "logoPictureBox";
-            this.tableLayoutPanel.SetRowSpan(this.logoPictureBox, 6);
-            this.logoPictureBox.Size = new System.Drawing.Size(147, 259);
+            this.tableLayoutPanel.SetRowSpan(this.logoPictureBox, 7);
+            this.logoPictureBox.Size = new System.Drawing.Size(147, 262);
             this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logoPictureBox.TabIndex = 12;
             this.logoPictureBox.TabStop = false;
@@ -120,7 +123,7 @@
             this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.okButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.okButton.Location = new System.Drawing.Point(358, 235);
+            this.okButton.Location = new System.Drawing.Point(358, 238);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(104, 27);
             this.okButton.TabIndex = 0;
@@ -136,7 +139,7 @@
             this.TextBoxOpis.Name = "TextBoxOpis";
             this.TextBoxOpis.ReadOnly = true;
             this.TextBoxOpis.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.TextBoxOpis.Size = new System.Drawing.Size(303, 103);
+            this.TextBoxOpis.Size = new System.Drawing.Size(303, 89);
             this.TextBoxOpis.TabIndex = 23;
             this.TextBoxOpis.TabStop = false;
             this.TextBoxOpis.Text = "Opis";
@@ -154,6 +157,18 @@
             this.labelCompanyName.Size = new System.Drawing.Size(303, 38);
             this.labelCompanyName.TabIndex = 22;
             this.labelCompanyName.Text = "Company Name";
+            // 
+            // LinkLicencja
+            // 
+            this.LinkLicencja.AutoSize = true;
+            this.LinkLicencja.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LinkLicencja.Location = new System.Drawing.Point(156, 202);
+            this.LinkLicencja.Name = "LinkLicencja";
+            this.LinkLicencja.Size = new System.Drawing.Size(211, 16);
+            this.LinkLicencja.TabIndex = 24;
+            this.LinkLicencja.TabStop = true;
+            this.LinkLicencja.Text = "Treść licencji MigraDoc Foundation";
+            this.LinkLicencja.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLicencja_LinkClicked);
             // 
             // OknoOAplikacji
             // 
@@ -188,5 +203,6 @@
         private System.Windows.Forms.Label labelCompanyName;
         private System.Windows.Forms.TextBox TextBoxOpis;
         private System.Windows.Forms.Button okButton;
+        private System.Windows.Forms.LinkLabel LinkLicencja;
     }
 }

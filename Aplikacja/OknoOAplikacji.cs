@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
@@ -101,5 +102,10 @@ namespace Aplikacja
             }
         }
         #endregion
+
+        private void LinkLicencja_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("Licencja MigraDoc Foundation.txt");
+        }
     }
 }

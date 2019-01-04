@@ -6,7 +6,8 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Aplikacja")]
-[assembly: AssemblyDescription("Aplikacja wspomagająca szacowanie pracochłonności wytwarzania oprogramowania.")]
+[assembly: AssemblyDescription("Aplikacja wspomagająca szacowanie pracochłonności wytwarzania oprogramowania. \n" +
+    "Wykorzystuje bibliotekę open-source na licencji MIT o nazwie MigraDoc Foundation, której autorem jest empira Software GmbH.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Państwowa Wyższa Szkoła Zawodowa \nw Nowym Sączu")]
 [assembly: AssemblyProduct("Aplikacja")]

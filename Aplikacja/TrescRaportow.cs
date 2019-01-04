@@ -251,9 +251,6 @@ namespace Aplikacja
 
             var TabelaUUCW = new Table();
 
-            //granice tabelii
-            //TabelaUUCW.Borders.Width = 0.5;
-
             //dodajemy kolumny
             var column = TabelaUUCW.AddColumn(Unit.FromCentimeter(2.5));
             column.Format.Alignment = ParagraphAlignment.Center;
@@ -267,7 +264,7 @@ namespace Aplikacja
             column = TabelaUUCW.AddColumn(Unit.FromCentimeter(7.6));
             column.Format.Alignment = ParagraphAlignment.Center;
 
-            //lub row.Height = Unit.FromCentimeter(1);
+
             TabelaUUCW.Rows.Height = Unit.FromCentimeter(1);
 
             var row = TabelaUUCW.AddRow();
@@ -320,8 +317,6 @@ namespace Aplikacja
             cell.AddParagraph("więcej niż 7");
 
 
-            //ramka od 0,0 do 2 kolumny, 3 rzędy
-            //TabelaUUCW.SetEdge(0, 0, 2, 1, Edge.Box, MigraDoc.DocumentObjectModel.BorderStyle.Single, 1, Colors.Black);
             TabelaUUCW.SetEdge(0, 0, 4, 4, Edge.Bottom, MigraDoc.DocumentObjectModel.BorderStyle.Single, 1, Colors.LightSalmon);
 
             dokument.LastSection.Add(TabelaUUCW);
@@ -401,8 +396,6 @@ namespace Aplikacja
             cell.AddParagraph("człowiek poprzez GUI");
 
 
-            //ramka od 0,0 do 2 kolumny, 3 rzędy
-            //TabelaUUCW.SetEdge(0, 0, 2, 1, Edge.Box, MigraDoc.DocumentObjectModel.BorderStyle.Single, 1, Colors.Black);
             TabelaUAW.SetEdge(0, 0, 4, 4, Edge.Bottom, MigraDoc.DocumentObjectModel.BorderStyle.Single, 1, Colors.LightSalmon);
 
             dokument.LastSection.Add(TabelaUAW);
@@ -442,7 +435,7 @@ namespace Aplikacja
             cell.AddParagraph("Poziom oceny");
             cell = row.Cells[2];
             cell.AddParagraph("Krótki opis");
-            //przywracay wycentrowany nagłówek
+            //przywraca wycentrowany nagłówek
             cell.Format.Alignment = ParagraphAlignment.Center;
 
 
@@ -628,7 +621,7 @@ namespace Aplikacja
             cell.AddParagraph("Poziom oceny");
             cell = row.Cells[2];
             cell.AddParagraph("Krótki opis");
-            //przywracay wycentrowany nagłówek
+            //przywraca wycentrowany nagłówek
             cell.Format.Alignment = ParagraphAlignment.Center;
 
 
@@ -730,7 +723,7 @@ namespace Aplikacja
             cell.AddParagraph("Poziom oceny");
             cell = row.Cells[2];
             cell.AddParagraph("Krótki opis");
-            //przywracay wycentrowany nagłówek
+            //przywraca wycentrowany nagłówek
             cell.Format.Alignment = ParagraphAlignment.Center;
 
 
@@ -806,7 +799,7 @@ namespace Aplikacja
             cell.AddParagraph("Poziom oceny");
             cell = row.Cells[2];
             cell.AddParagraph("Krótki opis");
-            //przywracay wycentrowany nagłówek
+            //przywraca wycentrowany nagłówek
             cell.Format.Alignment = ParagraphAlignment.Center;
 
 
