@@ -8,7 +8,7 @@ using MigraDoc.DocumentObjectModel.Fields;
 namespace Aplikacja
 {
     //BUG partial zamiast dziedziczenia
-    class TrescRaportow : OknoGlowne
+    class TrescRaportow
     {
 
         //Funkcja definiująca styl generowanego dokumentu
@@ -103,9 +103,9 @@ namespace Aplikacja
 
             double odstep = 0;
 
-            if (Szacujacy.Length != 0)
+            if (OknoGlowne.Szacujacy.Length != 0)
             {
-                paragraf = sekcja.AddParagraph("Przygotował " + Szacujacy);
+                paragraf = sekcja.AddParagraph("Przygotował " + OknoGlowne.Szacujacy);
                 paragraf.Format.Font.Size = 15;
                 paragraf.Format.Font.Color = Colors.DarkRed;
                 odstep += 6;
@@ -115,9 +115,9 @@ namespace Aplikacja
                 odstep += 6.6;
             }
 
-            if (NazwaFirmy.Length != 0)
+            if (OknoGlowne.NazwaFirmy.Length != 0)
             {
-                paragraf = sekcja.AddParagraph("dla firmy " + NazwaFirmy);
+                paragraf = sekcja.AddParagraph("dla firmy " + OknoGlowne.NazwaFirmy);
                 paragraf.Format.Font.Size = 15;
                 paragraf.Format.Font.Color = Colors.DarkRed;
                 odstep += 6;
@@ -127,7 +127,7 @@ namespace Aplikacja
                 odstep += 6.6;
             }
 
-            if (Szacujacy.Length == 0 && NazwaFirmy.Length == 0)
+            if (OknoGlowne.Szacujacy.Length == 0 && OknoGlowne.NazwaFirmy.Length == 0)
             {
                 odstep = 14.2;
             }
@@ -156,79 +156,79 @@ namespace Aplikacja
 
             paragraf = sekcja.AddParagraph("Nazwa projektu: ");
             paragraf.Format.Font.Bold = true;
-            paragraf.AddFormattedText(NazwaProjektu, TextFormat.NotBold);
+            paragraf.AddFormattedText(OknoGlowne.NazwaProjektu, TextFormat.NotBold);
 
             paragraf = sekcja.AddParagraph("Kierownik Projektu: ");
             paragraf.Format.Font.Bold = true;
-            paragraf.AddFormattedText(KierownikProjektu, TextFormat.NotBold);
+            paragraf.AddFormattedText(OknoGlowne.KierownikProjektu, TextFormat.NotBold);
 
             paragraf = sekcja.AddParagraph("Osoba odpowiedzialna za oszacowanie: ");
             paragraf.Format.Font.Bold = true;
-            paragraf.AddFormattedText(Szacujacy, TextFormat.NotBold);
+            paragraf.AddFormattedText(OknoGlowne.Szacujacy, TextFormat.NotBold);
 
             // Na wypadek gdyby użytkownik nie wybrał żadnej daty
-            if (DataProjektu.Length == 0)
+            if (OknoGlowne.DataProjektu.Length == 0)
             {
-                DataProjektu = DateTime.Now.ToLongDateString();
+                OknoGlowne.DataProjektu = DateTime.Now.ToLongDateString();
             }
             paragraf = sekcja.AddParagraph("Data rozpoczęcia projektu: ");
             paragraf.Format.Font.Bold = true;
-            paragraf.AddFormattedText(DataProjektu, TextFormat.NotBold);
+            paragraf.AddFormattedText(OknoGlowne.DataProjektu, TextFormat.NotBold);
 
             paragraf = sekcja.AddParagraph("Dane firmy", "Heading3");
 
             paragraf = sekcja.AddParagraph("Nazwa firmy: ");
             paragraf.Format.Font.Bold = true;
-            paragraf.AddFormattedText(NazwaFirmy, TextFormat.NotBold);
+            paragraf.AddFormattedText(OknoGlowne.NazwaFirmy, TextFormat.NotBold);
 
             paragraf = sekcja.AddParagraph("Adres: ");
             paragraf.Format.Font.Bold = true;
-            paragraf.AddFormattedText(Adres, TextFormat.NotBold);
+            paragraf.AddFormattedText(OknoGlowne.Adres, TextFormat.NotBold);
 
             paragraf = sekcja.AddParagraph("Telefon/Fax: ");
             paragraf.Format.Font.Bold = true;
-            paragraf.AddFormattedText(Telefon, TextFormat.NotBold);
+            paragraf.AddFormattedText(OknoGlowne.Telefon, TextFormat.NotBold);
 
             paragraf = sekcja.AddParagraph("E-Mail: ");
             paragraf.Format.Font.Bold = true;
-            paragraf.AddFormattedText(Email, TextFormat.NotBold);
+            paragraf.AddFormattedText(OknoGlowne.Email, TextFormat.NotBold);
 
             paragraf = sekcja.AddParagraph("Opis projektu", "Heading3");
-            paragraf = sekcja.AddParagraph(OpisProjektu);
+            paragraf = sekcja.AddParagraph(OknoGlowne.OpisProjektu);
 
             paragraf = sekcja.AddParagraph("Założenia projektu", "Heading3");
             paragraf = sekcja.AddParagraph("Główny język programowania użyty w projekcie: ");
             paragraf.Format.Font.Bold = true;
-            paragraf.AddFormattedText(JezykProg[JezykProgramowania], TextFormat.NotBold);
+            paragraf.AddFormattedText(OknoGlowne.JezykProg[OknoGlowne.JezykProgramowania], TextFormat.NotBold);
 
             paragraf = sekcja.AddParagraph("Stawka godzinowa: ");
             paragraf.Format.Font.Bold = true;
-            paragraf.AddFormattedText(StawkaGodz + " zł", TextFormat.NotBold);
+            paragraf.AddFormattedText(OknoGlowne.StawkaGodz + " zł", TextFormat.NotBold);
 
             paragraf = sekcja.AddParagraph("1 osobomiesiąc stanowi: ");
             paragraf.Format.Font.Bold = true;
-            paragraf.AddFormattedText(OsoboMGodz + " osobogodzin", TextFormat.NotBold);
+            paragraf.AddFormattedText(OknoGlowne.OsoboMGodz + " osobogodzin", TextFormat.NotBold);
 
             paragraf = sekcja.AddParagraph("Dzień roboczy wynosi: ");
             paragraf.Format.Font.Bold = true;
-            paragraf.AddFormattedText(DzRobGodz + " godzin", TextFormat.NotBold);
+            paragraf.AddFormattedText(OknoGlowne.DzRobGodz + " godzin", TextFormat.NotBold);
 
 
-            if (Ograniczenia == true)
+            if (OknoGlowne.Ograniczenia == true)
             {
                 paragraf = sekcja.AddParagraph("Ograniczenia nałożone na oszacowanie", "Heading3");
 
                 paragraf = sekcja.AddParagraph("Maksymalna pracochłonność: ");
                 paragraf.Format.Font.Bold = true;
-                paragraf.AddFormattedText(MaxPrac + " osobomiesięcy", TextFormat.NotBold);
+                paragraf.AddFormattedText(OknoGlowne.MaxPrac + " osobomiesięcy", TextFormat.NotBold);
 
                 paragraf = sekcja.AddParagraph("Maksymalny harmonogram: ");
                 paragraf.Format.Font.Bold = true;
-                paragraf.AddFormattedText(MaxHarm + " miesięcy", TextFormat.NotBold);
+                paragraf.AddFormattedText(OknoGlowne.MaxHarm + " miesięcy", TextFormat.NotBold);
 
                 paragraf = sekcja.AddParagraph("Maksymalny koszt: ");
                 paragraf.Format.Font.Bold = true;
-                paragraf.AddFormattedText(MaxKoszt + " zł", TextFormat.NotBold);
+                paragraf.AddFormattedText(OknoGlowne.MaxKoszt + " zł", TextFormat.NotBold);
 
             }
 
@@ -290,7 +290,7 @@ namespace Aplikacja
             cell = row.Cells[1];
             cell.AddParagraph("5");
             cell = row.Cells[2];
-            cell.AddParagraph(TabUUCW[0].ToString());
+            cell.AddParagraph(OknoGlowne.TabUUCW[0].ToString());
             cell = row.Cells[3];
             cell.AddParagraph("od 1 do 3");
 
@@ -301,7 +301,7 @@ namespace Aplikacja
             cell = row.Cells[1];
             cell.AddParagraph("10");
             cell = row.Cells[2];
-            cell.AddParagraph(TabUUCW[1].ToString());
+            cell.AddParagraph(OknoGlowne.TabUUCW[1].ToString());
             cell = row.Cells[3];
             cell.AddParagraph("od 4 do 7");
 
@@ -312,7 +312,7 @@ namespace Aplikacja
             cell = row.Cells[1];
             cell.AddParagraph("15");
             cell = row.Cells[2];
-            cell.AddParagraph(TabUUCW[2].ToString());
+            cell.AddParagraph(OknoGlowne.TabUUCW[2].ToString());
             cell = row.Cells[3];
             cell.AddParagraph("więcej niż 7");
 
@@ -369,7 +369,7 @@ namespace Aplikacja
             cell = row.Cells[1];
             cell.AddParagraph("5");
             cell = row.Cells[2];
-            cell.AddParagraph(TabUAW[0].ToString());
+            cell.AddParagraph(OknoGlowne.TabUAW[0].ToString());
             cell = row.Cells[3];
             cell.AddParagraph("aktor systemowy poprzez API");
 
@@ -380,7 +380,7 @@ namespace Aplikacja
             cell = row.Cells[1];
             cell.AddParagraph("10");
             cell = row.Cells[2];
-            cell.AddParagraph(TabUAW[1].ToString());
+            cell.AddParagraph(OknoGlowne.TabUAW[1].ToString());
             cell = row.Cells[3];
             cell.AddParagraph("aktor systemowy poprzez protokół / człowiek poprzez wiersz poleceń");
 
@@ -391,7 +391,7 @@ namespace Aplikacja
             cell = row.Cells[1];
             cell.AddParagraph("15");
             cell = row.Cells[2];
-            cell.AddParagraph(TabUAW[2].ToString());
+            cell.AddParagraph(OknoGlowne.TabUAW[2].ToString());
             cell = row.Cells[3];
             cell.AddParagraph("człowiek poprzez GUI");
 
@@ -445,7 +445,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Typowość projektu");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringCzynnSkali[TabIndCzynnSkali[0]]);
+            cell.AddParagraph(OknoGlowne.TabStringCzynnSkali[OknoGlowne.TabIndCzynnSkali[0]]);
             cell = row.Cells[2];
             cell.AddParagraph("Czynnik ten bierze pod uwagę stopień podobieństwa obecnego projektu, do tych które były wcześniej zrealizowane przez dany zespół programistyczny.");
 
@@ -455,7 +455,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Elastyczność wytwarzania oprogramowania");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringCzynnSkali[TabIndCzynnSkali[1]]);
+            cell.AddParagraph(OknoGlowne.TabStringCzynnSkali[OknoGlowne.TabIndCzynnSkali[1]]);
             cell = row.Cells[2];
             cell.AddParagraph("Poziom oceny tego czynnika zależy głównie od tego, czy istnieje potrzeba zgodności tworzonego oprogramowania z ustalonymi wcześniej wymaganiami lub specyfikacjami zewnętrznych interfejsów.");
 
@@ -465,7 +465,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Ustalenie architektury \ni ryzyka");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringCzynnSkali[TabIndCzynnSkali[2]]);
+            cell.AddParagraph(OknoGlowne.TabStringCzynnSkali[OknoGlowne.TabIndCzynnSkali[2]]);
             cell = row.Cells[2];
             cell.AddParagraph("W tym przypadku ocenie podlegają kwestie dotyczące wyboru architektury oraz związanego z tym ryzyka, a więc m.in. ustalanie liczby krytycznych elementów i opracowanie Planu Zarządzania Ryzykiem, który pozwoli się z nimi uporać.");
 
@@ -474,7 +474,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Spójność zespołu");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringCzynnSkali[TabIndCzynnSkali[3]]);
+            cell.AddParagraph(OknoGlowne.TabStringCzynnSkali[OknoGlowne.TabIndCzynnSkali[3]]);
             cell = row.Cells[2];
             cell.AddParagraph("Uwzględnia wpływ jaki na wielkość pracochłonności mogą wywrzeć problemy z brakiem kooperacji pomiędzy interesariuszami czyli klientami, programistami, testerami i innymi osobami związanymi z projektem.");
 
@@ -483,7 +483,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Dojrzałość procesu");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringCzynnSkali[TabIndCzynnSkali[4]]);
+            cell.AddParagraph(OknoGlowne.TabStringCzynnSkali[OknoGlowne.TabIndCzynnSkali[4]]);
             cell = row.Cells[2];
             cell.AddParagraph("Procedura ustalania dojrzałości procesu opiera się na modelu CMM (Capability Maturity Model). Może ona przybrać formę zorganizowanego badania albo sprawdzenia procentowej zgodności z modelem CMM każdego z kluczowych obszarów procesu wytwarzania oprogramowania.");
 
@@ -538,7 +538,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Wymagana niezawodność oprogramownia");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[0]]);
+            cell.AddParagraph(OknoGlowne.TabStringMnPrac[OknoGlowne.TabIndMnPrac[0]]);
             cell = row.Cells[2];
             cell.AddParagraph("Określa stopień zdolności oprogramowania do spełniania swoich funkcji w wyznaczonym przedziale czasu użytkowania. Im bardziej negatywne są konsekwencje awarii, tym wyższa jest wymagana niezawodność.");
 
@@ -548,7 +548,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Wielkość bazy danych");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[1]]);
+            cell.AddParagraph(OknoGlowne.TabStringMnPrac[OknoGlowne.TabIndMnPrac[1]]);
             cell = row.Cells[2];
             cell.AddParagraph("Odzwierciedla wpływ dużych wymagań odnośnie danych testowych na wytwarzanie oprogramowania. Ocena jest zależna od stosunku liczby bajtów testowej bazy danych do rozmiaru aplikacji liczonego w liniach kodu (D/P).");
 
@@ -558,7 +558,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Złożoność produktu");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[2]]);
+            cell.AddParagraph(OknoGlowne.TabStringMnPrac[OknoGlowne.TabIndMnPrac[2]]);
             cell = row.Cells[2];
             cell.AddParagraph("Ocena złożoności produktu obejmuje pięć głównych obszarów: operacje kontrolne, operacje obliczeniowe, operacje zależne od sprzętu, operacje zarządzania danymi oraz operacje zarządzania interfejsem użytkownika.");
 
@@ -567,7 +567,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Możliwość ponownego wykorzystania");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[3]]);
+            cell.AddParagraph(OknoGlowne.TabStringMnPrac[OknoGlowne.TabIndMnPrac[3]]);
             cell = row.Cells[2];
             cell.AddParagraph("Ten mnożnik odpowiada za uwzględnienie dodatkowego nakładu pracy, który wiąże się z tworzeniem komponentów aplikacji w sposób pozwalający na ich ponowne użycie w przyszłości. Im bardziej abstrakcyjny i ogólny musi być dany komponent tym większa będzie pracochłonność jego wytworzenia.");
 
@@ -576,7 +576,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Dokumentacja odpowiada wymaganiom cyklu życia");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[4]]);
+            cell.AddParagraph(OknoGlowne.TabStringMnPrac[OknoGlowne.TabIndMnPrac[4]]);
             cell = row.Cells[2];
             cell.AddParagraph("Odpowiedni zakres dokumentacji ustalany jest w oparciu o wymagania cyklu życia projektu.");
 
@@ -631,7 +631,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Umiejętności analityków biznesowych");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[5]]);
+            cell.AddParagraph(OknoGlowne.TabStringMnPrac[OknoGlowne.TabIndMnPrac[5]]);
             cell = row.Cells[2];
             cell.AddParagraph("Analitycy biznesowi opracowują wymagania, które musi spełniać projektowane oprogramowanie w celu uzyskania przez organizację określonych korzyści biznesowych. Ocena umiejętności analityków powinna obejmować ich zdolność analizy i projektowania, dokładność, efektywność oraz komunikatywność.");
 
@@ -641,7 +641,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Umiejętności programistów");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[6]]);
+            cell.AddParagraph(OknoGlowne.TabStringMnPrac[OknoGlowne.TabIndMnPrac[6]]);
             cell = row.Cells[2];
             cell.AddParagraph("Główne czynniki jakie należy wziąć pod uwagę oceniając umiejętności programistów stanowią: ich efektywność, dokładność, komunikatywność oraz kooperatywność. Natomiast doświadczenie jest uwzględnione przez inne mnożniki.");
 
@@ -651,7 +651,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Ciągłość zespołu");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[7]]);
+            cell.AddParagraph(OknoGlowne.TabStringMnPrac[OknoGlowne.TabIndMnPrac[7]]);
             cell = row.Cells[2];
             cell.AddParagraph("Poziom oceny tego mnożnika zależy od tego jak wielka jest rotacja pracowników zatrudnionych przy projekcie w skali jednego roku.");
 
@@ -660,7 +660,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Doświadczenie \nw tworzeniu aplikacji");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[8]]);
+            cell.AddParagraph(OknoGlowne.TabStringMnPrac[OknoGlowne.TabIndMnPrac[8]]);
             cell = row.Cells[2];
             cell.AddParagraph("W celu prawidłowego ustalenia oceny tego mnożnika należy ustalić wielkość doświadczenia w tworzeniu aplikacji zespołu programistycznego, który pracuje nad danym projektem.");
 
@@ -669,7 +669,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Doświadczenie \nw korzystaniu z platformy");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[9]]);
+            cell.AddParagraph(OknoGlowne.TabStringMnPrac[OknoGlowne.TabIndMnPrac[9]]);
             cell = row.Cells[2];
             cell.AddParagraph("W przypadku tego mnożnika konieczne jest określenie wielkości doświadczenia zespołu projektowego związanego z wykorzystaniem określonej platformy czyli połączenia sprzętu komputerowego i oprogramowania, na którym działał będzie tworzony produkt.");
 
@@ -678,7 +678,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Doświadczenie \nw stosowaniu języka i narzędzi");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[10]]);
+            cell.AddParagraph(OknoGlowne.TabStringMnPrac[OknoGlowne.TabIndMnPrac[10]]);
             cell = row.Cells[2];
             cell.AddParagraph("Ten mnożnik odzwierciedla wielkość doświadczenia programistów w pracy z zastosowaniem języka programowania i narzędzi, które wykorzystane będą w tworzonym projekcie.");
 
@@ -733,7 +733,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Ograniczenia czasu wykonania");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[11]]);
+            cell.AddParagraph(OknoGlowne.TabStringMnPrac[OknoGlowne.TabIndMnPrac[11]]);
             cell = row.Cells[2];
             cell.AddParagraph("Poziom oceny tego mnożnika zależy od narzuconego na projektowany system ograniczenia czasu wykonania. Jest ono wyrażone w postaci procentowej wielkości dostępnego czasu wykonania, która zostanie zużyta przez tworzony system.");
 
@@ -743,7 +743,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Ograniczenia pamięciowe");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[12]]);
+            cell.AddParagraph(OknoGlowne.TabStringMnPrac[OknoGlowne.TabIndMnPrac[12]]);
             cell = row.Cells[2];
             cell.AddParagraph("W tym przypadku ocenie podlega stopień nałożonego na projektowany system ograniczenia pamięciowego określonego w postaci procentowej wielkości dostępnej pamięci, która zostanie zajęta przez tworzony system.");
 
@@ -753,7 +753,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Zmienność platformy");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[13]]);
+            cell.AddParagraph(OknoGlowne.TabStringMnPrac[OknoGlowne.TabIndMnPrac[13]]);
             cell = row.Cells[2];
             cell.AddParagraph("Ten mnożnik bierze pod uwagę, jak bardzo podlega zmianom platforma, na której działał będzie tworzony system. W ramach oceny należy uwzględnić zarówno zmiany zachodzące w sprzęcie komputerowym, jak i w oprogramowaniu platformy.");
 
@@ -809,7 +809,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Wykorzystanie narzędzi programistycznych");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[14]]);
+            cell.AddParagraph(OknoGlowne.TabStringMnPrac[OknoGlowne.TabIndMnPrac[14]]);
             cell = row.Cells[2];
             cell.AddParagraph("Użycie nowoczesnych narzędzi programistycznych umożliwia znaczne zmniejszenie nakładu pracy potrzebnego do wytworzenia oprogramowania, przy czym im bardziej są one zaawansowane i rozbudowane, tym większą przynoszą korzyść.");
 
@@ -819,7 +819,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Programowanie w wielu lokalizacjach");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[15]]);
+            cell.AddParagraph(OknoGlowne.TabStringMnPrac[OknoGlowne.TabIndMnPrac[15]]);
             cell = row.Cells[2];
             cell.AddParagraph("Osoby pracujące nad projektem mogą znajdować się w jednym budynku lub w wielu różnych miejscach, co przekłada się na wzrost pracochłonności. Drugim czynnikiem branym pod uwagę przy ocenie tego mnożnika jest sposób komunikacji pomiędzy członkami zespołu.");
 
@@ -829,7 +829,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Ograniczenia nałożone na harmonogram");
             cell = row.Cells[1];
-            cell.AddParagraph(TabStringMnPrac[TabIndMnPrac[16]]);
+            cell.AddParagraph(OknoGlowne.TabStringMnPrac[OknoGlowne.TabIndMnPrac[16]]);
             cell = row.Cells[2];
             cell.AddParagraph("Ten mnożnik odzwierciedla sytuację, gdy zachodzi konieczność skrócenia lub wydłużenia harmonogramu o określony procent jego wartości nominalnej.");
 
@@ -849,11 +849,11 @@ namespace Aplikacja
 
             var paragraf = sekcja.AddParagraph("Wyniki oszacowania pracochłonności", "Heading1");
 
-            paragraf = sekcja.AddParagraph("Liczba nieskorygowanych punktów przypadków użycia UUCP: " + UUCP);
-            paragraf = sekcja.AddParagraph("Rozmiar (w liniach kodu): " + Rozmiar);
+            paragraf = sekcja.AddParagraph("Liczba nieskorygowanych punktów przypadków użycia UUCP: " + OknoGlowne.UUCP);
+            paragraf = sekcja.AddParagraph("Rozmiar (w liniach kodu): " + OknoGlowne.Rozmiar);
 
 
-            paragraf = sekcja.AddParagraph(Ostrzezenie);
+            paragraf = sekcja.AddParagraph(OknoGlowne.Ostrzezenie);
             //paragraf = sekcja.AddParagraph("Metoda Use Case Points", "Heading3");
 
             //nagłówek tabelii
@@ -900,14 +900,14 @@ namespace Aplikacja
             row = TabelaWyniki.AddRow();
             row.VerticalAlignment = VerticalAlignment.Center;
             cell = row.Cells[0];
-            if (Ograniczenia == true && MaxPrac != 0 && MaxPrac < PracochlonnoscNLep) cell.Shading.Color = Colors.Red;
-            cell.AddParagraph(string.Format("{0:N1}", PracochlonnoscNLep));
+            if (OknoGlowne.Ograniczenia == true && OknoGlowne.MaxPrac != 0 && OknoGlowne.MaxPrac < OknoGlowne.PracochlonnoscNLep) cell.Shading.Color = Colors.Red;
+            cell.AddParagraph(string.Format("{0:N1}", OknoGlowne.PracochlonnoscNLep));
             cell = row.Cells[1];
-            if (Ograniczenia == true && MaxPrac != 0 && MaxPrac < Pracochlonnosc) cell.Shading.Color = Colors.Red;
-            cell.AddParagraph(string.Format("{0:N1}", Pracochlonnosc));
+            if (OknoGlowne.Ograniczenia == true && OknoGlowne.MaxPrac != 0 && OknoGlowne.MaxPrac < OknoGlowne.Pracochlonnosc) cell.Shading.Color = Colors.Red;
+            cell.AddParagraph(string.Format("{0:N1}", OknoGlowne.Pracochlonnosc));
             cell = row.Cells[2];
-            if (Ograniczenia == true && MaxPrac != 0 && MaxPrac < PracochlonnoscNGor) cell.Shading.Color = Colors.Red;
-            cell.AddParagraph(string.Format("{0:N1}", PracochlonnoscNGor));
+            if (OknoGlowne.Ograniczenia == true && OknoGlowne.MaxPrac != 0 && OknoGlowne.MaxPrac < OknoGlowne.PracochlonnoscNGor) cell.Shading.Color = Colors.Red;
+            cell.AddParagraph(string.Format("{0:N1}", OknoGlowne.PracochlonnoscNGor));
 
 
             row = TabelaWyniki.AddRow();
@@ -920,14 +920,14 @@ namespace Aplikacja
             row = TabelaWyniki.AddRow();
             row.VerticalAlignment = VerticalAlignment.Center;
             cell = row.Cells[0];
-            if (Ograniczenia == true && MaxHarm != 0 && MaxHarm < HarmonogramNLep) cell.Shading.Color = Colors.Red;
-            cell.AddParagraph(string.Format("{0:N1}", HarmonogramNLep));
+            if (OknoGlowne.Ograniczenia == true && OknoGlowne.MaxHarm != 0 && OknoGlowne.MaxHarm < OknoGlowne.HarmonogramNLep) cell.Shading.Color = Colors.Red;
+            cell.AddParagraph(string.Format("{0:N1}", OknoGlowne.HarmonogramNLep));
             cell = row.Cells[1];
-            if (Ograniczenia == true && MaxHarm != 0 && MaxHarm < Harmonogram) cell.Shading.Color = Colors.Red;
-            cell.AddParagraph(string.Format("{0:N1}", Harmonogram));
+            if (OknoGlowne.Ograniczenia == true && OknoGlowne.MaxHarm != 0 && OknoGlowne.MaxHarm < OknoGlowne.Harmonogram) cell.Shading.Color = Colors.Red;
+            cell.AddParagraph(string.Format("{0:N1}", OknoGlowne.Harmonogram));
             cell = row.Cells[2];
-            if (Ograniczenia == true && MaxHarm != 0 && MaxHarm < HarmonogramNGor) cell.Shading.Color = Colors.Red;
-            cell.AddParagraph(string.Format("{0:N1}", HarmonogramNGor));
+            if (OknoGlowne.Ograniczenia == true && OknoGlowne.MaxHarm != 0 && OknoGlowne.MaxHarm < OknoGlowne.HarmonogramNGor) cell.Shading.Color = Colors.Red;
+            cell.AddParagraph(string.Format("{0:N1}", OknoGlowne.HarmonogramNGor));
 
 
             row = TabelaWyniki.AddRow();
@@ -936,7 +936,7 @@ namespace Aplikacja
             cell.AddParagraph("Szacowana data zakończenia:");
             cell.MergeRight = 2;
 
-            if (DataZakonczenia.Date == DateTime.Today )
+            if (OknoGlowne.DataZakonczenia.Date == DateTime.Today )
             {
                 row = TabelaWyniki.AddRow();
                 row.VerticalAlignment = VerticalAlignment.Center;
@@ -952,14 +952,14 @@ namespace Aplikacja
                 row = TabelaWyniki.AddRow();
                 row.VerticalAlignment = VerticalAlignment.Center;
                 cell = row.Cells[0];
-                if (Ograniczenia == true && Deadline.Date != DateTime.Today && Deadline.Date < DataZakonczeniaNLep.Date) cell.Shading.Color = Colors.Red;
-                cell.AddParagraph(string.Format("{0:d MMMM yyyy}", DataZakonczeniaNLep));
+                if (OknoGlowne.Ograniczenia == true && OknoGlowne.Deadline.Date != DateTime.Today && OknoGlowne.Deadline.Date < OknoGlowne.DataZakonczeniaNLep.Date) cell.Shading.Color = Colors.Red;
+                cell.AddParagraph(string.Format("{0:d MMMM yyyy}", OknoGlowne.DataZakonczeniaNLep));
                 cell = row.Cells[1];
-                if (Ograniczenia == true && Deadline.Date != DateTime.Today && Deadline.Date < DataZakonczenia.Date) cell.Shading.Color = Colors.Red;
-                cell.AddParagraph(string.Format("{0:d MMMM yyyy}", DataZakonczenia));
+                if (OknoGlowne.Ograniczenia == true && OknoGlowne.Deadline.Date != DateTime.Today && OknoGlowne.Deadline.Date < OknoGlowne.DataZakonczenia.Date) cell.Shading.Color = Colors.Red;
+                cell.AddParagraph(string.Format("{0:d MMMM yyyy}", OknoGlowne.DataZakonczenia));
                 cell = row.Cells[2];
-                if (Ograniczenia == true && Deadline.Date != DateTime.Today && Deadline.Date < DataZakonczeniaNGor.Date) cell.Shading.Color = Colors.Red;
-                cell.AddParagraph(string.Format("{0:d MMMM yyyy}", DataZakonczeniaNGor));
+                if (OknoGlowne.Ograniczenia == true && OknoGlowne.Deadline.Date != DateTime.Today && OknoGlowne.Deadline.Date < OknoGlowne.DataZakonczeniaNGor.Date) cell.Shading.Color = Colors.Red;
+                cell.AddParagraph(string.Format("{0:d MMMM yyyy}", OknoGlowne.DataZakonczeniaNGor));
             }
 
 
@@ -975,11 +975,11 @@ namespace Aplikacja
             row = TabelaWyniki.AddRow();
             row.VerticalAlignment = VerticalAlignment.Center;
             cell = row.Cells[0];
-            cell.AddParagraph(string.Format("{0:N1}", WydajnoscNLep));
+            cell.AddParagraph(string.Format("{0:N1}", OknoGlowne.WydajnoscNLep));
             cell = row.Cells[1];
-            cell.AddParagraph(string.Format("{0:N1}", Wydajnosc));
+            cell.AddParagraph(string.Format("{0:N1}", OknoGlowne.Wydajnosc));
             cell = row.Cells[2];
-            cell.AddParagraph(string.Format("{0:N1}", WydajnoscNGor));
+            cell.AddParagraph(string.Format("{0:N1}", OknoGlowne.WydajnoscNGor));
 
 
             row = TabelaWyniki.AddRow();
@@ -992,14 +992,14 @@ namespace Aplikacja
             row = TabelaWyniki.AddRow();
             row.VerticalAlignment = VerticalAlignment.Center;
             cell = row.Cells[0];
-            if (Ograniczenia == true && MaxKoszt != 0 && MaxKoszt < KosztNLep) cell.Shading.Color = Colors.Red;
-            cell.AddParagraph(string.Format("{0:N}", KosztNLep));
+            if (OknoGlowne.Ograniczenia == true && OknoGlowne.MaxKoszt != 0 && OknoGlowne.MaxKoszt < OknoGlowne.KosztNLep) cell.Shading.Color = Colors.Red;
+            cell.AddParagraph(string.Format("{0:N}", OknoGlowne.KosztNLep));
             cell = row.Cells[1];
-            if (Ograniczenia == true && MaxKoszt != 0 && MaxKoszt < Koszt) cell.Shading.Color = Colors.Red;
-            cell.AddParagraph(string.Format("{0:N}", Koszt));
+            if (OknoGlowne.Ograniczenia == true && OknoGlowne.MaxKoszt != 0 && OknoGlowne.MaxKoszt < OknoGlowne.Koszt) cell.Shading.Color = Colors.Red;
+            cell.AddParagraph(string.Format("{0:N}", OknoGlowne.Koszt));
             cell = row.Cells[2];
-            if (Ograniczenia == true && MaxKoszt != 0 && MaxKoszt < KosztNGor) cell.Shading.Color = Colors.Red;
-            cell.AddParagraph(string.Format("{0:N}", KosztNGor));
+            if (OknoGlowne.Ograniczenia == true && OknoGlowne.MaxKoszt != 0 && OknoGlowne.MaxKoszt < OknoGlowne.KosztNGor) cell.Shading.Color = Colors.Red;
+            cell.AddParagraph(string.Format("{0:N}", OknoGlowne.KosztNGor));
 
 
             row = TabelaWyniki.AddRow();
@@ -1012,14 +1012,14 @@ namespace Aplikacja
             row = TabelaWyniki.AddRow();
             row.VerticalAlignment = VerticalAlignment.Center;
             cell = row.Cells[0];
-            if (Ograniczenia == true && MaxZespol != 0 && MaxZespol < SrZespolNLep) cell.Shading.Color = Colors.Red;
-            cell.AddParagraph(string.Format("{0:N1}", SrZespolNLep));
+            if (OknoGlowne.Ograniczenia == true && OknoGlowne.MaxZespol != 0 && OknoGlowne.MaxZespol < OknoGlowne.SrZespolNLep) cell.Shading.Color = Colors.Red;
+            cell.AddParagraph(string.Format("{0:N1}", OknoGlowne.SrZespolNLep));
             cell = row.Cells[1];
-            if (Ograniczenia == true && MaxZespol != 0 && MaxZespol < SrZespol) cell.Shading.Color = Colors.Red;
-            cell.AddParagraph(string.Format("{0:N1}", SrZespol));
+            if (OknoGlowne.Ograniczenia == true && OknoGlowne.MaxZespol != 0 && OknoGlowne.MaxZespol < OknoGlowne.SrZespol) cell.Shading.Color = Colors.Red;
+            cell.AddParagraph(string.Format("{0:N1}", OknoGlowne.SrZespol));
             cell = row.Cells[2];
-            if (Ograniczenia == true && MaxZespol != 0 && MaxZespol < SrZespolNGor) cell.Shading.Color = Colors.Red;
-            cell.AddParagraph(string.Format("{0:N1}", SrZespolNGor));
+            if (OknoGlowne.Ograniczenia == true && OknoGlowne.MaxZespol != 0 && OknoGlowne.MaxZespol < OknoGlowne.SrZespolNGor) cell.Shading.Color = Colors.Red;
+            cell.AddParagraph(string.Format("{0:N1}", OknoGlowne.SrZespolNGor));
 
 
 
