@@ -1,6 +1,6 @@
 ﻿namespace Aplikacja
 {
-    partial class OknoDomyslneUstawienia
+    partial class OknoDomyslneDane
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoDomyslneUstawienia));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoDomyslneDane));
             this.GroupBoxSzczDomyslneUstawienia = new System.Windows.Forms.GroupBox();
             this.GroupBoxDomZalozeniaProjektu = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -446,7 +446,7 @@
             this.ButtonOk.Text = "OK";
             this.ButtonOk.UseVisualStyleBackColor = true;
             // 
-            // OknoDomyslneUstawienia
+            // OknoDomyslneDane
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -455,7 +455,7 @@
             this.Controls.Add(this.ButtonOk);
             this.Controls.Add(this.GroupBoxSzczDomyslneUstawienia);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "OknoDomyslneUstawienia";
+            this.Name = "OknoDomyslneDane";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Ustawienia";
             this.GroupBoxSzczDomyslneUstawienia.ResumeLayout(false);

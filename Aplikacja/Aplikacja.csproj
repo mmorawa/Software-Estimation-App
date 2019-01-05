@@ -126,11 +126,11 @@
     <Compile Include="OknoTablicaPrzeliczeniowa.Designer.cs">
       <DependentUpon>OknoTablicaPrzeliczeniowa.cs</DependentUpon>
     </Compile>
-    <Compile Include="OknoDomyslneUstawienia.cs">
+    <Compile Include="OknoDomyslneDane.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OknoDomyslneUstawienia.Designer.cs">
-      <DependentUpon>OknoDomyslneUstawienia.cs</DependentUpon>
+    <Compile Include="OknoDomyslneDane.Designer.cs">
+      <DependentUpon>OknoDomyslneDane.cs</DependentUpon>
     </Compile>
     <Compile Include="OknoPodgladRaportow.cs">
       <SubType>Form</SubType>
@@ -174,8 +174,8 @@
     <EmbeddedResource Include="OknoTablicaPrzeliczeniowa.resx">
       <DependentUpon>OknoTablicaPrzeliczeniowa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OknoDomyslneUstawienia.resx">
-      <DependentUpon>OknoDomyslneUstawienia.cs</DependentUpon>
+    <EmbeddedResource Include="OknoDomyslneDane.resx">
+      <DependentUpon>OknoDomyslneDane.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OknoZalozeniaProjektu.resx">
       <DependentUpon>OknoZalozeniaProjektu.cs</DependentUpon>

@@ -20,7 +20,7 @@ namespace Aplikacja
         }
 
         /*****************************************************************************//**
-        *  Zmienne i tablice
+        *  Pola
         ********************************************************************************/
 
         string SciezkaDoPliku = "";
@@ -954,7 +954,7 @@ namespace Aplikacja
 
         private void ButtonUstawienia_Click(object sender, EventArgs e)
         {
-            using (OknoDomyslneUstawienia OknoUstawDomyslne = new OknoDomyslneUstawienia())
+            using (OknoDomyslneDane OknoUstawDomyslne = new OknoDomyslneDane())
             {
                 DialogResult rezultat = OknoUstawDomyslne.ShowDialog();
 
