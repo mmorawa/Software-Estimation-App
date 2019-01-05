@@ -7,7 +7,7 @@ using MigraDoc.DocumentObjectModel.Fields;
 
 namespace Aplikacja
 {
-    //BUG partial zamiast dziedziczenia
+    
     class TrescRaportow
     {
 
