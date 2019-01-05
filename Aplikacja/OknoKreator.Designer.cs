@@ -103,7 +103,6 @@
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -133,6 +132,7 @@
             this.ButtonZakoncz = new System.Windows.Forms.Button();
             this.ButtonPopCOCOMO = new System.Windows.Forms.Button();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.label33 = new System.Windows.Forms.Label();
             this.TabControlKreator.SuspendLayout();
             this.DaneProjektu.SuspendLayout();
             this.Zalozenia.SuspendLayout();
@@ -1101,7 +1101,7 @@
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(232, 43);
             this.label27.TabIndex = 10;
-            this.label27.Text = "Liczba transakcji";
+            this.label27.Text = "Definicja";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label28
@@ -1153,11 +1153,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label31.Location = new System.Drawing.Point(312, 43);
+            this.label31.Location = new System.Drawing.Point(312, 47);
+            this.label31.Margin = new System.Windows.Forms.Padding(3, 4, 3, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(228, 43);
+            this.label31.Size = new System.Drawing.Size(228, 39);
             this.label31.TabIndex = 14;
-            this.label31.Text = "od 1 do 3";
+            this.label31.Text = "od 1 do 3 transakcji oraz\r\n5 analizowanych klas lub mniej\r\n";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label32
@@ -1167,26 +1168,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label32.Location = new System.Drawing.Point(312, 86);
+            this.label32.Location = new System.Drawing.Point(312, 90);
+            this.label32.Margin = new System.Windows.Forms.Padding(3, 4, 3, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(228, 43);
+            this.label32.Size = new System.Drawing.Size(228, 39);
             this.label32.TabIndex = 15;
-            this.label32.Text = "od 4 do 7";
+            this.label32.Text = "od 4 do 7 transakcji oraz\r\nod 6 do 10 analizowanych klas\r\n";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label33
-            // 
-            this.label33.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label33.Location = new System.Drawing.Point(312, 129);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(228, 44);
-            this.label33.TabIndex = 16;
-            this.label33.Text = "więcej niż 7";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label34
             // 
@@ -1472,7 +1460,7 @@
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(231, 41);
             this.label48.TabIndex = 15;
-            this.label48.Text = "aktor systemowy poprzez protokół /\r\nczłowiek poprzez wiersz poleceń";
+            this.label48.Text = "aktor systemowy poprzez protokół\r\nlub człowiek poprzez wiersz poleceń";
             this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label49
@@ -1588,6 +1576,21 @@
             this.ButtonPopCOCOMO.Text = "< Poprzedni";
             this.ButtonPopCOCOMO.UseVisualStyleBackColor = true;
             this.ButtonPopCOCOMO.Click += new System.EventHandler(this.ButtonPopCOCOMO_Click);
+            // 
+            // label33
+            // 
+            this.label33.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label33.Location = new System.Drawing.Point(312, 133);
+            this.label33.Margin = new System.Windows.Forms.Padding(3, 4, 3, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(228, 40);
+            this.label33.TabIndex = 16;
+            this.label33.Text = "więcej niż 7 transakcji oraz\r\nwięcej niż 10 analizowanych klas\r\n";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // OknoKreator
             // 
@@ -1732,11 +1735,11 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Button ButtonMnPr;
         private System.Windows.Forms.Button ButtonCzSk;
         private System.Windows.Forms.ToolTip ToolTip;
+        private System.Windows.Forms.Label label33;
     }
 }

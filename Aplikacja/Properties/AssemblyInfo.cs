@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("Aplikacja")]
 [assembly: AssemblyDescription("Aplikacja wspomagająca szacowanie pracochłonności wytwarzania oprogramowania. \n" +
-    "Wykorzystuje bibliotekę open-source na licencji MIT o nazwie MigraDoc Foundation, której autorem jest empira Software GmbH.")]
+    "Aplikacja wykorzystuje do renderowania dokumentów bibliotekę open-source na licencji MIT o nazwie MigraDoc Foundation, której autorem jest empira Software GmbH.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Państwowa Wyższa Szkoła Zawodowa \nw Nowym Sączu")]
 [assembly: AssemblyProduct("Aplikacja")]

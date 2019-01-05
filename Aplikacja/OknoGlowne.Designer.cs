@@ -1043,7 +1043,7 @@
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(231, 41);
             this.label23.TabIndex = 15;
-            this.label23.Text = "aktor systemowy poprzez protokół /\r\nczłowiek poprzez wiersz poleceń";
+            this.label23.Text = "aktor systemowy poprzez protokół\r\nlub człowiek poprzez wiersz poleceń";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label24

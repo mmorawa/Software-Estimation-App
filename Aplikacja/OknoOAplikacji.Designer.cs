@@ -61,8 +61,8 @@
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 95F));
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 109F));
+            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tableLayoutPanel.Size = new System.Drawing.Size(465, 265);
             this.tableLayoutPanel.TabIndex = 0;
@@ -139,7 +139,7 @@
             this.TextBoxOpis.Name = "TextBoxOpis";
             this.TextBoxOpis.ReadOnly = true;
             this.TextBoxOpis.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.TextBoxOpis.Size = new System.Drawing.Size(303, 89);
+            this.TextBoxOpis.Size = new System.Drawing.Size(303, 103);
             this.TextBoxOpis.TabIndex = 23;
             this.TextBoxOpis.TabStop = false;
             this.TextBoxOpis.Text = "Opis";
@@ -162,7 +162,7 @@
             // 
             this.LinkLicencja.AutoSize = true;
             this.LinkLicencja.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LinkLicencja.Location = new System.Drawing.Point(156, 202);
+            this.LinkLicencja.Location = new System.Drawing.Point(156, 216);
             this.LinkLicencja.Name = "LinkLicencja";
             this.LinkLicencja.Size = new System.Drawing.Size(211, 16);
             this.LinkLicencja.TabIndex = 24;
