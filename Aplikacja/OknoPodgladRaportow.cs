@@ -29,7 +29,7 @@ namespace Aplikacja
             LabelStrona.Text = "Str. " + PodgladRaportu.Page.ToString();
         }
 
-        readonly PrinterSettings _printerSettings = new PrinterSettings();
+        readonly PrinterSettings UstawieniaDrukarki = new PrinterSettings();
         string NazwaPlikuZapis;
         int Powiekszenie = 100;
 
@@ -50,7 +50,7 @@ namespace Aplikacja
         {
                 using (var dialog = new PrintDialog())
                 {
-                    dialog.PrinterSettings = _printerSettings;
+                    dialog.PrinterSettings = UstawieniaDrukarki;
                     dialog.AllowSelection = true;
                     dialog.AllowSomePages = true;
                     dialog.ShowDialog();
@@ -73,9 +73,9 @@ namespace Aplikacja
                 var printDocument = new MigraDocPrintDocument();
 
                 // Dołącz istniejące ustawienia drukowania
-                printDocument.PrinterSettings = _printerSettings;
+                printDocument.PrinterSettings = UstawieniaDrukarki;
 
-                if (_printerSettings.PrintRange == PrintRange.Selection)
+                if (UstawieniaDrukarki.PrintRange == PrintRange.Selection)
                     printDocument.SelectedPage = PodgladRaportu.Page;
 
                 // Dołącz istniejący renderer dokumentu
