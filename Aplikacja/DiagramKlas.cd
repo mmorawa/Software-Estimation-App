@@ -2,41 +2,13 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Aplikacja.OknoCzynnikiSkali" Collapsed="true">
     <Position X="0.5" Y="0.5" Width="3.5" />
-    <Members>
-      <Field Name="ButtonAnuluj" Hidden="true" />
-      <Field Name="ButtonOk" Hidden="true" />
-      <Field Name="ComboBoxCzynnSkDojrz" Hidden="true" />
-      <Field Name="ComboBoxCzynnSkElast" Hidden="true" />
-      <Field Name="ComboBoxCzynnSkRyzyko" Hidden="true" />
-      <Field Name="ComboBoxCzynnSkTyp" Hidden="true" />
-      <Field Name="ComboBoxCzynnSkZesp" Hidden="true" />
-      <Field Name="components" Hidden="true" />
-      <Method Name="Dispose" Hidden="true" />
-      <Field Name="GroupBoxCzynSkali" Hidden="true" />
-      <Method Name="InitializeComponent" Hidden="true" />
-      <Field Name="label1" Hidden="true" />
-      <Field Name="label10" Hidden="true" />
-      <Field Name="label11" Hidden="true" />
-      <Field Name="label12" Hidden="true" />
-      <Field Name="label13" Hidden="true" />
-      <Field Name="label2" Hidden="true" />
-      <Field Name="label3" Hidden="true" />
-      <Field Name="label4" Hidden="true" />
-      <Field Name="label5" Hidden="true" />
-      <Field Name="label6" Hidden="true" />
-      <Field Name="label7" Hidden="true" />
-      <Field Name="label8" Hidden="true" />
-      <Field Name="label9" Hidden="true" />
-      <Field Name="tableLayoutPanel1" Hidden="true" />
-      <Field Name="ToolTip" Hidden="true" />
-    </Members>
     <TypeIdentifier>
       <HashCode>8IAAAAAAADAAgBgBAAKEAAgiAAEBABAEAIAAAAAAACA=</HashCode>
       <FileName>OknoCzynnikiSkali.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Aplikacja.OknoDaneProjektu" Collapsed="true">
-    <Position X="1" Y="6.5" Width="3" />
+    <Position X="0.75" Y="7" Width="3" />
     <Members>
       <Field Name="ButtonAnuluj" Hidden="true" />
       <Field Name="ButtonOk" Hidden="true" />
@@ -69,7 +41,7 @@
       <Field Name="GroupBoxSzczDaneProjektu" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="Aplikacja.OknoGlowne" Collapsed="true">
+  <Class Name="Aplikacja.OknoGlowne">
     <Position X="5" Y="0.5" Width="2.75" />
     <Members>
       <Field Name="ButtonCzSk" Hidden="true" />
@@ -192,6 +164,9 @@
       <Field Name="ToolStripTablicaPrzeliczeniowa" Hidden="true" />
       <Field Name="ToolTip" Hidden="true" />
     </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
       <HashCode>/+V1m78SXrnVwvOBb3L+j/7m3W0qD1tT0W0fVgU1C34=</HashCode>
       <FileName>OknoGlowne.cs</FileName>
@@ -240,33 +215,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Aplikacja.OknoKalibracja" Collapsed="true">
-    <Position X="6.5" Y="1.75" Width="2.5" />
-    <Members>
-      <Field Name="ButtonAnuluj" Hidden="true" />
-      <Field Name="ButtonOk" Hidden="true" />
-      <Field Name="ButtonPrzywroc" Hidden="true" />
-      <Field Name="components" Hidden="true" />
-      <Method Name="Dispose" Hidden="true" />
-      <Field Name="GroupBoxCOCOMOII" Hidden="true" />
-      <Field Name="GroupBoxKalibracja" Hidden="true" />
-      <Method Name="InitializeComponent" Hidden="true" />
-      <Field Name="label1" Hidden="true" />
-      <Field Name="label10" Hidden="true" />
-      <Field Name="label2" Hidden="true" />
-      <Field Name="label3" Hidden="true" />
-      <Field Name="label4" Hidden="true" />
-      <Field Name="label5" Hidden="true" />
-      <Field Name="label7" Hidden="true" />
-      <Field Name="label9" Hidden="true" />
-      <Field Name="LabelDataRozp" Hidden="true" />
-      <Field Name="NumericUCPnaFP" Hidden="true" />
-      <Field Name="tableLayoutPanel2" Hidden="true" />
-      <Field Name="TextBoxA" Hidden="true" />
-      <Field Name="TextBoxB" Hidden="true" />
-      <Field Name="TextBoxC" Hidden="true" />
-      <Field Name="TextBoxD" Hidden="true" />
-      <Field Name="ToolTip" Hidden="true" />
-    </Members>
+    <Position X="8.25" Y="1.75" Width="2.5" />
     <TypeIdentifier>
       <HashCode>GAgAAAAYACAAgBAAAACkAAgCBFAhAAAAAEAUAUAAAAA=</HashCode>
       <FileName>OknoKalibracja.cs</FileName>
@@ -388,95 +337,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Aplikacja.OknoMnoznikiPracochlonnosci" Collapsed="true">
-    <Position X="8.75" Y="4.5" Width="3.25" />
-    <Members>
-      <Field Name="ButtonAnuluj" Hidden="true" />
-      <Field Name="ButtonOk" Hidden="true" />
-      <Field Name="ComboBoxMnPrAnal" Hidden="true" />
-      <Field Name="ComboBoxMnPrBaza" Hidden="true" />
-      <Field Name="ComboBoxMnPrDoku" Hidden="true" />
-      <Field Name="ComboBoxMnPrDoswA" Hidden="true" />
-      <Field Name="ComboBoxMnPrDoswJ" Hidden="true" />
-      <Field Name="ComboBoxMnPrDoswP" Hidden="true" />
-      <Field Name="ComboBoxMnPrHarm" Hidden="true" />
-      <Field Name="ComboBoxMnPrLokal" Hidden="true" />
-      <Field Name="ComboBoxMnPrNarzP" Hidden="true" />
-      <Field Name="ComboBoxMnPrNiezaw" Hidden="true" />
-      <Field Name="ComboBoxMnPrOgrCz" Hidden="true" />
-      <Field Name="ComboBoxMnPrOgrP" Hidden="true" />
-      <Field Name="ComboBoxMnPrPonow" Hidden="true" />
-      <Field Name="ComboBoxMnPrProgr" Hidden="true" />
-      <Field Name="ComboBoxMnPrZesp" Hidden="true" />
-      <Field Name="ComboBoxMnPrZloz" Hidden="true" />
-      <Field Name="ComboBoxMnPrZmP" Hidden="true" />
-      <Field Name="components" Hidden="true" />
-      <Method Name="Dispose" Hidden="true" />
-      <Field Name="GroupBoxMnoPrac" Hidden="true" />
-      <Method Name="InitializeComponent" Hidden="true" />
-      <Field Name="label1" Hidden="true" />
-      <Field Name="label10" Hidden="true" />
-      <Field Name="label11" Hidden="true" />
-      <Field Name="label12" Hidden="true" />
-      <Field Name="label13" Hidden="true" />
-      <Field Name="label14" Hidden="true" />
-      <Field Name="label15" Hidden="true" />
-      <Field Name="label16" Hidden="true" />
-      <Field Name="label17" Hidden="true" />
-      <Field Name="label18" Hidden="true" />
-      <Field Name="label19" Hidden="true" />
-      <Field Name="label2" Hidden="true" />
-      <Field Name="label20" Hidden="true" />
-      <Field Name="label21" Hidden="true" />
-      <Field Name="label22" Hidden="true" />
-      <Field Name="label23" Hidden="true" />
-      <Field Name="label24" Hidden="true" />
-      <Field Name="label25" Hidden="true" />
-      <Field Name="label26" Hidden="true" />
-      <Field Name="label27" Hidden="true" />
-      <Field Name="label28" Hidden="true" />
-      <Field Name="label29" Hidden="true" />
-      <Field Name="label3" Hidden="true" />
-      <Field Name="label30" Hidden="true" />
-      <Field Name="label31" Hidden="true" />
-      <Field Name="label32" Hidden="true" />
-      <Field Name="label33" Hidden="true" />
-      <Field Name="label34" Hidden="true" />
-      <Field Name="label35" Hidden="true" />
-      <Field Name="label36" Hidden="true" />
-      <Field Name="label37" Hidden="true" />
-      <Field Name="label38" Hidden="true" />
-      <Field Name="label39" Hidden="true" />
-      <Field Name="label4" Hidden="true" />
-      <Field Name="label40" Hidden="true" />
-      <Field Name="label41" Hidden="true" />
-      <Field Name="label42" Hidden="true" />
-      <Field Name="label43" Hidden="true" />
-      <Field Name="label44" Hidden="true" />
-      <Field Name="label45" Hidden="true" />
-      <Field Name="label46" Hidden="true" />
-      <Field Name="label5" Hidden="true" />
-      <Field Name="label6" Hidden="true" />
-      <Field Name="label7" Hidden="true" />
-      <Field Name="label8" Hidden="true" />
-      <Field Name="label9" Hidden="true" />
-      <Field Name="tabControl1" Hidden="true" />
-      <Field Name="tableLayoutPanel2" Hidden="true" />
-      <Field Name="tableLayoutPanel3" Hidden="true" />
-      <Field Name="tableLayoutPanel4" Hidden="true" />
-      <Field Name="tableLayoutPanel5" Hidden="true" />
-      <Field Name="TabPagePersonel" Hidden="true" />
-      <Field Name="TabPagePlatforma" Hidden="true" />
-      <Field Name="TabPageProdukt" Hidden="true" />
-      <Field Name="TabPageProjekt" Hidden="true" />
-      <Field Name="ToolTip" Hidden="true" />
-    </Members>
+    <Position X="11.75" Y="4.5" Width="3.25" />
     <TypeIdentifier>
       <HashCode>/wDAIgVUWDigAhCgCCGEAAiCggKBBIAAhECFIIAABDA=</HashCode>
       <FileName>OknoMnoznikiPracochlonnosci.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Aplikacja.OknoOAplikacji" Collapsed="true">
-    <Position X="10" Y="3" Width="2" />
+  <Class Name="Aplikacja.OknoOAplikacji">
+    <Position X="13.75" Y="0.75" Width="2" />
     <Members>
       <Field Name="components" Hidden="true" />
       <Method Name="Dispose" Hidden="true" />
@@ -497,7 +365,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Aplikacja.OknoPodgladRaportow" Collapsed="true">
-    <Position X="4.5" Y="4.5" Width="2.25" />
+    <Position X="1" Y="5.5" Width="2.25" />
     <Members>
       <Field Name="ButtonDrukuj" Hidden="true" />
       <Field Name="ButtonEksportPDF" Hidden="true" />
@@ -522,7 +390,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Aplikacja.OknoTablicaPrzeliczeniowa" Collapsed="true">
-    <Position X="0.5" Y="5.5" Width="4" />
+    <Position X="0.5" Y="4.25" Width="4" />
     <Members>
       <Field Name="ButtonAnuluj" Hidden="true" />
       <Field Name="ButtonOk" Hidden="true" />
@@ -616,49 +484,31 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Aplikacja.OknoZalozeniaProjektu" Collapsed="true">
-    <Position X="6.5" Y="5.75" Width="5.5" />
-    <Members>
-      <Field Name="ButtonAnuluj" Hidden="true" />
-      <Field Name="ButtonOk" Hidden="true" />
-      <Field Name="ButtonPrzywrocDomyslne" Hidden="true" />
-      <Field Name="CheckBoxAktywacja" Hidden="true" />
-      <Field Name="ComboBoxJezykProgram" Hidden="true" />
-      <Field Name="components" Hidden="true" />
-      <Method Name="Dispose" Hidden="true" />
-      <Field Name="GroupBoxOgraniczenia" Hidden="true" />
-      <Field Name="GroupBoxSzczDaneProjektu" Hidden="true" />
-      <Method Name="InitializeComponent" Hidden="true" />
-      <Field Name="label1" Hidden="true" />
-      <Field Name="label10" Hidden="true" />
-      <Field Name="label12" Hidden="true" />
-      <Field Name="label13" Hidden="true" />
-      <Field Name="label14" Hidden="true" />
-      <Field Name="label16" Hidden="true" />
-      <Field Name="label17" Hidden="true" />
-      <Field Name="label2" Hidden="true" />
-      <Field Name="label3" Hidden="true" />
-      <Field Name="label4" Hidden="true" />
-      <Field Name="label5" Hidden="true" />
-      <Field Name="label6" Hidden="true" />
-      <Field Name="label7" Hidden="true" />
-      <Field Name="label8" Hidden="true" />
-      <Field Name="label9" Hidden="true" />
-      <Field Name="LabelDataRozp" Hidden="true" />
-      <Field Name="NumericDzRobGodz" Hidden="true" />
-      <Field Name="NumericMaxHarm" Hidden="true" />
-      <Field Name="NumericMaxKoszt" Hidden="true" />
-      <Field Name="NumericMaxPrac" Hidden="true" />
-      <Field Name="NumericMaxZespol" Hidden="true" />
-      <Field Name="NumericOsoboMGodz" Hidden="true" />
-      <Field Name="NumericStawkaGodz" Hidden="true" />
-      <Field Name="TableLayoutOgraniczenia" Hidden="true" />
-      <Field Name="tableLayoutPanel2" Hidden="true" />
-      <Field Name="TimePickerDeadline" Hidden="true" />
-      <Field Name="ToolTip" Hidden="true" />
-    </Members>
+    <Position X="8" Y="5.5" Width="5.5" />
     <TypeIdentifier>
       <HashCode>3RQEgAgQACIAQBAIGQCFECgCABABRAAQAEAABAAAAlA=</HashCode>
       <FileName>OknoZalozeniaProjektu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aplikacja.TrescRaportow" Collapsed="true">
+    <Position X="2.5" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQgBAAARAA=</HashCode>
+      <FileName>TrescRaportow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aplikacja.Program">
+    <Position X="11" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aplikacja.Properties.Settings" Collapsed="true">
+    <Position X="0.75" Y="8.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAALAAAAAERAAAICIAAggBAAAAAAAApAUBCAA=</HashCode>
+      <FileName>Settings.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
