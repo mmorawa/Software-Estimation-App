@@ -79,7 +79,7 @@
             this.GroupBoxSzczDomyslneUstawienia.Size = new System.Drawing.Size(510, 629);
             this.GroupBoxSzczDomyslneUstawienia.TabIndex = 16;
             this.GroupBoxSzczDomyslneUstawienia.TabStop = false;
-            this.GroupBoxSzczDomyslneUstawienia.Text = "Domyślne ustawienia";
+            this.GroupBoxSzczDomyslneUstawienia.Text = "Domyślne dane";
             // 
             // GroupBoxDomZalozeniaProjektu
             // 
@@ -457,7 +457,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OknoDomyslneDane";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Ustawienia";
+            this.Text = "Domyślne dane";
             this.GroupBoxSzczDomyslneUstawienia.ResumeLayout(false);
             this.GroupBoxDomZalozeniaProjektu.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

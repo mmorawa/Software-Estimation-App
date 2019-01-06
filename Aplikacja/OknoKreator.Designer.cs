@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoKreator));
             this.TabControlKreator = new System.Windows.Forms.TabControl();
             this.DaneProjektu = new System.Windows.Forms.TabPage();
+            this.label50 = new System.Windows.Forms.Label();
             this.CheckBoxDomyslne = new System.Windows.Forms.CheckBox();
             this.RichTextBoxOpisProjektu = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -133,7 +134,6 @@
             this.ButtonZakoncz = new System.Windows.Forms.Button();
             this.ButtonPopCOCOMO = new System.Windows.Forms.Button();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.label50 = new System.Windows.Forms.Label();
             this.TabControlKreator.SuspendLayout();
             this.DaneProjektu.SuspendLayout();
             this.Zalozenia.SuspendLayout();
@@ -205,6 +205,15 @@
             this.DaneProjektu.Size = new System.Drawing.Size(567, 763);
             this.DaneProjektu.TabIndex = 0;
             this.DaneProjektu.Text = "Dane projektu";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(17, 18);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(349, 16);
+            this.label50.TabIndex = 31;
+            this.label50.Text = "Wprowadź dane projektu w celu jego charakterystyki.";
             // 
             // CheckBoxDomyslne
             // 
@@ -1593,15 +1602,6 @@
             this.ButtonPopCOCOMO.Text = "< Poprzedni";
             this.ButtonPopCOCOMO.UseVisualStyleBackColor = true;
             this.ButtonPopCOCOMO.Click += new System.EventHandler(this.ButtonPopCOCOMO_Click);
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(17, 18);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(349, 16);
-            this.label50.TabIndex = 31;
-            this.label50.Text = "Wprowadź dane projektu w celu jego charakterystyki.";
             // 
             // OknoKreator
             // 
