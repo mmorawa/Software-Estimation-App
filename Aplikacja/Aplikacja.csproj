@@ -192,6 +192,8 @@
     </Compile>
     <None Include="DiagramKlas.cd" />
     <None Include="packages.config" />
+    <None Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\.signature.p7s" />
+    <None Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\PDFsharp-MigraDoc-GDI.1.32.4334.0.nupkg" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -222,6 +224,21 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="M.ico" />
+    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\de\MigraDoc.DocumentObjectModel.resources.dll" />
+    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\de\MigraDoc.Rendering.resources.dll" />
+    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\de\MigraDoc.RtfRendering.resources.dll" />
+    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\de\PdfSharp.Charting.resources.dll" />
+    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\de\PdfSharp.resources.dll" />
+    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.DocumentObjectModel.dll" />
+    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.DocumentObjectModel.xml" />
+    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.Rendering.dll" />
+    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.Rendering.xml" />
+    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.RtfRendering.dll" />
+    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.RtfRendering.xml" />
+    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\PdfSharp.Charting.dll" />
+    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\PdfSharp.Charting.xml" />
+    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\PdfSharp.dll" />
+    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\PdfSharp.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
