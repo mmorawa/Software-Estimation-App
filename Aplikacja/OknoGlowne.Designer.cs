@@ -316,7 +316,7 @@
             this.ToolStripTablicaPrzeliczeniowa.Name = "ToolStripTablicaPrzeliczeniowa";
             this.ToolStripTablicaPrzeliczeniowa.Size = new System.Drawing.Size(208, 22);
             this.ToolStripTablicaPrzeliczeniowa.Text = "&Tablica przeliczeniowa";
-            this.ToolStripTablicaPrzeliczeniowa.Click += new System.EventHandler(this.ToolStripTablicaPrzeliczeniowa_Click);
+            this.ToolStripTablicaPrzeliczeniowa.Click += new System.EventHandler(this.ToolStripTabelaPrzeliczeniowa_Click);
             // 
             // ToolStripMenuPomoc
             // 
@@ -1605,9 +1605,9 @@
             this.ButtonTablicaPrzeliczeniowa.Name = "ButtonTablicaPrzeliczeniowa";
             this.ButtonTablicaPrzeliczeniowa.Size = new System.Drawing.Size(192, 27);
             this.ButtonTablicaPrzeliczeniowa.TabIndex = 17;
-            this.ButtonTablicaPrzeliczeniowa.Text = "Tablica przeliczeniowa";
+            this.ButtonTablicaPrzeliczeniowa.Text = "Tabela przeliczeniowa";
             this.ButtonTablicaPrzeliczeniowa.UseVisualStyleBackColor = true;
-            this.ButtonTablicaPrzeliczeniowa.Click += new System.EventHandler(this.ButtonTablicaPrzeliczeniowa_Click);
+            this.ButtonTablicaPrzeliczeniowa.Click += new System.EventHandler(this.ButtonTabelaPrzeliczeniowa_Click);
             // 
             // groupBox1
             // 

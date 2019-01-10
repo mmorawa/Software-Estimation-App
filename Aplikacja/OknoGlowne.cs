@@ -111,7 +111,7 @@ namespace Aplikacja
         public static string Ostrzezenie = "Uwagi: Ten model nie jest skalibrowany dla projektów poniżej 2000 linii kodu.";
 
         //współczynniki
-        public static double TempUCPnaFP;
+        public static double TempUUCPnaUFP;
         public static double TempA;
         public static double TempB;
         public static double TempC;
@@ -291,9 +291,9 @@ namespace Aplikacja
         }
 
 
-        private void ToolStripTablicaPrzeliczeniowa_Click(object sender, EventArgs e)
+        private void ToolStripTabelaPrzeliczeniowa_Click(object sender, EventArgs e)
         {
-            ButtonTablicaPrzeliczeniowa_Click(sender, e);
+            ButtonTabelaPrzeliczeniowa_Click(sender, e);
         }
 
 
@@ -439,7 +439,7 @@ namespace Aplikacja
 
             UUCP = UAW + UUCW;
 
-            Rozmiar = (UUCP * Properties.Settings.Default.UCPnaFP * Properties.Settings.Default.TabPrzeliczeniowa[JezykProgramowania]);
+            Rozmiar = (UUCP * Properties.Settings.Default.UUCPnaUFP * Properties.Settings.Default.TabPrzeliczeniowa[JezykProgramowania]);
 
             if (Rozmiar < 2000)
             {
@@ -1271,7 +1271,7 @@ namespace Aplikacja
 
                 if (rezultat == DialogResult.OK)
                 {
-                    Properties.Settings.Default.UCPnaFP = TempUCPnaFP;
+                    Properties.Settings.Default.UUCPnaUFP = TempUUCPnaUFP;
                     Properties.Settings.Default.A = TempA;
                     Properties.Settings.Default.B = TempB;
                     Properties.Settings.Default.C = TempC;
@@ -1364,9 +1364,9 @@ namespace Aplikacja
         }
 
 
-        private void ButtonTablicaPrzeliczeniowa_Click(object sender, EventArgs e)
+        private void ButtonTabelaPrzeliczeniowa_Click(object sender, EventArgs e)
         {
-            using (OknoTablicaPrzeliczeniowa OknoSLOC_FP = new OknoTablicaPrzeliczeniowa())
+            using (OknoTabelaPrzeliczeniowa OknoSLOC_FP = new OknoTabelaPrzeliczeniowa())
             {
                 DialogResult rezultat = OknoSLOC_FP.ShowDialog();
 

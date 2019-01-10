@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace Aplikacja
 {
-    public partial class OknoTablicaPrzeliczeniowa : Form
+    public partial class OknoTabelaPrzeliczeniowa : Form
     {
-        public OknoTablicaPrzeliczeniowa()
+        public OknoTabelaPrzeliczeniowa()
         {
             InitializeComponent();
 
@@ -282,7 +282,7 @@ namespace Aplikacja
             NumericVBNet.Value = 60;
             NumericVisualBasic.Value = 44;
 
-            OknoGlowne.TempUCPnaFP = 2.27;
+            OknoGlowne.TempUUCPnaUFP = 2.27;
 
             OknoGlowne.TempTabPrzeliczeniowa = new int[] {18, 54, 98, 14, 99, 53, 59, 55,
                 42, 18, 24, 65, 191, 45, 35, 40, 49, 53, 53, 48, 30, 21, 34, 60, 40, 32,

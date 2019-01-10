@@ -9,7 +9,7 @@ namespace Aplikacja
         {
             InitializeComponent();
 
-            NumericUCPnaFP.Value = (decimal)Properties.Settings.Default.UCPnaFP;
+            NumericUCPnaFP.Value = (decimal)Properties.Settings.Default.UUCPnaUFP;
             TextBoxA.Text = Properties.Settings.Default.A.ToString();
             TextBoxB.Text = Properties.Settings.Default.B.ToString();
             TextBoxC.Text = Properties.Settings.Default.C.ToString();
@@ -19,7 +19,7 @@ namespace Aplikacja
 
         private void NumericUCPnaFP_ValueChanged(object sender, EventArgs e)
         {
-            OknoGlowne.TempUCPnaFP = (double)NumericUCPnaFP.Value;
+            OknoGlowne.TempUUCPnaUFP = (double)NumericUCPnaFP.Value;
         }
 
         //TODO konwersja kulturowa Parse
@@ -51,7 +51,7 @@ namespace Aplikacja
             TextBoxC.Text = 3.67.ToString(); 
             TextBoxD.Text = 0.28.ToString();
 
-            OknoGlowne.TempUCPnaFP = 2.27;
+            OknoGlowne.TempUUCPnaUFP = 2.27;
             OknoGlowne.TempA = 2.94;
             OknoGlowne.TempB = 0.91;
             OknoGlowne.TempC = 3.67;

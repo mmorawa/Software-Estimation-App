@@ -36,7 +36,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Aplikacja.OknoDaneProjektu" Collapsed="true">
-    <Position X="0.75" Y="4.75" Width="3" />
+    <Position X="0.5" Y="3.5" Width="3" />
     <Members>
       <Field Name="ButtonAnuluj" Hidden="true" />
       <Field Name="ButtonOk" Hidden="true" />
@@ -70,7 +70,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Aplikacja.OknoGlowne" Collapsed="true">
-    <Position X="9.75" Y="0.5" Width="2.75" />
+    <Position X="5" Y="3.5" Width="2.75" />
     <Members>
       <Field Name="ButtonCzSk" Hidden="true" />
       <Field Name="ButtonKalibracja" Hidden="true" />
@@ -196,12 +196,12 @@
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>/+V1m78SXrnVwvOBb3L+j/7m3W0qD1tT0W0fVgU1C34=</HashCode>
+      <HashCode>/+V1m78SXrnVwvOBbzL+j/7m3W0qD1tT0W0f9gU1C34=</HashCode>
       <FileName>OknoGlowne.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Aplikacja.OknoDomyslneDane" Collapsed="true">
-    <Position X="0.75" Y="7.75" Width="3.5" />
+    <Position X="0.5" Y="6.5" Width="3.5" />
     <Members>
       <Field Name="ButtonAnuluj" Hidden="true" />
       <Field Name="ButtonOk" Hidden="true" />
@@ -276,7 +276,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Aplikacja.OknoKreator" Collapsed="true">
-    <Position X="5" Y="3.5" Width="3.5" />
+    <Position X="5" Y="1.5" Width="3.5" />
     <Members>
       <Field Name="button11" Hidden="true" />
       <Field Name="button14" Hidden="true" />
@@ -480,7 +480,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Aplikacja.OknoOAplikacji" Collapsed="true">
-    <Position X="0.75" Y="3" Width="2" />
+    <Position X="0.5" Y="2.5" Width="2" />
     <Members>
       <Field Name="components" Hidden="true" />
       <Method Name="Dispose" Hidden="true" />
@@ -501,7 +501,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Aplikacja.OknoPodgladRaportow" Collapsed="true">
-    <Position X="5" Y="0.5" Width="2.25" />
+    <Position X="5" Y="4.5" Width="2.25" />
     <Members>
       <Field Name="ButtonDrukuj" Hidden="true" />
       <Field Name="ButtonEksportPDF" Hidden="true" />
@@ -520,13 +520,16 @@
       <Field Name="PodgladRaportu" Hidden="true" />
       <Field Name="ToolTip" Hidden="true" />
     </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
-      <HashCode>CCAAQIAAACGAAAwBAgCAAAgCABAQAIEACBkAAQAAgIE=</HashCode>
+      <HashCode>CCAAQIAAACGAAAwBAgCAAAgCABAQAIAACBkAAQABgIE=</HashCode>
       <FileName>OknoPodgladRaportow.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Aplikacja.OknoTablicaPrzeliczeniowa" Collapsed="true">
-    <Position X="0.75" Y="6.75" Width="2.75" />
+  <Class Name="Aplikacja.OknoTabelaPrzeliczeniowa" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="2.75" />
     <Members>
       <Field Name="ButtonAnuluj" Hidden="true" />
       <Field Name="ButtonOk" Hidden="true" />
@@ -616,11 +619,11 @@
     </Members>
     <TypeIdentifier>
       <HashCode>/wcKBBEZSGpIiZsEkiK8FRoKAlQFAWQMAdAAxAbiFjA=</HashCode>
-      <FileName>OknoTablicaPrzeliczeniowa.cs</FileName>
+      <FileName>OknoTabelaPrzeliczeniowa.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Aplikacja.OknoZalozeniaProjektu" Collapsed="true">
-    <Position X="0.75" Y="5.75" Width="3.5" />
+    <Position X="0.5" Y="4.5" Width="3.5" />
     <Members>
       <Field Name="ButtonAnuluj" Hidden="true" />
       <Field Name="ButtonOk" Hidden="true" />
@@ -666,28 +669,28 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Aplikacja.TrescRaportow" Collapsed="true">
-    <Position X="0.75" Y="4" Width="1.75" />
+    <Position X="5" Y="5.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQgBAAARAA=</HashCode>
       <FileName>TrescRaportow.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Aplikacja.Program" Collapsed="true">
-    <Position X="13.25" Y="0.5" Width="1.5" />
+    <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Aplikacja.Properties.Settings" Collapsed="true">
-    <Position X="5" Y="1.5" Width="2.25" />
+    <Position X="5" Y="6.5" Width="2.25" />
     <Members>
       <Field Name="defaultInstance" Hidden="true" />
       <Method Name="SettingChangingEventHandler" Hidden="true" />
       <Method Name="SettingsSavingEventHandler" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAAgAALAAAAAERAAAICIAAggBAAAAAAAApAUBCAA=</HashCode>
+      <HashCode>AAAAAAgAALAAAAAERAAAICIACAgBAAAAAAAApAUBCAA=</HashCode>
       <FileName>Settings.cs</FileName>
     </TypeIdentifier>
   </Class>

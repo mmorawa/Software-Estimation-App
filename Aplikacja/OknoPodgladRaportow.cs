@@ -17,7 +17,7 @@ namespace Aplikacja
         {
             InitializeComponent();
 
-            NazwaPlikuZapis = NazwaPliku;
+            NazwaPlikuDoZapisu = NazwaPliku;
 
             // Utworzenie nowego dokumentu MigraDoc
             var dokument = Raport;
@@ -30,7 +30,7 @@ namespace Aplikacja
         }
 
         readonly PrinterSettings UstawieniaDrukarki = new PrinterSettings();
-        string NazwaPlikuZapis;
+        string NazwaPlikuDoZapisu;
         int Powiekszenie = 100;
 
 
@@ -92,7 +92,7 @@ namespace Aplikacja
             using (SaveFileDialog ZapiszPDFDialog = new SaveFileDialog())
             {
                 ZapiszPDFDialog.Filter = "Plik Raportu | *.pdf";
-                ZapiszPDFDialog.FileName = NazwaPlikuZapis + ".pdf";
+                ZapiszPDFDialog.FileName = NazwaPlikuDoZapisu + ".pdf";
                 ZapiszPDFDialog.Title = "Zapisz plik Raportu jako:";
 
                 DialogResult rezultat = ZapiszPDFDialog.ShowDialog();
@@ -116,7 +116,7 @@ namespace Aplikacja
             using (SaveFileDialog ZapiszRTFDialog = new SaveFileDialog())
             {
                 ZapiszRTFDialog.Filter = "Plik Raportu | *.rtf";
-                ZapiszRTFDialog.FileName = NazwaPlikuZapis + ".rtf";
+                ZapiszRTFDialog.FileName = NazwaPlikuDoZapisu + ".rtf";
                 ZapiszRTFDialog.Title = "Zapisz plik Raportu jako:";
 
                 DialogResult rezultat = ZapiszRTFDialog.ShowDialog();

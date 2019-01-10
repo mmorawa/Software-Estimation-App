@@ -1,6 +1,6 @@
 ﻿namespace Aplikacja
 {
-    partial class OknoTablicaPrzeliczeniowa
+    partial class OknoTabelaPrzeliczeniowa
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoTablicaPrzeliczeniowa));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoTabelaPrzeliczeniowa));
             this.GroupBoxKalibracja = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.NumericJavaScript = new System.Windows.Forms.NumericUpDown();
@@ -164,7 +164,7 @@
             this.GroupBoxKalibracja.Size = new System.Drawing.Size(583, 620);
             this.GroupBoxKalibracja.TabIndex = 22;
             this.GroupBoxKalibracja.TabStop = false;
-            this.GroupBoxKalibracja.Text = "Tablica przeliczeniowa punktów funkcyjnych na źródłowe linie kodu";
+            this.GroupBoxKalibracja.Text = "Tabela przeliczeniowa punktów funkcyjnych na źródłowe linie kodu";
             // 
             // tableLayoutPanel2
             // 
@@ -1337,7 +1337,7 @@
             this.ButtonOk.Text = "OK";
             this.ButtonOk.UseVisualStyleBackColor = true;
             // 
-            // OknoTablicaPrzeliczeniowa
+            // OknoTabelaPrzeliczeniowa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1346,9 +1346,9 @@
             this.Controls.Add(this.ButtonOk);
             this.Controls.Add(this.GroupBoxKalibracja);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "OknoTablicaPrzeliczeniowa";
+            this.Name = "OknoTabelaPrzeliczeniowa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Tablica przeliczeniowa punktów funkcyjnych na źródłowe linie kodu";
+            this.Text = "Tabela przeliczeniowa punktów funkcyjnych na źródłowe linie kodu";
             this.GroupBoxKalibracja.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

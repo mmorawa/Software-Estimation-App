@@ -38,7 +38,7 @@
     <Setting Name="JezykProgramowania" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="UCPnaFP" Type="System.Double" Scope="User">
+    <Setting Name="UUCPnaUFP" Type="System.Double" Scope="User">
       <Value Profile="(Default)">2.27</Value>
     </Setting>
     <Setting Name="C" Type="System.Double" Scope="User">
