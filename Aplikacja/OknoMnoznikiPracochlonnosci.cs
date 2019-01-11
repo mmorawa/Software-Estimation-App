@@ -1,23 +1,12 @@
-﻿/*! \file Form1.cs
-\brief Plik Form1.cs zawiera klasę Form1 z głównym oknem aplikacji.
-
-Plik Form1.cs zawiera rdzeń programu czyli główne okno aplikacji wraz z menu, pozwalającym na dokonanie wyboru różnych opcji menadżera zadań takich jak: szyfrowanie/deszyfrowanie bazy danych.
-*/
-
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 
-//! Przestrzeń nazw Password_Manager obejmuje całą aplikację Menedżera Haseł.
-/*! Password_Manager to przestrzeń nazw, która obejmuje całą aplikację Menedżera Haseł, ze wszystkimi klasami Form. */
 namespace Aplikacja
 {
-    //! Klasa Form1 zawiera główne okno aplikacji.
-    /*! W klasie Form1 znajduje się menu główne aplikacji, przyciski oraz Textboxy z danymi, oraz warstwa logiczna aplikacji */
     public partial class OknoMnoznikiPracochlonnosci : Form
     {
-        //! Konstruktor klasy Form1.
-        /*! Inicjalizuje komponenty klasy Form1. */
+
         public OknoMnoznikiPracochlonnosci()
         {
             InitializeComponent();
@@ -46,15 +35,13 @@ namespace Aplikacja
             ComboBoxMnPrLokal.SelectedIndex = OknoGlowne.TabIndMnPrac[15];
             ComboBoxMnPrHarm.SelectedIndex = OknoGlowne.TabIndMnPrac[16];
 
-            //ToolTip.SetToolTip(comboBox1, "Save changes");
-
         }
         
 
         //---------------Dot. produktu----------------------------------
         private void ComboBoxMnPrNiezaw_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //uwzględniamy ograniczenia nałożone przez mnożnik możliwość ponownego wykorzystania
+            //uwzględniamy ograniczenia nałożone przez mnożnik "możliwość ponownego wykorzystania"
             if (ComboBoxMnPrNiezaw.SelectedIndex >= (OknoGlowne.TempTabIndMnPrac[3]))
             {
                 OknoGlowne.TempTabIndMnPrac[0] = ComboBoxMnPrNiezaw.SelectedIndex;
@@ -109,7 +96,7 @@ namespace Aplikacja
 
         private void ComboBoxMnPrDoku_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //uwzględniamy ograniczenia nałożone przez mnożnik możliwość ponownego wykorzystania
+            //uwzględniamy ograniczenia nałożone przez mnożnik "możliwość ponownego wykorzystania"
             if ((OknoGlowne.TempTabIndMnPrac[3] == 1 || OknoGlowne.TempTabIndMnPrac[3] == 2) && ComboBoxMnPrDoku.SelectedIndex < 2)
             {
                 ComboBoxMnPrDoku.SelectedIndex = OknoGlowne.TempTabIndMnPrac[4];

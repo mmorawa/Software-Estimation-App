@@ -68,46 +68,50 @@
             // ButtonDrukuj
             // 
             this.ButtonDrukuj.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonDrukuj.Location = new System.Drawing.Point(3, 11);
+            this.ButtonDrukuj.Location = new System.Drawing.Point(12, 13);
             this.ButtonDrukuj.Name = "ButtonDrukuj";
             this.ButtonDrukuj.Size = new System.Drawing.Size(91, 27);
             this.ButtonDrukuj.TabIndex = 0;
             this.ButtonDrukuj.Text = "Drukuj";
+            this.ToolTip.SetToolTip(this.ButtonDrukuj, "Wydrukuj raport");
             this.ButtonDrukuj.UseVisualStyleBackColor = true;
             this.ButtonDrukuj.Click += new System.EventHandler(this.ButtonDrukuj_Click);
             // 
             // ButtonNastepna
             // 
             this.ButtonNastepna.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonNastepna.Location = new System.Drawing.Point(669, 11);
+            this.ButtonNastepna.Location = new System.Drawing.Point(678, 13);
             this.ButtonNastepna.Name = "ButtonNastepna";
             this.ButtonNastepna.Size = new System.Drawing.Size(35, 27);
             this.ButtonNastepna.TabIndex = 5;
             this.ButtonNastepna.Text = ">>";
             this.ButtonNastepna.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ToolTip.SetToolTip(this.ButtonNastepna, "Następna strona");
             this.ButtonNastepna.UseVisualStyleBackColor = true;
             this.ButtonNastepna.Click += new System.EventHandler(this.ButtonNastepna_Click);
             // 
             // ButtonPoprzednia
             // 
             this.ButtonPoprzednia.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPoprzednia.Location = new System.Drawing.Point(576, 11);
+            this.ButtonPoprzednia.Location = new System.Drawing.Point(585, 13);
             this.ButtonPoprzednia.Name = "ButtonPoprzednia";
             this.ButtonPoprzednia.Size = new System.Drawing.Size(35, 27);
             this.ButtonPoprzednia.TabIndex = 4;
             this.ButtonPoprzednia.Text = "<<";
             this.ButtonPoprzednia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ToolTip.SetToolTip(this.ButtonPoprzednia, "Poprzednia strona");
             this.ButtonPoprzednia.UseVisualStyleBackColor = true;
             this.ButtonPoprzednia.Click += new System.EventHandler(this.ButtonPoprzednia_Click);
             // 
             // ButtonUstawieniaDruk
             // 
             this.ButtonUstawieniaDruk.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonUstawieniaDruk.Location = new System.Drawing.Point(100, 11);
+            this.ButtonUstawieniaDruk.Location = new System.Drawing.Point(109, 13);
             this.ButtonUstawieniaDruk.Name = "ButtonUstawieniaDruk";
             this.ButtonUstawieniaDruk.Size = new System.Drawing.Size(173, 27);
             this.ButtonUstawieniaDruk.TabIndex = 1;
             this.ButtonUstawieniaDruk.Text = "Ustawienia drukowania";
+            this.ToolTip.SetToolTip(this.ButtonUstawieniaDruk, "Zmień ustawienia drukowania");
             this.ButtonUstawieniaDruk.UseVisualStyleBackColor = true;
             this.ButtonUstawieniaDruk.Click += new System.EventHandler(this.ButtonUstawieniaDruk_Click);
             // 
@@ -132,7 +136,7 @@
             // 
             this.LabelPowiekszenie.AutoSize = true;
             this.LabelPowiekszenie.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelPowiekszenie.Location = new System.Drawing.Point(763, 16);
+            this.LabelPowiekszenie.Location = new System.Drawing.Point(772, 18);
             this.LabelPowiekszenie.Name = "LabelPowiekszenie";
             this.LabelPowiekszenie.Size = new System.Drawing.Size(46, 17);
             this.LabelPowiekszenie.TabIndex = 11;
@@ -142,7 +146,7 @@
             // 
             this.LabelStrona.AutoSize = true;
             this.LabelStrona.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelStrona.Location = new System.Drawing.Point(617, 16);
+            this.LabelStrona.Location = new System.Drawing.Point(626, 18);
             this.LabelStrona.Name = "LabelStrona";
             this.LabelStrona.Size = new System.Drawing.Size(46, 17);
             this.LabelStrona.TabIndex = 10;
@@ -151,46 +155,50 @@
             // ButtonPomniejsz
             // 
             this.ButtonPomniejsz.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPomniejsz.Location = new System.Drawing.Point(722, 11);
+            this.ButtonPomniejsz.Location = new System.Drawing.Point(731, 13);
             this.ButtonPomniejsz.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.ButtonPomniejsz.Name = "ButtonPomniejsz";
             this.ButtonPomniejsz.Size = new System.Drawing.Size(35, 27);
             this.ButtonPomniejsz.TabIndex = 6;
             this.ButtonPomniejsz.Text = "-";
+            this.ToolTip.SetToolTip(this.ButtonPomniejsz, "Pomniejsz");
             this.ButtonPomniejsz.UseVisualStyleBackColor = true;
             this.ButtonPomniejsz.Click += new System.EventHandler(this.ButtonPomniejsz_Click);
             // 
             // ButtonPowieksz
             // 
             this.ButtonPowieksz.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPowieksz.Location = new System.Drawing.Point(815, 11);
+            this.ButtonPowieksz.Location = new System.Drawing.Point(824, 13);
             this.ButtonPowieksz.Name = "ButtonPowieksz";
             this.ButtonPowieksz.Size = new System.Drawing.Size(35, 27);
             this.ButtonPowieksz.TabIndex = 7;
             this.ButtonPowieksz.Text = "+";
             this.ButtonPowieksz.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.ToolTip.SetToolTip(this.ButtonPowieksz, "Powiększ");
             this.ButtonPowieksz.UseVisualStyleBackColor = true;
             this.ButtonPowieksz.Click += new System.EventHandler(this.ButtonPowieksz_Click);
             // 
             // ButtonEksportRTF
             // 
             this.ButtonEksportRTF.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonEksportRTF.Location = new System.Drawing.Point(424, 11);
+            this.ButtonEksportRTF.Location = new System.Drawing.Point(433, 13);
             this.ButtonEksportRTF.Name = "ButtonEksportRTF";
             this.ButtonEksportRTF.Size = new System.Drawing.Size(131, 27);
             this.ButtonEksportRTF.TabIndex = 3;
             this.ButtonEksportRTF.Text = "Eksportuj do RTF";
+            this.ToolTip.SetToolTip(this.ButtonEksportRTF, "Wyeksportuj raport do pliku formatu RTF");
             this.ButtonEksportRTF.UseVisualStyleBackColor = true;
             this.ButtonEksportRTF.Click += new System.EventHandler(this.ButtonEksportRTF_Click);
             // 
             // ButtonEksportPDF
             // 
             this.ButtonEksportPDF.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonEksportPDF.Location = new System.Drawing.Point(279, 11);
+            this.ButtonEksportPDF.Location = new System.Drawing.Point(288, 13);
             this.ButtonEksportPDF.Name = "ButtonEksportPDF";
             this.ButtonEksportPDF.Size = new System.Drawing.Size(139, 27);
             this.ButtonEksportPDF.TabIndex = 2;
             this.ButtonEksportPDF.Text = "Eksportuj do PDF";
+            this.ToolTip.SetToolTip(this.ButtonEksportPDF, "Wyeksportuj raport do pliku formatu PDF");
             this.ButtonEksportPDF.UseVisualStyleBackColor = true;
             this.ButtonEksportPDF.Click += new System.EventHandler(this.ButtonEksportPDF_Click);
             // 

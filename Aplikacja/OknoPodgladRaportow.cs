@@ -69,7 +69,7 @@ namespace Aplikacja
 
                 var pageCount = renderer.FormattedDocument.PageCount;
 
-                //Tworzy PrintDocument, który upraszcza drukowanie dokumentu utworzonego przez MigraDoc
+                // Tworzy PrintDocument, który upraszcza drukowanie dokumentu utworzonego przez MigraDoc
                 var printDocument = new MigraDocPrintDocument();
 
                 // Dołącz istniejące ustawienia drukowania

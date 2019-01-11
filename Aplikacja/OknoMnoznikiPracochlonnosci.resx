@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="label19.Text" xml:space="preserve">
     <value>Odzwierciedla wpływ dużych wymagań odnośnie danych testowych na wytwarzanie oprogramowania. Ocena jest zależna od stosunku liczby bajtów testowej bazy danych do rozmiaru aplikacji liczonego w liniach kodu (D/P).</value>
   </data>
@@ -150,9 +153,6 @@
   <data name="label33.Text" xml:space="preserve">
     <value>Osoby pracujące nad projektem mogą znajdować się w jednym budynku lub w wielu różnych miejscach, co przekłada się na wzrost pracochłonności. Drugim czynnikiem branym pod uwagę przy ocenie tego mnożnika jest sposób komunikacji pomiędzy członkami zespołu.</value>
   </data>
-  <metadata name="ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

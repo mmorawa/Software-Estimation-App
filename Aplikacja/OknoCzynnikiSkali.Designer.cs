@@ -244,6 +244,7 @@
             this.ComboBoxCzynnSkTyp.Name = "ComboBoxCzynnSkTyp";
             this.ComboBoxCzynnSkTyp.Size = new System.Drawing.Size(384, 24);
             this.ComboBoxCzynnSkTyp.TabIndex = 0;
+            this.ToolTip.SetToolTip(this.ComboBoxCzynnSkTyp, "Ustaw poziom oceny tego czynnika skali");
             this.ComboBoxCzynnSkTyp.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzynnSkTyp_SelectedIndexChanged);
             // 
             // ComboBoxCzynnSkElast
@@ -264,6 +265,7 @@
             this.ComboBoxCzynnSkElast.Name = "ComboBoxCzynnSkElast";
             this.ComboBoxCzynnSkElast.Size = new System.Drawing.Size(384, 24);
             this.ComboBoxCzynnSkElast.TabIndex = 1;
+            this.ToolTip.SetToolTip(this.ComboBoxCzynnSkElast, "Ustaw poziom oceny tego czynnika skali");
             this.ComboBoxCzynnSkElast.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzynnSkElast_SelectedIndexChanged);
             // 
             // ComboBoxCzynnSkRyzyko
@@ -284,6 +286,7 @@
             this.ComboBoxCzynnSkRyzyko.Name = "ComboBoxCzynnSkRyzyko";
             this.ComboBoxCzynnSkRyzyko.Size = new System.Drawing.Size(384, 24);
             this.ComboBoxCzynnSkRyzyko.TabIndex = 2;
+            this.ToolTip.SetToolTip(this.ComboBoxCzynnSkRyzyko, "Ustaw poziom oceny tego czynnika skali");
             this.ComboBoxCzynnSkRyzyko.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzynnSkRyzyko_SelectedIndexChanged);
             // 
             // ComboBoxCzynnSkZesp
@@ -304,6 +307,7 @@
             this.ComboBoxCzynnSkZesp.Name = "ComboBoxCzynnSkZesp";
             this.ComboBoxCzynnSkZesp.Size = new System.Drawing.Size(384, 24);
             this.ComboBoxCzynnSkZesp.TabIndex = 3;
+            this.ToolTip.SetToolTip(this.ComboBoxCzynnSkZesp, "Ustaw poziom oceny tego czynnika skali");
             this.ComboBoxCzynnSkZesp.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzynnSkZesp_SelectedIndexChanged);
             // 
             // ComboBoxCzynnSkDojrz
@@ -324,6 +328,7 @@
             this.ComboBoxCzynnSkDojrz.Name = "ComboBoxCzynnSkDojrz";
             this.ComboBoxCzynnSkDojrz.Size = new System.Drawing.Size(384, 24);
             this.ComboBoxCzynnSkDojrz.TabIndex = 4;
+            this.ToolTip.SetToolTip(this.ComboBoxCzynnSkDojrz, "Ustaw poziom oceny tego czynnika skali");
             this.ComboBoxCzynnSkDojrz.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCzynnSkDojrz_SelectedIndexChanged);
             // 
             // label6

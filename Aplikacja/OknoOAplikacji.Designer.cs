@@ -27,6 +27,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoOAplikacji));
             this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
@@ -37,6 +38,7 @@
             this.TextBoxOpis = new System.Windows.Forms.TextBox();
             this.labelCompanyName = new System.Windows.Forms.Label();
             this.LinkLicencja = new System.Windows.Forms.LinkLabel();
+            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.tableLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -168,6 +170,7 @@
             this.LinkLicencja.TabIndex = 24;
             this.LinkLicencja.TabStop = true;
             this.LinkLicencja.Text = "Treść licencji MigraDoc Foundation";
+            this.ToolTip.SetToolTip(this.LinkLicencja, "Kliknięcie w link wyświetla treść licencji MigraDoc Foundation");
             this.LinkLicencja.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLicencja_LinkClicked);
             // 
             // OknoOAplikacji
@@ -204,5 +207,6 @@
         private System.Windows.Forms.TextBox TextBoxOpis;
         private System.Windows.Forms.Button okButton;
         private System.Windows.Forms.LinkLabel LinkLicencja;
+        private System.Windows.Forms.ToolTip ToolTip;
     }
 }

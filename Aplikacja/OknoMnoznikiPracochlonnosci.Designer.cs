@@ -335,6 +335,7 @@
             this.ComboBoxMnPrNiezaw.Name = "ComboBoxMnPrNiezaw";
             this.ComboBoxMnPrNiezaw.Size = new System.Drawing.Size(408, 24);
             this.ComboBoxMnPrNiezaw.TabIndex = 3;
+            this.ToolTip.SetToolTip(this.ComboBoxMnPrNiezaw, "Ustaw poziom oceny tego mnożnika pracochłonności");
             this.ComboBoxMnPrNiezaw.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrNiezaw_SelectedIndexChanged);
             // 
             // ComboBoxMnPrBaza
@@ -353,6 +354,7 @@
             this.ComboBoxMnPrBaza.Name = "ComboBoxMnPrBaza";
             this.ComboBoxMnPrBaza.Size = new System.Drawing.Size(408, 24);
             this.ComboBoxMnPrBaza.TabIndex = 4;
+            this.ToolTip.SetToolTip(this.ComboBoxMnPrBaza, "Ustaw poziom oceny tego mnożnika pracochłonności");
             this.ComboBoxMnPrBaza.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrBaza_SelectedIndexChanged);
             // 
             // ComboBoxMnPrDoku
@@ -372,6 +374,7 @@
             this.ComboBoxMnPrDoku.Name = "ComboBoxMnPrDoku";
             this.ComboBoxMnPrDoku.Size = new System.Drawing.Size(408, 24);
             this.ComboBoxMnPrDoku.TabIndex = 7;
+            this.ToolTip.SetToolTip(this.ComboBoxMnPrDoku, "Ustaw poziom oceny tego mnożnika pracochłonności");
             this.ComboBoxMnPrDoku.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrDoku_SelectedIndexChanged);
             // 
             // ComboBoxMnPrPonow
@@ -391,6 +394,7 @@
             this.ComboBoxMnPrPonow.Name = "ComboBoxMnPrPonow";
             this.ComboBoxMnPrPonow.Size = new System.Drawing.Size(408, 24);
             this.ComboBoxMnPrPonow.TabIndex = 6;
+            this.ToolTip.SetToolTip(this.ComboBoxMnPrPonow, "Ustaw poziom oceny tego mnożnika pracochłonności");
             this.ComboBoxMnPrPonow.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrPonow_SelectedIndexChanged);
             // 
             // ComboBoxMnPrZloz
@@ -411,6 +415,7 @@
             this.ComboBoxMnPrZloz.Name = "ComboBoxMnPrZloz";
             this.ComboBoxMnPrZloz.Size = new System.Drawing.Size(408, 24);
             this.ComboBoxMnPrZloz.TabIndex = 5;
+            this.ToolTip.SetToolTip(this.ComboBoxMnPrZloz, "Ustaw poziom oceny tego mnożnika pracochłonności");
             this.ComboBoxMnPrZloz.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrZloz_SelectedIndexChanged);
             // 
             // label4
@@ -670,6 +675,7 @@
             this.ComboBoxMnPrProgr.Name = "ComboBoxMnPrProgr";
             this.ComboBoxMnPrProgr.Size = new System.Drawing.Size(386, 24);
             this.ComboBoxMnPrProgr.TabIndex = 4;
+            this.ToolTip.SetToolTip(this.ComboBoxMnPrProgr, "Ustaw poziom oceny tego mnożnika pracochłonności");
             this.ComboBoxMnPrProgr.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrProgr_SelectedIndexChanged);
             // 
             // ComboBoxMnPrDoswJ
@@ -689,6 +695,7 @@
             this.ComboBoxMnPrDoswJ.Name = "ComboBoxMnPrDoswJ";
             this.ComboBoxMnPrDoswJ.Size = new System.Drawing.Size(386, 24);
             this.ComboBoxMnPrDoswJ.TabIndex = 8;
+            this.ToolTip.SetToolTip(this.ComboBoxMnPrDoswJ, "Ustaw poziom oceny tego mnożnika pracochłonności");
             this.ComboBoxMnPrDoswJ.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrDoswJ_SelectedIndexChanged);
             // 
             // label16
@@ -721,6 +728,7 @@
             this.ComboBoxMnPrAnal.Name = "ComboBoxMnPrAnal";
             this.ComboBoxMnPrAnal.Size = new System.Drawing.Size(386, 24);
             this.ComboBoxMnPrAnal.TabIndex = 3;
+            this.ToolTip.SetToolTip(this.ComboBoxMnPrAnal, "Ustaw poziom oceny tego mnożnika pracochłonności");
             this.ComboBoxMnPrAnal.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrAnal_SelectedIndexChanged);
             // 
             // ComboBoxMnPrDoswA
@@ -740,6 +748,7 @@
             this.ComboBoxMnPrDoswA.Name = "ComboBoxMnPrDoswA";
             this.ComboBoxMnPrDoswA.Size = new System.Drawing.Size(386, 24);
             this.ComboBoxMnPrDoswA.TabIndex = 6;
+            this.ToolTip.SetToolTip(this.ComboBoxMnPrDoswA, "Ustaw poziom oceny tego mnożnika pracochłonności");
             this.ComboBoxMnPrDoswA.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrDoswA_SelectedIndexChanged);
             // 
             // ComboBoxMnPrZesp
@@ -759,6 +768,7 @@
             this.ComboBoxMnPrZesp.Name = "ComboBoxMnPrZesp";
             this.ComboBoxMnPrZesp.Size = new System.Drawing.Size(386, 24);
             this.ComboBoxMnPrZesp.TabIndex = 5;
+            this.ToolTip.SetToolTip(this.ComboBoxMnPrZesp, "Ustaw poziom oceny tego mnożnika pracochłonności");
             this.ComboBoxMnPrZesp.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrZesp_SelectedIndexChanged);
             // 
             // ComboBoxMnPrDoswP
@@ -778,6 +788,7 @@
             this.ComboBoxMnPrDoswP.Name = "ComboBoxMnPrDoswP";
             this.ComboBoxMnPrDoswP.Size = new System.Drawing.Size(386, 24);
             this.ComboBoxMnPrDoswP.TabIndex = 7;
+            this.ToolTip.SetToolTip(this.ComboBoxMnPrDoswP, "Ustaw poziom oceny tego mnożnika pracochłonności");
             this.ComboBoxMnPrDoswP.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrDoswP_SelectedIndexChanged);
             // 
             // label23
@@ -965,6 +976,7 @@
             this.ComboBoxMnPrOgrCz.Name = "ComboBoxMnPrOgrCz";
             this.ComboBoxMnPrOgrCz.Size = new System.Drawing.Size(422, 24);
             this.ComboBoxMnPrOgrCz.TabIndex = 3;
+            this.ToolTip.SetToolTip(this.ComboBoxMnPrOgrCz, "Ustaw poziom oceny tego mnożnika pracochłonności");
             this.ComboBoxMnPrOgrCz.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrOgrCz_SelectedIndexChanged);
             // 
             // label13
@@ -1009,6 +1021,7 @@
             this.ComboBoxMnPrOgrP.Name = "ComboBoxMnPrOgrP";
             this.ComboBoxMnPrOgrP.Size = new System.Drawing.Size(422, 24);
             this.ComboBoxMnPrOgrP.TabIndex = 4;
+            this.ToolTip.SetToolTip(this.ComboBoxMnPrOgrP, "Ustaw poziom oceny tego mnożnika pracochłonności");
             this.ComboBoxMnPrOgrP.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrOgrP_SelectedIndexChanged);
             // 
             // label14
@@ -1040,6 +1053,7 @@
             this.ComboBoxMnPrZmP.Name = "ComboBoxMnPrZmP";
             this.ComboBoxMnPrZmP.Size = new System.Drawing.Size(422, 24);
             this.ComboBoxMnPrZmP.TabIndex = 5;
+            this.ToolTip.SetToolTip(this.ComboBoxMnPrZmP, "Ustaw poziom oceny tego mnożnika pracochłonności");
             this.ComboBoxMnPrZmP.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrZmP_SelectedIndexChanged);
             // 
             // label29
@@ -1195,6 +1209,7 @@
             this.ComboBoxMnPrNarzP.Name = "ComboBoxMnPrNarzP";
             this.ComboBoxMnPrNarzP.Size = new System.Drawing.Size(474, 24);
             this.ComboBoxMnPrNarzP.TabIndex = 3;
+            this.ToolTip.SetToolTip(this.ComboBoxMnPrNarzP, "Ustaw poziom oceny tego mnożnika pracochłonności");
             this.ComboBoxMnPrNarzP.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrNarzP_SelectedIndexChanged);
             // 
             // ComboBoxMnPrLokal
@@ -1215,6 +1230,7 @@
             this.ComboBoxMnPrLokal.Name = "ComboBoxMnPrLokal";
             this.ComboBoxMnPrLokal.Size = new System.Drawing.Size(474, 24);
             this.ComboBoxMnPrLokal.TabIndex = 4;
+            this.ToolTip.SetToolTip(this.ComboBoxMnPrLokal, "Ustaw poziom oceny tego mnożnika pracochłonności");
             this.ComboBoxMnPrLokal.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrLokal_SelectedIndexChanged);
             // 
             // ComboBoxMnPrHarm
@@ -1234,6 +1250,7 @@
             this.ComboBoxMnPrHarm.Name = "ComboBoxMnPrHarm";
             this.ComboBoxMnPrHarm.Size = new System.Drawing.Size(474, 24);
             this.ComboBoxMnPrHarm.TabIndex = 5;
+            this.ToolTip.SetToolTip(this.ComboBoxMnPrHarm, "Ustaw poziom oceny tego mnożnika pracochłonności");
             this.ComboBoxMnPrHarm.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMnPrHarm_SelectedIndexChanged);
             // 
             // label15

@@ -179,6 +179,7 @@
             this.TextBoxD.Name = "TextBoxD";
             this.TextBoxD.Size = new System.Drawing.Size(163, 22);
             this.TextBoxD.TabIndex = 7;
+            this.ToolTip.SetToolTip(this.TextBoxD, "Wprowadź nową wartość parametru D");
             this.TextBoxD.TextChanged += new System.EventHandler(this.TextBoxD_TextChanged);
             // 
             // TextBoxA
@@ -187,6 +188,7 @@
             this.TextBoxA.Name = "TextBoxA";
             this.TextBoxA.Size = new System.Drawing.Size(149, 22);
             this.TextBoxA.TabIndex = 4;
+            this.ToolTip.SetToolTip(this.TextBoxA, "Wprowadź nową wartość parametru A");
             this.TextBoxA.TextChanged += new System.EventHandler(this.TextBoxA_TextChanged);
             // 
             // TextBoxC
@@ -195,6 +197,7 @@
             this.TextBoxC.Name = "TextBoxC";
             this.TextBoxC.Size = new System.Drawing.Size(149, 22);
             this.TextBoxC.TabIndex = 6;
+            this.ToolTip.SetToolTip(this.TextBoxC, "Wprowadź nową wartość parametru C");
             this.TextBoxC.TextChanged += new System.EventHandler(this.TextBoxC_TextChanged);
             // 
             // TextBoxB
@@ -203,6 +206,7 @@
             this.TextBoxB.Name = "TextBoxB";
             this.TextBoxB.Size = new System.Drawing.Size(163, 22);
             this.TextBoxB.TabIndex = 5;
+            this.ToolTip.SetToolTip(this.TextBoxB, "Wprowadź nową wartość parametru B");
             this.TextBoxB.TextChanged += new System.EventHandler(this.TextBoxB_TextChanged);
             // 
             // label10
@@ -269,6 +273,8 @@
             this.NumericUCPnaFP.TabIndex = 3;
             this.NumericUCPnaFP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericUCPnaFP.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericUCPnaFP, "Wprowadź nowy współczynnik konwersji, który wynika z danych historycznych organiz" +
+        "acji");
             this.NumericUCPnaFP.ValueChanged += new System.EventHandler(this.NumericUCPnaFP_ValueChanged);
             // 
             // ButtonPrzywroc
@@ -278,6 +284,7 @@
             this.ButtonPrzywroc.Size = new System.Drawing.Size(192, 42);
             this.ButtonPrzywroc.TabIndex = 2;
             this.ButtonPrzywroc.Text = "Przywróć wartości  domyślne modelu";
+            this.ToolTip.SetToolTip(this.ButtonPrzywroc, "Przywróć wartości domyślne hybrydowego modelu szacującego");
             this.ButtonPrzywroc.UseVisualStyleBackColor = true;
             this.ButtonPrzywroc.Click += new System.EventHandler(this.ButtonPrzywroc_Click);
             // 
