@@ -77,11 +77,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.ButtonMnPr = new System.Windows.Forms.Button();
-            this.ButtonCzSk = new System.Windows.Forms.Button();
             this.ButtonNowyProjekt = new System.Windows.Forms.Button();
             this.ButtonOtworzProjekt = new System.Windows.Forms.Button();
             this.ButtonZapiszProjekt = new System.Windows.Forms.Button();
+            this.ButtonKreator = new System.Windows.Forms.Button();
+            this.ButtonMnPr = new System.Windows.Forms.Button();
+            this.ButtonCzSk = new System.Windows.Forms.Button();
             this.ButtonDomyslne = new System.Windows.Forms.Button();
             this.ButtonKalibracja = new System.Windows.Forms.Button();
             this.GroupBoxUAW = new System.Windows.Forms.GroupBox();
@@ -145,7 +146,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.ButtonKreator = new System.Windows.Forms.Button();
             this.PasekMenu.SuspendLayout();
             this.GroupBoxDaneProjektu.SuspendLayout();
             this.GroupBoxUUCW.SuspendLayout();
@@ -365,6 +365,7 @@
             this.ButtonZalozenia.Size = new System.Drawing.Size(173, 27);
             this.ButtonZalozenia.TabIndex = 3;
             this.ButtonZalozenia.Text = "Założenia projektu";
+            this.ToolTip.SetToolTip(this.ButtonZalozenia, "Otwiera okno dialogowe, gdzie można wprowadzić założenia projektu");
             this.ButtonZalozenia.UseVisualStyleBackColor = true;
             this.ButtonZalozenia.Click += new System.EventHandler(this.ButtonZalozenia_Click);
             // 
@@ -383,6 +384,8 @@
             this.DateTimePicker.Name = "DateTimePicker";
             this.DateTimePicker.Size = new System.Drawing.Size(191, 22);
             this.DateTimePicker.TabIndex = 1;
+            this.ToolTip.SetToolTip(this.DateTimePicker, "Wprowadź datę rozpoczęcia projektu, którą stanowi moment kiedy znane są już podst" +
+        "awowe wymagania odnośnie tworzonej aplikacji ");
             this.DateTimePicker.Value = new System.DateTime(2018, 12, 17, 0, 0, 0, 0);
             this.DateTimePicker.ValueChanged += new System.EventHandler(this.DateTimePicker_ValueChanged);
             // 
@@ -393,6 +396,7 @@
             this.ButtonWiecejSzczeg.Size = new System.Drawing.Size(173, 27);
             this.ButtonWiecejSzczeg.TabIndex = 2;
             this.ButtonWiecejSzczeg.Text = "Więcej szczegółów";
+            this.ToolTip.SetToolTip(this.ButtonWiecejSzczeg, "Otwiera okno dialogowe, gdzie można wprowadzić dodatkowe szczegóły projektu");
             this.ButtonWiecejSzczeg.UseVisualStyleBackColor = true;
             this.ButtonWiecejSzczeg.Click += new System.EventHandler(this.ButtonWiecejSzczeg_Click);
             // 
@@ -412,6 +416,7 @@
             this.TextBoxNazwaProjektu.Name = "TextBoxNazwaProjektu";
             this.TextBoxNazwaProjektu.Size = new System.Drawing.Size(549, 22);
             this.TextBoxNazwaProjektu.TabIndex = 0;
+            this.ToolTip.SetToolTip(this.TextBoxNazwaProjektu, "Wprowadź nazwę projektu");
             this.TextBoxNazwaProjektu.TextChanged += new System.EventHandler(this.TextBoxNazwaProjektu_TextChanged);
             // 
             // GroupBoxUUCW
@@ -490,7 +495,7 @@
             this.NumUUCWZlozony.Size = new System.Drawing.Size(177, 22);
             this.NumUUCWZlozony.TabIndex = 6;
             this.NumUUCWZlozony.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.NumUUCWZlozony.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumUUCWZlozony, "Wprowadź liczbę złożonych przypadków użycia");
             this.NumUUCWZlozony.ValueChanged += new System.EventHandler(this.NumUUCWZlozony_ValueChanged);
             // 
             // label2
@@ -523,6 +528,7 @@
             this.NumUUCWSredni.TabIndex = 5;
             this.NumUUCWSredni.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUUCWSredni.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumUUCWSredni, "Wprowadź liczbę średnio złożonych przypadków użycia");
             this.NumUUCWSredni.ValueChanged += new System.EventHandler(this.NumUUCWSredni_ValueChanged);
             // 
             // NumUUCWProsty
@@ -541,6 +547,7 @@
             this.NumUUCWProsty.TabIndex = 4;
             this.NumUUCWProsty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUUCWProsty.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumUUCWProsty, "Wprowadź liczbę prostych przypadków użycia");
             this.NumUUCWProsty.ValueChanged += new System.EventHandler(this.NumUUCWProsty_ValueChanged);
             // 
             // label3
@@ -703,26 +710,6 @@
             this.label4.TabIndex = 8;
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ButtonMnPr
-            // 
-            this.ButtonMnPr.Location = new System.Drawing.Point(287, 30);
-            this.ButtonMnPr.Name = "ButtonMnPr";
-            this.ButtonMnPr.Size = new System.Drawing.Size(219, 27);
-            this.ButtonMnPr.TabIndex = 11;
-            this.ButtonMnPr.Text = "Mnożniki pracochłonności";
-            this.ButtonMnPr.UseVisualStyleBackColor = true;
-            this.ButtonMnPr.Click += new System.EventHandler(this.ButtonMnPr_Click);
-            // 
-            // ButtonCzSk
-            // 
-            this.ButtonCzSk.Location = new System.Drawing.Point(46, 30);
-            this.ButtonCzSk.Name = "ButtonCzSk";
-            this.ButtonCzSk.Size = new System.Drawing.Size(219, 27);
-            this.ButtonCzSk.TabIndex = 10;
-            this.ButtonCzSk.Text = "Czynniki skali";
-            this.ButtonCzSk.UseVisualStyleBackColor = true;
-            this.ButtonCzSk.Click += new System.EventHandler(this.ButtonCzSk_Click);
-            // 
             // ButtonNowyProjekt
             // 
             this.ButtonNowyProjekt.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -731,6 +718,7 @@
             this.ButtonNowyProjekt.Size = new System.Drawing.Size(137, 27);
             this.ButtonNowyProjekt.TabIndex = 12;
             this.ButtonNowyProjekt.Text = "Nowy projekt";
+            this.ToolTip.SetToolTip(this.ButtonNowyProjekt, "Rozpocznij nowy projekt.");
             this.ButtonNowyProjekt.UseVisualStyleBackColor = true;
             this.ButtonNowyProjekt.Click += new System.EventHandler(this.ButtonNowyProjekt_Click);
             // 
@@ -742,6 +730,7 @@
             this.ButtonOtworzProjekt.Size = new System.Drawing.Size(137, 27);
             this.ButtonOtworzProjekt.TabIndex = 13;
             this.ButtonOtworzProjekt.Text = "Otwórz projekt";
+            this.ToolTip.SetToolTip(this.ButtonOtworzProjekt, "Otwórz wcześniej zapisany projekt");
             this.ButtonOtworzProjekt.UseVisualStyleBackColor = true;
             this.ButtonOtworzProjekt.Click += new System.EventHandler(this.ButtonOtworzProjekt_Click);
             // 
@@ -753,8 +742,43 @@
             this.ButtonZapiszProjekt.Size = new System.Drawing.Size(137, 27);
             this.ButtonZapiszProjekt.TabIndex = 14;
             this.ButtonZapiszProjekt.Text = "Zapisz projekt";
+            this.ToolTip.SetToolTip(this.ButtonZapiszProjekt, "Zapisz obecny projekt do pliku");
             this.ButtonZapiszProjekt.UseVisualStyleBackColor = true;
             this.ButtonZapiszProjekt.Click += new System.EventHandler(this.ButtonZapiszProjekt_Click);
+            // 
+            // ButtonKreator
+            // 
+            this.ButtonKreator.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonKreator.Location = new System.Drawing.Point(439, 36);
+            this.ButtonKreator.Name = "ButtonKreator";
+            this.ButtonKreator.Size = new System.Drawing.Size(137, 27);
+            this.ButtonKreator.TabIndex = 15;
+            this.ButtonKreator.Text = "Kreator";
+            this.ToolTip.SetToolTip(this.ButtonKreator, "Otwórz okno dialogowe Kreatora oszacowania");
+            this.ButtonKreator.UseVisualStyleBackColor = true;
+            this.ButtonKreator.Click += new System.EventHandler(this.ButtonKreator_Click);
+            // 
+            // ButtonMnPr
+            // 
+            this.ButtonMnPr.Location = new System.Drawing.Point(287, 30);
+            this.ButtonMnPr.Name = "ButtonMnPr";
+            this.ButtonMnPr.Size = new System.Drawing.Size(219, 27);
+            this.ButtonMnPr.TabIndex = 11;
+            this.ButtonMnPr.Text = "Mnożniki pracochłonności";
+            this.ToolTip.SetToolTip(this.ButtonMnPr, "Dokonaj oceny mnożników pracochłonności");
+            this.ButtonMnPr.UseVisualStyleBackColor = true;
+            this.ButtonMnPr.Click += new System.EventHandler(this.ButtonMnPr_Click);
+            // 
+            // ButtonCzSk
+            // 
+            this.ButtonCzSk.Location = new System.Drawing.Point(46, 30);
+            this.ButtonCzSk.Name = "ButtonCzSk";
+            this.ButtonCzSk.Size = new System.Drawing.Size(219, 27);
+            this.ButtonCzSk.TabIndex = 10;
+            this.ButtonCzSk.Text = "Czynniki skali";
+            this.ToolTip.SetToolTip(this.ButtonCzSk, "Dokonaj oceny czynników skali");
+            this.ButtonCzSk.UseVisualStyleBackColor = true;
+            this.ButtonCzSk.Click += new System.EventHandler(this.ButtonCzSk_Click);
             // 
             // ButtonDomyslne
             // 
@@ -764,6 +788,7 @@
             this.ButtonDomyslne.Size = new System.Drawing.Size(137, 27);
             this.ButtonDomyslne.TabIndex = 16;
             this.ButtonDomyslne.Text = "Domyślne dane";
+            this.ToolTip.SetToolTip(this.ButtonDomyslne, "Zmień domyślne dane aplikacji");
             this.ButtonDomyslne.UseVisualStyleBackColor = true;
             this.ButtonDomyslne.Click += new System.EventHandler(this.ButtonDomyslne_Click);
             // 
@@ -775,6 +800,7 @@
             this.ButtonKalibracja.Size = new System.Drawing.Size(137, 27);
             this.ButtonKalibracja.TabIndex = 18;
             this.ButtonKalibracja.Text = "Kalibracja";
+            this.ToolTip.SetToolTip(this.ButtonKalibracja, "Skalibruj hybrydowy model szacujący");
             this.ButtonKalibracja.UseVisualStyleBackColor = true;
             this.ButtonKalibracja.Click += new System.EventHandler(this.ButtonKalibracja_Click);
             // 
@@ -854,6 +880,7 @@
             this.NumUAWZlozony.TabIndex = 9;
             this.NumUAWZlozony.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUAWZlozony.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumUAWZlozony, "Wprowadź liczbę złożonych aktorów");
             this.NumUAWZlozony.ValueChanged += new System.EventHandler(this.NumUAWZlozony_ValueChanged);
             // 
             // label13
@@ -885,6 +912,7 @@
             this.NumUAWSredni.TabIndex = 8;
             this.NumUAWSredni.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUAWSredni.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumUAWSredni, "Wprowadź liczbę średnio złożonych aktorów");
             this.NumUAWSredni.ValueChanged += new System.EventHandler(this.NumUAWSredni_ValueChanged);
             // 
             // label14
@@ -916,6 +944,7 @@
             this.NumUAWProsty.TabIndex = 7;
             this.NumUAWProsty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUAWProsty.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumUAWProsty, "Wprowadź liczbę prostych aktorów");
             this.NumUAWProsty.ValueChanged += new System.EventHandler(this.NumUAWProsty_ValueChanged);
             // 
             // label15
@@ -1573,6 +1602,7 @@
             this.ButtonOpisProjektu.Size = new System.Drawing.Size(131, 27);
             this.ButtonOpisProjektu.TabIndex = 19;
             this.ButtonOpisProjektu.Text = "Opis projektu";
+            this.ToolTip.SetToolTip(this.ButtonOpisProjektu, "Otwórz podgląd raportu zawierającego opis projektu");
             this.ButtonOpisProjektu.UseVisualStyleBackColor = true;
             this.ButtonOpisProjektu.Click += new System.EventHandler(this.ButtonOpisProjektu_Click);
             // 
@@ -1584,6 +1614,7 @@
             this.ButtonPodsumowanieProjektu.Size = new System.Drawing.Size(124, 27);
             this.ButtonPodsumowanieProjektu.TabIndex = 21;
             this.ButtonPodsumowanieProjektu.Text = "Podsumowanie";
+            this.ToolTip.SetToolTip(this.ButtonPodsumowanieProjektu, "Otwórz podgląd raportu zawierającego podsumowanie projektu");
             this.ButtonPodsumowanieProjektu.UseVisualStyleBackColor = true;
             this.ButtonPodsumowanieProjektu.Click += new System.EventHandler(this.ButtonPodsumowanieProjektu_Click);
             // 
@@ -1595,6 +1626,7 @@
             this.ButtonOszacowanie.Size = new System.Drawing.Size(192, 27);
             this.ButtonOszacowanie.TabIndex = 20;
             this.ButtonOszacowanie.Text = "Pełne oszacowanie";
+            this.ToolTip.SetToolTip(this.ButtonOszacowanie, "Otwórz podgląd raportu zawierającego pełne oszacowanie projektu");
             this.ButtonOszacowanie.UseVisualStyleBackColor = true;
             this.ButtonOszacowanie.Click += new System.EventHandler(this.ButtonOszacowanie_Click);
             // 
@@ -1606,6 +1638,7 @@
             this.ButtonTablicaPrzeliczeniowa.Size = new System.Drawing.Size(192, 27);
             this.ButtonTablicaPrzeliczeniowa.TabIndex = 17;
             this.ButtonTablicaPrzeliczeniowa.Text = "Tabela przeliczeniowa";
+            this.ToolTip.SetToolTip(this.ButtonTablicaPrzeliczeniowa, "Zmień przeliczniki punktów funkcyjnych na linie kodu źródłowego");
             this.ButtonTablicaPrzeliczeniowa.UseVisualStyleBackColor = true;
             this.ButtonTablicaPrzeliczeniowa.Click += new System.EventHandler(this.ButtonTabelaPrzeliczeniowa_Click);
             // 
@@ -1637,17 +1670,6 @@
             this.ToolStripStatusLabel.Name = "ToolStripStatusLabel";
             this.ToolStripStatusLabel.Size = new System.Drawing.Size(51, 17);
             this.ToolStripStatusLabel.Text = "Gotowy";
-            // 
-            // ButtonKreator
-            // 
-            this.ButtonKreator.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonKreator.Location = new System.Drawing.Point(439, 36);
-            this.ButtonKreator.Name = "ButtonKreator";
-            this.ButtonKreator.Size = new System.Drawing.Size(137, 27);
-            this.ButtonKreator.TabIndex = 15;
-            this.ButtonKreator.Text = "Kreator";
-            this.ButtonKreator.UseVisualStyleBackColor = true;
-            this.ButtonKreator.Click += new System.EventHandler(this.ButtonKreator_Click);
             // 
             // OknoGlowne
             // 

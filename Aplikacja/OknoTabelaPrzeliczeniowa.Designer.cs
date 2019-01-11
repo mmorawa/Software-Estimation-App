@@ -164,7 +164,7 @@
             this.GroupBoxKalibracja.Size = new System.Drawing.Size(583, 620);
             this.GroupBoxKalibracja.TabIndex = 22;
             this.GroupBoxKalibracja.TabStop = false;
-            this.GroupBoxKalibracja.Text = "Tabela przeliczeniowa punktów funkcyjnych na źródłowe linie kodu";
+            this.GroupBoxKalibracja.Text = "Tabela przeliczeniowa punktów funkcyjnych na linie kodu źródłowego";
             // 
             // tableLayoutPanel2
             // 
@@ -1387,7 +1387,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OknoTabelaPrzeliczeniowa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Tabela przeliczeniowa punktów funkcyjnych na źródłowe linie kodu";
+            this.Text = "Tabela przeliczeniowa punktów funkcyjnych na linie kodu źródłowego";
             this.GroupBoxKalibracja.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

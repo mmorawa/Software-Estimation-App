@@ -19,8 +19,8 @@ namespace Aplikacja
             DateTimePicker.Value = DateTime.Today;
         }
 
-        /*****************************************************************************//**
-        *  Pola
+        /********************************************************************************
+        *  Pola klasy OknoGlowne
         ********************************************************************************/
 
         string SciezkaDoPliku = "";
@@ -330,37 +330,37 @@ namespace Aplikacja
 
         private void NumUUCWProsty_ValueChanged(object sender, EventArgs e)
         {
-            TabUUCW[0] = (long)NumUUCWProsty.Value;
+            TabUUCW[0] = (long)Math.Round(NumUUCWProsty.Value);
             Oszacowanie();
         }
 
         private void NumUUCWSredni_ValueChanged(object sender, EventArgs e)
         {
-            TabUUCW[1] = (long)NumUUCWSredni.Value;
+            TabUUCW[1] = (long)Math.Round(NumUUCWSredni.Value);
             Oszacowanie();
         }
 
         private void NumUUCWZlozony_ValueChanged(object sender, EventArgs e)
         {
-            TabUUCW[2] = (long)NumUUCWZlozony.Value;
+            TabUUCW[2] = (long)Math.Round(NumUUCWZlozony.Value);
             Oszacowanie();
         }
 
         private void NumUAWProsty_ValueChanged(object sender, EventArgs e)
         {
-            TabUAW[0] = (long)NumUAWProsty.Value;
+            TabUAW[0] = (long)Math.Round(NumUAWProsty.Value);
             Oszacowanie();
         }
 
         private void NumUAWSredni_ValueChanged(object sender, EventArgs e)
         {
-            TabUAW[1] = (long)NumUAWSredni.Value;
+            TabUAW[1] = (long)Math.Round(NumUAWSredni.Value);
             Oszacowanie();
         }
 
         private void NumUAWZlozony_ValueChanged(object sender, EventArgs e)
         {
-            TabUAW[2] = (long)NumUAWZlozony.Value;
+            TabUAW[2] = (long)Math.Round(NumUAWZlozony.Value);
             Oszacowanie();
         }
 

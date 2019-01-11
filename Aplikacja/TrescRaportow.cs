@@ -14,15 +14,15 @@ namespace Aplikacja
         //Funkcja definiująca styl generowanego dokumentu
         public static void DefinicjaStylu(Document dokument)
         {
-            // Ustawienie predefiniowanego stylu Normal. Ponieważ wszystkie style od niego pochodzą
-            // ma on wpływ na wszystkie sekcje i paragrafy.
+            //Ustawienie predefiniowanego stylu Normal. Ponieważ wszystkie style od niego pochodzą
+            //ma on wpływ na wszystkie sekcje i paragrafy.
             var styl = dokument.Styles["Normal"];
 
-            // Czcionka tekstu
+            //Czcionka tekstu
             styl.Font.Name = "Arial";
             styl.Font.Size = 12;
 
-            // Nagłówki Heading1 do Heading2 to predefiniowane style, które automatycznie tworzą odpowiednie poziomy konspektu
+            //Nagłówki Heading1 do Heading2 to predefiniowane style, które automatycznie tworzą odpowiednie poziomy konspektu.
             styl = dokument.Styles["Heading1"];
             styl.Font.Name = "Arial";
             styl.Font.Size = 20;
@@ -32,8 +32,8 @@ namespace Aplikacja
             styl.ParagraphFormat.SpaceBefore = "4cm";
             styl.ParagraphFormat.SpaceAfter = "1cm";
 
-            // Ustawienie KeepWithNext dla wszystkich nagłówków w celu uniknięcia sytuacji, 
-            // w której pojawiałyby się one na dole każdej strony. Inne nagłówki dziedziczą tę wartość z Heading1.
+            //Ustawienie KeepWithNext dla wszystkich nagłówków w celu uniknięcia sytuacji, 
+            //w której pojawiałyby się one na dole każdej strony. Inne nagłówki dziedziczą tę wartość z Heading1.
             styl.ParagraphFormat.KeepWithNext = true;
 
             styl = dokument.Styles["Heading2"];
@@ -76,16 +76,16 @@ namespace Aplikacja
             naglowek.AddParagraph(nazwaRaportu);
 
 
-            // Tworzy paragraf z numerem strony
+            //Tworzy paragraf z numerem strony
             var paragraf = new Paragraph();
             paragraf.AddTab();
             paragraf.AddPageField();
 
 
-            // Dodaje paragraf do stopki dla nieparzystych stron 
+            //Dodaje paragraf do stopki dla nieparzystych stron 
             sekcja.Footers.Primary.Add(paragraf);
 
-            // Klonuje powyższy paragraf dla parzystych stron. Klonowanie jest konieczne gdyż obiekt nie może należeć do więcej niż jednego obiektu?
+            //Klonuje powyższy paragraf dla parzystych stron. Klonowanie jest konieczne gdyż obiekt nie może należeć do więcej niż jednego obiektu?
             sekcja.Footers.EvenPage.Add(paragraf.Clone());
         }
 
@@ -166,7 +166,7 @@ namespace Aplikacja
             paragraf.Format.Font.Bold = true;
             paragraf.AddFormattedText(OknoGlowne.Szacujacy, TextFormat.NotBold);
 
-            // Na wypadek gdyby użytkownik nie wybrał żadnej daty
+            //na wypadek gdyby użytkownik nie wybrał żadnej daty
             if (OknoGlowne.DataProjektu.Length == 0)
             {
                 OknoGlowne.DataProjektu = DateTime.Now.ToLongDateString();
@@ -193,8 +193,6 @@ namespace Aplikacja
             paragraf.Format.Font.Bold = true;
             paragraf.AddFormattedText(OknoGlowne.Email, TextFormat.NotBold);
 
-            paragraf = sekcja.AddParagraph("Opis projektu", "Heading3");
-            paragraf = sekcja.AddParagraph(OknoGlowne.OpisProjektu);
 
             paragraf = sekcja.AddParagraph("Założenia projektu", "Heading3");
             paragraf = sekcja.AddParagraph("Główny język programowania użyty w projekcie: ");
@@ -232,18 +230,22 @@ namespace Aplikacja
 
             }
 
+            paragraf = sekcja.AddParagraph("Opis projektu", "Heading3");
+            paragraf = sekcja.AddParagraph(OknoGlowne.OpisProjektu);
 
         }
 
         //Dane wprowadzone przez użytkownika w celu dokonania oszacowania
         public static void WprowadzoneDane(Document dokument)
         {
-            //var sekcja = dokument.LastSection;
+            
             var sekcja = dokument.LastSection;
 
             var paragraf = sekcja.AddParagraph("Dane wykorzystane do oszacowania pracochłonności", "Heading1");
 
             paragraf = sekcja.AddParagraph("Metoda Use Case Points", "Heading3");
+
+            //------------------------------Tabela UUCW--------------------------------------------
 
             //nagłówek tabelii
             paragraf = sekcja.AddParagraph("Tabela 1 - przypadki użycia");
@@ -321,7 +323,7 @@ namespace Aplikacja
 
             dokument.LastSection.Add(TabelaUUCW);
 
-            //--------------------------------------------------------------------------
+            //-----------------------------------Tabela UAW---------------------------------------
 
 
             //nagłówek tabelii
@@ -400,11 +402,11 @@ namespace Aplikacja
 
             dokument.LastSection.Add(TabelaUAW);
 
-            //--------------------------------------------------------------------------------------------------------------------
+            //---------------------------------------Tabela czynniki skali------------------------------------------------------
 
             paragraf = sekcja.AddParagraph("Metoda COCOMO II - Czynniki skali", "Heading2");
             
-            //nagłówek tabelii
+            //nagłówek tabeli
             paragraf = sekcja.AddParagraph("Tabela 3 - Czynniki skali");
             paragraf.Format.SpaceAfter = "0.2cm";
             paragraf.Format.SpaceBefore = "1cm";
@@ -492,7 +494,7 @@ namespace Aplikacja
 
             dokument.LastSection.Add(TabelaCzynnSkali);
 
-            //--------------------------------------------------------------------------------------------------------------------
+            //-----------------------------------------Tabela mnożniki pracochłonności dot. produktu----------------------------------------
 
             paragraf = sekcja.AddParagraph("Metoda COCOMO II - Mnożniki pracochłonności dot. produktu", "Heading2");
 
@@ -528,7 +530,7 @@ namespace Aplikacja
             cell.AddParagraph("Poziom oceny");
             cell = row.Cells[2];
             cell.AddParagraph("Krótki opis");
-            //przywracay wycentrowany nagłówek
+            //przywracamy wycentrowany nagłówek
             cell.Format.Alignment = ParagraphAlignment.Center;
 
 
@@ -585,7 +587,7 @@ namespace Aplikacja
 
             dokument.LastSection.Add(TabelaMnPracProd);
 
-            //--------------------------------------------------------------------------------
+            //-------------------------------Tabela mnożniki pracochłonności dot. personelu------------------------------------------
 
             paragraf = sekcja.AddParagraph("Metoda COCOMO II - Mnożniki pracochłonności dot. personelu", "Heading2");
 
@@ -687,7 +689,7 @@ namespace Aplikacja
 
             dokument.LastSection.Add(TabelaMnPracPersonel);
 
-            //--------------------------------------------------------------------------
+            //--------------------------------------Tabela mnożniki pracochłonności dot. platformy------------------------------------------
 
             paragraf = sekcja.AddParagraph("Metoda COCOMO II - Mnożniki pracochłonności dot. platformy", "Heading2");
 
@@ -763,7 +765,7 @@ namespace Aplikacja
             dokument.LastSection.Add(TabelaMnPracPlatforma);
 
 
-            //----------------------------------------------------------------------------------
+            //---------------------------------------Mnożniki pracochłonności dot. projektu-----------------------------------------------
 
             paragraf = sekcja.AddParagraph("Metoda COCOMO II - Mnożniki pracochłonności dot. projektu", "Heading2");
 
@@ -854,7 +856,7 @@ namespace Aplikacja
 
 
             paragraf = sekcja.AddParagraph(OknoGlowne.Ostrzezenie);
-            //paragraf = sekcja.AddParagraph("Metoda Use Case Points", "Heading3");
+            
 
             //nagłówek tabelii
             paragraf = sekcja.AddParagraph("Tabela 8 - wyniki");
