@@ -191,7 +191,7 @@ namespace Aplikacja
         public static double SrZespolNGor;
 
         /*******************************************************************************
-        *  Metody klasy Form1.
+        *  Metody klasy OknoGlowne
         ********************************************************************************/
 
         //-----------------------------------Pasek menu------------------------------------------------------
@@ -315,7 +315,7 @@ namespace Aplikacja
 
 
 
-        //-----------------------------------Wprowadzenie danych do metody UCP-------------------------------
+        //-----------------------------------Wprowadzanie danych do metody UCP-------------------------------
 
         private void TextBoxNazwaProjektu_TextChanged(object sender, EventArgs e)
         {
@@ -365,7 +365,7 @@ namespace Aplikacja
         }
 
 
-        //-----------------------------------Wprowadzenie danych do metody COCOMO II-------------------------
+        //-----------------------------------Wprowadzanie danych do metody COCOMO II-------------------------
 
 
         private void ButtonCzSk_Click(object sender, EventArgs e)
@@ -373,7 +373,6 @@ namespace Aplikacja
             using (OknoCzynnikiSkali OknoCzynS = new OknoCzynnikiSkali())
             {
                 DialogResult rezultat = OknoCzynS.ShowDialog();
-
 
                 if (rezultat == DialogResult.OK)
                 {
@@ -383,7 +382,6 @@ namespace Aplikacja
                     }
 
                     Oszacowanie();
-
                 }
             }
         }
@@ -417,7 +415,7 @@ namespace Aplikacja
             Ostrzezenie = "";
             Przekroczenie = false;
 
-            //Obliczenia UUCP
+            //Obliczenie UUCP
 
             UUCW = 0;
             for (int i = 0; i < 3; i++)
@@ -449,7 +447,7 @@ namespace Aplikacja
             RozmiarKSLOC = Rozmiar / 1000;
 
 
-            //Obliczenia COCOMO II
+            //Obliczenie pracochłonności przy użyciu modelu COCOMO II
 
             SumaSF = 0;
             for (int i = 0; i < 5; i++)
@@ -738,7 +736,7 @@ namespace Aplikacja
         }
 
 
-        //-----------------------------------Funkcje---------------------------------------------------------
+        //-----------------------------------Dodatkowe funkcje aplikacji---------------------------------------------------------
 
         private void ButtonNowyProjekt_Click(object sender, EventArgs e)
         {
@@ -776,7 +774,6 @@ namespace Aplikacja
                     Telefon = TempTelefon;
                     Email = TempEmail;
                     OpisProjektu = TempOpisProjektu;
-                    //czy są użyte dane domyślne
                     Domyslne = TempDomyslne;
 
                     MessageBox.Show("Szczegółowe dane projektu zostały zmienione.", "Sukces");
@@ -1102,7 +1099,6 @@ namespace Aplikacja
 
         private void UsuniecieDanych()
         {
-            //Wyzerowanie
             SciezkaDoPliku = "";
 
             TextBoxNazwaProjektu.Text = "Projekt";
@@ -1415,7 +1411,7 @@ namespace Aplikacja
         {
             const string NazwaPliku = "Raport_Opis_Projektu";
 
-            // Utworzenie dokumentu przy pomocy MigraDoc
+            // Utworzenie dokumentu przy pomocy biblioteki MigraDoc
             var dokument = new Document();
 
             dokument.Info.Title = "Opis projektu";
@@ -1437,14 +1433,10 @@ namespace Aplikacja
             // Dodanie strony z opisem projektu
             TrescRaportow.StronaZOpisem(dokument);
 
-            using (OknoPodgladRaportow OknoZalProj = new OknoPodgladRaportow(dokument, NazwaPliku))
+            using (OknoPodgladRaportow OknoPodglad = new OknoPodgladRaportow(dokument, NazwaPliku))
             {
-                DialogResult rezultat = OknoZalProj.ShowDialog();
+                DialogResult rezultat = OknoPodglad.ShowDialog();
 
-                if (rezultat == DialogResult.OK)
-                {
-                    //TODO walidacja??
-                }
             }
         }
 
@@ -1452,7 +1444,7 @@ namespace Aplikacja
         {
             const string NazwaPliku = "Raport_Oszacowanie_Pracochlonnosci";
 
-            // Utworzenie dokumentu przy pomocy MigraDoc
+            // Utworzenie dokumentu przy pomocy biblioteki MigraDoc
             var dokument = new Document();
 
             dokument.Info.Title = "Pełne oszacowanie pracochłonności projektu";
@@ -1480,21 +1472,18 @@ namespace Aplikacja
             // Dodanie wyników oszacowania
             TrescRaportow.Wyniki(dokument);
 
-            using (OknoPodgladRaportow OknoZalProj = new OknoPodgladRaportow(dokument, NazwaPliku))
+            using (OknoPodgladRaportow OknoPodglad = new OknoPodgladRaportow(dokument, NazwaPliku))
             {
-                DialogResult rezultat = OknoZalProj.ShowDialog();
+                DialogResult rezultat = OknoPodglad.ShowDialog();
 
             }
-
-
-
         }
 
         private void ButtonPodsumowanieProjektu_Click(object sender, EventArgs e)
         {
             const string NazwaPliku = "Raport_Podsumowanie";
 
-            // Utworzenie dokumentu przy pomocy MigraDoc
+            // Utworzenie dokumentu przy pomocy biblioteki MigraDoc
             var dokument = new Document();
 
             dokument.Info.Title = "Podsumowanie oszacowania pracochłonności projektu";
@@ -1520,9 +1509,9 @@ namespace Aplikacja
             TrescRaportow.Wyniki(dokument);
 
 
-            using (OknoPodgladRaportow OknoZalProj = new OknoPodgladRaportow(dokument, NazwaPliku))
+            using (OknoPodgladRaportow OknoPodglad = new OknoPodgladRaportow(dokument, NazwaPliku))
             {
-                DialogResult rezultat = OknoZalProj.ShowDialog();
+                DialogResult rezultat = OknoPodglad.ShowDialog();
 
             }
         }

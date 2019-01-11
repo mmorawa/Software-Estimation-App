@@ -107,6 +107,7 @@
             this.CheckBoxDomyslne.Size = new System.Drawing.Size(183, 20);
             this.CheckBoxDomyslne.TabIndex = 2;
             this.CheckBoxDomyslne.Text = "Użyj danych domyślnych";
+            this.ToolTip.SetToolTip(this.CheckBoxDomyslne, "Zaznacz jeśli chcesz użyć wcześniej zdefiniowanych danych domyślnych");
             this.CheckBoxDomyslne.UseVisualStyleBackColor = true;
             this.CheckBoxDomyslne.Click += new System.EventHandler(this.CheckBoxDomyslne_Click);
             // 
@@ -118,6 +119,7 @@
             this.RichTextBoxOpisProjektu.Size = new System.Drawing.Size(459, 326);
             this.RichTextBoxOpisProjektu.TabIndex = 9;
             this.RichTextBoxOpisProjektu.Text = "";
+            this.ToolTip.SetToolTip(this.RichTextBoxOpisProjektu, "Wprowadź opis projektu zawierający jego krótką charakterystykę");
             this.RichTextBoxOpisProjektu.TextChanged += new System.EventHandler(this.RichTextBoxOpisProjektu_TextChanged);
             // 
             // label7
@@ -145,6 +147,7 @@
             this.TextBoxSzacujacy.Name = "TextBoxSzacujacy";
             this.TextBoxSzacujacy.Size = new System.Drawing.Size(462, 22);
             this.TextBoxSzacujacy.TabIndex = 4;
+            this.ToolTip.SetToolTip(this.TextBoxSzacujacy, "Wprowadź imię i nazwisko osoby odpowiedzialnej za oszacowanie");
             this.TextBoxSzacujacy.TextChanged += new System.EventHandler(this.TextBoxSzacujacy_TextChanged);
             // 
             // label6
@@ -163,6 +166,7 @@
             this.TextBoxEmail.Name = "TextBoxEmail";
             this.TextBoxEmail.Size = new System.Drawing.Size(462, 22);
             this.TextBoxEmail.TabIndex = 8;
+            this.ToolTip.SetToolTip(this.TextBoxEmail, "Wprowadź e-mail firmy programistycznej");
             this.TextBoxEmail.TextChanged += new System.EventHandler(this.TextBoxEmail_TextChanged);
             // 
             // label5
@@ -191,6 +195,7 @@
             this.TextBoxTelefon.Name = "TextBoxTelefon";
             this.TextBoxTelefon.Size = new System.Drawing.Size(462, 22);
             this.TextBoxTelefon.TabIndex = 7;
+            this.ToolTip.SetToolTip(this.TextBoxTelefon, "Wprowadź telefon lub fax firmy programistycznej");
             this.TextBoxTelefon.TextChanged += new System.EventHandler(this.TextBoxTelefon_TextChanged);
             // 
             // TextBoxAdres
@@ -200,6 +205,7 @@
             this.TextBoxAdres.Name = "TextBoxAdres";
             this.TextBoxAdres.Size = new System.Drawing.Size(462, 22);
             this.TextBoxAdres.TabIndex = 6;
+            this.ToolTip.SetToolTip(this.TextBoxAdres, "Wprowadź adres firmy programistycznej");
             this.TextBoxAdres.TextChanged += new System.EventHandler(this.TextBoxAdres_TextChanged);
             // 
             // TextBoxNazwaFirmy
@@ -209,6 +215,7 @@
             this.TextBoxNazwaFirmy.Name = "TextBoxNazwaFirmy";
             this.TextBoxNazwaFirmy.Size = new System.Drawing.Size(462, 22);
             this.TextBoxNazwaFirmy.TabIndex = 5;
+            this.ToolTip.SetToolTip(this.TextBoxNazwaFirmy, "Wprowadź nazwę firmy programistycznej");
             this.TextBoxNazwaFirmy.TextChanged += new System.EventHandler(this.TextBoxNazwaFirmy_TextChanged);
             // 
             // label3
@@ -236,6 +243,7 @@
             this.TextBoxKierownikProjektu.Name = "TextBoxKierownikProjektu";
             this.TextBoxKierownikProjektu.Size = new System.Drawing.Size(462, 22);
             this.TextBoxKierownikProjektu.TabIndex = 3;
+            this.ToolTip.SetToolTip(this.TextBoxKierownikProjektu, "Wprowadź imię i nazwisko kierownika projektu");
             this.TextBoxKierownikProjektu.TextChanged += new System.EventHandler(this.TextBoxKierownikProjektu_TextChanged);
             // 
             // OknoDaneProjektu

@@ -279,7 +279,7 @@ namespace Aplikacja
             cell = row.Cells[2];
             cell.AddParagraph("Liczba \nprzypadków użycia");
             cell = row.Cells[3];
-            cell.AddParagraph("Liczba transakcji");
+            cell.AddParagraph("Definicja");
 
 
             //tylko dodaje do pierwszego kolor
@@ -292,7 +292,7 @@ namespace Aplikacja
             cell = row.Cells[2];
             cell.AddParagraph(OknoGlowne.TabUUCW[0].ToString());
             cell = row.Cells[3];
-            cell.AddParagraph("od 1 do 3");
+            cell.AddParagraph("od 1 do 3 transakcji oraz \n5 analizowanych klas lub mniej");
 
             row = TabelaUUCW.AddRow();
             row.VerticalAlignment = VerticalAlignment.Center;
@@ -303,7 +303,7 @@ namespace Aplikacja
             cell = row.Cells[2];
             cell.AddParagraph(OknoGlowne.TabUUCW[1].ToString());
             cell = row.Cells[3];
-            cell.AddParagraph("od 4 do 7");
+            cell.AddParagraph("od 4 do 7 transakcji oraz\nod 6 do 10 analizowanych klas");
 
             row = TabelaUUCW.AddRow();
             row.VerticalAlignment = VerticalAlignment.Center;
@@ -314,7 +314,7 @@ namespace Aplikacja
             cell = row.Cells[2];
             cell.AddParagraph(OknoGlowne.TabUUCW[2].ToString());
             cell = row.Cells[3];
-            cell.AddParagraph("więcej niż 7");
+            cell.AddParagraph("więcej niż 7 transakcji oraz\nwięcej niż 10 analizowanych klas");
 
 
             TabelaUUCW.SetEdge(0, 0, 4, 4, Edge.Bottom, MigraDoc.DocumentObjectModel.BorderStyle.Single, 1, Colors.LightSalmon);

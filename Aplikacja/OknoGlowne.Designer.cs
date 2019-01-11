@@ -45,9 +45,9 @@
             this.ToolStripPodsumowanieProjektu = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuOpcje = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuKreator = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuKalibracja = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuDomyslne = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripTablicaPrzeliczeniowa = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuKalibracja = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuPomoc = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuDokumentacja = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuOProgramie = new System.Windows.Forms.ToolStripMenuItem();
@@ -297,13 +297,6 @@
             this.ToolStripMenuKreator.Text = "K&reator";
             this.ToolStripMenuKreator.Click += new System.EventHandler(this.ToolStripMenuKreator_Click);
             // 
-            // ToolStripMenuKalibracja
-            // 
-            this.ToolStripMenuKalibracja.Name = "ToolStripMenuKalibracja";
-            this.ToolStripMenuKalibracja.Size = new System.Drawing.Size(208, 22);
-            this.ToolStripMenuKalibracja.Text = "&Kalibracja";
-            this.ToolStripMenuKalibracja.Click += new System.EventHandler(this.ToolStripMenuKalibracja_Click);
-            // 
             // ToolStripMenuDomyslne
             // 
             this.ToolStripMenuDomyslne.Name = "ToolStripMenuDomyslne";
@@ -317,6 +310,13 @@
             this.ToolStripTablicaPrzeliczeniowa.Size = new System.Drawing.Size(208, 22);
             this.ToolStripTablicaPrzeliczeniowa.Text = "&Tablica przeliczeniowa";
             this.ToolStripTablicaPrzeliczeniowa.Click += new System.EventHandler(this.ToolStripTabelaPrzeliczeniowa_Click);
+            // 
+            // ToolStripMenuKalibracja
+            // 
+            this.ToolStripMenuKalibracja.Name = "ToolStripMenuKalibracja";
+            this.ToolStripMenuKalibracja.Size = new System.Drawing.Size(208, 22);
+            this.ToolStripMenuKalibracja.Text = "&Kalibracja";
+            this.ToolStripMenuKalibracja.Click += new System.EventHandler(this.ToolStripMenuKalibracja_Click);
             // 
             // ToolStripMenuPomoc
             // 
@@ -1625,7 +1625,7 @@
             // 
             this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripStatusLabel});
-            this.StatusStrip.Location = new System.Drawing.Point(0, 731);
+            this.StatusStrip.Location = new System.Drawing.Point(0, 728);
             this.StatusStrip.Name = "StatusStrip";
             this.StatusStrip.Size = new System.Drawing.Size(1072, 22);
             this.StatusStrip.TabIndex = 7;
@@ -1654,7 +1654,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1072, 753);
+            this.ClientSize = new System.Drawing.Size(1072, 750);
             this.Controls.Add(this.GroupBoxRaporty);
             this.Controls.Add(this.ButtonTablicaPrzeliczeniowa);
             this.Controls.Add(this.ButtonKreator);

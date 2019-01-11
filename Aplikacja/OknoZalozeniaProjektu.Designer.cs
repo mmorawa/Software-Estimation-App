@@ -119,6 +119,7 @@
             this.ButtonPrzywrocDomyslne.Size = new System.Drawing.Size(192, 42);
             this.ButtonPrzywrocDomyslne.TabIndex = 2;
             this.ButtonPrzywrocDomyslne.Text = "Przywróć wartości  domyślne";
+            this.ToolTip.SetToolTip(this.ButtonPrzywrocDomyslne, "Przywróć wartości domyślne dotyczące założeń projektu");
             this.ButtonPrzywrocDomyslne.UseVisualStyleBackColor = true;
             this.ButtonPrzywrocDomyslne.Click += new System.EventHandler(this.ButtonPrzywrocDomyslne_Click);
             // 
@@ -251,6 +252,7 @@
             this.NumericStawkaGodz.TabIndex = 4;
             this.NumericStawkaGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericStawkaGodz.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericStawkaGodz, "Wprowadź stawkę godzinową pracowników zatrudnionych przy projekcie");
             this.NumericStawkaGodz.ValueChanged += new System.EventHandler(this.NumericStawkaGodz_ValueChanged);
             // 
             // NumericOsoboMGodz
@@ -268,6 +270,7 @@
             this.NumericOsoboMGodz.TabIndex = 5;
             this.NumericOsoboMGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericOsoboMGodz.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericOsoboMGodz, "Wprowadź ile osobogodzin przypada na jeden osobomiesiąc");
             this.NumericOsoboMGodz.ValueChanged += new System.EventHandler(this.NumericOsoboMGodz_ValueChanged);
             // 
             // NumericDzRobGodz
@@ -285,6 +288,7 @@
             this.NumericDzRobGodz.TabIndex = 6;
             this.NumericDzRobGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericDzRobGodz.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericDzRobGodz, "Wprowadź ile godzin przypada na jeden dzień roboczy");
             this.NumericDzRobGodz.ValueChanged += new System.EventHandler(this.NumericDzRobGodz_ValueChanged);
             // 
             // label13
@@ -356,6 +360,7 @@
             this.CheckBoxAktywacja.Size = new System.Drawing.Size(92, 20);
             this.CheckBoxAktywacja.TabIndex = 7;
             this.CheckBoxAktywacja.Text = "Aktywacja";
+            this.ToolTip.SetToolTip(this.CheckBoxAktywacja, "Zaznacz jeśli chcesz aktywować ograniczenia nałożone na projekt");
             this.CheckBoxAktywacja.UseVisualStyleBackColor = true;
             this.CheckBoxAktywacja.CheckedChanged += new System.EventHandler(this.CheckBoxAktywacja_CheckedChanged);
             // 
@@ -406,6 +411,7 @@
             this.NumericMaxZespol.TabIndex = 12;
             this.NumericMaxZespol.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericMaxZespol.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericMaxZespol, "Wprowadź maksymalną dopuszczalną średnią wielkość zespołu");
             this.NumericMaxZespol.ValueChanged += new System.EventHandler(this.NumericMaxZespol_ValueChanged);
             // 
             // label9
@@ -458,6 +464,7 @@
             this.NumericMaxKoszt.TabIndex = 11;
             this.NumericMaxKoszt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericMaxKoszt.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericMaxKoszt, "Wprowadź maksymalny dopuszczalny całkowity koszt projektu");
             this.NumericMaxKoszt.ValueChanged += new System.EventHandler(this.NumericMaxKoszt_ValueChanged);
             // 
             // label6
@@ -498,6 +505,7 @@
             this.NumericMaxPrac.TabIndex = 8;
             this.NumericMaxPrac.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericMaxPrac.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericMaxPrac, "Wprowadź maksymalną dopuszczalną pracochłonność");
             this.NumericMaxPrac.ValueChanged += new System.EventHandler(this.NumericMaxPrac_ValueChanged);
             // 
             // label17
@@ -551,6 +559,7 @@
             this.NumericMaxHarm.TabIndex = 9;
             this.NumericMaxHarm.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericMaxHarm.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericMaxHarm, "Wprowadź maksymalny dopuszczalny harmonogram");
             this.NumericMaxHarm.ValueChanged += new System.EventHandler(this.NumericMaxHarm_ValueChanged);
             // 
             // label14
@@ -575,6 +584,7 @@
             this.TimePickerDeadline.Name = "TimePickerDeadline";
             this.TimePickerDeadline.Size = new System.Drawing.Size(183, 22);
             this.TimePickerDeadline.TabIndex = 10;
+            this.ToolTip.SetToolTip(this.TimePickerDeadline, "Wprowadź nieprzekraczalny termin, w którym projekt musi się zakończyć");
             this.TimePickerDeadline.ValueChanged += new System.EventHandler(this.TimePickerDeadline_ValueChanged);
             // 
             // OknoZalozeniaProjektu
@@ -589,6 +599,7 @@
             this.Name = "OknoZalozeniaProjektu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Założenia projektu";
+            this.ToolTip.SetToolTip(this, "Wprowadź główny język programowania użyty w projekcie");
             this.GroupBoxSzczDaneProjektu.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

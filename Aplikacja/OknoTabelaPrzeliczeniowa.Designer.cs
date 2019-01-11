@@ -293,6 +293,7 @@
             this.NumericJavaScript.TabIndex = 21;
             this.NumericJavaScript.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericJavaScript.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericJavaScript, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericJavaScript.ValueChanged += new System.EventHandler(this.NumericJavaScript_ValueChanged);
             // 
             // label12
@@ -331,6 +332,7 @@
             this.NumericABAP.TabIndex = 3;
             this.NumericABAP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericABAP.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericABAP, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericABAP.ValueChanged += new System.EventHandler(this.NumericABAP_ValueChanged);
             // 
             // label1
@@ -743,6 +745,7 @@
             this.NumericASP.TabIndex = 4;
             this.NumericASP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericASP.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericASP, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericASP.ValueChanged += new System.EventHandler(this.NumericASP_ValueChanged);
             // 
             // NumericBrio
@@ -759,6 +762,7 @@
             this.NumericBrio.TabIndex = 6;
             this.NumericBrio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericBrio.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericBrio, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericBrio.ValueChanged += new System.EventHandler(this.NumericBrio_ValueChanged);
             // 
             // NumericAssembler
@@ -775,6 +779,7 @@
             this.NumericAssembler.TabIndex = 5;
             this.NumericAssembler.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericAssembler.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericAssembler, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericAssembler.ValueChanged += new System.EventHandler(this.NumericAssembler_ValueChanged);
             // 
             // NumericC
@@ -791,6 +796,7 @@
             this.NumericC.TabIndex = 7;
             this.NumericC.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericC.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericC, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericC.ValueChanged += new System.EventHandler(this.NumericC_ValueChanged);
             // 
             // NumericCpp
@@ -807,6 +813,7 @@
             this.NumericCpp.TabIndex = 8;
             this.NumericCpp.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCpp.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericCpp, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericCpp.ValueChanged += new System.EventHandler(this.NumericCpp_ValueChanged);
             // 
             // NumericCsharp
@@ -823,6 +830,7 @@
             this.NumericCsharp.TabIndex = 9;
             this.NumericCsharp.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCsharp.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericCsharp, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericCsharp.ValueChanged += new System.EventHandler(this.NumericCsharp_ValueChanged);
             // 
             // NumericCOBOL
@@ -839,6 +847,7 @@
             this.NumericCOBOL.TabIndex = 10;
             this.NumericCOBOL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCOBOL.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericCOBOL, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericCOBOL.ValueChanged += new System.EventHandler(this.NumericCOBOL_ValueChanged);
             // 
             // NumericCognos
@@ -855,6 +864,7 @@
             this.NumericCognos.TabIndex = 11;
             this.NumericCognos.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCognos.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericCognos, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericCognos.ValueChanged += new System.EventHandler(this.NumericCognos_ValueChanged);
             // 
             // NumericCross
@@ -871,6 +881,7 @@
             this.NumericCross.TabIndex = 12;
             this.NumericCross.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCross.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericCross, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericCross.ValueChanged += new System.EventHandler(this.NumericCross_ValueChanged);
             // 
             // NumericCool
@@ -887,6 +898,7 @@
             this.NumericCool.TabIndex = 13;
             this.NumericCool.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericCool.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericCool, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericCool.ValueChanged += new System.EventHandler(this.NumericCool_ValueChanged);
             // 
             // NumericDatastage
@@ -903,6 +915,7 @@
             this.NumericDatastage.TabIndex = 14;
             this.NumericDatastage.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericDatastage.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericDatastage, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericDatastage.ValueChanged += new System.EventHandler(this.NumericDatastage_ValueChanged);
             // 
             // NumericExcel
@@ -919,6 +932,7 @@
             this.NumericExcel.TabIndex = 15;
             this.NumericExcel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericExcel.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericExcel, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericExcel.ValueChanged += new System.EventHandler(this.NumericExcel_ValueChanged);
             // 
             // NumericFocus
@@ -935,6 +949,7 @@
             this.NumericFocus.TabIndex = 16;
             this.NumericFocus.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericFocus.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericFocus, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericFocus.ValueChanged += new System.EventHandler(this.NumericFocus_ValueChanged);
             // 
             // NumericFoxPro
@@ -951,6 +966,7 @@
             this.NumericFoxPro.TabIndex = 17;
             this.NumericFoxPro.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericFoxPro.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericFoxPro, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericFoxPro.ValueChanged += new System.EventHandler(this.NumericFoxPro_ValueChanged);
             // 
             // NumericHTML
@@ -967,6 +983,7 @@
             this.NumericHTML.TabIndex = 18;
             this.NumericHTML.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericHTML.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericHTML, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericHTML.ValueChanged += new System.EventHandler(this.NumericHTML_ValueChanged);
             // 
             // NumericJ2EE
@@ -983,6 +1000,7 @@
             this.NumericJ2EE.TabIndex = 19;
             this.NumericJ2EE.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericJ2EE.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericJ2EE, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericJ2EE.ValueChanged += new System.EventHandler(this.NumericJ2EE_ValueChanged);
             // 
             // NumericJava
@@ -999,6 +1017,7 @@
             this.NumericJava.TabIndex = 20;
             this.NumericJava.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericJava.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericJava, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericJava.ValueChanged += new System.EventHandler(this.NumericJava_ValueChanged);
             // 
             // NumericJCL
@@ -1015,6 +1034,7 @@
             this.NumericJCL.TabIndex = 22;
             this.NumericJCL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericJCL.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericJCL, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericJCL.ValueChanged += new System.EventHandler(this.NumericJCL_ValueChanged);
             // 
             // NumericLINC
@@ -1031,6 +1051,7 @@
             this.NumericLINC.TabIndex = 23;
             this.NumericLINC.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericLINC.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericLINC, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericLINC.ValueChanged += new System.EventHandler(this.NumericLINC_ValueChanged);
             // 
             // NumericLotus
@@ -1047,6 +1068,7 @@
             this.NumericLotus.TabIndex = 24;
             this.NumericLotus.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericLotus.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericLotus, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericLotus.ValueChanged += new System.EventHandler(this.NumericLotus_ValueChanged);
             // 
             // NumericNatural
@@ -1063,6 +1085,7 @@
             this.NumericNatural.TabIndex = 25;
             this.NumericNatural.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericNatural.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericNatural, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericNatural.ValueChanged += new System.EventHandler(this.NumericNatural_ValueChanged);
             // 
             // NumericDotNet
@@ -1079,6 +1102,7 @@
             this.NumericDotNet.TabIndex = 26;
             this.NumericDotNet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericDotNet.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericDotNet, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericDotNet.ValueChanged += new System.EventHandler(this.NumericDotNet_ValueChanged);
             // 
             // NumericOracle
@@ -1095,6 +1119,7 @@
             this.NumericOracle.TabIndex = 27;
             this.NumericOracle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericOracle.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericOracle, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericOracle.ValueChanged += new System.EventHandler(this.NumericOracle_ValueChanged);
             // 
             // NumericPACBASE
@@ -1111,6 +1136,7 @@
             this.NumericPACBASE.TabIndex = 28;
             this.NumericPACBASE.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericPACBASE.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericPACBASE, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericPACBASE.ValueChanged += new System.EventHandler(this.NumericPACBASE_ValueChanged);
             // 
             // NumericPerl
@@ -1127,6 +1153,7 @@
             this.NumericPerl.TabIndex = 29;
             this.NumericPerl.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericPerl.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericPerl, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericPerl.ValueChanged += new System.EventHandler(this.NumericPerl_ValueChanged);
             // 
             // NumericPLI
@@ -1143,6 +1170,7 @@
             this.NumericPLI.TabIndex = 30;
             this.NumericPLI.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericPLI.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericPLI, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericPLI.ValueChanged += new System.EventHandler(this.NumericPLI_ValueChanged);
             // 
             // NumericPLSQL
@@ -1159,6 +1187,7 @@
             this.NumericPLSQL.TabIndex = 31;
             this.NumericPLSQL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericPLSQL.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericPLSQL, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericPLSQL.ValueChanged += new System.EventHandler(this.NumericPLSQL_ValueChanged);
             // 
             // NumericPowerbuilder
@@ -1175,6 +1204,7 @@
             this.NumericPowerbuilder.TabIndex = 32;
             this.NumericPowerbuilder.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericPowerbuilder.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericPowerbuilder, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericPowerbuilder.ValueChanged += new System.EventHandler(this.NumericPowerbuilder_ValueChanged);
             // 
             // NumericREXX
@@ -1191,6 +1221,7 @@
             this.NumericREXX.TabIndex = 33;
             this.NumericREXX.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericREXX.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericREXX, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericREXX.ValueChanged += new System.EventHandler(this.NumericREXX_ValueChanged);
             // 
             // NumericSabretalk
@@ -1207,6 +1238,7 @@
             this.NumericSabretalk.TabIndex = 34;
             this.NumericSabretalk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericSabretalk.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericSabretalk, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericSabretalk.ValueChanged += new System.EventHandler(this.NumericSabretalk_ValueChanged);
             // 
             // NumericSAS
@@ -1223,6 +1255,7 @@
             this.NumericSAS.TabIndex = 35;
             this.NumericSAS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericSAS.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericSAS, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericSAS.ValueChanged += new System.EventHandler(this.NumericSAS_ValueChanged);
             // 
             // NumericSiebel
@@ -1239,6 +1272,7 @@
             this.NumericSiebel.TabIndex = 36;
             this.NumericSiebel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericSiebel.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericSiebel, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericSiebel.ValueChanged += new System.EventHandler(this.NumericSiebel_ValueChanged);
             // 
             // NumericSLOGAN
@@ -1255,6 +1289,7 @@
             this.NumericSLOGAN.TabIndex = 37;
             this.NumericSLOGAN.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericSLOGAN.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericSLOGAN, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericSLOGAN.ValueChanged += new System.EventHandler(this.NumericSLOGAN_ValueChanged);
             // 
             // NumericSQL
@@ -1271,6 +1306,7 @@
             this.NumericSQL.TabIndex = 38;
             this.NumericSQL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericSQL.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericSQL, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericSQL.ValueChanged += new System.EventHandler(this.NumericSQL_ValueChanged);
             // 
             // NumericVBNet
@@ -1287,6 +1323,7 @@
             this.NumericVBNet.TabIndex = 39;
             this.NumericVBNet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericVBNet.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericVBNet, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericVBNet.ValueChanged += new System.EventHandler(this.NumericVBNet_ValueChanged);
             // 
             // NumericVisualBasic
@@ -1303,6 +1340,7 @@
             this.NumericVisualBasic.TabIndex = 40;
             this.NumericVisualBasic.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericVisualBasic.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericVisualBasic, "Wprowadź nową wartość, która wynika z danych historycznych organizacji");
             this.NumericVisualBasic.ValueChanged += new System.EventHandler(this.NumericVisualBasic_ValueChanged);
             // 
             // ButtonPrzywrocDomyslne
@@ -1312,6 +1350,7 @@
             this.ButtonPrzywrocDomyslne.Size = new System.Drawing.Size(192, 42);
             this.ButtonPrzywrocDomyslne.TabIndex = 2;
             this.ButtonPrzywrocDomyslne.Text = "Przywróć wartości  domyślne";
+            this.ToolTip.SetToolTip(this.ButtonPrzywrocDomyslne, "Przywraca domyślne wartości do tabeli przeliczeniowej punktów funkcyjnych");
             this.ButtonPrzywrocDomyslne.UseVisualStyleBackColor = true;
             this.ButtonPrzywrocDomyslne.Click += new System.EventHandler(this.ButtonPrzywrocDomyslne_Click);
             // 
