@@ -34,7 +34,7 @@
             this.ToolStripMenuPlik = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuNowyProj = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuOtworzProj = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuSzczegolyProjektu = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuDaneProjektu = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuZalozeniaProjektu = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuZapiszProj = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuZapiszJakoProj = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,7 +46,7 @@
             this.ToolStripMenuOpcje = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuKreator = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuKalibracja = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuUstawienia = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuDomyslne = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripTablicaPrzeliczeniowa = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuPomoc = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuDokumentacja = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,7 +82,7 @@
             this.ButtonNowyProjekt = new System.Windows.Forms.Button();
             this.ButtonOtworzProjekt = new System.Windows.Forms.Button();
             this.ButtonZapiszProjekt = new System.Windows.Forms.Button();
-            this.ButtonUstawienia = new System.Windows.Forms.Button();
+            this.ButtonDomyslne = new System.Windows.Forms.Button();
             this.ButtonKalibracja = new System.Windows.Forms.Button();
             this.GroupBoxUAW = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -187,7 +187,7 @@
             this.ToolStripMenuPlik.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuNowyProj,
             this.ToolStripMenuOtworzProj,
-            this.ToolStripMenuSzczegolyProjektu,
+            this.ToolStripMenuDaneProjektu,
             this.ToolStripMenuZalozeniaProjektu,
             this.ToolStripMenuZapiszProj,
             this.ToolStripMenuZapiszJakoProj,
@@ -211,12 +211,12 @@
             this.ToolStripMenuOtworzProj.Text = "&Otwórz projekt";
             this.ToolStripMenuOtworzProj.Click += new System.EventHandler(this.ToolStripMenuOtworzProj_Click);
             // 
-            // ToolStripMenuSzczegolyProjektu
+            // ToolStripMenuDaneProjektu
             // 
-            this.ToolStripMenuSzczegolyProjektu.Name = "ToolStripMenuSzczegolyProjektu";
-            this.ToolStripMenuSzczegolyProjektu.Size = new System.Drawing.Size(190, 22);
-            this.ToolStripMenuSzczegolyProjektu.Text = "&Szczegóły projektu";
-            this.ToolStripMenuSzczegolyProjektu.Click += new System.EventHandler(this.ToolStripMenuSzczegolyProjektu_Click);
+            this.ToolStripMenuDaneProjektu.Name = "ToolStripMenuDaneProjektu";
+            this.ToolStripMenuDaneProjektu.Size = new System.Drawing.Size(190, 22);
+            this.ToolStripMenuDaneProjektu.Text = "&Dane projektu";
+            this.ToolStripMenuDaneProjektu.Click += new System.EventHandler(this.ToolStripMenuDaneProjektu_Click);
             // 
             // ToolStripMenuZalozeniaProjektu
             // 
@@ -282,9 +282,9 @@
             // 
             this.ToolStripMenuOpcje.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuKreator,
-            this.ToolStripMenuKalibracja,
-            this.ToolStripMenuUstawienia,
-            this.ToolStripTablicaPrzeliczeniowa});
+            this.ToolStripMenuDomyslne,
+            this.ToolStripTablicaPrzeliczeniowa,
+            this.ToolStripMenuKalibracja});
             this.ToolStripMenuOpcje.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ToolStripMenuOpcje.Name = "ToolStripMenuOpcje";
             this.ToolStripMenuOpcje.Size = new System.Drawing.Size(54, 21);
@@ -304,12 +304,12 @@
             this.ToolStripMenuKalibracja.Text = "&Kalibracja";
             this.ToolStripMenuKalibracja.Click += new System.EventHandler(this.ToolStripMenuKalibracja_Click);
             // 
-            // ToolStripMenuUstawienia
+            // ToolStripMenuDomyslne
             // 
-            this.ToolStripMenuUstawienia.Name = "ToolStripMenuUstawienia";
-            this.ToolStripMenuUstawienia.Size = new System.Drawing.Size(208, 22);
-            this.ToolStripMenuUstawienia.Text = "&Ustawienia";
-            this.ToolStripMenuUstawienia.Click += new System.EventHandler(this.ToolStripMenuUstawienia_Click);
+            this.ToolStripMenuDomyslne.Name = "ToolStripMenuDomyslne";
+            this.ToolStripMenuDomyslne.Size = new System.Drawing.Size(208, 22);
+            this.ToolStripMenuDomyslne.Text = "&Domyślne dane";
+            this.ToolStripMenuDomyslne.Click += new System.EventHandler(this.ToolStripMenuDomyslne_Click);
             // 
             // ToolStripTablicaPrzeliczeniowa
             // 
@@ -756,16 +756,16 @@
             this.ButtonZapiszProjekt.UseVisualStyleBackColor = true;
             this.ButtonZapiszProjekt.Click += new System.EventHandler(this.ButtonZapiszProjekt_Click);
             // 
-            // ButtonUstawienia
+            // ButtonDomyslne
             // 
-            this.ButtonUstawienia.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonUstawienia.Location = new System.Drawing.Point(582, 36);
-            this.ButtonUstawienia.Name = "ButtonUstawienia";
-            this.ButtonUstawienia.Size = new System.Drawing.Size(137, 27);
-            this.ButtonUstawienia.TabIndex = 16;
-            this.ButtonUstawienia.Text = "Ustawienia";
-            this.ButtonUstawienia.UseVisualStyleBackColor = true;
-            this.ButtonUstawienia.Click += new System.EventHandler(this.ButtonUstawienia_Click);
+            this.ButtonDomyslne.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonDomyslne.Location = new System.Drawing.Point(582, 36);
+            this.ButtonDomyslne.Name = "ButtonDomyslne";
+            this.ButtonDomyslne.Size = new System.Drawing.Size(137, 27);
+            this.ButtonDomyslne.TabIndex = 16;
+            this.ButtonDomyslne.Text = "Domyślne dane";
+            this.ButtonDomyslne.UseVisualStyleBackColor = true;
+            this.ButtonDomyslne.Click += new System.EventHandler(this.ButtonDomyslne_Click);
             // 
             // ButtonKalibracja
             // 
@@ -1389,7 +1389,7 @@
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(447, 28);
             this.label49.TabIndex = 16;
-            this.label49.Text = "Koszt projektu (w złotych):";
+            this.label49.Text = "Całkowity koszt projektu (w złotych):";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelWynikNGorHarm
@@ -1659,7 +1659,7 @@
             this.Controls.Add(this.ButtonTablicaPrzeliczeniowa);
             this.Controls.Add(this.ButtonKreator);
             this.Controls.Add(this.ButtonKalibracja);
-            this.Controls.Add(this.ButtonUstawienia);
+            this.Controls.Add(this.ButtonDomyslne);
             this.Controls.Add(this.ButtonZapiszProjekt);
             this.Controls.Add(this.ButtonOtworzProjekt);
             this.Controls.Add(this.ButtonNowyProjekt);
@@ -1721,7 +1721,7 @@
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuZapiszJakoProj;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuRaporty;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuKalibracja;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuUstawienia;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuDomyslne;
         private System.Windows.Forms.GroupBox GroupBoxDaneProjektu;
         private System.Windows.Forms.Label LabelNazwaProjektu;
         private System.Windows.Forms.TextBox TextBoxNazwaProjektu;
@@ -1771,7 +1771,7 @@
         private System.Windows.Forms.Button ButtonNowyProjekt;
         private System.Windows.Forms.Button ButtonOtworzProjekt;
         private System.Windows.Forms.Button ButtonZapiszProjekt;
-        private System.Windows.Forms.Button ButtonUstawienia;
+        private System.Windows.Forms.Button ButtonDomyslne;
         private System.Windows.Forms.Button ButtonKalibracja;
         private System.Windows.Forms.ToolStripMenuItem ToolStripOpisProjektu;
         private System.Windows.Forms.ToolStripMenuItem ToolStripPełneOszacowanie;
@@ -1785,7 +1785,7 @@
         private System.Windows.Forms.Button ButtonZalozenia;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuKreator;
         private System.Windows.Forms.Button ButtonKreator;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuSzczegolyProjektu;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuDaneProjektu;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuZalozeniaProjektu;
         private System.Windows.Forms.Label LabelRozmiar;
         private System.Windows.Forms.Label label32;

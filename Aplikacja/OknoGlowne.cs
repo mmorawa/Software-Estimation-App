@@ -208,7 +208,7 @@ namespace Aplikacja
         }
 
 
-        private void ToolStripMenuSzczegolyProjektu_Click(object sender, EventArgs e)
+        private void ToolStripMenuDaneProjektu_Click(object sender, EventArgs e)
         {
             ButtonWiecejSzczeg_Click(sender, e);
         }
@@ -285,9 +285,9 @@ namespace Aplikacja
         }
 
 
-        private void ToolStripMenuUstawienia_Click(object sender, EventArgs e)
+        private void ToolStripMenuDomyslne_Click(object sender, EventArgs e)
         {
-            ButtonUstawienia_Click(sender, e);
+            ButtonDomyslne_Click(sender, e);
         }
 
 
@@ -952,7 +952,7 @@ namespace Aplikacja
         }
 
 
-        private void ButtonUstawienia_Click(object sender, EventArgs e)
+        private void ButtonDomyslne_Click(object sender, EventArgs e)
         {
             using (OknoDomyslneDane OknoUstawDomyslne = new OknoDomyslneDane())
             {
@@ -1526,10 +1526,6 @@ namespace Aplikacja
 
             }
         }
-
-
-
-
 
 
     }

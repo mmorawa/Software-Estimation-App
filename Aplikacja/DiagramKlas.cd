@@ -169,6 +169,7 @@
       <Field Name="tableLayoutPanel3" Hidden="true" />
       <Field Name="tableLayoutPanel4" Hidden="true" />
       <Field Name="TextBoxNazwaProjektu" Hidden="true" />
+      <Field Name="ToolStripMenuDaneProjektu" Hidden="true" />
       <Field Name="ToolStripMenuDokumentacja" Hidden="true" />
       <Field Name="ToolStripMenuKalibracja" Hidden="true" />
       <Field Name="ToolStripMenuKreator" Hidden="true" />
@@ -179,7 +180,6 @@
       <Field Name="ToolStripMenuPlik" Hidden="true" />
       <Field Name="ToolStripMenuPomoc" Hidden="true" />
       <Field Name="ToolStripMenuRaporty" Hidden="true" />
-      <Field Name="ToolStripMenuSzczegolyProjektu" Hidden="true" />
       <Field Name="ToolStripMenuUstawienia" Hidden="true" />
       <Field Name="ToolStripMenuWyjscie" Hidden="true" />
       <Field Name="ToolStripMenuZalozeniaProjektu" Hidden="true" />
@@ -196,7 +196,7 @@
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>/+V1m78SXrnVwvOBbzL+j/7m3W0qD1tT0W0f9gU1C34=</HashCode>
+      <HashCode>/+V1m78SXrnVwvOBbzL+j/7m3W0qD1tT0W0f9kU1C34=</HashCode>
       <FileName>OknoGlowne.cs</FileName>
     </TypeIdentifier>
   </Class>

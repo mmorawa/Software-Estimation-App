@@ -521,7 +521,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(199, 40);
             this.label5.TabIndex = 15;
-            this.label5.Text = "Maksymalny koszt:";
+            this.label5.Text = "Maksymalny całkowity koszt:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label10

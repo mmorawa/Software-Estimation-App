@@ -1,10 +1,4 @@
-﻿/*! \file Form1.cs
-\brief Plik Form1.cs zawiera klasę Form1 z głównym oknem aplikacji.
-
-Plik Form1.cs zawiera rdzeń programu czyli główne okno aplikacji wraz z menu, pozwalającym na dokonanie wyboru różnych opcji menadżera zadań takich jak: szyfrowanie/deszyfrowanie bazy danych.
-*/
-
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace Aplikacja
