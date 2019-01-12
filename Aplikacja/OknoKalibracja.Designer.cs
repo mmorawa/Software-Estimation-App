@@ -255,7 +255,7 @@
             this.LabelDataRozp.Name = "LabelDataRozp";
             this.LabelDataRozp.Size = new System.Drawing.Size(268, 57);
             this.LabelDataRozp.TabIndex = 4;
-            this.LabelDataRozp.Text = "Współczynnik konwersji punktów przypadków użycia na punkty funkcyjne:\r\n";
+            this.LabelDataRozp.Text = "Współczynnik normalizacji punktów przypadków użycia na punkty funkcyjne:\r\n";
             this.LabelDataRozp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // NumericUCPnaFP

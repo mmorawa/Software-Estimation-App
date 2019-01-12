@@ -1612,7 +1612,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OknoKreator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Kreator";
+            this.Text = "Kreator oszacowania";
             this.TabControlKreator.ResumeLayout(false);
             this.DaneProjektu.ResumeLayout(false);
             this.DaneProjektu.PerformLayout();
