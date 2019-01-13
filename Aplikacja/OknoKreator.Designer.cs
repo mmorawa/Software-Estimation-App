@@ -1014,7 +1014,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label33, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.label34, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label35, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(17, 189);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(17, 140);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -1298,7 +1298,7 @@
             this.tableLayoutPanel3.Controls.Add(this.label47, 3, 1);
             this.tableLayoutPanel3.Controls.Add(this.label48, 3, 2);
             this.tableLayoutPanel3.Controls.Add(this.label49, 3, 3);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(17, 504);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(17, 422);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 4;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
@@ -1598,7 +1598,7 @@
             // 
             // ButtonMnPr
             // 
-            this.ButtonMnPr.Location = new System.Drawing.Point(68, 517);
+            this.ButtonMnPr.Location = new System.Drawing.Point(167, 508);
             this.ButtonMnPr.Name = "ButtonMnPr";
             this.ButtonMnPr.Size = new System.Drawing.Size(219, 27);
             this.ButtonMnPr.TabIndex = 13;
@@ -1609,7 +1609,7 @@
             // 
             // ButtonCzSk
             // 
-            this.ButtonCzSk.Location = new System.Drawing.Point(68, 190);
+            this.ButtonCzSk.Location = new System.Drawing.Point(196, 186);
             this.ButtonCzSk.Name = "ButtonCzSk";
             this.ButtonCzSk.Size = new System.Drawing.Size(173, 27);
             this.ButtonCzSk.TabIndex = 12;
@@ -1697,10 +1697,10 @@
             this.label55.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label55.Location = new System.Drawing.Point(17, 348);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(507, 38);
+            this.label55.Size = new System.Drawing.Size(509, 38);
             this.label55.TabIndex = 34;
-            this.label55.Text = "Wprowadź poniżej szczegółowe dane projektu w celu dokonania \r\njego charakterystyk" +
-    "i.";
+            this.label55.Text = "Wprowadź poniżej ograniczenia nałożone na oszacowanie, \r\nktórych przekroczenie bę" +
+    "dzie sygnalizowane w tabeli z wynikami.";
             // 
             // label56
             // 
@@ -1708,21 +1708,20 @@
             this.label56.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label56.Location = new System.Drawing.Point(17, 62);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(507, 38);
+            this.label56.Size = new System.Drawing.Size(458, 38);
             this.label56.TabIndex = 35;
-            this.label56.Text = "Wprowadź poniżej szczegółowe dane projektu w celu dokonania \r\njego charakterystyk" +
-    "i.";
+            this.label56.Text = "Wprowadź poniżej założenia projektu, przy których będzie \r\nwykonane oszacowanie.";
             // 
             // label57
             // 
             this.label57.AutoSize = true;
             this.label57.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label57.Location = new System.Drawing.Point(13, 391);
+            this.label57.Location = new System.Drawing.Point(17, 344);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(507, 38);
+            this.label57.Size = new System.Drawing.Size(455, 57);
             this.label57.TabIndex = 36;
-            this.label57.Text = "Wprowadź poniżej szczegółowe dane projektu w celu dokonania \r\njego charakterystyk" +
-    "i.";
+            this.label57.Text = "Policz ilu aktorów należy, do każdej z poniższych kategorii\r\nw oparciu o sposób w" +
+    " jaki komunikują się z systemem,\r\na następnie wprowadź dane do tabeli.";
             // 
             // label58
             // 
@@ -1730,10 +1729,10 @@
             this.label58.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label58.Location = new System.Drawing.Point(17, 62);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(507, 38);
+            this.label58.Size = new System.Drawing.Size(485, 57);
             this.label58.TabIndex = 37;
-            this.label58.Text = "Wprowadź poniżej szczegółowe dane projektu w celu dokonania \r\njego charakterystyk" +
-    "i.";
+            this.label58.Text = "Policz ile przypadków użycia zalicza się zgodnie z definicją,\r\ndo każdej z poniżs" +
+    "zych kategorii, a następnie wprowadź dane \r\ndo tabeli.";
             // 
             // label59
             // 
