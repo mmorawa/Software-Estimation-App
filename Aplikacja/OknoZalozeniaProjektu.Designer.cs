@@ -201,6 +201,7 @@
             this.ComboBoxJezykProgram.Name = "ComboBoxJezykProgram";
             this.ComboBoxJezykProgram.Size = new System.Drawing.Size(303, 24);
             this.ComboBoxJezykProgram.TabIndex = 3;
+            this.ToolTip.SetToolTip(this.ComboBoxJezykProgram, "Wprowadź główny język programowania użyty w projekcie");
             this.ComboBoxJezykProgram.SelectedIndexChanged += new System.EventHandler(this.ComboBoxJezykProgram_SelectedIndexChanged);
             // 
             // label8

@@ -85,14 +85,18 @@
             this.ButtonCzSk = new System.Windows.Forms.Button();
             this.ButtonDomyslne = new System.Windows.Forms.Button();
             this.ButtonKalibracja = new System.Windows.Forms.Button();
+            this.NumUAWZlozony = new System.Windows.Forms.NumericUpDown();
+            this.NumUAWSredni = new System.Windows.Forms.NumericUpDown();
+            this.NumUAWProsty = new System.Windows.Forms.NumericUpDown();
+            this.ButtonOpisProjektu = new System.Windows.Forms.Button();
+            this.ButtonPodsumowanieProjektu = new System.Windows.Forms.Button();
+            this.ButtonOszacowanie = new System.Windows.Forms.Button();
+            this.ButtonTablicaPrzeliczeniowa = new System.Windows.Forms.Button();
             this.GroupBoxUAW = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label46 = new System.Windows.Forms.Label();
-            this.NumUAWZlozony = new System.Windows.Forms.NumericUpDown();
             this.label13 = new System.Windows.Forms.Label();
-            this.NumUAWSredni = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
-            this.NumUAWProsty = new System.Windows.Forms.NumericUpDown();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -139,10 +143,6 @@
             this.LabelPktUUCP = new System.Windows.Forms.Label();
             this.LabelRozmiar = new System.Windows.Forms.Label();
             this.GroupBoxRaporty = new System.Windows.Forms.GroupBox();
-            this.ButtonOpisProjektu = new System.Windows.Forms.Button();
-            this.ButtonPodsumowanieProjektu = new System.Windows.Forms.Button();
-            this.ButtonOszacowanie = new System.Windows.Forms.Button();
-            this.ButtonTablicaPrzeliczeniowa = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
@@ -153,11 +153,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumUUCWZlozony)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUUCWSredni)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUUCWProsty)).BeginInit();
-            this.GroupBoxUAW.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWZlozony)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWSredni)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWProsty)).BeginInit();
+            this.GroupBoxUAW.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.GroupBoxWyniki.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -804,6 +804,111 @@
             this.ButtonKalibracja.UseVisualStyleBackColor = true;
             this.ButtonKalibracja.Click += new System.EventHandler(this.ButtonKalibracja_Click);
             // 
+            // NumUAWZlozony
+            // 
+            this.NumUAWZlozony.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NumUAWZlozony.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.NumUAWZlozony.Location = new System.Drawing.Point(129, 134);
+            this.NumUAWZlozony.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.NumUAWZlozony.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.NumUAWZlozony.Name = "NumUAWZlozony";
+            this.NumUAWZlozony.Size = new System.Drawing.Size(177, 22);
+            this.NumUAWZlozony.TabIndex = 9;
+            this.NumUAWZlozony.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.NumUAWZlozony.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumUAWZlozony, "Wprowadź liczbę złożonych aktorów");
+            this.NumUAWZlozony.ValueChanged += new System.EventHandler(this.NumUAWZlozony_ValueChanged);
+            // 
+            // NumUAWSredni
+            // 
+            this.NumUAWSredni.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NumUAWSredni.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.NumUAWSredni.Location = new System.Drawing.Point(129, 93);
+            this.NumUAWSredni.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.NumUAWSredni.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.NumUAWSredni.Name = "NumUAWSredni";
+            this.NumUAWSredni.Size = new System.Drawing.Size(177, 22);
+            this.NumUAWSredni.TabIndex = 8;
+            this.NumUAWSredni.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.NumUAWSredni.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumUAWSredni, "Wprowadź liczbę średnio złożonych aktorów");
+            this.NumUAWSredni.ValueChanged += new System.EventHandler(this.NumUAWSredni_ValueChanged);
+            // 
+            // NumUAWProsty
+            // 
+            this.NumUAWProsty.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NumUAWProsty.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.NumUAWProsty.Location = new System.Drawing.Point(129, 54);
+            this.NumUAWProsty.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.NumUAWProsty.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.NumUAWProsty.Name = "NumUAWProsty";
+            this.NumUAWProsty.Size = new System.Drawing.Size(177, 22);
+            this.NumUAWProsty.TabIndex = 7;
+            this.NumUAWProsty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.NumUAWProsty.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumUAWProsty, "Wprowadź liczbę prostych aktorów");
+            this.NumUAWProsty.ValueChanged += new System.EventHandler(this.NumUAWProsty_ValueChanged);
+            // 
+            // ButtonOpisProjektu
+            // 
+            this.ButtonOpisProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOpisProjektu.Location = new System.Drawing.Point(6, 30);
+            this.ButtonOpisProjektu.Name = "ButtonOpisProjektu";
+            this.ButtonOpisProjektu.Size = new System.Drawing.Size(131, 27);
+            this.ButtonOpisProjektu.TabIndex = 19;
+            this.ButtonOpisProjektu.Text = "Opis projektu";
+            this.ToolTip.SetToolTip(this.ButtonOpisProjektu, "Otwórz podgląd raportu zawierającego opis projektu");
+            this.ButtonOpisProjektu.UseVisualStyleBackColor = true;
+            this.ButtonOpisProjektu.Click += new System.EventHandler(this.ButtonOpisProjektu_Click);
+            // 
+            // ButtonPodsumowanieProjektu
+            // 
+            this.ButtonPodsumowanieProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonPodsumowanieProjektu.Location = new System.Drawing.Point(341, 30);
+            this.ButtonPodsumowanieProjektu.Name = "ButtonPodsumowanieProjektu";
+            this.ButtonPodsumowanieProjektu.Size = new System.Drawing.Size(124, 27);
+            this.ButtonPodsumowanieProjektu.TabIndex = 21;
+            this.ButtonPodsumowanieProjektu.Text = "Podsumowanie";
+            this.ToolTip.SetToolTip(this.ButtonPodsumowanieProjektu, "Otwórz podgląd raportu zawierającego podsumowanie projektu");
+            this.ButtonPodsumowanieProjektu.UseVisualStyleBackColor = true;
+            this.ButtonPodsumowanieProjektu.Click += new System.EventHandler(this.ButtonPodsumowanieProjektu_Click);
+            // 
+            // ButtonOszacowanie
+            // 
+            this.ButtonOszacowanie.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonOszacowanie.Location = new System.Drawing.Point(143, 30);
+            this.ButtonOszacowanie.Name = "ButtonOszacowanie";
+            this.ButtonOszacowanie.Size = new System.Drawing.Size(192, 27);
+            this.ButtonOszacowanie.TabIndex = 20;
+            this.ButtonOszacowanie.Text = "Pełne oszacowanie";
+            this.ToolTip.SetToolTip(this.ButtonOszacowanie, "Otwórz podgląd raportu zawierającego pełne oszacowanie projektu");
+            this.ButtonOszacowanie.UseVisualStyleBackColor = true;
+            this.ButtonOszacowanie.Click += new System.EventHandler(this.ButtonOszacowanie_Click);
+            // 
+            // ButtonTablicaPrzeliczeniowa
+            // 
+            this.ButtonTablicaPrzeliczeniowa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ButtonTablicaPrzeliczeniowa.Location = new System.Drawing.Point(725, 36);
+            this.ButtonTablicaPrzeliczeniowa.Name = "ButtonTablicaPrzeliczeniowa";
+            this.ButtonTablicaPrzeliczeniowa.Size = new System.Drawing.Size(192, 27);
+            this.ButtonTablicaPrzeliczeniowa.TabIndex = 17;
+            this.ButtonTablicaPrzeliczeniowa.Text = "Tabela przeliczeniowa";
+            this.ToolTip.SetToolTip(this.ButtonTablicaPrzeliczeniowa, "Zmień przeliczniki punktów funkcyjnych na linie kodu źródłowego");
+            this.ButtonTablicaPrzeliczeniowa.UseVisualStyleBackColor = true;
+            this.ButtonTablicaPrzeliczeniowa.Click += new System.EventHandler(this.ButtonTabelaPrzeliczeniowa_Click);
+            // 
             // GroupBoxUAW
             // 
             this.GroupBoxUAW.Controls.Add(this.tableLayoutPanel2);
@@ -864,25 +969,6 @@
             this.label46.TabIndex = 9;
             this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // NumUAWZlozony
-            // 
-            this.NumUAWZlozony.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumUAWZlozony.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.NumUAWZlozony.Location = new System.Drawing.Point(129, 134);
-            this.NumUAWZlozony.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.NumUAWZlozony.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.NumUAWZlozony.Name = "NumUAWZlozony";
-            this.NumUAWZlozony.Size = new System.Drawing.Size(177, 22);
-            this.NumUAWZlozony.TabIndex = 9;
-            this.NumUAWZlozony.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.NumUAWZlozony.ThousandsSeparator = true;
-            this.ToolTip.SetToolTip(this.NumUAWZlozony, "Wprowadź liczbę złożonych aktorów");
-            this.NumUAWZlozony.ValueChanged += new System.EventHandler(this.NumUAWZlozony_ValueChanged);
-            // 
             // label13
             // 
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -896,25 +982,6 @@
             this.label13.Text = "Średni";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // NumUAWSredni
-            // 
-            this.NumUAWSredni.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumUAWSredni.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.NumUAWSredni.Location = new System.Drawing.Point(129, 93);
-            this.NumUAWSredni.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.NumUAWSredni.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.NumUAWSredni.Name = "NumUAWSredni";
-            this.NumUAWSredni.Size = new System.Drawing.Size(177, 22);
-            this.NumUAWSredni.TabIndex = 8;
-            this.NumUAWSredni.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.NumUAWSredni.ThousandsSeparator = true;
-            this.ToolTip.SetToolTip(this.NumUAWSredni, "Wprowadź liczbę średnio złożonych aktorów");
-            this.NumUAWSredni.ValueChanged += new System.EventHandler(this.NumUAWSredni_ValueChanged);
-            // 
             // label14
             // 
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -927,25 +994,6 @@
             this.label14.TabIndex = 4;
             this.label14.Text = "Prosty";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // NumUAWProsty
-            // 
-            this.NumUAWProsty.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumUAWProsty.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.NumUAWProsty.Location = new System.Drawing.Point(129, 54);
-            this.NumUAWProsty.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.NumUAWProsty.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.NumUAWProsty.Name = "NumUAWProsty";
-            this.NumUAWProsty.Size = new System.Drawing.Size(177, 22);
-            this.NumUAWProsty.TabIndex = 7;
-            this.NumUAWProsty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.NumUAWProsty.ThousandsSeparator = true;
-            this.ToolTip.SetToolTip(this.NumUAWProsty, "Wprowadź liczbę prostych aktorów");
-            this.NumUAWProsty.ValueChanged += new System.EventHandler(this.NumUAWProsty_ValueChanged);
             // 
             // label15
             // 
@@ -1594,54 +1642,6 @@
             this.GroupBoxRaporty.TabStop = false;
             this.GroupBoxRaporty.Text = "Raporty";
             // 
-            // ButtonOpisProjektu
-            // 
-            this.ButtonOpisProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOpisProjektu.Location = new System.Drawing.Point(6, 30);
-            this.ButtonOpisProjektu.Name = "ButtonOpisProjektu";
-            this.ButtonOpisProjektu.Size = new System.Drawing.Size(131, 27);
-            this.ButtonOpisProjektu.TabIndex = 19;
-            this.ButtonOpisProjektu.Text = "Opis projektu";
-            this.ToolTip.SetToolTip(this.ButtonOpisProjektu, "Otwórz podgląd raportu zawierającego opis projektu");
-            this.ButtonOpisProjektu.UseVisualStyleBackColor = true;
-            this.ButtonOpisProjektu.Click += new System.EventHandler(this.ButtonOpisProjektu_Click);
-            // 
-            // ButtonPodsumowanieProjektu
-            // 
-            this.ButtonPodsumowanieProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPodsumowanieProjektu.Location = new System.Drawing.Point(341, 30);
-            this.ButtonPodsumowanieProjektu.Name = "ButtonPodsumowanieProjektu";
-            this.ButtonPodsumowanieProjektu.Size = new System.Drawing.Size(124, 27);
-            this.ButtonPodsumowanieProjektu.TabIndex = 21;
-            this.ButtonPodsumowanieProjektu.Text = "Podsumowanie";
-            this.ToolTip.SetToolTip(this.ButtonPodsumowanieProjektu, "Otwórz podgląd raportu zawierającego podsumowanie projektu");
-            this.ButtonPodsumowanieProjektu.UseVisualStyleBackColor = true;
-            this.ButtonPodsumowanieProjektu.Click += new System.EventHandler(this.ButtonPodsumowanieProjektu_Click);
-            // 
-            // ButtonOszacowanie
-            // 
-            this.ButtonOszacowanie.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOszacowanie.Location = new System.Drawing.Point(143, 30);
-            this.ButtonOszacowanie.Name = "ButtonOszacowanie";
-            this.ButtonOszacowanie.Size = new System.Drawing.Size(192, 27);
-            this.ButtonOszacowanie.TabIndex = 20;
-            this.ButtonOszacowanie.Text = "Pełne oszacowanie";
-            this.ToolTip.SetToolTip(this.ButtonOszacowanie, "Otwórz podgląd raportu zawierającego pełne oszacowanie projektu");
-            this.ButtonOszacowanie.UseVisualStyleBackColor = true;
-            this.ButtonOszacowanie.Click += new System.EventHandler(this.ButtonOszacowanie_Click);
-            // 
-            // ButtonTablicaPrzeliczeniowa
-            // 
-            this.ButtonTablicaPrzeliczeniowa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonTablicaPrzeliczeniowa.Location = new System.Drawing.Point(725, 36);
-            this.ButtonTablicaPrzeliczeniowa.Name = "ButtonTablicaPrzeliczeniowa";
-            this.ButtonTablicaPrzeliczeniowa.Size = new System.Drawing.Size(192, 27);
-            this.ButtonTablicaPrzeliczeniowa.TabIndex = 17;
-            this.ButtonTablicaPrzeliczeniowa.Text = "Tabela przeliczeniowa";
-            this.ToolTip.SetToolTip(this.ButtonTablicaPrzeliczeniowa, "Zmień przeliczniki punktów funkcyjnych na linie kodu źródłowego");
-            this.ButtonTablicaPrzeliczeniowa.UseVisualStyleBackColor = true;
-            this.ButtonTablicaPrzeliczeniowa.Click += new System.EventHandler(this.ButtonTabelaPrzeliczeniowa_Click);
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.ButtonMnPr);
@@ -1708,12 +1708,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumUUCWZlozony)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUUCWSredni)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUUCWProsty)).EndInit();
-            this.GroupBoxUAW.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWZlozony)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWSredni)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWProsty)).EndInit();
+            this.GroupBoxUAW.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.GroupBoxWyniki.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();

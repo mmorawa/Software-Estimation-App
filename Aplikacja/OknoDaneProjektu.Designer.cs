@@ -56,7 +56,7 @@
             // 
             this.ButtonAnuluj.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.ButtonAnuluj.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonAnuluj.Location = new System.Drawing.Point(267, 679);
+            this.ButtonAnuluj.Location = new System.Drawing.Point(286, 679);
             this.ButtonAnuluj.Name = "ButtonAnuluj";
             this.ButtonAnuluj.Size = new System.Drawing.Size(104, 27);
             this.ButtonAnuluj.TabIndex = 1;
@@ -67,7 +67,7 @@
             // 
             this.ButtonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.ButtonOk.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonOk.Location = new System.Drawing.Point(107, 679);
+            this.ButtonOk.Location = new System.Drawing.Point(126, 679);
             this.ButtonOk.Name = "ButtonOk";
             this.ButtonOk.Size = new System.Drawing.Size(104, 27);
             this.ButtonOk.TabIndex = 0;
@@ -113,7 +113,7 @@
             // 
             // RichTextBoxOpisProjektu
             // 
-            this.RichTextBoxOpisProjektu.Location = new System.Drawing.Point(13, 318);
+            this.RichTextBoxOpisProjektu.Location = new System.Drawing.Point(12, 318);
             this.RichTextBoxOpisProjektu.MaxLength = 2000;
             this.RichTextBoxOpisProjektu.Name = "RichTextBoxOpisProjektu";
             this.RichTextBoxOpisProjektu.Size = new System.Drawing.Size(459, 326);
@@ -125,7 +125,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 299);
+            this.label7.Location = new System.Drawing.Point(9, 299);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(96, 16);
             this.label7.TabIndex = 15;
@@ -134,7 +134,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 79);
+            this.label2.Location = new System.Drawing.Point(9, 79);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(264, 16);
             this.label2.TabIndex = 13;
@@ -142,7 +142,7 @@
             // 
             // TextBoxSzacujacy
             // 
-            this.TextBoxSzacujacy.Location = new System.Drawing.Point(9, 98);
+            this.TextBoxSzacujacy.Location = new System.Drawing.Point(12, 98);
             this.TextBoxSzacujacy.MaxLength = 50;
             this.TextBoxSzacujacy.Name = "TextBoxSzacujacy";
             this.TextBoxSzacujacy.Size = new System.Drawing.Size(462, 22);
@@ -155,13 +155,13 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(9, 255);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 16);
+            this.label6.Size = new System.Drawing.Size(52, 16);
             this.label6.TabIndex = 11;
-            this.label6.Text = "E-Mail:";
+            this.label6.Text = "E-mail:";
             // 
             // TextBoxEmail
             // 
-            this.TextBoxEmail.Location = new System.Drawing.Point(9, 274);
+            this.TextBoxEmail.Location = new System.Drawing.Point(12, 274);
             this.TextBoxEmail.MaxLength = 50;
             this.TextBoxEmail.Name = "TextBoxEmail";
             this.TextBoxEmail.Size = new System.Drawing.Size(462, 22);
@@ -172,7 +172,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 211);
+            this.label5.Location = new System.Drawing.Point(9, 211);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(87, 16);
             this.label5.TabIndex = 9;
@@ -190,7 +190,7 @@
             // 
             // TextBoxTelefon
             // 
-            this.TextBoxTelefon.Location = new System.Drawing.Point(9, 230);
+            this.TextBoxTelefon.Location = new System.Drawing.Point(12, 230);
             this.TextBoxTelefon.MaxLength = 50;
             this.TextBoxTelefon.Name = "TextBoxTelefon";
             this.TextBoxTelefon.Size = new System.Drawing.Size(462, 22);
@@ -210,7 +210,7 @@
             // 
             // TextBoxNazwaFirmy
             // 
-            this.TextBoxNazwaFirmy.Location = new System.Drawing.Point(9, 142);
+            this.TextBoxNazwaFirmy.Location = new System.Drawing.Point(12, 142);
             this.TextBoxNazwaFirmy.MaxLength = 50;
             this.TextBoxNazwaFirmy.Name = "TextBoxNazwaFirmy";
             this.TextBoxNazwaFirmy.Size = new System.Drawing.Size(462, 22);
@@ -238,7 +238,7 @@
             // 
             // TextBoxKierownikProjektu
             // 
-            this.TextBoxKierownikProjektu.Location = new System.Drawing.Point(9, 54);
+            this.TextBoxKierownikProjektu.Location = new System.Drawing.Point(12, 54);
             this.TextBoxKierownikProjektu.MaxLength = 50;
             this.TextBoxKierownikProjektu.Name = "TextBoxKierownikProjektu";
             this.TextBoxKierownikProjektu.Size = new System.Drawing.Size(462, 22);

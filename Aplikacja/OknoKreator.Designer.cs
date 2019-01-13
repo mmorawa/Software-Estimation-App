@@ -134,6 +134,16 @@
             this.ButtonZakoncz = new System.Windows.Forms.Button();
             this.ButtonPopCOCOMO = new System.Windows.Forms.Button();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
             this.TabControlKreator.SuspendLayout();
             this.DaneProjektu.SuspendLayout();
             this.Zalozenia.SuspendLayout();
@@ -176,6 +186,7 @@
             // DaneProjektu
             // 
             this.DaneProjektu.BackColor = System.Drawing.SystemColors.Control;
+            this.DaneProjektu.Controls.Add(this.label51);
             this.DaneProjektu.Controls.Add(this.label50);
             this.DaneProjektu.Controls.Add(this.CheckBoxDomyslne);
             this.DaneProjektu.Controls.Add(this.RichTextBoxOpisProjektu);
@@ -209,37 +220,41 @@
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(17, 18);
+            this.label50.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label50.Location = new System.Drawing.Point(17, 62);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(349, 16);
+            this.label50.Size = new System.Drawing.Size(507, 38);
             this.label50.TabIndex = 31;
-            this.label50.Text = "Wprowadź dane projektu w celu jego charakterystyki.";
+            this.label50.Text = "Wprowadź poniżej szczegółowe dane projektu w celu dokonania \r\njego charakterystyk" +
+    "i.";
             // 
             // CheckBoxDomyslne
             // 
             this.CheckBoxDomyslne.AutoSize = true;
-            this.CheckBoxDomyslne.Location = new System.Drawing.Point(296, 170);
+            this.CheckBoxDomyslne.Location = new System.Drawing.Point(367, 181);
             this.CheckBoxDomyslne.Name = "CheckBoxDomyslne";
             this.CheckBoxDomyslne.Size = new System.Drawing.Size(183, 20);
             this.CheckBoxDomyslne.TabIndex = 17;
             this.CheckBoxDomyslne.Text = "Użyj danych domyślnych";
+            this.ToolTip.SetToolTip(this.CheckBoxDomyslne, "Zaznacz jeśli chcesz użyć wcześniej zdefiniowanych danych domyślnych");
             this.CheckBoxDomyslne.UseVisualStyleBackColor = true;
             this.CheckBoxDomyslne.Click += new System.EventHandler(this.CheckBoxDomyslne_Click);
             // 
             // RichTextBoxOpisProjektu
             // 
-            this.RichTextBoxOpisProjektu.Location = new System.Drawing.Point(20, 488);
+            this.RichTextBoxOpisProjektu.Location = new System.Drawing.Point(17, 502);
             this.RichTextBoxOpisProjektu.MaxLength = 2000;
             this.RichTextBoxOpisProjektu.Name = "RichTextBoxOpisProjektu";
-            this.RichTextBoxOpisProjektu.Size = new System.Drawing.Size(530, 178);
+            this.RichTextBoxOpisProjektu.Size = new System.Drawing.Size(533, 178);
             this.RichTextBoxOpisProjektu.TabIndex = 26;
             this.RichTextBoxOpisProjektu.Text = "";
+            this.ToolTip.SetToolTip(this.RichTextBoxOpisProjektu, "Wprowadź opis projektu zawierający jego krótką charakterystykę");
             this.RichTextBoxOpisProjektu.TextChanged += new System.EventHandler(this.RichTextBoxOpisProjektu_TextChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(17, 469);
+            this.label7.Location = new System.Drawing.Point(18, 483);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(96, 16);
             this.label7.TabIndex = 30;
@@ -248,7 +263,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 240);
+            this.label2.Location = new System.Drawing.Point(16, 254);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(264, 16);
             this.label2.TabIndex = 29;
@@ -256,35 +271,37 @@
             // 
             // TextBoxSzacujacy
             // 
-            this.TextBoxSzacujacy.Location = new System.Drawing.Point(17, 259);
+            this.TextBoxSzacujacy.Location = new System.Drawing.Point(17, 273);
             this.TextBoxSzacujacy.MaxLength = 50;
             this.TextBoxSzacujacy.Name = "TextBoxSzacujacy";
             this.TextBoxSzacujacy.Size = new System.Drawing.Size(533, 22);
             this.TextBoxSzacujacy.TabIndex = 19;
+            this.ToolTip.SetToolTip(this.TextBoxSzacujacy, "Wprowadź imię i nazwisko osoby odpowiedzialnej za oszacowanie");
             this.TextBoxSzacujacy.TextChanged += new System.EventHandler(this.TextBoxSzacujacy_TextChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(17, 416);
+            this.label6.Location = new System.Drawing.Point(18, 430);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 16);
+            this.label6.Size = new System.Drawing.Size(52, 16);
             this.label6.TabIndex = 28;
-            this.label6.Text = "E-Mail:";
+            this.label6.Text = "E-mail:";
             // 
             // TextBoxEmail
             // 
-            this.TextBoxEmail.Location = new System.Drawing.Point(17, 435);
+            this.TextBoxEmail.Location = new System.Drawing.Point(17, 449);
             this.TextBoxEmail.MaxLength = 50;
             this.TextBoxEmail.Name = "TextBoxEmail";
             this.TextBoxEmail.Size = new System.Drawing.Size(533, 22);
             this.TextBoxEmail.TabIndex = 24;
+            this.ToolTip.SetToolTip(this.TextBoxEmail, "Wprowadź e-mail firmy programistycznej");
             this.TextBoxEmail.TextChanged += new System.EventHandler(this.TextBoxEmail_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 372);
+            this.label5.Location = new System.Drawing.Point(15, 386);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(87, 16);
             this.label5.TabIndex = 27;
@@ -293,44 +310,47 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(17, 328);
+            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(18, 342);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 16);
+            this.label4.Size = new System.Drawing.Size(48, 16);
             this.label4.TabIndex = 25;
             this.label4.Text = "Adres:";
             // 
             // TextBoxTelefon
             // 
-            this.TextBoxTelefon.Location = new System.Drawing.Point(17, 391);
+            this.TextBoxTelefon.Location = new System.Drawing.Point(17, 405);
             this.TextBoxTelefon.MaxLength = 50;
             this.TextBoxTelefon.Name = "TextBoxTelefon";
             this.TextBoxTelefon.Size = new System.Drawing.Size(533, 22);
             this.TextBoxTelefon.TabIndex = 23;
+            this.ToolTip.SetToolTip(this.TextBoxTelefon, "Wprowadź telefon lub fax firmy programistycznej");
             this.TextBoxTelefon.TextChanged += new System.EventHandler(this.TextBoxTelefon_TextChanged);
             // 
             // TextBoxAdres
             // 
-            this.TextBoxAdres.Location = new System.Drawing.Point(20, 347);
+            this.TextBoxAdres.Location = new System.Drawing.Point(17, 361);
             this.TextBoxAdres.MaxLength = 50;
             this.TextBoxAdres.Name = "TextBoxAdres";
-            this.TextBoxAdres.Size = new System.Drawing.Size(530, 22);
+            this.TextBoxAdres.Size = new System.Drawing.Size(533, 22);
             this.TextBoxAdres.TabIndex = 22;
+            this.ToolTip.SetToolTip(this.TextBoxAdres, "Wprowadź adres firmy programistycznej");
             this.TextBoxAdres.TextChanged += new System.EventHandler(this.TextBoxAdres_TextChanged);
             // 
             // TextBoxNazwaFirmy
             // 
-            this.TextBoxNazwaFirmy.Location = new System.Drawing.Point(17, 303);
+            this.TextBoxNazwaFirmy.Location = new System.Drawing.Point(17, 317);
             this.TextBoxNazwaFirmy.MaxLength = 50;
             this.TextBoxNazwaFirmy.Name = "TextBoxNazwaFirmy";
             this.TextBoxNazwaFirmy.Size = new System.Drawing.Size(533, 22);
             this.TextBoxNazwaFirmy.TabIndex = 21;
+            this.ToolTip.SetToolTip(this.TextBoxNazwaFirmy, "Wprowadź nazwę firmy programistycznej");
             this.TextBoxNazwaFirmy.TextChanged += new System.EventHandler(this.TextBoxNazwaFirmy_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 284);
+            this.label3.Location = new System.Drawing.Point(18, 298);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 16);
             this.label3.TabIndex = 20;
@@ -339,7 +359,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 196);
+            this.label1.Location = new System.Drawing.Point(18, 210);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(132, 16);
             this.label1.TabIndex = 16;
@@ -347,17 +367,18 @@
             // 
             // TextBoxKierownikProjektu
             // 
-            this.TextBoxKierownikProjektu.Location = new System.Drawing.Point(17, 215);
+            this.TextBoxKierownikProjektu.Location = new System.Drawing.Point(17, 229);
             this.TextBoxKierownikProjektu.MaxLength = 50;
             this.TextBoxKierownikProjektu.Name = "TextBoxKierownikProjektu";
             this.TextBoxKierownikProjektu.Size = new System.Drawing.Size(533, 22);
             this.TextBoxKierownikProjektu.TabIndex = 18;
+            this.ToolTip.SetToolTip(this.TextBoxKierownikProjektu, "Wprowadź imię i nazwisko kierownika projektu");
             this.TextBoxKierownikProjektu.TextChanged += new System.EventHandler(this.TextBoxKierownikProjektu_TextChanged);
             // 
             // LabelDataRozp
             // 
             this.LabelDataRozp.AutoSize = true;
-            this.LabelDataRozp.Location = new System.Drawing.Point(16, 147);
+            this.LabelDataRozp.Location = new System.Drawing.Point(17, 161);
             this.LabelDataRozp.Name = "LabelDataRozp";
             this.LabelDataRozp.Size = new System.Drawing.Size(122, 16);
             this.LabelDataRozp.TabIndex = 11;
@@ -365,17 +386,19 @@
             // 
             // DateTimePicker
             // 
-            this.DateTimePicker.Location = new System.Drawing.Point(16, 166);
+            this.DateTimePicker.Location = new System.Drawing.Point(17, 180);
             this.DateTimePicker.Name = "DateTimePicker";
             this.DateTimePicker.Size = new System.Drawing.Size(191, 22);
             this.DateTimePicker.TabIndex = 9;
+            this.ToolTip.SetToolTip(this.DateTimePicker, "Wprowadź datę rozpoczęcia projektu, którą stanowi moment kiedy znane są już podst" +
+        "awowe wymagania odnośnie tworzonej aplikacji ");
             this.DateTimePicker.Value = new System.DateTime(2018, 12, 17, 0, 0, 0, 0);
             this.DateTimePicker.ValueChanged += new System.EventHandler(this.DateTimePicker_ValueChanged);
             // 
             // LabelNazwaProjektu
             // 
             this.LabelNazwaProjektu.AutoSize = true;
-            this.LabelNazwaProjektu.Location = new System.Drawing.Point(16, 103);
+            this.LabelNazwaProjektu.Location = new System.Drawing.Point(17, 117);
             this.LabelNazwaProjektu.Name = "LabelNazwaProjektu";
             this.LabelNazwaProjektu.Size = new System.Drawing.Size(111, 16);
             this.LabelNazwaProjektu.TabIndex = 10;
@@ -383,18 +406,19 @@
             // 
             // TextBoxNazwaProjektu
             // 
-            this.TextBoxNazwaProjektu.Location = new System.Drawing.Point(16, 122);
+            this.TextBoxNazwaProjektu.Location = new System.Drawing.Point(17, 136);
             this.TextBoxNazwaProjektu.MaxLength = 60;
             this.TextBoxNazwaProjektu.Name = "TextBoxNazwaProjektu";
-            this.TextBoxNazwaProjektu.Size = new System.Drawing.Size(534, 22);
+            this.TextBoxNazwaProjektu.Size = new System.Drawing.Size(533, 22);
             this.TextBoxNazwaProjektu.TabIndex = 8;
+            this.ToolTip.SetToolTip(this.TextBoxNazwaProjektu, "Wprowadź nazwę projektu");
             this.TextBoxNazwaProjektu.TextChanged += new System.EventHandler(this.TextBoxNazwaProjektu_TextChanged);
             // 
             // button5
             // 
             this.button5.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button5.Location = new System.Drawing.Point(416, 696);
+            this.button5.Location = new System.Drawing.Point(17, 712);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(104, 27);
             this.button5.TabIndex = 7;
@@ -405,7 +429,7 @@
             // 
             this.ButtonPopDaneProj.Enabled = false;
             this.ButtonPopDaneProj.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPopDaneProj.Location = new System.Drawing.Point(146, 696);
+            this.ButtonPopDaneProj.Location = new System.Drawing.Point(327, 712);
             this.ButtonPopDaneProj.Name = "ButtonPopDaneProj";
             this.ButtonPopDaneProj.Size = new System.Drawing.Size(104, 27);
             this.ButtonPopDaneProj.TabIndex = 6;
@@ -415,7 +439,7 @@
             // ButtonNDaneProj
             // 
             this.ButtonNDaneProj.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonNDaneProj.Location = new System.Drawing.Point(266, 696);
+            this.ButtonNDaneProj.Location = new System.Drawing.Point(446, 712);
             this.ButtonNDaneProj.Name = "ButtonNDaneProj";
             this.ButtonNDaneProj.Size = new System.Drawing.Size(104, 27);
             this.ButtonNDaneProj.TabIndex = 5;
@@ -426,6 +450,9 @@
             // Zalozenia
             // 
             this.Zalozenia.BackColor = System.Drawing.SystemColors.Control;
+            this.Zalozenia.Controls.Add(this.label56);
+            this.Zalozenia.Controls.Add(this.label55);
+            this.Zalozenia.Controls.Add(this.label52);
             this.Zalozenia.Controls.Add(this.button8);
             this.Zalozenia.Controls.Add(this.ButtonPopZalProj);
             this.Zalozenia.Controls.Add(this.ButtonNZalProj);
@@ -442,7 +469,7 @@
             // 
             this.button8.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button8.Location = new System.Drawing.Point(438, 649);
+            this.button8.Location = new System.Drawing.Point(17, 712);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(104, 27);
             this.button8.TabIndex = 19;
@@ -452,7 +479,7 @@
             // ButtonPopZalProj
             // 
             this.ButtonPopZalProj.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPopZalProj.Location = new System.Drawing.Point(109, 649);
+            this.ButtonPopZalProj.Location = new System.Drawing.Point(327, 712);
             this.ButtonPopZalProj.Name = "ButtonPopZalProj";
             this.ButtonPopZalProj.Size = new System.Drawing.Size(104, 27);
             this.ButtonPopZalProj.TabIndex = 18;
@@ -463,7 +490,7 @@
             // ButtonNZalProj
             // 
             this.ButtonNZalProj.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonNZalProj.Location = new System.Drawing.Point(229, 649);
+            this.ButtonNZalProj.Location = new System.Drawing.Point(446, 712);
             this.ButtonNZalProj.Name = "ButtonNZalProj";
             this.ButtonNZalProj.Size = new System.Drawing.Size(104, 27);
             this.ButtonNZalProj.TabIndex = 17;
@@ -475,9 +502,9 @@
             // 
             this.GroupBoxSzczDaneProjektu.Controls.Add(this.tableLayoutPanel2);
             this.GroupBoxSzczDaneProjektu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.GroupBoxSzczDaneProjektu.Location = new System.Drawing.Point(6, 51);
+            this.GroupBoxSzczDaneProjektu.Location = new System.Drawing.Point(17, 113);
             this.GroupBoxSzczDaneProjektu.Name = "GroupBoxSzczDaneProjektu";
-            this.GroupBoxSzczDaneProjektu.Size = new System.Drawing.Size(536, 221);
+            this.GroupBoxSzczDaneProjektu.Size = new System.Drawing.Size(533, 210);
             this.GroupBoxSzczDaneProjektu.TabIndex = 16;
             this.GroupBoxSzczDaneProjektu.TabStop = false;
             this.GroupBoxSzczDaneProjektu.Text = "Założenia projektu";
@@ -507,7 +534,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(513, 176);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(516, 176);
             this.tableLayoutPanel2.TabIndex = 28;
             // 
             // ComboBoxJezykProgram
@@ -558,8 +585,9 @@
             this.ComboBoxJezykProgram.Location = new System.Drawing.Point(207, 10);
             this.ComboBoxJezykProgram.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.ComboBoxJezykProgram.Name = "ComboBoxJezykProgram";
-            this.ComboBoxJezykProgram.Size = new System.Drawing.Size(303, 24);
+            this.ComboBoxJezykProgram.Size = new System.Drawing.Size(306, 24);
             this.ComboBoxJezykProgram.TabIndex = 3;
+            this.ToolTip.SetToolTip(this.ComboBoxJezykProgram, "Wprowadź główny język programowania użyty w projekcie");
             this.ComboBoxJezykProgram.SelectedIndexChanged += new System.EventHandler(this.ComboBoxJezykProgram_SelectedIndexChanged);
             // 
             // label8
@@ -611,6 +639,7 @@
             this.NumericStawkaGodz.TabIndex = 4;
             this.NumericStawkaGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericStawkaGodz.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericStawkaGodz, "Wprowadź stawkę godzinową pracowników zatrudnionych przy projekcie");
             this.NumericStawkaGodz.ValueChanged += new System.EventHandler(this.NumericStawkaGodz_ValueChanged);
             // 
             // NumericOsoboMGodz
@@ -628,6 +657,7 @@
             this.NumericOsoboMGodz.TabIndex = 5;
             this.NumericOsoboMGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericOsoboMGodz.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericOsoboMGodz, "Wprowadź ile osobogodzin przypada na jeden osobomiesiąc");
             this.NumericOsoboMGodz.ValueChanged += new System.EventHandler(this.NumericOsoboMGodz_ValueChanged);
             // 
             // NumericDzRobGodz
@@ -645,6 +675,7 @@
             this.NumericDzRobGodz.TabIndex = 6;
             this.NumericDzRobGodz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericDzRobGodz.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericDzRobGodz, "Wprowadź ile godzin przypada na jeden dzień roboczy");
             this.NumericDzRobGodz.ValueChanged += new System.EventHandler(this.NumericDzRobGodz_ValueChanged);
             // 
             // label13
@@ -655,7 +686,7 @@
             this.label13.Location = new System.Drawing.Point(364, 135);
             this.label13.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(146, 41);
+            this.label13.Size = new System.Drawing.Size(149, 41);
             this.label13.TabIndex = 27;
             this.label13.Text = "godzin";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -678,7 +709,7 @@
             this.label12.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label12.Location = new System.Drawing.Point(364, 44);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(146, 44);
+            this.label12.Size = new System.Drawing.Size(149, 44);
             this.label12.TabIndex = 19;
             this.label12.Text = "zł";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -691,7 +722,7 @@
             this.label14.Location = new System.Drawing.Point(364, 91);
             this.label14.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(146, 41);
+            this.label14.Size = new System.Drawing.Size(149, 41);
             this.label14.TabIndex = 25;
             this.label14.Text = "osobogodzin";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -701,9 +732,9 @@
             this.GroupBoxOgraniczenia.Controls.Add(this.CheckBoxAktywacja);
             this.GroupBoxOgraniczenia.Controls.Add(this.TableLayoutOgraniczenia);
             this.GroupBoxOgraniczenia.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.GroupBoxOgraniczenia.Location = new System.Drawing.Point(6, 350);
+            this.GroupBoxOgraniczenia.Location = new System.Drawing.Point(17, 403);
             this.GroupBoxOgraniczenia.Name = "GroupBoxOgraniczenia";
-            this.GroupBoxOgraniczenia.Size = new System.Drawing.Size(536, 282);
+            this.GroupBoxOgraniczenia.Size = new System.Drawing.Size(533, 282);
             this.GroupBoxOgraniczenia.TabIndex = 16;
             this.GroupBoxOgraniczenia.TabStop = false;
             this.GroupBoxOgraniczenia.Text = "Ograniczenia";
@@ -716,6 +747,7 @@
             this.CheckBoxAktywacja.Size = new System.Drawing.Size(92, 20);
             this.CheckBoxAktywacja.TabIndex = 7;
             this.CheckBoxAktywacja.Text = "Aktywacja";
+            this.ToolTip.SetToolTip(this.CheckBoxAktywacja, "Zaznacz jeśli chcesz aktywować ograniczenia nałożone na projekt");
             this.CheckBoxAktywacja.UseVisualStyleBackColor = true;
             this.CheckBoxAktywacja.CheckedChanged += new System.EventHandler(this.CheckBoxAktywacja_CheckedChanged);
             // 
@@ -748,7 +780,7 @@
             this.TableLayoutOgraniczenia.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.TableLayoutOgraniczenia.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.TableLayoutOgraniczenia.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.TableLayoutOgraniczenia.Size = new System.Drawing.Size(510, 204);
+            this.TableLayoutOgraniczenia.Size = new System.Drawing.Size(519, 204);
             this.TableLayoutOgraniczenia.TabIndex = 29;
             // 
             // NumericMaxZespol
@@ -766,6 +798,7 @@
             this.NumericMaxZespol.TabIndex = 12;
             this.NumericMaxZespol.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericMaxZespol.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericMaxZespol, "Wprowadź maksymalną dopuszczalną średnią wielkość zespołu");
             this.NumericMaxZespol.ValueChanged += new System.EventHandler(this.NumericMaxZespol_ValueChanged);
             // 
             // label15
@@ -775,7 +808,7 @@
             this.label15.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label15.Location = new System.Drawing.Point(355, 160);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(152, 44);
+            this.label15.Size = new System.Drawing.Size(161, 44);
             this.label15.TabIndex = 46;
             this.label15.Text = "osób";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -818,6 +851,7 @@
             this.NumericMaxKoszt.TabIndex = 11;
             this.NumericMaxKoszt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericMaxKoszt.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericMaxKoszt, "Wprowadź maksymalny dopuszczalny całkowity koszt projektu");
             this.NumericMaxKoszt.ValueChanged += new System.EventHandler(this.NumericMaxKoszt_ValueChanged);
             // 
             // label18
@@ -838,7 +872,7 @@
             this.label19.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label19.Location = new System.Drawing.Point(355, 120);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(152, 40);
+            this.label19.Size = new System.Drawing.Size(161, 40);
             this.label19.TabIndex = 19;
             this.label19.Text = "zł";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -858,6 +892,7 @@
             this.NumericMaxPrac.TabIndex = 8;
             this.NumericMaxPrac.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericMaxPrac.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericMaxPrac, "Wprowadź maksymalną dopuszczalną pracochłonność");
             this.NumericMaxPrac.ValueChanged += new System.EventHandler(this.NumericMaxPrac_ValueChanged);
             // 
             // label20
@@ -868,7 +903,7 @@
             this.label20.Location = new System.Drawing.Point(355, 3);
             this.label20.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(152, 37);
+            this.label20.Size = new System.Drawing.Size(161, 37);
             this.label20.TabIndex = 25;
             this.label20.Text = "osobomiesięcy";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -911,6 +946,7 @@
             this.NumericMaxHarm.TabIndex = 9;
             this.NumericMaxHarm.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NumericMaxHarm.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumericMaxHarm, "Wprowadź maksymalny dopuszczalny harmonogram");
             this.NumericMaxHarm.ValueChanged += new System.EventHandler(this.NumericMaxHarm_ValueChanged);
             // 
             // label23
@@ -921,7 +957,7 @@
             this.label23.Location = new System.Drawing.Point(355, 43);
             this.label23.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(152, 37);
+            this.label23.Size = new System.Drawing.Size(161, 37);
             this.label23.TabIndex = 27;
             this.label23.Text = "miesięcy";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -935,11 +971,15 @@
             this.TimePickerDeadline.Name = "TimePickerDeadline";
             this.TimePickerDeadline.Size = new System.Drawing.Size(183, 22);
             this.TimePickerDeadline.TabIndex = 10;
+            this.ToolTip.SetToolTip(this.TimePickerDeadline, "Wprowadź nieprzekraczalny termin, w którym projekt musi się zakończyć");
             this.TimePickerDeadline.ValueChanged += new System.EventHandler(this.TimePickerDeadline_ValueChanged);
             // 
             // UCP
             // 
             this.UCP.BackColor = System.Drawing.SystemColors.Control;
+            this.UCP.Controls.Add(this.label58);
+            this.UCP.Controls.Add(this.label57);
+            this.UCP.Controls.Add(this.label53);
             this.UCP.Controls.Add(this.tableLayoutPanel1);
             this.UCP.Controls.Add(this.tableLayoutPanel3);
             this.UCP.Controls.Add(this.button11);
@@ -956,8 +996,8 @@
             this.tableLayoutPanel1.ColumnCount = 4;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 51F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 234F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 171F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 246F));
             this.tableLayoutPanel1.Controls.Add(this.label43, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.NumUUCWZlozony, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.label24, 0, 2);
@@ -974,7 +1014,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label33, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.label34, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label35, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(8, 70);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(17, 189);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -982,7 +1022,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(543, 173);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(533, 173);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // label43
@@ -1005,18 +1045,19 @@
             // 
             this.NumUUCWZlozony.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumUUCWZlozony.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.NumUUCWZlozony.Location = new System.Drawing.Point(129, 138);
-            this.NumUUCWZlozony.Margin = new System.Windows.Forms.Padding(3, 9, 3, 3);
+            this.NumUUCWZlozony.Location = new System.Drawing.Point(129, 139);
+            this.NumUUCWZlozony.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.NumUUCWZlozony.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.NumUUCWZlozony.Name = "NumUUCWZlozony";
-            this.NumUUCWZlozony.Size = new System.Drawing.Size(177, 22);
+            this.NumUUCWZlozony.Size = new System.Drawing.Size(165, 22);
             this.NumUUCWZlozony.TabIndex = 6;
             this.NumUUCWZlozony.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUUCWZlozony.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumUUCWZlozony, "Wprowadź liczbę złożonych przypadków użycia");
             this.NumUUCWZlozony.ValueChanged += new System.EventHandler(this.NumUUCWZlozony_ValueChanged);
             // 
             // label24
@@ -1037,36 +1078,38 @@
             // 
             this.NumUUCWSredni.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumUUCWSredni.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.NumUUCWSredni.Location = new System.Drawing.Point(129, 95);
-            this.NumUUCWSredni.Margin = new System.Windows.Forms.Padding(3, 9, 3, 3);
+            this.NumUUCWSredni.Location = new System.Drawing.Point(129, 96);
+            this.NumUUCWSredni.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.NumUUCWSredni.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.NumUUCWSredni.Name = "NumUUCWSredni";
-            this.NumUUCWSredni.Size = new System.Drawing.Size(177, 22);
+            this.NumUUCWSredni.Size = new System.Drawing.Size(165, 22);
             this.NumUUCWSredni.TabIndex = 5;
             this.NumUUCWSredni.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUUCWSredni.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumUUCWSredni, "Wprowadź liczbę średnio złożonych przypadków użycia");
             this.NumUUCWSredni.ValueChanged += new System.EventHandler(this.NumUUCWSredni_ValueChanged);
             // 
             // NumUUCWProsty
             // 
             this.NumUUCWProsty.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumUUCWProsty.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.NumUUCWProsty.Location = new System.Drawing.Point(129, 52);
-            this.NumUUCWProsty.Margin = new System.Windows.Forms.Padding(3, 9, 3, 3);
+            this.NumUUCWProsty.Location = new System.Drawing.Point(129, 53);
+            this.NumUUCWProsty.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.NumUUCWProsty.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.NumUUCWProsty.Name = "NumUUCWProsty";
-            this.NumUUCWProsty.Size = new System.Drawing.Size(177, 22);
+            this.NumUUCWProsty.Size = new System.Drawing.Size(165, 22);
             this.NumUUCWProsty.TabIndex = 4;
             this.NumUUCWProsty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUUCWProsty.ThousandsSeparator = true;
+            this.ToolTip.SetToolTip(this.NumUUCWProsty, "Wprowadź liczbę prostych przypadków użycia");
             this.NumUUCWProsty.ValueChanged += new System.EventHandler(this.NumUUCWProsty_ValueChanged);
             // 
             // label25
@@ -1094,7 +1137,7 @@
             this.label26.Location = new System.Drawing.Point(128, 0);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(181, 43);
+            this.label26.Size = new System.Drawing.Size(169, 43);
             this.label26.TabIndex = 9;
             this.label26.Text = "Liczba przypadków użycia";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1107,10 +1150,10 @@
             this.label27.AutoSize = true;
             this.label27.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label27.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label27.Location = new System.Drawing.Point(311, 0);
+            this.label27.Location = new System.Drawing.Point(299, 0);
             this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(232, 43);
+            this.label27.Size = new System.Drawing.Size(244, 43);
             this.label27.TabIndex = 10;
             this.label27.Text = "Definicja";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1164,10 +1207,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label31.Location = new System.Drawing.Point(312, 47);
+            this.label31.Location = new System.Drawing.Point(300, 47);
             this.label31.Margin = new System.Windows.Forms.Padding(3, 4, 3, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(228, 39);
+            this.label31.Size = new System.Drawing.Size(240, 39);
             this.label31.TabIndex = 14;
             this.label31.Text = "od 1 do 3 transakcji oraz\r\n5 analizowanych klas lub mniej\r\n";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1179,10 +1222,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label32.Location = new System.Drawing.Point(312, 90);
+            this.label32.Location = new System.Drawing.Point(300, 90);
             this.label32.Margin = new System.Windows.Forms.Padding(3, 4, 3, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(228, 39);
+            this.label32.Size = new System.Drawing.Size(240, 39);
             this.label32.TabIndex = 15;
             this.label32.Text = "od 4 do 7 transakcji oraz\r\nod 6 do 10 analizowanych klas\r\n";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1194,10 +1237,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label33.Location = new System.Drawing.Point(312, 133);
+            this.label33.Location = new System.Drawing.Point(300, 133);
             this.label33.Margin = new System.Windows.Forms.Padding(3, 4, 3, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(228, 40);
+            this.label33.Size = new System.Drawing.Size(240, 40);
             this.label33.TabIndex = 16;
             this.label33.Text = "więcej niż 7 transakcji oraz\r\nwięcej niż 10 analizowanych klas\r\n";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1237,8 +1280,8 @@
             this.tableLayoutPanel3.ColumnCount = 4;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 51F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 171F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 249F));
             this.tableLayoutPanel3.Controls.Add(this.label46, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.NumUAWZlozony, 2, 3);
             this.tableLayoutPanel3.Controls.Add(this.label36, 0, 2);
@@ -1255,14 +1298,14 @@
             this.tableLayoutPanel3.Controls.Add(this.label47, 3, 1);
             this.tableLayoutPanel3.Controls.Add(this.label48, 3, 2);
             this.tableLayoutPanel3.Controls.Add(this.label49, 3, 3);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(8, 290);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(17, 504);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 4;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.29462F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.99434F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.71104F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(546, 167);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(533, 167);
             this.tableLayoutPanel3.TabIndex = 5;
             // 
             // label46
@@ -1285,15 +1328,15 @@
             // 
             this.NumUAWZlozony.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumUAWZlozony.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.NumUAWZlozony.Location = new System.Drawing.Point(129, 133);
-            this.NumUAWZlozony.Margin = new System.Windows.Forms.Padding(3, 9, 3, 3);
+            this.NumUAWZlozony.Location = new System.Drawing.Point(129, 134);
+            this.NumUAWZlozony.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.NumUAWZlozony.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.NumUAWZlozony.Name = "NumUAWZlozony";
-            this.NumUAWZlozony.Size = new System.Drawing.Size(177, 22);
+            this.NumUAWZlozony.Size = new System.Drawing.Size(165, 22);
             this.NumUAWZlozony.TabIndex = 9;
             this.NumUAWZlozony.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUAWZlozony.ThousandsSeparator = true;
@@ -1316,15 +1359,15 @@
             // 
             this.NumUAWSredni.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumUAWSredni.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.NumUAWSredni.Location = new System.Drawing.Point(129, 92);
-            this.NumUAWSredni.Margin = new System.Windows.Forms.Padding(3, 9, 3, 3);
+            this.NumUAWSredni.Location = new System.Drawing.Point(129, 93);
+            this.NumUAWSredni.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.NumUAWSredni.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.NumUAWSredni.Name = "NumUAWSredni";
-            this.NumUAWSredni.Size = new System.Drawing.Size(177, 22);
+            this.NumUAWSredni.Size = new System.Drawing.Size(165, 22);
             this.NumUAWSredni.TabIndex = 8;
             this.NumUAWSredni.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUAWSredni.ThousandsSeparator = true;
@@ -1347,15 +1390,15 @@
             // 
             this.NumUAWProsty.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumUAWProsty.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.NumUAWProsty.Location = new System.Drawing.Point(129, 53);
-            this.NumUAWProsty.Margin = new System.Windows.Forms.Padding(3, 9, 3, 3);
+            this.NumUAWProsty.Location = new System.Drawing.Point(129, 54);
+            this.NumUAWProsty.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.NumUAWProsty.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.NumUAWProsty.Name = "NumUAWProsty";
-            this.NumUAWProsty.Size = new System.Drawing.Size(177, 22);
+            this.NumUAWProsty.Size = new System.Drawing.Size(165, 22);
             this.NumUAWProsty.TabIndex = 7;
             this.NumUAWProsty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumUAWProsty.ThousandsSeparator = true;
@@ -1399,7 +1442,7 @@
             this.label40.Location = new System.Drawing.Point(128, 0);
             this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(181, 44);
+            this.label40.Size = new System.Drawing.Size(169, 44);
             this.label40.TabIndex = 9;
             this.label40.Text = "Liczba aktorów";
             this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1411,10 +1454,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label41.AutoSize = true;
             this.label41.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label41.Location = new System.Drawing.Point(311, 0);
+            this.label41.Location = new System.Drawing.Point(299, 0);
             this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(235, 44);
+            this.label41.Size = new System.Drawing.Size(247, 44);
             this.label41.TabIndex = 10;
             this.label41.Text = "Sposób komunikacji z systemem";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1468,9 +1511,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label47.AutoSize = true;
             this.label47.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label47.Location = new System.Drawing.Point(312, 44);
+            this.label47.Location = new System.Drawing.Point(300, 44);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(231, 39);
+            this.label47.Size = new System.Drawing.Size(243, 39);
             this.label47.TabIndex = 14;
             this.label47.Text = "aktor systemowy poprzez API";
             this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1482,9 +1525,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label48.AutoSize = true;
             this.label48.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label48.Location = new System.Drawing.Point(312, 83);
+            this.label48.Location = new System.Drawing.Point(300, 83);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(231, 41);
+            this.label48.Size = new System.Drawing.Size(243, 41);
             this.label48.TabIndex = 15;
             this.label48.Text = "aktor systemowy poprzez protokół\r\nlub człowiek poprzez wiersz poleceń";
             this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1496,9 +1539,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label49.Location = new System.Drawing.Point(312, 124);
+            this.label49.Location = new System.Drawing.Point(300, 124);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(231, 43);
+            this.label49.Size = new System.Drawing.Size(243, 43);
             this.label49.TabIndex = 16;
             this.label49.Text = "człowiek poprzez GUI";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1507,7 +1550,7 @@
             // 
             this.button11.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button11.Location = new System.Drawing.Point(447, 662);
+            this.button11.Location = new System.Drawing.Point(17, 712);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(104, 27);
             this.button11.TabIndex = 8;
@@ -1517,7 +1560,7 @@
             // ButtonPopUCP
             // 
             this.ButtonPopUCP.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPopUCP.Location = new System.Drawing.Point(194, 662);
+            this.ButtonPopUCP.Location = new System.Drawing.Point(327, 712);
             this.ButtonPopUCP.Name = "ButtonPopUCP";
             this.ButtonPopUCP.Size = new System.Drawing.Size(104, 27);
             this.ButtonPopUCP.TabIndex = 7;
@@ -1528,7 +1571,7 @@
             // ButtonNUCP
             // 
             this.ButtonNUCP.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonNUCP.Location = new System.Drawing.Point(314, 662);
+            this.ButtonNUCP.Location = new System.Drawing.Point(446, 712);
             this.ButtonNUCP.Name = "ButtonNUCP";
             this.ButtonNUCP.Size = new System.Drawing.Size(104, 27);
             this.ButtonNUCP.TabIndex = 6;
@@ -1539,6 +1582,9 @@
             // COCOMO
             // 
             this.COCOMO.BackColor = System.Drawing.SystemColors.Control;
+            this.COCOMO.Controls.Add(this.label60);
+            this.COCOMO.Controls.Add(this.label59);
+            this.COCOMO.Controls.Add(this.label54);
             this.COCOMO.Controls.Add(this.ButtonMnPr);
             this.COCOMO.Controls.Add(this.ButtonCzSk);
             this.COCOMO.Controls.Add(this.button14);
@@ -1552,21 +1598,23 @@
             // 
             // ButtonMnPr
             // 
-            this.ButtonMnPr.Location = new System.Drawing.Point(280, 368);
+            this.ButtonMnPr.Location = new System.Drawing.Point(68, 517);
             this.ButtonMnPr.Name = "ButtonMnPr";
             this.ButtonMnPr.Size = new System.Drawing.Size(219, 27);
             this.ButtonMnPr.TabIndex = 13;
             this.ButtonMnPr.Text = "Mnożniki pracochłonności";
+            this.ToolTip.SetToolTip(this.ButtonMnPr, "Dokonaj oceny mnożników pracochłonności");
             this.ButtonMnPr.UseVisualStyleBackColor = true;
             this.ButtonMnPr.Click += new System.EventHandler(this.ButtonMnPr_Click);
             // 
             // ButtonCzSk
             // 
-            this.ButtonCzSk.Location = new System.Drawing.Point(68, 368);
+            this.ButtonCzSk.Location = new System.Drawing.Point(68, 190);
             this.ButtonCzSk.Name = "ButtonCzSk";
             this.ButtonCzSk.Size = new System.Drawing.Size(173, 27);
             this.ButtonCzSk.TabIndex = 12;
             this.ButtonCzSk.Text = "Czynniki skali";
+            this.ToolTip.SetToolTip(this.ButtonCzSk, "Dokonaj oceny czynników skali");
             this.ButtonCzSk.UseVisualStyleBackColor = true;
             this.ButtonCzSk.Click += new System.EventHandler(this.ButtonCzSk_Click);
             // 
@@ -1574,7 +1622,7 @@
             // 
             this.button14.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button14.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button14.Location = new System.Drawing.Point(450, 662);
+            this.button14.Location = new System.Drawing.Point(17, 712);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(104, 27);
             this.button14.TabIndex = 7;
@@ -1585,7 +1633,7 @@
             // 
             this.ButtonZakoncz.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.ButtonZakoncz.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonZakoncz.Location = new System.Drawing.Point(330, 662);
+            this.ButtonZakoncz.Location = new System.Drawing.Point(446, 712);
             this.ButtonZakoncz.Name = "ButtonZakoncz";
             this.ButtonZakoncz.Size = new System.Drawing.Size(104, 27);
             this.ButtonZakoncz.TabIndex = 6;
@@ -1595,13 +1643,119 @@
             // ButtonPopCOCOMO
             // 
             this.ButtonPopCOCOMO.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonPopCOCOMO.Location = new System.Drawing.Point(220, 662);
+            this.ButtonPopCOCOMO.Location = new System.Drawing.Point(327, 712);
             this.ButtonPopCOCOMO.Name = "ButtonPopCOCOMO";
             this.ButtonPopCOCOMO.Size = new System.Drawing.Size(104, 27);
             this.ButtonPopCOCOMO.TabIndex = 5;
             this.ButtonPopCOCOMO.Text = "< Poprzedni";
             this.ButtonPopCOCOMO.UseVisualStyleBackColor = true;
             this.ButtonPopCOCOMO.Click += new System.EventHandler(this.ButtonPopCOCOMO_Click);
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Arial Black", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label51.Location = new System.Drawing.Point(16, 15);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(161, 27);
+            this.label51.TabIndex = 32;
+            this.label51.Text = "Krok pierwszy";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Arial Black", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label52.Location = new System.Drawing.Point(16, 15);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(121, 27);
+            this.label52.TabIndex = 33;
+            this.label52.Text = "Krok drugi";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Arial Black", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label53.Location = new System.Drawing.Point(16, 15);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(127, 27);
+            this.label53.TabIndex = 33;
+            this.label53.Text = "Krok trzeci";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Arial Black", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label54.Location = new System.Drawing.Point(16, 15);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(151, 27);
+            this.label54.TabIndex = 33;
+            this.label54.Text = "Krok czwarty";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label55.Location = new System.Drawing.Point(17, 348);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(507, 38);
+            this.label55.TabIndex = 34;
+            this.label55.Text = "Wprowadź poniżej szczegółowe dane projektu w celu dokonania \r\njego charakterystyk" +
+    "i.";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label56.Location = new System.Drawing.Point(17, 62);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(507, 38);
+            this.label56.TabIndex = 35;
+            this.label56.Text = "Wprowadź poniżej szczegółowe dane projektu w celu dokonania \r\njego charakterystyk" +
+    "i.";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label57.Location = new System.Drawing.Point(13, 391);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(507, 38);
+            this.label57.TabIndex = 36;
+            this.label57.Text = "Wprowadź poniżej szczegółowe dane projektu w celu dokonania \r\njego charakterystyk" +
+    "i.";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label58.Location = new System.Drawing.Point(17, 62);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(507, 38);
+            this.label58.TabIndex = 37;
+            this.label58.Text = "Wprowadź poniżej szczegółowe dane projektu w celu dokonania \r\njego charakterystyk" +
+    "i.";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label59.Location = new System.Drawing.Point(17, 62);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(507, 38);
+            this.label59.TabIndex = 38;
+            this.label59.Text = "Wprowadź poniżej szczegółowe dane projektu w celu dokonania \r\njego charakterystyk" +
+    "i.";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label60.Location = new System.Drawing.Point(17, 348);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(507, 38);
+            this.label60.TabIndex = 39;
+            this.label60.Text = "Wprowadź poniżej szczegółowe dane projektu w celu dokonania \r\njego charakterystyk" +
+    "i.";
             // 
             // OknoKreator
             // 
@@ -1617,6 +1771,7 @@
             this.DaneProjektu.ResumeLayout(false);
             this.DaneProjektu.PerformLayout();
             this.Zalozenia.ResumeLayout(false);
+            this.Zalozenia.PerformLayout();
             this.GroupBoxSzczDaneProjektu.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
@@ -1632,6 +1787,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumericMaxPrac)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericMaxHarm)).EndInit();
             this.UCP.ResumeLayout(false);
+            this.UCP.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumUUCWZlozony)).EndInit();
@@ -1643,6 +1799,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWSredni)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUAWProsty)).EndInit();
             this.COCOMO.ResumeLayout(false);
+            this.COCOMO.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1753,5 +1910,15 @@
         private System.Windows.Forms.ToolTip ToolTip;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label59;
     }
 }

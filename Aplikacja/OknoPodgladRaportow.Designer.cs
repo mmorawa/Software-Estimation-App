@@ -86,7 +86,7 @@
             this.ButtonNastepna.TabIndex = 5;
             this.ButtonNastepna.Text = ">>";
             this.ButtonNastepna.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ToolTip.SetToolTip(this.ButtonNastepna, "Następna strona");
+            this.ToolTip.SetToolTip(this.ButtonNastepna, "Przejdź do następnej strony");
             this.ButtonNastepna.UseVisualStyleBackColor = true;
             this.ButtonNastepna.Click += new System.EventHandler(this.ButtonNastepna_Click);
             // 
@@ -99,7 +99,7 @@
             this.ButtonPoprzednia.TabIndex = 4;
             this.ButtonPoprzednia.Text = "<<";
             this.ButtonPoprzednia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ToolTip.SetToolTip(this.ButtonPoprzednia, "Poprzednia strona");
+            this.ToolTip.SetToolTip(this.ButtonPoprzednia, "Przejdź do poprzedniej strony");
             this.ButtonPoprzednia.UseVisualStyleBackColor = true;
             this.ButtonPoprzednia.Click += new System.EventHandler(this.ButtonPoprzednia_Click);
             // 
@@ -212,7 +212,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OknoPodgladRaportow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Podgląd Raportu";
+            this.Text = "Podgląd wydruku raportu";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

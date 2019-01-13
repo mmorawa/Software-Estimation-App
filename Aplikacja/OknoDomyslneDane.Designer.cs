@@ -375,9 +375,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(6, 258);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 16);
+            this.label6.Size = new System.Drawing.Size(52, 16);
             this.label6.TabIndex = 38;
-            this.label6.Text = "E-Mail:";
+            this.label6.Text = "E-mail:";
             // 
             // TextBoxNazwaFirmy
             // 
