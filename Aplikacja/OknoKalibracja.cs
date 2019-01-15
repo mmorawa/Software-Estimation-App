@@ -22,7 +22,7 @@ namespace Aplikacja
             OknoGlowne.TempUUCPnaUFP = (double)NumericUCPnaFP.Value;
         }
 
-        //TODO konwersja kulturowa Parse
+        
         private void TextBoxA_TextChanged(object sender, EventArgs e)
         {
             OknoGlowne.TempA = double.Parse(TextBoxA.Text);
