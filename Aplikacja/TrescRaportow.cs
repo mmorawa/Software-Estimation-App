@@ -224,7 +224,7 @@ namespace Aplikacja
                 paragraf.Format.Font.Bold = true;
                 paragraf.AddFormattedText(OknoGlowne.MaxHarm + " miesięcy", TextFormat.NotBold);
 
-                paragraf = sekcja.AddParagraph("Maksymalny całkowity koszt: ");
+                paragraf = sekcja.AddParagraph("Maksymalny koszt: ");
                 paragraf.Format.Font.Bold = true;
                 paragraf.AddFormattedText(OknoGlowne.MaxKoszt + " zł", TextFormat.NotBold);
 
@@ -859,7 +859,7 @@ namespace Aplikacja
             
 
             //nagłówek tabelii
-            paragraf = sekcja.AddParagraph("Tabela 8 - wyniki");
+            paragraf = sekcja.AddParagraph("Tabela 8. Wyniki oszacowania");
             paragraf.Format.SpaceBefore = "1cm";
             paragraf.Format.SpaceAfter = "0.2cm";
 
@@ -987,7 +987,7 @@ namespace Aplikacja
             row = TabelaWyniki.AddRow();
             row.VerticalAlignment = VerticalAlignment.Center;
             cell = row.Cells[0];
-            cell.AddParagraph("Całkowity koszt projektu (w złotych):");
+            cell.AddParagraph("Koszt wytworzenia (w złotych):");
             cell.MergeRight = 2;
 
 

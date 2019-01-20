@@ -1466,7 +1466,7 @@
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(447, 28);
             this.label49.TabIndex = 16;
-            this.label49.Text = "Całkowity koszt projektu (w złotych):";
+            this.label49.Text = "Koszt wytworzenia (w złotych):";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelWynikNGorHarm

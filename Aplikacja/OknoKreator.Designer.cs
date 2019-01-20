@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoKreator));
             this.TabControlKreator = new System.Windows.Forms.TabControl();
             this.DaneProjektu = new System.Windows.Forms.TabPage();
+            this.label51 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.CheckBoxDomyslne = new System.Windows.Forms.CheckBox();
             this.RichTextBoxOpisProjektu = new System.Windows.Forms.RichTextBox();
@@ -56,6 +57,9 @@
             this.ButtonPopDaneProj = new System.Windows.Forms.Button();
             this.ButtonNDaneProj = new System.Windows.Forms.Button();
             this.Zalozenia = new System.Windows.Forms.TabPage();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.ButtonPopZalProj = new System.Windows.Forms.Button();
             this.ButtonNZalProj = new System.Windows.Forms.Button();
@@ -90,6 +94,9 @@
             this.label23 = new System.Windows.Forms.Label();
             this.TimePickerDeadline = new System.Windows.Forms.DateTimePicker();
             this.UCP = new System.Windows.Forms.TabPage();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label43 = new System.Windows.Forms.Label();
             this.NumUUCWZlozony = new System.Windows.Forms.NumericUpDown();
@@ -128,22 +135,15 @@
             this.ButtonPopUCP = new System.Windows.Forms.Button();
             this.ButtonNUCP = new System.Windows.Forms.Button();
             this.COCOMO = new System.Windows.Forms.TabPage();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
             this.ButtonMnPr = new System.Windows.Forms.Button();
             this.ButtonCzSk = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.ButtonZakoncz = new System.Windows.Forms.Button();
             this.ButtonPopCOCOMO = new System.Windows.Forms.Button();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
             this.TabControlKreator.SuspendLayout();
             this.DaneProjektu.SuspendLayout();
             this.Zalozenia.SuspendLayout();
@@ -216,6 +216,16 @@
             this.DaneProjektu.Size = new System.Drawing.Size(567, 763);
             this.DaneProjektu.TabIndex = 0;
             this.DaneProjektu.Text = "Dane projektu";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Arial Black", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label51.Location = new System.Drawing.Point(16, 15);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(161, 27);
+            this.label51.TabIndex = 32;
+            this.label51.Text = "Krok pierwszy";
             // 
             // label50
             // 
@@ -465,6 +475,37 @@
             this.Zalozenia.TabIndex = 1;
             this.Zalozenia.Text = "Założenia projektu";
             // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label56.Location = new System.Drawing.Point(17, 62);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(458, 38);
+            this.label56.TabIndex = 35;
+            this.label56.Text = "Wprowadź poniżej założenia projektu, przy których będzie \r\nwykonane oszacowanie.";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label55.Location = new System.Drawing.Point(17, 348);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(509, 38);
+            this.label55.TabIndex = 34;
+            this.label55.Text = "Wprowadź poniżej ograniczenia nałożone na oszacowanie, \r\nktórych przekroczenie bę" +
+    "dzie sygnalizowane w tabeli z wynikami.";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Arial Black", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label52.Location = new System.Drawing.Point(16, 15);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(121, 27);
+            this.label52.TabIndex = 33;
+            this.label52.Text = "Krok drugi";
+            // 
             // button8
             // 
             this.button8.DialogResult = System.Windows.Forms.DialogResult.Cancel;
@@ -514,7 +555,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 204F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 157F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 152F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 155F));
             this.tableLayoutPanel2.Controls.Add(this.ComboBoxJezykProgram, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label8, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label9, 0, 1);
@@ -756,7 +797,7 @@
             this.TableLayoutOgraniczenia.ColumnCount = 3;
             this.TableLayoutOgraniczenia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 205F));
             this.TableLayoutOgraniczenia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 147F));
-            this.TableLayoutOgraniczenia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 158F));
+            this.TableLayoutOgraniczenia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 167F));
             this.TableLayoutOgraniczenia.Controls.Add(this.NumericMaxZespol, 1, 4);
             this.TableLayoutOgraniczenia.Controls.Add(this.label15, 2, 4);
             this.TableLayoutOgraniczenia.Controls.Add(this.label16, 0, 2);
@@ -990,6 +1031,38 @@
             this.UCP.Size = new System.Drawing.Size(567, 763);
             this.UCP.TabIndex = 2;
             this.UCP.Text = "Use Case Points";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label58.Location = new System.Drawing.Point(17, 62);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(485, 57);
+            this.label58.TabIndex = 37;
+            this.label58.Text = "Policz ile przypadków użycia zalicza się zgodnie z definicją,\r\ndo każdej z poniżs" +
+    "zych kategorii, a następnie wprowadź dane \r\ndo tabeli.";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label57.Location = new System.Drawing.Point(17, 344);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(455, 57);
+            this.label57.TabIndex = 36;
+            this.label57.Text = "Policz ilu aktorów należy, do każdej z poniższych kategorii\r\nw oparciu o sposób w" +
+    " jaki komunikują się z systemem,\r\na następnie wprowadź dane do tabeli.";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Arial Black", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label53.Location = new System.Drawing.Point(16, 15);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(127, 27);
+            this.label53.TabIndex = 33;
+            this.label53.Text = "Krok trzeci";
             // 
             // tableLayoutPanel1
             // 
@@ -1596,6 +1669,38 @@
             this.COCOMO.TabIndex = 4;
             this.COCOMO.Text = "Model COCOMO II";
             // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label60.Location = new System.Drawing.Point(17, 348);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(507, 38);
+            this.label60.TabIndex = 39;
+            this.label60.Text = "Wprowadź poniżej szczegółowe dane projektu w celu dokonania \r\njego charakterystyk" +
+    "i.";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label59.Location = new System.Drawing.Point(17, 62);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(507, 38);
+            this.label59.TabIndex = 38;
+            this.label59.Text = "Wprowadź poniżej szczegółowe dane projektu w celu dokonania \r\njego charakterystyk" +
+    "i.";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Arial Black", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label54.Location = new System.Drawing.Point(16, 15);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(151, 27);
+            this.label54.TabIndex = 33;
+            this.label54.Text = "Krok czwarty";
+            // 
             // ButtonMnPr
             // 
             this.ButtonMnPr.Location = new System.Drawing.Point(167, 508);
@@ -1650,111 +1755,6 @@
             this.ButtonPopCOCOMO.Text = "< Poprzedni";
             this.ButtonPopCOCOMO.UseVisualStyleBackColor = true;
             this.ButtonPopCOCOMO.Click += new System.EventHandler(this.ButtonPopCOCOMO_Click);
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Arial Black", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label51.Location = new System.Drawing.Point(16, 15);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(161, 27);
-            this.label51.TabIndex = 32;
-            this.label51.Text = "Krok pierwszy";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Arial Black", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label52.Location = new System.Drawing.Point(16, 15);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(121, 27);
-            this.label52.TabIndex = 33;
-            this.label52.Text = "Krok drugi";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Arial Black", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label53.Location = new System.Drawing.Point(16, 15);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(127, 27);
-            this.label53.TabIndex = 33;
-            this.label53.Text = "Krok trzeci";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Arial Black", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label54.Location = new System.Drawing.Point(16, 15);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(151, 27);
-            this.label54.TabIndex = 33;
-            this.label54.Text = "Krok czwarty";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label55.Location = new System.Drawing.Point(17, 348);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(509, 38);
-            this.label55.TabIndex = 34;
-            this.label55.Text = "Wprowadź poniżej ograniczenia nałożone na oszacowanie, \r\nktórych przekroczenie bę" +
-    "dzie sygnalizowane w tabeli z wynikami.";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label56.Location = new System.Drawing.Point(17, 62);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(458, 38);
-            this.label56.TabIndex = 35;
-            this.label56.Text = "Wprowadź poniżej założenia projektu, przy których będzie \r\nwykonane oszacowanie.";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label57.Location = new System.Drawing.Point(17, 344);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(455, 57);
-            this.label57.TabIndex = 36;
-            this.label57.Text = "Policz ilu aktorów należy, do każdej z poniższych kategorii\r\nw oparciu o sposób w" +
-    " jaki komunikują się z systemem,\r\na następnie wprowadź dane do tabeli.";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label58.Location = new System.Drawing.Point(17, 62);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(485, 57);
-            this.label58.TabIndex = 37;
-            this.label58.Text = "Policz ile przypadków użycia zalicza się zgodnie z definicją,\r\ndo każdej z poniżs" +
-    "zych kategorii, a następnie wprowadź dane \r\ndo tabeli.";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label59.Location = new System.Drawing.Point(17, 62);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(507, 38);
-            this.label59.TabIndex = 38;
-            this.label59.Text = "Wprowadź poniżej szczegółowe dane projektu w celu dokonania \r\njego charakterystyk" +
-    "i.";
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label60.Location = new System.Drawing.Point(17, 348);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(507, 38);
-            this.label60.TabIndex = 39;
-            this.label60.Text = "Wprowadź poniżej szczegółowe dane projektu w celu dokonania \r\njego charakterystyk" +
-    "i.";
             // 
             // OknoKreator
             // 

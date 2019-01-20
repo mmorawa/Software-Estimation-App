@@ -400,8 +400,8 @@
             // NumericMaxZespol
             // 
             this.NumericMaxZespol.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericMaxZespol.Location = new System.Drawing.Point(208, 171);
-            this.NumericMaxZespol.Margin = new System.Windows.Forms.Padding(3, 11, 3, 3);
+            this.NumericMaxZespol.Location = new System.Drawing.Point(208, 170);
+            this.NumericMaxZespol.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.NumericMaxZespol.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -453,8 +453,8 @@
             // 
             this.NumericMaxKoszt.DecimalPlaces = 2;
             this.NumericMaxKoszt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericMaxKoszt.Location = new System.Drawing.Point(208, 131);
-            this.NumericMaxKoszt.Margin = new System.Windows.Forms.Padding(3, 11, 3, 3);
+            this.NumericMaxKoszt.Location = new System.Drawing.Point(208, 130);
+            this.NumericMaxKoszt.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.NumericMaxKoszt.Maximum = new decimal(new int[] {
             -1530494976,
             232830,
@@ -494,8 +494,8 @@
             // NumericMaxPrac
             // 
             this.NumericMaxPrac.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericMaxPrac.Location = new System.Drawing.Point(208, 11);
-            this.NumericMaxPrac.Margin = new System.Windows.Forms.Padding(3, 11, 3, 3);
+            this.NumericMaxPrac.Location = new System.Drawing.Point(208, 10);
+            this.NumericMaxPrac.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.NumericMaxPrac.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -530,7 +530,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(199, 40);
             this.label5.TabIndex = 15;
-            this.label5.Text = "Maksymalny całkowity koszt:";
+            this.label5.Text = "Maksymalny koszt wytworzenia:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label10
@@ -548,8 +548,8 @@
             // NumericMaxHarm
             // 
             this.NumericMaxHarm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumericMaxHarm.Location = new System.Drawing.Point(208, 51);
-            this.NumericMaxHarm.Margin = new System.Windows.Forms.Padding(3, 11, 3, 3);
+            this.NumericMaxHarm.Location = new System.Drawing.Point(208, 50);
+            this.NumericMaxHarm.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.NumericMaxHarm.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -580,8 +580,8 @@
             // 
             this.TableLayoutOgraniczenia.SetColumnSpan(this.TimePickerDeadline, 2);
             this.TimePickerDeadline.Dock = System.Windows.Forms.DockStyle.Left;
-            this.TimePickerDeadline.Location = new System.Drawing.Point(208, 91);
-            this.TimePickerDeadline.Margin = new System.Windows.Forms.Padding(3, 11, 3, 3);
+            this.TimePickerDeadline.Location = new System.Drawing.Point(208, 90);
+            this.TimePickerDeadline.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.TimePickerDeadline.Name = "TimePickerDeadline";
             this.TimePickerDeadline.Size = new System.Drawing.Size(183, 22);
             this.TimePickerDeadline.TabIndex = 10;
