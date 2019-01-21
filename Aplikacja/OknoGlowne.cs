@@ -59,7 +59,7 @@ namespace Aplikacja
 
         public static long[] TabUUCW = new long[3];
         public static long[] TempTabUUCW = new long[3];
-        double[] wagiUC = { 5, 10, 15 };
+        public static double[] wagiUC = { 5, 10, 15 };
 
         public static long[] TabUAW = new long[3];
         public static long[] TempTabUAW = new long[3];
@@ -741,7 +741,7 @@ namespace Aplikacja
         private void ButtonNowyProjekt_Click(object sender, EventArgs e)
         {
 
-            DialogResult rezultat = MessageBox.Show("Czy chcesz zapisać obecny projekt?", "Uwaga!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+            DialogResult rezultat = MessageBox.Show("Czy chcesz zapisać obecny projekt?", "Uwaga!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
 
             if (rezultat == DialogResult.Yes)
             {
@@ -754,7 +754,7 @@ namespace Aplikacja
 
             UsuniecieDanych();
 
-            MessageBox.Show("Rozpoczęto nowy projekt.");
+            MessageBox.Show("Rozpoczęto nowy projekt.", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ZmianaStatusStrip("Rozpoczęto nowy projekt.");
         }
 
@@ -776,7 +776,7 @@ namespace Aplikacja
                     OpisProjektu = TempOpisProjektu;
                     Domyslne = TempDomyslne;
 
-                    MessageBox.Show("Szczegółowe dane projektu zostały zmienione.", "Sukces");
+                    MessageBox.Show("Szczegółowe dane projektu zostały zmienione.", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ZmianaStatusStrip("Szczegółowe dane projektu zostały zmienione.");
                 }
             }
@@ -789,7 +789,7 @@ namespace Aplikacja
             DialogResult rezultat = MessageBox.Show("Czy chcesz zapisać obecny projekt?",
                 "Uwaga!",
                 MessageBoxButtons.YesNoCancel,
-                MessageBoxIcon.Exclamation);
+                MessageBoxIcon.Question);
 
             if (rezultat == DialogResult.Yes)
             {
@@ -934,7 +934,7 @@ namespace Aplikacja
                                 OpisProjektu += sr.ReadLine() + "\n";
                             }
 
-                            MessageBox.Show("Udało się otworzyć projekt z pliku.", "Sukces");
+                            MessageBox.Show("Udało się otworzyć projekt z pliku.", "Sukces",  MessageBoxButtons.OK, MessageBoxIcon.Information);
                             ZmianaStatusStrip("Udało się otworzyć projekt z pliku.");
 
                         }
@@ -969,7 +969,7 @@ namespace Aplikacja
                     Properties.Settings.Default.DzRobGodz = TempDzRobGodz;
 
                     //Properties.Settings.Default.Save();
-                    MessageBox.Show("Domyślne ustawienia projektu zostały zmienione.", "Sukces");
+                    MessageBox.Show("Domyślne ustawienia projektu zostały zmienione.", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ZmianaStatusStrip("Domyślne ustawienia projektu zostały zmienione.");
                 }
             }
@@ -1092,7 +1092,7 @@ namespace Aplikacja
                 sw.WriteLine(OpisProjektu);
 
 
-                MessageBox.Show("Plik zapisano.");
+                MessageBox.Show("Plik zapisano.", "Sukces",  MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -1115,7 +1115,9 @@ namespace Aplikacja
             OpisProjektu = "";
 
             Ograniczenia = false;
+            TempOgraniczenia = false;
             Domyslne = false;
+            TempDomyslne = false;
 
             NumUUCWProsty.Value = 0;
             NumUUCWSredni.Value = 0;
@@ -1138,10 +1140,15 @@ namespace Aplikacja
 
 
             MaxPrac = 0;
+            TempMaxPrac = 0;
             MaxHarm = 0;
+            TempMaxHarm = 0;
             Deadline = DateTime.Today;
+            TempDeadline = DateTime.Today;
             MaxKoszt = 0;
+            TempMaxKoszt = 0;
             MaxZespol = 0;
+            TempMaxZespol = 0;
 
             UsuniecieWynikow();
 
@@ -1252,7 +1259,7 @@ namespace Aplikacja
 
                     Oszacowanie();
 
-                    MessageBox.Show("Założenia projektu zostały zmienione.", "Sukces");
+                    MessageBox.Show("Założenia projektu zostały zmienione.", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ZmianaStatusStrip("Założenia projektu zostały zmienione.");
                 }
             }
@@ -1276,7 +1283,7 @@ namespace Aplikacja
                     //Properties.Settings.Default.Save();
                     Oszacowanie();
 
-                    MessageBox.Show("Kalibracja modelu została wykonana.", "Sukces");
+                    MessageBox.Show("Kalibracja modelu została wykonana.", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ZmianaStatusStrip("Kalibracja modelu została wykonana.");
                 }
             }
@@ -1286,7 +1293,7 @@ namespace Aplikacja
         private void ButtonKreator_Click(object sender, EventArgs e)
         {
 
-            DialogResult rezultat = MessageBox.Show("Czy chcesz zapisać obecny projekt?", "Uwaga!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+            DialogResult rezultat = MessageBox.Show("Czy chcesz zapisać obecny projekt?", "Uwaga!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
 
             if (rezultat == DialogResult.Yes)
             {
@@ -1355,6 +1362,11 @@ namespace Aplikacja
                     Oszacowanie();
                     ZmianaStatusStrip("Wykonano oszacowanie.");
                 }
+                else
+                {
+                    TabIndCzynnSkali = new int[] { 2, 2, 2, 2, 2 };
+                    TabIndMnPrac = new int[] { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 };
+                }
 
             }
         }
@@ -1377,7 +1389,7 @@ namespace Aplikacja
 
                     Oszacowanie();
 
-                    MessageBox.Show("Wprowadzono nowe dane do tablicy przeliczeniowej punktów funkcyjnych na źródłowe linie kodu.", "Sukces");
+                    MessageBox.Show("Wprowadzono nowe dane do tablicy przeliczeniowej punktów funkcyjnych na źródłowe linie kodu.", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ZmianaStatusStrip("Wprowadzono nowe dane do tablicy przeliczeniowej punktów funkcyjnych na źródłowe linie kodu.");
                 }
             }
@@ -1386,7 +1398,7 @@ namespace Aplikacja
 
         private void OknoGlowne_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult rezultat = MessageBox.Show("Czy chcesz zapisać obecny projekt?", "Uwaga!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+            DialogResult rezultat = MessageBox.Show("Czy chcesz zapisać obecny projekt?", "Uwaga!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
 
             if (rezultat == DialogResult.Yes)
             {

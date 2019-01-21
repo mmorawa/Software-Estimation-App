@@ -66,8 +66,8 @@ namespace Aplikacja
             {
                 CheckBoxDomyslne.Checked = false;
                 OknoGlowne.TempDomyslne = false;
-                //TODO komunikaty
-                MessageBox.Show("Nie ma żadnych domyślnych danych.");
+                
+                MessageBox.Show("Nie ma żadnych domyślnych danych.", "Uwaga!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -81,7 +81,7 @@ namespace Aplikacja
                 TextBoxEmail.Text = Properties.Settings.Default.Email;
 
                 OknoGlowne.TempDomyslne = true;
-                MessageBox.Show("Domyślne dane zostały wprowadzone.", "Sukces");
+                MessageBox.Show("Domyślne dane zostały wprowadzone.", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {

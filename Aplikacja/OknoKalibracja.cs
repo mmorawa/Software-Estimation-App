@@ -57,7 +57,7 @@ namespace Aplikacja
             OknoGlowne.TempC = 3.67;
             OknoGlowne.TempD = 0.28;
 
-            MessageBox.Show("Domyślne wartości modelu zostały przywrócone.", "Sukces");
+            MessageBox.Show("Domyślne wartości modelu zostały przywrócone.", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }       
     }

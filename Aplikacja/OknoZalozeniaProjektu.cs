@@ -104,7 +104,7 @@ namespace Aplikacja
             NumericOsoboMGodz.Value = Properties.Settings.Default.OsoboMGodz;
             NumericDzRobGodz.Value = Properties.Settings.Default.DzRobGodz;
 
-            MessageBox.Show("Domyślne wartości zostały przywrócone.", "Sukces");
+            MessageBox.Show("Domyślne wartości zostały przywrócone.", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
 

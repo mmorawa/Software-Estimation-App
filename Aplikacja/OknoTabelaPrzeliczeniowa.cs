@@ -288,7 +288,7 @@ namespace Aplikacja
                 42, 18, 24, 65, 191, 45, 35, 40, 49, 53, 53, 48, 30, 21, 34, 60, 40, 32,
                 15, 80, 35, 28, 80, 66, 37, 60, 75, 21, 60, 44 };
 
-            MessageBox.Show("Domyślne wartości modelu zostały przywrócone.", "Sukces");
+            MessageBox.Show("Domyślne wartości modelu zostały przywrócone.", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

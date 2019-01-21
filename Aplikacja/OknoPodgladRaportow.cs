@@ -106,7 +106,6 @@ namespace Aplikacja
                     PodgladRaportu.Document.BindToRenderer(null);
                     printer.Save(ZapiszPDFDialog.FileName);
 
-                    Process.Start(ZapiszPDFDialog.FileName);
                 }
             }
         }
@@ -127,7 +126,6 @@ namespace Aplikacja
                     var rtf = new RtfDocumentRenderer();
                     rtf.Render(PodgladRaportu.Document, "test.rtf", null);
 
-                    Process.Start("test.rtf");
                 }
             }
         }

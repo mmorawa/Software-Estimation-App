@@ -75,7 +75,7 @@ namespace Aplikacja
             {
                 CheckBoxDomyslne.Checked = false;
                 OknoGlowne.TempDomyslne = false;
-                MessageBox.Show("Nie ma żadnych domyślnych danych.");
+                MessageBox.Show("Nie ma żadnych domyślnych danych.", "Uwaga!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -234,6 +234,13 @@ namespace Aplikacja
             {
                 DialogResult rezultat = OknoCzynS.ShowDialog();
 
+                if (rezultat == DialogResult.OK)
+                {
+                    for (int i = 0; i < 5; i++)
+                    {
+                        OknoGlowne.TabIndCzynnSkali[i] = OknoGlowne.TempTabIndCzynnSkali[i];
+                    }
+                }
             }
         }
 
@@ -243,6 +250,13 @@ namespace Aplikacja
             {
                 DialogResult rezultat = OknoMnozP.ShowDialog();
 
+                if (rezultat == DialogResult.OK)
+                {
+                    for (int i = 0; i < 17; i++)
+                    {
+                        OknoGlowne.TabIndMnPrac[i] = OknoGlowne.TempTabIndMnPrac[i];
+                    }
+                }
             }
         }
 
@@ -251,8 +265,25 @@ namespace Aplikacja
             TabControlKreator.SelectTab(2);
         }
 
+        private void ButtonZakoncz_Click(object sender, EventArgs e)
+        {
+            double sprawdzenie = 0;
+            for (int i = 0; i < 3; i++)
+            {
+                sprawdzenie += OknoGlowne.TempTabUUCW[i] * OknoGlowne.wagiUC[i];
+            }
 
-
+            if (sprawdzenie == 0)
+            {
+                MessageBox.Show("Wprowadź dane odnośnie liczby przypadków użycia.", "Uwaga!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                DialogResult = DialogResult.None;
+            }
+            else
+            {
+                DialogResult = DialogResult.OK;
+            }
+            
+        }
     }
 
 

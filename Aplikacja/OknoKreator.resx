@@ -120,6 +120,20 @@
   <metadata name="ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="label60.Text" xml:space="preserve">
+    <value>Mnożniki pracochłonności mają za zadanie odzwierciedlić wpływ,
+jaki mają warunki towarzyszące wytwarzaniu oprogramowania na 
+nominalną pracochłonność. Kliknij na przycisk poniżej i dokonaj oceny
+wszystkich mnożników pracochłonności od poziomu bardzo niskiego 
+do ekstra wysokiego.
+</value>
+  </data>
+  <data name="label59.Text" xml:space="preserve">
+    <value>Czynniki skali modelu COCOMO II mają za zadanie uwzględnić 
+pojawiającą się przy wytwarzaniu oprogramowania ekonomię lub 
+dysekonomię skali. Kliknij na przycisk poniżej i dokonaj oceny od 
+poziomu bardzo niskiego do ekstra wysokiego pięciu czynników skali.</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

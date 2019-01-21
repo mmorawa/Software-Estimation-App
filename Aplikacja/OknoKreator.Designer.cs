@@ -135,6 +135,7 @@
             this.ButtonPopUCP = new System.Windows.Forms.Button();
             this.ButtonNUCP = new System.Windows.Forms.Button();
             this.COCOMO = new System.Windows.Forms.TabPage();
+            this.label61 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
@@ -1655,6 +1656,7 @@
             // COCOMO
             // 
             this.COCOMO.BackColor = System.Drawing.SystemColors.Control;
+            this.COCOMO.Controls.Add(this.label61);
             this.COCOMO.Controls.Add(this.label60);
             this.COCOMO.Controls.Add(this.label59);
             this.COCOMO.Controls.Add(this.label54);
@@ -1669,16 +1671,27 @@
             this.COCOMO.TabIndex = 4;
             this.COCOMO.Text = "Model COCOMO II";
             // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label61.Location = new System.Drawing.Point(17, 530);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(488, 57);
+            this.label61.TabIndex = 40;
+            this.label61.Text = "Jeśli wprowadziłeś wszystkie potrzebne dane to po kliknięciu\r\nprzycisku Zakończ w" +
+    "yjdziesz z kreatora a wyniki oszacowania \r\nwyświetlą się w głównym oknie aplikac" +
+    "ji.";
+            // 
             // label60
             // 
             this.label60.AutoSize = true;
             this.label60.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label60.Location = new System.Drawing.Point(17, 348);
+            this.label60.Location = new System.Drawing.Point(17, 283);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(507, 38);
+            this.label60.Size = new System.Drawing.Size(550, 95);
             this.label60.TabIndex = 39;
-            this.label60.Text = "Wprowadź poniżej szczegółowe dane projektu w celu dokonania \r\njego charakterystyk" +
-    "i.";
+            this.label60.Text = resources.GetString("label60.Text");
             // 
             // label59
             // 
@@ -1686,10 +1699,9 @@
             this.label59.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label59.Location = new System.Drawing.Point(17, 62);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(507, 38);
+            this.label59.Size = new System.Drawing.Size(545, 76);
             this.label59.TabIndex = 38;
-            this.label59.Text = "Wprowadź poniżej szczegółowe dane projektu w celu dokonania \r\njego charakterystyk" +
-    "i.";
+            this.label59.Text = resources.GetString("label59.Text");
             // 
             // label54
             // 
@@ -1703,7 +1715,7 @@
             // 
             // ButtonMnPr
             // 
-            this.ButtonMnPr.Location = new System.Drawing.Point(167, 508);
+            this.ButtonMnPr.Location = new System.Drawing.Point(170, 436);
             this.ButtonMnPr.Name = "ButtonMnPr";
             this.ButtonMnPr.Size = new System.Drawing.Size(219, 27);
             this.ButtonMnPr.TabIndex = 13;
@@ -1714,7 +1726,7 @@
             // 
             // ButtonCzSk
             // 
-            this.ButtonCzSk.Location = new System.Drawing.Point(196, 186);
+            this.ButtonCzSk.Location = new System.Drawing.Point(197, 190);
             this.ButtonCzSk.Name = "ButtonCzSk";
             this.ButtonCzSk.Size = new System.Drawing.Size(173, 27);
             this.ButtonCzSk.TabIndex = 12;
@@ -1736,7 +1748,6 @@
             // 
             // ButtonZakoncz
             // 
-            this.ButtonZakoncz.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.ButtonZakoncz.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ButtonZakoncz.Location = new System.Drawing.Point(446, 712);
             this.ButtonZakoncz.Name = "ButtonZakoncz";
@@ -1744,6 +1755,7 @@
             this.ButtonZakoncz.TabIndex = 6;
             this.ButtonZakoncz.Text = "Zakończ";
             this.ButtonZakoncz.UseVisualStyleBackColor = true;
+            this.ButtonZakoncz.Click += new System.EventHandler(this.ButtonZakoncz_Click);
             // 
             // ButtonPopCOCOMO
             // 
@@ -1919,5 +1931,6 @@
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label61;
     }
 }

@@ -50,7 +50,7 @@ namespace Aplikacja
             {
                 ComboBoxMnPrNiezaw.SelectedIndex = OknoGlowne.TempTabIndMnPrac[0];
                 MessageBox.Show("Mnożnik wymagana niezawodność oprogramowania może być co najwyżej o jeden poziom niższy od " +
-                    "mnożnika możliwość ponownego wykorzystania.", "Ostrzeżenie");
+                    "mnożnika możliwość ponownego wykorzystania.", "Ostrzeżenie", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             
         }
@@ -72,19 +72,19 @@ namespace Aplikacja
             {
                 ComboBoxMnPrPonow.SelectedIndex = OknoGlowne.TempTabIndMnPrac[3];
                 MessageBox.Show("Zwiększenie poziomu mnożnika możliwość ponownego wykorzystania wymaga najpierw podwyższenia poziomu" +
-                    " mnożnika wymagana niezawodność oprogramowania co najmniej do poziomu o jeden niższego od zaplanowanego zwiększenia tego pierwszego. ", "Ostrzeżenie");
+                    " mnożnika wymagana niezawodność oprogramowania co najmniej do poziomu o jeden niższego od zaplanowanego zwiększenia tego pierwszego. ", "Ostrzeżenie", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
             else if ((ComboBoxMnPrPonow.SelectedIndex == 1 || ComboBoxMnPrPonow.SelectedIndex == 2) && OknoGlowne.TempTabIndMnPrac[4] < 2)
             {
                 ComboBoxMnPrPonow.SelectedIndex = OknoGlowne.TempTabIndMnPrac[3];
                 MessageBox.Show("Zwiększenie poziomu mnożnika możliwość ponownego wykorzystania do poziomu nominalnego lub wysokiego wymaga najpierw podwyższenia poziomu" +
-                    " mnożnika dokumentacja odpowiada wymaganiom cyklu życia co najmniej do poziomu nominalnego. ", "Ostrzeżenie");
+                    " mnożnika dokumentacja odpowiada wymaganiom cyklu życia co najmniej do poziomu nominalnego. ", "Ostrzeżenie", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if ((ComboBoxMnPrPonow.SelectedIndex == 3 || ComboBoxMnPrPonow.SelectedIndex == 4) && OknoGlowne.TempTabIndMnPrac[4] < 3)
             {
                 MessageBox.Show("Zwiększenie poziomu mnożnika możliwość ponownego wykorzystania do poziomu bardzo wysokiego lub ekstra wysokiego wymaga najpierw podwyższenia poziomu" +
-                    " mnożnika dokumentacja odpowiada wymaganiom cyklu życia co najmniej do poziomu wysokiego. ", "Ostrzeżenie");
+                    " mnożnika dokumentacja odpowiada wymaganiom cyklu życia co najmniej do poziomu wysokiego. ", "Ostrzeżenie", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 ComboBoxMnPrPonow.SelectedIndex = OknoGlowne.TempTabIndMnPrac[3];
             }
             else
@@ -101,13 +101,13 @@ namespace Aplikacja
             {
                 ComboBoxMnPrDoku.SelectedIndex = OknoGlowne.TempTabIndMnPrac[4];
                 MessageBox.Show("Mnożnik dokumentacja odpowiada wymaganiom cyklu życia musi być co najmniej na poziomie nominalnym," +
-                    " gdy poziom mnożnika możliwość ponownego wykorzystania jest na poziomie nominalnym lub wysokim.", "Ostrzeżenie"); 
+                    " gdy poziom mnożnika możliwość ponownego wykorzystania jest na poziomie nominalnym lub wysokim.", "Ostrzeżenie", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if ((OknoGlowne.TempTabIndMnPrac[3] == 3 || OknoGlowne.TempTabIndMnPrac[3] == 4) && ComboBoxMnPrDoku.SelectedIndex < 3)
             {
                 ComboBoxMnPrDoku.SelectedIndex = OknoGlowne.TempTabIndMnPrac[4];
                 MessageBox.Show("Mnożnik dokumentacja odpowiada wymaganiom cyklu życia musi być co najmniej na poziomie wysokim," +
-                    " gdy poziom mnożnika możliwość ponownego wykorzystania jest na poziomie bardzo wysokim lub esktra wysokim.", "Ostrzeżenie");
+                    " gdy poziom mnożnika możliwość ponownego wykorzystania jest na poziomie bardzo wysokim lub esktra wysokim.", "Ostrzeżenie", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
