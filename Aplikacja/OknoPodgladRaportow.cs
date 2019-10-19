@@ -105,7 +105,7 @@ namespace Aplikacja
                     printer.RenderDocument();
                     PodgladRaportu.Document.BindToRenderer(null);
                     printer.Save(ZapiszPDFDialog.FileName);
-
+                    MessageBox.Show("Raport został wyeksportowany do formatu PDF.", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }
@@ -122,10 +122,9 @@ namespace Aplikacja
 
                 if (rezultat == DialogResult.OK)
                 {
-
                     var rtf = new RtfDocumentRenderer();
-                    rtf.Render(PodgladRaportu.Document, "test.rtf", null);
-
+                    rtf.Render(PodgladRaportu.Document, ZapiszRTFDialog.FileName, null);
+                    MessageBox.Show("Raport został wyeksportowany do formatu RTF.", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }

@@ -49,7 +49,6 @@
             this.ToolStripTablicaPrzeliczeniowa = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuKalibracja = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuPomoc = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuDokumentacja = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuOProgramie = new System.Windows.Forms.ToolStripMenuItem();
             this.GroupBoxDaneProjektu = new System.Windows.Forms.GroupBox();
             this.ButtonZalozenia = new System.Windows.Forms.Button();
@@ -321,24 +320,16 @@
             // ToolStripMenuPomoc
             // 
             this.ToolStripMenuPomoc.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuDokumentacja,
             this.ToolStripMenuOProgramie});
             this.ToolStripMenuPomoc.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ToolStripMenuPomoc.Name = "ToolStripMenuPomoc";
             this.ToolStripMenuPomoc.Size = new System.Drawing.Size(62, 21);
             this.ToolStripMenuPomoc.Text = "Pomo&c";
             // 
-            // ToolStripMenuDokumentacja
-            // 
-            this.ToolStripMenuDokumentacja.Name = "ToolStripMenuDokumentacja";
-            this.ToolStripMenuDokumentacja.Size = new System.Drawing.Size(163, 22);
-            this.ToolStripMenuDokumentacja.Text = "&Dokumentacja";
-            this.ToolStripMenuDokumentacja.Click += new System.EventHandler(this.ToolStripMenuDokumentacja_Click);
-            // 
             // ToolStripMenuOProgramie
             // 
             this.ToolStripMenuOProgramie.Name = "ToolStripMenuOProgramie";
-            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(163, 22);
+            this.ToolStripMenuOProgramie.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuOProgramie.Text = "&O aplikacji";
             this.ToolStripMenuOProgramie.Click += new System.EventHandler(this.ToolStripMenuOProgramie_Click);
             // 
@@ -1737,7 +1728,6 @@
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuOpcje;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuPomoc;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuWyjscie;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuDokumentacja;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuOProgramie;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuOtworzProj;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuZapiszJakoProj;

@@ -44,7 +44,7 @@ namespace Aplikacja
         }
 
 
-        //TODO domyślnie decimal????
+
 
         private void ComboBoxJezykProgram_SelectedIndexChanged(object sender, EventArgs e)
         {

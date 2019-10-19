@@ -7,7 +7,7 @@ using MigraDoc.DocumentObjectModel.Fields;
 
 namespace Aplikacja
 {
-    
+
     class TrescRaportow
     {
 
@@ -38,17 +38,10 @@ namespace Aplikacja
 
             styl = dokument.Styles["Heading2"];
             styl.Font.Size = 16;
-
-            styl.ParagraphFormat.PageBreakBefore = true;
-            styl.ParagraphFormat.SpaceBefore = "1cm";
-            styl.ParagraphFormat.SpaceAfter = 6;
-
-            styl = dokument.Styles["Heading3"];
-            styl.Font.Size = 16;
-
             styl.ParagraphFormat.PageBreakBefore = false;
             styl.ParagraphFormat.SpaceBefore = "1cm";
             styl.ParagraphFormat.SpaceAfter = 6;
+
 
             styl = dokument.Styles[StyleNames.Header];
             styl.ParagraphFormat.AddTabStop("16cm", TabAlignment.Right);
@@ -149,10 +142,10 @@ namespace Aplikacja
         {
             var sekcja = dokument.LastSection;
 
-            
+
             var paragraf = sekcja.AddParagraph("Podstawowe informacje", "Heading1");
 
-            paragraf = sekcja.AddParagraph("Dane projektu", "Heading3");
+            paragraf = sekcja.AddParagraph("Dane projektu", "Heading2");
 
             paragraf = sekcja.AddParagraph("Nazwa projektu: ");
             paragraf.Format.Font.Bold = true;
@@ -175,7 +168,7 @@ namespace Aplikacja
             paragraf.Format.Font.Bold = true;
             paragraf.AddFormattedText(OknoGlowne.DataProjektu, TextFormat.NotBold);
 
-            paragraf = sekcja.AddParagraph("Dane firmy", "Heading3");
+            paragraf = sekcja.AddParagraph("Dane firmy", "Heading2");
 
             paragraf = sekcja.AddParagraph("Nazwa firmy: ");
             paragraf.Format.Font.Bold = true;
@@ -194,7 +187,7 @@ namespace Aplikacja
             paragraf.AddFormattedText(OknoGlowne.Email, TextFormat.NotBold);
 
 
-            paragraf = sekcja.AddParagraph("Założenia projektu", "Heading3");
+            paragraf = sekcja.AddParagraph("Założenia projektu", "Heading2");
             paragraf = sekcja.AddParagraph("Główny język programowania użyty w projekcie: ");
             paragraf.Format.Font.Bold = true;
             paragraf.AddFormattedText(OknoGlowne.JezykProg[OknoGlowne.JezykProgramowania], TextFormat.NotBold);
@@ -214,23 +207,45 @@ namespace Aplikacja
 
             if (OknoGlowne.Ograniczenia == true)
             {
-                paragraf = sekcja.AddParagraph("Ograniczenia nałożone na oszacowanie", "Heading3");
+                paragraf = sekcja.AddParagraph("Ograniczenia nałożone na oszacowanie", "Heading2");
 
-                paragraf = sekcja.AddParagraph("Maksymalna pracochłonność: ");
-                paragraf.Format.Font.Bold = true;
-                paragraf.AddFormattedText(OknoGlowne.MaxPrac + " osobomiesięcy", TextFormat.NotBold);
+                if (OknoGlowne.MaxPrac != 0)
+                {
+                    paragraf = sekcja.AddParagraph("Maksymalna pracochłonność: ");
+                    paragraf.Format.Font.Bold = true;
+                    paragraf.AddFormattedText(OknoGlowne.MaxPrac + " osobomiesięcy", TextFormat.NotBold);
+                }
 
-                paragraf = sekcja.AddParagraph("Maksymalny harmonogram: ");
-                paragraf.Format.Font.Bold = true;
-                paragraf.AddFormattedText(OknoGlowne.MaxHarm + " miesięcy", TextFormat.NotBold);
+                if (OknoGlowne.MaxHarm != 0)
+                {
+                    paragraf = sekcja.AddParagraph("Maksymalny harmonogram: ");
+                    paragraf.Format.Font.Bold = true;
+                    paragraf.AddFormattedText(OknoGlowne.MaxHarm + " miesięcy", TextFormat.NotBold);
+                }
 
-                paragraf = sekcja.AddParagraph("Maksymalny koszt: ");
-                paragraf.Format.Font.Bold = true;
-                paragraf.AddFormattedText(OknoGlowne.MaxKoszt + " zł", TextFormat.NotBold);
+                if (OknoGlowne.Deadline.Date != DateTime.Today)
+                {
+                    paragraf = sekcja.AddParagraph("Nieprzekraczalny termin zakończenia projektu: ");
+                    paragraf.Format.Font.Bold = true;
+                    paragraf.AddFormattedText(OknoGlowne.Deadline.Date.ToLongDateString(), TextFormat.NotBold);
+                }
 
+                if (OknoGlowne.MaxKoszt != 0)
+                {
+                    paragraf = sekcja.AddParagraph("Maksymalny koszt wytworzenia: ");
+                    paragraf.Format.Font.Bold = true;
+                    paragraf.AddFormattedText(OknoGlowne.MaxKoszt + " zł", TextFormat.NotBold);
+                }
+
+                if (OknoGlowne.MaxZespol != 0)
+                {
+                    paragraf = sekcja.AddParagraph("Maksymalna średnia wielkość zespołu: ");
+                    paragraf.Format.Font.Bold = true;
+                    paragraf.AddFormattedText(OknoGlowne.MaxZespol + " osób", TextFormat.NotBold);
+                }
             }
 
-            paragraf = sekcja.AddParagraph("Opis projektu", "Heading3");
+            paragraf = sekcja.AddParagraph("Opis projektu", "Heading2");
             paragraf = sekcja.AddParagraph(OknoGlowne.OpisProjektu);
 
         }
@@ -238,17 +253,23 @@ namespace Aplikacja
         //Dane wprowadzone przez użytkownika w celu dokonania oszacowania
         public static void WprowadzoneDane(Document dokument)
         {
-            
+
             var sekcja = dokument.LastSection;
 
             var paragraf = sekcja.AddParagraph("Dane wykorzystane do oszacowania pracochłonności", "Heading1");
 
-            paragraf = sekcja.AddParagraph("Metoda Use Case Points", "Heading3");
+            paragraf = sekcja.AddParagraph("Metoda Use Case Points", "Heading2");
 
-            //------------------------------Tabela UUCW--------------------------------------------
+            paragraf = sekcja.AddParagraph("Metoda Use Case Points jest wykorzystywana w modelu szacującym do obliczenia " +
+                "liczby punktów nieskorygowanych przypadków użycia (Unadjusted Use Case Points - UUCP), które umożliwiają po " +
+                "przeliczeniu ich na nieskorygowane punkty funkcyjne (ang. Unadjusted Function Points - UFP) na uzyskanie estymacji rozmiaru " +
+                "oprogramowania. W tabeli 1 oraz 2 znajdują się dane odnośnie liczby prostych, średnich i złożonych przypadków użycia oraz aktorów, które " +
+                "są wymagane do przeprowadzenia powyższego oszacowania.");
+            paragraf.Format.SpaceAfter = "0.5cm";
+            //------------------------------Tabela przypadki użycia--------------------------------------------
 
             //nagłówek tabelii
-            paragraf = sekcja.AddParagraph("Tabela 1 - przypadki użycia");
+            paragraf = sekcja.AddParagraph("Tabela 1. Przypadki użycia");
             paragraf.Format.SpaceAfter = "0.2cm";
 
             var TabelaUUCW = new Table();
@@ -323,11 +344,11 @@ namespace Aplikacja
 
             dokument.LastSection.Add(TabelaUUCW);
 
-            //-----------------------------------Tabela UAW---------------------------------------
+            //-----------------------------------Tabela aktorzy---------------------------------------
 
 
             //nagłówek tabelii
-            paragraf = sekcja.AddParagraph("Tabela 2 - aktorzy");
+            paragraf = sekcja.AddParagraph("Tabela 2. Aktorzy");
             paragraf.Format.SpaceAfter = "0.2cm";
             paragraf.Format.SpaceBefore = "1cm";
 
@@ -369,7 +390,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Prosty");
             cell = row.Cells[1];
-            cell.AddParagraph("5");
+            cell.AddParagraph("1");
             cell = row.Cells[2];
             cell.AddParagraph(OknoGlowne.TabUAW[0].ToString());
             cell = row.Cells[3];
@@ -380,7 +401,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Średni");
             cell = row.Cells[1];
-            cell.AddParagraph("10");
+            cell.AddParagraph("2");
             cell = row.Cells[2];
             cell.AddParagraph(OknoGlowne.TabUAW[1].ToString());
             cell = row.Cells[3];
@@ -391,7 +412,7 @@ namespace Aplikacja
             cell = row.Cells[0];
             cell.AddParagraph("Złożony");
             cell = row.Cells[1];
-            cell.AddParagraph("15");
+            cell.AddParagraph("3");
             cell = row.Cells[2];
             cell.AddParagraph(OknoGlowne.TabUAW[2].ToString());
             cell = row.Cells[3];
@@ -404,10 +425,18 @@ namespace Aplikacja
 
             //---------------------------------------Tabela czynniki skali------------------------------------------------------
 
-            paragraf = sekcja.AddParagraph("Metoda COCOMO II - Czynniki skali", "Heading2");
-            
+            dokument.LastSection.AddPageBreak();
+
+            paragraf = sekcja.AddParagraph("Metoda COCOMO II", "Heading2");
+
+            paragraf = sekcja.AddParagraph("Metoda COCOMO II służy w modelu szacującym do estymacji pracochłonności wytwarzania oprogramowania. " +
+                "Do tego celu wykorzystuje czynniki skali i mnożniki pracochłonności, które uwzględniają oddziaływanie otoczenia na realizację projektu. " +
+                "Jako pierwsze w tabeli 3 zostały pokazane oceny pięciu czynników skali odpowiadających za odwzierciedlenie wpływu ekonomii lub dysekonomii skali na " +
+                "pracochłonność.");
+            paragraf.Format.SpaceAfter = "0.5cm";
+
             //nagłówek tabeli
-            paragraf = sekcja.AddParagraph("Tabela 3 - Czynniki skali");
+            paragraf = sekcja.AddParagraph("Tabela 3. Czynniki skali");
             paragraf.Format.SpaceAfter = "0.2cm";
             paragraf.Format.SpaceBefore = "1cm";
 
@@ -496,11 +525,14 @@ namespace Aplikacja
 
             //-----------------------------------------Tabela mnożniki pracochłonności dot. produktu----------------------------------------
 
-            paragraf = sekcja.AddParagraph("Metoda COCOMO II - Mnożniki pracochłonności dot. produktu", "Heading2");
+            dokument.LastSection.AddPageBreak();
 
+            paragraf = sekcja.AddParagraph("W tabeli 4 znajdują się oceny mnożników pracochłonności, które związane są z produktem pracy zespołu programistycznego " +
+                "czyli z samym oprogramowaniem. ");
+            paragraf.Format.SpaceAfter = "0.5cm";
 
             //nagłówek tabelii
-            paragraf = sekcja.AddParagraph("Tabela 4 - Mnożniki pracochłonności dot. produktu");
+            paragraf = sekcja.AddParagraph("Tabela 4. Mnożniki pracochłonności dot. produktu");
             paragraf.Format.SpaceAfter = "0.2cm";
             paragraf.Format.SpaceBefore = "1cm";
 
@@ -576,7 +608,7 @@ namespace Aplikacja
             row = TabelaMnPracProd.AddRow();
             row.VerticalAlignment = VerticalAlignment.Center;
             cell = row.Cells[0];
-            cell.AddParagraph("Dokumentacja odpowiada wymaganiom cyklu życia");
+            cell.AddParagraph("Dokumentacja odpowiada wymaganiom \ncyklu życia");
             cell = row.Cells[1];
             cell.AddParagraph(OknoGlowne.TabStringMnPrac[OknoGlowne.TabIndMnPrac[4]]);
             cell = row.Cells[2];
@@ -589,11 +621,14 @@ namespace Aplikacja
 
             //-------------------------------Tabela mnożniki pracochłonności dot. personelu------------------------------------------
 
-            paragraf = sekcja.AddParagraph("Metoda COCOMO II - Mnożniki pracochłonności dot. personelu", "Heading2");
+            dokument.LastSection.AddPageBreak();
 
+            paragraf = sekcja.AddParagraph("W tabeli 5 umieszczone zostały oceny mnożników pracochłonności dotyczących personelu, który odpowiedzialny " +
+                "jest za wytworzenie szacowanego oprogramowania. ");
+            paragraf.Format.SpaceAfter = "0.5cm";
 
             //nagłówek tabelii
-            paragraf = sekcja.AddParagraph("Tabela 5 - Mnożniki pracochłonności dot. personelu");
+            paragraf = sekcja.AddParagraph("Tabela 5. Mnożniki pracochłonności dot. personelu");
             paragraf.Format.SpaceAfter = "0.2cm";
             paragraf.Format.SpaceBefore = "1cm";
 
@@ -691,11 +726,14 @@ namespace Aplikacja
 
             //--------------------------------------Tabela mnożniki pracochłonności dot. platformy------------------------------------------
 
-            paragraf = sekcja.AddParagraph("Metoda COCOMO II - Mnożniki pracochłonności dot. platformy", "Heading2");
+            dokument.LastSection.AddPageBreak();
 
+            paragraf = sekcja.AddParagraph("Tabela 6 zawiera oceny mnożników pracochłonności dotyczących platformy, na której działać będzie szacowane oprogramowanie, " +
+                "przy czym za plaformę uważa się połączenie sprzętu komputerowego i oprogramowania infrastrukturalnego.");
+            paragraf.Format.SpaceAfter = "0.5cm";
 
             //nagłówek tabelii
-            paragraf = sekcja.AddParagraph("Tabela 6 - Mnożniki pracochłonności dot. platformy");
+            paragraf = sekcja.AddParagraph("Tabela 6. Mnożniki pracochłonności dot. platformy");
             paragraf.Format.SpaceAfter = "0.2cm";
             paragraf.Format.SpaceBefore = "1cm";
 
@@ -767,11 +805,13 @@ namespace Aplikacja
 
             //---------------------------------------Mnożniki pracochłonności dot. projektu-----------------------------------------------
 
-            paragraf = sekcja.AddParagraph("Metoda COCOMO II - Mnożniki pracochłonności dot. projektu", "Heading2");
+            dokument.LastSection.AddPageBreak();
 
+            paragraf = sekcja.AddParagraph("Tabela 7 obejmuje oceny mnożników pracochłonności związanych z samym szacowanym projektem.");
+            paragraf.Format.SpaceAfter = "0.5cm";
 
             //nagłówek tabelii
-            paragraf = sekcja.AddParagraph("Tabela 7 - Mnożniki pracochłonności dot. projektu");
+            paragraf = sekcja.AddParagraph("Tabela 7. Mnożniki pracochłonności dot. projektu");
             paragraf.Format.SpaceAfter = "0.2cm";
             paragraf.Format.SpaceBefore = "1cm";
 
@@ -846,17 +886,17 @@ namespace Aplikacja
         //Końcowe wyniki oszacowania
         public static void Wyniki(Document dokument)
         {
-                      
-            var sekcja = dokument.LastSection;
 
+            var sekcja = dokument.LastSection;
             var paragraf = sekcja.AddParagraph("Wyniki oszacowania pracochłonności", "Heading1");
 
-            paragraf = sekcja.AddParagraph("Liczba nieskorygowanych punktów przypadków użycia UUCP: " + OknoGlowne.UUCP);
-            paragraf = sekcja.AddParagraph("Rozmiar (w liniach kodu): " + OknoGlowne.Rozmiar);
+            paragraf = sekcja.AddParagraph("W tabeli 8 znajdują się wyniki przeprowadzonego oszacowania. Ponadto: ");
+            paragraf = sekcja.AddParagraph("- liczba nieskorygowanych punktów przypadków użycia UUCP wynosi: " + string.Format("{0:N0}", OknoGlowne.UUCP));
+            paragraf = sekcja.AddParagraph("- rozmiar (w liniach kodu) wynosi: " + string.Format("{0:N0}", OknoGlowne.Rozmiar));
 
 
             paragraf = sekcja.AddParagraph(OknoGlowne.Ostrzezenie);
-            
+            paragraf.Format.SpaceBefore = "0.3cm";
 
             //nagłówek tabelii
             paragraf = sekcja.AddParagraph("Tabela 8. Wyniki oszacowania");
@@ -880,7 +920,7 @@ namespace Aplikacja
             var row = TabelaWyniki.AddRow();
             row.VerticalAlignment = VerticalAlignment.Center;
             row.Shading.Color = Colors.LightSalmon;
-            
+
 
             //dodajemy tekst do nagłówków kolumn
             var cell = row.Cells[0];
@@ -895,7 +935,7 @@ namespace Aplikacja
             row = TabelaWyniki.AddRow();
             row.VerticalAlignment = VerticalAlignment.Center;
             cell = row.Cells[0];
-            cell.AddParagraph("Pracochłonność (w osobomiesiącach):");                      
+            cell.AddParagraph("Pracochłonność (w osobomiesiącach):");
             cell.MergeRight = 2;
 
 
@@ -938,7 +978,7 @@ namespace Aplikacja
             cell.AddParagraph("Szacowana data zakończenia:");
             cell.MergeRight = 2;
 
-            if (OknoGlowne.DataZakonczenia.Date == DateTime.Today )
+            if (OknoGlowne.DataZakonczenia.Date == DateTime.Today)
             {
                 row = TabelaWyniki.AddRow();
                 row.VerticalAlignment = VerticalAlignment.Center;

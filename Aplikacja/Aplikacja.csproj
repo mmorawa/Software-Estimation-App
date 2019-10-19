@@ -11,7 +11,8 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <PublishUrl>publish\</PublishUrl>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -21,10 +22,15 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
+    <TargetCulture>pl-PL</TargetCulture>
+    <ProductName>Aplikacja</ProductName>
+    <PublisherName>Mateusz Morawa</PublisherName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -48,6 +54,24 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>M.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A0A2BEA02121EB951CA9AA6FBDEEA1D214D67735</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Aplikacja_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MigraDoc.DocumentObjectModel, Version=1.32.4334.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
@@ -190,10 +214,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Aplikacja_TemporaryKey.pfx" />
     <None Include="DiagramKlas.cd" />
     <None Include="packages.config" />
     <None Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\.signature.p7s" />
     <None Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\PDFsharp-MigraDoc-GDI.1.32.4334.0.nupkg" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -224,21 +250,21 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="M.ico" />
-    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\de\MigraDoc.DocumentObjectModel.resources.dll" />
-    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\de\MigraDoc.Rendering.resources.dll" />
-    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\de\MigraDoc.RtfRendering.resources.dll" />
-    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\de\PdfSharp.Charting.resources.dll" />
-    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\de\PdfSharp.resources.dll" />
-    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.DocumentObjectModel.dll" />
-    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.DocumentObjectModel.xml" />
-    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.Rendering.dll" />
-    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.Rendering.xml" />
-    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.RtfRendering.dll" />
-    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.RtfRendering.xml" />
-    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\PdfSharp.Charting.dll" />
-    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\PdfSharp.Charting.xml" />
-    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\PdfSharp.dll" />
-    <Content Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\PdfSharp.xml" />
+    <None Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\de\MigraDoc.DocumentObjectModel.resources.dll" />
+    <None Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\de\MigraDoc.Rendering.resources.dll" />
+    <None Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\de\MigraDoc.RtfRendering.resources.dll" />
+    <None Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\de\PdfSharp.Charting.resources.dll" />
+    <None Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\de\PdfSharp.resources.dll" />
+    <None Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.DocumentObjectModel.dll" />
+    <None Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.DocumentObjectModel.xml" />
+    <None Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.Rendering.dll" />
+    <None Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.Rendering.xml" />
+    <None Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.RtfRendering.dll" />
+    <None Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.RtfRendering.xml" />
+    <None Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\PdfSharp.Charting.dll" />
+    <None Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\PdfSharp.Charting.xml" />
+    <None Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\PdfSharp.dll" />
+    <None Include="packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\PdfSharp.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -297,13 +297,6 @@ namespace Aplikacja
         }
 
 
-        private void ToolStripMenuDokumentacja_Click(object sender, EventArgs e)
-        {
-            //TODO odpowiedni plik w odpowiednim miejscu.
-            Process.Start("Dokumentacja.pdf");
-        }
-
-
         private void ToolStripMenuOProgramie_Click(object sender, EventArgs e)
         {
             using (OknoOAplikacji OknoOProgramie = new OknoOAplikacji())
@@ -968,7 +961,7 @@ namespace Aplikacja
                     Properties.Settings.Default.OsoboMGodz = TempOsoboMGodz;
                     Properties.Settings.Default.DzRobGodz = TempDzRobGodz;
 
-                    //Properties.Settings.Default.Save();
+                    Properties.Settings.Default.Save();
                     MessageBox.Show("Domyślne ustawienia projektu zostały zmienione.", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ZmianaStatusStrip("Domyślne ustawienia projektu zostały zmienione.");
                 }
@@ -1280,7 +1273,7 @@ namespace Aplikacja
                     Properties.Settings.Default.C = TempC;
                     Properties.Settings.Default.D = TempD;
 
-                    //Properties.Settings.Default.Save();
+                    Properties.Settings.Default.Save();
                     Oszacowanie();
 
                     MessageBox.Show("Kalibracja modelu została wykonana.", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -1385,7 +1378,7 @@ namespace Aplikacja
                         Properties.Settings.Default.TabPrzeliczeniowa[i] = TempTabPrzeliczeniowa[i];
                     }
 
-                    //TODO Properties.Settings.Default.Save();
+                    Properties.Settings.Default.Save();
 
                     Oszacowanie();
 
